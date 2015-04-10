@@ -47,6 +47,13 @@
 #import "UIActionSheet+TKCategory.h"
 #import "UIAlertView+TKCategory.h"
 
+// Categories -> UIKit -> Animations
+#import "UIView+TKAnimation.h"
+#import "CALayer+TKAnimation.h"
+#import "CAKeyframeAnimation+TKAnimation.h"
+#import "CAAnimation+TKAnimation.h"
+#import "UIView+Material.h"
+
 // ViewControllers
 #import "TKCardModalViewController.h"
 #import "TKTableViewController.h"

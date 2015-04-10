@@ -41,7 +41,7 @@
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:IDENTIFIER forIndexPath:indexPath];
     
     
-    cell.textLabel.text = @"hello";
+    cell.textLabel.text = @"Credit Card Text Fields";
     
     return cell;
 }
