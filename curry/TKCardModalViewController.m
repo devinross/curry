@@ -4,7 +4,7 @@
 //
 /*
  
- tapku || http://github.com/devinross/tapkulibrary
+ curry || https://github.com/devinross/curry
  
  Permission is hereby granted, free of charge, to any person
  obtaining a copy of this software and associated documentation
@@ -32,7 +32,7 @@
 
 #import "TKCardModalViewController.h"
 #import "UIDevice+TKCategory.h"
-#import "TKGlobal.h"
+#import "TKFoundation.h"
 #import "UIGestureRecognizer+TKCategory.h"
 
 @interface TKCardModalViewController () <UIGestureRecognizerDelegate>
@@ -68,7 +68,7 @@ static const CGFloat _minimumVelocityRequiredForPush = 50.0f;	// defines how muc
 	return self;
 }
 - (NSUInteger) supportedInterfaceOrientations{
-	if([UIDevice padIdiom])
+	if([[UIDevice currentDevice] padIdiom])
 		return UIInterfaceOrientationMaskAll;
 	return UIInterfaceOrientationMaskPortrait;
 }

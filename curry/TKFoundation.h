@@ -1,10 +1,10 @@
 //
-//  TKGlobal.h
+//  TKFoundation.h
 //  Created by Devin Ross on 7/25/09.
 //
 /*
  
- tapku || http://github.com/devinross/tapkulibrary
+ curry || https://github.com/devinross/curry
  
  Permission is hereby granted, free of charge, to any person
  obtaining a copy of this software and associated documentation
@@ -35,9 +35,6 @@
 
 
 #define TKLog(s, ...) NSLog( @"[%@ %@] %@",NSStringFromClass([self class]), NSStringFromSelector(_cmd),[NSString stringWithFormat:(s), ##__VA_ARGS__] )
-
-
-
 
 
 FOUNDATION_STATIC_INLINE CATransform3D CAScale(CGFloat x,CGFloat y,CGFloat z);
