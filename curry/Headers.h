@@ -59,6 +59,12 @@
 #import "TKExtendedScrollView.h"
 #import "TKSectionedScrollView.h"
 
+// Credit Card
+#import "TKCreditCardNumberTextField.h"
+#import "TKCreditCardExpirationTextField.h"
+#import "TKCreditCardZipTextField.h"
+#import "TKCreditCardCVVTextField.h"
+
 // Extra
 #import "TKSoundAlertController.h"
 

@@ -6,8 +6,9 @@
 //  Copyright (c) 2015 Devin Ross. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
-#import <XCTest/XCTest.h>
+
+@import UIKit;
+@import XCTest;
 
 @interface curryTests : XCTestCase
 

@@ -89,9 +89,26 @@
 		200B631D1AD804400049E35C /* TKSoundAlertController.m in Sources */ = {isa = PBXBuildFile; fileRef = 200B63191AD804400049E35C /* TKSoundAlertController.m */; };
 		200B63201AD804E30049E35C /* TKCardModalViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 200B631E1AD804E30049E35C /* TKCardModalViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		200B63211AD804E30049E35C /* TKCardModalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 200B631F1AD804E30049E35C /* TKCardModalViewController.m */; };
-		20A75C5F1AD82C8500E2106A /* Headers.h in Headers */ = {isa = PBXBuildFile; fileRef = 20A75C5E1AD82C8500E2106A /* Headers.h */; };
-		20A75C681AD8332F00E2106A /* TKSectionedScrollView.h in Headers */ = {isa = PBXBuildFile; fileRef = 20A75C661AD8332F00E2106A /* TKSectionedScrollView.h */; };
+		20785F771AD8388E000DC57F /* NSStringTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 20785F701AD8388E000DC57F /* NSStringTests.m */; };
+		20785F781AD8388E000DC57F /* UIViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 20785F721AD8388E000DC57F /* UIViewTests.m */; };
+		20785F791AD8388E000DC57F /* NSArrayTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 20785F741AD8388E000DC57F /* NSArrayTests.m */; };
+		20785F7A1AD8388E000DC57F /* DataTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 20785F761AD8388E000DC57F /* DataTests.m */; };
+		20785F7B1AD838D3000DC57F /* NSString+TKCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 200B62791AD7FC5E0049E35C /* NSString+TKCategory.m */; };
+		20785F7C1AD838E4000DC57F /* NSArray+TKCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 200B627B1AD7FC5E0049E35C /* NSArray+TKCategory.m */; };
+		20785F7E1AD838EE000DC57F /* NSObject+TKCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 200B62771AD7FC5E0049E35C /* NSObject+TKCategory.m */; };
+		207860161AD84A87000DC57F /* TKCreditCardCVVTextField.h in Headers */ = {isa = PBXBuildFile; fileRef = 2078600C1AD84A87000DC57F /* TKCreditCardCVVTextField.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		207860171AD84A87000DC57F /* TKCreditCardCVVTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 2078600D1AD84A87000DC57F /* TKCreditCardCVVTextField.m */; };
+		207860181AD84A87000DC57F /* TKCreditCardExpirationTextField.h in Headers */ = {isa = PBXBuildFile; fileRef = 2078600E1AD84A87000DC57F /* TKCreditCardExpirationTextField.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		207860191AD84A87000DC57F /* TKCreditCardExpirationTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 2078600F1AD84A87000DC57F /* TKCreditCardExpirationTextField.m */; };
+		2078601A1AD84A87000DC57F /* TKCreditCardNumberTextField.h in Headers */ = {isa = PBXBuildFile; fileRef = 207860101AD84A87000DC57F /* TKCreditCardNumberTextField.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2078601B1AD84A87000DC57F /* TKCreditCardNumberTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 207860111AD84A87000DC57F /* TKCreditCardNumberTextField.m */; };
+		2078601C1AD84A87000DC57F /* TKCreditCardZipTextField.h in Headers */ = {isa = PBXBuildFile; fileRef = 207860121AD84A87000DC57F /* TKCreditCardZipTextField.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2078601D1AD84A87000DC57F /* TKCreditCardZipTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 207860131AD84A87000DC57F /* TKCreditCardZipTextField.m */; };
+		20A75C5F1AD82C8500E2106A /* Headers.h in Headers */ = {isa = PBXBuildFile; fileRef = 20A75C5E1AD82C8500E2106A /* Headers.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		20A75C681AD8332F00E2106A /* TKSectionedScrollView.h in Headers */ = {isa = PBXBuildFile; fileRef = 20A75C661AD8332F00E2106A /* TKSectionedScrollView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		20A75C691AD8332F00E2106A /* TKSectionedScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 20A75C671AD8332F00E2106A /* TKSectionedScrollView.m */; };
+		20A75C851AD836DD00E2106A /* NSBundle+TKCategory.h in Headers */ = {isa = PBXBuildFile; fileRef = 20A75C831AD836DD00E2106A /* NSBundle+TKCategory.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		20A75C861AD836DD00E2106A /* NSBundle+TKCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 20A75C841AD836DD00E2106A /* NSBundle+TKCategory.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -190,9 +207,27 @@
 		200B63191AD804400049E35C /* TKSoundAlertController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TKSoundAlertController.m; sourceTree = "<group>"; };
 		200B631E1AD804E30049E35C /* TKCardModalViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TKCardModalViewController.h; sourceTree = "<group>"; };
 		200B631F1AD804E30049E35C /* TKCardModalViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TKCardModalViewController.m; sourceTree = "<group>"; };
+		20785F6F1AD8388E000DC57F /* NSStringTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSStringTests.h; sourceTree = "<group>"; };
+		20785F701AD8388E000DC57F /* NSStringTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSStringTests.m; sourceTree = "<group>"; };
+		20785F711AD8388E000DC57F /* UIViewTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIViewTests.h; sourceTree = "<group>"; };
+		20785F721AD8388E000DC57F /* UIViewTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIViewTests.m; sourceTree = "<group>"; };
+		20785F731AD8388E000DC57F /* NSArrayTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSArrayTests.h; sourceTree = "<group>"; };
+		20785F741AD8388E000DC57F /* NSArrayTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSArrayTests.m; sourceTree = "<group>"; };
+		20785F751AD8388E000DC57F /* DataTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataTests.h; sourceTree = "<group>"; };
+		20785F761AD8388E000DC57F /* DataTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataTests.m; sourceTree = "<group>"; };
+		2078600C1AD84A87000DC57F /* TKCreditCardCVVTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TKCreditCardCVVTextField.h; sourceTree = "<group>"; };
+		2078600D1AD84A87000DC57F /* TKCreditCardCVVTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TKCreditCardCVVTextField.m; sourceTree = "<group>"; };
+		2078600E1AD84A87000DC57F /* TKCreditCardExpirationTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TKCreditCardExpirationTextField.h; sourceTree = "<group>"; };
+		2078600F1AD84A87000DC57F /* TKCreditCardExpirationTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TKCreditCardExpirationTextField.m; sourceTree = "<group>"; };
+		207860101AD84A87000DC57F /* TKCreditCardNumberTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TKCreditCardNumberTextField.h; sourceTree = "<group>"; };
+		207860111AD84A87000DC57F /* TKCreditCardNumberTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TKCreditCardNumberTextField.m; sourceTree = "<group>"; };
+		207860121AD84A87000DC57F /* TKCreditCardZipTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TKCreditCardZipTextField.h; sourceTree = "<group>"; };
+		207860131AD84A87000DC57F /* TKCreditCardZipTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TKCreditCardZipTextField.m; sourceTree = "<group>"; };
 		20A75C5E1AD82C8500E2106A /* Headers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Headers.h; sourceTree = "<group>"; };
 		20A75C661AD8332F00E2106A /* TKSectionedScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TKSectionedScrollView.h; sourceTree = "<group>"; };
 		20A75C671AD8332F00E2106A /* TKSectionedScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TKSectionedScrollView.m; sourceTree = "<group>"; };
+		20A75C831AD836DD00E2106A /* NSBundle+TKCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSBundle+TKCategory.h"; sourceTree = "<group>"; };
+		20A75C841AD836DD00E2106A /* NSBundle+TKCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSBundle+TKCategory.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -241,6 +276,7 @@
 				200B629A1AD7FD4B0049E35C /* Categories */,
 				200B63231AD805400049E35C /* ViewControllers */,
 				200B63221AD805320049E35C /* Views */,
+				2078601E1AD84AB2000DC57F /* CreditCard */,
 				200B635C1AD8140D0049E35C /* Extra */,
 				200B62581AD7FB460049E35C /* Supporting Files */,
 			);
@@ -252,13 +288,21 @@
 			children = (
 				200B62591AD7FB460049E35C /* Info.plist */,
 			);
-			name = "Supporting Files";
+			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
 		200B62641AD7FB460049E35C /* curryTests */ = {
 			isa = PBXGroup;
 			children = (
 				200B62671AD7FB460049E35C /* curryTests.m */,
+				20785F6F1AD8388E000DC57F /* NSStringTests.h */,
+				20785F701AD8388E000DC57F /* NSStringTests.m */,
+				20785F711AD8388E000DC57F /* UIViewTests.h */,
+				20785F721AD8388E000DC57F /* UIViewTests.m */,
+				20785F731AD8388E000DC57F /* NSArrayTests.h */,
+				20785F741AD8388E000DC57F /* NSArrayTests.m */,
+				20785F751AD8388E000DC57F /* DataTests.h */,
+				20785F761AD8388E000DC57F /* DataTests.m */,
 				200B62651AD7FB460049E35C /* Supporting Files */,
 			);
 			path = curryTests;
@@ -269,7 +313,7 @@
 			children = (
 				200B62661AD7FB460049E35C /* Info.plist */,
 			);
-			name = "Supporting Files";
+			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
 		200B629A1AD7FD4B0049E35C /* Categories */ = {
@@ -279,7 +323,7 @@
 				200B62F91AD7FF9D0049E35C /* UIKit */,
 				200B62AF1AD7FE100049E35C /* Animations */,
 			);
-			name = Categories;
+			path = Categories;
 			sourceTree = "<group>";
 		};
 		200B62AF1AD7FE100049E35C /* Animations */ = {
@@ -296,7 +340,7 @@
 				200B62B01AD7FE370049E35C /* UIView+Material.h */,
 				200B62B11AD7FE370049E35C /* UIView+Material.m */,
 			);
-			name = Animations;
+			path = Animations;
 			sourceTree = "<group>";
 		};
 		200B62F81AD7FF6A0049E35C /* Foundation */ = {
@@ -316,8 +360,10 @@
 				200B62811AD7FC5E0049E35C /* NSAttributedString+TKCategory.m */,
 				200B62821AD7FC5E0049E35C /* NSMutableAttributedString+TKCategory.h */,
 				200B62831AD7FC5E0049E35C /* NSMutableAttributedString+TKCategory.m */,
+				20A75C831AD836DD00E2106A /* NSBundle+TKCategory.h */,
+				20A75C841AD836DD00E2106A /* NSBundle+TKCategory.m */,
 			);
-			name = Foundation;
+			path = Foundation;
 			sourceTree = "<group>";
 		};
 		200B62F91AD7FF9D0049E35C /* UIKit */ = {
@@ -328,7 +374,7 @@
 				200B62FB1AD7FFED0049E35C /* Elements */,
 				200B62FA1AD7FFD90049E35C /* Controllers */,
 			);
-			name = UIKit;
+			path = UIKit;
 			sourceTree = "<group>";
 		};
 		200B62FA1AD7FFD90049E35C /* Controllers */ = {
@@ -343,7 +389,7 @@
 				200B62CE1AD7FEF80049E35C /* UIActionSheet+TKCategory.h */,
 				200B62CF1AD7FEF80049E35C /* UIActionSheet+TKCategory.m */,
 			);
-			name = Controllers;
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 		200B62FB1AD7FFED0049E35C /* Elements */ = {
@@ -358,7 +404,7 @@
 				200B62C41AD7FEF80049E35C /* UIGestureRecognizer+TKCategory.h */,
 				200B62C51AD7FEF80049E35C /* UIGestureRecognizer+TKCategory.m */,
 			);
-			name = Elements;
+			path = Elements;
 			sourceTree = "<group>";
 		};
 		200B62FC1AD800310049E35C /* Base */ = {
@@ -371,7 +417,7 @@
 				200B62C81AD7FEF80049E35C /* UIScreen+TKCategory.h */,
 				200B62C91AD7FEF80049E35C /* UIScreen+TKCategory.m */,
 			);
-			name = Base;
+			path = Base;
 			sourceTree = "<group>";
 		};
 		200B62FD1AD800520049E35C /* Views */ = {
@@ -394,7 +440,7 @@
 				200B62C01AD7FEF80049E35C /* UIBarButtonItem+TKCategory.h */,
 				200B62C11AD7FEF80049E35C /* UIBarButtonItem+TKCategory.m */,
 			);
-			name = Views;
+			path = Views;
 			sourceTree = "<group>";
 		};
 		200B63221AD805320049E35C /* Views */ = {
@@ -409,7 +455,7 @@
 				20A75C661AD8332F00E2106A /* TKSectionedScrollView.h */,
 				20A75C671AD8332F00E2106A /* TKSectionedScrollView.m */,
 			);
-			name = Views;
+			path = Views;
 			sourceTree = "<group>";
 		};
 		200B63231AD805400049E35C /* ViewControllers */ = {
@@ -424,7 +470,7 @@
 				200B63041AD804340049E35C /* TKWebViewController.h */,
 				200B63051AD804340049E35C /* TKWebViewController.m */,
 			);
-			name = ViewControllers;
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 		200B635C1AD8140D0049E35C /* Extra */ = {
@@ -433,7 +479,22 @@
 				200B63181AD804400049E35C /* TKSoundAlertController.h */,
 				200B63191AD804400049E35C /* TKSoundAlertController.m */,
 			);
-			name = Extra;
+			path = Extra;
+			sourceTree = "<group>";
+		};
+		2078601E1AD84AB2000DC57F /* CreditCard */ = {
+			isa = PBXGroup;
+			children = (
+				2078600C1AD84A87000DC57F /* TKCreditCardCVVTextField.h */,
+				2078600D1AD84A87000DC57F /* TKCreditCardCVVTextField.m */,
+				2078600E1AD84A87000DC57F /* TKCreditCardExpirationTextField.h */,
+				2078600F1AD84A87000DC57F /* TKCreditCardExpirationTextField.m */,
+				207860101AD84A87000DC57F /* TKCreditCardNumberTextField.h */,
+				207860111AD84A87000DC57F /* TKCreditCardNumberTextField.m */,
+				207860121AD84A87000DC57F /* TKCreditCardZipTextField.h */,
+				207860131AD84A87000DC57F /* TKCreditCardZipTextField.m */,
+			);
+			path = CreditCard;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -452,7 +513,6 @@
 				200B62961AD7FC5E0049E35C /* UIDevice+TKCategory.h in Headers */,
 				200B62F01AD7FEF80049E35C /* UIActionSheet+TKCategory.h in Headers */,
 				200B62F21AD7FEF80049E35C /* UIFont+TKCategory.h in Headers */,
-				20A75C681AD8332F00E2106A /* TKSectionedScrollView.h in Headers */,
 				200B62F61AD7FEF80049E35C /* UIApplication+TKCategory.h in Headers */,
 				200B62881AD7FC5E0049E35C /* NSObject+TKCategory.h in Headers */,
 				200B628C1AD7FC5E0049E35C /* NSArray+TKCategory.h in Headers */,
@@ -477,11 +537,17 @@
 				200B62EA1AD7FEF80049E35C /* UIScreen+TKCategory.h in Headers */,
 				200B63201AD804E30049E35C /* TKCardModalViewController.h in Headers */,
 				200B63101AD804350049E35C /* TKWebViewController.h in Headers */,
-				20A75C5F1AD82C8500E2106A /* Headers.h in Headers */,
 				200B631A1AD804400049E35C /* TKExtendedScrollView.h in Headers */,
+				20A75C681AD8332F00E2106A /* TKSectionedScrollView.h in Headers */,
+				20A75C851AD836DD00E2106A /* NSBundle+TKCategory.h in Headers */,
+				20A75C5F1AD82C8500E2106A /* Headers.h in Headers */,
 				200B62E41AD7FEF80049E35C /* UIImagePickerController+TKCategory.h in Headers */,
 				200B62DC1AD7FEF80049E35C /* UIButton+TKCategory.h in Headers */,
 				200B63121AD804350049E35C /* TKGradientView.h in Headers */,
+				2078601A1AD84A87000DC57F /* TKCreditCardNumberTextField.h in Headers */,
+				207860161AD84A87000DC57F /* TKCreditCardCVVTextField.h in Headers */,
+				2078601C1AD84A87000DC57F /* TKCreditCardZipTextField.h in Headers */,
+				207860181AD84A87000DC57F /* TKCreditCardExpirationTextField.h in Headers */,
 				200B62E81AD7FEF80049E35C /* UIViewController+TKCategory.h in Headers */,
 				200B629D1AD7FD660049E35C /* NSObject+JSON.h in Headers */,
 				200B62981AD7FC5E0049E35C /* UIView+TKCategory.h in Headers */,
@@ -598,16 +664,20 @@
 				200B62E11AD7FEF80049E35C /* UIScrollview+TKCategory.m in Sources */,
 				200B62AA1AD7FE0D0049E35C /* CALayer+TKAnimation.m in Sources */,
 				200B62AC1AD7FE0D0049E35C /* CAKeyframeAnimation+TKAnimation.m in Sources */,
+				2078601D1AD84A87000DC57F /* TKCreditCardZipTextField.m in Sources */,
 				200B629E1AD7FD660049E35C /* NSObject+JSON.m in Sources */,
 				200B628B1AD7FC5E0049E35C /* NSString+TKCategory.m in Sources */,
 				200B63151AD804350049E35C /* TKShapeView.m in Sources */,
 				200B63131AD804350049E35C /* TKGradientView.m in Sources */,
 				20A75C691AD8332F00E2106A /* TKSectionedScrollView.m in Sources */,
 				200B628D1AD7FC5E0049E35C /* NSArray+TKCategory.m in Sources */,
+				20A75C861AD836DD00E2106A /* NSBundle+TKCategory.m in Sources */,
 				200B62D71AD7FEF80049E35C /* UIImage+TKCategory.m in Sources */,
+				2078601B1AD84A87000DC57F /* TKCreditCardNumberTextField.m in Sources */,
 				200B62AE1AD7FE0D0049E35C /* CAAnimation+TKAnimation.m in Sources */,
 				200B62F71AD7FEF80049E35C /* UIApplication+TKCategory.m in Sources */,
 				200B62931AD7FC5E0049E35C /* NSAttributedString+TKCategory.m in Sources */,
+				207860191AD84A87000DC57F /* TKCreditCardExpirationTextField.m in Sources */,
 				200B63111AD804350049E35C /* TKWebViewController.m in Sources */,
 				200B62F31AD7FEF80049E35C /* UIFont+TKCategory.m in Sources */,
 				200B62E51AD7FEF80049E35C /* UIImagePickerController+TKCategory.m in Sources */,
@@ -621,6 +691,7 @@
 				200B62891AD7FC5E0049E35C /* NSObject+TKCategory.m in Sources */,
 				200B62EB1AD7FEF80049E35C /* UIScreen+TKCategory.m in Sources */,
 				200B62991AD7FC5E0049E35C /* UIView+TKCategory.m in Sources */,
+				207860171AD84A87000DC57F /* TKCreditCardCVVTextField.m in Sources */,
 				200B62DB1AD7FEF80049E35C /* UIImageView+TKCategory.m in Sources */,
 				200B62F11AD7FEF80049E35C /* UIActionSheet+TKCategory.m in Sources */,
 				200B62ED1AD7FEF80049E35C /* UILabel+TKCategory.m in Sources */,
@@ -632,7 +703,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				20785F7E1AD838EE000DC57F /* NSObject+TKCategory.m in Sources */,
+				20785F7C1AD838E4000DC57F /* NSArray+TKCategory.m in Sources */,
+				20785F7B1AD838D3000DC57F /* NSString+TKCategory.m in Sources */,
+				20785F7A1AD8388E000DC57F /* DataTests.m in Sources */,
+				20785F791AD8388E000DC57F /* NSArrayTests.m in Sources */,
 				200B62681AD7FB460049E35C /* curryTests.m in Sources */,
+				20785F771AD8388E000DC57F /* NSStringTests.m in Sources */,
+				20785F781AD8388E000DC57F /* UIViewTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -742,7 +820,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = curry/Info.plist;
+				INFOPLIST_FILE = "curry/Supporting Files/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -757,7 +835,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = curry/Info.plist;
+				INFOPLIST_FILE = "curry/Supporting Files/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -776,7 +854,7 @@
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = curryTests/Info.plist;
+				INFOPLIST_FILE = "curryTests/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -789,7 +867,7 @@
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = curryTests/Info.plist;
+				INFOPLIST_FILE = "curryTests/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};

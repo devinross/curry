@@ -60,7 +60,6 @@ NSString *TKViewAnimationKeyPathSizeHeight = @"size.height";
     [self.layer addKeyframeAnimationWithKeyPath:keyPath duration:duration delay:delay values:values options:options completion:completion];
 }
 
-
 - (void) addKeyframeAnimationWithKeyPath:(NSString *)keyPath duration:(CFTimeInterval)duration delay:(CFTimeInterval)delay bezierPath:(UIBezierPath*)bezierPath options:(UIViewAnimationOptions)options{
     [self addKeyframeAnimationWithKeyPath:keyPath duration:(CFTimeInterval)duration delay:(CFTimeInterval)delay bezierPath:(UIBezierPath*)bezierPath options:(UIViewAnimationOptions)options completion:nil];
 }
@@ -72,10 +71,10 @@ NSString *TKViewAnimationKeyPathSizeHeight = @"size.height";
 }
 
 #pragma mark CAAnimation Convience Methods
-- (void) addAnimation:(CAAnimation*)animation forKey:(NSString *)key{
+- (void) addAnimation:(CAAnimation*)animation{
     [self addAnimation:animation completion:nil];
 }
-- (void) addAnimation:(CAAnimation*)animation forKey:(NSString *)key completion:(void (^)(BOOL))completion{
+- (void) addAnimation:(CAAnimation*)animation completion:(void (^)(BOOL))completion{
     [self.layer addAnimation:animation completion:completion];
 }
 
