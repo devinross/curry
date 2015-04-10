@@ -43,5 +43,7 @@
 /** Current vertical scrolled page. */
 @property (nonatomic,readonly) NSInteger currentVerticalPage;
 
+@property (nonatomic,assign,readonly) CGPoint contentOffsetFromEnd;
+
 
 @end

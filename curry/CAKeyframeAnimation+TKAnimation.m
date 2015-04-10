@@ -33,8 +33,8 @@
 #import "CALayer+TKAnimation.h"
 #import "CAAnimation+TKAnimation.h"
 
-NSString *TKViewAnimationKeyPathCenter = @"position";
-NSString *TKViewAnimationKeyPathTransform = @"transform";
+
+
 
 @implementation CAKeyframeAnimation (TKAnimation)
 

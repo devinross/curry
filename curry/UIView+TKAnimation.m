@@ -34,38 +34,49 @@
 #import "CALayer+TKAnimation.h"
 #import "CAAnimation+TKAnimation.h"
 
+NSString *TKViewAnimationKeyPathCenter = @"position";
+NSString *TKViewAnimationKeyPathCenterX = @"position.x";
+NSString *TKViewAnimationKeyPathCenterY = @"position.y";
+NSString *TKViewAnimationKeyPathTransform = @"transform";
+NSString *TKViewAnimationKeyPathFrame = @"frame";
+NSString *TKViewAnimationKeyPathOrigin = @"origin";
+NSString *TKViewAnimationKeyPathOriginX = @"origin.x";
+NSString *TKViewAnimationKeyPathOriginY = @"origin.y";
+NSString *TKViewAnimationKeyPathSize = @"size";
+NSString *TKViewAnimationKeyPathSizeWidth = @"size.width";
+NSString *TKViewAnimationKeyPathSizeHeight = @"size.height";
 
 @implementation UIView (TKAnimation)
 
 
 #pragma mark Keyframe Animations
-- (void) addKeyframeAnimationWithKeyPath:(NSString *)keyPath forKey:(NSString*)key duration:(CFTimeInterval)duration delay:(CFTimeInterval)delay path:(CGPathRef)path options:(UIViewAnimationOptions)options completion:(void (^)(BOOL))completion{
-    [self.layer addKeyframeAnimationWithKeyPath:key forKey:key duration:duration delay:delay path:path options:options completion:completion];
+- (void) addKeyframeAnimationWithKeyPath:(NSString *)keyPath duration:(CFTimeInterval)duration delay:(CFTimeInterval)delay path:(CGPathRef)path options:(UIViewAnimationOptions)options completion:(void (^)(BOOL))completion{
+    [self.layer addKeyframeAnimationWithKeyPath:keyPath duration:duration delay:delay path:path options:options completion:completion];
 }
-- (void) addKeyframeAnimationWithKeyPath:(NSString *)keyPath forKey:(NSString*)key duration:(CFTimeInterval)duration delay:(CFTimeInterval)delay bezierPath:(UIBezierPath*)bezierPath options:(UIViewAnimationOptions)options completion:(void (^)(BOOL))completion{
-    [self.layer addKeyframeAnimationWithKeyPath:key forKey:key duration:duration delay:delay bezierPath:bezierPath options:options completion:completion];
+- (void) addKeyframeAnimationWithKeyPath:(NSString *)keyPath duration:(CFTimeInterval)duration delay:(CFTimeInterval)delay bezierPath:(UIBezierPath*)bezierPath options:(UIViewAnimationOptions)options completion:(void (^)(BOOL))completion{
+    [self.layer addKeyframeAnimationWithKeyPath:keyPath duration:duration delay:delay bezierPath:bezierPath options:options completion:completion];
 }
-- (void) addKeyframeAnimationWithKeyPath:(NSString *)keyPath forKey:(NSString*)key duration:(CFTimeInterval)duration delay:(CFTimeInterval)delay values:(NSArray*)values options:(UIViewAnimationOptions)options completion:(void (^)(BOOL))completion{
-    [self.layer addKeyframeAnimationWithKeyPath:key forKey:key duration:duration delay:delay values:values options:options completion:completion];
+- (void) addKeyframeAnimationWithKeyPath:(NSString *)keyPath duration:(CFTimeInterval)duration delay:(CFTimeInterval)delay values:(NSArray*)values options:(UIViewAnimationOptions)options completion:(void (^)(BOOL))completion{
+    [self.layer addKeyframeAnimationWithKeyPath:keyPath duration:duration delay:delay values:values options:options completion:completion];
 }
 
 
-- (void) addKeyframeAnimationWithKeyPath:(NSString *)keyPath forKey:(NSString*)key duration:(CFTimeInterval)duration delay:(CFTimeInterval)delay bezierPath:(UIBezierPath*)bezierPath options:(UIViewAnimationOptions)options{
-    [self addKeyframeAnimationWithKeyPath:(NSString *)keyPath forKey:(NSString*)key duration:(CFTimeInterval)duration delay:(CFTimeInterval)delay bezierPath:(UIBezierPath*)bezierPath options:(UIViewAnimationOptions)options completion:nil];
+- (void) addKeyframeAnimationWithKeyPath:(NSString *)keyPath duration:(CFTimeInterval)duration delay:(CFTimeInterval)delay bezierPath:(UIBezierPath*)bezierPath options:(UIViewAnimationOptions)options{
+    [self addKeyframeAnimationWithKeyPath:keyPath duration:(CFTimeInterval)duration delay:(CFTimeInterval)delay bezierPath:(UIBezierPath*)bezierPath options:(UIViewAnimationOptions)options completion:nil];
 }
-- (void) addKeyframeAnimationWithKeyPath:(NSString *)keyPath forKey:(NSString*)key duration:(CFTimeInterval)duration delay:(CFTimeInterval)delay path:(CGPathRef)path options:(UIViewAnimationOptions)options{
-    [self addKeyframeAnimationWithKeyPath:(NSString *)keyPath forKey:(NSString*)key duration:(CFTimeInterval)duration delay:(CFTimeInterval)delay path:(CGPathRef)path options:(UIViewAnimationOptions)options completion:nil];
+- (void) addKeyframeAnimationWithKeyPath:(NSString *)keyPath duration:(CFTimeInterval)duration delay:(CFTimeInterval)delay path:(CGPathRef)path options:(UIViewAnimationOptions)options{
+    [self addKeyframeAnimationWithKeyPath:keyPath duration:(CFTimeInterval)duration delay:(CFTimeInterval)delay path:(CGPathRef)path options:(UIViewAnimationOptions)options completion:nil];
 }
-- (void) addKeyframeAnimationWithKeyPath:(NSString *)keyPath forKey:(NSString*)key duration:(CFTimeInterval)duration delay:(CFTimeInterval)delay values:(NSArray*)values options:(UIViewAnimationOptions)options{
-    [self  addKeyframeAnimationWithKeyPath:(NSString *)keyPath forKey:(NSString*)key duration:(CFTimeInterval)duration delay:(CFTimeInterval)delay values:(NSArray*)values options:(UIViewAnimationOptions)options completion:nil];
+- (void) addKeyframeAnimationWithKeyPath:(NSString *)keyPath duration:(CFTimeInterval)duration delay:(CFTimeInterval)delay values:(NSArray*)values options:(UIViewAnimationOptions)options{
+    [self  addKeyframeAnimationWithKeyPath:keyPath duration:(CFTimeInterval)duration delay:(CFTimeInterval)delay values:(NSArray*)values options:(UIViewAnimationOptions)options completion:nil];
 }
 
 #pragma mark CAAnimation Convience Methods
 - (void) addAnimation:(CAAnimation*)animation forKey:(NSString *)key{
-    [self addAnimation:animation forKey:key completion:nil];
+    [self addAnimation:animation completion:nil];
 }
 - (void) addAnimation:(CAAnimation*)animation forKey:(NSString *)key completion:(void (^)(BOOL))completion{
-    [self.layer addAnimation:animation forKey:key completion:completion];
+    [self.layer addAnimation:animation completion:completion];
 }
 
 @end

@@ -33,7 +33,6 @@
 
 @implementation UIScrollView (TKCategory)
 
-
 - (void) scrollToTop{
 	self.contentOffset = CGPointMake( -self.contentInset.left, -self.contentInset.top);
 }
@@ -44,5 +43,11 @@
 - (NSInteger) currentVerticalPage{
 	return (CGFrameGetHeight(self) / 2 + self.contentOffset.y) / CGFrameGetHeight(self);
 }
+
+- (CGPoint) contentOffsetFromEnd{
+    return CGPointMake(self.contentSize.width - self.contentOffset.x - CGFrameGetWidth(self), self.contentSize.height - self.contentOffset.y - CGFrameGetHeight(self));
+}
+
+
 
 @end

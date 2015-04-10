@@ -20,7 +20,6 @@
 #import "NSAttributedString+TKCategory.h"
 #import "NSMutableAttributedString+TKCategory.h"
 
-
 // Categories -> UIKit -> Base
 #import "UIApplication+TKCategory.h"
 #import "UIDevice+TKCategory.h"
@@ -36,7 +35,6 @@
 #import "UINavigationBar+TKCategory.h"
 #import "UIBarButtonItem+TKCategory.h"
 
-
 // Categories -> UIKit -> Elements
 #import "UIImage+TKCategory.h"
 #import "UIFont+TKCategory.h"
@@ -49,8 +47,6 @@
 #import "UIActionSheet+TKCategory.h"
 #import "UIAlertView+TKCategory.h"
 
-
-
 // ViewControllers
 #import "TKCardModalViewController.h"
 #import "TKTableViewController.h"
@@ -61,6 +57,7 @@
 #import "TKGradientView.h"
 #import "TKShapeView.h"
 #import "TKExtendedScrollView.h"
+#import "TKSectionedScrollView.h"
 
 // Extra
 #import "TKSoundAlertController.h"

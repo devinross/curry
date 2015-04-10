@@ -32,11 +32,6 @@
 @import UIKit;
 @import QuartzCore;
 
-extern NSString *TKViewAnimationKeyPathCenter;
-extern NSString *TKViewAnimationKeyPathTransform;
-
-
-
 @interface CAKeyframeAnimation (TKAnimation)
 
 

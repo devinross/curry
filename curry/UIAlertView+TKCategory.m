@@ -35,12 +35,9 @@
 
 
 + (UIAlertView*) showAlertViewWithTitle:(NSString*)title message:(NSString*)message dismiss:(NSString*)dismiss{
-	
 	if(!dismiss) dismiss = NSLocalizedString(@"Dismiss", @"Dismiss Alert View");
-	
 	UIAlertView *alert = [[UIAlertView alloc] initWithTitle:title message:message delegate:nil cancelButtonTitle:dismiss otherButtonTitles:nil];
 	[alert show];
-	
 	return alert;
 	
 }

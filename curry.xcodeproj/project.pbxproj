@@ -90,6 +90,8 @@
 		200B63201AD804E30049E35C /* TKCardModalViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 200B631E1AD804E30049E35C /* TKCardModalViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		200B63211AD804E30049E35C /* TKCardModalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 200B631F1AD804E30049E35C /* TKCardModalViewController.m */; };
 		20A75C5F1AD82C8500E2106A /* Headers.h in Headers */ = {isa = PBXBuildFile; fileRef = 20A75C5E1AD82C8500E2106A /* Headers.h */; };
+		20A75C681AD8332F00E2106A /* TKSectionedScrollView.h in Headers */ = {isa = PBXBuildFile; fileRef = 20A75C661AD8332F00E2106A /* TKSectionedScrollView.h */; };
+		20A75C691AD8332F00E2106A /* TKSectionedScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 20A75C671AD8332F00E2106A /* TKSectionedScrollView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -189,6 +191,8 @@
 		200B631E1AD804E30049E35C /* TKCardModalViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TKCardModalViewController.h; sourceTree = "<group>"; };
 		200B631F1AD804E30049E35C /* TKCardModalViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TKCardModalViewController.m; sourceTree = "<group>"; };
 		20A75C5E1AD82C8500E2106A /* Headers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Headers.h; sourceTree = "<group>"; };
+		20A75C661AD8332F00E2106A /* TKSectionedScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TKSectionedScrollView.h; sourceTree = "<group>"; };
+		20A75C671AD8332F00E2106A /* TKSectionedScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TKSectionedScrollView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -402,6 +406,8 @@
 				200B63091AD804340049E35C /* TKShapeView.m */,
 				200B63161AD804400049E35C /* TKExtendedScrollView.h */,
 				200B63171AD804400049E35C /* TKExtendedScrollView.m */,
+				20A75C661AD8332F00E2106A /* TKSectionedScrollView.h */,
+				20A75C671AD8332F00E2106A /* TKSectionedScrollView.m */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -446,6 +452,7 @@
 				200B62961AD7FC5E0049E35C /* UIDevice+TKCategory.h in Headers */,
 				200B62F01AD7FEF80049E35C /* UIActionSheet+TKCategory.h in Headers */,
 				200B62F21AD7FEF80049E35C /* UIFont+TKCategory.h in Headers */,
+				20A75C681AD8332F00E2106A /* TKSectionedScrollView.h in Headers */,
 				200B62F61AD7FEF80049E35C /* UIApplication+TKCategory.h in Headers */,
 				200B62881AD7FC5E0049E35C /* NSObject+TKCategory.h in Headers */,
 				200B628C1AD7FC5E0049E35C /* NSArray+TKCategory.h in Headers */,
@@ -595,6 +602,7 @@
 				200B628B1AD7FC5E0049E35C /* NSString+TKCategory.m in Sources */,
 				200B63151AD804350049E35C /* TKShapeView.m in Sources */,
 				200B63131AD804350049E35C /* TKGradientView.m in Sources */,
+				20A75C691AD8332F00E2106A /* TKSectionedScrollView.m in Sources */,
 				200B628D1AD7FC5E0049E35C /* NSArray+TKCategory.m in Sources */,
 				200B62D71AD7FEF80049E35C /* UIImage+TKCategory.m in Sources */,
 				200B62AE1AD7FE0D0049E35C /* CAAnimation+TKAnimation.m in Sources */,
