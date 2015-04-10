@@ -1,5 +1,5 @@
 //
-//  NSObject+JSON.h
+//  NSURLSession+TKCategory.h
 //  Created by Devin Ross on 4/10/15.
 //
 /*
@@ -31,31 +31,10 @@
 
 @import Foundation;
 
-@interface NSObject (JSON)
+@interface NSURLSession (TKCategory)
 
+- (NSURLSessionDataTask*) jsonDataTaskWithRequest:(NSURLRequest*)request options:(NSJSONReadingOptions)options completion:(void(^)(id object, NSURLResponse *response, NSError *error))completion;
 
-
-typedef void (^TKJSONCompletionBlock)(id object,NSError *error);
-typedef void (^TKJSONNetworkCompletionBlock)(id object,NSURLResponse *response,NSError *error);
-
-/** Process JSON data in the background with a completion block.
- @param data The JSON data.
- @param block The block that will be performed upon the parsing of the json data. The process data will be included as an object with the selector.
- */
-- (void) processJSON:(NSData*)data withCompletion:(TKJSONCompletionBlock)block;
-
-/** Process JSON data in the background with a completion block.
- @param data The JSON data.
- @param options An json parsing options to be included will parsing the JSON data.
- @param block The block that will be performed upon the parsing of the json data. The process data will be included as an object with the selector.
- */
-- (void) processJSON:(NSData*)data options:(NSJSONReadingOptions)options withCompletion:(TKJSONCompletionBlock)block;
-
-
-- (void) processJSON:(NSData*)data response:(NSURLResponse *)response error:(NSError*)error options:(NSJSONReadingOptions)options withCompletion:(TKJSONNetworkCompletionBlock)block;
-
-
-
-
+- (NSURLSessionDataTask*) jsonDataTaskWithURL:(NSURL*)URL options:(NSJSONReadingOptions)options completion:(void(^)(id object, NSURLResponse *response, NSError *error))completion;
 
 @end

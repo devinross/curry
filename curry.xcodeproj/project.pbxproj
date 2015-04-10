@@ -104,6 +104,8 @@
 		2078601B1AD84A87000DC57F /* TKCreditCardNumberTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 207860111AD84A87000DC57F /* TKCreditCardNumberTextField.m */; };
 		2078601C1AD84A87000DC57F /* TKCreditCardZipTextField.h in Headers */ = {isa = PBXBuildFile; fileRef = 207860121AD84A87000DC57F /* TKCreditCardZipTextField.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2078601D1AD84A87000DC57F /* TKCreditCardZipTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 207860131AD84A87000DC57F /* TKCreditCardZipTextField.m */; };
+		207860261AD84F11000DC57F /* NSURLSession+TKCategory.h in Headers */ = {isa = PBXBuildFile; fileRef = 207860241AD84F11000DC57F /* NSURLSession+TKCategory.h */; };
+		207860271AD84F11000DC57F /* NSURLSession+TKCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 207860251AD84F11000DC57F /* NSURLSession+TKCategory.m */; };
 		20A75C5F1AD82C8500E2106A /* Headers.h in Headers */ = {isa = PBXBuildFile; fileRef = 20A75C5E1AD82C8500E2106A /* Headers.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		20A75C681AD8332F00E2106A /* TKSectionedScrollView.h in Headers */ = {isa = PBXBuildFile; fileRef = 20A75C661AD8332F00E2106A /* TKSectionedScrollView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		20A75C691AD8332F00E2106A /* TKSectionedScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 20A75C671AD8332F00E2106A /* TKSectionedScrollView.m */; };
@@ -223,6 +225,8 @@
 		207860111AD84A87000DC57F /* TKCreditCardNumberTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TKCreditCardNumberTextField.m; sourceTree = "<group>"; };
 		207860121AD84A87000DC57F /* TKCreditCardZipTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TKCreditCardZipTextField.h; sourceTree = "<group>"; };
 		207860131AD84A87000DC57F /* TKCreditCardZipTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TKCreditCardZipTextField.m; sourceTree = "<group>"; };
+		207860241AD84F11000DC57F /* NSURLSession+TKCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSURLSession+TKCategory.h"; sourceTree = "<group>"; };
+		207860251AD84F11000DC57F /* NSURLSession+TKCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSURLSession+TKCategory.m"; sourceTree = "<group>"; };
 		20A75C5E1AD82C8500E2106A /* Headers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Headers.h; sourceTree = "<group>"; };
 		20A75C661AD8332F00E2106A /* TKSectionedScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TKSectionedScrollView.h; sourceTree = "<group>"; };
 		20A75C671AD8332F00E2106A /* TKSectionedScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TKSectionedScrollView.m; sourceTree = "<group>"; };
@@ -362,6 +366,8 @@
 				200B62831AD7FC5E0049E35C /* NSMutableAttributedString+TKCategory.m */,
 				20A75C831AD836DD00E2106A /* NSBundle+TKCategory.h */,
 				20A75C841AD836DD00E2106A /* NSBundle+TKCategory.m */,
+				207860241AD84F11000DC57F /* NSURLSession+TKCategory.h */,
+				207860251AD84F11000DC57F /* NSURLSession+TKCategory.m */,
 			);
 			path = Foundation;
 			sourceTree = "<group>";
@@ -509,6 +515,7 @@
 				200B62741AD7FBDC0049E35C /* TKFoundation.h in Headers */,
 				200B62F41AD7FEF80049E35C /* UINavigationBar+TKCategory.h in Headers */,
 				200B628E1AD7FC5E0049E35C /* NSMutableArray+TKCategory.h in Headers */,
+				207860261AD84F11000DC57F /* NSURLSession+TKCategory.h in Headers */,
 				200B63141AD804350049E35C /* TKShapeView.h in Headers */,
 				200B62961AD7FC5E0049E35C /* UIDevice+TKCategory.h in Headers */,
 				200B62F01AD7FEF80049E35C /* UIActionSheet+TKCategory.h in Headers */,
@@ -667,6 +674,7 @@
 				2078601D1AD84A87000DC57F /* TKCreditCardZipTextField.m in Sources */,
 				200B629E1AD7FD660049E35C /* NSObject+JSON.m in Sources */,
 				200B628B1AD7FC5E0049E35C /* NSString+TKCategory.m in Sources */,
+				207860271AD84F11000DC57F /* NSURLSession+TKCategory.m in Sources */,
 				200B63151AD804350049E35C /* TKShapeView.m in Sources */,
 				200B63131AD804350049E35C /* TKGradientView.m in Sources */,
 				20A75C691AD8332F00E2106A /* TKSectionedScrollView.m in Sources */,
