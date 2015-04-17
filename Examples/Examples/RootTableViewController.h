@@ -33,7 +33,6 @@
 
 @interface RootTableViewController : UITableViewController
 
-
 @property (nonatomic,strong) NSArray *items;
 
 @end
