@@ -19,6 +19,8 @@
 #import "NSMutableArray+TKCategory.h"
 #import "NSAttributedString+TKCategory.h"
 #import "NSMutableAttributedString+TKCategory.h"
+#import "NSBundle+TKCategory.h"
+#import "NSURLSession+TKCategory.h"
 
 // Categories -> UIKit -> Base
 #import "UIApplication+TKCategory.h"
