@@ -31,10 +31,6 @@
 
 #import "CreditCardEntryViewController.h"
 
-@interface CreditCardEntryViewController ()
-
-@end
-
 @implementation CreditCardEntryViewController
 
 - (void)viewDidLoad {

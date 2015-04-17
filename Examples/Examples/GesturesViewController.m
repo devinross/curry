@@ -31,10 +31,6 @@
 
 #import "GesturesViewController.h"
 
-@interface GesturesViewController ()
-
-@end
-
 @implementation GesturesViewController
 
 - (void) loadView{
@@ -51,7 +47,6 @@
         self.label.text = [NSString stringWithFormat:@"%@ (%.00f,%.00f)",@(state),location.x,location.y];
         
     }];
-    
     
     [self.view addGestureRecognizer:tap];
     

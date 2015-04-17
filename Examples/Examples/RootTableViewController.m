@@ -39,11 +39,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
     self.items = @[@"Credit Card Text Fields",@"Gestures"];
-    
     [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:IDENTIFIER];
-
 }
 
 
@@ -54,33 +51,26 @@
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-
     return self.items.count;
 }
 
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:IDENTIFIER forIndexPath:indexPath];
-    
-    
     cell.textLabel.text = self.items[indexPath.row];
-    
     return cell;
 }
 
 
 - (void) tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     
-    
     UIViewController *ctr;
     
     if(indexPath.row == 0)
         ctr = CreditCardEntryViewController.new;
-    
     else if(indexPath.row == 1)
         ctr = GesturesViewController.new;
 
-    
     [self.navigationController pushViewController:ctr animated:YES];
     
 }
