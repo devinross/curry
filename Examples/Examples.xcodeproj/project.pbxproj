@@ -13,6 +13,7 @@
 		20785FF61AD83D0C000DC57F /* curry.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20785FF31AD83CEE000DC57F /* curry.framework */; };
 		20785FF71AD83D0C000DC57F /* curry.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 20785FF31AD83CEE000DC57F /* curry.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		20785FFD1AD83DC1000DC57F /* CreditCardEntryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 20785FFC1AD83DC1000DC57F /* CreditCardEntryViewController.m */; };
+		20F19B1D1AE080F700077DA1 /* GesturesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 20F19B1C1AE080F700077DA1 /* GesturesViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +65,8 @@
 		20785FED1AD83CED000DC57F /* curry.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = curry.xcodeproj; path = ../curry.xcodeproj; sourceTree = "<group>"; };
 		20785FFB1AD83DC1000DC57F /* CreditCardEntryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CreditCardEntryViewController.h; sourceTree = "<group>"; };
 		20785FFC1AD83DC1000DC57F /* CreditCardEntryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CreditCardEntryViewController.m; sourceTree = "<group>"; };
+		20F19B1B1AE080F700077DA1 /* GesturesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GesturesViewController.h; sourceTree = "<group>"; };
+		20F19B1C1AE080F700077DA1 /* GesturesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GesturesViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +106,8 @@
 				20785FEB1AD83C63000DC57F /* RootTableViewController.m */,
 				20785FFB1AD83DC1000DC57F /* CreditCardEntryViewController.h */,
 				20785FFC1AD83DC1000DC57F /* CreditCardEntryViewController.m */,
+				20F19B1B1AE080F700077DA1 /* GesturesViewController.h */,
+				20F19B1C1AE080F700077DA1 /* GesturesViewController.m */,
 				20785FC21AD83BBE000DC57F /* Supporting Files */,
 			);
 			path = Examples;
@@ -220,6 +225,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				20F19B1D1AE080F700077DA1 /* GesturesViewController.m in Sources */,
 				20785FC51AD83BBE000DC57F /* AppDelegate.swift in Sources */,
 				20785FEC1AD83C63000DC57F /* RootTableViewController.m in Sources */,
 				20785FFD1AD83DC1000DC57F /* CreditCardEntryViewController.m in Sources */,
@@ -359,6 +365,7 @@
 				20785FE01AD83BBE000DC57F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

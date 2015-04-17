@@ -104,13 +104,15 @@
 		2078601B1AD84A87000DC57F /* TKCreditCardNumberTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 207860111AD84A87000DC57F /* TKCreditCardNumberTextField.m */; };
 		2078601C1AD84A87000DC57F /* TKCreditCardZipTextField.h in Headers */ = {isa = PBXBuildFile; fileRef = 207860121AD84A87000DC57F /* TKCreditCardZipTextField.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2078601D1AD84A87000DC57F /* TKCreditCardZipTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 207860131AD84A87000DC57F /* TKCreditCardZipTextField.m */; };
-		207860261AD84F11000DC57F /* NSURLSession+TKCategory.h in Headers */ = {isa = PBXBuildFile; fileRef = 207860241AD84F11000DC57F /* NSURLSession+TKCategory.h */; };
+		207860261AD84F11000DC57F /* NSURLSession+TKCategory.h in Headers */ = {isa = PBXBuildFile; fileRef = 207860241AD84F11000DC57F /* NSURLSession+TKCategory.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		207860271AD84F11000DC57F /* NSURLSession+TKCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 207860251AD84F11000DC57F /* NSURLSession+TKCategory.m */; };
 		20A75C5F1AD82C8500E2106A /* Headers.h in Headers */ = {isa = PBXBuildFile; fileRef = 20A75C5E1AD82C8500E2106A /* Headers.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		20A75C681AD8332F00E2106A /* TKSectionedScrollView.h in Headers */ = {isa = PBXBuildFile; fileRef = 20A75C661AD8332F00E2106A /* TKSectionedScrollView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		20A75C691AD8332F00E2106A /* TKSectionedScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 20A75C671AD8332F00E2106A /* TKSectionedScrollView.m */; };
 		20A75C851AD836DD00E2106A /* NSBundle+TKCategory.h in Headers */ = {isa = PBXBuildFile; fileRef = 20A75C831AD836DD00E2106A /* NSBundle+TKCategory.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		20A75C861AD836DD00E2106A /* NSBundle+TKCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 20A75C841AD836DD00E2106A /* NSBundle+TKCategory.m */; };
+		20F19B191AE07E8500077DA1 /* UIGestureRecognizer+Blocks.h in Headers */ = {isa = PBXBuildFile; fileRef = 20F19B171AE07E8500077DA1 /* UIGestureRecognizer+Blocks.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		20F19B1A1AE07E8500077DA1 /* UIGestureRecognizer+Blocks.m in Sources */ = {isa = PBXBuildFile; fileRef = 20F19B181AE07E8500077DA1 /* UIGestureRecognizer+Blocks.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -232,6 +234,8 @@
 		20A75C671AD8332F00E2106A /* TKSectionedScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TKSectionedScrollView.m; sourceTree = "<group>"; };
 		20A75C831AD836DD00E2106A /* NSBundle+TKCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSBundle+TKCategory.h"; sourceTree = "<group>"; };
 		20A75C841AD836DD00E2106A /* NSBundle+TKCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSBundle+TKCategory.m"; sourceTree = "<group>"; };
+		20F19B171AE07E8500077DA1 /* UIGestureRecognizer+Blocks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIGestureRecognizer+Blocks.h"; sourceTree = "<group>"; };
+		20F19B181AE07E8500077DA1 /* UIGestureRecognizer+Blocks.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIGestureRecognizer+Blocks.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -409,6 +413,8 @@
 				200B62BD1AD7FEF80049E35C /* UIColor+TKCategory.m */,
 				200B62C41AD7FEF80049E35C /* UIGestureRecognizer+TKCategory.h */,
 				200B62C51AD7FEF80049E35C /* UIGestureRecognizer+TKCategory.m */,
+				20F19B171AE07E8500077DA1 /* UIGestureRecognizer+Blocks.h */,
+				20F19B181AE07E8500077DA1 /* UIGestureRecognizer+Blocks.m */,
 			);
 			path = Elements;
 			sourceTree = "<group>";
@@ -515,7 +521,6 @@
 				200B62741AD7FBDC0049E35C /* TKFoundation.h in Headers */,
 				200B62F41AD7FEF80049E35C /* UINavigationBar+TKCategory.h in Headers */,
 				200B628E1AD7FC5E0049E35C /* NSMutableArray+TKCategory.h in Headers */,
-				207860261AD84F11000DC57F /* NSURLSession+TKCategory.h in Headers */,
 				200B63141AD804350049E35C /* TKShapeView.h in Headers */,
 				200B62961AD7FC5E0049E35C /* UIDevice+TKCategory.h in Headers */,
 				200B62F01AD7FEF80049E35C /* UIActionSheet+TKCategory.h in Headers */,
@@ -556,6 +561,8 @@
 				2078601C1AD84A87000DC57F /* TKCreditCardZipTextField.h in Headers */,
 				207860181AD84A87000DC57F /* TKCreditCardExpirationTextField.h in Headers */,
 				200B62E81AD7FEF80049E35C /* UIViewController+TKCategory.h in Headers */,
+				207860261AD84F11000DC57F /* NSURLSession+TKCategory.h in Headers */,
+				20F19B191AE07E8500077DA1 /* UIGestureRecognizer+Blocks.h in Headers */,
 				200B629D1AD7FD660049E35C /* NSObject+JSON.h in Headers */,
 				200B62981AD7FC5E0049E35C /* UIView+TKCategory.h in Headers */,
 				200B62DE1AD7FEF80049E35C /* UIColor+TKCategory.h in Headers */,
@@ -659,6 +666,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				200B62EF1AD7FEF80049E35C /* UIAlertView+TKCategory.m in Sources */,
+				20F19B1A1AE07E8500077DA1 /* UIGestureRecognizer+Blocks.m in Sources */,
 				200B631B1AD804400049E35C /* TKExtendedScrollView.m in Sources */,
 				200B62DF1AD7FEF80049E35C /* UIColor+TKCategory.m in Sources */,
 				200B62E31AD7FEF80049E35C /* UIBarButtonItem+TKCategory.m in Sources */,
@@ -831,6 +839,10 @@
 				INFOPLIST_FILE = "curry/Supporting Files/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-all_load",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 			};
@@ -846,6 +858,10 @@
 				INFOPLIST_FILE = "curry/Supporting Files/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-all_load",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 			};

@@ -1,6 +1,6 @@
 //
-//  UIGestureRecognizer+TKCategory.m
-//  Created by Devin Ross on 7/25/13.
+//  UIGestureRecognizer+Blocks.h
+//  Created by Devin Ross on 4/16/15.
 //
 /*
  
@@ -29,32 +29,15 @@
  
  */
 
-#import "UIGestureRecognizer+TKCategory.h"
+@import UIKit;
 
-@implementation UIGestureRecognizer (TKCategory)
+@interface UIGestureRecognizer (Blocks)
 
-- (BOOL) began{
-	return self.state == UIGestureRecognizerStateBegan;
-}
++ (instancetype) recognizerWithHandler:(void (^)(UIGestureRecognizer *sender, UIGestureRecognizerState state, CGPoint location))block;
 
-- (BOOL) changed{
-	return self.state == UIGestureRecognizerStateChanged;
-}
+- (instancetype) initWithHandler:(void (^)(UIGestureRecognizer *sender, UIGestureRecognizerState state, CGPoint location))block NS_REPLACES_RECEIVER;
 
-- (BOOL) ended{
-	return self.state == UIGestureRecognizerStateEnded;
-}
+@property (nonatomic, copy, setter = setHandler:) void (^handler)(UIGestureRecognizer *sender, UIGestureRecognizerState state, CGPoint location);
 
-- (BOOL) cancelled{
-	return self.state == UIGestureRecognizerStateCancelled;
-}
-
-- (BOOL) failed{
-	return self.state == UIGestureRecognizerStateFailed;
-}
-
-- (BOOL) possible{
-	return self.state == UIGestureRecognizerStatePossible;
-}
 
 @end

@@ -1,6 +1,6 @@
 //
-//  UIGestureRecognizer+TKCategory.m
-//  Created by Devin Ross on 7/25/13.
+//  GesturesViewController.h
+//  Created by Devin Ross on 4/16/15.
 //
 /*
  
@@ -29,32 +29,11 @@
  
  */
 
-#import "UIGestureRecognizer+TKCategory.h"
+@import UIKit;
+@import curry;
 
-@implementation UIGestureRecognizer (TKCategory)
+@interface GesturesViewController : UIViewController
 
-- (BOOL) began{
-	return self.state == UIGestureRecognizerStateBegan;
-}
-
-- (BOOL) changed{
-	return self.state == UIGestureRecognizerStateChanged;
-}
-
-- (BOOL) ended{
-	return self.state == UIGestureRecognizerStateEnded;
-}
-
-- (BOOL) cancelled{
-	return self.state == UIGestureRecognizerStateCancelled;
-}
-
-- (BOOL) failed{
-	return self.state == UIGestureRecognizerStateFailed;
-}
-
-- (BOOL) possible{
-	return self.state == UIGestureRecognizerStatePossible;
-}
+@property (nonatomic,strong) UILabel *label;
 
 @end

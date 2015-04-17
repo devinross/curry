@@ -54,6 +54,8 @@
 #import "CAAnimation+TKAnimation.h"
 #import "UIView+Material.h"
 
+#import "UIGestureRecognizer+Blocks.h"
+
 // ViewControllers
 #import "TKCardModalViewController.h"
 #import "TKTableViewController.h"

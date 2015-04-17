@@ -1,6 +1,6 @@
 //
-//  UIGestureRecognizer+TKCategory.m
-//  Created by Devin Ross on 7/25/13.
+//  GesturesViewController.m
+//  Created by Devin Ross on 4/16/15.
 //
 /*
  
@@ -29,32 +29,33 @@
  
  */
 
-#import "UIGestureRecognizer+TKCategory.h"
+#import "GesturesViewController.h"
 
-@implementation UIGestureRecognizer (TKCategory)
+@interface GesturesViewController ()
 
-- (BOOL) began{
-	return self.state == UIGestureRecognizerStateBegan;
-}
+@end
 
-- (BOOL) changed{
-	return self.state == UIGestureRecognizerStateChanged;
-}
+@implementation GesturesViewController
 
-- (BOOL) ended{
-	return self.state == UIGestureRecognizerStateEnded;
-}
-
-- (BOOL) cancelled{
-	return self.state == UIGestureRecognizerStateCancelled;
-}
-
-- (BOOL) failed{
-	return self.state == UIGestureRecognizerStateFailed;
-}
-
-- (BOOL) possible{
-	return self.state == UIGestureRecognizerStatePossible;
+- (void) loadView{
+    [super loadView];
+    
+    self.view.backgroundColor = [UIColor whiteColor];
+    
+    self.label = [[UILabel alloc] initWithFrame:CGRectMake(0, CGFrameGetHeight(self.view)-60, CGFrameGetWidth(self.view), 60)];
+    self.label.textAlignment = NSTextAlignmentCenter;
+    [self.view addSubview:self.label];
+    
+    UIPanGestureRecognizer *tap = [UIPanGestureRecognizer recognizerWithHandler:^(UIGestureRecognizer *sender, UIGestureRecognizerState state, CGPoint location){
+        
+        self.label.text = [NSString stringWithFormat:@"%@ (%.00f,%.00f)",@(state),location.x,location.y];
+        
+    }];
+    
+    
+    [self.view addGestureRecognizer:tap];
+    
+    
 }
 
 @end
