@@ -29,13 +29,10 @@
  
  */
 
-
-@import Foundation;
 @import UIKit;
 
 /** Additional functionality for `UIBarButtonItem`.  */
 @interface UIBarButtonItem (TKCategory)
-
 
 
 /** Creates and returns a bar button item object using with a button with the specified properties.
