@@ -42,6 +42,7 @@
 #import "UIFont+TKCategory.h"
 #import "UIColor+TKCategory.h"
 #import "UIGestureRecognizer+TKCategory.h"
+#import "UIGestureRecognizer+Blocks.h"
 
 // Categories -> UIKit -> Controllers
 #import "UIImagePickerController+TKCategory.h"

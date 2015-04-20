@@ -92,24 +92,53 @@ FOUNDATION_STATIC_INLINE CGRect CGRectCompose(CGPoint origin, CGSize size){
 	CGRect r; r.origin = origin; r.size = size; return r;
 }
 
-FOUNDATION_STATIC_INLINE CGRect CGRectCenteredInRect(CGRect parentRect, CGSize size);
-FOUNDATION_STATIC_INLINE CGRect CGRectCenteredInRect(CGRect parentRect, CGSize size){
+
+
+
+FOUNDATION_STATIC_INLINE CGRect CGRectCenteredInRect(CGRect parentRect, CGFloat width, CGFloat height);
+FOUNDATION_STATIC_INLINE CGRect CGRectCenteredInRect(CGRect parentRect, CGFloat width, CGFloat height){
+    CGFloat minX = CGRectGetMinX(parentRect) + round((CGRectGetWidth(parentRect) - width) / 2);
+    CGFloat minY = CGRectGetMinY(parentRect) + round((CGRectGetHeight(parentRect) - height) / 2);
+    return CGRectMake(minX, minY, width, height);
+}
+
+FOUNDATION_STATIC_INLINE CGRect CGRectCenteredXInRect(CGRect parentRect, CGFloat originY, CGFloat width, CGFloat height);
+FOUNDATION_STATIC_INLINE CGRect CGRectCenteredXInRect(CGRect parentRect, CGFloat originY, CGFloat width, CGFloat height){
+    CGFloat minX = CGRectGetMinX(parentRect) + round((CGRectGetWidth(parentRect) - width) / 2);
+    return CGRectMake(minX, originY, width, height);
+}
+
+FOUNDATION_STATIC_INLINE CGRect CGRectCenteredYInRect(CGRect parentRect, CGFloat originX, CGFloat width, CGFloat height);
+FOUNDATION_STATIC_INLINE CGRect CGRectCenteredYInRect(CGRect parentRect, CGFloat originX, CGFloat width, CGFloat height){
+    CGFloat minY = CGRectGetMinY(parentRect) + round((CGRectGetHeight(parentRect) - height) / 2);
+    return CGRectMake(originX, minY, width, height);
+}
+
+
+
+
+FOUNDATION_STATIC_INLINE CGRect CGRectCenteredInRectWithSize(CGRect parentRect, CGSize size);
+FOUNDATION_STATIC_INLINE CGRect CGRectCenteredInRectWithSize(CGRect parentRect, CGSize size){
     CGFloat minX = CGRectGetMinX(parentRect) + round((CGRectGetWidth(parentRect) - size.width) / 2);
     CGFloat minY = CGRectGetMinY(parentRect) + round((CGRectGetHeight(parentRect) - size.height) / 2);
     return CGRectMakeWithSize(minX, minY, size);
 }
 
-FOUNDATION_STATIC_INLINE CGRect CGRectCenteredXInRect(CGRect parentRect, CGFloat originY, CGSize size);
-FOUNDATION_STATIC_INLINE CGRect CGRectCenteredXInRect(CGRect parentRect, CGFloat originY, CGSize size){
+FOUNDATION_STATIC_INLINE CGRect CGRectCenteredXInRectWithSize(CGRect parentRect, CGFloat originY, CGSize size);
+FOUNDATION_STATIC_INLINE CGRect CGRectCenteredXInRectWithSize(CGRect parentRect, CGFloat originY, CGSize size){
     CGFloat minX = CGRectGetMinX(parentRect) + round((CGRectGetWidth(parentRect) - size.width) / 2);
     return CGRectMakeWithSize(minX, originY, size);
 }
 
-FOUNDATION_STATIC_INLINE CGRect CGRectCenteredYInRect(CGRect parentRect, CGFloat originX, CGSize size);
-FOUNDATION_STATIC_INLINE CGRect CGRectCenteredYInRect(CGRect parentRect, CGFloat originX, CGSize size){
+FOUNDATION_STATIC_INLINE CGRect CGRectCenteredYInRectWithSize(CGRect parentRect, CGFloat originX, CGSize size);
+FOUNDATION_STATIC_INLINE CGRect CGRectCenteredYInRectWithSize(CGRect parentRect, CGFloat originX, CGSize size){
     CGFloat minY = CGRectGetMinY(parentRect) + round((CGRectGetHeight(parentRect) - size.height) / 2);
     return CGRectMakeWithSize(originX, minY, size);
 }
+
+
+
+
 
 FOUNDATION_STATIC_INLINE CGPoint CGPointGetMidpoint(CGPoint p1,CGPoint p2);
 FOUNDATION_STATIC_INLINE CGPoint CGPointGetMidpoint(CGPoint p1,CGPoint p2){
