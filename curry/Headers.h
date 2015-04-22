@@ -55,7 +55,6 @@
 #import "CALayer+TKAnimation.h"
 #import "CAKeyframeAnimation+TKAnimation.h"
 #import "CAAnimation+TKAnimation.h"
-#import "UIView+Material.h"
 
 #import "UIGestureRecognizer+Blocks.h"
 

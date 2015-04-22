@@ -37,8 +37,6 @@
 		200B62AC1AD7FE0D0049E35C /* CAKeyframeAnimation+TKAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 200B62A41AD7FE0D0049E35C /* CAKeyframeAnimation+TKAnimation.m */; };
 		200B62AD1AD7FE0D0049E35C /* CAAnimation+TKAnimation.h in Headers */ = {isa = PBXBuildFile; fileRef = 200B62A51AD7FE0D0049E35C /* CAAnimation+TKAnimation.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		200B62AE1AD7FE0D0049E35C /* CAAnimation+TKAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 200B62A61AD7FE0D0049E35C /* CAAnimation+TKAnimation.m */; };
-		200B62B21AD7FE370049E35C /* UIView+Material.h in Headers */ = {isa = PBXBuildFile; fileRef = 200B62B01AD7FE370049E35C /* UIView+Material.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		200B62B31AD7FE370049E35C /* UIView+Material.m in Sources */ = {isa = PBXBuildFile; fileRef = 200B62B11AD7FE370049E35C /* UIView+Material.m */; };
 		200B62D61AD7FEF80049E35C /* UIImage+TKCategory.h in Headers */ = {isa = PBXBuildFile; fileRef = 200B62B41AD7FEF80049E35C /* UIImage+TKCategory.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		200B62D71AD7FEF80049E35C /* UIImage+TKCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 200B62B51AD7FEF80049E35C /* UIImage+TKCategory.m */; };
 		200B62D81AD7FEF80049E35C /* UITextField+TKCategory.h in Headers */ = {isa = PBXBuildFile; fileRef = 200B62B61AD7FEF80049E35C /* UITextField+TKCategory.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -159,8 +157,6 @@
 		200B62A41AD7FE0D0049E35C /* CAKeyframeAnimation+TKAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CAKeyframeAnimation+TKAnimation.m"; sourceTree = "<group>"; };
 		200B62A51AD7FE0D0049E35C /* CAAnimation+TKAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CAAnimation+TKAnimation.h"; sourceTree = "<group>"; };
 		200B62A61AD7FE0D0049E35C /* CAAnimation+TKAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CAAnimation+TKAnimation.m"; sourceTree = "<group>"; };
-		200B62B01AD7FE370049E35C /* UIView+Material.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Material.h"; sourceTree = "<group>"; };
-		200B62B11AD7FE370049E35C /* UIView+Material.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Material.m"; sourceTree = "<group>"; };
 		200B62B41AD7FEF80049E35C /* UIImage+TKCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+TKCategory.h"; sourceTree = "<group>"; };
 		200B62B51AD7FEF80049E35C /* UIImage+TKCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+TKCategory.m"; sourceTree = "<group>"; };
 		200B62B61AD7FEF80049E35C /* UITextField+TKCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextField+TKCategory.h"; sourceTree = "<group>"; };
@@ -345,8 +341,6 @@
 				200B62A41AD7FE0D0049E35C /* CAKeyframeAnimation+TKAnimation.m */,
 				200B62A51AD7FE0D0049E35C /* CAAnimation+TKAnimation.h */,
 				200B62A61AD7FE0D0049E35C /* CAAnimation+TKAnimation.m */,
-				200B62B01AD7FE370049E35C /* UIView+Material.h */,
-				200B62B11AD7FE370049E35C /* UIView+Material.m */,
 			);
 			path = Animations;
 			sourceTree = "<group>";
@@ -542,7 +536,6 @@
 				200B631C1AD804400049E35C /* TKSoundAlertController.h in Headers */,
 				200B62EE1AD7FEF80049E35C /* UIAlertView+TKCategory.h in Headers */,
 				200B62941AD7FC5E0049E35C /* NSMutableAttributedString+TKCategory.h in Headers */,
-				200B62B21AD7FE370049E35C /* UIView+Material.h in Headers */,
 				200B62A91AD7FE0D0049E35C /* CALayer+TKAnimation.h in Headers */,
 				200B628A1AD7FC5E0049E35C /* NSString+TKCategory.h in Headers */,
 				200B62AD1AD7FE0D0049E35C /* CAAnimation+TKAnimation.h in Headers */,
@@ -700,7 +693,6 @@
 				200B62971AD7FC5E0049E35C /* UIDevice+TKCategory.m in Sources */,
 				200B63211AD804E30049E35C /* TKCardModalViewController.m in Sources */,
 				200B62E71AD7FEF80049E35C /* UIGestureRecognizer+TKCategory.m in Sources */,
-				200B62B31AD7FE370049E35C /* UIView+Material.m in Sources */,
 				200B62A81AD7FE0D0049E35C /* UIView+TKAnimation.m in Sources */,
 				200B62DD1AD7FEF80049E35C /* UIButton+TKCategory.m in Sources */,
 				200B62D91AD7FEF80049E35C /* UITextField+TKCategory.m in Sources */,
