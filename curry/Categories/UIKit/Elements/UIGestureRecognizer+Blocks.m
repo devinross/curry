@@ -17,11 +17,11 @@ static const void *UIGestureRecognizerHandlerBlockKey = &UIGestureRecognizerHand
 
 @implementation UIGestureRecognizer (Blocks)
 
-+ (instancetype) recognizerWithHandler:(void (^)(UIGestureRecognizer *sender, UIGestureRecognizerState state, CGPoint location))block{
++ (instancetype) recognizerWithHandler:(void (^)(UIGestureRecognizer *sender))block{
     return [[[self class] alloc] initWithHandler:block];
 }
 
-- (instancetype) initWithHandler:(void (^)(UIGestureRecognizer *sender, UIGestureRecognizerState state, CGPoint location))block{
+- (instancetype) initWithHandler:(void (^)(UIGestureRecognizer *sender))block{
     if(!(self=[self initWithTarget:self action:@selector(handleAction:)])) return nil;
     self.handler = block;
     return self;
@@ -31,12 +31,11 @@ static const void *UIGestureRecognizerHandlerBlockKey = &UIGestureRecognizerHand
 
 
 - (void) handleAction:(UIGestureRecognizer *)recognizer{
-    void (^handler)(UIGestureRecognizer *sender, UIGestureRecognizerState state, CGPoint location) = recognizer.handler;
+    void (^handler)(UIGestureRecognizer *sender) = recognizer.handler;
     if (!handler) return;
     
-    CGPoint location = [self locationInView:self.view];
     void (^block)(void) = ^{
-        handler(self, self.state, location);
+        handler(self);
     };
     
     block();
@@ -44,11 +43,11 @@ static const void *UIGestureRecognizerHandlerBlockKey = &UIGestureRecognizerHand
 
 }
 
-- (void) setHandler:(void (^)(UIGestureRecognizer *sender, UIGestureRecognizerState state, CGPoint location))handler{
+- (void) setHandler:(void (^)(UIGestureRecognizer *sender))handler{
     objc_setAssociatedObject(self, UIGestureRecognizerHandlerBlockKey, handler, OBJC_ASSOCIATION_COPY_NONATOMIC);
 }
 
-- (void (^)(UIGestureRecognizer *sender, UIGestureRecognizerState state, CGPoint location)) handler{
+- (void (^)(UIGestureRecognizer *sender)) handler{
     return objc_getAssociatedObject(self, UIGestureRecognizerHandlerBlockKey);
 }
 

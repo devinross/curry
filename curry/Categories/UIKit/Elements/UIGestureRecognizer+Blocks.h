@@ -33,11 +33,11 @@
 
 @interface UIGestureRecognizer (Blocks)
 
-+ (instancetype) recognizerWithHandler:(void (^)(UIGestureRecognizer *sender, UIGestureRecognizerState state, CGPoint location))block;
++ (instancetype) recognizerWithHandler:(void (^)(UIGestureRecognizer *sender))block;
 
-- (instancetype) initWithHandler:(void (^)(UIGestureRecognizer *sender, UIGestureRecognizerState state, CGPoint location))block NS_REPLACES_RECEIVER;
+- (instancetype) initWithHandler:(void (^)(UIGestureRecognizer *sender))block NS_REPLACES_RECEIVER;
 
-@property (nonatomic, copy, setter = setHandler:) void (^handler)(UIGestureRecognizer *sender, UIGestureRecognizerState state, CGPoint location);
+@property (nonatomic, copy, setter = setHandler:) void (^handler)(UIGestureRecognizer *sender);
 
 
 @end
