@@ -9,11 +9,6 @@
 
 static const void *UIGestureRecognizerHandlerBlockKey = &UIGestureRecognizerHandlerBlockKey;
 
-@interface UIGestureRecognizer (BlocksKitInternal)
-
-- (void) handleAction:(UIGestureRecognizer *)recognizer;
-
-@end
 
 @implementation UIGestureRecognizer (Blocks)
 
@@ -26,8 +21,6 @@ static const void *UIGestureRecognizerHandlerBlockKey = &UIGestureRecognizerHand
     self.handler = block;
     return self;
 }
-
-
 
 
 - (void) handleAction:(UIGestureRecognizer *)recognizer{

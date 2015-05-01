@@ -61,8 +61,6 @@ static const CGFloat _minimumVelocityRequiredForPush = 50.0f;	// defines how muc
 
 - (instancetype) init{
 	if(!(self=[super init])) return nil;
-	self.modalPresentationStyle = UIModalPresentationCustom;
-	self.transitioningDelegate = self;
 	self.tapToDismissEnabled = YES;
 	self.throwToDismissEnabled = YES;
 	return self;
@@ -331,22 +329,11 @@ static const CGFloat _minimumVelocityRequiredForPush = 50.0f;	// defines how muc
 
 
 #pragma mark UIViewControllerTransitioningDelegate
-- (NSTimeInterval) transitionDuration:(id<UIViewControllerContextTransitioning>)transitionContext{
+- (void) presentTransitionAnimation:(id<UIViewControllerContextTransitioning>)transitionContext containerView:(UIView *)containerView fromViewController:(UIViewController *)viewController{
+    
+	[containerView addSubview:self.view];
 	
-	UIViewController *toVC = [transitionContext viewControllerForKey:UITransitionContextToViewControllerKey];
-	
-	if([toVC isKindOfClass:[self class]])
-		return 0.8f;
-	return 0.4f + 0.5f;
-}
-- (void) showAlertView:(id<UIViewControllerContextTransitioning>)transitionContext{
-	
-	UIViewController *toVC = [transitionContext viewControllerForKey:UITransitionContextToViewControllerKey];
-	
-	UIView *containerView = [transitionContext containerView];
-	[containerView addSubview:toVC.view];
-	
-	toVC.view.frame = CGRectMake(0, 0, CGRectGetWidth(containerView.frame), CGRectGetHeight(containerView.frame));
+	self.view.frame = CGRectMake(0, 0, CGRectGetWidth(containerView.frame), CGRectGetHeight(containerView.frame));
 	
 	CGFloat originalX = self.contentView.center.x;
 	CGFloat originalMinX = CGFrameGetMinX(self.contentView);
@@ -354,22 +341,20 @@ static const CGFloat _minimumVelocityRequiredForPush = 50.0f;	// defines how muc
 	self.contentView.center = CGPointMake(originalX, -300);
 	self.contentView.transform = CGRotate(-10 * M_PI / 180.0f);
 	
-	[UIView animateWithDuration:0.4 animations:^{
-		self.backgroundView.alpha = 1;
-	}];
+	[UIView animateWithDuration:0.4 animations:^{ self.backgroundView.alpha = 1; }];
 	
 	[UIView animateWithDuration:[self transitionDuration:transitionContext] delay:0.0 usingSpringWithDamping:0.7 initialSpringVelocity:0.3 options:0 animations:^{
 		self.contentView.transform = CGAffineTransformIdentity;
 		NSInteger y = (CGRectGetHeight(self.visibleFrame) - CGFrameGetHeight(self.contentView)) / 2;
 		self.contentView.frame = CGRectMake(originalMinX, y, CGFrameGetWidth(self.contentView), CGFrameGetHeight(self.contentView));
 	} completion:^(BOOL finished) {
-		[transitionContext completeTransition:YES];
+        [self transitionEnded];
 	}];
 	
 }
-- (void) hideAlertView:(id<UIViewControllerContextTransitioning>)transitionContext{
+- (void) dismissTransitionAnimation:(id<UIViewControllerContextTransitioning>)transitionContext containerView:(UIView *)containerView toViewController:(UIViewController *)viewController{
 	
-	if(self.contentView.superview){
+    if(self.contentView.superview){
 		
 		if(!self.animator)
 			self.animator = [[UIDynamicAnimator alloc] initWithReferenceView:self.view];
@@ -397,27 +382,12 @@ static const CGFloat _minimumVelocityRequiredForPush = 50.0f;	// defines how muc
 		self.backgroundView.alpha = 0;
 	} completion:^(BOOL finished){
 		[self.view removeFromSuperview];
-		[transitionContext completeTransition:YES];
+        [self transitionEnded];
 	}];
 	
 }
-- (void) animateTransition:(id<UIViewControllerContextTransitioning>)transitionContext{
-	
-	UIViewController *toVC = [transitionContext viewControllerForKey:UITransitionContextToViewControllerKey];
-	
-	if([toVC isKindOfClass:[self class]])
-		[self showAlertView:transitionContext];
-	else
-		[self hideAlertView:transitionContext];
-	
-}
 
-- (id <UIViewControllerAnimatedTransitioning>) animationControllerForPresentedController:(UIViewController *)presented presentingController:(UIViewController *)presenting sourceController:(UIViewController *)source{
-	return self;
-}
-- (id <UIViewControllerAnimatedTransitioning>) animationControllerForDismissedController:(UIViewController *)dismissed{
-	return self;
-}
+
 - (void) collisionBehavior:(UICollisionBehavior*)behavior beganContactForItem:(id<UIDynamicItem>)item withBoundaryIdentifier:(id<NSCopying>)identifier atPoint:(CGPoint)p{
 	[self.animator removeAllBehaviors];
 	[self.contentView removeFromSuperview];

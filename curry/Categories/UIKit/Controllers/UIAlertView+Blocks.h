@@ -1,6 +1,6 @@
 //
-//  TKCardModalViewController.h
-//  Created by Devin Ross on 10/13/14.
+//  UIAlertView+Blocks.h
+//  Created by Devin Ross on 5/1/15.
 //
 /*
  
@@ -30,24 +30,15 @@
  */
 
 @import UIKit;
-#import "TKCustomPresentationViewController.h"
 
-@interface TKCardModalViewController : TKCustomPresentationViewController <UICollisionBehaviorDelegate>
+@interface UIAlertView (Blocks) <UIAlertViewDelegate>
 
-@property (nonatomic,strong) UIView *contentView;
-@property (nonatomic,strong) UIView *backgroundView;
-@property (nonatomic,assign) BOOL throwToDismissEnabled;
-@property (nonatomic,assign) BOOL tapToDismissEnabled;
-@property (nonatomic,assign) BOOL onlyAllowTapOffCardToDismiss;
++ (UIAlertView*) alertWithTitle:(NSString*)title message:(NSString*)message;
 
-@property (nonatomic,assign) CGRect visibleFrame;
+- (instancetype) initWithTitle:(NSString *)title messsge:(NSString*)message;
 
-- (void) keyboardWillShow:(NSNotification*)notification;
-- (void) keyboardWillHide:(NSNotification*)notification;
+- (void) addButtonWithTitle:(NSString*)title handler:(void (^)(UIAlertView *sender))block;
 
-- (void) show;
-- (void) hide;
-
-- (void) tapped:(UITapGestureRecognizer*)sender;
+- (void) addCancelButtonWithTitle:(NSString*)title handler:(void (^)(UIAlertView *sender))block;
 
 @end

@@ -37,7 +37,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
     
     var rootViewController: RootTableViewController?
-
     var navViewController: UINavigationController?
 
 

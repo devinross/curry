@@ -35,9 +35,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
-    
     self.view.backgroundColor = [UIColor whiteColor];
+    
     self.numberField = [[TKCreditCardNumberTextField alloc] initWithFrame:CGRectMake(20, 100, CGFrameGetWidth(self.view)-40, 60)];
     self.numberField.backgroundColor = [UIColor colorWithWhite:0.93 alpha:1];
     [self.view addSubview:self.numberField];

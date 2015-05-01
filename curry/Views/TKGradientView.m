@@ -42,8 +42,6 @@
     return (CAGradientLayer *)self.layer;
 }
 
-
-
 - (NSArray *) colors{
     NSArray *cgColors = [self _gradientLayer].colors;
     

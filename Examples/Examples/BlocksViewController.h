@@ -1,6 +1,6 @@
 //
-//  TKCardModalViewController.h
-//  Created by Devin Ross on 10/13/14.
+//  ActionSheetBlockViewController.h
+//  Created by Devin Ross on 5/1/15.
 //
 /*
  
@@ -30,24 +30,8 @@
  */
 
 @import UIKit;
-#import "TKCustomPresentationViewController.h"
+@import curry;
 
-@interface TKCardModalViewController : TKCustomPresentationViewController <UICollisionBehaviorDelegate>
-
-@property (nonatomic,strong) UIView *contentView;
-@property (nonatomic,strong) UIView *backgroundView;
-@property (nonatomic,assign) BOOL throwToDismissEnabled;
-@property (nonatomic,assign) BOOL tapToDismissEnabled;
-@property (nonatomic,assign) BOOL onlyAllowTapOffCardToDismiss;
-
-@property (nonatomic,assign) CGRect visibleFrame;
-
-- (void) keyboardWillShow:(NSNotification*)notification;
-- (void) keyboardWillHide:(NSNotification*)notification;
-
-- (void) show;
-- (void) hide;
-
-- (void) tapped:(UITapGestureRecognizer*)sender;
+@interface BlocksViewController : UIViewController
 
 @end

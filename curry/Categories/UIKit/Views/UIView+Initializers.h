@@ -1,6 +1,6 @@
 //
-//  TKCardModalViewController.h
-//  Created by Devin Ross on 10/13/14.
+//  UIView+Initializers.h
+//  Created by Devin Ross on 4/17/15.
 //
 /*
  
@@ -30,24 +30,23 @@
  */
 
 @import UIKit;
-#import "TKCustomPresentationViewController.h"
 
-@interface TKCardModalViewController : TKCustomPresentationViewController <UICollisionBehaviorDelegate>
+@interface UIView (Initializers)
 
-@property (nonatomic,strong) UIView *contentView;
-@property (nonatomic,strong) UIView *backgroundView;
-@property (nonatomic,assign) BOOL throwToDismissEnabled;
-@property (nonatomic,assign) BOOL tapToDismissEnabled;
-@property (nonatomic,assign) BOOL onlyAllowTapOffCardToDismiss;
++ (instancetype) viewWithFrame:(CGRect)frame;
 
-@property (nonatomic,assign) CGRect visibleFrame;
++ (instancetype) viewWithFrame:(CGRect)frame backgroundColor:(UIColor*)backgroundColor;
 
-- (void) keyboardWillShow:(NSNotification*)notification;
-- (void) keyboardWillHide:(NSNotification*)notification;
+- (instancetype) initWithFrame:(CGRect)frame backgroundColor:(UIColor*)backgroundColor;
 
-- (void) show;
-- (void) hide;
++ (instancetype) viewWithFrame:(CGRect)frame backgroundColor:(UIColor*)backgroundColor cornerRadius:(CGFloat)cornerRadius;
 
-- (void) tapped:(UITapGestureRecognizer*)sender;
+- (instancetype) initWithFrame:(CGRect)frame backgroundColor:(UIColor*)backgroundColor cornerRadius:(CGFloat)cornerRadius;
+
+
++ (instancetype) viewWithFrame:(CGRect)frame backgroundColor:(UIColor*)backgroundColor cornerRadius:(CGFloat)cornerRadius borderColor:(UIColor*)borderColor borderWidth:(CGFloat)borderWidth;
+
+- (instancetype) initWithFrame:(CGRect)frame backgroundColor:(UIColor*)backgroundColor cornerRadius:(CGFloat)cornerRadius borderColor:(UIColor*)borderColor borderWidth:(CGFloat)borderWidth;
+
 
 @end

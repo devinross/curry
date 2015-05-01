@@ -42,14 +42,10 @@
     self.label.textAlignment = NSTextAlignmentCenter;
     [self.view addSubview:self.label];
     
-    UIPanGestureRecognizer *tap = [UIPanGestureRecognizer recognizerWithHandler:^(UIGestureRecognizer *sender, UIGestureRecognizerState state, CGPoint location){
-        
-        self.label.text = [NSString stringWithFormat:@"%@ (%.00f,%.00f)",@(state),location.x,location.y];
-        
+    UIPanGestureRecognizer *tap = [UIPanGestureRecognizer recognizerWithHandler:^(UIGestureRecognizer *sender){
+        self.label.text = [NSString stringWithFormat:@"%@ (%.00f,%.00f)",@(sender.state),[sender locationInView:self.view].x,[sender locationInView:self.view].y];
     }];
-    
     [self.view addGestureRecognizer:tap];
-    
     
 }
 

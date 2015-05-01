@@ -31,8 +31,6 @@
 
 #import "TKTableViewController.h"
 
-
-
 @interface TKTableViewController () {
 @private
 	CGPoint _tableViewContentOffset;

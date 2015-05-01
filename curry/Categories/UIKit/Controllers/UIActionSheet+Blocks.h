@@ -1,6 +1,6 @@
 //
-//  TKCardModalViewController.h
-//  Created by Devin Ross on 10/13/14.
+//  UIActionSheet+Blocks.h
+//  Created by Devin Ross on 5/1/15.
 //
 /*
  
@@ -30,24 +30,14 @@
  */
 
 @import UIKit;
-#import "TKCustomPresentationViewController.h"
 
-@interface TKCardModalViewController : TKCustomPresentationViewController <UICollisionBehaviorDelegate>
+@interface UIActionSheet (Blocks) <UIActionSheetDelegate>
 
-@property (nonatomic,strong) UIView *contentView;
-@property (nonatomic,strong) UIView *backgroundView;
-@property (nonatomic,assign) BOOL throwToDismissEnabled;
-@property (nonatomic,assign) BOOL tapToDismissEnabled;
-@property (nonatomic,assign) BOOL onlyAllowTapOffCardToDismiss;
++ (UIActionSheet*) sheetWithTitle:(NSString*)title;
+- (instancetype) initWithTitle:(NSString *)title;
 
-@property (nonatomic,assign) CGRect visibleFrame;
-
-- (void) keyboardWillShow:(NSNotification*)notification;
-- (void) keyboardWillHide:(NSNotification*)notification;
-
-- (void) show;
-- (void) hide;
-
-- (void) tapped:(UITapGestureRecognizer*)sender;
+- (void) addButtonWithTitle:(NSString*)title handler:(void (^)(UIActionSheet *sender))block;
+- (void) addCancelButtonWithTitle:(NSString*)title handler:(void (^)(UIActionSheet *sender))block;
+- (void) addDestructiveButtonWithTitle:(NSString*)title handler:(void (^)(UIActionSheet *sender))block;
 
 @end

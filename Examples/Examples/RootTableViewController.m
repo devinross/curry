@@ -32,6 +32,7 @@
 #import "RootTableViewController.h"
 #import "CreditCardEntryViewController.h"
 #import "GesturesViewController.h"
+#import "BlocksViewController.h"
 
 @implementation RootTableViewController
 
@@ -39,37 +40,44 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.items = @[@"Credit Card Text Fields",@"Gestures"];
+    self.items = @[@"Card Modal",@"Credit Card Text Fields",@"Gestures",@"Action Sheet Block"];
     [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:IDENTIFIER];
 }
 
 
 #pragma mark - Table view data source
-
-- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
+- (NSInteger) numberOfSectionsInTableView:(UITableView *)tableView {
     return 1;
 }
-
-- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+- (NSInteger) tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     return self.items.count;
 }
-
-
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+- (UITableViewCell *) tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:IDENTIFIER forIndexPath:indexPath];
     cell.textLabel.text = self.items[indexPath.row];
     return cell;
 }
-
-
 - (void) tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     
     UIViewController *ctr;
     
-    if(indexPath.row == 0)
+    
+    if(indexPath.row == 0){
+        [tableView deselectRowAtIndexPath:indexPath animated:YES];
+        TKCardModalViewController *card = [[TKCardModalViewController alloc] init];
+        [self presentViewController:card animated:YES completion:nil];
+        
+        return;
+    }
+    
+    if(indexPath.row == 1)
         ctr = CreditCardEntryViewController.new;
-    else if(indexPath.row == 1)
+    else if(indexPath.row == 2)
         ctr = GesturesViewController.new;
+    else if(indexPath.row == 3)
+        ctr = BlocksViewController.new;
+    
+    
 
     [self.navigationController pushViewController:ctr animated:YES];
     

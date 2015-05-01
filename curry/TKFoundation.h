@@ -35,6 +35,7 @@
 
 
 #define TKLog(s, ...) NSLog( @"[%@ %@] %@",NSStringFromClass([self class]), NSStringFromSelector(_cmd),[NSString stringWithFormat:(s), ##__VA_ARGS__] )
+#define MINANDMAX(_MIN,_VALUE,_MAX) MIN(_MIN,MAX(_VALUE,_MAX))
 
 
 UIKIT_STATIC_INLINE CATransform3D CAScale(CGFloat x,CGFloat y,CGFloat z);
@@ -93,7 +94,15 @@ UIKIT_STATIC_INLINE CGRect CGRectCompose(CGPoint origin, CGSize size){
 }
 
 
+UIKIT_STATIC_INLINE CGRect CGRectInsetX(CGRect rect, CGFloat dx);
+UIKIT_STATIC_INLINE CGRect CGRectInsetX(CGRect rect, CGFloat dx){
+    return CGRectInset(rect, dx, 0);
+}
 
+UIKIT_STATIC_INLINE CGRect CGRectInsetY(CGRect rect, CGFloat dy);
+UIKIT_STATIC_INLINE CGRect CGRectInsetY(CGRect rect, CGFloat dy){
+    return CGRectInset(rect, 0, dy);
+}
 
 UIKIT_STATIC_INLINE CGRect CGRectCenteredInRect(CGRect parentRect, CGFloat width, CGFloat height);
 UIKIT_STATIC_INLINE CGRect CGRectCenteredInRect(CGRect parentRect, CGFloat width, CGFloat height){
@@ -160,8 +169,6 @@ UIKIT_STATIC_INLINE CGPoint CGRectGetCenter(CGRect rect);
 UIKIT_STATIC_INLINE CGPoint CGRectGetCenter(CGRect rect){
 	return CGPointMake(rect.size.width / 2.0f, rect.size.height / 2.0f);
 }
-
-
 
 
 UIKIT_STATIC_INLINE CGFloat CGFrameGetWidth(UIView *view);

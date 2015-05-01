@@ -1,5 +1,5 @@
 //
-//  UIView+TKMaterial.m
+//  UIView+TKAnimation.m
 //  Created by Devin Ross on 12/22/14.
 //
 /*

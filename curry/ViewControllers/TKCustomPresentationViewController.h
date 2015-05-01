@@ -1,6 +1,6 @@
 //
-//  TKCardModalViewController.h
-//  Created by Devin Ross on 10/13/14.
+//  TKCustomPresentationViewController.h
+//  Created by Devin Ross on 4/23/15.
 //
 /*
  
@@ -30,24 +30,17 @@
  */
 
 @import UIKit;
-#import "TKCustomPresentationViewController.h"
 
-@interface TKCardModalViewController : TKCustomPresentationViewController <UICollisionBehaviorDelegate>
+@interface TKCustomPresentationViewController : UIViewController <UIViewControllerAnimatedTransitioning>
 
-@property (nonatomic,strong) UIView *contentView;
-@property (nonatomic,strong) UIView *backgroundView;
-@property (nonatomic,assign) BOOL throwToDismissEnabled;
-@property (nonatomic,assign) BOOL tapToDismissEnabled;
-@property (nonatomic,assign) BOOL onlyAllowTapOffCardToDismiss;
+@property (nonatomic,strong) id<UIViewControllerContextTransitioning> transitionContext;
 
-@property (nonatomic,assign) CGRect visibleFrame;
+// For subclassing implementaion
+- (void) presentTransitionAnimation:(id<UIViewControllerContextTransitioning>)transitionContext containerView:(UIView*)containerView fromViewController:(UIViewController*)viewController;
 
-- (void) keyboardWillShow:(NSNotification*)notification;
-- (void) keyboardWillHide:(NSNotification*)notification;
+- (void) dismissTransitionAnimation:(id<UIViewControllerContextTransitioning>)transitionContext containerView:(UIView*)containerView toViewController:(UIViewController*)viewController;
 
-- (void) show;
-- (void) hide;
-
-- (void) tapped:(UITapGestureRecognizer*)sender;
+// Call upon transition completion
+- (void) transitionEnded;
 
 @end
