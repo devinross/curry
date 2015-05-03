@@ -72,10 +72,17 @@ NSString *TKViewAnimationKeyPathSizeHeight = @"size.height";
 
 #pragma mark CAAnimation Convience Methods
 - (void) addAnimation:(CAAnimation*)animation{
-    [self addAnimation:animation completion:nil];
+    [self addAnimation:animation forKey:nil];
 }
 - (void) addAnimation:(CAAnimation*)animation completion:(void (^)(BOOL))completion{
-    [self.layer addAnimation:animation completion:completion];
+    [self.layer addAnimation:animation forKey:nil completion:completion];
+}
+
+- (void) addAnimation:(CAAnimation*)animation forKey:(NSString *)key{
+    [self addAnimation:animation forKey:key completion:nil];
+}
+- (void) addAnimation:(CAAnimation*)animation forKey:(NSString *)key completion:(void (^)(BOOL))completion{
+    [self.layer addAnimation:animation forKey:key completion:completion];
 }
 
 @end

@@ -47,6 +47,9 @@ extern NSString *TKViewAnimationKeyPathTransform;
 - (void) addAnimation:(CAAnimation*)animation;
 - (void) addAnimation:(CAAnimation*)animation completion:(void (^)(BOOL))completion;
 
+- (void) addAnimation:(CAAnimation*)animation forKey:(NSString *)key;
+- (void) addAnimation:(CAAnimation*)animation forKey:(NSString *)key completion:(void (^)(BOOL))completion;
+
 - (void) addKeyframeAnimationWithKeyPath:(NSString *)keyPath duration:(CFTimeInterval)duration delay:(CFTimeInterval)delay bezierPath:(UIBezierPath*)bezierPath options:(UIViewAnimationOptions)options;
 - (void) addKeyframeAnimationWithKeyPath:(NSString *)keyPath duration:(CFTimeInterval)duration delay:(CFTimeInterval)delay bezierPath:(UIBezierPath*)bezierPath options:(UIViewAnimationOptions)options completion:(void (^)(BOOL))completion;
 

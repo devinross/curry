@@ -35,7 +35,7 @@
 
 
 #define TKLog(s, ...) NSLog( @"[%@ %@] %@",NSStringFromClass([self class]), NSStringFromSelector(_cmd),[NSString stringWithFormat:(s), ##__VA_ARGS__] )
-#define MINANDMAX(_MIN,_VALUE,_MAX) MIN(_MIN,MAX(_VALUE,_MAX))
+#define MINANDMAXRANGE(_MIN,_VALUE,_MAX) MAX(_MIN,MIN(_VALUE,_MAX))
 
 
 UIKIT_STATIC_INLINE CATransform3D CAScale(CGFloat x,CGFloat y,CGFloat z);
