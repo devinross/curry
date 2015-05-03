@@ -89,6 +89,18 @@
 		200B63211AD804E30049E35C /* TKCardModalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 200B631F1AD804E30049E35C /* TKCardModalViewController.m */; };
 		202DBE711AF4121C00B0CE67 /* TKCustomPresentationViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 202DBE6F1AF4121C00B0CE67 /* TKCustomPresentationViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		202DBE721AF4121C00B0CE67 /* TKCustomPresentationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 202DBE701AF4121C00B0CE67 /* TKCustomPresentationViewController.m */; };
+		202DBEB91AF4347A00B0CE67 /* TKInputView.h in Headers */ = {isa = PBXBuildFile; fileRef = 202DBEAD1AF4347A00B0CE67 /* TKInputView.h */; };
+		202DBEBA1AF4347A00B0CE67 /* TKInputView.m in Sources */ = {isa = PBXBuildFile; fileRef = 202DBEAE1AF4347A00B0CE67 /* TKInputView.m */; };
+		202DBEBB1AF4347A00B0CE67 /* TKInputKey.h in Headers */ = {isa = PBXBuildFile; fileRef = 202DBEAF1AF4347A00B0CE67 /* TKInputKey.h */; };
+		202DBEBC1AF4347A00B0CE67 /* TKInputKey.m in Sources */ = {isa = PBXBuildFile; fileRef = 202DBEB01AF4347A00B0CE67 /* TKInputKey.m */; };
+		202DBEBD1AF4347A00B0CE67 /* TKNumberInputView.h in Headers */ = {isa = PBXBuildFile; fileRef = 202DBEB11AF4347A00B0CE67 /* TKNumberInputView.h */; };
+		202DBEBE1AF4347A00B0CE67 /* TKNumberInputView.m in Sources */ = {isa = PBXBuildFile; fileRef = 202DBEB21AF4347A00B0CE67 /* TKNumberInputView.m */; };
+		202DBEBF1AF4347A00B0CE67 /* TKDecimalInputView.h in Headers */ = {isa = PBXBuildFile; fileRef = 202DBEB31AF4347A00B0CE67 /* TKDecimalInputView.h */; };
+		202DBEC01AF4347A00B0CE67 /* TKDecimalInputView.m in Sources */ = {isa = PBXBuildFile; fileRef = 202DBEB41AF4347A00B0CE67 /* TKDecimalInputView.m */; };
+		202DBEC11AF4347A00B0CE67 /* TKNumberInputWithNextKeyView.h in Headers */ = {isa = PBXBuildFile; fileRef = 202DBEB51AF4347A00B0CE67 /* TKNumberInputWithNextKeyView.h */; };
+		202DBEC21AF4347A00B0CE67 /* TKNumberInputWithNextKeyView.m in Sources */ = {isa = PBXBuildFile; fileRef = 202DBEB61AF4347A00B0CE67 /* TKNumberInputWithNextKeyView.m */; };
+		202DBEC31AF4347A00B0CE67 /* TKDecimalInputWithNextKeyView.h in Headers */ = {isa = PBXBuildFile; fileRef = 202DBEB71AF4347A00B0CE67 /* TKDecimalInputWithNextKeyView.h */; };
+		202DBEC41AF4347A00B0CE67 /* TKDecimalInputWithNextKeyView.m in Sources */ = {isa = PBXBuildFile; fileRef = 202DBEB81AF4347A00B0CE67 /* TKDecimalInputWithNextKeyView.m */; };
 		20785F771AD8388E000DC57F /* NSStringTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 20785F701AD8388E000DC57F /* NSStringTests.m */; };
 		20785F781AD8388E000DC57F /* UIViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 20785F721AD8388E000DC57F /* UIViewTests.m */; };
 		20785F791AD8388E000DC57F /* NSArrayTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 20785F741AD8388E000DC57F /* NSArrayTests.m */; };
@@ -193,10 +205,10 @@
 		200B62C91AD7FEF80049E35C /* UIScreen+TKCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScreen+TKCategory.m"; sourceTree = "<group>"; };
 		200B62CA1AD7FEF80049E35C /* UILabel+TKCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+TKCategory.h"; sourceTree = "<group>"; };
 		200B62CB1AD7FEF80049E35C /* UILabel+TKCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+TKCategory.m"; sourceTree = "<group>"; };
-		200B62CC1AD7FEF80049E35C /* UIAlertView+TKCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIAlertView+TKCategory.h"; sourceTree = "<group>"; };
-		200B62CD1AD7FEF80049E35C /* UIAlertView+TKCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIAlertView+TKCategory.m"; sourceTree = "<group>"; };
-		200B62CE1AD7FEF80049E35C /* UIActionSheet+TKCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIActionSheet+TKCategory.h"; sourceTree = "<group>"; };
-		200B62CF1AD7FEF80049E35C /* UIActionSheet+TKCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIActionSheet+TKCategory.m"; sourceTree = "<group>"; };
+		200B62CC1AD7FEF80049E35C /* UIAlertView+TKCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIAlertView+TKCategory.h"; path = "../Controllers/UIAlertView+TKCategory.h"; sourceTree = "<group>"; };
+		200B62CD1AD7FEF80049E35C /* UIAlertView+TKCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIAlertView+TKCategory.m"; path = "../Controllers/UIAlertView+TKCategory.m"; sourceTree = "<group>"; };
+		200B62CE1AD7FEF80049E35C /* UIActionSheet+TKCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIActionSheet+TKCategory.h"; path = "../Controllers/UIActionSheet+TKCategory.h"; sourceTree = "<group>"; };
+		200B62CF1AD7FEF80049E35C /* UIActionSheet+TKCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIActionSheet+TKCategory.m"; path = "../Controllers/UIActionSheet+TKCategory.m"; sourceTree = "<group>"; };
 		200B62D01AD7FEF80049E35C /* UIFont+TKCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIFont+TKCategory.h"; sourceTree = "<group>"; };
 		200B62D11AD7FEF80049E35C /* UIFont+TKCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIFont+TKCategory.m"; sourceTree = "<group>"; };
 		200B62D21AD7FEF80049E35C /* UINavigationBar+TKCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationBar+TKCategory.h"; sourceTree = "<group>"; };
@@ -221,6 +233,18 @@
 		200B631F1AD804E30049E35C /* TKCardModalViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TKCardModalViewController.m; sourceTree = "<group>"; };
 		202DBE6F1AF4121C00B0CE67 /* TKCustomPresentationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TKCustomPresentationViewController.h; sourceTree = "<group>"; };
 		202DBE701AF4121C00B0CE67 /* TKCustomPresentationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TKCustomPresentationViewController.m; sourceTree = "<group>"; };
+		202DBEAD1AF4347A00B0CE67 /* TKInputView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TKInputView.h; sourceTree = "<group>"; };
+		202DBEAE1AF4347A00B0CE67 /* TKInputView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TKInputView.m; sourceTree = "<group>"; };
+		202DBEAF1AF4347A00B0CE67 /* TKInputKey.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TKInputKey.h; sourceTree = "<group>"; };
+		202DBEB01AF4347A00B0CE67 /* TKInputKey.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TKInputKey.m; sourceTree = "<group>"; };
+		202DBEB11AF4347A00B0CE67 /* TKNumberInputView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TKNumberInputView.h; sourceTree = "<group>"; };
+		202DBEB21AF4347A00B0CE67 /* TKNumberInputView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TKNumberInputView.m; sourceTree = "<group>"; };
+		202DBEB31AF4347A00B0CE67 /* TKDecimalInputView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TKDecimalInputView.h; sourceTree = "<group>"; };
+		202DBEB41AF4347A00B0CE67 /* TKDecimalInputView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TKDecimalInputView.m; sourceTree = "<group>"; };
+		202DBEB51AF4347A00B0CE67 /* TKNumberInputWithNextKeyView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TKNumberInputWithNextKeyView.h; sourceTree = "<group>"; };
+		202DBEB61AF4347A00B0CE67 /* TKNumberInputWithNextKeyView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TKNumberInputWithNextKeyView.m; sourceTree = "<group>"; };
+		202DBEB71AF4347A00B0CE67 /* TKDecimalInputWithNextKeyView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TKDecimalInputWithNextKeyView.h; sourceTree = "<group>"; };
+		202DBEB81AF4347A00B0CE67 /* TKDecimalInputWithNextKeyView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TKDecimalInputWithNextKeyView.m; sourceTree = "<group>"; };
 		20785F6F1AD8388E000DC57F /* NSStringTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSStringTests.h; sourceTree = "<group>"; };
 		20785F701AD8388E000DC57F /* NSStringTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSStringTests.m; sourceTree = "<group>"; };
 		20785F711AD8388E000DC57F /* UIViewTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIViewTests.h; sourceTree = "<group>"; };
@@ -246,10 +270,10 @@
 		20A75C841AD836DD00E2106A /* NSBundle+TKCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSBundle+TKCategory.m"; sourceTree = "<group>"; };
 		20CB9CF11AF3E4B0002E9F1C /* UIActionSheet+Blocks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIActionSheet+Blocks.h"; path = "curry/Categories/UIKit/Controllers/UIActionSheet+Blocks.h"; sourceTree = SOURCE_ROOT; };
 		20CB9CF21AF3E4B0002E9F1C /* UIActionSheet+Blocks.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIActionSheet+Blocks.m"; path = "curry/Categories/UIKit/Controllers/UIActionSheet+Blocks.m"; sourceTree = SOURCE_ROOT; };
-		20CB9CFC1AF3F126002E9F1C /* UIAlertView+Blocks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIAlertView+Blocks.h"; sourceTree = "<group>"; };
-		20CB9CFD1AF3F126002E9F1C /* UIAlertView+Blocks.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIAlertView+Blocks.m"; sourceTree = "<group>"; };
-		20CB9D001AF405CD002E9F1C /* UIControl+Blocks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIControl+Blocks.h"; sourceTree = "<group>"; };
-		20CB9D011AF405CD002E9F1C /* UIControl+Blocks.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIControl+Blocks.m"; sourceTree = "<group>"; };
+		20CB9CFC1AF3F126002E9F1C /* UIAlertView+Blocks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIAlertView+Blocks.h"; path = "../Controllers/UIAlertView+Blocks.h"; sourceTree = "<group>"; };
+		20CB9CFD1AF3F126002E9F1C /* UIAlertView+Blocks.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIAlertView+Blocks.m"; path = "../Controllers/UIAlertView+Blocks.m"; sourceTree = "<group>"; };
+		20CB9D001AF405CD002E9F1C /* UIControl+Blocks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIControl+Blocks.h"; path = "../Controllers/UIControl+Blocks.h"; sourceTree = "<group>"; };
+		20CB9D011AF405CD002E9F1C /* UIControl+Blocks.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIControl+Blocks.m"; path = "../Controllers/UIControl+Blocks.m"; sourceTree = "<group>"; };
 		20E131C81AF4107F0011492F /* UILabel+Initializers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+Initializers.h"; sourceTree = "<group>"; };
 		20E131C91AF4107F0011492F /* UILabel+Initializers.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+Initializers.m"; sourceTree = "<group>"; };
 		20E131CA1AF4107F0011492F /* UIView+Initializers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Initializers.h"; sourceTree = "<group>"; };
@@ -412,16 +436,6 @@
 				200B62C71AD7FEF80049E35C /* UIViewController+TKCategory.m */,
 				200B62C21AD7FEF80049E35C /* UIImagePickerController+TKCategory.h */,
 				200B62C31AD7FEF80049E35C /* UIImagePickerController+TKCategory.m */,
-				200B62CC1AD7FEF80049E35C /* UIAlertView+TKCategory.h */,
-				200B62CD1AD7FEF80049E35C /* UIAlertView+TKCategory.m */,
-				200B62CE1AD7FEF80049E35C /* UIActionSheet+TKCategory.h */,
-				200B62CF1AD7FEF80049E35C /* UIActionSheet+TKCategory.m */,
-				20CB9CF11AF3E4B0002E9F1C /* UIActionSheet+Blocks.h */,
-				20CB9CF21AF3E4B0002E9F1C /* UIActionSheet+Blocks.m */,
-				20CB9CFC1AF3F126002E9F1C /* UIAlertView+Blocks.h */,
-				20CB9CFD1AF3F126002E9F1C /* UIAlertView+Blocks.m */,
-				20CB9D001AF405CD002E9F1C /* UIControl+Blocks.h */,
-				20CB9D011AF405CD002E9F1C /* UIControl+Blocks.m */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -479,6 +493,16 @@
 				20E131CB1AF4107F0011492F /* UIView+Initializers.m */,
 				20E131C81AF4107F0011492F /* UILabel+Initializers.h */,
 				20E131C91AF4107F0011492F /* UILabel+Initializers.m */,
+				200B62CC1AD7FEF80049E35C /* UIAlertView+TKCategory.h */,
+				200B62CD1AD7FEF80049E35C /* UIAlertView+TKCategory.m */,
+				200B62CE1AD7FEF80049E35C /* UIActionSheet+TKCategory.h */,
+				200B62CF1AD7FEF80049E35C /* UIActionSheet+TKCategory.m */,
+				20CB9CF11AF3E4B0002E9F1C /* UIActionSheet+Blocks.h */,
+				20CB9CF21AF3E4B0002E9F1C /* UIActionSheet+Blocks.m */,
+				20CB9CFC1AF3F126002E9F1C /* UIAlertView+Blocks.h */,
+				20CB9CFD1AF3F126002E9F1C /* UIAlertView+Blocks.m */,
+				20CB9D001AF405CD002E9F1C /* UIControl+Blocks.h */,
+				20CB9D011AF405CD002E9F1C /* UIControl+Blocks.m */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -486,6 +510,7 @@
 		200B63221AD805320049E35C /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				202DBEC51AF4347F00B0CE67 /* Keyboard */,
 				200B63061AD804340049E35C /* TKGradientView.h */,
 				200B63071AD804340049E35C /* TKGradientView.m */,
 				200B63081AD804340049E35C /* TKShapeView.h */,
@@ -522,6 +547,25 @@
 				200B63191AD804400049E35C /* TKSoundAlertController.m */,
 			);
 			path = Extra;
+			sourceTree = "<group>";
+		};
+		202DBEC51AF4347F00B0CE67 /* Keyboard */ = {
+			isa = PBXGroup;
+			children = (
+				202DBEAD1AF4347A00B0CE67 /* TKInputView.h */,
+				202DBEAE1AF4347A00B0CE67 /* TKInputView.m */,
+				202DBEAF1AF4347A00B0CE67 /* TKInputKey.h */,
+				202DBEB01AF4347A00B0CE67 /* TKInputKey.m */,
+				202DBEB11AF4347A00B0CE67 /* TKNumberInputView.h */,
+				202DBEB21AF4347A00B0CE67 /* TKNumberInputView.m */,
+				202DBEB31AF4347A00B0CE67 /* TKDecimalInputView.h */,
+				202DBEB41AF4347A00B0CE67 /* TKDecimalInputView.m */,
+				202DBEB51AF4347A00B0CE67 /* TKNumberInputWithNextKeyView.h */,
+				202DBEB61AF4347A00B0CE67 /* TKNumberInputWithNextKeyView.m */,
+				202DBEB71AF4347A00B0CE67 /* TKDecimalInputWithNextKeyView.h */,
+				202DBEB81AF4347A00B0CE67 /* TKDecimalInputWithNextKeyView.m */,
+			);
+			name = Keyboard;
 			sourceTree = "<group>";
 		};
 		2078601E1AD84AB2000DC57F /* CreditCard */ = {
@@ -563,18 +607,22 @@
 				200B62E01AD7FEF80049E35C /* UIScrollview+TKCategory.h in Headers */,
 				200B62D81AD7FEF80049E35C /* UITextField+TKCategory.h in Headers */,
 				200B62D61AD7FEF80049E35C /* UIImage+TKCategory.h in Headers */,
+				202DBEBB1AF4347A00B0CE67 /* TKInputKey.h in Headers */,
 				200B62AB1AD7FE0D0049E35C /* CAKeyframeAnimation+TKAnimation.h in Headers */,
 				200B62921AD7FC5E0049E35C /* NSAttributedString+TKCategory.h in Headers */,
 				200B630A1AD804350049E35C /* TKTableViewController.h in Headers */,
 				200B62E61AD7FEF80049E35C /* UIGestureRecognizer+TKCategory.h in Headers */,
 				200B625B1AD7FB460049E35C /* curry.h in Headers */,
+				202DBEC11AF4347A00B0CE67 /* TKNumberInputWithNextKeyView.h in Headers */,
 				200B62EC1AD7FEF80049E35C /* UILabel+TKCategory.h in Headers */,
 				200B631C1AD804400049E35C /* TKSoundAlertController.h in Headers */,
 				200B62EE1AD7FEF80049E35C /* UIAlertView+TKCategory.h in Headers */,
+				202DBEBD1AF4347A00B0CE67 /* TKNumberInputView.h in Headers */,
 				200B62941AD7FC5E0049E35C /* NSMutableAttributedString+TKCategory.h in Headers */,
 				200B62A91AD7FE0D0049E35C /* CALayer+TKAnimation.h in Headers */,
 				200B628A1AD7FC5E0049E35C /* NSString+TKCategory.h in Headers */,
 				200B62AD1AD7FE0D0049E35C /* CAAnimation+TKAnimation.h in Headers */,
+				202DBEB91AF4347A00B0CE67 /* TKInputView.h in Headers */,
 				200B62EA1AD7FEF80049E35C /* UIScreen+TKCategory.h in Headers */,
 				200B63201AD804E30049E35C /* TKCardModalViewController.h in Headers */,
 				200B63101AD804350049E35C /* TKWebViewController.h in Headers */,
@@ -590,12 +638,14 @@
 				2078601C1AD84A87000DC57F /* TKCreditCardZipTextField.h in Headers */,
 				207860181AD84A87000DC57F /* TKCreditCardExpirationTextField.h in Headers */,
 				200B62E81AD7FEF80049E35C /* UIViewController+TKCategory.h in Headers */,
+				202DBEC31AF4347A00B0CE67 /* TKDecimalInputWithNextKeyView.h in Headers */,
 				207860261AD84F11000DC57F /* NSURLSession+TKCategory.h in Headers */,
 				20F19B191AE07E8500077DA1 /* UIGestureRecognizer+Blocks.h in Headers */,
 				200B629D1AD7FD660049E35C /* NSObject+JSON.h in Headers */,
 				200B62981AD7FC5E0049E35C /* UIView+TKCategory.h in Headers */,
 				20CB9CFE1AF3F126002E9F1C /* UIAlertView+Blocks.h in Headers */,
 				20CB9D021AF405CD002E9F1C /* UIControl+Blocks.h in Headers */,
+				202DBEBF1AF4347A00B0CE67 /* TKDecimalInputView.h in Headers */,
 				20E131CC1AF4107F0011492F /* UILabel+Initializers.h in Headers */,
 				20E131CE1AF4107F0011492F /* UIView+Initializers.h in Headers */,
 				202DBE711AF4121C00B0CE67 /* TKCustomPresentationViewController.h in Headers */,
@@ -706,11 +756,14 @@
 				20CB9D031AF405CD002E9F1C /* UIControl+Blocks.m in Sources */,
 				200B631B1AD804400049E35C /* TKExtendedScrollView.m in Sources */,
 				200B62DF1AD7FEF80049E35C /* UIColor+TKCategory.m in Sources */,
+				202DBEC21AF4347A00B0CE67 /* TKNumberInputWithNextKeyView.m in Sources */,
 				200B62E31AD7FEF80049E35C /* UIBarButtonItem+TKCategory.m in Sources */,
 				200B62F51AD7FEF80049E35C /* UINavigationBar+TKCategory.m in Sources */,
+				202DBEC01AF4347A00B0CE67 /* TKDecimalInputView.m in Sources */,
 				200B630B1AD804350049E35C /* TKTableViewController.m in Sources */,
 				200B631D1AD804400049E35C /* TKSoundAlertController.m in Sources */,
 				200B62951AD7FC5E0049E35C /* NSMutableAttributedString+TKCategory.m in Sources */,
+				202DBEBA1AF4347A00B0CE67 /* TKInputView.m in Sources */,
 				20CB9CFF1AF3F126002E9F1C /* UIAlertView+Blocks.m in Sources */,
 				200B630D1AD804350049E35C /* TKKeyboardTableViewController.m in Sources */,
 				200B628F1AD7FC5E0049E35C /* NSMutableArray+TKCategory.m in Sources */,
@@ -724,8 +777,10 @@
 				207860271AD84F11000DC57F /* NSURLSession+TKCategory.m in Sources */,
 				200B63151AD804350049E35C /* TKShapeView.m in Sources */,
 				200B63131AD804350049E35C /* TKGradientView.m in Sources */,
+				202DBEBE1AF4347A00B0CE67 /* TKNumberInputView.m in Sources */,
 				20A75C691AD8332F00E2106A /* TKSectionedScrollView.m in Sources */,
 				200B628D1AD7FC5E0049E35C /* NSArray+TKCategory.m in Sources */,
+				202DBEBC1AF4347A00B0CE67 /* TKInputKey.m in Sources */,
 				20A75C861AD836DD00E2106A /* NSBundle+TKCategory.m in Sources */,
 				20E131CF1AF4107F0011492F /* UIView+Initializers.m in Sources */,
 				200B62D71AD7FEF80049E35C /* UIImage+TKCategory.m in Sources */,
@@ -744,6 +799,7 @@
 				200B62A81AD7FE0D0049E35C /* UIView+TKAnimation.m in Sources */,
 				200B62DD1AD7FEF80049E35C /* UIButton+TKCategory.m in Sources */,
 				200B62D91AD7FEF80049E35C /* UITextField+TKCategory.m in Sources */,
+				202DBEC41AF4347A00B0CE67 /* TKDecimalInputWithNextKeyView.m in Sources */,
 				200B62891AD7FC5E0049E35C /* NSObject+TKCategory.m in Sources */,
 				200B62EB1AD7FEF80049E35C /* UIScreen+TKCategory.m in Sources */,
 				200B62991AD7FC5E0049E35C /* UIView+TKCategory.m in Sources */,
