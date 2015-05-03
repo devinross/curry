@@ -108,6 +108,7 @@
 #import "TKShapeView.h"
 #import "TKExtendedScrollView.h"
 #import "TKSectionedScrollView.h"
+#import "TKCurrentTimeLabel.h"
 
 // Credit Card
 #import "TKCreditCardNumberTextField.h"

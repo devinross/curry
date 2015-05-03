@@ -102,6 +102,8 @@
 		202DBEC31AF4347A00B0CE67 /* TKDecimalInputWithNextKeyView.h in Headers */ = {isa = PBXBuildFile; fileRef = 202DBEB71AF4347A00B0CE67 /* TKDecimalInputWithNextKeyView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		202DBEC41AF4347A00B0CE67 /* TKDecimalInputWithNextKeyView.m in Sources */ = {isa = PBXBuildFile; fileRef = 202DBEB81AF4347A00B0CE67 /* TKDecimalInputWithNextKeyView.m */; };
 		202DBEEB1AF6717A00B0CE67 /* CurryImages.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 202DBEEA1AF6717A00B0CE67 /* CurryImages.xcassets */; };
+		202DBEF41AF6727A00B0CE67 /* TKCurrentTimeLabel.h in Headers */ = {isa = PBXBuildFile; fileRef = 202DBEF21AF6727A00B0CE67 /* TKCurrentTimeLabel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		202DBEF51AF6727A00B0CE67 /* TKCurrentTimeLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 202DBEF31AF6727A00B0CE67 /* TKCurrentTimeLabel.m */; };
 		20785F771AD8388E000DC57F /* NSStringTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 20785F701AD8388E000DC57F /* NSStringTests.m */; };
 		20785F781AD8388E000DC57F /* UIViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 20785F721AD8388E000DC57F /* UIViewTests.m */; };
 		20785F791AD8388E000DC57F /* NSArrayTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 20785F741AD8388E000DC57F /* NSArrayTests.m */; };
@@ -247,6 +249,8 @@
 		202DBEB71AF4347A00B0CE67 /* TKDecimalInputWithNextKeyView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TKDecimalInputWithNextKeyView.h; sourceTree = "<group>"; };
 		202DBEB81AF4347A00B0CE67 /* TKDecimalInputWithNextKeyView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TKDecimalInputWithNextKeyView.m; sourceTree = "<group>"; };
 		202DBEEA1AF6717A00B0CE67 /* CurryImages.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = CurryImages.xcassets; sourceTree = "<group>"; };
+		202DBEF21AF6727A00B0CE67 /* TKCurrentTimeLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TKCurrentTimeLabel.h; sourceTree = "<group>"; };
+		202DBEF31AF6727A00B0CE67 /* TKCurrentTimeLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TKCurrentTimeLabel.m; sourceTree = "<group>"; };
 		20785F6F1AD8388E000DC57F /* NSStringTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSStringTests.h; sourceTree = "<group>"; };
 		20785F701AD8388E000DC57F /* NSStringTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSStringTests.m; sourceTree = "<group>"; };
 		20785F711AD8388E000DC57F /* UIViewTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIViewTests.h; sourceTree = "<group>"; };
@@ -522,6 +526,8 @@
 				200B63171AD804400049E35C /* TKExtendedScrollView.m */,
 				20A75C661AD8332F00E2106A /* TKSectionedScrollView.h */,
 				20A75C671AD8332F00E2106A /* TKSectionedScrollView.m */,
+				202DBEF21AF6727A00B0CE67 /* TKCurrentTimeLabel.h */,
+				202DBEF31AF6727A00B0CE67 /* TKCurrentTimeLabel.m */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -653,6 +659,7 @@
 				20E131CE1AF4107F0011492F /* UIView+Initializers.h in Headers */,
 				202DBE711AF4121C00B0CE67 /* TKCustomPresentationViewController.h in Headers */,
 				20CB9CF31AF3E4B0002E9F1C /* UIActionSheet+Blocks.h in Headers */,
+				202DBEF41AF6727A00B0CE67 /* TKCurrentTimeLabel.h in Headers */,
 				200B62DE1AD7FEF80049E35C /* UIColor+TKCategory.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -771,6 +778,7 @@
 				20CB9CFF1AF3F126002E9F1C /* UIAlertView+Blocks.m in Sources */,
 				200B630D1AD804350049E35C /* TKKeyboardTableViewController.m in Sources */,
 				200B628F1AD7FC5E0049E35C /* NSMutableArray+TKCategory.m in Sources */,
+				202DBEF51AF6727A00B0CE67 /* TKCurrentTimeLabel.m in Sources */,
 				200B62E11AD7FEF80049E35C /* UIScrollview+TKCategory.m in Sources */,
 				200B62AA1AD7FE0D0049E35C /* CALayer+TKAnimation.m in Sources */,
 				202DBE721AF4121C00B0CE67 /* TKCustomPresentationViewController.m in Sources */,
