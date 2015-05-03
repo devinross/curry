@@ -95,6 +95,13 @@
 #import "TKKeyboardTableViewController.h"
 #import "TKWebViewController.h"
 
+// Views -> Keyboard
+#import "TKInputView.h"
+#import "TKInputKey.h"
+#import "TKNumberInputView.h"
+#import "TKDecimalInputView.h"
+#import "TKNumberInputWithNextKeyView.h"
+#import "TKDecimalInputWithNextKeyView.h"
 
 // Views
 #import "TKGradientView.h"

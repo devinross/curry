@@ -89,17 +89,17 @@
 		200B63211AD804E30049E35C /* TKCardModalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 200B631F1AD804E30049E35C /* TKCardModalViewController.m */; };
 		202DBE711AF4121C00B0CE67 /* TKCustomPresentationViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 202DBE6F1AF4121C00B0CE67 /* TKCustomPresentationViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		202DBE721AF4121C00B0CE67 /* TKCustomPresentationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 202DBE701AF4121C00B0CE67 /* TKCustomPresentationViewController.m */; };
-		202DBEB91AF4347A00B0CE67 /* TKInputView.h in Headers */ = {isa = PBXBuildFile; fileRef = 202DBEAD1AF4347A00B0CE67 /* TKInputView.h */; };
+		202DBEB91AF4347A00B0CE67 /* TKInputView.h in Headers */ = {isa = PBXBuildFile; fileRef = 202DBEAD1AF4347A00B0CE67 /* TKInputView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		202DBEBA1AF4347A00B0CE67 /* TKInputView.m in Sources */ = {isa = PBXBuildFile; fileRef = 202DBEAE1AF4347A00B0CE67 /* TKInputView.m */; };
-		202DBEBB1AF4347A00B0CE67 /* TKInputKey.h in Headers */ = {isa = PBXBuildFile; fileRef = 202DBEAF1AF4347A00B0CE67 /* TKInputKey.h */; };
+		202DBEBB1AF4347A00B0CE67 /* TKInputKey.h in Headers */ = {isa = PBXBuildFile; fileRef = 202DBEAF1AF4347A00B0CE67 /* TKInputKey.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		202DBEBC1AF4347A00B0CE67 /* TKInputKey.m in Sources */ = {isa = PBXBuildFile; fileRef = 202DBEB01AF4347A00B0CE67 /* TKInputKey.m */; };
-		202DBEBD1AF4347A00B0CE67 /* TKNumberInputView.h in Headers */ = {isa = PBXBuildFile; fileRef = 202DBEB11AF4347A00B0CE67 /* TKNumberInputView.h */; };
+		202DBEBD1AF4347A00B0CE67 /* TKNumberInputView.h in Headers */ = {isa = PBXBuildFile; fileRef = 202DBEB11AF4347A00B0CE67 /* TKNumberInputView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		202DBEBE1AF4347A00B0CE67 /* TKNumberInputView.m in Sources */ = {isa = PBXBuildFile; fileRef = 202DBEB21AF4347A00B0CE67 /* TKNumberInputView.m */; };
-		202DBEBF1AF4347A00B0CE67 /* TKDecimalInputView.h in Headers */ = {isa = PBXBuildFile; fileRef = 202DBEB31AF4347A00B0CE67 /* TKDecimalInputView.h */; };
+		202DBEBF1AF4347A00B0CE67 /* TKDecimalInputView.h in Headers */ = {isa = PBXBuildFile; fileRef = 202DBEB31AF4347A00B0CE67 /* TKDecimalInputView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		202DBEC01AF4347A00B0CE67 /* TKDecimalInputView.m in Sources */ = {isa = PBXBuildFile; fileRef = 202DBEB41AF4347A00B0CE67 /* TKDecimalInputView.m */; };
-		202DBEC11AF4347A00B0CE67 /* TKNumberInputWithNextKeyView.h in Headers */ = {isa = PBXBuildFile; fileRef = 202DBEB51AF4347A00B0CE67 /* TKNumberInputWithNextKeyView.h */; };
+		202DBEC11AF4347A00B0CE67 /* TKNumberInputWithNextKeyView.h in Headers */ = {isa = PBXBuildFile; fileRef = 202DBEB51AF4347A00B0CE67 /* TKNumberInputWithNextKeyView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		202DBEC21AF4347A00B0CE67 /* TKNumberInputWithNextKeyView.m in Sources */ = {isa = PBXBuildFile; fileRef = 202DBEB61AF4347A00B0CE67 /* TKNumberInputWithNextKeyView.m */; };
-		202DBEC31AF4347A00B0CE67 /* TKDecimalInputWithNextKeyView.h in Headers */ = {isa = PBXBuildFile; fileRef = 202DBEB71AF4347A00B0CE67 /* TKDecimalInputWithNextKeyView.h */; };
+		202DBEC31AF4347A00B0CE67 /* TKDecimalInputWithNextKeyView.h in Headers */ = {isa = PBXBuildFile; fileRef = 202DBEB71AF4347A00B0CE67 /* TKDecimalInputWithNextKeyView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		202DBEC41AF4347A00B0CE67 /* TKDecimalInputWithNextKeyView.m in Sources */ = {isa = PBXBuildFile; fileRef = 202DBEB81AF4347A00B0CE67 /* TKDecimalInputWithNextKeyView.m */; };
 		20785F771AD8388E000DC57F /* NSStringTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 20785F701AD8388E000DC57F /* NSStringTests.m */; };
 		20785F781AD8388E000DC57F /* UIViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 20785F721AD8388E000DC57F /* UIViewTests.m */; };
@@ -607,22 +607,18 @@
 				200B62E01AD7FEF80049E35C /* UIScrollview+TKCategory.h in Headers */,
 				200B62D81AD7FEF80049E35C /* UITextField+TKCategory.h in Headers */,
 				200B62D61AD7FEF80049E35C /* UIImage+TKCategory.h in Headers */,
-				202DBEBB1AF4347A00B0CE67 /* TKInputKey.h in Headers */,
 				200B62AB1AD7FE0D0049E35C /* CAKeyframeAnimation+TKAnimation.h in Headers */,
 				200B62921AD7FC5E0049E35C /* NSAttributedString+TKCategory.h in Headers */,
 				200B630A1AD804350049E35C /* TKTableViewController.h in Headers */,
 				200B62E61AD7FEF80049E35C /* UIGestureRecognizer+TKCategory.h in Headers */,
 				200B625B1AD7FB460049E35C /* curry.h in Headers */,
-				202DBEC11AF4347A00B0CE67 /* TKNumberInputWithNextKeyView.h in Headers */,
 				200B62EC1AD7FEF80049E35C /* UILabel+TKCategory.h in Headers */,
 				200B631C1AD804400049E35C /* TKSoundAlertController.h in Headers */,
 				200B62EE1AD7FEF80049E35C /* UIAlertView+TKCategory.h in Headers */,
-				202DBEBD1AF4347A00B0CE67 /* TKNumberInputView.h in Headers */,
 				200B62941AD7FC5E0049E35C /* NSMutableAttributedString+TKCategory.h in Headers */,
 				200B62A91AD7FE0D0049E35C /* CALayer+TKAnimation.h in Headers */,
 				200B628A1AD7FC5E0049E35C /* NSString+TKCategory.h in Headers */,
 				200B62AD1AD7FE0D0049E35C /* CAAnimation+TKAnimation.h in Headers */,
-				202DBEB91AF4347A00B0CE67 /* TKInputView.h in Headers */,
 				200B62EA1AD7FEF80049E35C /* UIScreen+TKCategory.h in Headers */,
 				200B63201AD804E30049E35C /* TKCardModalViewController.h in Headers */,
 				200B63101AD804350049E35C /* TKWebViewController.h in Headers */,
@@ -638,13 +634,17 @@
 				2078601C1AD84A87000DC57F /* TKCreditCardZipTextField.h in Headers */,
 				207860181AD84A87000DC57F /* TKCreditCardExpirationTextField.h in Headers */,
 				200B62E81AD7FEF80049E35C /* UIViewController+TKCategory.h in Headers */,
-				202DBEC31AF4347A00B0CE67 /* TKDecimalInputWithNextKeyView.h in Headers */,
 				207860261AD84F11000DC57F /* NSURLSession+TKCategory.h in Headers */,
 				20F19B191AE07E8500077DA1 /* UIGestureRecognizer+Blocks.h in Headers */,
 				200B629D1AD7FD660049E35C /* NSObject+JSON.h in Headers */,
 				200B62981AD7FC5E0049E35C /* UIView+TKCategory.h in Headers */,
 				20CB9CFE1AF3F126002E9F1C /* UIAlertView+Blocks.h in Headers */,
 				20CB9D021AF405CD002E9F1C /* UIControl+Blocks.h in Headers */,
+				202DBEBB1AF4347A00B0CE67 /* TKInputKey.h in Headers */,
+				202DBEC11AF4347A00B0CE67 /* TKNumberInputWithNextKeyView.h in Headers */,
+				202DBEBD1AF4347A00B0CE67 /* TKNumberInputView.h in Headers */,
+				202DBEB91AF4347A00B0CE67 /* TKInputView.h in Headers */,
+				202DBEC31AF4347A00B0CE67 /* TKDecimalInputWithNextKeyView.h in Headers */,
 				202DBEBF1AF4347A00B0CE67 /* TKDecimalInputView.h in Headers */,
 				20E131CC1AF4107F0011492F /* UILabel+Initializers.h in Headers */,
 				20E131CE1AF4107F0011492F /* UIView+Initializers.h in Headers */,
