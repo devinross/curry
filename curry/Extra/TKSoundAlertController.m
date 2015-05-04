@@ -65,6 +65,10 @@
 	[[TKSoundAlertController sharedInstance] playSoundName:soundName type:@"caf"];
 }
 
++ (void) vibrate{
+    AudioServicesPlaySystemSound(kSystemSoundID_Vibrate);
+}
+
 - (void) playSoundName:(NSString*)soundName type:(NSString*)type{
 	if (!self.on)
 		return;

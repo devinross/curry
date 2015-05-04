@@ -62,6 +62,8 @@
 + (void) playCAF:(NSString*)soundName;
 
 
++ (void) vibrate;
+
 ///----------------------------
 /// @name Properties
 ///----------------------------
