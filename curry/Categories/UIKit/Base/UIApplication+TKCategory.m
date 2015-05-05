@@ -30,8 +30,47 @@
  */
 
 #import "UIApplication+TKCategory.h"
+#import "NSString+TKCategory.h"
+
+#define PARAM(_KEY,_VALUE) [NSString stringWithFormat:@"%@=%@",_KEY,_VALUE]
 
 @implementation UIApplication (TKCategory)
+
+
+- (BOOL) canOpenUberApp{
+    return [[UIApplication sharedApplication] canOpenURL:[NSURL URLWithString:@"uber://"]];
+}
+
+- (void) openUberAppWithClient:(NSString*)clientID product:(NSString*)productID pickup:(CLLocationCoordinate2D)pickup pickupName:(NSString*)pickupName pickupAddress:(NSString*)pickupAddress dropoff:(CLLocationCoordinate2D)dropoff dropoffName:(NSString*)dropoffName dropoffAddress:(NSString*)dropoffAddress{
+    
+    NSMutableArray *array = @[@"action=setPickup"].mutableCopy;
+    
+    if(clientID) [array addObject:PARAM(@"client_id", clientID)];
+    if(productID) [array addObject:PARAM(@"product_id", productID)];
+
+    if(pickup.latitude != 0){
+        [array addObject:PARAM(@"pickup[latitude]", @(pickup.latitude))];
+        [array addObject:PARAM(@"pickup[longitude]", @(pickup.longitude))];
+    }
+
+    if(pickupAddress) [array addObject:PARAM(@"pickup[formatted_address]",pickupAddress.URLEncode)];
+    if(pickupName) [array addObject:PARAM(@"pickup[nickname]",pickupName.URLEncode)];
+    
+    
+    if(dropoff.latitude != 0){
+        [array addObject:PARAM(@"dropoff[latitude]", @(dropoff.latitude))];
+        [array addObject:PARAM(@"dropoff[longitude]", @(dropoff.longitude))];
+    }
+
+    if(dropoffAddress) [array addObject:PARAM(@"dropoff[formatted_address]",dropoffAddress.URLEncode)];
+    if(dropoffAddress) [array addObject:PARAM(@"dropoff[nickname]",dropoffName.URLEncode)];
+    
+    NSString *url = [NSString stringWithFormat:@"uber://?%@",[array componentsJoinedByString:@"&"]];
+    [self openURL:[NSURL URLWithString:url]];
+
+    
+
+}
 
 - (void) openGoogleMapURLWithCoordinate:(CLLocationCoordinate2D)coordinates query:(NSString*)query{
     
@@ -44,7 +83,7 @@
     
     NSString *url = [NSString stringWithFormat:endpoint,latlong,[query stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding]];
     
-    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:url]];
+    [self openURL:[NSURL URLWithString:url]];
     
 }
 
@@ -56,7 +95,7 @@
     
     NSString *url = [NSString stringWithFormat:endpoint,latlong,[query stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding]];
     
-    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:url]];
+    [self openURL:[NSURL URLWithString:url]];
     
 }
 

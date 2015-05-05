@@ -94,7 +94,7 @@ typedef void (^UIActionSheetBlock)(UIActionSheet *sender);
 
 - (void) actionSheet:(UIActionSheet *)actionSheet clickedButtonAtIndex:(NSInteger)buttonIndex{
     
-    id block = self.actions[buttonIndex];
+    id block = buttonIndex < self.actions.count ? self.actions[buttonIndex] : nil;
     
     if(block == [NSNull null]) return;
     
