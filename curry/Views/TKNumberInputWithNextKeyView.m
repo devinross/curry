@@ -40,16 +40,28 @@
 - (instancetype) initWithFrame:(CGRect)frame{
 	frame.size = CGSizeMake([UIScreen mainScreen].bounds.size.width, [UIDevice currentDevice].phoneIdiom ? 216 : 352);
 	
-	CGFloat yPad = 0, xPad = 0, xMargin = 0;
-	CGFloat w = frame.size.width / 4;
-	CGFloat h = frame.size.height / 4;
-	
+	NSInteger yPad = 0, xPad = 0, xMargin = 0;
+	NSInteger w = frame.size.width / 4;
+	NSInteger h = frame.size.height / 4;
+    NSInteger minX = xMargin+w*3+ (xPad*3);
+    NSInteger endKeyWidth = w + 1;
+
 	if([UIDevice currentDevice].padIdiom){
 		w = 108, h = 75, yPad = 10, xPad = 16, xMargin = 28;
-	}
-	
-	self.nextKey = [[TKInputKey alloc] initWithFrame:CGRectMake(xMargin+w*3 + (xPad*3), yPad, w+1, h*2+yPad) symbol:[UIImage imageNamed:@"keyboard-next-key"] normalType:TKInputKeyTypeDefault selectedType:TKInputKeyTypeDark runner:NO];
-	self.backspaceKey = [[TKInputKey alloc] initWithFrame:CGRectMake(xMargin+w*3+ (xPad*3), h*2+yPad*3, w+1, h*2+yPad) symbol:[UIImage imageNamed:@"keyboard-backspace-key"] normalType:TKInputKeyTypeDefault selectedType:TKInputKeyTypeDark runner:NO];
+        endKeyWidth = w + 1;
+    }else{
+        endKeyWidth = frame.size.width - minX + 1;
+    }
+    
+    
+    
+    
+    UIImage *back = [UIImage imageNamed:@"keyboard-backspace-key" inBundle:[NSBundle bundleForClass:[self class]] compatibleWithTraitCollection:[UITraitCollection traitCollectionWithDisplayScale:[UIScreen mainScreen].scale]];
+    UIImage *next = [UIImage imageNamed:@"keyboard-next-key" inBundle:[NSBundle bundleForClass:[self class]] compatibleWithTraitCollection:[UITraitCollection traitCollectionWithDisplayScale:[UIScreen mainScreen].scale]];
+
+    
+	self.nextKey = [[TKInputKey alloc] initWithFrame:CGRectMake(minX, yPad, endKeyWidth, h*2+yPad) symbol:next normalType:TKInputKeyTypeDefault selectedType:TKInputKeyTypeDark runner:NO];
+	self.backspaceKey = [[TKInputKey alloc] initWithFrame:CGRectMake(minX, h*2+yPad*3, endKeyWidth, h*2+yPad) symbol:back normalType:TKInputKeyTypeDefault selectedType:TKInputKeyTypeDark runner:NO];
 	
 	CGRect pad = CGRectMake(0, 0, w*3, h*4);
 	

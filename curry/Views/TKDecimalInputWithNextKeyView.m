@@ -48,9 +48,12 @@
 	if([UIDevice currentDevice].padIdiom){
 		w = 108, h = 75, yPad = 10, xPad = 16, xMargin = 28;
 	}
-	
-	self.nextKey = [[TKInputKey alloc] initWithFrame:CGRectMake(xMargin+w*3 + (xPad*3), yPad, w+1, h*2+yPad) symbol:[UIImage imageNamed:@"keyboard-next-key"] normalType:TKInputKeyTypeDefault selectedType:TKInputKeyTypeDark runner:NO];
-	self.backspaceKey = [[TKInputKey alloc] initWithFrame:CGRectMake(xMargin+w*3+ (xPad*3), h*2+yPad*3, w+1, h*2+yPad) symbol:[UIImage imageNamed:@"keyboard-backspace-key"] normalType:TKInputKeyTypeDefault selectedType:TKInputKeyTypeDark runner:NO];
+    
+    UIImage *back = [UIImage imageNamed:@"keyboard-backspace-key" inBundle:[NSBundle bundleForClass:[self class]] compatibleWithTraitCollection:[UITraitCollection traitCollectionWithDisplayScale:[UIScreen mainScreen].scale]];
+    UIImage *next = [UIImage imageNamed:@"keyboard-next-key" inBundle:[NSBundle bundleForClass:[self class]] compatibleWithTraitCollection:[UITraitCollection traitCollectionWithDisplayScale:[UIScreen mainScreen].scale]];
+
+	self.nextKey = [[TKInputKey alloc] initWithFrame:CGRectMake(xMargin+w*3 + (xPad*3), yPad, w+1, h*2+yPad) symbol:next normalType:TKInputKeyTypeDefault selectedType:TKInputKeyTypeDark runner:NO];
+	self.backspaceKey = [[TKInputKey alloc] initWithFrame:CGRectMake(xMargin+w*3+ (xPad*3), h*2+yPad*3, w+1, h*2+yPad) symbol:back normalType:TKInputKeyTypeDefault selectedType:TKInputKeyTypeDark runner:NO];
 	
 	CGRect pad = CGRectMake(0, 0, w*3, h*4);
 	

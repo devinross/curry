@@ -89,14 +89,7 @@
 		
 		self.symbol = [[UIImageView alloc] initWithImage:(UIImage*)symbol];
 		self.symbol.tintColor = [UIColor colorWithWhite:0.3 alpha:1];
-		
-		NSInteger w = (CGRectGetWidth(self.frame) - CGRectGetWidth(self.symbol.frame)) / 2;
-		NSInteger h = (CGRectGetHeight(self.frame) - CGRectGetHeight(self.symbol.frame)) / 2;
-		
-		self.symbol.frame = CGRectMakeWithSize(w, h, self.symbol.frame.size);
-		
-		self.symbol.center = CGPointMake(self.frame.size.width/2., self.frame.size.height/2.);
-		self.symbol.frame = CGRectIntegral(self.symbol.frame);
+		self.symbol.frame = CGRectCenteredInRectWithSize(self.bounds, self.symbol.frame.size);
 		[self addSubview:self.symbol];
 		
 	}

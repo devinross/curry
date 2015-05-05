@@ -43,10 +43,10 @@
 - (instancetype) initWithFrame:(CGRect)frame withKeysModels:(NSArray*)keys keypadFrame:(CGRect)padFrame{
 	frame.size = CGSizeMake([UIScreen mainScreen].bounds.size.width, [UIDevice currentDevice].phoneIdiom ? 216 : 352);
 	
-	CGFloat w = padFrame.size.width / 3;
-	CGFloat h = padFrame.size.height / 4;
-	CGFloat pad = 0, xPad = 0, marginX = 0;
-	
+	NSInteger w = padFrame.size.width / 3;
+	NSInteger h = padFrame.size.height / 4;
+	NSInteger pad = 0, xPad = 0, marginX = 0;
+
 	
 	if([UIDevice currentDevice].padIdiom){
 		w = 108, h = 75, pad = 10, xPad = 16, marginX = 24;

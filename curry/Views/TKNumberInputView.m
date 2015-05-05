@@ -43,16 +43,20 @@
 - (instancetype) initWithFrame:(CGRect)frame{
     frame.size = CGSizeMake([UIScreen mainScreen].bounds.size.width, [UIDevice currentDevice].phoneIdiom ? 216 : 352);
     
-    CGFloat yPad = 0, xPad = 0, xMargin = 0;
-    CGFloat w = frame.size.width / 4;
-    CGFloat h = frame.size.height / 4;
-    
+    NSInteger yPad = 0, xPad = 0, xMargin = 0;
+    NSInteger w = frame.size.width / 4;
+    NSInteger h = frame.size.height / 4;
+    NSInteger endKeyWidth = w + 1;
+    NSInteger minX = xMargin+w*3+ (xPad*3);
+
     if([UIDevice currentDevice].padIdiom){
         w = 108, h = 75, yPad = 0, xPad = 16, xMargin = 28;
+        endKeyWidth = w + 1;
+    }else{
+        endKeyWidth = frame.size.width - minX + 1;
     }
-    
-    self.backspaceKey = [[TKInputKey alloc] initWithFrame:CGRectMake(xMargin+w*3+ (xPad*3), 0, w+1, h*4) symbol:[UIImage imageNamed:@"keyboard-backspace-key"] normalType:TKInputKeyTypeDefault selectedType:TKInputKeyTypeDark runner:NO];
-    
+    UIImage *back = [UIImage imageNamed:@"keyboard-backspace-key" inBundle:[NSBundle bundleForClass:[self class]] compatibleWithTraitCollection:[UITraitCollection traitCollectionWithDisplayScale:[UIScreen mainScreen].scale]];
+    self.backspaceKey = [[TKInputKey alloc] initWithFrame:CGRectMake(minX, 0, endKeyWidth, h*4) symbol:back normalType:TKInputKeyTypeDefault selectedType:TKInputKeyTypeDark runner:NO];
     CGRect pad = CGRectMake(0, 0, w*3, h*4);
     
     return [self initWithFrame:frame withKeysModels:@[self.backspaceKey] keypadFrame:pad];
@@ -61,9 +65,9 @@
 - (instancetype) initWithFrame:(CGRect)frame withKeysModels:(NSArray*)keys keypadFrame:(CGRect)padFrame{
 	frame.size = CGSizeMake([UIScreen mainScreen].bounds.size.width, [UIDevice currentDevice].phoneIdiom ? 216 : 352);
 	
-	CGFloat w = padFrame.size.width / 3;
-	CGFloat h = padFrame.size.height / 4;
-	CGFloat pad = 0, xPad = 0, marginX = 0;
+	NSInteger w = padFrame.size.width / 3;
+	NSInteger h = padFrame.size.height / 4;
+	NSInteger pad = 0, xPad = 0, marginX = 0;
 	
 	
 	if([UIDevice currentDevice].padIdiom){
