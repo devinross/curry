@@ -49,6 +49,8 @@
 @property (nonatomic,assign) NSInteger currentSection;
 @property (nonatomic,readonly) BOOL movingPages;
 
+- (void) setCurrentSection:(NSInteger)currentSection animated:(BOOL)animated;
+
 
 @end
 

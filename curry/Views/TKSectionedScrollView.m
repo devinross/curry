@@ -79,11 +79,8 @@
     
     if(self.currentSection == scrollView.tag){
         
-        
         UIScrollView *nextScrollView = scrollView.tag + 1 < self.scrollViews.count ? self.scrollViews[scrollView.tag+1] : nil;
         UIScrollView *prevScrollView = scrollView.tag > 0 ? self.scrollViews[scrollView.tag-1] : nil;
-
-        
         CGFloat endOffSet = scrollView.contentOffsetFromEnd.x;
         CGFloat starOffSet = scrollView.contentOffset.x;
 
@@ -101,13 +98,7 @@
         }
 
     }
-    
-    
-    
 
-    
-    
-    
 }
 - (void) scrollViewWillBeginDragging:(UIScrollView *)scrollView{
     
@@ -188,24 +179,45 @@
 
 #pragma mark Properties
 - (void) setCurrentSection:(NSInteger)currentSection{
-    
-    _currentSection = currentSection;
-    
-    NSInteger ctr = 0;
-    for(UIScrollView *sv in self.scrollViews){
-        
-        CGFloat minX = (CGFrameGetWidth(self) * ctr) - (CGFrameGetWidth(self)*self.currentSection);
-        sv.center = CGPointMake(minX + CGFrameGetWidth(sv)/2, sv.center.y);
-        
-        CGFloat end = sv.contentSize.width - CGFrameGetWidth(sv);
-        sv.contentOffset = CGPointMake( ctr >= _currentSection ? 0 : end , 0);
-        
-        ctr++;
-    }
-    
-    
-    
+    [self setCurrentSection:currentSection animated:NO];
 }
 
+- (void) setCurrentSection:(NSInteger)currentSection animated:(BOOL)animated{
+
+    _currentSection = currentSection;
+    
+    if(animated){
+        [UIView animateWithDuration:0.8 delay:0 usingSpringWithDamping:0.8 initialSpringVelocity:0.2 options:0 animations:^{
+            NSInteger ctr = 0;
+            for(UIScrollView *sv in self.scrollViews){
+                
+                CGFloat minX = (CGFrameGetWidth(self) * ctr) - (CGFrameGetWidth(self)*self.currentSection);
+                sv.center = CGPointMake(minX + CGFrameGetWidth(sv)/2, sv.center.y);
+                
+                CGFloat end = sv.contentSize.width - CGFrameGetWidth(sv);
+                sv.contentOffset = CGPointMake( ctr >= _currentSection ? 0 : end , 0);
+                
+                ctr++;
+            }
+        } completion:nil];
+        
+    }else{
+        
+        [UIView performWithoutAnimation:^{
+            NSInteger ctr = 0;
+            for(UIScrollView *sv in self.scrollViews){
+                
+                CGFloat minX = (CGFrameGetWidth(self) * ctr) - (CGFrameGetWidth(self)*self.currentSection);
+                sv.center = CGPointMake(minX + CGFrameGetWidth(sv)/2, sv.center.y);
+                
+                CGFloat end = sv.contentSize.width - CGFrameGetWidth(sv);
+                sv.contentOffset = CGPointMake( ctr >= _currentSection ? 0 : end , 0);
+                
+                ctr++;
+            }
+        }];
+    }
+    
+}
 
 @end
