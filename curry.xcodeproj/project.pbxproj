@@ -121,6 +121,8 @@
 		2078601D1AD84A87000DC57F /* TKCreditCardZipTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 207860131AD84A87000DC57F /* TKCreditCardZipTextField.m */; };
 		207860261AD84F11000DC57F /* NSURLSession+TKCategory.h in Headers */ = {isa = PBXBuildFile; fileRef = 207860241AD84F11000DC57F /* NSURLSession+TKCategory.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		207860271AD84F11000DC57F /* NSURLSession+TKCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 207860251AD84F11000DC57F /* NSURLSession+TKCategory.m */; };
+		2098BA241B0F6C4F000E0074 /* NSTimer+Blocks.h in Headers */ = {isa = PBXBuildFile; fileRef = 2098BA221B0F6C4F000E0074 /* NSTimer+Blocks.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2098BA251B0F6C4F000E0074 /* NSTimer+Blocks.m in Sources */ = {isa = PBXBuildFile; fileRef = 2098BA231B0F6C4F000E0074 /* NSTimer+Blocks.m */; };
 		20A75C5F1AD82C8500E2106A /* Headers.h in Headers */ = {isa = PBXBuildFile; fileRef = 20A75C5E1AD82C8500E2106A /* Headers.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		20A75C681AD8332F00E2106A /* TKSectionedScrollView.h in Headers */ = {isa = PBXBuildFile; fileRef = 20A75C661AD8332F00E2106A /* TKSectionedScrollView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		20A75C691AD8332F00E2106A /* TKSectionedScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 20A75C671AD8332F00E2106A /* TKSectionedScrollView.m */; };
@@ -271,6 +273,8 @@
 		207860131AD84A87000DC57F /* TKCreditCardZipTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TKCreditCardZipTextField.m; sourceTree = "<group>"; };
 		207860241AD84F11000DC57F /* NSURLSession+TKCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSURLSession+TKCategory.h"; sourceTree = "<group>"; };
 		207860251AD84F11000DC57F /* NSURLSession+TKCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSURLSession+TKCategory.m"; sourceTree = "<group>"; };
+		2098BA221B0F6C4F000E0074 /* NSTimer+Blocks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSTimer+Blocks.h"; sourceTree = "<group>"; };
+		2098BA231B0F6C4F000E0074 /* NSTimer+Blocks.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSTimer+Blocks.m"; sourceTree = "<group>"; };
 		20A75C5E1AD82C8500E2106A /* Headers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Headers.h; sourceTree = "<group>"; };
 		20A75C661AD8332F00E2106A /* TKSectionedScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TKSectionedScrollView.h; sourceTree = "<group>"; };
 		20A75C671AD8332F00E2106A /* TKSectionedScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TKSectionedScrollView.m; sourceTree = "<group>"; };
@@ -425,6 +429,8 @@
 				20A75C841AD836DD00E2106A /* NSBundle+TKCategory.m */,
 				207860241AD84F11000DC57F /* NSURLSession+TKCategory.h */,
 				207860251AD84F11000DC57F /* NSURLSession+TKCategory.m */,
+				2098BA221B0F6C4F000E0074 /* NSTimer+Blocks.h */,
+				2098BA231B0F6C4F000E0074 /* NSTimer+Blocks.m */,
 			);
 			path = Foundation;
 			sourceTree = "<group>";
@@ -664,6 +670,7 @@
 				20E131CC1AF4107F0011492F /* UILabel+Initializers.h in Headers */,
 				20E131CE1AF4107F0011492F /* UIView+Initializers.h in Headers */,
 				202DBE711AF4121C00B0CE67 /* TKCustomPresentationViewController.h in Headers */,
+				2098BA241B0F6C4F000E0074 /* NSTimer+Blocks.h in Headers */,
 				20CAE0D41B0953E40088740E /* TKSwitchCell.h in Headers */,
 				20CB9CF31AF3E4B0002E9F1C /* UIActionSheet+Blocks.h in Headers */,
 				202DBEF41AF6727A00B0CE67 /* TKCurrentTimeLabel.h in Headers */,
@@ -777,6 +784,7 @@
 				202DBEC21AF4347A00B0CE67 /* TKNumberInputWithNextKeyView.m in Sources */,
 				200B62E31AD7FEF80049E35C /* UIBarButtonItem+TKCategory.m in Sources */,
 				200B62F51AD7FEF80049E35C /* UINavigationBar+TKCategory.m in Sources */,
+				2098BA251B0F6C4F000E0074 /* NSTimer+Blocks.m in Sources */,
 				202DBEC01AF4347A00B0CE67 /* TKDecimalInputView.m in Sources */,
 				200B630B1AD804350049E35C /* TKTableViewController.m in Sources */,
 				200B631D1AD804400049E35C /* TKSoundAlertController.m in Sources */,

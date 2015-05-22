@@ -45,6 +45,7 @@
 #import "NSMutableAttributedString+TKCategory.h"
 #import "NSBundle+TKCategory.h"
 #import "NSURLSession+TKCategory.h"
+#import "NSTimer+Blocks.h"
 
 // Categories -> UIKit -> Base
 #import "UIApplication+TKCategory.h"
