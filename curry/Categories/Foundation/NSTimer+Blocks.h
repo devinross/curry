@@ -33,4 +33,10 @@
 
 @interface NSTimer (Blocks)
 
++ (NSTimer *) scheduledTimerWithTimeInterval:(NSTimeInterval)seconds repeats:(BOOL)repeats block:(void (^)(void))block;
+
++ (NSTimer *) timerWithTimeInterval:(NSTimeInterval)seconds repeats:(BOOL)repeats block:(void (^)(void))block;
+
+- (instancetype) initWithFireDate:(NSDate *)date interval:(NSTimeInterval)seconds repeats:(BOOL)repeats block:(void (^)(void))block;
+
 @end
