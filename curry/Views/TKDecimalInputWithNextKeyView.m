@@ -54,7 +54,8 @@
 
 	self.nextKey = [[TKInputKey alloc] initWithFrame:CGRectMake(xMargin+w*3 + (xPad*3), yPad, w+1, h*2+yPad) symbol:next normalType:TKInputKeyTypeDefault selectedType:TKInputKeyTypeDark runner:NO];
 	self.backspaceKey = [[TKInputKey alloc] initWithFrame:CGRectMake(xMargin+w*3+ (xPad*3), h*2+yPad*3, w+1, h*2+yPad) symbol:back normalType:TKInputKeyTypeDefault selectedType:TKInputKeyTypeDark runner:NO];
-	
+    self.backspaceKey.canTapAndHold = YES;
+
 	CGRect pad = CGRectMake(0, 0, w*3, h*4);
 	
 	if(!(self=[super initWithFrame:frame withKeysModels:@[self.nextKey,self.backspaceKey] keypadFrame:pad])) return nil;

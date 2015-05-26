@@ -39,5 +39,4 @@
 @property (nonatomic,strong) TKCreditCardZipTextField *zipField;
 @property (nonatomic,strong) TKCreditCardCVVTextField *cvvField;
 
-
 @end

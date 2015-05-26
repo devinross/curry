@@ -84,6 +84,9 @@ typedef NS_ENUM(NSInteger, TKInputKeyType) {
 /** The symbol image view.  */
 @property (nonatomic,strong) UIImageView *symbol;
 
+@property (nonatomic,assign) BOOL canTapAndHold;
+
+
 
 /** The backspace key.
  @param highlighted A flag to set the key to highlighted. */

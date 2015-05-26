@@ -57,6 +57,7 @@
     }
     UIImage *back = [UIImage imageNamed:@"keyboard-backspace-key" inBundle:[NSBundle bundleForClass:[self class]] compatibleWithTraitCollection:[UITraitCollection traitCollectionWithDisplayScale:[UIScreen mainScreen].scale]];
     self.backspaceKey = [[TKInputKey alloc] initWithFrame:CGRectMake(minX, 0, endKeyWidth, h*4) symbol:back normalType:TKInputKeyTypeDefault selectedType:TKInputKeyTypeDark runner:NO];
+    self.backspaceKey.canTapAndHold = YES;
     CGRect pad = CGRectMake(0, 0, w*3, h*4);
     
     return [self initWithFrame:frame withKeysModels:@[self.backspaceKey] keypadFrame:pad];

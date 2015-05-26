@@ -33,6 +33,7 @@
 #import "CreditCardEntryViewController.h"
 #import "GesturesViewController.h"
 #import "BlocksViewController.h"
+#import "CustomKeyboardViewController.h"
 
 @implementation RootTableViewController
 
@@ -40,7 +41,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.items = @[@"Card Modal",@"Credit Card Text Fields",@"Gestures",@"Action Sheet Block"];
+    self.items = @[@"Card Modal",@"Credit Card Text Fields",@"Gestures",@"Action Sheet Block",@"Custom Keyboards"];
     [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:IDENTIFIER];
 }
 
@@ -60,13 +61,10 @@
 - (void) tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     
     UIViewController *ctr;
-    
-    
     if(indexPath.row == 0){
         [tableView deselectRowAtIndexPath:indexPath animated:YES];
         TKCardModalViewController *card = [[TKCardModalViewController alloc] init];
         [self presentViewController:card animated:YES completion:nil];
-        
         return;
     }
     
@@ -76,8 +74,8 @@
         ctr = GesturesViewController.new;
     else if(indexPath.row == 3)
         ctr = BlocksViewController.new;
-    
-    
+    else if(indexPath.row == 4)
+        ctr = CustomKeyboardViewController.new;
 
     [self.navigationController pushViewController:ctr animated:YES];
     

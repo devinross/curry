@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		207394241B14FC1600DBA74A /* CustomKeyboardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 207394231B14FC1600DBA74A /* CustomKeyboardViewController.m */; };
 		20785FC51AD83BBE000DC57F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20785FC41AD83BBE000DC57F /* AppDelegate.swift */; };
 		20785FCC1AD83BBE000DC57F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 20785FCB1AD83BBE000DC57F /* Images.xcassets */; };
 		20785FEC1AD83C63000DC57F /* RootTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 20785FEB1AD83C63000DC57F /* RootTableViewController.m */; };
@@ -56,6 +57,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		207394221B14FC1600DBA74A /* CustomKeyboardViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomKeyboardViewController.h; sourceTree = "<group>"; };
+		207394231B14FC1600DBA74A /* CustomKeyboardViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomKeyboardViewController.m; sourceTree = "<group>"; };
 		20785FBF1AD83BBE000DC57F /* Examples.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Examples.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		20785FC31AD83BBE000DC57F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		20785FC41AD83BBE000DC57F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -111,6 +114,8 @@
 				20785FFC1AD83DC1000DC57F /* CreditCardEntryViewController.m */,
 				20F19B1B1AE080F700077DA1 /* GesturesViewController.h */,
 				20F19B1C1AE080F700077DA1 /* GesturesViewController.m */,
+				207394221B14FC1600DBA74A /* CustomKeyboardViewController.h */,
+				207394231B14FC1600DBA74A /* CustomKeyboardViewController.m */,
 				20CB9CF61AF3EA47002E9F1C /* BlocksViewController.h */,
 				20CB9CF71AF3EA47002E9F1C /* BlocksViewController.m */,
 				20785FC21AD83BBE000DC57F /* Supporting Files */,
@@ -234,6 +239,7 @@
 				20785FC51AD83BBE000DC57F /* AppDelegate.swift in Sources */,
 				20CB9CF81AF3EA47002E9F1C /* BlocksViewController.m in Sources */,
 				20785FEC1AD83C63000DC57F /* RootTableViewController.m in Sources */,
+				207394241B14FC1600DBA74A /* CustomKeyboardViewController.m in Sources */,
 				20785FFD1AD83DC1000DC57F /* CreditCardEntryViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

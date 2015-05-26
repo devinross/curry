@@ -44,6 +44,8 @@
 @property (nonatomic,strong) NSArray *keyViews;
 @property (nonatomic,assign) TKInputKey *originalSelectedKey;
 @property (nonatomic,strong) TKInputKey *selectedKey;
+@property (nonatomic,strong) NSTimer *holdTimer;
+@property (nonatomic,assign) NSInteger holdCounter;
 
 @end
 
@@ -59,9 +61,6 @@
 	self.clipsToBounds = YES;
 	self.multipleTouchEnabled = NO;
 	self.exclusiveTouch = YES;
-	
-	
-	
 	
 	CGRect cntFrame = self.bounds;
 	self.containerView = [[UIView alloc] initWithFrame:cntFrame];
@@ -98,11 +97,9 @@
 		cntRect.size.width = maxX + minX;
 		cntRect.origin.x = (CGRectGetWidth(self.frame) - cntRect.size.width) / 2.0f;
 		self.containerView.frame = cntRect;
-		
-		self.hideKeyboardKey = [[TKInputKey alloc] initWithFrame:CGRectMake(frame.size.width - 80 - 32, frame.size.height - 75 - 12, 80, 75)
-														  symbol:[UIImage imageNamed:@"keyboard-down-keyboard"]
-													  normalType:TKInputKeyTypeDefault
-													selectedType:TKInputKeyTypeHighlighted runner:NO];
+        CGRect rect = CGRectMake(frame.size.width - 80 - 32, frame.size.height - 75 - 12, 80, 75);
+        UIImage *img = [UIImage imageNamed:@"keyboard-down-keyboard"];
+		self.hideKeyboardKey = [[TKInputKey alloc] initWithFrame:rect symbol:img normalType:TKInputKeyTypeDefault selectedType:TKInputKeyTypeHighlighted runner:NO];
 		self.hideKeyboardKey.autoresizingMask = UIViewAutoresizingFlexibleLeftMargin;
 		self.hideKeyboardKey.tag = tag;
 		[self.hideKeyboardKey setHighlighted:NO];
@@ -115,57 +112,45 @@
 		[self addSubview:dots];
 	}
 	
-	
-	
-	
-	
     return self;
 }
 - (void) touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event{
-	
 	
 	UITouch *touch = [touches anyObject];
 	UIView *view = [self hitTest:[touch locationInView:self] withEvent:event];
 	
 	if(self.selectedKey!=nil){
-		
 		[self.selectedKey setHighlighted:NO];
 		self.originalSelectedKey = nil;
 		self.selectedKey = nil;
-		
 	}
 	
-	
-	if(![view isKindOfClass:[TKInputKey class]])
-		return;
-	
-	
+	if(![view isKindOfClass:[TKInputKey class]]) return;
 	[[UIDevice currentDevice] playInputClick];
-	
 	
 	self.originalSelectedKey = (TKInputKey*)view;
 	self.selectedKey = self.originalSelectedKey;
 	[self.selectedKey setHighlighted:YES];
 	[self.containerView bringSubviewToFront:self.selectedKey];
-	
+    
+    if(self.originalSelectedKey.canTapAndHold){
+        self.holdCounter = 0;
+        [self.holdTimer invalidate];
+        self.holdTimer = nil;
+        self.holdTimer = [NSTimer scheduledTimerWithTimeInterval:0.35 target:self selector:@selector(holding:) userInfo:nil repeats:YES];
+    }
 	
 }
 - (void) touchesMoved:(NSSet *)touches withEvent:(UIEvent *)event{
+    
 	UITouch *touch = [touches anyObject];
-	
-	
 	UIView *view = [self hitTest:[touch locationInView:self] withEvent:event];
-	
+    
 	TKInputKey *currentKey = nil;
-	
-	
 	if([view isKindOfClass:[TKInputKey class]])
 		currentKey = (TKInputKey*)view;
 	
-	
-	
 	BOOL on = NO;
-	
 	if(self.originalSelectedKey == currentKey)
 		on = YES;
 	else if(self.originalSelectedKey.runner && currentKey.runner)
@@ -183,28 +168,47 @@
 		[self.selectedKey setHighlighted:YES];
 	}
 	
-	
 }
+
+- (void) holding:(id)sender{
+    
+    if(self.originalSelectedKey == self.selectedKey){
+        self.holdCounter++;
+        if(self.holdCounter < 6){
+            [self sendTapKeyEvent];
+        }else{
+            [self sendTapKeyEvent];
+            [self sendTapKeyEvent];
+            [self sendTapKeyEvent];
+            [self sendTapKeyEvent];
+            [self sendTapKeyEvent];
+        }
+    }
+    
+}
+
+- (void) sendTapKeyEvent{
+    
+    if(self.selectedKey == self.backspaceKey){
+        
+        BOOL delete = YES;
+        if(self.textField.text.length < 1)
+            delete = NO;
+        else if(self.textField.delegate && [self.textField.delegate respondsToSelector:@selector(textField:shouldChangeCharactersInRange:replacementString:)])
+            delete = [self.textField.delegate textField:self.textField shouldChangeCharactersInRange:NSMakeRange(self.textField.text.length-1, 1) replacementString:@""];
+        
+        if(delete) [self.textField deleteBackward];
+        
+    }else if(self.selectedKey){
+        [self.delegate inputView:self didSelectKey:self.selectedKey];
+    }
+}
+
 - (void) touchesEnded:(NSSet *)touches withEvent:(UIEvent *)event{
 	
-	
-	if(self.selectedKey == self.backspaceKey){
+    if(self.holdTimer == nil || self.holdCounter < 1)
+        [self sendTapKeyEvent];
 
-		BOOL delete = YES;
-		if(self.textField.text.length < 1)
-			delete = NO;
-		
-		
-		else if(self.textField.delegate && [self.textField.delegate respondsToSelector:@selector(textField:shouldChangeCharactersInRange:replacementString:)])
-			delete = [self.textField.delegate textField:self.textField shouldChangeCharactersInRange:NSMakeRange(self.textField.text.length-1, 1) replacementString:@""];
-		
-		if(delete)
-			[self.textField deleteBackward];
-		
-		
-	}else if(self.selectedKey){
-		[self.delegate inputView:self didSelectKey:self.selectedKey];
-	}
 	[self touchesCancelled:touches withEvent:event];
 }
 - (void) touchesCancelled:(NSSet *)touches withEvent:(UIEvent *)event{
