@@ -216,6 +216,9 @@
 	[self.selectedKey setHighlighted:NO];
 	self.selectedKey = nil;
 	self.originalSelectedKey = nil;
+    [self.holdTimer invalidate];
+    self.holdTimer = nil;
+    self.holdCounter = 0;
 	
 }
 - (BOOL) enableInputClicksWhenVisible{
