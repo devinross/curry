@@ -43,6 +43,7 @@
     [super viewDidLoad];
     self.items = @[@"Card Modal",@"Credit Card Text Fields",@"Gestures",@"Action Sheet Block",@"Custom Keyboards"];
     [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:IDENTIFIER];
+    self.title = NSLocalizedString(@"Curry", @"");
 }
 
 
