@@ -136,6 +136,8 @@
 		20CB9CFF1AF3F126002E9F1C /* UIAlertView+Blocks.m in Sources */ = {isa = PBXBuildFile; fileRef = 20CB9CFD1AF3F126002E9F1C /* UIAlertView+Blocks.m */; };
 		20CB9D021AF405CD002E9F1C /* UIControl+Blocks.h in Headers */ = {isa = PBXBuildFile; fileRef = 20CB9D001AF405CD002E9F1C /* UIControl+Blocks.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		20CB9D031AF405CD002E9F1C /* UIControl+Blocks.m in Sources */ = {isa = PBXBuildFile; fileRef = 20CB9D011AF405CD002E9F1C /* UIControl+Blocks.m */; };
+		20E110741B3B2651006A2CD6 /* TKVideoViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 20E110721B3B2651006A2CD6 /* TKVideoViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		20E110751B3B2651006A2CD6 /* TKVideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 20E110731B3B2651006A2CD6 /* TKVideoViewController.m */; };
 		20E131CC1AF4107F0011492F /* UILabel+Initializers.h in Headers */ = {isa = PBXBuildFile; fileRef = 20E131C81AF4107F0011492F /* UILabel+Initializers.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		20E131CD1AF4107F0011492F /* UILabel+Initializers.m in Sources */ = {isa = PBXBuildFile; fileRef = 20E131C91AF4107F0011492F /* UILabel+Initializers.m */; };
 		20E131CE1AF4107F0011492F /* UIView+Initializers.h in Headers */ = {isa = PBXBuildFile; fileRef = 20E131CA1AF4107F0011492F /* UIView+Initializers.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -288,6 +290,8 @@
 		20CB9CFD1AF3F126002E9F1C /* UIAlertView+Blocks.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIAlertView+Blocks.m"; path = "../Controllers/UIAlertView+Blocks.m"; sourceTree = "<group>"; };
 		20CB9D001AF405CD002E9F1C /* UIControl+Blocks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIControl+Blocks.h"; path = "../Controllers/UIControl+Blocks.h"; sourceTree = "<group>"; };
 		20CB9D011AF405CD002E9F1C /* UIControl+Blocks.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIControl+Blocks.m"; path = "../Controllers/UIControl+Blocks.m"; sourceTree = "<group>"; };
+		20E110721B3B2651006A2CD6 /* TKVideoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TKVideoViewController.h; sourceTree = "<group>"; };
+		20E110731B3B2651006A2CD6 /* TKVideoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TKVideoViewController.m; sourceTree = "<group>"; };
 		20E131C81AF4107F0011492F /* UILabel+Initializers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+Initializers.h"; sourceTree = "<group>"; };
 		20E131C91AF4107F0011492F /* UILabel+Initializers.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+Initializers.m"; sourceTree = "<group>"; };
 		20E131CA1AF4107F0011492F /* UIView+Initializers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Initializers.h"; sourceTree = "<group>"; };
@@ -557,6 +561,8 @@
 				200B63011AD804340049E35C /* TKKeyboardTableViewController.m */,
 				200B63041AD804340049E35C /* TKWebViewController.h */,
 				200B63051AD804340049E35C /* TKWebViewController.m */,
+				20E110721B3B2651006A2CD6 /* TKVideoViewController.h */,
+				20E110731B3B2651006A2CD6 /* TKVideoViewController.m */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -669,6 +675,7 @@
 				202DBEBF1AF4347A00B0CE67 /* TKDecimalInputView.h in Headers */,
 				20E131CC1AF4107F0011492F /* UILabel+Initializers.h in Headers */,
 				20E131CE1AF4107F0011492F /* UIView+Initializers.h in Headers */,
+				20E110741B3B2651006A2CD6 /* TKVideoViewController.h in Headers */,
 				202DBE711AF4121C00B0CE67 /* TKCustomPresentationViewController.h in Headers */,
 				2098BA241B0F6C4F000E0074 /* NSTimer+Blocks.h in Headers */,
 				20CAE0D41B0953E40088740E /* TKSwitchCell.h in Headers */,
@@ -778,6 +785,7 @@
 				200B62EF1AD7FEF80049E35C /* UIAlertView+TKCategory.m in Sources */,
 				20E131CD1AF4107F0011492F /* UILabel+Initializers.m in Sources */,
 				20F19B1A1AE07E8500077DA1 /* UIGestureRecognizer+Blocks.m in Sources */,
+				20E110751B3B2651006A2CD6 /* TKVideoViewController.m in Sources */,
 				20CB9D031AF405CD002E9F1C /* UIControl+Blocks.m in Sources */,
 				200B631B1AD804400049E35C /* TKExtendedScrollView.m in Sources */,
 				200B62DF1AD7FEF80049E35C /* UIColor+TKCategory.m in Sources */,
