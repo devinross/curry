@@ -96,10 +96,10 @@ typedef void (^UIActionSheetBlock)(UIActionSheet *sender);
     
     id block = buttonIndex < self.actions.count ? self.actions[buttonIndex] : nil;
     
-    if(block == [NSNull null]) return;
+    if(block == [NSNull null] || !block) return;
     
     UIActionSheetBlock handler = block;
-    
+	
     handler(self);
     
     

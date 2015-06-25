@@ -46,7 +46,7 @@
     NSInteger yPad = 0, xPad = 0, xMargin = 0;
     NSInteger w = frame.size.width / 4;
     NSInteger h = frame.size.height / 4;
-    NSInteger endKeyWidth = w + 1;
+    NSInteger endKeyWidth;
     NSInteger minX = xMargin+w*3+ (xPad*3);
 
     if([UIDevice currentDevice].padIdiom){
