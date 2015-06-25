@@ -42,7 +42,6 @@
 + (instancetype) keyWithFrame:(CGRect)frame symbol:(id)symbol normalType:(TKInputKeyType)normal selectedType:(TKInputKeyType)highlighted runner:(BOOL)runner{
 	return [[TKInputKey alloc] initWithFrame:frame symbol:symbol normalType:normal selectedType:highlighted runner:runner];
 }
-
 - (instancetype) initWithFrame:(CGRect)frame symbol:(id)symbol normalType:(TKInputKeyType)normal selectedType:(TKInputKeyType)highlighted runner:(BOOL)runner{
 	if(!(self=[super initWithFrame:frame])) return nil;
 	
@@ -100,6 +99,9 @@
 	
     return self;
 }
+
+
+
 - (void) setHighlighted:(BOOL)highlighted{
 	
 	TKInputKeyType type = highlighted ? self.highlighedType : self.normalType;

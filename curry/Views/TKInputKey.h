@@ -63,7 +63,7 @@ typedef NS_ENUM(NSInteger, TKInputKeyType) {
  @param runner If yes, the key can be highlighted and selected even if it isn't the initial key touched at the beginning.
  @return An initialized `TKInputKey` object or nil if the object couldn’t be created.
  */
-- (instancetype) initWithFrame:(CGRect)frame symbol:(id)symbol normalType:(TKInputKeyType)normal selectedType:(TKInputKeyType)highlighted runner:(BOOL)runner NS_DESIGNATED_INITIALIZER;
+- (instancetype) initWithFrame:(CGRect)frame symbol:(id)symbol normalType:(TKInputKeyType)normal selectedType:(TKInputKeyType)highlighted runner:(BOOL)runner;
 
 ///----------------------------
 /// @name Properties

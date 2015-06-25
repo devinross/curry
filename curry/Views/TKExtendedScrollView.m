@@ -33,7 +33,7 @@
 
 @implementation TKExtendedScrollView
 
-- (id) initWithFrame:(CGRect)frame{
+- (instancetype) initWithFrame:(CGRect)frame{
 	if(!(self=[super initWithFrame:frame])) return nil;
 	self.clipsToBounds = NO;
 	self.showsHorizontalScrollIndicator = NO;

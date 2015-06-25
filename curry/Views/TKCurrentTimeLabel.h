@@ -35,7 +35,7 @@
 @interface TKCurrentTimeLabel : UILabel
 
 /** For subclassing, return the current time string. */
-- (NSString*) currentTime;
+@property (nonatomic, readonly, copy) NSString *currentTime;
 
 /** For subclassing, apply and text styling here. */
 - (NSAttributedString*) attributeStringWithTime:(NSString*)time;

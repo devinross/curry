@@ -40,7 +40,7 @@
 
 
 
-- (BOOL) canOpenUberApp;
+@property (nonatomic, readonly) BOOL canOpenUberApp;
 
 - (void) openUberAppWithClient:(NSString*)clientID product:(NSString*)productID pickup:(CLLocationCoordinate2D)pickupCoordinate pickupName:(NSString*)pickupName pickupAddress:(NSString*)pickupAddress dropoff:(CLLocationCoordinate2D)dropoff dropoffName:(NSString*)dropoffName dropoffAddress:(NSString*)dropoffAddress;
 

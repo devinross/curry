@@ -33,7 +33,7 @@
 
 @interface UIDevice (TKCategory)
 
-- (BOOL) padIdiom;
-- (BOOL) phoneIdiom;
+@property (nonatomic, readonly) BOOL padIdiom;
+@property (nonatomic, readonly) BOOL phoneIdiom;
 
 @end
