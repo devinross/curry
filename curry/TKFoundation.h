@@ -93,6 +93,12 @@ UIKIT_STATIC_INLINE CGRect CGRectCompose(CGPoint origin, CGSize size){
 	CGRect r; r.origin = origin; r.size = size; return r;
 }
 
+UIKIT_STATIC_INLINE CGRect CGRectMakeInset(CGFloat x, CGFloat y, CGFloat width, CGFloat height, CGFloat dx, CGFloat dy);
+UIKIT_STATIC_INLINE CGRect CGRectMakeInset(CGFloat x, CGFloat y, CGFloat width, CGFloat height, CGFloat dx, CGFloat dy){
+	return CGRectInset(CGRectMake(x,y,width,height), dx, dy);
+}
+
+
 
 UIKIT_STATIC_INLINE CGRect CGRectInsetX(CGRect rect, CGFloat dx);
 UIKIT_STATIC_INLINE CGRect CGRectInsetX(CGRect rect, CGFloat dx){

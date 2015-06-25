@@ -88,6 +88,10 @@
 	self.videoView.player = self.player;
 	[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(playerItemDidReachEnd:) name:AVPlayerItemDidPlayToEndTimeNotification object:[self.player currentItem]];
 }
+- (void) viewDidDisappear:(BOOL)animated{
+	[super viewDidDisappear:animated];
+	[[NSNotificationCenter defaultCenter] removeObserver:self name:AVPlayerItemDidPlayToEndTimeNotification object:[self.player currentItem]];
+}
 
 #pragma mark Notifications
 - (void) playerItemDidReachEnd:(NSNotification *)notification{
