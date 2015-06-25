@@ -74,6 +74,19 @@
     return self;
 }
 
+
++ (instancetype) labelWithFrame:(CGRect)frame font:(UIFont*)font textColor:(UIColor*)textColor{
+	return [[[self class] alloc] initWithFrame:frame font:font textColor:textColor];
+}
+- (instancetype) initWithFrame:(CGRect)frame font:(UIFont*)font textColor:(UIColor*)textColor{
+	self = [self initWithFrame:frame];
+	
+	self.textColor = textColor;
+	self.font = font;
+	
+	return self;
+}
+
 + (instancetype) labelWithFrame:(CGRect)frame textColor:(UIColor*)textColor textAlignment:(NSTextAlignment)alignment{
     return [[[self class] alloc] initWithFrame:frame textColor:textColor textAlignment:alignment];
 }
