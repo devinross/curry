@@ -41,6 +41,7 @@
 @property (nonatomic,assign) BOOL shouldLoop;
 
 - (void) play;
+- (void) pause;
 - (void) restart;
 - (void) seekToBeginning;
 

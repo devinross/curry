@@ -14,7 +14,9 @@
 		20785FF61AD83D0C000DC57F /* curry.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20785FF31AD83CEE000DC57F /* curry.framework */; };
 		20785FF71AD83D0C000DC57F /* curry.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 20785FF31AD83CEE000DC57F /* curry.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		20785FFD1AD83DC1000DC57F /* CreditCardEntryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 20785FFC1AD83DC1000DC57F /* CreditCardEntryViewController.m */; };
+		2097F35C1B3DA3F100247736 /* VideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2097F35B1B3DA3F100247736 /* VideoViewController.m */; };
 		20CB9CF81AF3EA47002E9F1C /* BlocksViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 20CB9CF71AF3EA47002E9F1C /* BlocksViewController.m */; };
+		20EC669D1B3DAD1D0027D6A2 /* balllin.mov in Resources */ = {isa = PBXBuildFile; fileRef = 20EC669C1B3DAD1D0027D6A2 /* balllin.mov */; };
 		20F19B1D1AE080F700077DA1 /* GesturesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 20F19B1C1AE080F700077DA1 /* GesturesViewController.m */; };
 /* End PBXBuildFile section */
 
@@ -69,8 +71,11 @@
 		20785FED1AD83CED000DC57F /* curry.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = curry.xcodeproj; path = ../curry.xcodeproj; sourceTree = "<group>"; };
 		20785FFB1AD83DC1000DC57F /* CreditCardEntryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CreditCardEntryViewController.h; sourceTree = "<group>"; };
 		20785FFC1AD83DC1000DC57F /* CreditCardEntryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CreditCardEntryViewController.m; sourceTree = "<group>"; };
+		2097F35A1B3DA3F100247736 /* VideoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VideoViewController.h; sourceTree = "<group>"; };
+		2097F35B1B3DA3F100247736 /* VideoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VideoViewController.m; sourceTree = "<group>"; };
 		20CB9CF61AF3EA47002E9F1C /* BlocksViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BlocksViewController.h; sourceTree = "<group>"; };
 		20CB9CF71AF3EA47002E9F1C /* BlocksViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BlocksViewController.m; sourceTree = "<group>"; };
+		20EC669C1B3DAD1D0027D6A2 /* balllin.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = balllin.mov; sourceTree = "<group>"; };
 		20F19B1B1AE080F700077DA1 /* GesturesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GesturesViewController.h; sourceTree = "<group>"; };
 		20F19B1C1AE080F700077DA1 /* GesturesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GesturesViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -118,6 +123,8 @@
 				207394231B14FC1600DBA74A /* CustomKeyboardViewController.m */,
 				20CB9CF61AF3EA47002E9F1C /* BlocksViewController.h */,
 				20CB9CF71AF3EA47002E9F1C /* BlocksViewController.m */,
+				2097F35A1B3DA3F100247736 /* VideoViewController.h */,
+				2097F35B1B3DA3F100247736 /* VideoViewController.m */,
 				20785FC21AD83BBE000DC57F /* Supporting Files */,
 			);
 			path = Examples;
@@ -126,6 +133,7 @@
 		20785FC21AD83BBE000DC57F /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				20EC669A1B3DAD1D0027D6A2 /* Assets */,
 				20785FE91AD83C0E000DC57F /* Bridging-Header.h */,
 				20785FCB1AD83BBE000DC57F /* Images.xcassets */,
 				20785FC31AD83BBE000DC57F /* Info.plist */,
@@ -140,6 +148,22 @@
 				20785FF51AD83CEE000DC57F /* curryTests.xctest */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		20EC669A1B3DAD1D0027D6A2 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				20EC669B1B3DAD1D0027D6A2 /* Video */,
+			);
+			path = Assets;
+			sourceTree = SOURCE_ROOT;
+		};
+		20EC669B1B3DAD1D0027D6A2 /* Video */ = {
+			isa = PBXGroup;
+			children = (
+				20EC669C1B3DAD1D0027D6A2 /* balllin.mov */,
+			);
+			path = Video;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -226,6 +250,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				20785FCC1AD83BBE000DC57F /* Images.xcassets in Resources */,
+				20EC669D1B3DAD1D0027D6A2 /* balllin.mov in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -240,6 +265,7 @@
 				20785FC51AD83BBE000DC57F /* AppDelegate.swift in Sources */,
 				20CB9CF81AF3EA47002E9F1C /* BlocksViewController.m in Sources */,
 				20785FEC1AD83C63000DC57F /* RootTableViewController.m in Sources */,
+				2097F35C1B3DA3F100247736 /* VideoViewController.m in Sources */,
 				207394241B14FC1600DBA74A /* CustomKeyboardViewController.m in Sources */,
 				20785FFD1AD83DC1000DC57F /* CreditCardEntryViewController.m in Sources */,
 			);

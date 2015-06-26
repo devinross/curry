@@ -53,7 +53,6 @@
 @property (nonatomic,strong) TKPlayerView *videoView;
 @property (nonatomic,copy) NSString *videoTitle;
 @property (nonatomic,copy) NSString *videoType;
-
 @end
 
 @implementation TKVideoViewController
@@ -91,6 +90,10 @@
 - (void) viewDidDisappear:(BOOL)animated{
 	[super viewDidDisappear:animated];
 	[[NSNotificationCenter defaultCenter] removeObserver:self name:AVPlayerItemDidPlayToEndTimeNotification object:[self.player currentItem]];
+	self.player = nil;
+	[self.videoView removeFromSuperview];
+	self.videoView = nil;
+	self.view = nil;
 }
 
 #pragma mark Notifications
@@ -107,6 +110,9 @@
 }
 - (void) play{
 	[self.player play];
+}
+- (void) pause{
+	[self.player pause];
 }
 - (void) restart{
 	if([self isViewLoaded] && self.view.superview){
