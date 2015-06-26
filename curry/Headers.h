@@ -86,7 +86,6 @@
 #import "CALayer+TKAnimation.h"
 #import "CAKeyframeAnimation+TKAnimation.h"
 #import "CAAnimation+TKAnimation.h"
-
 #import "UIGestureRecognizer+Blocks.h"
 
 // ViewControllers
@@ -112,6 +111,7 @@
 #import "TKSectionedScrollView.h"
 #import "TKCurrentTimeLabel.h"
 #import "TKSwitchCell.h"
+#import "TKWindow.h"
 
 // Credit Card
 #import "TKCreditCardNumberTextField.h"
