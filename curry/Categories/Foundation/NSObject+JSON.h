@@ -31,6 +31,7 @@
 
 @import Foundation;
 
+/** Additional functionality for `NSObject` that make it easy to turn `NSData` to json data on a background thread.  */
 @interface NSObject (JSON)
 
 

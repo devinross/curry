@@ -37,7 +37,10 @@
 /** For subclassing, return the current time string. */
 @property (nonatomic, readonly, copy) NSString *currentTime;
 
-/** For subclassing, apply and text styling here. */
+/** For subclassing, apply and text styling here.
+ @param time The current time text.
+ @return A attributed text string of the time string.
+ */
 - (NSAttributedString*) attributeStringWithTime:(NSString*)time;
 
 @end

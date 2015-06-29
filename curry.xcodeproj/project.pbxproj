@@ -6,6 +6,20 @@
 	objectVersion = 46;
 	objects = {
 
+/* Begin PBXAggregateTarget section */
+		203FB7FA1B410DE0000D3B43 /* Documentation */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 203FB7FB1B410DE0000D3B43 /* Build configuration list for PBXAggregateTarget "Documentation" */;
+			buildPhases = (
+				203FB7FE1B410E30000D3B43 /* ShellScript */,
+			);
+			dependencies = (
+			);
+			name = Documentation;
+			productName = Documentation;
+		};
+/* End PBXAggregateTarget section */
+
 /* Begin PBXBuildFile section */
 		200B625B1AD7FB460049E35C /* curry.h in Headers */ = {isa = PBXBuildFile; fileRef = 200B625A1AD7FB460049E35C /* curry.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		200B62611AD7FB460049E35C /* curry.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 200B62551AD7FB460049E35C /* curry.framework */; };
@@ -746,6 +760,9 @@
 					200B625F1AD7FB460049E35C = {
 						CreatedOnToolsVersion = 6.3;
 					};
+					203FB7FA1B410DE0000D3B43 = {
+						CreatedOnToolsVersion = 6.3.2;
+					};
 				};
 			};
 			buildConfigurationList = 200B624F1AD7FB450049E35C /* Build configuration list for PBXProject "curry" */;
@@ -762,6 +779,7 @@
 			targets = (
 				200B62541AD7FB450049E35C /* curry */,
 				200B625F1AD7FB460049E35C /* curryTests */,
+				203FB7FA1B410DE0000D3B43 /* Documentation */,
 			);
 		};
 /* End PBXProject section */
@@ -783,6 +801,22 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		203FB7FE1B410E30000D3B43 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "#appledoc Xcode script\n# Start constants\ncompany=\"DevinRoss\";\ncompanyID=\"com.devinross\";\ncompanyURL=\"http://devinross.com\";\ntarget=\"iphoneos\";\n\n\n# End constants\n/usr/local/bin/appledoc \\\n--project-name \"${PROJECT_NAME}\" \\\n--project-company \"${company}\" \\\n--company-id \"${companyID}\" \\\n--docset-atom-filename \"${company}.atom\" \\\n--docset-feed-url \"${companyURL}/${company}/%DOCSETATOMFILENAME\" \\\n--docset-package-url \"${companyURL}/${company}/%DOCSETPACKAGEFILENAME\" \\\n--docset-fallback-url \"${companyURL}/${company}\" \\\n--publish-docset \\\n--docset-platform-family \"${target}\" \\\n--logformat xcode \\\n--keep-intermediate-files \\\n--no-repeat-first-par \\\n--no-warn-invalid-crossref \\\n--exit-threshold 2 \\\n--output \"~/Docs\" \\\n\"${PROJECT_DIR}/curry\"";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		200B62501AD7FB450049E35C /* Sources */ = {
@@ -919,7 +953,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -961,7 +995,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -1046,6 +1080,20 @@
 			};
 			name = Release;
 		};
+		203FB7FC1B410DE0000D3B43 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		203FB7FD1B410DE0000D3B43 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -1072,6 +1120,15 @@
 			buildConfigurations = (
 				200B626F1AD7FB460049E35C /* Debug */,
 				200B62701AD7FB460049E35C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		203FB7FB1B410DE0000D3B43 /* Build configuration list for PBXAggregateTarget "Documentation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				203FB7FC1B410DE0000D3B43 /* Debug */,
+				203FB7FD1B410DE0000D3B43 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

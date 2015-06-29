@@ -71,7 +71,9 @@
  */
 - (void) showActionSheet:(id)sender;
 
-/** A convenience method for dismissing the presented view controller. */
+/** A convenience method for dismissing the presented view controller.
+ @param sender The sender that sent the event.
+ */
 - (void) dismiss:(id)sender;
 
 @end
