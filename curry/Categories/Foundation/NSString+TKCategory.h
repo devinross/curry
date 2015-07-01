@@ -72,6 +72,7 @@
 - (BOOL) hasString:(NSString*)substring;
 
 
+/* Returns a string with the first word in each sentence as capitalized. */
 @property (nonatomic, readonly, copy) NSString *capitalizeSentence;
 
 
@@ -85,7 +86,10 @@
  */
 @property (nonatomic, getter=isValidCreditCardNumber, readonly) BOOL validCreditCardNumber;
 
-
+/** Returns a formatted phone number. So it'd transform a string 18005555555 would be 1-800-555-5555.
+ @param deleteLastChar Remove the last character from the string.
+ @return Returns an `NSString` that transform a string of numbers into a string human readable phone number.
+ */
 - (NSString*) formattedPhoneNumberWithLastCharacterRemoved:(BOOL)deleteLastChar;
 
 

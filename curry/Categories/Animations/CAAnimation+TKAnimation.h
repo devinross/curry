@@ -31,11 +31,19 @@
 
 @import QuartzCore;
 
+/** Additional functionality for `CAAnimation`. */
 @interface CAAnimation (TKAnimation)
 
+/** The callback block executed when the animation completes. */
 @property (nonatomic, copy) void (^completion)(BOOL finished);
+
+
+/** A callback block executed when the animation starts. */
 @property (nonatomic, copy) void (^start)(void);
 
+/** Set the animation completion block.
+ @param completion The block executed when the animation is complete. 
+ */
 - (void) setCompletion:(void (^)(BOOL finished))completion;
 
 @end

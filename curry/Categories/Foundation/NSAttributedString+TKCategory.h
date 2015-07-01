@@ -32,9 +32,21 @@
 @import Foundation;
 @import UIKit;
 
+/** Additional functionality for `NSAttributedString`.  */
 @interface NSAttributedString (TKCategory)
 
-+ (NSAttributedString*) attributedStringWithText:(NSString*)text lineHeight:(CGFloat)space;
+/** Creates an attributed string with a line height.
+ @param text The text of the string.
+ @param lineHeight The line height of the attributed string.
+ @return A `NSAttributedString` object.
+ */
++ (NSAttributedString*) attributedStringWithText:(NSString*)text lineHeight:(CGFloat)lineHeight;
+
+/** Creates an attributed string with a specific kerning.
+ @param text The text of the string.
+ @param kerning The kerning of the attributed string.
+ @return A `NSAttributedString` object.
+ */
 + (NSAttributedString*) attributedStringWithText:(NSString *)text kerning:(CGFloat)kerning;
 
 @end

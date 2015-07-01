@@ -32,8 +32,10 @@
 @import Foundation;
 @import UIKit;
 
+/** This class is a subclass of `UITextField` for specifically entering credit card numbers. */
 @interface TKCreditCardNumberTextField : UITextField
 
+/** Return YES if the current given text is a valid credit card number. */
 @property (nonatomic,readonly) BOOL isValidCreditCard;
 
 @end

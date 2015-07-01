@@ -32,7 +32,6 @@
 @import UIKit;
 
 /** Additional functionality for `UITextField`.  */
-
 @interface UITextField (TKCategory)
 
 

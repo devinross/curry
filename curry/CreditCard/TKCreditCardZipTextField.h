@@ -31,6 +31,7 @@
 
 @import UIKit;
 
+/** This class is a subclass of `UITextField` for specifically entering a five digit zip code. */
 @interface TKCreditCardZipTextField : UITextField
 
 @end

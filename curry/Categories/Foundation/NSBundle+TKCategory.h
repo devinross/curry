@@ -30,10 +30,16 @@
  */
 @import Foundation;
 
+/** Additional functionality for `NSBundle` for getting json data.  */
 @interface NSBundle (TKCategory)
 
+/** The app name. */
 @property (nonatomic,assign,readonly) NSString *appName;
+
+/** The app version. */
 @property (nonatomic,assign,readonly) NSString *version;
+
+/** The app build. */
 @property (nonatomic,assign,readonly) NSString *build;
 
 @end

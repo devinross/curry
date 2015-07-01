@@ -31,7 +31,7 @@
 
 @import UIKit;
 
-/** Additional functionality for `UIBarButtonItem`.  */
+/** Additional functionality for `UIBarButtonItem`. */
 @interface UIBarButtonItem (TKCategory)
 
 

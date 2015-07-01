@@ -53,6 +53,10 @@
 */
 + (UIColor *) randomColor;
 
+/** Creates and returns a color object with a random color value.
+ @param alpha The alpha of the color.
+ @return The `UIColor` object.
+ */
 + (UIColor*) randomColorWithAlpha:(CGFloat)alpha;
 
 @end

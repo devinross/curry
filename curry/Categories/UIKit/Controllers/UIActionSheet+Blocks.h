@@ -31,13 +31,38 @@
 
 @import UIKit;
 
+/** Introduces block callbacks to `UIActionSheet`. */
 @interface UIActionSheet (Blocks) <UIActionSheetDelegate>
 
+/** Creates a UIAction sheet object.
+ @param title The title for the sheet. 
+ @return A `UIActionSheet` with only the title set.
+ */
 + (UIActionSheet*) sheetWithTitle:(NSString*)title;
+
+/** Intialized a `UIActionSheet`.
+ @param title The title for the sheet.
+ @return A `UIActionSheet` with only the title set.
+ */
 - (instancetype) initWithTitle:(NSString *)title;
 
+
+/** Add a button with a callback block.
+ @param title The title for the sheet.
+ @param block The callback sent when a user selects the option.
+ */
 - (void) addButtonWithTitle:(NSString*)title handler:(void (^)(UIActionSheet *sender))block;
+
+/** Add a cancel button with a callback block.
+ @param title The title for the sheet.
+ @param block The callback sent when a user selects the option.
+ */
 - (void) addCancelButtonWithTitle:(NSString*)title handler:(void (^)(UIActionSheet *sender))block;
+
+/** Add a destructive button with a callback block.
+ @param title The title for the sheet.
+ @param block The callback sent when a user selects the option.
+ */
 - (void) addDestructiveButtonWithTitle:(NSString*)title handler:(void (^)(UIActionSheet *sender))block;
 
 @end

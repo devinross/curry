@@ -31,9 +31,13 @@
 
 @import UIKit;
 
+/** Additional functionality for `UILabel`. */
 @interface UILabel (TKCategory)
 
+/** This function will size to fit based on the `textAlignment`'s property. */
 - (void) sizeToFitWithAlignment;
+
+/** This function will size to fit based on the `textAlignment`'s property and vertically center the label. */
 - (void) sizeToFitWithAlignmentAndVerticalCentering;
 
 @end

@@ -31,8 +31,15 @@
 
 @import UIKit;
 
+/** Additional functionality for `UIViewController`. */
 @interface UIViewController (TKCategory)
 
-- (void) presentNavigationControllerWithRoot:(UIViewController *)rootViewControllerToPresent animated:(BOOL)flag completion:(void (^)(void))completion;
+
+/** Present a `UINavigationController` with a given root view controller.
+ @param rootViewControllerToPresent The root view controller for the `UINavigationController`.
+ @param animated Present the navigation controller with animation.
+ @param completion Completion callback block.
+ */
+- (void) presentNavigationControllerWithRoot:(UIViewController *)rootViewControllerToPresent animated:(BOOL)animated completion:(void (^)(void))completion;
 
 @end

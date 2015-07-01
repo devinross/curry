@@ -31,8 +31,10 @@
 
 @import UIKit;
 
+/** Additional functionality for `UIScreen`.  */
 @interface UIScreen (TKCategory)
 
+/** The point size of one pixel on screen. (ie. @1x => 1, @2x => 0.5) */
 @property (nonatomic, readonly) CGFloat onePixelSize;
 
 @end

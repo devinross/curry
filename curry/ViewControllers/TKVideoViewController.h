@@ -32,19 +32,46 @@
 @import UIKit;
 @import AVFoundation;
 
+/** `TKVideoViewController` is view controller dedicating to playing a video file from disk. */
 @interface TKVideoViewController : UIViewController
 
+/** Initializes a video view controller that will load the given `NSURL` object.
+ @param title A `NSString` of the video file name.
+ @param type A `NSString` of the video file extension.
+ @return An initialized `TKVideoViewController` object or nil if the object couldn’t be created.
+ */
 - (instancetype) initWithVideoTitle:(NSString*)title ofType:(NSString*)type;
 
+///----------------------------
+/// @name Properties
+///----------------------------
+
+/** The `AVPlayer` object. */
 @property (nonatomic,strong) AVPlayer *player;
+
+/** The gravity of the video aspect. */
 @property (nonatomic,strong) NSString *videoGravity;
+
+/** A flag to set to have the video play over and over again. */
 @property (nonatomic,assign) BOOL shouldLoop;
 
+
+///----------------------------
+/// @name Methods
+///----------------------------
+/** A flag to set to have the video play over and over again. */
 - (void) play;
+/** A flag to set to have the video play over and over again. */
 - (void) pause;
+/** A flag to set to have the video play over and over again. */
 - (void) restart;
+/** Set  */
 - (void) seekToBeginning;
 
+
+/** A notification that the player did reach the end of the video.
+ @param notification The `NSNotification` object that called the method.
+ */
 - (void) playerItemDidReachEnd:(NSNotification *)notification;
 
 @end

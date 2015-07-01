@@ -37,7 +37,7 @@
 @interface TKWebViewController : UIViewController <UIWebViewDelegate>
 
 
-/** Initializes a web vew controller that will load the given `NSURL` object.
+/** Initializes a web view controller that will load the given `NSURL` object.
  @param URL A `NSURL` object that will loaded by the `UIWebView`.
  @return An initialized `TKWebViewController` object or nil if the object couldn’t be created.
  */

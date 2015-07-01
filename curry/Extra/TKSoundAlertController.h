@@ -71,6 +71,11 @@
 @property (assign,nonatomic,getter = isOn) BOOL on;
 
 
+/** Play a sound.
+ @param soundName The name of the sound file.
+ @param type The file extension.
+ */
+
 - (void) playSoundName:(NSString*)soundName type:(NSString*)type;
 
 

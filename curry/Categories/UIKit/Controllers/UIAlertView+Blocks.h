@@ -31,14 +31,34 @@
 
 @import UIKit;
 
+/** Introduces block callbacks to `UIAlertView`. */
 @interface UIAlertView (Blocks) <UIAlertViewDelegate>
 
+/** Creates a `UIAlertView` with the given title and message and no buttons.
+ @param title The title of the alert.
+ @param message The message of the alert.
+ @return A freshly minted `UIAlertView`.
+ */
 + (UIAlertView*) alertWithTitle:(NSString*)title message:(NSString*)message;
 
+
+/** Initializes a `UIAlertView` with the given title and message and no buttons.
+ @param title The title of the alert.
+ @param message The message of the alert.
+ @return A freshly minted `UIAlertView`.
+ */
 - (instancetype) initWithTitle:(NSString *)title messsge:(NSString*)message;
 
+/** Add a button with a callback block.
+ @param title The title for the sheet.
+ @param block The callback sent when a user selects the option.
+ */
 - (void) addButtonWithTitle:(NSString*)title handler:(void (^)(UIAlertView *sender))block;
 
+/** Add a cancel button with a callback block.
+ @param title The title for the sheet.
+ @param block The callback sent when a user selects the option.
+ */
 - (void) addCancelButtonWithTitle:(NSString*)title handler:(void (^)(UIAlertView *sender))block;
 
 @end

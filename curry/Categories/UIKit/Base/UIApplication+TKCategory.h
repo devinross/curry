@@ -32,16 +32,43 @@
 @import UIKit;
 @import CoreLocation;
 
+/** Additional functionality for `UIApplication`. */
 @interface UIApplication (TKCategory)
 
+/** Opens Google maps app (or URL) to the given coordinates and query.
+ @param coordinates The coordinates to open to.
+ @param query The search query.
+ */
 - (void) openGoogleMapURLWithCoordinate:(CLLocationCoordinate2D)coordinates query:(NSString*)query;
 
+/** Opens Apple maps app to the given coordinates and query.
+ @param coordinates The coordinates to open to.
+ @param query The search query.
+ */
 - (void) openAppleMapURLWithCoordinate:(CLLocationCoordinate2D)coordinates query:(NSString*)query;
 
 
-
+/** Returns `true` if the app can open Uber. */
 @property (nonatomic, readonly) BOOL canOpenUberApp;
 
-- (void) openUberAppWithClient:(NSString*)clientID product:(NSString*)productID pickup:(CLLocationCoordinate2D)pickupCoordinate pickupName:(NSString*)pickupName pickupAddress:(NSString*)pickupAddress dropoff:(CLLocationCoordinate2D)dropoff dropoffName:(NSString*)dropoffName dropoffAddress:(NSString*)dropoffAddress;
+
+/** Opens the Uber app with the given callbacks.
+ @param clientID The clientID given by Uber to identify the app that launched the app.
+ @param productID A specific product id for things like UberTaxi, UberRush.
+ @param pickupCoordinate The latitude and longitude of the pickup.
+ @param pickupName Pickup location name.
+ @param pickupAddress The full address of the pickup location.
+ @param dropoff The latitude and longitude of the dropoff.
+ @param dropoffName The name of the location to dropoff.
+ @param dropoffAddress The full address of the dropoff location.
+ */
+- (void) openUberAppWithClient:(NSString*)clientID
+					   product:(NSString*)productID
+						pickup:(CLLocationCoordinate2D)pickupCoordinate
+					pickupName:(NSString*)pickupName
+				 pickupAddress:(NSString*)pickupAddress
+					   dropoff:(CLLocationCoordinate2D)dropoff
+				   dropoffName:(NSString*)dropoffName
+				dropoffAddress:(NSString*)dropoffAddress;
 
 @end

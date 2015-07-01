@@ -32,22 +32,49 @@
 @import UIKit;
 #import "TKCustomPresentationViewController.h"
 
+/** `TKCardModalViewController` is a custom presented `UIViewController` 
+ *  with a main white card view that drops in and can be easily dismissed 
+ *  similiar to a `UIAlertView`.
+ */
 @interface TKCardModalViewController : TKCustomPresentationViewController <UICollisionBehaviorDelegate>
 
+/** The main card view that appears that content should be placed on. */
 @property (nonatomic,strong) UIView *contentView;
+
+/** The background view that appears behind the content view. Place and snapshots or backdrops here. */
 @property (nonatomic,strong) UIView *backgroundView;
+
+/** Flag that allows the the user to throw the card off to dismiss it. Default is TRUE. */
 @property (nonatomic,assign) BOOL throwToDismissEnabled;
+
+/** Flag to enabled tap to dismiss the card. Default is TRUE. */
 @property (nonatomic,assign) BOOL tapToDismissEnabled;
+
+/** Flag to only allow the user to tap off the card and not on the contentView itself. Default is FALSE. */
 @property (nonatomic,assign) BOOL onlyAllowTapOffCardToDismiss;
 
+/** If a keyboard is displayed. The visible frame will adjust. */
 @property (nonatomic,assign) CGRect visibleFrame;
 
+/** A notification callback that a keyboard will be shown.
+ @param notification The `NSNotification` sender.
+ */
 - (void) keyboardWillShow:(NSNotification*)notification;
+
+/** A notification callback that a keyboard will hide.
+ @param notification The `NSNotification` sender.
+ */
 - (void) keyboardWillHide:(NSNotification*)notification;
 
+/** This will present the view controller */
 - (void) show;
+
+/** This will hide the view controller. */
 - (void) hide;
 
+/** The function called when a tap gesture is called.
+ @param sender The `UITapGestureRecognizer` sender.
+ */
 - (void) tapped:(UITapGestureRecognizer*)sender;
 
 @end

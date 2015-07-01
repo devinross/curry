@@ -34,33 +34,162 @@
 @interface UIFont (TKCategory)
 
 #pragma mark Helvetica Neue
+
+/* Returns a Helvetica Neue font.
+ @param size The font size.
+ @return A `UIFont` with the given size.
+ */
 + (UIFont*) helveticaNeueWithSize:(CGFloat)size;
+
+/* Returns a Helvetica Neue Bold Italic font.
+ @param size The font size.
+ @return A `UIFont` with the given size.
+ */
 + (UIFont*) helveticaNeueBoldItalicWithSize:(CGFloat)size;
+
+/* Returns a Helvetica Neue Light font.
+ @param size The font size.
+ @return A `UIFont` with the given size.
+ */
 + (UIFont*) helveticaNeueLightWithSize:(CGFloat)size;
+
+/* Returns a Helvetica Neue Italic font.
+ @param size The font size.
+ @return A `UIFont` with the given size.
+ */
 + (UIFont*) helveticaNeueItalicWithSize:(CGFloat)size;
+
+/* Returns a Helvetica Neue Light Italic font.
+ @param size The font size.
+ @return A `UIFont` with the given size.
+ */
 + (UIFont*) helveticaNeueUltraLightItalicWithSize:(CGFloat)size;
+
+/* Returns a Helvetica Neue Condensed Bold font.
+ @param size The font size.
+ @return A `UIFont` with the given size.
+ */
 + (UIFont*) helveticaNeueCondensedBoldWithSize:(CGFloat)size;
+
+/* Returns a Helvetica Neue Medium Italic font.
+ @param size The font size.
+ @return A `UIFont` with the given size.
+ */
 + (UIFont*) helveticaNeueMediumItalicWithSize:(CGFloat)size;
+
+/* Returns a Helvetica Neue Medium font.
+ @param size The font size.
+ @return A `UIFont` with the given size.
+ */
 + (UIFont*) helveticaNeueMediumWithSize:(CGFloat)size;
+
+/* Returns a Helvetica Neue Thin Italic font.
+ @param size The font size.
+ @return A `UIFont` with the given size.
+ */
 + (UIFont*) helveticaNeueThinItalicWithSize:(CGFloat)size;
+
+/* Returns a Helvetica Neue Light Italic font.
+ @param size The font size.
+ @return A `UIFont` with the given size.
+ */
 + (UIFont*) helveticaNeueLightItalicWithSize:(CGFloat)size;
+
+/* Returns a Helvetica Neue Ultra Light font.
+ @param size The font size.
+ @return A `UIFont` with the given size.
+ */
 + (UIFont*) helveticaNeueUltraLightWithSize:(CGFloat)size;
+
+/* Returns a Helvetica Neue Bold font.
+ @param size The font size.
+ @return A `UIFont` with the given size.
+ */
 + (UIFont*) helveticaNeueBoldWithSize:(CGFloat)size;
+
+/* Returns a Helvetica Neue Condensed Black font.
+ @param size The font size.
+ @return A `UIFont` with the given size.
+ */
 + (UIFont*) helveticaNeueCondensedBlackWithSize:(CGFloat)size;
+
+/* Returns a Helvetica Neue Thin font.
+ @param size The font size.
+ @return A `UIFont` with the given size.
+ */
 + (UIFont*) helveticaNeueThinWithSize:(CGFloat)size;
 
 #pragma mark Avenir
+/* Returns a Avenir Heavy font.
+ @param size The font size.
+ @return A `UIFont` with the given size.
+ */
 + (UIFont*) avenirHeavyWithSize:(CGFloat)size;
+
+/* Returns a Avenir Oblique font.
+ @param size The font size.
+ @return A `UIFont` with the given size.
+ */
 + (UIFont*) avenirObliqueWithSize:(CGFloat)size;
+
+/* Returns a Avenir Black font.
+ @param size The font size.
+ @return A `UIFont` with the given size.
+ */
 + (UIFont*) avenirBlackWithSize:(CGFloat)size;
+
+/* Returns a Avenir Book font.
+ @param size The font size.
+ @return A `UIFont` with the given size.
+ */
 + (UIFont*) avenirBookWithSize:(CGFloat)size;
+
+/* Returns a Avenir Black Oblique font.
+ @param size The font size.
+ @return A `UIFont` with the given size.
+ */
 + (UIFont*) avenirBlackObliqueWithSize:(CGFloat)size;
+
+/* Returns a Avenir Heavy Oblique font.
+ @param size The font size.
+ @return A `UIFont` with the given size.
+ */
 + (UIFont*) avenirHeavyObliqueWithSize:(CGFloat)size;
+
+/* Returns a Avenir Light font.
+ @param size The font size.
+ @return A `UIFont` with the given size.
+ */
 + (UIFont*) avenirLightWithSize:(CGFloat)size;
+
+/* Returns a Avenir Oblique font.
+ @param size The font size.
+ @return A `UIFont` with the given size.
+ */
 + (UIFont*) avenirMediumObliqueWithSize:(CGFloat)size;
+
+/* Returns a Avenir Medium font.
+ @param size The font size.
+ @return A `UIFont` with the given size.
+ */
 + (UIFont*) avenirMediumWithSize:(CGFloat)size;
+
+/* Returns a Avenir Light Oblique font.
+ @param size The font size.
+ @return A `UIFont` with the given size.
+ */
 + (UIFont*) avenirLightObliqueWithSize:(CGFloat)size;
+
+/* Returns a Avenir Roman font.
+ @param size The font size.
+ @return A `UIFont` with the given size.
+ */
 + (UIFont*) avenirRomanWithSize:(CGFloat)size;
+
+/* Returns a Avenir font.
+ @param size The font size.
+ @return A `UIFont` with the given size.
+ */
 + (UIFont*) avenirBookObliqueWithSize:(CGFloat)size;
 
 @end

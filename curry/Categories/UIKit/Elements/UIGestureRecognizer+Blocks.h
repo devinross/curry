@@ -31,12 +31,23 @@
 
 @import UIKit;
 
+/** Additional block functionality for `UIGestureRecognizer`. */
 @interface UIGestureRecognizer (Blocks)
 
+/** Creates a `UIGestureRecognizer` with a callback handler.
+ @param block The callback handler.
+ @return A gesture recognizer.
+ */
 + (instancetype) recognizerWithHandler:(void (^)(UIGestureRecognizer *sender))block;
 
+/** Creates a `UIGestureRecognizer` with a callback handler.
+ @param block The callback handler.
+ @return A gesture recognizer.
+ */
 - (instancetype) initWithHandler:(void (^)(UIGestureRecognizer *sender))block NS_REPLACES_RECEIVER;
 
+
+/** Set the gesture recognizer callback handler. */
 @property (nonatomic, copy, setter = setHandler:) void (^handler)(UIGestureRecognizer *sender);
 
 

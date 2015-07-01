@@ -31,12 +31,32 @@
 
 @import Foundation;
 
+/** Additional functionality for `NSTimer` with block functionality. */
 @interface NSTimer (Blocks)
 
+/** Additional functionality for `NSTimer` with block functionality.
+ @param seconds The time until the timer fire.
+ @param repeats A flag for having the timer repeat.
+ @param block The block that will be called by the timer.
+ @return The `NSTimer` object.
+ */
 + (NSTimer *) scheduledTimerWithTimeInterval:(NSTimeInterval)seconds repeats:(BOOL)repeats block:(void (^)(void))block;
 
+/** Additional functionality for `NSTimer` with block functionality.
+ @param seconds The time until the timer fire.
+ @param repeats A flag for having the timer repeat.
+ @param block The block that will be called by the timer.
+ @return The `NSTimer` object.
+ */
 + (NSTimer *) timerWithTimeInterval:(NSTimeInterval)seconds repeats:(BOOL)repeats block:(void (^)(void))block;
 
+/** Additional functionality for `NSTimer` with block functionality.
+ @param date The date the timer will first fire.
+ @param seconds The time until the timer fire.
+ @param repeats A flag for having the timer repeat.
+ @param block The block that will be called by the timer.
+ @return The `NSTimer` object.
+ */
 - (instancetype) initWithFireDate:(NSDate *)date interval:(NSTimeInterval)seconds repeats:(BOOL)repeats block:(void (^)(void))block;
 
 @end

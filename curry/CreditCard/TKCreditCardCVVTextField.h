@@ -31,6 +31,7 @@
 
 @import UIKit;
 
+/** This class is a subclass of `UITextField` for specifically entering credit card cvv numbers. */
 @interface TKCreditCardCVVTextField : UITextField
 
 @end

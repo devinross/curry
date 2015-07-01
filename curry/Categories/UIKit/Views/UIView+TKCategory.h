@@ -33,7 +33,7 @@
 @import UIKit;
 @import QuartzCore;
 
-/** Additional functionality for `UIView`.  */
+/** Additional functionality for `UIView`. */
 @interface UIView (TKCategory)
 
 /** Adds a view to the beginning of the receiver’s list of subviews.
@@ -41,15 +41,43 @@
  */
 - (void) addSubviewToBack:(UIView*)view;
 
-
-
+/** Takes a snapshot of the view.
+ @param updates The radius of the shadow.
+ @return The snapshot image.
+ */
 - (UIImage*) snapshotImageAfterScreenUpdates:(BOOL)updates;
 
+/** Set the shadow for the view.
+ @param offset The offset of the shadow.
+ @param opacity The opacity of the shadow.
+ @param radius The radius of the shadow.
+ */
 - (void) setShadowWithOffset:(CGSize)offset opacity:(CGFloat)opacity radius:(CGFloat)radius;
+
+/** Set the shadow for the view.
+ @param offset The offset of the shadow.
+ @param opacity The opacity of the shadow.
+ @param color The color of the shadow.
+ @param radius The radius of the shadow.
+ */
 - (void) setShadowWithOffset:(CGSize)offset opacity:(CGFloat)opacity color:(UIColor*)color radius:(CGFloat)radius;
+
+/** Set the shadow for the view.
+ @param bezierPath The shape of the shadow.
+ @param offset The shadow ofsset.
+ @param opacity The opacity of the shadow.
+ @param color The color of the shadow.
+ @param radius The radius of the shadow.
+ */
 - (void) setShadowWithPath:(UIBezierPath*)bezierPath offset:(CGSize)offset opacity:(CGFloat)opacity color:(UIColor*)color radius:(CGFloat)radius;
+
+/** Set the border for the view.
+ @param color The color of the border.
+ @param width The width of the border.
+ */
 - (void) setBorderWithColor:(UIColor*)color width:(CGFloat)width;
 
+/** The corner radius of the view. */
 @property (nonatomic,assign) CGFloat cornerRadius;
 
 

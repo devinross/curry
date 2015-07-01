@@ -32,18 +32,84 @@
 @import UIKit;
 @import QuartzCore;
 
+/** Additional animation functionality for `CALayer`. */
 @interface CALayer (TKAnimation)
 
+/** Adds an animation object with a completion block for the specified key.
+ @param animation The animation object to be added.
+ @param key An string identifying the animation for later retrieval. You may pass `nil` if you don’t need to reference the animation later.
+ @param completion The completion block.
+ */
 - (void) addAnimation:(CAAnimation*)animation forKey:(NSString *)key completion:(void (^)(BOOL))completion;
+
+
+/** Adds an animation object with a completion block.
+ @param animation The animation object to be added.
+ @param completion The completion block.
+ */
 - (void) addAnimation:(CAAnimation*)animation completion:(void (^)(BOOL))completion;
 
+
+/** Adds a keyframe animation object with a completion block.
+ @param keyPath The key path of the property to be animated.
+ @param duration The duration of the animation.
+ @param delay The delay of the animation.
+ @param path The path for a point-based property to follow.
+ @param options Set the animaiton curve of the animation.
+ */
 - (void) addKeyframeAnimationWithKeyPath:(NSString *)keyPath duration:(CFTimeInterval)duration delay:(CFTimeInterval)delay path:(CGPathRef)path options:(UIViewAnimationOptions)options;
+
+
+/** Adds a keyframe animation object with a completion block for the specified key.
+ @param keyPath The key path of the property to be animated.
+ @param duration The duration of the animation.
+ @param delay The delay of the animation.
+ @param path The path for a point-based property to follow.
+ @param options Set the animaiton curve of the animation.
+ @param completion The completion block.
+ */
 - (void) addKeyframeAnimationWithKeyPath:(NSString *)keyPath duration:(CFTimeInterval)duration delay:(CFTimeInterval)delay path:(CGPathRef)path options:(UIViewAnimationOptions)options completion:(void (^)(BOOL))completion;
 
+
+/** Adds a keyframe animation object with a completion block for the specified key.
+ @param keyPath The key path of the property to be animated.
+ @param duration The duration of the animation.
+ @param delay The delay of the animation.
+ @param bezierPath The path for a point-based property to follow.
+ @param options Set the animaiton curve of the animation.
+ */
 - (void) addKeyframeAnimationWithKeyPath:(NSString *)keyPath duration:(CFTimeInterval)duration delay:(CFTimeInterval)delay bezierPath:(UIBezierPath*)bezierPath options:(UIViewAnimationOptions)options;
+
+
+/** Adds a keyframe animation object with a completion block for the specified key.
+ @param keyPath The key path of the property to be animated.
+ @param duration The duration of the animation.
+ @param delay The delay of the animation.
+ @param bezierPath The path for a point-based property to follow.
+ @param options Set the animaiton curve of the animation.
+ @param completion The completion block.
+ */
 - (void) addKeyframeAnimationWithKeyPath:(NSString *)keyPath duration:(CFTimeInterval)duration delay:(CFTimeInterval)delay bezierPath:(UIBezierPath*)bezierPath options:(UIViewAnimationOptions)options completion:(void (^)(BOOL))completion;
 
+
+/** Adds a keyframe animation object with a completion block for the specified key.
+ @param keyPath The key path of the property to be animated.
+ @param duration The duration of the animation.
+ @param delay The delay of the animation.
+ @param values An array of objects that specify the keyframe values to use for the animation.
+ @param options Set the animaiton curve of the animation.
+ @param completion The completion block.
+ */
 - (void) addKeyframeAnimationWithKeyPath:(NSString *)keyPath duration:(CFTimeInterval)duration delay:(CFTimeInterval)delay values:(NSArray*)values options:(UIViewAnimationOptions)options completion:(void (^)(BOOL))completion;
+
+
+/** Adds a keyframe animation object with a completion block for the specified key.
+ @param keyPath The key path of the property to be animated.
+ @param duration The duration of the animation.
+ @param delay The delay of the animation.
+ @param values An array of objects that specify the keyframe values to use for the animation.
+ @param options Set the animaiton curve of the animation.
+ */
 - (void) addKeyframeAnimationWithKeyPath:(NSString *)keyPath duration:(CFTimeInterval)duration delay:(CFTimeInterval)delay values:(NSArray*)values options:(UIViewAnimationOptions)options;
 
 

@@ -31,8 +31,10 @@
 
 @import UIKit;
 
+/** Additional functionality for `UINavigationBar`.  */
 @interface UINavigationBar (TKCategory)
 
+/** Returns the one pixel line at the bottom of a `UINavigationBar`. */
 @property (nonatomic, readonly, strong) UIView *hairlineDividerView;
 
 @end

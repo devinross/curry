@@ -31,12 +31,24 @@
 
 @import UIKit;
 
+/** Introduces block callbacks to `UIControl`. */
 @interface UIControl (Blocks)
 
+/** Add a callback block to a control event.
+ @param handler  The block that is called when an event occurs.
+ @param controlEvents The events that would trigger a block.
+ */
 - (void) addEventHandler:(void (^)(id sender))handler forControlEvents:(UIControlEvents)controlEvents;
 
+/* Remove the blocks for a specific event.
+ @param controlEvents The events that would trigger a block.
+ */
 - (void) removeEventHandlersForControlEvents:(UIControlEvents)controlEvents;
 
+/* A way to check if there is a callback for a specific block.
+ @param controlEvents The events that would trigger a block.
+ @return Returns YES if the event has a block. NO is it does not.
+ */
 - (BOOL) hasEventHandlersForControlEvents:(UIControlEvents)controlEvents;
 
 @end

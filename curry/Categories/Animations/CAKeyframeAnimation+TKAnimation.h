@@ -32,20 +32,85 @@
 @import UIKit;
 @import QuartzCore;
 
+/** Additional functionality for `CAKeyframeAnimation`.  */
 @interface CAKeyframeAnimation (TKAnimation)
 
-
+/** Create a `CAKeyframeAnimation` animation with the given path.
+ @param keyPath The key path of the property to be animated.
+ @param duration The duration of the animation.
+ @param delay The delay of the animation.
+ @param path The path for a point-based property to follow.
+ @param options Set the animaiton curve of the animation.
+ */
 + (CAKeyframeAnimation*) keyframeAnimationWithKeyPath:(NSString *)keyPath duration:(CFTimeInterval)duration delay:(CFTimeInterval)delay path:(CGPathRef)path options:(UIViewAnimationOptions)options;
+
+/** Create a `CAKeyframeAnimation` animation with the given path.
+ @param keyPath The key path of the property to be animated.
+ @param duration The duration of the animation.
+ @param delay The delay of the animation.
+ @param path The path for a point-based property to follow.
+ @param options Set the animaiton curve of the animation.
+ @param completion The completion block.
+ */
 + (CAKeyframeAnimation*) keyframeAnimationWithKeyPath:(NSString *)keyPath duration:(CFTimeInterval)duration delay:(CFTimeInterval)delay path:(CGPathRef)path options:(UIViewAnimationOptions)options completion:(void (^)(BOOL))completion;
 
+
+/** Create a `CAKeyframeAnimation` animation with the given path.
+ @param keyPath The key path of the property to be animated.
+ @param duration The duration of the animation.
+ @param delay The delay of the animation.
+ @param bezierPath The path for a point-based property to follow.
+ @param options Set the animaiton curve of the animation.
+ */
 + (CAKeyframeAnimation*) keyframeAnimationWithKeyPath:(NSString *)keyPath duration:(CFTimeInterval)duration delay:(CFTimeInterval)delay bezierPath:(UIBezierPath*)bezierPath options:(UIViewAnimationOptions)options;
+
+
+/** Create a `CAKeyframeAnimation` animation with the given path.
+ @param keyPath The key path of the property to be animated.
+ @param duration The duration of the animation.
+ @param delay The delay of the animation.
+ @param bezierPath The path for a point-based property to follow.
+ @param options Set the animaiton curve of the animation.
+ @param completion The completion block.
+ */
 + (CAKeyframeAnimation*) keyframeAnimationWithKeyPath:(NSString *)keyPath duration:(CFTimeInterval)duration delay:(CFTimeInterval)delay bezierPath:(UIBezierPath*)bezierPath options:(UIViewAnimationOptions)options completion:(void (^)(BOOL))completion;
 
+
+/** Create a `CAKeyframeAnimation` animation with the given path.
+ @param keyPath The key path of the property to be animated.
+ @param duration The duration of the animation.
+ @param delay The delay of the animation.
+ @param values An array of objects that specify the keyframe values to use for the animation.
+ @param options Set the animaiton curve of the animation.
+ */
 + (CAKeyframeAnimation*) keyframeAnimationWithKeyPath:(NSString *)keyPath duration:(CFTimeInterval)duration delay:(CFTimeInterval)delay values:(NSArray*)values options:(UIViewAnimationOptions)options;
+
+
+/** Create a `CAKeyframeAnimation` animation with the given path.
+ @param keyPath The key path of the property to be animated.
+ @param duration The duration of the animation.
+ @param delay The delay of the animation.
+ @param values An array of objects that specify the keyframe values to use for the animation.
+ @param options Set the animaiton curve of the animation.
+ @param completion The completion block.
+ */
 + (CAKeyframeAnimation*) keyframeAnimationWithKeyPath:(NSString *)keyPath duration:(CFTimeInterval)duration delay:(CFTimeInterval)delay values:(NSArray*)values options:(UIViewAnimationOptions)options completion:(void (^)(BOOL))completion;
 
+/** Create a `CAKeyframeAnimation` animation with the given path.
+ @param keyPath The key path of the property to be animated.
+ @param duration The duration of the animation.
+ @param delay The delay of the animation.
+ @param options Set the animaiton curve of the animation.
+ */
 + (CAKeyframeAnimation*) keyframeAnimationWithKeyPath:(NSString *)keyPath duration:(CFTimeInterval)duration delay:(CFTimeInterval)delay options:(UIViewAnimationOptions)options;
-+ (CAKeyframeAnimation*) keyframeAnimationWithKeyPath:(NSString *)keyPath duration:(CFTimeInterval)duration delay:(CFTimeInterval)delay options:(UIViewAnimationOptions)options completion:(void (^)(BOOL))completion;
 
+/** Create a `CAKeyframeAnimation` animation with the given path.
+ @param keyPath The key path of the property to be animated.
+ @param duration The duration of the animation.
+ @param delay The delay of the animation.
+ @param options Set the animaiton curve of the animation.
+ @param completion The completion block.
+ */
++ (CAKeyframeAnimation*) keyframeAnimationWithKeyPath:(NSString *)keyPath duration:(CFTimeInterval)duration delay:(CFTimeInterval)delay options:(UIViewAnimationOptions)options completion:(void (^)(BOOL))completion;
 
 @end

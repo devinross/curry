@@ -618,12 +618,12 @@
 		2078601E1AD84AB2000DC57F /* CreditCard */ = {
 			isa = PBXGroup;
 			children = (
+				207860101AD84A87000DC57F /* TKCreditCardNumberTextField.h */,
+				207860111AD84A87000DC57F /* TKCreditCardNumberTextField.m */,
 				2078600C1AD84A87000DC57F /* TKCreditCardCVVTextField.h */,
 				2078600D1AD84A87000DC57F /* TKCreditCardCVVTextField.m */,
 				2078600E1AD84A87000DC57F /* TKCreditCardExpirationTextField.h */,
 				2078600F1AD84A87000DC57F /* TKCreditCardExpirationTextField.m */,
-				207860101AD84A87000DC57F /* TKCreditCardNumberTextField.h */,
-				207860111AD84A87000DC57F /* TKCreditCardNumberTextField.m */,
 				207860121AD84A87000DC57F /* TKCreditCardZipTextField.h */,
 				207860131AD84A87000DC57F /* TKCreditCardZipTextField.m */,
 			);

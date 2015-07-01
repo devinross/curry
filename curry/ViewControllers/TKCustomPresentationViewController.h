@@ -31,16 +31,34 @@
 
 @import UIKit;
 
+/** `TKCustomPresentationViewController` is view controller setup to make its own custom presentation and dismissal. */
 @interface TKCustomPresentationViewController : UIViewController <UIViewControllerAnimatedTransitioning>
 
+/** The `UIViewControllerContextTransitioning` that governs the presentation and dismissal. */
 @property (nonatomic,strong) id<UIViewControllerContextTransitioning> transitionContext;
 
 // For subclassing implementaion
-- (void) presentTransitionAnimation:(id<UIViewControllerContextTransitioning>)transitionContext containerView:(UIView*)containerView fromViewController:(UIViewController*)viewController;
+/** Subclass this method to create a custom presentation transition.
+ @param transitionContext The `UIViewControllerContextTransitioning` that governs the presentation.
+ @param containerView The container view to place this view controller's view.
+ @param fromViewController The parent view controller.
+ */
+- (void) presentTransitionAnimation:(id<UIViewControllerContextTransitioning>)transitionContext containerView:(UIView*)containerView fromViewController:(UIViewController*)fromViewController;
 
-- (void) dismissTransitionAnimation:(id<UIViewControllerContextTransitioning>)transitionContext containerView:(UIView*)containerView toViewController:(UIViewController*)viewController;
+/** Subclass this method to create a custom dismissal transition.
+ @param transitionContext The `UIViewControllerContextTransitioning` that governs the presentation.
+ @param containerView The container view to place this view controller's view.
+ @param toViewController The parent view controller.
+ */
+- (void) dismissTransitionAnimation:(id<UIViewControllerContextTransitioning>)transitionContext containerView:(UIView*)containerView toViewController:(UIViewController*)toViewController;
 
-// Call upon transition completion
+/** The duration of the transition.
+ @param transitionContext The `UIViewControllerContextTransitioning` that governs the presentation.
+ @return The time of the transition.
+ */
+- (NSTimeInterval) transitionDuration:(id<UIViewControllerContextTransitioning>)transitionContext;
+
+/** Call this method upon completion of the presentation and dismissal animations. */
 - (void) transitionEnded;
 
 @end

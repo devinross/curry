@@ -43,7 +43,7 @@ typedef NS_ENUM(NSInteger, TKInputKeyType) {
 @interface TKInputKey : UIView 
 
 /** Initializes an input key.
- 
+
  @param frame The frame of the `UIView`.
  @param symbol A image or string for the key.
  @param normal A image or string for the key.

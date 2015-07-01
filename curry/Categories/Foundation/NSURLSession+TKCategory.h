@@ -31,10 +31,23 @@
 
 @import Foundation;
 
+/** Additional functionality for `NSURLSession` for getting json data. */
 @interface NSURLSession (TKCategory)
 
+/** Returns the object in the array with the lowest index value.
+ @param request The `NSURLRequest` of the request.
+ @param options JSON reading options.
+ @param completion The block that is called upon completion.
+ @return The `NSURLSessionDataTask` object.
+ */
 - (NSURLSessionDataTask*) jsonDataTaskWithRequest:(NSURLRequest*)request options:(NSJSONReadingOptions)options completion:(void(^)(id object, NSURLResponse *response, NSError *error))completion;
 
+/** Returns the object in the array with the lowest index value.
+ @param URL The `NSURL` of the request.
+ @param options JSON reading options.
+ @param completion The block that is called upon completion.
+ @return The `NSURLSessionDataTask` object.
+ */
 - (NSURLSessionDataTask*) jsonDataTaskWithURL:(NSURL*)URL options:(NSJSONReadingOptions)options completion:(void(^)(id object, NSURLResponse *response, NSError *error))completion;
 
 @end

@@ -31,9 +31,13 @@
 
 @import UIKit;
 
+/** Additional functionality for `UIDevice`.  */
 @interface UIDevice (TKCategory)
 
+/** Returns `true` if the device is an iPad. */
 @property (nonatomic, readonly) BOOL padIdiom;
+
+/** Returns `true` if the device is an iPhone or iPod touch. */
 @property (nonatomic, readonly) BOOL phoneIdiom;
 
 @end
