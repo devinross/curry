@@ -118,6 +118,8 @@
 		202DBEEB1AF6717A00B0CE67 /* CurryImages.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 202DBEEA1AF6717A00B0CE67 /* CurryImages.xcassets */; };
 		202DBEF41AF6727A00B0CE67 /* TKCurrentTimeLabel.h in Headers */ = {isa = PBXBuildFile; fileRef = 202DBEF21AF6727A00B0CE67 /* TKCurrentTimeLabel.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		202DBEF51AF6727A00B0CE67 /* TKCurrentTimeLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 202DBEF31AF6727A00B0CE67 /* TKCurrentTimeLabel.m */; };
+		204922B41B45D8DB00C22245 /* TKTextFieldCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 204922B21B45D8DB00C22245 /* TKTextFieldCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		204922B51B45D8DB00C22245 /* TKTextFieldCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 204922B31B45D8DB00C22245 /* TKTextFieldCell.m */; };
 		20785F771AD8388E000DC57F /* NSStringTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 20785F701AD8388E000DC57F /* NSStringTests.m */; };
 		20785F781AD8388E000DC57F /* UIViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 20785F721AD8388E000DC57F /* UIViewTests.m */; };
 		20785F791AD8388E000DC57F /* NSArrayTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 20785F741AD8388E000DC57F /* NSArrayTests.m */; };
@@ -275,6 +277,8 @@
 		202DBEEA1AF6717A00B0CE67 /* CurryImages.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = CurryImages.xcassets; sourceTree = "<group>"; };
 		202DBEF21AF6727A00B0CE67 /* TKCurrentTimeLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TKCurrentTimeLabel.h; sourceTree = "<group>"; };
 		202DBEF31AF6727A00B0CE67 /* TKCurrentTimeLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TKCurrentTimeLabel.m; sourceTree = "<group>"; };
+		204922B21B45D8DB00C22245 /* TKTextFieldCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TKTextFieldCell.h; sourceTree = "<group>"; };
+		204922B31B45D8DB00C22245 /* TKTextFieldCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TKTextFieldCell.m; sourceTree = "<group>"; };
 		20785F6F1AD8388E000DC57F /* NSStringTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSStringTests.h; sourceTree = "<group>"; };
 		20785F701AD8388E000DC57F /* NSStringTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSStringTests.m; sourceTree = "<group>"; };
 		20785F711AD8388E000DC57F /* UIViewTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIViewTests.h; sourceTree = "<group>"; };
@@ -562,6 +566,8 @@
 				200B63091AD804340049E35C /* TKShapeView.m */,
 				20CAE0D21B0953E40088740E /* TKSwitchCell.h */,
 				20CAE0D31B0953E40088740E /* TKSwitchCell.m */,
+				204922B21B45D8DB00C22245 /* TKTextFieldCell.h */,
+				204922B31B45D8DB00C22245 /* TKTextFieldCell.m */,
 				20DDB5891B45A97C001C7751 /* TKStepperCell.h */,
 				20DDB58A1B45A97C001C7751 /* TKStepperCell.m */,
 				200B63161AD804400049E35C /* TKExtendedScrollView.h */,
@@ -707,6 +713,7 @@
 				20CAE0D41B0953E40088740E /* TKSwitchCell.h in Headers */,
 				2097F33E1B3D94C300247736 /* TKWindow.h in Headers */,
 				20CB9CF31AF3E4B0002E9F1C /* UIActionSheet+Blocks.h in Headers */,
+				204922B41B45D8DB00C22245 /* TKTextFieldCell.h in Headers */,
 				20DDB58B1B45A97C001C7751 /* TKStepperCell.h in Headers */,
 				202DBEF41AF6727A00B0CE67 /* TKCurrentTimeLabel.h in Headers */,
 				200B62DE1AD7FEF80049E35C /* UIColor+TKCategory.h in Headers */,
@@ -832,6 +839,7 @@
 			files = (
 				200B62EF1AD7FEF80049E35C /* UIAlertView+TKCategory.m in Sources */,
 				20E131CD1AF4107F0011492F /* UILabel+Initializers.m in Sources */,
+				204922B51B45D8DB00C22245 /* TKTextFieldCell.m in Sources */,
 				20F19B1A1AE07E8500077DA1 /* UIGestureRecognizer+Blocks.m in Sources */,
 				20E110751B3B2651006A2CD6 /* TKVideoViewController.m in Sources */,
 				20CB9D031AF405CD002E9F1C /* UIControl+Blocks.m in Sources */,

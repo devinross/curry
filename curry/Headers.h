@@ -112,6 +112,7 @@
 #import "TKCurrentTimeLabel.h"
 #import "TKSwitchCell.h"
 #import "TKStepperCell.h"
+#import "TKTextFieldCell.h"
 #import "TKWindow.h"
 
 // Credit Card
