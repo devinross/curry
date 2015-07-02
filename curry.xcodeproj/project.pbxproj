@@ -152,7 +152,7 @@
 		20CB9CFF1AF3F126002E9F1C /* UIAlertView+Blocks.m in Sources */ = {isa = PBXBuildFile; fileRef = 20CB9CFD1AF3F126002E9F1C /* UIAlertView+Blocks.m */; };
 		20CB9D021AF405CD002E9F1C /* UIControl+Blocks.h in Headers */ = {isa = PBXBuildFile; fileRef = 20CB9D001AF405CD002E9F1C /* UIControl+Blocks.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		20CB9D031AF405CD002E9F1C /* UIControl+Blocks.m in Sources */ = {isa = PBXBuildFile; fileRef = 20CB9D011AF405CD002E9F1C /* UIControl+Blocks.m */; };
-		20DDB58B1B45A97C001C7751 /* TKStepperCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 20DDB5891B45A97C001C7751 /* TKStepperCell.h */; };
+		20DDB58B1B45A97C001C7751 /* TKStepperCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 20DDB5891B45A97C001C7751 /* TKStepperCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		20DDB58C1B45A97C001C7751 /* TKStepperCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 20DDB58A1B45A97C001C7751 /* TKStepperCell.m */; };
 		20E110741B3B2651006A2CD6 /* TKVideoViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 20E110721B3B2651006A2CD6 /* TKVideoViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		20E110751B3B2651006A2CD6 /* TKVideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 20E110731B3B2651006A2CD6 /* TKVideoViewController.m */; };
@@ -655,7 +655,6 @@
 				200B62F61AD7FEF80049E35C /* UIApplication+TKCategory.h in Headers */,
 				200B62881AD7FC5E0049E35C /* NSObject+TKCategory.h in Headers */,
 				200B628C1AD7FC5E0049E35C /* NSArray+TKCategory.h in Headers */,
-				20DDB58B1B45A97C001C7751 /* TKStepperCell.h in Headers */,
 				200B62DA1AD7FEF80049E35C /* UIImageView+TKCategory.h in Headers */,
 				200B62A71AD7FE0D0049E35C /* UIView+TKAnimation.h in Headers */,
 				200B62E01AD7FEF80049E35C /* UIScrollview+TKCategory.h in Headers */,
@@ -708,6 +707,7 @@
 				20CAE0D41B0953E40088740E /* TKSwitchCell.h in Headers */,
 				2097F33E1B3D94C300247736 /* TKWindow.h in Headers */,
 				20CB9CF31AF3E4B0002E9F1C /* UIActionSheet+Blocks.h in Headers */,
+				20DDB58B1B45A97C001C7751 /* TKStepperCell.h in Headers */,
 				202DBEF41AF6727A00B0CE67 /* TKCurrentTimeLabel.h in Headers */,
 				200B62DE1AD7FEF80049E35C /* UIColor+TKCategory.h in Headers */,
 			);
