@@ -1,6 +1,6 @@
 //
-//  TKSwitchCell.h
-//  Created by Devin Ross on 6/13/09.
+//  TKStepperCell.h
+//  Created by Devin Ross on 4/9/14.
 //
 /*
  
@@ -31,10 +31,8 @@
 
 @import UIKit;
 
-/** A `UITableViewCell` with a `UISwitch` */
-@interface TKSwitchCell : UITableViewCell 
+@interface TKStepperCell : UITableViewCell
 
-/** A `UISwitch`. */
-@property (nonatomic,strong) UISwitch *switcher;
+@property (nonatomic,strong) UIStepper *stepper;
 
 @end

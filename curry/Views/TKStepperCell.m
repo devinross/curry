@@ -1,6 +1,6 @@
 //
-//  TKSwitchCell.h
-//  Created by Devin Ross on 6/13/09.
+//  TKStepperCell.m
+//  Created by Devin Ross on 4/9/14.
 //
 /*
  
@@ -29,12 +29,35 @@
  
  */
 
-@import UIKit;
+#import "TKStepperCell.h"
 
-/** A `UITableViewCell` with a `UISwitch` */
-@interface TKSwitchCell : UITableViewCell 
+@interface TKStepperCell ()
+@property (nonatomic,assign) UITableViewCellStyle theStyle;
+@end
 
-/** A `UISwitch`. */
-@property (nonatomic,strong) UISwitch *switcher;
+@implementation TKStepperCell
+
+
+- (instancetype) initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier {
+	if(!(self=[super initWithStyle:style reuseIdentifier:reuseIdentifier])) return nil;
+	self.theStyle = style;
+	self.stepper = [[UIStepper alloc] initWithFrame:CGRectZero];
+	self.accessoryView = self.stepper;
+	
+    return self;
+}
+- (id) initWithFrame:(CGRect)frame reuseIdentifier:(NSString *)reuseIdentifier {
+	return [self initWithStyle:UITableViewCellStyleDefault reuseIdentifier:reuseIdentifier];
+}
+
+- (void) layoutSubviews{
+	[super layoutSubviews];
+	
+	if(self.theStyle == UITableViewCellStyleValue1){
+		CGRect rect = self.detailTextLabel.frame;
+		rect.origin.x -= 4;
+		self.detailTextLabel.frame = rect;
+	}
+}
 
 @end

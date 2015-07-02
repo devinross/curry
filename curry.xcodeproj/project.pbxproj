@@ -152,6 +152,8 @@
 		20CB9CFF1AF3F126002E9F1C /* UIAlertView+Blocks.m in Sources */ = {isa = PBXBuildFile; fileRef = 20CB9CFD1AF3F126002E9F1C /* UIAlertView+Blocks.m */; };
 		20CB9D021AF405CD002E9F1C /* UIControl+Blocks.h in Headers */ = {isa = PBXBuildFile; fileRef = 20CB9D001AF405CD002E9F1C /* UIControl+Blocks.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		20CB9D031AF405CD002E9F1C /* UIControl+Blocks.m in Sources */ = {isa = PBXBuildFile; fileRef = 20CB9D011AF405CD002E9F1C /* UIControl+Blocks.m */; };
+		20DDB58B1B45A97C001C7751 /* TKStepperCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 20DDB5891B45A97C001C7751 /* TKStepperCell.h */; };
+		20DDB58C1B45A97C001C7751 /* TKStepperCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 20DDB58A1B45A97C001C7751 /* TKStepperCell.m */; };
 		20E110741B3B2651006A2CD6 /* TKVideoViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 20E110721B3B2651006A2CD6 /* TKVideoViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		20E110751B3B2651006A2CD6 /* TKVideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 20E110731B3B2651006A2CD6 /* TKVideoViewController.m */; };
 		20E131CC1AF4107F0011492F /* UILabel+Initializers.h in Headers */ = {isa = PBXBuildFile; fileRef = 20E131C81AF4107F0011492F /* UILabel+Initializers.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -308,6 +310,8 @@
 		20CB9CFD1AF3F126002E9F1C /* UIAlertView+Blocks.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIAlertView+Blocks.m"; path = "../Controllers/UIAlertView+Blocks.m"; sourceTree = "<group>"; };
 		20CB9D001AF405CD002E9F1C /* UIControl+Blocks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIControl+Blocks.h"; path = "../Controllers/UIControl+Blocks.h"; sourceTree = "<group>"; };
 		20CB9D011AF405CD002E9F1C /* UIControl+Blocks.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIControl+Blocks.m"; path = "../Controllers/UIControl+Blocks.m"; sourceTree = "<group>"; };
+		20DDB5891B45A97C001C7751 /* TKStepperCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TKStepperCell.h; sourceTree = "<group>"; };
+		20DDB58A1B45A97C001C7751 /* TKStepperCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TKStepperCell.m; sourceTree = "<group>"; };
 		20E110721B3B2651006A2CD6 /* TKVideoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TKVideoViewController.h; sourceTree = "<group>"; };
 		20E110731B3B2651006A2CD6 /* TKVideoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TKVideoViewController.m; sourceTree = "<group>"; };
 		20E131C81AF4107F0011492F /* UILabel+Initializers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+Initializers.h"; sourceTree = "<group>"; };
@@ -558,6 +562,8 @@
 				200B63091AD804340049E35C /* TKShapeView.m */,
 				20CAE0D21B0953E40088740E /* TKSwitchCell.h */,
 				20CAE0D31B0953E40088740E /* TKSwitchCell.m */,
+				20DDB5891B45A97C001C7751 /* TKStepperCell.h */,
+				20DDB58A1B45A97C001C7751 /* TKStepperCell.m */,
 				200B63161AD804400049E35C /* TKExtendedScrollView.h */,
 				200B63171AD804400049E35C /* TKExtendedScrollView.m */,
 				20A75C661AD8332F00E2106A /* TKSectionedScrollView.h */,
@@ -649,6 +655,7 @@
 				200B62F61AD7FEF80049E35C /* UIApplication+TKCategory.h in Headers */,
 				200B62881AD7FC5E0049E35C /* NSObject+TKCategory.h in Headers */,
 				200B628C1AD7FC5E0049E35C /* NSArray+TKCategory.h in Headers */,
+				20DDB58B1B45A97C001C7751 /* TKStepperCell.h in Headers */,
 				200B62DA1AD7FEF80049E35C /* UIImageView+TKCategory.h in Headers */,
 				200B62A71AD7FE0D0049E35C /* UIView+TKAnimation.h in Headers */,
 				200B62E01AD7FEF80049E35C /* UIScrollview+TKCategory.h in Headers */,
@@ -867,6 +874,7 @@
 				200B62931AD7FC5E0049E35C /* NSAttributedString+TKCategory.m in Sources */,
 				207860191AD84A87000DC57F /* TKCreditCardExpirationTextField.m in Sources */,
 				200B63111AD804350049E35C /* TKWebViewController.m in Sources */,
+				20DDB58C1B45A97C001C7751 /* TKStepperCell.m in Sources */,
 				200B62F31AD7FEF80049E35C /* UIFont+TKCategory.m in Sources */,
 				200B62E51AD7FEF80049E35C /* UIImagePickerController+TKCategory.m in Sources */,
 				200B62971AD7FC5E0049E35C /* UIDevice+TKCategory.m in Sources */,

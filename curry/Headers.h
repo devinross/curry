@@ -111,6 +111,7 @@
 #import "TKSectionedScrollView.h"
 #import "TKCurrentTimeLabel.h"
 #import "TKSwitchCell.h"
+#import "TKStepperCell.h"
 #import "TKWindow.h"
 
 // Credit Card
