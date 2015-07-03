@@ -114,6 +114,7 @@
 #import "TKStepperCell.h"
 #import "TKTextFieldCell.h"
 #import "TKWindow.h"
+#import "TKTextView.h"
 
 // Credit Card
 #import "TKCreditCardNumberTextField.h"

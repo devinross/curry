@@ -120,6 +120,8 @@
 		202DBEF51AF6727A00B0CE67 /* TKCurrentTimeLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 202DBEF31AF6727A00B0CE67 /* TKCurrentTimeLabel.m */; };
 		204922B41B45D8DB00C22245 /* TKTextFieldCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 204922B21B45D8DB00C22245 /* TKTextFieldCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		204922B51B45D8DB00C22245 /* TKTextFieldCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 204922B31B45D8DB00C22245 /* TKTextFieldCell.m */; };
+		204922B81B46EF9200C22245 /* TKTextView.h in Headers */ = {isa = PBXBuildFile; fileRef = 204922B61B46EF9200C22245 /* TKTextView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		204922B91B46EF9200C22245 /* TKTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 204922B71B46EF9200C22245 /* TKTextView.m */; };
 		20785F771AD8388E000DC57F /* NSStringTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 20785F701AD8388E000DC57F /* NSStringTests.m */; };
 		20785F781AD8388E000DC57F /* UIViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 20785F721AD8388E000DC57F /* UIViewTests.m */; };
 		20785F791AD8388E000DC57F /* NSArrayTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 20785F741AD8388E000DC57F /* NSArrayTests.m */; };
@@ -279,6 +281,8 @@
 		202DBEF31AF6727A00B0CE67 /* TKCurrentTimeLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TKCurrentTimeLabel.m; sourceTree = "<group>"; };
 		204922B21B45D8DB00C22245 /* TKTextFieldCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TKTextFieldCell.h; sourceTree = "<group>"; };
 		204922B31B45D8DB00C22245 /* TKTextFieldCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TKTextFieldCell.m; sourceTree = "<group>"; };
+		204922B61B46EF9200C22245 /* TKTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TKTextView.h; sourceTree = "<group>"; };
+		204922B71B46EF9200C22245 /* TKTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TKTextView.m; sourceTree = "<group>"; };
 		20785F6F1AD8388E000DC57F /* NSStringTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSStringTests.h; sourceTree = "<group>"; };
 		20785F701AD8388E000DC57F /* NSStringTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSStringTests.m; sourceTree = "<group>"; };
 		20785F711AD8388E000DC57F /* UIViewTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIViewTests.h; sourceTree = "<group>"; };
@@ -562,6 +566,8 @@
 				200B63071AD804340049E35C /* TKGradientView.m */,
 				2097F33C1B3D94C300247736 /* TKWindow.h */,
 				2097F33D1B3D94C300247736 /* TKWindow.m */,
+				204922B61B46EF9200C22245 /* TKTextView.h */,
+				204922B71B46EF9200C22245 /* TKTextView.m */,
 				200B63081AD804340049E35C /* TKShapeView.h */,
 				200B63091AD804340049E35C /* TKShapeView.m */,
 				20CAE0D21B0953E40088740E /* TKSwitchCell.h */,
@@ -715,6 +721,7 @@
 				20CB9CF31AF3E4B0002E9F1C /* UIActionSheet+Blocks.h in Headers */,
 				204922B41B45D8DB00C22245 /* TKTextFieldCell.h in Headers */,
 				20DDB58B1B45A97C001C7751 /* TKStepperCell.h in Headers */,
+				204922B81B46EF9200C22245 /* TKTextView.h in Headers */,
 				202DBEF41AF6727A00B0CE67 /* TKCurrentTimeLabel.h in Headers */,
 				200B62DE1AD7FEF80049E35C /* UIColor+TKCategory.h in Headers */,
 			);
@@ -901,6 +908,7 @@
 				200B62DB1AD7FEF80049E35C /* UIImageView+TKCategory.m in Sources */,
 				200B62F11AD7FEF80049E35C /* UIActionSheet+TKCategory.m in Sources */,
 				200B62ED1AD7FEF80049E35C /* UILabel+TKCategory.m in Sources */,
+				204922B91B46EF9200C22245 /* TKTextView.m in Sources */,
 				200B62E91AD7FEF80049E35C /* UIViewController+TKCategory.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
