@@ -40,7 +40,7 @@
  @param completion The block that is called upon completion.
  @return The `NSURLSessionDataTask` object.
  */
-- (NSURLSessionDataTask*) jsonDataTaskWithRequest:(NSURLRequest*)request options:(NSJSONReadingOptions)options completion:(void(^)(id object, NSURLResponse *response, NSError *error))completion;
+- (NSURLSessionDataTask*) jsonDataTaskWithRequest:(NSURLRequest*)request options:(NSJSONReadingOptions)options completionHandler:(void(^)(id object, NSURLResponse *response, NSError *error))completion;
 
 /** Returns the object in the array with the lowest index value.
  @param URL The `NSURL` of the request.
@@ -48,6 +48,6 @@
  @param completion The block that is called upon completion.
  @return The `NSURLSessionDataTask` object.
  */
-- (NSURLSessionDataTask*) jsonDataTaskWithURL:(NSURL*)URL options:(NSJSONReadingOptions)options completion:(void(^)(id object, NSURLResponse *response, NSError *error))completion;
+- (NSURLSessionDataTask*) jsonDataTaskWithURL:(NSURL*)URL options:(NSJSONReadingOptions)options completionHandler:(void(^)(id object, NSURLResponse *response, NSError *error))completion;
 
 @end
