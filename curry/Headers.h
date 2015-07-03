@@ -40,6 +40,7 @@
 #import "NSObject+TKCategory.h"
 #import "NSString+TKCategory.h"
 #import "NSArray+TKCategory.h"
+#import "NSDate+TKCategory.h"
 #import "NSMutableArray+TKCategory.h"
 #import "NSAttributedString+TKCategory.h"
 #import "NSMutableAttributedString+TKCategory.h"
