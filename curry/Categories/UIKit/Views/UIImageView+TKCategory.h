@@ -38,12 +38,12 @@
  @param imageName The name of the image to create the imagename with.
  @return Returns `UIImageView` object.
  */
-+ (UIImageView*) imageViewWithImageNamed:(NSString*)imageName;
++ (instancetype) imageViewWithImageNamed:(NSString*)imageName;
 
 /** Returns a image view with the given frame.
  @param frame The frame of the view.
  @return Returns `UIImageView` object.
  */
-+ (UIImageView*) imageViewWithFrame:(CGRect)frame;
++ (instancetype) imageViewWithFrame:(CGRect)frame;
 
 @end

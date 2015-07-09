@@ -113,7 +113,6 @@
 	rect = CGRectIntersection(rect, self.view.bounds);
 	
 	
-	
 	[UIView beginAnimations:nil context:nil];
 	[UIView setAnimationDuration:0.05];
 	[UIView setAnimationBeginsFromCurrentState:YES];
@@ -156,7 +155,7 @@
 		UITextView *textView = (UITextView*)view;
 		CGRect cursorPosition = [textView caretRectForPosition:textView.selectedTextRange.start];
 		CGRect rect = [view convertRect:cursorPosition toView:self.tableView];
-		rect = CGRectInset(rect, 0, -50);
+		rect.size.height += textView.font.lineHeight * 3 + textView.inputAccessoryView.frame.size.height;
 		[self.tableView scrollRectToVisible:rect animated:YES];
 		[self performSelector:@selector(_unlock) withObject:nil afterDelay:0.35];
 		return;

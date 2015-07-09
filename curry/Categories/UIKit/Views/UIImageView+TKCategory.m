@@ -35,11 +35,11 @@
 @implementation UIImageView (TKCategory)
 
 + (instancetype) imageViewWithImageNamed:(NSString*)imageName{
-	return [[UIImageView alloc] initWithImage:[UIImage imageNamed:imageName]];
+	return [[[self class] alloc] initWithImage:[UIImage imageNamed:imageName]];
 }
 
 + (instancetype) imageViewWithFrame:(CGRect)frame{
-	return [[UIImageView alloc] initWithFrame:frame];
+	return [[[self class] alloc] initWithFrame:frame];
 }
 
 @end
