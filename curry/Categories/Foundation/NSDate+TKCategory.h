@@ -4,7 +4,7 @@
 //
 /*
  
- tapku || http://github.com/devinross/tapkulibrary
+ curry || https://github.com/devinross/curry
  
  Permission is hereby granted, free of charge, to any person
  obtaining a copy of this software and associated documentation
@@ -33,7 +33,7 @@
 
 #pragma mark - NSDate + TKCategory
 /** Additional functionality for `NSDate`. */
-@interface NSDate (Tapku)
+@interface NSDate (TKCategory)
 
 
 #pragma mark Yesterday
