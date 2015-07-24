@@ -30,7 +30,7 @@
  */
 
 #import "RootTableViewController.h"
-#import "CreditCardEntryViewController.h"
+#import "CustomTextEntryViewController.h"
 #import "GesturesViewController.h"
 #import "BlocksViewController.h"
 #import "CustomKeyboardViewController.h"
@@ -42,7 +42,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.items = @[@"Card Modal",@"Credit Card Text Fields",@"Gestures Blocks",@"Action Sheet Blocks",@"Custom Keyboards",@"Video View Controller"];
+    self.items = @[@"Card Modal",@"Custom Text Fields",@"Gestures Blocks",@"Action Sheet Blocks",@"Custom Keyboards",@"Video View Controller"];
     [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:IDENTIFIER];
     self.title = NSLocalizedString(@"Curry", @"");
 }
@@ -70,9 +70,8 @@
         return;
     }
 	
-	
     if(indexPath.row == 1)
-        ctr = CreditCardEntryViewController.new;
+        ctr = CustomTextEntryViewController.new;
     else if(indexPath.row == 2)
         ctr = GesturesViewController.new;
     else if(indexPath.row == 3)
@@ -82,14 +81,9 @@
 	else if(indexPath.row == 5)
 		ctr = VideoViewController.new;
 
-
     [self.navigationController pushViewController:ctr animated:YES];
     
 }
-
-
-
-
 
 
 @end

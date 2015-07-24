@@ -145,6 +145,8 @@
 		2097F33F1B3D94C300247736 /* TKWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 2097F33D1B3D94C300247736 /* TKWindow.m */; };
 		2098BA241B0F6C4F000E0074 /* NSTimer+Blocks.h in Headers */ = {isa = PBXBuildFile; fileRef = 2098BA221B0F6C4F000E0074 /* NSTimer+Blocks.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2098BA251B0F6C4F000E0074 /* NSTimer+Blocks.m in Sources */ = {isa = PBXBuildFile; fileRef = 2098BA231B0F6C4F000E0074 /* NSTimer+Blocks.m */; };
+		20A46DDF1B61C097004A4153 /* TKPhoneNumberTextField.h in Headers */ = {isa = PBXBuildFile; fileRef = 20A46DDD1B61C097004A4153 /* TKPhoneNumberTextField.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		20A46DE01B61C097004A4153 /* TKPhoneNumberTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 20A46DDE1B61C097004A4153 /* TKPhoneNumberTextField.m */; };
 		20A75C5F1AD82C8500E2106A /* Headers.h in Headers */ = {isa = PBXBuildFile; fileRef = 20A75C5E1AD82C8500E2106A /* Headers.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		20A75C681AD8332F00E2106A /* TKSectionedScrollView.h in Headers */ = {isa = PBXBuildFile; fileRef = 20A75C661AD8332F00E2106A /* TKSectionedScrollView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		20A75C691AD8332F00E2106A /* TKSectionedScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 20A75C671AD8332F00E2106A /* TKSectionedScrollView.m */; };
@@ -309,6 +311,8 @@
 		2097F33D1B3D94C300247736 /* TKWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TKWindow.m; sourceTree = "<group>"; };
 		2098BA221B0F6C4F000E0074 /* NSTimer+Blocks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSTimer+Blocks.h"; sourceTree = "<group>"; };
 		2098BA231B0F6C4F000E0074 /* NSTimer+Blocks.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSTimer+Blocks.m"; sourceTree = "<group>"; };
+		20A46DDD1B61C097004A4153 /* TKPhoneNumberTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TKPhoneNumberTextField.h; sourceTree = "<group>"; };
+		20A46DDE1B61C097004A4153 /* TKPhoneNumberTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TKPhoneNumberTextField.m; sourceTree = "<group>"; };
 		20A75C5E1AD82C8500E2106A /* Headers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Headers.h; sourceTree = "<group>"; };
 		20A75C661AD8332F00E2106A /* TKSectionedScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TKSectionedScrollView.h; sourceTree = "<group>"; };
 		20A75C671AD8332F00E2106A /* TKSectionedScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TKSectionedScrollView.m; sourceTree = "<group>"; };
@@ -650,6 +654,8 @@
 				2078600F1AD84A87000DC57F /* TKCreditCardExpirationTextField.m */,
 				207860121AD84A87000DC57F /* TKCreditCardZipTextField.h */,
 				207860131AD84A87000DC57F /* TKCreditCardZipTextField.m */,
+				20A46DDD1B61C097004A4153 /* TKPhoneNumberTextField.h */,
+				20A46DDE1B61C097004A4153 /* TKPhoneNumberTextField.m */,
 			);
 			path = CreditCard;
 			sourceTree = "<group>";
@@ -727,6 +733,7 @@
 				20CB9CF31AF3E4B0002E9F1C /* UIActionSheet+Blocks.h in Headers */,
 				204922B41B45D8DB00C22245 /* TKTextFieldCell.h in Headers */,
 				20DDB58B1B45A97C001C7751 /* TKStepperCell.h in Headers */,
+				20A46DDF1B61C097004A4153 /* TKPhoneNumberTextField.h in Headers */,
 				204922B81B46EF9200C22245 /* TKTextView.h in Headers */,
 				204922C41B46F15900C22245 /* NSDate+TKCategory.h in Headers */,
 				202DBEF41AF6727A00B0CE67 /* TKCurrentTimeLabel.h in Headers */,
@@ -885,6 +892,7 @@
 				202DBEBE1AF4347A00B0CE67 /* TKNumberInputView.m in Sources */,
 				20A75C691AD8332F00E2106A /* TKSectionedScrollView.m in Sources */,
 				200B628D1AD7FC5E0049E35C /* NSArray+TKCategory.m in Sources */,
+				20A46DE01B61C097004A4153 /* TKPhoneNumberTextField.m in Sources */,
 				202DBEBC1AF4347A00B0CE67 /* TKInputKey.m in Sources */,
 				20A75C861AD836DD00E2106A /* NSBundle+TKCategory.m in Sources */,
 				20E131CF1AF4107F0011492F /* UIView+Initializers.m in Sources */,

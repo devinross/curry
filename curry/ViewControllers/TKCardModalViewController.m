@@ -293,7 +293,7 @@ static const CGFloat _minimumVelocityRequiredForPush = 50.0f;	// defines how muc
 			[self.animator addBehavior:self.pushBehavior];
 			
 			
-			CGFloat dimension = MAX(CGFrameGetHeight(self.contentView),CGFrameGetWidth(self.contentView)) * 1.2;
+			CGFloat dimension = MAX(CGFrameGetHeight(self.contentView),CGFrameGetWidth(self.contentView)) * 1.1;
 			dimension = -MAX(dimension,420);
 			
 			UICollisionBehavior *collide = [[UICollisionBehavior alloc] initWithItems:@[view]];
@@ -330,7 +330,7 @@ static const CGFloat _minimumVelocityRequiredForPush = 50.0f;	// defines how muc
 
 #pragma mark UIViewControllerTransitioningDelegate
 - (void) presentTransitionAnimation:(id<UIViewControllerContextTransitioning>)transitionContext containerView:(UIView *)containerView fromViewController:(UIViewController *)viewController{
-    
+	
 	[containerView addSubview:self.view];
 	
 	self.view.frame = CGRectMake(0, 0, CGRectGetWidth(containerView.frame), CGRectGetHeight(containerView.frame));
@@ -348,16 +348,18 @@ static const CGFloat _minimumVelocityRequiredForPush = 50.0f;	// defines how muc
 		NSInteger y = (CGRectGetHeight(self.visibleFrame) - CGFrameGetHeight(self.contentView)) / 2;
 		self.contentView.frame = CGRectMake(originalMinX, y, CGFrameGetWidth(self.contentView), CGFrameGetHeight(self.contentView));
 	} completion:^(BOOL finished) {
-        [self transitionEnded];
+		[self transitionEnded];
 	}];
 	
 }
 - (void) dismissTransitionAnimation:(id<UIViewControllerContextTransitioning>)transitionContext containerView:(UIView *)containerView toViewController:(UIViewController *)viewController{
 	
-    if(self.contentView.superview){
+	
+	if(self.contentView.superview){
 		
-		if(!self.animator)
+		if(!self.animator){
 			self.animator = [[UIDynamicAnimator alloc] initWithReferenceView:self.view];
+		}
 		
 		
 		[self.animator removeAllBehaviors];
@@ -377,12 +379,13 @@ static const CGFloat _minimumVelocityRequiredForPush = 50.0f;	// defines how muc
 		
 	}
 	
-	[UIView animateWithDuration:0.4 delay:0.4 options:0 animations:^{
+	BOOL thrown = self.pushBehavior ? YES : NO;
+	[UIView animateWithDuration:thrown ? 0.35 : 0.4 delay:thrown ? 0.0 : 0.4 options:0 animations:^{
 		self.backgroundView.transform = CGAffineTransformIdentity;
 		self.backgroundView.alpha = 0;
 	} completion:^(BOOL finished){
 		[self.view removeFromSuperview];
-        [self transitionEnded];
+		[self transitionEnded];
 	}];
 	
 }

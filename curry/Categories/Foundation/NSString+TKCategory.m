@@ -297,7 +297,7 @@
 	BOOL leadingOne = [digits hasPrefix:@"1"];
 
 	if((digits.length > 11 && leadingOne) || (digits.length > 10 && !leadingOne))
-		return digits;
+		return [digits substringWithRange:NSMakeRange(0, MIN(15,digits.length))];
 	
 	NSStringCompareOptions opt = NSRegularExpressionSearch;
 	NSRange range = NSMakeRange(0, digits.length);

@@ -1,5 +1,5 @@
 //
-//  CreditCardEntryViewController.h
+//  CustomTextEntryViewController.h
 //  Created by Devin Ross on 4/10/15.
 //
 /*
@@ -32,11 +32,12 @@
 @import UIKit;
 @import curry;
 
-@interface CreditCardEntryViewController : UIViewController
+@interface CustomTextEntryViewController : UIViewController
 
 @property (nonatomic,strong) TKCreditCardNumberTextField *numberField;
 @property (nonatomic,strong) TKCreditCardExpirationTextField *expirationField;
 @property (nonatomic,strong) TKCreditCardZipTextField *zipField;
 @property (nonatomic,strong) TKCreditCardCVVTextField *cvvField;
+@property (nonatomic,strong) TKPhoneNumberTextField *phoneField;
 
 @end

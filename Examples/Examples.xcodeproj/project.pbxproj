@@ -13,7 +13,7 @@
 		20785FEC1AD83C63000DC57F /* RootTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 20785FEB1AD83C63000DC57F /* RootTableViewController.m */; };
 		20785FF61AD83D0C000DC57F /* curry.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20785FF31AD83CEE000DC57F /* curry.framework */; };
 		20785FF71AD83D0C000DC57F /* curry.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 20785FF31AD83CEE000DC57F /* curry.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		20785FFD1AD83DC1000DC57F /* CreditCardEntryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 20785FFC1AD83DC1000DC57F /* CreditCardEntryViewController.m */; };
+		20785FFD1AD83DC1000DC57F /* CustomTextEntryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 20785FFC1AD83DC1000DC57F /* CustomTextEntryViewController.m */; };
 		2097F35C1B3DA3F100247736 /* VideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2097F35B1B3DA3F100247736 /* VideoViewController.m */; };
 		20CB9CF81AF3EA47002E9F1C /* BlocksViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 20CB9CF71AF3EA47002E9F1C /* BlocksViewController.m */; };
 		20EC669D1B3DAD1D0027D6A2 /* balllin.mov in Resources */ = {isa = PBXBuildFile; fileRef = 20EC669C1B3DAD1D0027D6A2 /* balllin.mov */; };
@@ -69,8 +69,8 @@
 		20785FEA1AD83C63000DC57F /* RootTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootTableViewController.h; sourceTree = "<group>"; };
 		20785FEB1AD83C63000DC57F /* RootTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootTableViewController.m; sourceTree = "<group>"; };
 		20785FED1AD83CED000DC57F /* curry.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = curry.xcodeproj; path = ../curry.xcodeproj; sourceTree = "<group>"; };
-		20785FFB1AD83DC1000DC57F /* CreditCardEntryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CreditCardEntryViewController.h; sourceTree = "<group>"; };
-		20785FFC1AD83DC1000DC57F /* CreditCardEntryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CreditCardEntryViewController.m; sourceTree = "<group>"; };
+		20785FFB1AD83DC1000DC57F /* CustomTextEntryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomTextEntryViewController.h; sourceTree = "<group>"; };
+		20785FFC1AD83DC1000DC57F /* CustomTextEntryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomTextEntryViewController.m; sourceTree = "<group>"; };
 		2097F35A1B3DA3F100247736 /* VideoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VideoViewController.h; sourceTree = "<group>"; };
 		2097F35B1B3DA3F100247736 /* VideoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VideoViewController.m; sourceTree = "<group>"; };
 		20CB9CF61AF3EA47002E9F1C /* BlocksViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BlocksViewController.h; sourceTree = "<group>"; };
@@ -115,8 +115,8 @@
 				20785FC41AD83BBE000DC57F /* AppDelegate.swift */,
 				20785FEA1AD83C63000DC57F /* RootTableViewController.h */,
 				20785FEB1AD83C63000DC57F /* RootTableViewController.m */,
-				20785FFB1AD83DC1000DC57F /* CreditCardEntryViewController.h */,
-				20785FFC1AD83DC1000DC57F /* CreditCardEntryViewController.m */,
+				20785FFB1AD83DC1000DC57F /* CustomTextEntryViewController.h */,
+				20785FFC1AD83DC1000DC57F /* CustomTextEntryViewController.m */,
 				20F19B1B1AE080F700077DA1 /* GesturesViewController.h */,
 				20F19B1C1AE080F700077DA1 /* GesturesViewController.m */,
 				207394221B14FC1600DBA74A /* CustomKeyboardViewController.h */,
@@ -267,7 +267,7 @@
 				20785FEC1AD83C63000DC57F /* RootTableViewController.m in Sources */,
 				2097F35C1B3DA3F100247736 /* VideoViewController.m in Sources */,
 				207394241B14FC1600DBA74A /* CustomKeyboardViewController.m in Sources */,
-				20785FFD1AD83DC1000DC57F /* CreditCardEntryViewController.m in Sources */,
+				20785FFD1AD83DC1000DC57F /* CustomTextEntryViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

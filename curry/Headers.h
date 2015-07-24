@@ -117,11 +117,12 @@
 #import "TKWindow.h"
 #import "TKTextView.h"
 
-// Credit Card
+// Custom Text Field
 #import "TKCreditCardNumberTextField.h"
 #import "TKCreditCardExpirationTextField.h"
 #import "TKCreditCardZipTextField.h"
 #import "TKCreditCardCVVTextField.h"
+#import "TKPhoneNumberTextField.h"
 
 // Extra
 #import "TKSoundAlertController.h"
