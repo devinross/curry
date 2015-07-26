@@ -39,27 +39,34 @@
 @implementation TKDecimalInputWithNextKeyView
 
 - (instancetype) initWithFrame:(CGRect)frame{
-	frame.size = CGSizeMake([UIScreen mainScreen].bounds.size.width, [UIDevice currentDevice].phoneIdiom ? 216 : 352);
+	frame.size = [TKInputView sizeOfKeyboardForMainScreen];
 	
-	CGFloat yPad = 0, xPad = 0, xMargin = 0;
-	CGFloat w = frame.size.width / 4;
-	CGFloat h = frame.size.height / 4;
-	
-	if([UIDevice currentDevice].padIdiom){
-		w = 108, h = 75, yPad = 10, xPad = 16, xMargin = 28;
-	}
-    
     UIImage *back = [UIImage imageNamed:@"keyboard-backspace-key" inBundle:[NSBundle bundleForClass:[self class]] compatibleWithTraitCollection:[UITraitCollection traitCollectionWithDisplayScale:[UIScreen mainScreen].scale]];
     UIImage *next = [UIImage imageNamed:@"keyboard-next-key" inBundle:[NSBundle bundleForClass:[self class]] compatibleWithTraitCollection:[UITraitCollection traitCollectionWithDisplayScale:[UIScreen mainScreen].scale]];
 
-	self.nextKey = [[TKInputKey alloc] initWithFrame:CGRectMake(xMargin+w*3 + (xPad*3), yPad, w+1, h*2+yPad) symbol:next normalType:TKInputKeyTypeDefault selectedType:TKInputKeyTypeDark runner:NO];
-	self.backspaceKey = [[TKInputKey alloc] initWithFrame:CGRectMake(xMargin+w*3+ (xPad*3), h*2+yPad*3, w+1, h*2+yPad) symbol:back normalType:TKInputKeyTypeDefault selectedType:TKInputKeyTypeDark runner:NO];
-    self.backspaceKey.canTapAndHold = YES;
+	self.nextKey = [[TKInputKey alloc] initWithFrame:CGRectMake(0, 0, frame.size.width * 0.25, frame.size.height) symbol:next normalType:TKInputKeyTypeDefault selectedType:TKInputKeyTypeDark runner:NO];
+	self.backspaceKey = [[TKInputKey alloc] initWithFrame:CGRectMake(0, 0, frame.size.width * 0.25, frame.size.height) symbol:back normalType:TKInputKeyTypeDefault selectedType:TKInputKeyTypeDark runner:NO];
+	self.backspaceKey.canTapAndHold = YES;
 
-	CGRect pad = CGRectMake(0, 0, w*3, h*4);
 	
-	if(!(self=[super initWithFrame:frame withKeysModels:@[self.nextKey,self.backspaceKey] keypadFrame:pad])) return nil;
+	if(!(self=[super initWithFrame:frame withKeysModels:@[self.nextKey,self.backspaceKey]])) return nil;
     return self;
+}
+
+
+- (void) layoutSubviews{
+	[super layoutSubviews];
+	
+	CGRect backRect = self.backspaceKey.frame;
+	if([UIDevice currentDevice].phoneIdiom){
+		self.nextKey.frame = CGRectMake(backRect.origin.x, 0, backRect.size.width, CGFrameGetMaxY(self.sixKey));
+		self.backspaceKey.frame = CGRectMake(backRect.origin.x, CGFrameGetMaxY(self.sixKey), backRect.size.width, CGFrameGetMaxY(self.zeroKey) - CGFrameGetMaxY(self.sixKey));
+	}else{
+		CGFloat keyHeight = CGFrameGetMaxY(self.sixKey) - CGFrameGetMinY(self.oneKey);
+		self.nextKey.frame = CGRectMake(backRect.origin.x, CGFrameGetMinY(self.oneKey), backRect.size.width, keyHeight);
+		self.backspaceKey.frame = CGRectMake(backRect.origin.x, CGFrameGetMinY(self.eightKey), backRect.size.width, keyHeight );
+	}
+	
 }
 
 @end

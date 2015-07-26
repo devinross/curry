@@ -137,8 +137,9 @@
 	[super layoutSubviews];
 	
 	self.label.frame = CGRectInset(self.bounds, 5, 5);
-	self.symbol.center = CGPointMake(self.frame.size.width/2., self.frame.size.height/2.);
-	self.symbol.frame = CGRectIntegral(self.symbol.frame);
+
+	
+	self.symbol.frame = CGRectCenteredInRectWithSize(self.bounds, self.symbol.frame.size);
 }
 
 

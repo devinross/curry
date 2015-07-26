@@ -36,18 +36,14 @@
 /** `TKNumberInputView` is subclass `TKInputView` with a number pad. */
 @interface TKNumberInputView : TKInputView
 
-/** Initializes an number pad input view.
- 
- @param frame The frame of the `UIView`.
- @param keys The keys included on the view.
- @param padFrame The frame of the number pad.
- @return An initialized `TKInputView` object or nil if the object couldn’t be created.
- */
-- (instancetype) initWithFrame:(CGRect)frame withKeysModels:(NSArray*)keys keypadFrame:(CGRect)padFrame;
+
 
 ///----------------------------
 /// @name Properties
 ///----------------------------
+
+@property (nonatomic,assign) CGRect padRect;
+
 
 /** One key. */
 @property (nonatomic,strong) TKInputKey *oneKey;

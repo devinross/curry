@@ -51,69 +51,102 @@
 
 @implementation TKInputView
 
+
+
++ (CGSize) sizeOfKeyboardForMainScreen{
+	CGFloat height = 352;
+	if([UIDevice currentDevice].phoneIdiom){
+		height = [UIScreen mainScreen].traitCollection.verticalSizeClass == UIUserInterfaceSizeClassCompact ? 162 :  216;
+	}
+	return CGSizeMake([UIScreen mainScreen].bounds.size.width, height);
+}
+
 - (instancetype) initWithFrame:(CGRect)frame withKeysModels:(NSArray*)keys{
-	
-	frame.size = CGSizeMake([UIScreen mainScreen].bounds.size.width, [UIDevice currentDevice].phoneIdiom ? 216 : 352);
-	
+	frame.size = [TKInputView sizeOfKeyboardForMainScreen];
 	if(!(self=[super initWithFrame:frame])) return nil;
 	
+	self.keyViews = keys;
+	self.autoresizingMask = UIViewAutoresizingFlexibleHeight | UIViewAutoresizingFlexibleWidth;
 	self.backgroundColor = [UIColor colorWithHex:0xd7dadf];
 	self.clipsToBounds = YES;
 	self.multipleTouchEnabled = NO;
 	self.exclusiveTouch = YES;
 	
-	CGRect cntFrame = self.bounds;
+	CGRect cntFrame = frame;
+	if([UIDevice currentDevice].padIdiom){
+		cntFrame.size.width = 544;
+		cntFrame.origin.x = round((self.frame.size.width - cntFrame.size.width) / 2);
+	}else{
+		cntFrame.origin = CGPointMake(0, 1);
+		cntFrame.size.height -= 1;
+	}
+	
+	
+	
 	self.containerView = [[UIView alloc] initWithFrame:cntFrame];
+	self.containerView.clipsToBounds = YES;
 	
 	if([UIDevice currentDevice].padIdiom)
-		self.containerView.autoresizingMask = UIViewAutoresizingFlexibleLeftMargin | UIViewAutoresizingFlexibleRightMargin;
+		self.containerView.autoresizingMask = UIViewAutoresizingFlexibleLeftMargin | UIViewAutoresizingFlexibleHeight | UIViewAutoresizingFlexibleRightMargin;
+	else
+		self.containerView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
 	self.containerView.clipsToBounds = YES;
 	[self addSubview:self.containerView];
 	
-	int tag = 0;
 	
-	CGFloat maxX = 0,minX = CGRectGetWidth(self.containerView.frame);
+	NSInteger tag = 0;
 	
 	for(TKInputKey *key in keys){
-		
-		CGRect r = key.frame;
-		r.origin.y++;
-		key.frame = r;
-		
-		minX = MIN(CGRectGetMinX(r),minX);
-		maxX = MAX(CGRectGetMaxX(r),maxX);
-				
 		key.tag = tag;
 		[key setHighlighted:NO];
 		[self.containerView addSubviewToBack:key];
 		tag++;
 	}
 	
-	self.keyViews = keys;
+	
 	
 	
 	if([UIDevice currentDevice].padIdiom){
-		CGRect cntRect = self.containerView.frame;
-		cntRect.size.width = maxX + minX;
-		cntRect.origin.x = (CGRectGetWidth(self.frame) - cntRect.size.width) / 2.0f;
-		self.containerView.frame = cntRect;
+		
+		
+
         CGRect rect = CGRectMake(frame.size.width - 80 - 32, frame.size.height - 75 - 12, 80, 75);
-        UIImage *img = [UIImage imageNamed:@"keyboard-down-keyboard"];
+		
+		UIImage *img = [UIImage imageNamed:@"keyboard-down-keyboard" inBundle:[NSBundle bundleForClass:[self class]] compatibleWithTraitCollection:[UITraitCollection traitCollectionWithDisplayScale:[UIScreen mainScreen].scale]];
+
 		self.hideKeyboardKey = [[TKInputKey alloc] initWithFrame:rect symbol:img normalType:TKInputKeyTypeDefault selectedType:TKInputKeyTypeHighlighted runner:NO];
-		self.hideKeyboardKey.autoresizingMask = UIViewAutoresizingFlexibleLeftMargin;
+		self.hideKeyboardKey.autoresizingMask = UIViewAutoresizingFlexibleLeftMargin | UIViewAutoresizingFlexibleTopMargin;
 		self.hideKeyboardKey.tag = tag;
 		[self.hideKeyboardKey setHighlighted:NO];
 		[self addSubview:self.hideKeyboardKey];
 		
-		UIImage *dotsImage = [UIImage imageNamed:@"keyboard-move-keyboard-dots"];
+		UIImage *dotsImage = [UIImage imageNamed:@"keyboard-move-keyboard-dots" inBundle:[NSBundle bundleForClass:[self class]] compatibleWithTraitCollection:[UITraitCollection traitCollectionWithDisplayScale:[UIScreen mainScreen].scale]];
 		UIImageView *dots = [UIImageView imageViewWithFrame:CGRectMakeWithSize(CGRectGetWidth(frame) - 18, CGRectGetHeight(frame) - 57, dotsImage.size)];
-		dots.image = [UIImage imageNamed:@"keyboard-move-keyboard-dots"];
+		dots.image = dotsImage;
 		dots.autoresizingMask = UIViewAutoresizingFlexibleLeftMargin | UIViewAutoresizingFlexibleTopMargin;
 		[self addSubview:dots];
 	}
 	
+	[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(didHideNotification:) name:UIKeyboardDidHideNotification object:nil];
+	
     return self;
 }
+
+- (void) dealloc{
+	[[NSNotificationCenter defaultCenter] removeObserver:self name:UIKeyboardDidHideNotification object:nil];
+}
+
+- (void) didHideNotification:(id)sender{
+
+	if(self.traitCollection.userInterfaceIdiom == UIUserInterfaceIdiomPhone){
+		CGFloat height = self.traitCollection.verticalSizeClass == UIUserInterfaceSizeClassCompact ? 162 :  216;
+		CGRect rect = self.frame;
+		rect.size.height = height;
+		self.frame = rect;
+	}
+	
+}
+
 - (void) touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event{
 	
 	UITouch *touch = [touches anyObject];

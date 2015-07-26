@@ -41,62 +41,89 @@
 #define RECT(_X,_Y,_S) CGRectMakeWithSize(_X,_Y,_S)
 
 - (instancetype) initWithFrame:(CGRect)frame{
-    frame.size = CGSizeMake([UIScreen mainScreen].bounds.size.width, [UIDevice currentDevice].phoneIdiom ? 216 : 352);
-    
-    NSInteger yPad = 0, xPad = 0, xMargin = 0;
-    NSInteger w = frame.size.width / 4;
-    NSInteger h = frame.size.height / 4;
-    NSInteger endKeyWidth;
-    NSInteger minX = xMargin+w*3+ (xPad*3);
+    frame.size = [TKInputView sizeOfKeyboardForMainScreen];
 
-    if([UIDevice currentDevice].padIdiom){
-        w = 108, h = 75, yPad = 0, xPad = 16, xMargin = 28;
-        endKeyWidth = w + 1;
-    }else{
-        endKeyWidth = frame.size.width - minX + 1;
-    }
     UIImage *back = [UIImage imageNamed:@"keyboard-backspace-key" inBundle:[NSBundle bundleForClass:[self class]] compatibleWithTraitCollection:[UITraitCollection traitCollectionWithDisplayScale:[UIScreen mainScreen].scale]];
-    self.backspaceKey = [[TKInputKey alloc] initWithFrame:CGRectMake(minX, 0, endKeyWidth, h*4) symbol:back normalType:TKInputKeyTypeDefault selectedType:TKInputKeyTypeDark runner:NO];
+    self.backspaceKey = [[TKInputKey alloc] initWithFrame:CGRectMake(0, 0, frame.size.width * 0.25, frame.size.height) symbol:back normalType:TKInputKeyTypeDefault selectedType:TKInputKeyTypeDark runner:NO];
     self.backspaceKey.canTapAndHold = YES;
-    CGRect pad = CGRectMake(0, 0, w*3, h*4);
-    
-    return [self initWithFrame:frame withKeysModels:@[self.backspaceKey] keypadFrame:pad];
+	
+    return [self initWithFrame:frame withKeysModels:@[self.backspaceKey]];
 }
 
-- (instancetype) initWithFrame:(CGRect)frame withKeysModels:(NSArray*)keys keypadFrame:(CGRect)padFrame{
-	frame.size = CGSizeMake([UIScreen mainScreen].bounds.size.width, [UIDevice currentDevice].phoneIdiom ? 216 : 352);
+- (instancetype) initWithFrame:(CGRect)frame withKeysModels:(NSArray*)keys{
+	frame.size = [TKInputView sizeOfKeyboardForMainScreen];
 	
-	NSInteger w = padFrame.size.width / 3;
-	NSInteger h = padFrame.size.height / 4;
-	NSInteger pad = 0, xPad = 0, marginX = 0;
+	self.padRect = CGRectMake(0, 0, 0.75, 1);
 	
-	
-	if([UIDevice currentDevice].padIdiom){
-		w = 108, h = 75, pad = 10, xPad = 16, marginX = 24;
-	}
-	
-	
-	CGSize s = CGSizeMake(w,h);
-	
-	self.oneKey =		[TKInputKey keyWithFrame:RECT( marginX,				pad,		s) symbol:@"1" normalType:TKInputKeyTypeDefault selectedType:TKInputKeyTypeDark runner:YES];
-	self.twoKey =		[TKInputKey keyWithFrame:RECT( marginX+w+xPad,		pad,		s) symbol:@"2" normalType:TKInputKeyTypeDefault selectedType:TKInputKeyTypeDark runner:YES];
-	self.threeKey =		[TKInputKey keyWithFrame:RECT( marginX+w*2+xPad*2,	pad,		s) symbol:@"3" normalType:TKInputKeyTypeDefault selectedType:TKInputKeyTypeDark runner:YES];
-	self.fourKey =		[TKInputKey keyWithFrame:RECT( marginX,				h+pad*2,	s) symbol:@"4" normalType:TKInputKeyTypeDefault selectedType:TKInputKeyTypeDark runner:YES];
-	self.fiveKey =		[TKInputKey keyWithFrame:RECT( marginX+w+xPad,		h+pad*2,	s) symbol:@"5" normalType:TKInputKeyTypeDefault selectedType:TKInputKeyTypeDark runner:YES];
-	self.sixKey =		[TKInputKey keyWithFrame:RECT( marginX+w*2+xPad*2,	h+pad*2,	s) symbol:@"6" normalType:TKInputKeyTypeDefault selectedType:TKInputKeyTypeDark runner:YES];
-	self.sevenKey =		[TKInputKey keyWithFrame:RECT( marginX,				h*2+pad*3,	s) symbol:@"7" normalType:TKInputKeyTypeDefault selectedType:TKInputKeyTypeDark runner:YES];
-	self.eightKey =		[TKInputKey keyWithFrame:RECT( marginX+w+xPad,		h*2+pad*3,	s) symbol:@"8" normalType:TKInputKeyTypeDefault selectedType:TKInputKeyTypeDark runner:YES];
-	self.nineKey =		[TKInputKey keyWithFrame:RECT( marginX+w*2+xPad*2,	h*2+pad*3,	s) symbol:@"9" normalType:TKInputKeyTypeDefault selectedType:TKInputKeyTypeDark runner:YES];
-	self.zeroKey =		[TKInputKey keyWithFrame:CGRectMake( marginX,		h*3+pad*4,	w*3+xPad*2,h) symbol:@"0" normalType:TKInputKeyTypeDefault selectedType:TKInputKeyTypeDark runner:YES];
+	CGFloat w = self.padRect.size.width * frame.size.width;
+	CGFloat h = self.padRect.size.height * frame.size.height;
+
+	CGSize s = CGSizeMake(w, h);
+	self.oneKey =		[TKInputKey keyWithFrame:CGRectMakeWithSize( 0, 0, s) symbol:@"1" normalType:TKInputKeyTypeDefault selectedType:TKInputKeyTypeDark runner:YES];
+	self.twoKey =		[TKInputKey keyWithFrame:CGRectMakeWithSize( 0, 0, s) symbol:@"2" normalType:TKInputKeyTypeDefault selectedType:TKInputKeyTypeDark runner:YES];
+	self.threeKey =		[TKInputKey keyWithFrame:CGRectMakeWithSize( 0, 0, s) symbol:@"3" normalType:TKInputKeyTypeDefault selectedType:TKInputKeyTypeDark runner:YES];
+	self.fourKey =		[TKInputKey keyWithFrame:CGRectMakeWithSize( 0, 0, s) symbol:@"4" normalType:TKInputKeyTypeDefault selectedType:TKInputKeyTypeDark runner:YES];
+	self.fiveKey =		[TKInputKey keyWithFrame:CGRectMakeWithSize( 0, 0, s) symbol:@"5" normalType:TKInputKeyTypeDefault selectedType:TKInputKeyTypeDark runner:YES];
+	self.sixKey =		[TKInputKey keyWithFrame:CGRectMakeWithSize( 0, 0, s) symbol:@"6" normalType:TKInputKeyTypeDefault selectedType:TKInputKeyTypeDark runner:YES];
+	self.sevenKey =		[TKInputKey keyWithFrame:CGRectMakeWithSize( 0, 0, s) symbol:@"7" normalType:TKInputKeyTypeDefault selectedType:TKInputKeyTypeDark runner:YES];
+	self.eightKey =		[TKInputKey keyWithFrame:CGRectMakeWithSize( 0, 0, s) symbol:@"8" normalType:TKInputKeyTypeDefault selectedType:TKInputKeyTypeDark runner:YES];
+	self.nineKey =		[TKInputKey keyWithFrame:CGRectMakeWithSize( 0, 0, s) symbol:@"9" normalType:TKInputKeyTypeDefault selectedType:TKInputKeyTypeDark runner:YES];
+	self.zeroKey =		[TKInputKey keyWithFrame:CGRectMakeWithSize( 0, 0, s) symbol:@"0" normalType:TKInputKeyTypeDefault selectedType:TKInputKeyTypeDark runner:YES];
 	
 	NSMutableArray *ar = [NSMutableArray arrayWithArray:self.keypadKeys];
 	[ar addObjectsFromArray:keys];
-	
-	
 	if(!(self=[super initWithFrame:frame withKeysModels:ar])) return nil;
-	
 	return self;
 }
+
+
+
+- (void) layoutSubviews{
+	[super layoutSubviews];
+	
+	CGRect padPer = self.padRect;
+	CGSize cntSize = self.containerView.frame.size;
+	CGRect padRect = CGRectMake(round(padPer.origin.x * cntSize.width), round(padPer.origin.y * cntSize.height), round(padPer.size.width * cntSize.width), round(padPer.size.height * cntSize.height));
+	NSInteger w = padRect.size.width / 3;
+	NSInteger h = padRect.size.height / 4;
+	NSInteger pad = 0, xPad = 0, leftInset = 0, vertInset = 0, vertSpace = 0, bottomPad = 2;
+	
+	
+	if([UIDevice currentDevice].padIdiom){
+		xPad = 16, leftInset = 24, vertInset = 12, vertSpace = 10;
+		w = (padRect.size.width - leftInset - leftInset - (xPad * 2)) / 3;
+		h = (padRect.size.height - vertInset - vertInset - (vertSpace * 3)) / 4;
+		bottomPad = 0;
+	}
+	
+	CGSize s = CGSizeMake(w, h);
+	self.oneKey.frame =		CGRectMakeWithSize( leftInset,				vertInset,		s);
+	self.twoKey.frame =		CGRectMakeWithSize( leftInset+w+xPad,		vertInset,		s);
+	self.threeKey.frame =	CGRectMakeWithSize( leftInset+w*2+xPad*2,	vertInset,		s);
+	
+	self.fourKey.frame =	CGRectMakeWithSize( leftInset,				h+vertSpace + vertInset,	s);
+	self.fiveKey.frame =	CGRectMakeWithSize( leftInset+w+xPad,		h+vertSpace + vertInset,	s);
+	self.sixKey.frame =		CGRectMakeWithSize( leftInset+w*2+xPad*2,	h+vertSpace + vertInset,	s);
+	
+	self.sevenKey.frame =	CGRectMakeWithSize( leftInset,				(h+vertSpace)*2 + vertInset,	s);
+	self.eightKey.frame =	CGRectMakeWithSize( leftInset+w+xPad,		(h+vertSpace)*2 + vertInset,	s);
+	self.nineKey.frame =	CGRectMakeWithSize( leftInset+w*2+xPad*2,	(h+vertSpace)*2 + vertInset,	s);
+	
+	CGFloat minY = h*3+pad*3 + vertInset;
+	self.zeroKey.frame =	CGRectMake( leftInset, h*3+vertSpace*3 + vertInset,	w*3+xPad*2, s.height);
+	
+	
+	NSInteger minX = CGRectGetMaxX(self.threeKey.frame) + xPad;
+	
+	if([UIDevice currentDevice].phoneIdiom){
+		self.backspaceKey.frame = CGRectMake(minX, vertInset, self.containerView.frame.size.width - minX + 1, padRect.size.height + bottomPad);
+	}else{
+		self.backspaceKey.frame = CGRectMake(minX, vertInset, s.width, h);
+	}
+	
+	
+}
+
 - (NSArray*) keypadKeys{
 	return @[self.oneKey,self.twoKey,self.threeKey,self.fourKey,self.fiveKey,self.sixKey,self.sevenKey,self.eightKey,self.nineKey,self.zeroKey];
 }
@@ -106,7 +133,7 @@
 		
 		BOOL insert = YES;
 		
-		if(self.textField.delegate)
+		if(self.textField.delegate && [self.textField.delegate respondsToSelector:@selector(textField:shouldChangeCharactersInRange:replacementString:)])
 			insert = [self.textField.delegate textField:self.textField shouldChangeCharactersInRange:NSMakeRange(self.textField.text.length, 0) replacementString:self.selectedKey.label.text];
 		
 		if(insert)

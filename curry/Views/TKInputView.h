@@ -84,4 +84,7 @@
 /** The view that contains all the keys. This view becomes useful when dealing with iPad formatting.  */
 @property (nonatomic,strong) UIView *containerView;
 
+
++ (CGSize) sizeOfKeyboardForMainScreen;
+
 @end
