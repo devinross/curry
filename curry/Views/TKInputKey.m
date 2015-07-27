@@ -135,10 +135,7 @@
 
 - (void) layoutSubviews{
 	[super layoutSubviews];
-	
 	self.label.frame = CGRectInset(self.bounds, 5, 5);
-
-	
 	self.symbol.frame = CGRectCenteredInRectWithSize(self.bounds, self.symbol.frame.size);
 }
 

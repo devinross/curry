@@ -38,21 +38,16 @@
 
 @implementation TKNumberInputWithNextKeyView
 
-- (instancetype) initWithFrame:(CGRect)frame{
-	frame.size = [TKInputView sizeOfKeyboardForMainScreen];
+- (instancetype) initWithFrame:(CGRect)frame withKeysModels:(NSArray *)keys{
 	
-
-    
-	
-    UIImage *back = [UIImage imageNamed:@"keyboard-backspace-key" inBundle:[NSBundle bundleForClass:[self class]] compatibleWithTraitCollection:[UITraitCollection traitCollectionWithDisplayScale:[UIScreen mainScreen].scale]];
-    UIImage *next = [UIImage imageNamed:@"keyboard-next-key" inBundle:[NSBundle bundleForClass:[self class]] compatibleWithTraitCollection:[UITraitCollection traitCollectionWithDisplayScale:[UIScreen mainScreen].scale]];
+    UIImage *next = [UIImage imageNamed:@"keyboard-next-key" inBundle:[NSBundle bundleForClass:[TKInputView class]] compatibleWithTraitCollection:[UITraitCollection traitCollectionWithDisplayScale:[UIScreen mainScreen].scale]];
 
 	self.nextKey = [[TKInputKey alloc] initWithFrame:CGRectMake(0, 0, frame.size.width * 0.25, frame.size.height) symbol:next normalType:TKInputKeyTypeDefault selectedType:TKInputKeyTypeDark runner:NO];
-	self.backspaceKey = [[TKInputKey alloc] initWithFrame:CGRectMake(0, 0, frame.size.width * 0.25, frame.size.height) symbol:back normalType:TKInputKeyTypeDefault selectedType:TKInputKeyTypeDark runner:NO];
-    self.backspaceKey.canTapAndHold = YES;
 
+	NSMutableArray *array = [NSMutableArray arrayWithArray:keys];
+	[array addObjectsFromArray:@[self.nextKey,self.backspaceKey]];
 	
-	if(!(self=[super initWithFrame:frame withKeysModels:@[self.nextKey,self.backspaceKey]])) return nil;
+	if(!(self=[super initWithFrame:frame withKeysModels:array])) return nil;
     return self;
 }
 

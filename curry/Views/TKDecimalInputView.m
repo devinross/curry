@@ -38,18 +38,6 @@
 
 @implementation TKDecimalInputView
 
-#define RECT(_X,_Y,_S) CGRectMakeWithSize(_X,_Y,_S)
-
-
-- (instancetype) initWithFrame:(CGRect)frame{
-	frame.size = [TKInputView sizeOfKeyboardForMainScreen];
-	
-	UIImage *back = [UIImage imageNamed:@"keyboard-backspace-key" inBundle:[NSBundle bundleForClass:[self class]] compatibleWithTraitCollection:[UITraitCollection traitCollectionWithDisplayScale:[UIScreen mainScreen].scale]];
-	self.backspaceKey = [[TKInputKey alloc] initWithFrame:CGRectMake(0, 0, frame.size.width * 0.25, frame.size.height) symbol:back normalType:TKInputKeyTypeDefault selectedType:TKInputKeyTypeDark runner:NO];
-	self.backspaceKey.canTapAndHold = YES;
-	
-	return [self initWithFrame:frame withKeysModels:@[self.backspaceKey]];
-}
 
 - (instancetype) initWithFrame:(CGRect)frame withKeysModels:(NSArray*)keys{
 	frame.size = [TKInputView sizeOfKeyboardForMainScreen];
@@ -59,14 +47,11 @@
 	CGFloat w = self.padRect.size.width * frame.size.width;
 	CGFloat h = self.padRect.size.height * frame.size.height;
 	
-	
 	CGSize s = CGSizeMake(w, h);
-	self.decimalKey =	[TKInputKey keyWithFrame:CGRectMakeWithSize( 0, 0,	s) symbol:@"." normalType:TKInputKeyTypeDefault selectedType:TKInputKeyTypeDark runner:YES];
+	self.decimalKey = [TKInputKey keyWithFrame:CGRectMakeWithSize( 0, 0, s) symbol:@"." normalType:TKInputKeyTypeDefault selectedType:TKInputKeyTypeDark runner:YES];
 
-	
 	NSMutableArray *ar = [NSMutableArray arrayWithObject:self.decimalKey];
 	[ar addObjectsFromArray:keys];
-	
 	
 	if(!(self=[super initWithFrame:frame withKeysModels:ar])) return nil;
 	
@@ -93,7 +78,9 @@
 
 
 - (NSArray*) keypadKeys{
-	return @[self.oneKey,self.twoKey,self.threeKey,self.fourKey,self.fiveKey,self.sixKey,self.sevenKey,self.eightKey,self.nineKey,self.zeroKey,self.decimalKey];
+	NSMutableArray *array = [super keypadKeys].mutableCopy;
+	[array addObject:self.decimalKey];
+	return array.copy;
 }
 - (void) touchesEnded:(NSSet *)touches withEvent:(UIEvent *)event{
 	

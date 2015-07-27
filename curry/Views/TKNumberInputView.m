@@ -38,17 +38,11 @@
 
 @implementation TKNumberInputView
 
-#define RECT(_X,_Y,_S) CGRectMakeWithSize(_X,_Y,_S)
-
 - (instancetype) initWithFrame:(CGRect)frame{
-    frame.size = [TKInputView sizeOfKeyboardForMainScreen];
-
-    UIImage *back = [UIImage imageNamed:@"keyboard-backspace-key" inBundle:[NSBundle bundleForClass:[self class]] compatibleWithTraitCollection:[UITraitCollection traitCollectionWithDisplayScale:[UIScreen mainScreen].scale]];
-    self.backspaceKey = [[TKInputKey alloc] initWithFrame:CGRectMake(0, 0, frame.size.width * 0.25, frame.size.height) symbol:back normalType:TKInputKeyTypeDefault selectedType:TKInputKeyTypeDark runner:NO];
-    self.backspaceKey.canTapAndHold = YES;
-	
-    return [self initWithFrame:frame withKeysModels:@[self.backspaceKey]];
+	self = [self initWithFrame:frame withKeysModels:@[]];
+	return self;
 }
+
 
 - (instancetype) initWithFrame:(CGRect)frame withKeysModels:(NSArray*)keys{
 	frame.size = [TKInputView sizeOfKeyboardForMainScreen];
@@ -57,7 +51,7 @@
 	
 	CGFloat w = self.padRect.size.width * frame.size.width;
 	CGFloat h = self.padRect.size.height * frame.size.height;
-
+	
 	CGSize s = CGSizeMake(w, h);
 	self.oneKey =		[TKInputKey keyWithFrame:CGRectMakeWithSize( 0, 0, s) symbol:@"1" normalType:TKInputKeyTypeDefault selectedType:TKInputKeyTypeDark runner:YES];
 	self.twoKey =		[TKInputKey keyWithFrame:CGRectMakeWithSize( 0, 0, s) symbol:@"2" normalType:TKInputKeyTypeDefault selectedType:TKInputKeyTypeDark runner:YES];
@@ -72,6 +66,7 @@
 	
 	NSMutableArray *ar = [NSMutableArray arrayWithArray:self.keypadKeys];
 	[ar addObjectsFromArray:keys];
+	[ar addObject:self.backspaceKey];
 	if(!(self=[super initWithFrame:frame withKeysModels:ar])) return nil;
 	return self;
 }
@@ -86,7 +81,7 @@
 	CGRect padRect = CGRectMake(round(padPer.origin.x * cntSize.width), round(padPer.origin.y * cntSize.height), round(padPer.size.width * cntSize.width), round(padPer.size.height * cntSize.height));
 	NSInteger w = padRect.size.width / 3;
 	NSInteger h = padRect.size.height / 4;
-	NSInteger pad = 0, xPad = 0, leftInset = 0, vertInset = 0, vertSpace = 0, bottomPad = 2;
+	NSInteger xPad = 0, leftInset = 0, vertInset = 0, vertSpace = 0, bottomPad = 2;
 	
 	
 	if([UIDevice currentDevice].padIdiom){
@@ -100,16 +95,12 @@
 	self.oneKey.frame =		CGRectMakeWithSize( leftInset,				vertInset,		s);
 	self.twoKey.frame =		CGRectMakeWithSize( leftInset+w+xPad,		vertInset,		s);
 	self.threeKey.frame =	CGRectMakeWithSize( leftInset+w*2+xPad*2,	vertInset,		s);
-	
 	self.fourKey.frame =	CGRectMakeWithSize( leftInset,				h+vertSpace + vertInset,	s);
 	self.fiveKey.frame =	CGRectMakeWithSize( leftInset+w+xPad,		h+vertSpace + vertInset,	s);
 	self.sixKey.frame =		CGRectMakeWithSize( leftInset+w*2+xPad*2,	h+vertSpace + vertInset,	s);
-	
 	self.sevenKey.frame =	CGRectMakeWithSize( leftInset,				(h+vertSpace)*2 + vertInset,	s);
 	self.eightKey.frame =	CGRectMakeWithSize( leftInset+w+xPad,		(h+vertSpace)*2 + vertInset,	s);
 	self.nineKey.frame =	CGRectMakeWithSize( leftInset+w*2+xPad*2,	(h+vertSpace)*2 + vertInset,	s);
-	
-	CGFloat minY = h*3+pad*3 + vertInset;
 	self.zeroKey.frame =	CGRectMake( leftInset, h*3+vertSpace*3 + vertInset,	w*3+xPad*2, s.height);
 	
 	
@@ -120,7 +111,6 @@
 	}else{
 		self.backspaceKey.frame = CGRectMake(minX, vertInset, s.width, h);
 	}
-	
 	
 }
 
