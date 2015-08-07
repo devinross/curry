@@ -380,7 +380,7 @@ static const CGFloat _minimumVelocityRequiredForPush = 50.0f;	// defines how muc
 	}
 	
 	BOOL thrown = self.pushBehavior ? YES : NO;
-	[UIView animateWithDuration:thrown ? 0.35 : 0.4 delay:thrown ? 0.0 : 0.4 options:0 animations:^{
+	[UIView animateWithDuration:thrown ? 0.2 : 0.4 delay:thrown ? 0.0 : 0.4 options:0 animations:^{
 		self.backgroundView.transform = CGAffineTransformIdentity;
 		self.backgroundView.alpha = 0;
 	} completion:^(BOOL finished){
