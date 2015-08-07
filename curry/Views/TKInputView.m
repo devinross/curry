@@ -101,8 +101,8 @@
 	
 	if([UIDevice currentDevice].padIdiom)
 		self.containerView.autoresizingMask = UIViewAutoresizingFlexibleLeftMargin | UIViewAutoresizingFlexibleHeight | UIViewAutoresizingFlexibleRightMargin;
-	else
-		self.containerView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
+//	else
+//		self.containerView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
 	self.containerView.clipsToBounds = YES;
 	[self addSubview:self.containerView];
 	
@@ -154,6 +154,31 @@
 	}
 	
 }
+
+- (void) layoutSubviews{
+	[super layoutSubviews];
+	
+	if(self.traitCollection.userInterfaceIdiom == UIUserInterfaceIdiomPhone){
+		
+		CGFloat compact = self.traitCollection.verticalSizeClass == UIUserInterfaceSizeClassCompact;
+		
+		NSInteger x = (self.bounds.size.width - 450) / 2;
+		
+		
+		CGRect frame = CGRectInset(self.bounds, compact ? x : 0, 0);
+		
+		frame.origin.y += 1;
+		frame.size.height += 1;
+		
+		self.containerView.frame = frame;
+		
+		
+		
+		
+	}
+	
+}
+
 
 - (void) touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event{
 	

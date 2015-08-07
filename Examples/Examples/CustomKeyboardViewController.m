@@ -24,7 +24,7 @@
     self.textField.backgroundColor = [UIColor colorWithWhite:0.95 alpha:1];
     [self.view addSubview:self.textField];
     
-    TKNumberInputView *input = [[TKDecimalInputWithNextKeyView alloc] initWithFrame:CGRectMake(0, 0, CGFrameGetWidth(self.view), 216)];
+    TKNumberInputView *input = [[TKNumberInputView alloc] initWithFrame:CGRectMake(0, 0, CGFrameGetWidth(self.view), 216)];
     input.textField = self.textField;
     
     self.textField.inputView = input;
