@@ -50,18 +50,24 @@
 	XCTAssertEqualObjects([@"devin" md5sum], @"11ef1590a74e1ab26c31a4e13f52d71b");
 }
 
+
+- (void) testShouldCountWhitespaceCorrectly{
+	XCTAssertEqual(@"hello".lengthWithoutWhitespace, 5);
+	XCTAssertEqual(@"hello bob".lengthWithoutWhitespace, 8);
+	XCTAssertEqual(@" 1h!sh #72 ".lengthWithoutWhitespace, 8);
+	XCTAssertEqual(@"".lengthWithoutWhitespace, 0);
+	XCTAssertEqual(@"      \n\t".lengthWithoutWhitespace, 0);
+}
+
 - (void) testShouldEncodeString{
 	XCTAssertEqualObjects([@"Bob Sanders" URLEncode], @"Bob%20Sanders");
 	XCTAssertEqualObjects([@"\"Aardvarks lurk, OK?\"" URLEncode], @"%22Aardvarks%20lurk%2C%20OK%3F%22");
 }
 
 - (void) testShouldHaveString{
-	
 	XCTAssertTrue([@"Bob Sanders" hasString:@"Sanders"]);
-	
 	XCTAssertFalse([@"Bob Sanders" hasString:@"SANDERS"]);
 	XCTAssertFalse([@"Bob Sanders" hasString:@"Cooper"]);
-	
 }
 
 - (void) testShouldPassCreditCardValidation{

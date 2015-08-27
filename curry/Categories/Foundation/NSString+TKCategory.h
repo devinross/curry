@@ -72,6 +72,12 @@
 - (BOOL) hasString:(NSString*)substring;
 
 
+/** Returns the length of the string minus the whitespace characters.
+ @return Returns the length of the string minus the whitespace characters.
+ */
+@property (nonatomic, readonly) NSUInteger lengthWithoutWhitespace;
+
+
 /* Returns a string with the first word in each sentence as capitalized. */
 @property (nonatomic, readonly, copy) NSString *capitalizeSentence;
 

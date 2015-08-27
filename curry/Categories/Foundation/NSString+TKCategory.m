@@ -34,7 +34,6 @@
 
 @implementation NSString (TKCategory)
 
-
 - (NSString*) creditCardType{
 	if(self.length < 4) return nil;
 
@@ -89,7 +88,6 @@
 	return NSLocalizedString(@"Unknown", @"");
 }
 
-
 - (BOOL) isValidCreditCardNumber{
 	
 	NSCharacterSet *nonDecimalsSet = [[NSCharacterSet decimalDigitCharacterSet] invertedSet];
@@ -124,10 +122,6 @@
 	return luhnChecksum % 10 == 0;
 }
 
-
-
-
-
 - (NSString*) capitalizeSentence{
 	if(self.length < 1) return self;
 	
@@ -161,7 +155,6 @@
 	return encodedString;
 	
 }
-
 
 - (NSString *) escapeHTML{
 	NSMutableString *s = [NSMutableString string];
@@ -275,9 +268,11 @@
 	return !([self rangeOfString:substring].location == NSNotFound);
 }
 
-
-
-
+- (NSUInteger) lengthWithoutWhitespace{
+	NSArray *words = [self componentsSeparatedByCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
+	NSString *nospacestring = [words componentsJoinedByString:@""];
+	return nospacestring.length;
+}
 
 - (NSString*) formattedPhoneNumberWithLastCharacterRemoved:(BOOL)deleteLastChar{
 	if(self.length<1) return @"";
