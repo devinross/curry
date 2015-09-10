@@ -252,6 +252,18 @@
 		20CEA4911BA113D60009D60C /* UIColor+TKCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 200B62BD1AD7FEF80049E35C /* UIColor+TKCategory.m */; };
 		20CEA4941BA113EE0009D60C /* TKTextFieldCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 204922B21B45D8DB00C22245 /* TKTextFieldCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		20CEA4951BA113F10009D60C /* TKTextFieldCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 204922B31B45D8DB00C22245 /* TKTextFieldCell.m */; };
+		20CEA4D71BA1503D0009D60C /* UIView+Positioning.h in Headers */ = {isa = PBXBuildFile; fileRef = 20CEA4D31BA1503D0009D60C /* UIView+Positioning.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		20CEA4D81BA1503D0009D60C /* UIView+Positioning.h in Headers */ = {isa = PBXBuildFile; fileRef = 20CEA4D31BA1503D0009D60C /* UIView+Positioning.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		20CEA4D91BA1503D0009D60C /* UIView+Positioning.m in Sources */ = {isa = PBXBuildFile; fileRef = 20CEA4D41BA1503D0009D60C /* UIView+Positioning.m */; };
+		20CEA4DA1BA1503D0009D60C /* UIView+Positioning.m in Sources */ = {isa = PBXBuildFile; fileRef = 20CEA4D41BA1503D0009D60C /* UIView+Positioning.m */; };
+		20CEA4DB1BA1503D0009D60C /* UIScrollView+Positioning.h in Headers */ = {isa = PBXBuildFile; fileRef = 20CEA4D51BA1503D0009D60C /* UIScrollView+Positioning.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		20CEA4DC1BA1503D0009D60C /* UIScrollView+Positioning.h in Headers */ = {isa = PBXBuildFile; fileRef = 20CEA4D51BA1503D0009D60C /* UIScrollView+Positioning.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		20CEA4DD1BA1503D0009D60C /* UIScrollView+Positioning.m in Sources */ = {isa = PBXBuildFile; fileRef = 20CEA4D61BA1503D0009D60C /* UIScrollView+Positioning.m */; };
+		20CEA4DE1BA1503D0009D60C /* UIScrollView+Positioning.m in Sources */ = {isa = PBXBuildFile; fileRef = 20CEA4D61BA1503D0009D60C /* UIScrollView+Positioning.m */; };
+		20CEA4E31BA150510009D60C /* UIPanGestureRecognizer+VelocityDirection.h in Headers */ = {isa = PBXBuildFile; fileRef = 20CEA4DF1BA150510009D60C /* UIPanGestureRecognizer+VelocityDirection.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		20CEA4E41BA150510009D60C /* UIPanGestureRecognizer+VelocityDirection.m in Sources */ = {isa = PBXBuildFile; fileRef = 20CEA4E01BA150510009D60C /* UIPanGestureRecognizer+VelocityDirection.m */; };
+		20CEA4E51BA150510009D60C /* UIView+GestureRecognizerBlock.h in Headers */ = {isa = PBXBuildFile; fileRef = 20CEA4E11BA150510009D60C /* UIView+GestureRecognizerBlock.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		20CEA4E61BA150510009D60C /* UIView+GestureRecognizerBlock.m in Sources */ = {isa = PBXBuildFile; fileRef = 20CEA4E21BA150510009D60C /* UIView+GestureRecognizerBlock.m */; };
 		20DDB58B1B45A97C001C7751 /* TKStepperCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 20DDB5891B45A97C001C7751 /* TKStepperCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		20DDB58C1B45A97C001C7751 /* TKStepperCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 20DDB58A1B45A97C001C7751 /* TKStepperCell.m */; };
 		20E110741B3B2651006A2CD6 /* TKVideoViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 20E110721B3B2651006A2CD6 /* TKVideoViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -422,6 +434,14 @@
 		20CEA42D1BA1105D0009D60C /* curryTV.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = curryTV.h; sourceTree = "<group>"; };
 		20CEA42F1BA1105D0009D60C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		20CEA48A1BA113450009D60C /* Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Header.h; sourceTree = "<group>"; };
+		20CEA4D31BA1503D0009D60C /* UIView+Positioning.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Positioning.h"; sourceTree = "<group>"; };
+		20CEA4D41BA1503D0009D60C /* UIView+Positioning.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Positioning.m"; sourceTree = "<group>"; };
+		20CEA4D51BA1503D0009D60C /* UIScrollView+Positioning.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+Positioning.h"; sourceTree = "<group>"; };
+		20CEA4D61BA1503D0009D60C /* UIScrollView+Positioning.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+Positioning.m"; sourceTree = "<group>"; };
+		20CEA4DF1BA150510009D60C /* UIPanGestureRecognizer+VelocityDirection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIPanGestureRecognizer+VelocityDirection.h"; sourceTree = "<group>"; };
+		20CEA4E01BA150510009D60C /* UIPanGestureRecognizer+VelocityDirection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIPanGestureRecognizer+VelocityDirection.m"; sourceTree = "<group>"; };
+		20CEA4E11BA150510009D60C /* UIView+GestureRecognizerBlock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+GestureRecognizerBlock.h"; sourceTree = "<group>"; };
+		20CEA4E21BA150510009D60C /* UIView+GestureRecognizerBlock.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+GestureRecognizerBlock.m"; sourceTree = "<group>"; };
 		20DDB5891B45A97C001C7751 /* TKStepperCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TKStepperCell.h; sourceTree = "<group>"; };
 		20DDB58A1B45A97C001C7751 /* TKStepperCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TKStepperCell.m; sourceTree = "<group>"; };
 		20E110721B3B2651006A2CD6 /* TKVideoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TKVideoViewController.h; sourceTree = "<group>"; };
@@ -639,6 +659,14 @@
 		200B62FD1AD800520049E35C /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				20CEA4D31BA1503D0009D60C /* UIView+Positioning.h */,
+				20CEA4D41BA1503D0009D60C /* UIView+Positioning.m */,
+				20CEA4D51BA1503D0009D60C /* UIScrollView+Positioning.h */,
+				20CEA4D61BA1503D0009D60C /* UIScrollView+Positioning.m */,
+				20CEA4DF1BA150510009D60C /* UIPanGestureRecognizer+VelocityDirection.h */,
+				20CEA4E01BA150510009D60C /* UIPanGestureRecognizer+VelocityDirection.m */,
+				20CEA4E11BA150510009D60C /* UIView+GestureRecognizerBlock.h */,
+				20CEA4E21BA150510009D60C /* UIView+GestureRecognizerBlock.m */,
 				200B62861AD7FC5E0049E35C /* UIView+TKCategory.h */,
 				200B62871AD7FC5E0049E35C /* UIView+TKCategory.m */,
 				200B62BE1AD7FEF80049E35C /* UIScrollview+TKCategory.h */,
@@ -783,10 +811,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				200B630C1AD804350049E35C /* TKKeyboardTableViewController.h in Headers */,
+				20CEA4E51BA150510009D60C /* UIView+GestureRecognizerBlock.h in Headers */,
 				200B62E21AD7FEF80049E35C /* UIBarButtonItem+TKCategory.h in Headers */,
 				200B62741AD7FBDC0049E35C /* TKFoundation.h in Headers */,
 				200B62F41AD7FEF80049E35C /* UINavigationBar+TKCategory.h in Headers */,
 				200B628E1AD7FC5E0049E35C /* NSMutableArray+TKCategory.h in Headers */,
+				20CEA4E31BA150510009D60C /* UIPanGestureRecognizer+VelocityDirection.h in Headers */,
 				200B63141AD804350049E35C /* TKShapeView.h in Headers */,
 				200B62961AD7FC5E0049E35C /* UIDevice+TKCategory.h in Headers */,
 				200B62F01AD7FEF80049E35C /* UIActionSheet+TKCategory.h in Headers */,
@@ -815,6 +845,7 @@
 				200B63201AD804E30049E35C /* TKCardModalViewController.h in Headers */,
 				200B63101AD804350049E35C /* TKWebViewController.h in Headers */,
 				200B631A1AD804400049E35C /* TKExtendedScrollView.h in Headers */,
+				20CEA4D71BA1503D0009D60C /* UIView+Positioning.h in Headers */,
 				20A75C681AD8332F00E2106A /* TKSectionedScrollView.h in Headers */,
 				20A75C851AD836DD00E2106A /* NSBundle+TKCategory.h in Headers */,
 				20A75C5F1AD82C8500E2106A /* Headers.h in Headers */,
@@ -823,6 +854,7 @@
 				200B63121AD804350049E35C /* TKGradientView.h in Headers */,
 				2078601A1AD84A87000DC57F /* TKCreditCardNumberTextField.h in Headers */,
 				207860161AD84A87000DC57F /* TKCreditCardCVVTextField.h in Headers */,
+				20CEA4DB1BA1503D0009D60C /* UIScrollView+Positioning.h in Headers */,
 				2078601C1AD84A87000DC57F /* TKCreditCardZipTextField.h in Headers */,
 				207860181AD84A87000DC57F /* TKCreditCardExpirationTextField.h in Headers */,
 				200B62E81AD7FEF80049E35C /* UIViewController+TKCategory.h in Headers */,
@@ -870,6 +902,7 @@
 				20CEA4941BA113EE0009D60C /* TKTextFieldCell.h in Headers */,
 				20CEA4671BA112280009D60C /* UIViewController+TKCategory.h in Headers */,
 				20CEA4381BA110AF0009D60C /* NSString+TKCategory.h in Headers */,
+				20CEA4DC1BA1503D0009D60C /* UIScrollView+Positioning.h in Headers */,
 				20CEA48B1BA113450009D60C /* Header.h in Headers */,
 				20CEA4451BA110D90009D60C /* NSURLSession+TKCategory.h in Headers */,
 				20CEA4331BA110900009D60C /* TKFoundation.h in Headers */,
@@ -900,6 +933,7 @@
 				20CEA44B1BA110F40009D60C /* UIDevice+TKCategory.h in Headers */,
 				20CEA4651BA1114D0009D60C /* UIActionSheet+TKCategory.h in Headers */,
 				20CEA4511BA1110A0009D60C /* UIScrollview+TKCategory.h in Headers */,
+				20CEA4D81BA1503D0009D60C /* UIView+Positioning.h in Headers */,
 				20CEA47E1BA112ED0009D60C /* TKGradientView.h in Headers */,
 				20CEA4591BA111200009D60C /* UIButton+TKCategory.h in Headers */,
 				20CEA46F1BA112450009D60C /* CAAnimation+TKAnimation.h in Headers */,
@@ -1064,6 +1098,7 @@
 				20E110751B3B2651006A2CD6 /* TKVideoViewController.m in Sources */,
 				20CB9D031AF405CD002E9F1C /* UIControl+Blocks.m in Sources */,
 				200B631B1AD804400049E35C /* TKExtendedScrollView.m in Sources */,
+				20CEA4E41BA150510009D60C /* UIPanGestureRecognizer+VelocityDirection.m in Sources */,
 				200B62DF1AD7FEF80049E35C /* UIColor+TKCategory.m in Sources */,
 				202DBEC21AF4347A00B0CE67 /* TKNumberInputWithNextKeyView.m in Sources */,
 				200B62E31AD7FEF80049E35C /* UIBarButtonItem+TKCategory.m in Sources */,
@@ -1072,6 +1107,8 @@
 				202DBEC01AF4347A00B0CE67 /* TKDecimalInputView.m in Sources */,
 				200B630B1AD804350049E35C /* TKTableViewController.m in Sources */,
 				200B631D1AD804400049E35C /* TKSoundAlertController.m in Sources */,
+				20CEA4E61BA150510009D60C /* UIView+GestureRecognizerBlock.m in Sources */,
+				20CEA4DD1BA1503D0009D60C /* UIScrollView+Positioning.m in Sources */,
 				200B62951AD7FC5E0049E35C /* NSMutableAttributedString+TKCategory.m in Sources */,
 				202DBEBA1AF4347A00B0CE67 /* TKInputView.m in Sources */,
 				20CB9CFF1AF3F126002E9F1C /* UIAlertView+Blocks.m in Sources */,
@@ -1109,6 +1146,7 @@
 				200B62971AD7FC5E0049E35C /* UIDevice+TKCategory.m in Sources */,
 				200B63211AD804E30049E35C /* TKCardModalViewController.m in Sources */,
 				20CAE0D51B0953E40088740E /* TKSwitchCell.m in Sources */,
+				20CEA4D91BA1503D0009D60C /* UIView+Positioning.m in Sources */,
 				200B62E71AD7FEF80049E35C /* UIGestureRecognizer+TKCategory.m in Sources */,
 				200B62A81AD7FE0D0049E35C /* UIView+TKAnimation.m in Sources */,
 				200B62DD1AD7FEF80049E35C /* UIButton+TKCategory.m in Sources */,
@@ -1151,6 +1189,7 @@
 				20CEA44C1BA110F70009D60C /* UIDevice+TKCategory.m in Sources */,
 				20CEA47D1BA112D00009D60C /* TKSectionedScrollView.m in Sources */,
 				20CEA45E1BA111320009D60C /* UIBarButtonItem+TKCategory.m in Sources */,
+				20CEA4DA1BA1503D0009D60C /* UIView+Positioning.m in Sources */,
 				20CEA4371BA110AC0009D60C /* NSObject+TKCategory.m in Sources */,
 				20CEA4561BA111180009D60C /* UITextField+TKCategory.m in Sources */,
 				20CEA4891BA113170009D60C /* TKPhoneNumberTextField.m in Sources */,
@@ -1173,6 +1212,7 @@
 				20CEA4461BA110E10009D60C /* NSURLSession+TKCategory.m in Sources */,
 				20CEA4481BA110E70009D60C /* NSTimer+Blocks.m in Sources */,
 				20CEA4401BA110CC0009D60C /* NSAttributedString+TKCategory.m in Sources */,
+				20CEA4DE1BA1503D0009D60C /* UIScrollView+Positioning.m in Sources */,
 				20CEA4791BA112BB0009D60C /* TKShapeView.m in Sources */,
 				20CEA4501BA111070009D60C /* UIView+TKCategory.m in Sources */,
 				20CEA46E1BA112430009D60C /* CAKeyframeAnimation+TKAnimation.m in Sources */,

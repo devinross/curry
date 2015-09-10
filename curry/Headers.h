@@ -54,6 +54,11 @@
 #import "UIScreen+TKCategory.h"
 
 // Categories -> UIKit -> Views
+#import "UIView+Positioning.h"
+#import "UIScrollView+Positioning.h"
+#import "UIPanGestureRecognizer+VelocityDirection.h"
+#import "UIView+GestureRecognizerBlock.h"
+
 #import "UIView+TKCategory.h"
 #import "UIScrollview+TKCategory.h"
 #import "UILabel+TKCategory.h"
@@ -64,6 +69,7 @@
 #import "UIBarButtonItem+TKCategory.h"
 #import "UIView+Initializers.h"
 #import "UILabel+Initializers.h"
+
 
 // Categories -> UIKit -> Elements
 #import "UIImage+TKCategory.h"
