@@ -225,7 +225,6 @@
 		20CEA4711BA1124F0009D60C /* TKCustomPresentationViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 202DBE6F1AF4121C00B0CE67 /* TKCustomPresentationViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		20CEA4721BA112530009D60C /* TKCustomPresentationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 202DBE701AF4121C00B0CE67 /* TKCustomPresentationViewController.m */; };
 		20CEA4731BA112550009D60C /* TKCardModalViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 200B631E1AD804E30049E35C /* TKCardModalViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		20CEA4771BA112670009D60C /* TKWebViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 200B63041AD804340049E35C /* TKWebViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		20CEA4781BA112B70009D60C /* TKShapeView.h in Headers */ = {isa = PBXBuildFile; fileRef = 200B63081AD804340049E35C /* TKShapeView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		20CEA4791BA112BB0009D60C /* TKShapeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 200B63091AD804340049E35C /* TKShapeView.m */; };
 		20CEA47A1BA112C40009D60C /* TKCurrentTimeLabel.h in Headers */ = {isa = PBXBuildFile; fileRef = 202DBEF21AF6727A00B0CE67 /* TKCurrentTimeLabel.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -251,12 +250,8 @@
 		20CEA48F1BA113D10009D60C /* UIFont+TKCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 200B62D11AD7FEF80049E35C /* UIFont+TKCategory.m */; };
 		20CEA4901BA113D30009D60C /* UIColor+TKCategory.h in Headers */ = {isa = PBXBuildFile; fileRef = 200B62BC1AD7FEF80049E35C /* UIColor+TKCategory.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		20CEA4911BA113D60009D60C /* UIColor+TKCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 200B62BD1AD7FEF80049E35C /* UIColor+TKCategory.m */; };
-		20CEA4921BA113E60009D60C /* TKStepperCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 20DDB5891B45A97C001C7751 /* TKStepperCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		20CEA4931BA113EA0009D60C /* TKStepperCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 20DDB58A1B45A97C001C7751 /* TKStepperCell.m */; };
 		20CEA4941BA113EE0009D60C /* TKTextFieldCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 204922B21B45D8DB00C22245 /* TKTextFieldCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		20CEA4951BA113F10009D60C /* TKTextFieldCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 204922B31B45D8DB00C22245 /* TKTextFieldCell.m */; };
-		20CEA4961BA113FD0009D60C /* TKSwitchCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 20CAE0D21B0953E40088740E /* TKSwitchCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		20CEA4971BA114000009D60C /* TKSwitchCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 20CAE0D31B0953E40088740E /* TKSwitchCell.m */; };
 		20DDB58B1B45A97C001C7751 /* TKStepperCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 20DDB5891B45A97C001C7751 /* TKStepperCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		20DDB58C1B45A97C001C7751 /* TKStepperCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 20DDB58A1B45A97C001C7751 /* TKStepperCell.m */; };
 		20E110741B3B2651006A2CD6 /* TKVideoViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 20E110721B3B2651006A2CD6 /* TKVideoViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -877,16 +872,13 @@
 				20CEA4381BA110AF0009D60C /* NSString+TKCategory.h in Headers */,
 				20CEA48B1BA113450009D60C /* Header.h in Headers */,
 				20CEA4451BA110D90009D60C /* NSURLSession+TKCategory.h in Headers */,
-				20CEA4961BA113FD0009D60C /* TKSwitchCell.h in Headers */,
 				20CEA4331BA110900009D60C /* TKFoundation.h in Headers */,
 				20CEA47A1BA112C40009D60C /* TKCurrentTimeLabel.h in Headers */,
 				20CEA48C1BA113C60009D60C /* UIImage+TKCategory.h in Headers */,
 				20CEA4571BA1111B0009D60C /* UIImageView+TKCategory.h in Headers */,
 				20CEA43D1BA110C20009D60C /* NSMutableArray+TKCategory.h in Headers */,
 				20CEA47C1BA112CB0009D60C /* TKSectionedScrollView.h in Headers */,
-				20CEA4921BA113E60009D60C /* TKStepperCell.h in Headers */,
 				20CEA4631BA111400009D60C /* UIAlertView+TKCategory.h in Headers */,
-				20CEA4771BA112670009D60C /* TKWebViewController.h in Headers */,
 				20CEA4551BA111150009D60C /* UITextField+TKCategory.h in Headers */,
 				20CEA4731BA112550009D60C /* TKCardModalViewController.h in Headers */,
 				20CEA45D1BA1112F0009D60C /* UIBarButtonItem+TKCategory.h in Headers */,
@@ -1155,7 +1147,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				20CEA4971BA114000009D60C /* TKSwitchCell.m in Sources */,
 				20CEA4721BA112530009D60C /* TKCustomPresentationViewController.m in Sources */,
 				20CEA44C1BA110F70009D60C /* UIDevice+TKCategory.m in Sources */,
 				20CEA47D1BA112D00009D60C /* TKSectionedScrollView.m in Sources */,
@@ -1173,7 +1164,6 @@
 				20CEA4621BA1113D0009D60C /* UILabel+Initializers.m in Sources */,
 				20CEA4871BA113110009D60C /* TKCreditCardZipTextField.m in Sources */,
 				20CEA47B1BA112C70009D60C /* TKCurrentTimeLabel.m in Sources */,
-				20CEA4931BA113EA0009D60C /* TKStepperCell.m in Sources */,
 				20CEA4851BA1130C0009D60C /* TKCreditCardExpirationTextField.m in Sources */,
 				20CEA48D1BA113C90009D60C /* UIImage+TKCategory.m in Sources */,
 				20CEA4421BA110D10009D60C /* NSMutableAttributedString+TKCategory.m in Sources */,
@@ -1472,6 +1462,7 @@
 				20CEA4311BA1105D0009D60C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
