@@ -160,6 +160,103 @@
 		20CB9CFF1AF3F126002E9F1C /* UIAlertView+Blocks.m in Sources */ = {isa = PBXBuildFile; fileRef = 20CB9CFD1AF3F126002E9F1C /* UIAlertView+Blocks.m */; };
 		20CB9D021AF405CD002E9F1C /* UIControl+Blocks.h in Headers */ = {isa = PBXBuildFile; fileRef = 20CB9D001AF405CD002E9F1C /* UIControl+Blocks.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		20CB9D031AF405CD002E9F1C /* UIControl+Blocks.m in Sources */ = {isa = PBXBuildFile; fileRef = 20CB9D011AF405CD002E9F1C /* UIControl+Blocks.m */; };
+		20CEA42E1BA1105D0009D60C /* curryTV.h in Headers */ = {isa = PBXBuildFile; fileRef = 20CEA42D1BA1105D0009D60C /* curryTV.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		20CEA4331BA110900009D60C /* TKFoundation.h in Headers */ = {isa = PBXBuildFile; fileRef = 200B62721AD7FBDC0049E35C /* TKFoundation.h */; };
+		20CEA4341BA110A00009D60C /* NSObject+JSON.h in Headers */ = {isa = PBXBuildFile; fileRef = 200B629B1AD7FD660049E35C /* NSObject+JSON.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		20CEA4351BA110A60009D60C /* NSObject+JSON.m in Sources */ = {isa = PBXBuildFile; fileRef = 200B629C1AD7FD660049E35C /* NSObject+JSON.m */; };
+		20CEA4361BA110A90009D60C /* NSObject+TKCategory.h in Headers */ = {isa = PBXBuildFile; fileRef = 200B62761AD7FC5E0049E35C /* NSObject+TKCategory.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		20CEA4371BA110AC0009D60C /* NSObject+TKCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 200B62771AD7FC5E0049E35C /* NSObject+TKCategory.m */; };
+		20CEA4381BA110AF0009D60C /* NSString+TKCategory.h in Headers */ = {isa = PBXBuildFile; fileRef = 200B62781AD7FC5E0049E35C /* NSString+TKCategory.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		20CEA4391BA110B70009D60C /* NSString+TKCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 200B62791AD7FC5E0049E35C /* NSString+TKCategory.m */; };
+		20CEA43A1BA110B90009D60C /* NSDate+TKCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 204922C31B46F15900C22245 /* NSDate+TKCategory.m */; };
+		20CEA43B1BA110BB0009D60C /* NSArray+TKCategory.h in Headers */ = {isa = PBXBuildFile; fileRef = 200B627A1AD7FC5E0049E35C /* NSArray+TKCategory.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		20CEA43C1BA110BF0009D60C /* NSArray+TKCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 200B627B1AD7FC5E0049E35C /* NSArray+TKCategory.m */; };
+		20CEA43D1BA110C20009D60C /* NSMutableArray+TKCategory.h in Headers */ = {isa = PBXBuildFile; fileRef = 200B627C1AD7FC5E0049E35C /* NSMutableArray+TKCategory.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		20CEA43E1BA110C60009D60C /* NSMutableArray+TKCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 200B627D1AD7FC5E0049E35C /* NSMutableArray+TKCategory.m */; };
+		20CEA43F1BA110C80009D60C /* NSAttributedString+TKCategory.h in Headers */ = {isa = PBXBuildFile; fileRef = 200B62801AD7FC5E0049E35C /* NSAttributedString+TKCategory.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		20CEA4401BA110CC0009D60C /* NSAttributedString+TKCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 200B62811AD7FC5E0049E35C /* NSAttributedString+TKCategory.m */; };
+		20CEA4411BA110CE0009D60C /* NSMutableAttributedString+TKCategory.h in Headers */ = {isa = PBXBuildFile; fileRef = 200B62821AD7FC5E0049E35C /* NSMutableAttributedString+TKCategory.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		20CEA4421BA110D10009D60C /* NSMutableAttributedString+TKCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 200B62831AD7FC5E0049E35C /* NSMutableAttributedString+TKCategory.m */; };
+		20CEA4431BA110D30009D60C /* NSBundle+TKCategory.h in Headers */ = {isa = PBXBuildFile; fileRef = 20A75C831AD836DD00E2106A /* NSBundle+TKCategory.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		20CEA4441BA110D70009D60C /* NSBundle+TKCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 20A75C841AD836DD00E2106A /* NSBundle+TKCategory.m */; };
+		20CEA4451BA110D90009D60C /* NSURLSession+TKCategory.h in Headers */ = {isa = PBXBuildFile; fileRef = 207860241AD84F11000DC57F /* NSURLSession+TKCategory.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		20CEA4461BA110E10009D60C /* NSURLSession+TKCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 207860251AD84F11000DC57F /* NSURLSession+TKCategory.m */; };
+		20CEA4471BA110E30009D60C /* NSTimer+Blocks.h in Headers */ = {isa = PBXBuildFile; fileRef = 2098BA221B0F6C4F000E0074 /* NSTimer+Blocks.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		20CEA4481BA110E70009D60C /* NSTimer+Blocks.m in Sources */ = {isa = PBXBuildFile; fileRef = 2098BA231B0F6C4F000E0074 /* NSTimer+Blocks.m */; };
+		20CEA4491BA110EB0009D60C /* UIApplication+TKCategory.h in Headers */ = {isa = PBXBuildFile; fileRef = 200B62D41AD7FEF80049E35C /* UIApplication+TKCategory.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		20CEA44A1BA110F20009D60C /* UIApplication+TKCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 200B62D51AD7FEF80049E35C /* UIApplication+TKCategory.m */; };
+		20CEA44B1BA110F40009D60C /* UIDevice+TKCategory.h in Headers */ = {isa = PBXBuildFile; fileRef = 200B62841AD7FC5E0049E35C /* UIDevice+TKCategory.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		20CEA44C1BA110F70009D60C /* UIDevice+TKCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 200B62851AD7FC5E0049E35C /* UIDevice+TKCategory.m */; };
+		20CEA44D1BA110F90009D60C /* UIScreen+TKCategory.h in Headers */ = {isa = PBXBuildFile; fileRef = 200B62C81AD7FEF80049E35C /* UIScreen+TKCategory.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		20CEA44E1BA110FF0009D60C /* UIScreen+TKCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 200B62C91AD7FEF80049E35C /* UIScreen+TKCategory.m */; };
+		20CEA44F1BA111020009D60C /* UIView+TKCategory.h in Headers */ = {isa = PBXBuildFile; fileRef = 200B62861AD7FC5E0049E35C /* UIView+TKCategory.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		20CEA4501BA111070009D60C /* UIView+TKCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 200B62871AD7FC5E0049E35C /* UIView+TKCategory.m */; };
+		20CEA4511BA1110A0009D60C /* UIScrollview+TKCategory.h in Headers */ = {isa = PBXBuildFile; fileRef = 200B62BE1AD7FEF80049E35C /* UIScrollview+TKCategory.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		20CEA4521BA1110D0009D60C /* UIScrollview+TKCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 200B62BF1AD7FEF80049E35C /* UIScrollview+TKCategory.m */; };
+		20CEA4531BA111100009D60C /* UILabel+TKCategory.h in Headers */ = {isa = PBXBuildFile; fileRef = 200B62CA1AD7FEF80049E35C /* UILabel+TKCategory.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		20CEA4541BA111130009D60C /* UILabel+TKCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 200B62CB1AD7FEF80049E35C /* UILabel+TKCategory.m */; };
+		20CEA4551BA111150009D60C /* UITextField+TKCategory.h in Headers */ = {isa = PBXBuildFile; fileRef = 200B62B61AD7FEF80049E35C /* UITextField+TKCategory.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		20CEA4561BA111180009D60C /* UITextField+TKCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 200B62B71AD7FEF80049E35C /* UITextField+TKCategory.m */; };
+		20CEA4571BA1111B0009D60C /* UIImageView+TKCategory.h in Headers */ = {isa = PBXBuildFile; fileRef = 200B62B81AD7FEF80049E35C /* UIImageView+TKCategory.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		20CEA4581BA1111D0009D60C /* UIImageView+TKCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 200B62B91AD7FEF80049E35C /* UIImageView+TKCategory.m */; };
+		20CEA4591BA111200009D60C /* UIButton+TKCategory.h in Headers */ = {isa = PBXBuildFile; fileRef = 200B62BA1AD7FEF80049E35C /* UIButton+TKCategory.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		20CEA45A1BA111240009D60C /* UIButton+TKCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 200B62BB1AD7FEF80049E35C /* UIButton+TKCategory.m */; };
+		20CEA45B1BA111270009D60C /* UINavigationBar+TKCategory.h in Headers */ = {isa = PBXBuildFile; fileRef = 200B62D21AD7FEF80049E35C /* UINavigationBar+TKCategory.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		20CEA45C1BA1112C0009D60C /* UINavigationBar+TKCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 200B62D31AD7FEF80049E35C /* UINavigationBar+TKCategory.m */; };
+		20CEA45D1BA1112F0009D60C /* UIBarButtonItem+TKCategory.h in Headers */ = {isa = PBXBuildFile; fileRef = 200B62C01AD7FEF80049E35C /* UIBarButtonItem+TKCategory.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		20CEA45E1BA111320009D60C /* UIBarButtonItem+TKCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 200B62C11AD7FEF80049E35C /* UIBarButtonItem+TKCategory.m */; };
+		20CEA45F1BA111350009D60C /* UIView+Initializers.h in Headers */ = {isa = PBXBuildFile; fileRef = 20E131CA1AF4107F0011492F /* UIView+Initializers.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		20CEA4601BA111380009D60C /* UIView+Initializers.m in Sources */ = {isa = PBXBuildFile; fileRef = 20E131CB1AF4107F0011492F /* UIView+Initializers.m */; };
+		20CEA4611BA1113A0009D60C /* UILabel+Initializers.h in Headers */ = {isa = PBXBuildFile; fileRef = 20E131C81AF4107F0011492F /* UILabel+Initializers.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		20CEA4621BA1113D0009D60C /* UILabel+Initializers.m in Sources */ = {isa = PBXBuildFile; fileRef = 20E131C91AF4107F0011492F /* UILabel+Initializers.m */; };
+		20CEA4631BA111400009D60C /* UIAlertView+TKCategory.h in Headers */ = {isa = PBXBuildFile; fileRef = 200B62CC1AD7FEF80049E35C /* UIAlertView+TKCategory.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		20CEA4651BA1114D0009D60C /* UIActionSheet+TKCategory.h in Headers */ = {isa = PBXBuildFile; fileRef = 200B62CE1AD7FEF80049E35C /* UIActionSheet+TKCategory.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		20CEA4661BA1121E0009D60C /* UIControl+Blocks.m in Sources */ = {isa = PBXBuildFile; fileRef = 20CB9D011AF405CD002E9F1C /* UIControl+Blocks.m */; };
+		20CEA4671BA112280009D60C /* UIViewController+TKCategory.h in Headers */ = {isa = PBXBuildFile; fileRef = 200B62C61AD7FEF80049E35C /* UIViewController+TKCategory.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		20CEA4681BA1122D0009D60C /* UIViewController+TKCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 200B62C71AD7FEF80049E35C /* UIViewController+TKCategory.m */; };
+		20CEA4691BA112330009D60C /* UIView+TKAnimation.h in Headers */ = {isa = PBXBuildFile; fileRef = 200B629F1AD7FE0D0049E35C /* UIView+TKAnimation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		20CEA46A1BA112370009D60C /* UIView+TKAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 200B62A01AD7FE0D0049E35C /* UIView+TKAnimation.m */; };
+		20CEA46B1BA112390009D60C /* CALayer+TKAnimation.h in Headers */ = {isa = PBXBuildFile; fileRef = 200B62A11AD7FE0D0049E35C /* CALayer+TKAnimation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		20CEA46C1BA1123D0009D60C /* CALayer+TKAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 200B62A21AD7FE0D0049E35C /* CALayer+TKAnimation.m */; };
+		20CEA46D1BA1123F0009D60C /* CAKeyframeAnimation+TKAnimation.h in Headers */ = {isa = PBXBuildFile; fileRef = 200B62A31AD7FE0D0049E35C /* CAKeyframeAnimation+TKAnimation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		20CEA46E1BA112430009D60C /* CAKeyframeAnimation+TKAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 200B62A41AD7FE0D0049E35C /* CAKeyframeAnimation+TKAnimation.m */; };
+		20CEA46F1BA112450009D60C /* CAAnimation+TKAnimation.h in Headers */ = {isa = PBXBuildFile; fileRef = 200B62A51AD7FE0D0049E35C /* CAAnimation+TKAnimation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		20CEA4701BA112490009D60C /* CAAnimation+TKAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 200B62A61AD7FE0D0049E35C /* CAAnimation+TKAnimation.m */; };
+		20CEA4711BA1124F0009D60C /* TKCustomPresentationViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 202DBE6F1AF4121C00B0CE67 /* TKCustomPresentationViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		20CEA4721BA112530009D60C /* TKCustomPresentationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 202DBE701AF4121C00B0CE67 /* TKCustomPresentationViewController.m */; };
+		20CEA4731BA112550009D60C /* TKCardModalViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 200B631E1AD804E30049E35C /* TKCardModalViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		20CEA4771BA112670009D60C /* TKWebViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 200B63041AD804340049E35C /* TKWebViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		20CEA4781BA112B70009D60C /* TKShapeView.h in Headers */ = {isa = PBXBuildFile; fileRef = 200B63081AD804340049E35C /* TKShapeView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		20CEA4791BA112BB0009D60C /* TKShapeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 200B63091AD804340049E35C /* TKShapeView.m */; };
+		20CEA47A1BA112C40009D60C /* TKCurrentTimeLabel.h in Headers */ = {isa = PBXBuildFile; fileRef = 202DBEF21AF6727A00B0CE67 /* TKCurrentTimeLabel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		20CEA47B1BA112C70009D60C /* TKCurrentTimeLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 202DBEF31AF6727A00B0CE67 /* TKCurrentTimeLabel.m */; };
+		20CEA47C1BA112CB0009D60C /* TKSectionedScrollView.h in Headers */ = {isa = PBXBuildFile; fileRef = 20A75C661AD8332F00E2106A /* TKSectionedScrollView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		20CEA47D1BA112D00009D60C /* TKSectionedScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 20A75C671AD8332F00E2106A /* TKSectionedScrollView.m */; };
+		20CEA47E1BA112ED0009D60C /* TKGradientView.h in Headers */ = {isa = PBXBuildFile; fileRef = 200B63061AD804340049E35C /* TKGradientView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		20CEA47F1BA112F30009D60C /* TKGradientView.m in Sources */ = {isa = PBXBuildFile; fileRef = 200B63071AD804340049E35C /* TKGradientView.m */; };
+		20CEA4801BA112FB0009D60C /* TKCreditCardNumberTextField.h in Headers */ = {isa = PBXBuildFile; fileRef = 207860101AD84A87000DC57F /* TKCreditCardNumberTextField.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		20CEA4811BA112FE0009D60C /* TKCreditCardNumberTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 207860111AD84A87000DC57F /* TKCreditCardNumberTextField.m */; };
+		20CEA4821BA113000009D60C /* TKCreditCardCVVTextField.h in Headers */ = {isa = PBXBuildFile; fileRef = 2078600C1AD84A87000DC57F /* TKCreditCardCVVTextField.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		20CEA4831BA113040009D60C /* TKCreditCardCVVTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 2078600D1AD84A87000DC57F /* TKCreditCardCVVTextField.m */; };
+		20CEA4841BA113070009D60C /* TKCreditCardExpirationTextField.h in Headers */ = {isa = PBXBuildFile; fileRef = 2078600E1AD84A87000DC57F /* TKCreditCardExpirationTextField.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		20CEA4851BA1130C0009D60C /* TKCreditCardExpirationTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 2078600F1AD84A87000DC57F /* TKCreditCardExpirationTextField.m */; };
+		20CEA4861BA1130E0009D60C /* TKCreditCardZipTextField.h in Headers */ = {isa = PBXBuildFile; fileRef = 207860121AD84A87000DC57F /* TKCreditCardZipTextField.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		20CEA4871BA113110009D60C /* TKCreditCardZipTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 207860131AD84A87000DC57F /* TKCreditCardZipTextField.m */; };
+		20CEA4881BA113140009D60C /* TKPhoneNumberTextField.h in Headers */ = {isa = PBXBuildFile; fileRef = 20A46DDD1B61C097004A4153 /* TKPhoneNumberTextField.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		20CEA4891BA113170009D60C /* TKPhoneNumberTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 20A46DDE1B61C097004A4153 /* TKPhoneNumberTextField.m */; };
+		20CEA48B1BA113450009D60C /* Header.h in Headers */ = {isa = PBXBuildFile; fileRef = 20CEA48A1BA113450009D60C /* Header.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		20CEA48C1BA113C60009D60C /* UIImage+TKCategory.h in Headers */ = {isa = PBXBuildFile; fileRef = 200B62B41AD7FEF80049E35C /* UIImage+TKCategory.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		20CEA48D1BA113C90009D60C /* UIImage+TKCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 200B62B51AD7FEF80049E35C /* UIImage+TKCategory.m */; };
+		20CEA48E1BA113CC0009D60C /* UIFont+TKCategory.h in Headers */ = {isa = PBXBuildFile; fileRef = 200B62D01AD7FEF80049E35C /* UIFont+TKCategory.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		20CEA48F1BA113D10009D60C /* UIFont+TKCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 200B62D11AD7FEF80049E35C /* UIFont+TKCategory.m */; };
+		20CEA4901BA113D30009D60C /* UIColor+TKCategory.h in Headers */ = {isa = PBXBuildFile; fileRef = 200B62BC1AD7FEF80049E35C /* UIColor+TKCategory.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		20CEA4911BA113D60009D60C /* UIColor+TKCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 200B62BD1AD7FEF80049E35C /* UIColor+TKCategory.m */; };
+		20CEA4921BA113E60009D60C /* TKStepperCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 20DDB5891B45A97C001C7751 /* TKStepperCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		20CEA4931BA113EA0009D60C /* TKStepperCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 20DDB58A1B45A97C001C7751 /* TKStepperCell.m */; };
+		20CEA4941BA113EE0009D60C /* TKTextFieldCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 204922B21B45D8DB00C22245 /* TKTextFieldCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		20CEA4951BA113F10009D60C /* TKTextFieldCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 204922B31B45D8DB00C22245 /* TKTextFieldCell.m */; };
+		20CEA4961BA113FD0009D60C /* TKSwitchCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 20CAE0D21B0953E40088740E /* TKSwitchCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		20CEA4971BA114000009D60C /* TKSwitchCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 20CAE0D31B0953E40088740E /* TKSwitchCell.m */; };
 		20DDB58B1B45A97C001C7751 /* TKStepperCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 20DDB5891B45A97C001C7751 /* TKStepperCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		20DDB58C1B45A97C001C7751 /* TKStepperCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 20DDB58A1B45A97C001C7751 /* TKStepperCell.m */; };
 		20E110741B3B2651006A2CD6 /* TKVideoViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 20E110721B3B2651006A2CD6 /* TKVideoViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -326,6 +423,10 @@
 		20CB9CFD1AF3F126002E9F1C /* UIAlertView+Blocks.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIAlertView+Blocks.m"; path = "../Controllers/UIAlertView+Blocks.m"; sourceTree = "<group>"; };
 		20CB9D001AF405CD002E9F1C /* UIControl+Blocks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIControl+Blocks.h"; path = "../Controllers/UIControl+Blocks.h"; sourceTree = "<group>"; };
 		20CB9D011AF405CD002E9F1C /* UIControl+Blocks.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIControl+Blocks.m"; path = "../Controllers/UIControl+Blocks.m"; sourceTree = "<group>"; };
+		20CEA42B1BA1105D0009D60C /* curryTV.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = curryTV.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		20CEA42D1BA1105D0009D60C /* curryTV.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = curryTV.h; sourceTree = "<group>"; };
+		20CEA42F1BA1105D0009D60C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		20CEA48A1BA113450009D60C /* Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Header.h; sourceTree = "<group>"; };
 		20DDB5891B45A97C001C7751 /* TKStepperCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TKStepperCell.h; sourceTree = "<group>"; };
 		20DDB58A1B45A97C001C7751 /* TKStepperCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TKStepperCell.m; sourceTree = "<group>"; };
 		20E110721B3B2651006A2CD6 /* TKVideoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TKVideoViewController.h; sourceTree = "<group>"; };
@@ -354,6 +455,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		20CEA4271BA1105D0009D60C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -362,6 +470,7 @@
 			children = (
 				200B62571AD7FB460049E35C /* curry */,
 				200B62641AD7FB460049E35C /* curryTests */,
+				20CEA42C1BA1105D0009D60C /* curryTV */,
 				200B62561AD7FB460049E35C /* Products */,
 			);
 			sourceTree = "<group>";
@@ -371,6 +480,7 @@
 			children = (
 				200B62551AD7FB460049E35C /* curry.framework */,
 				200B62601AD7FB460049E35C /* curryTests.xctest */,
+				20CEA42B1BA1105D0009D60C /* curryTV.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -660,6 +770,16 @@
 			path = CreditCard;
 			sourceTree = "<group>";
 		};
+		20CEA42C1BA1105D0009D60C /* curryTV */ = {
+			isa = PBXGroup;
+			children = (
+				20CEA42D1BA1105D0009D60C /* curryTV.h */,
+				20CEA48A1BA113450009D60C /* Header.h */,
+				20CEA42F1BA1105D0009D60C /* Info.plist */,
+			);
+			path = curryTV;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -741,6 +861,64 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		20CEA4281BA1105D0009D60C /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				20CEA4531BA111100009D60C /* UILabel+TKCategory.h in Headers */,
+				20CEA4801BA112FB0009D60C /* TKCreditCardNumberTextField.h in Headers */,
+				20CEA46D1BA1123F0009D60C /* CAKeyframeAnimation+TKAnimation.h in Headers */,
+				20CEA4611BA1113A0009D60C /* UILabel+Initializers.h in Headers */,
+				20CEA43B1BA110BB0009D60C /* NSArray+TKCategory.h in Headers */,
+				20CEA4491BA110EB0009D60C /* UIApplication+TKCategory.h in Headers */,
+				20CEA4711BA1124F0009D60C /* TKCustomPresentationViewController.h in Headers */,
+				20CEA4941BA113EE0009D60C /* TKTextFieldCell.h in Headers */,
+				20CEA4671BA112280009D60C /* UIViewController+TKCategory.h in Headers */,
+				20CEA4381BA110AF0009D60C /* NSString+TKCategory.h in Headers */,
+				20CEA48B1BA113450009D60C /* Header.h in Headers */,
+				20CEA4451BA110D90009D60C /* NSURLSession+TKCategory.h in Headers */,
+				20CEA4961BA113FD0009D60C /* TKSwitchCell.h in Headers */,
+				20CEA4331BA110900009D60C /* TKFoundation.h in Headers */,
+				20CEA47A1BA112C40009D60C /* TKCurrentTimeLabel.h in Headers */,
+				20CEA48C1BA113C60009D60C /* UIImage+TKCategory.h in Headers */,
+				20CEA4571BA1111B0009D60C /* UIImageView+TKCategory.h in Headers */,
+				20CEA43D1BA110C20009D60C /* NSMutableArray+TKCategory.h in Headers */,
+				20CEA47C1BA112CB0009D60C /* TKSectionedScrollView.h in Headers */,
+				20CEA4921BA113E60009D60C /* TKStepperCell.h in Headers */,
+				20CEA4631BA111400009D60C /* UIAlertView+TKCategory.h in Headers */,
+				20CEA4771BA112670009D60C /* TKWebViewController.h in Headers */,
+				20CEA4551BA111150009D60C /* UITextField+TKCategory.h in Headers */,
+				20CEA4731BA112550009D60C /* TKCardModalViewController.h in Headers */,
+				20CEA45D1BA1112F0009D60C /* UIBarButtonItem+TKCategory.h in Headers */,
+				20CEA4471BA110E30009D60C /* NSTimer+Blocks.h in Headers */,
+				20CEA48E1BA113CC0009D60C /* UIFont+TKCategory.h in Headers */,
+				20CEA4341BA110A00009D60C /* NSObject+JSON.h in Headers */,
+				20CEA43F1BA110C80009D60C /* NSAttributedString+TKCategory.h in Headers */,
+				20CEA44D1BA110F90009D60C /* UIScreen+TKCategory.h in Headers */,
+				20CEA45F1BA111350009D60C /* UIView+Initializers.h in Headers */,
+				20CEA46B1BA112390009D60C /* CALayer+TKAnimation.h in Headers */,
+				20CEA4691BA112330009D60C /* UIView+TKAnimation.h in Headers */,
+				20CEA45B1BA111270009D60C /* UINavigationBar+TKCategory.h in Headers */,
+				20CEA4781BA112B70009D60C /* TKShapeView.h in Headers */,
+				20CEA4881BA113140009D60C /* TKPhoneNumberTextField.h in Headers */,
+				20CEA44F1BA111020009D60C /* UIView+TKCategory.h in Headers */,
+				20CEA4861BA1130E0009D60C /* TKCreditCardZipTextField.h in Headers */,
+				20CEA42E1BA1105D0009D60C /* curryTV.h in Headers */,
+				20CEA4411BA110CE0009D60C /* NSMutableAttributedString+TKCategory.h in Headers */,
+				20CEA44B1BA110F40009D60C /* UIDevice+TKCategory.h in Headers */,
+				20CEA4651BA1114D0009D60C /* UIActionSheet+TKCategory.h in Headers */,
+				20CEA4511BA1110A0009D60C /* UIScrollview+TKCategory.h in Headers */,
+				20CEA47E1BA112ED0009D60C /* TKGradientView.h in Headers */,
+				20CEA4591BA111200009D60C /* UIButton+TKCategory.h in Headers */,
+				20CEA46F1BA112450009D60C /* CAAnimation+TKAnimation.h in Headers */,
+				20CEA4821BA113000009D60C /* TKCreditCardCVVTextField.h in Headers */,
+				20CEA4431BA110D30009D60C /* NSBundle+TKCategory.h in Headers */,
+				20CEA4361BA110A90009D60C /* NSObject+TKCategory.h in Headers */,
+				20CEA4841BA113070009D60C /* TKCreditCardExpirationTextField.h in Headers */,
+				20CEA4901BA113D30009D60C /* UIColor+TKCategory.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
@@ -780,6 +958,24 @@
 			productReference = 200B62601AD7FB460049E35C /* curryTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		20CEA42A1BA1105D0009D60C /* curryTV */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 20CEA4321BA1105D0009D60C /* Build configuration list for PBXNativeTarget "curryTV" */;
+			buildPhases = (
+				20CEA4261BA1105D0009D60C /* Sources */,
+				20CEA4271BA1105D0009D60C /* Frameworks */,
+				20CEA4281BA1105D0009D60C /* Headers */,
+				20CEA4291BA1105D0009D60C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = curryTV;
+			productName = curryTV;
+			productReference = 20CEA42B1BA1105D0009D60C /* curryTV.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -798,6 +994,9 @@
 					203FB7FA1B410DE0000D3B43 = {
 						CreatedOnToolsVersion = 6.3.2;
 					};
+					20CEA42A1BA1105D0009D60C = {
+						CreatedOnToolsVersion = 7.1;
+					};
 				};
 			};
 			buildConfigurationList = 200B624F1AD7FB450049E35C /* Build configuration list for PBXProject "curry" */;
@@ -815,6 +1014,7 @@
 				200B62541AD7FB450049E35C /* curry */,
 				200B625F1AD7FB460049E35C /* curryTests */,
 				203FB7FA1B410DE0000D3B43 /* Documentation */,
+				20CEA42A1BA1105D0009D60C /* curryTV */,
 			);
 		};
 /* End PBXProject section */
@@ -829,6 +1029,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		200B625E1AD7FB460049E35C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		20CEA4291BA1105D0009D60C /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -941,6 +1148,59 @@
 				200B62681AD7FB460049E35C /* curryTests.m in Sources */,
 				20785F771AD8388E000DC57F /* NSStringTests.m in Sources */,
 				20785F781AD8388E000DC57F /* UIViewTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		20CEA4261BA1105D0009D60C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				20CEA4971BA114000009D60C /* TKSwitchCell.m in Sources */,
+				20CEA4721BA112530009D60C /* TKCustomPresentationViewController.m in Sources */,
+				20CEA44C1BA110F70009D60C /* UIDevice+TKCategory.m in Sources */,
+				20CEA47D1BA112D00009D60C /* TKSectionedScrollView.m in Sources */,
+				20CEA45E1BA111320009D60C /* UIBarButtonItem+TKCategory.m in Sources */,
+				20CEA4371BA110AC0009D60C /* NSObject+TKCategory.m in Sources */,
+				20CEA4561BA111180009D60C /* UITextField+TKCategory.m in Sources */,
+				20CEA4891BA113170009D60C /* TKPhoneNumberTextField.m in Sources */,
+				20CEA43A1BA110B90009D60C /* NSDate+TKCategory.m in Sources */,
+				20CEA4681BA1122D0009D60C /* UIViewController+TKCategory.m in Sources */,
+				20CEA43C1BA110BF0009D60C /* NSArray+TKCategory.m in Sources */,
+				20CEA4541BA111130009D60C /* UILabel+TKCategory.m in Sources */,
+				20CEA45A1BA111240009D60C /* UIButton+TKCategory.m in Sources */,
+				20CEA4951BA113F10009D60C /* TKTextFieldCell.m in Sources */,
+				20CEA4521BA1110D0009D60C /* UIScrollview+TKCategory.m in Sources */,
+				20CEA4621BA1113D0009D60C /* UILabel+Initializers.m in Sources */,
+				20CEA4871BA113110009D60C /* TKCreditCardZipTextField.m in Sources */,
+				20CEA47B1BA112C70009D60C /* TKCurrentTimeLabel.m in Sources */,
+				20CEA4931BA113EA0009D60C /* TKStepperCell.m in Sources */,
+				20CEA4851BA1130C0009D60C /* TKCreditCardExpirationTextField.m in Sources */,
+				20CEA48D1BA113C90009D60C /* UIImage+TKCategory.m in Sources */,
+				20CEA4421BA110D10009D60C /* NSMutableAttributedString+TKCategory.m in Sources */,
+				20CEA4701BA112490009D60C /* CAAnimation+TKAnimation.m in Sources */,
+				20CEA4581BA1111D0009D60C /* UIImageView+TKCategory.m in Sources */,
+				20CEA4661BA1121E0009D60C /* UIControl+Blocks.m in Sources */,
+				20CEA4461BA110E10009D60C /* NSURLSession+TKCategory.m in Sources */,
+				20CEA4481BA110E70009D60C /* NSTimer+Blocks.m in Sources */,
+				20CEA4401BA110CC0009D60C /* NSAttributedString+TKCategory.m in Sources */,
+				20CEA4791BA112BB0009D60C /* TKShapeView.m in Sources */,
+				20CEA4501BA111070009D60C /* UIView+TKCategory.m in Sources */,
+				20CEA46E1BA112430009D60C /* CAKeyframeAnimation+TKAnimation.m in Sources */,
+				20CEA4831BA113040009D60C /* TKCreditCardCVVTextField.m in Sources */,
+				20CEA44A1BA110F20009D60C /* UIApplication+TKCategory.m in Sources */,
+				20CEA45C1BA1112C0009D60C /* UINavigationBar+TKCategory.m in Sources */,
+				20CEA4441BA110D70009D60C /* NSBundle+TKCategory.m in Sources */,
+				20CEA44E1BA110FF0009D60C /* UIScreen+TKCategory.m in Sources */,
+				20CEA48F1BA113D10009D60C /* UIFont+TKCategory.m in Sources */,
+				20CEA4391BA110B70009D60C /* NSString+TKCategory.m in Sources */,
+				20CEA46A1BA112370009D60C /* UIView+TKAnimation.m in Sources */,
+				20CEA4811BA112FE0009D60C /* TKCreditCardNumberTextField.m in Sources */,
+				20CEA43E1BA110C60009D60C /* NSMutableArray+TKCategory.m in Sources */,
+				20CEA47F1BA112F30009D60C /* TKGradientView.m in Sources */,
+				20CEA4351BA110A60009D60C /* NSObject+JSON.m in Sources */,
+				20CEA4601BA111380009D60C /* UIView+Initializers.m in Sources */,
+				20CEA46C1BA1123D0009D60C /* CALayer+TKAnimation.m in Sources */,
+				20CEA4911BA113D60009D60C /* UIColor+TKCategory.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1128,6 +1388,44 @@
 			};
 			name = Release;
 		};
+		20CEA4301BA1105D0009D60C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = curryTV/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.devinross.curryTV;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+			};
+			name = Debug;
+		};
+		20CEA4311BA1105D0009D60C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = curryTV/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.devinross.curryTV;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -1166,6 +1464,14 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		20CEA4321BA1105D0009D60C /* Build configuration list for PBXNativeTarget "curryTV" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				20CEA4301BA1105D0009D60C /* Debug */,
+				20CEA4311BA1105D0009D60C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};

@@ -79,21 +79,20 @@
     if([self canOpenURL:[NSURL URLWithString:@"comgooglemaps://?center="]])
         endpoint = @"comgooglemaps://?center=%@&q=%@";
 
-    NSString *latlong = [[NSString stringWithFormat:@"%@,%@",@(coordinates.latitude),@(coordinates.longitude)] stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
+    NSString *latlong = [[NSString stringWithFormat:@"%@,%@",@(coordinates.latitude),@(coordinates.longitude)] stringByAddingPercentEncodingWithAllowedCharacters:[NSCharacterSet URLQueryAllowedCharacterSet]];
     
-    NSString *url = [NSString stringWithFormat:endpoint,latlong,[query stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding]];
+    NSString *url = [NSString stringWithFormat:endpoint,latlong,[query stringByAddingPercentEncodingWithAllowedCharacters:[NSCharacterSet URLQueryAllowedCharacterSet]]];
     
     [self openURL:[NSURL URLWithString:url]];
-    
 }
 
 - (void) openAppleMapURLWithCoordinate:(CLLocationCoordinate2D)coordinates query:(NSString*)query{
     
     NSString *endpoint = @"http://maps.apple.com/maps?ll=%@&q=%@";
     
-    NSString *latlong = [[NSString stringWithFormat:@"%@,%@",@(coordinates.latitude),@(coordinates.longitude)] stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
+    NSString *latlong = [[NSString stringWithFormat:@"%@,%@",@(coordinates.latitude),@(coordinates.longitude)] stringByAddingPercentEncodingWithAllowedCharacters:[NSCharacterSet URLQueryAllowedCharacterSet]];
     
-    NSString *url = [NSString stringWithFormat:endpoint,latlong,[query stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding]];
+    NSString *url = [NSString stringWithFormat:endpoint,latlong,[query stringByAddingPercentEncodingWithAllowedCharacters:[NSCharacterSet URLQueryAllowedCharacterSet]]];
     
     [self openURL:[NSURL URLWithString:url]];
     
