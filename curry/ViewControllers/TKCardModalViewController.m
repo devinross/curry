@@ -65,7 +65,7 @@ static const CGFloat _minimumVelocityRequiredForPush = 50.0f;	// defines how muc
 	self.throwToDismissEnabled = YES;
 	return self;
 }
-- (NSUInteger) supportedInterfaceOrientations{
+- (UIInterfaceOrientationMask) supportedInterfaceOrientations{
 	if([[UIDevice currentDevice] padIdiom])
 		return UIInterfaceOrientationMaskAll;
 	return UIInterfaceOrientationMaskPortrait;
