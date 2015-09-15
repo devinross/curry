@@ -269,9 +269,13 @@
 }
 
 - (NSUInteger) lengthWithoutWhitespace{
+	return self.stringWithoutWhitespace.length;
+}
+
+- (NSString*) stringWithoutWhitespace{
 	NSArray *words = [self componentsSeparatedByCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
 	NSString *nospacestring = [words componentsJoinedByString:@""];
-	return nospacestring.length;
+	return nospacestring;
 }
 
 - (NSString*) formattedPhoneNumberWithLastCharacterRemoved:(BOOL)deleteLastChar{

@@ -77,6 +77,12 @@
  */
 @property (nonatomic, readonly) NSUInteger lengthWithoutWhitespace;
 
+/** Returns a string without the whitespace characters.
+ @return Returns a string without the whitespace characters.
+ */
+@property (nonatomic, readonly) NSString *stringWithoutWhitespace;
+
+
 
 /* Returns a string with the first word in each sentence as capitalized. */
 @property (nonatomic, readonly, copy) NSString *capitalizeSentence;
