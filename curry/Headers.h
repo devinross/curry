@@ -52,6 +52,7 @@
 #import "UIApplication+TKCategory.h"
 #import "UIDevice+TKCategory.h"
 #import "UIScreen+TKCategory.h"
+#import "UITraitCollection+TKCategory.h"
 
 // Categories -> UIKit -> Views
 #import "UIView+Positioning.h"

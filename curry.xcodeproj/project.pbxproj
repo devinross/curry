@@ -124,6 +124,8 @@
 		204922B91B46EF9200C22245 /* TKTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 204922B71B46EF9200C22245 /* TKTextView.m */; };
 		204922C41B46F15900C22245 /* NSDate+TKCategory.h in Headers */ = {isa = PBXBuildFile; fileRef = 204922C21B46F15900C22245 /* NSDate+TKCategory.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		204922C51B46F15900C22245 /* NSDate+TKCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 204922C31B46F15900C22245 /* NSDate+TKCategory.m */; };
+		2058B9FD1BA7487E002C2357 /* UITraitCollection+TKCategory.h in Headers */ = {isa = PBXBuildFile; fileRef = 2058B9FB1BA7487E002C2357 /* UITraitCollection+TKCategory.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2058B9FE1BA7487E002C2357 /* UITraitCollection+TKCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 2058B9FC1BA7487E002C2357 /* UITraitCollection+TKCategory.m */; settings = {ASSET_TAGS = (); }; };
 		20785F771AD8388E000DC57F /* NSStringTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 20785F701AD8388E000DC57F /* NSStringTests.m */; };
 		20785F781AD8388E000DC57F /* UIViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 20785F721AD8388E000DC57F /* UIViewTests.m */; };
 		20785F791AD8388E000DC57F /* NSArrayTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 20785F741AD8388E000DC57F /* NSArrayTests.m */; };
@@ -393,6 +395,8 @@
 		204922B71B46EF9200C22245 /* TKTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TKTextView.m; sourceTree = "<group>"; };
 		204922C21B46F15900C22245 /* NSDate+TKCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+TKCategory.h"; sourceTree = "<group>"; };
 		204922C31B46F15900C22245 /* NSDate+TKCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+TKCategory.m"; sourceTree = "<group>"; };
+		2058B9FB1BA7487E002C2357 /* UITraitCollection+TKCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITraitCollection+TKCategory.h"; sourceTree = "<group>"; };
+		2058B9FC1BA7487E002C2357 /* UITraitCollection+TKCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITraitCollection+TKCategory.m"; sourceTree = "<group>"; };
 		20785F6F1AD8388E000DC57F /* NSStringTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSStringTests.h; sourceTree = "<group>"; };
 		20785F701AD8388E000DC57F /* NSStringTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSStringTests.m; sourceTree = "<group>"; };
 		20785F711AD8388E000DC57F /* UIViewTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIViewTests.h; sourceTree = "<group>"; };
@@ -652,6 +656,8 @@
 				200B62851AD7FC5E0049E35C /* UIDevice+TKCategory.m */,
 				200B62C81AD7FEF80049E35C /* UIScreen+TKCategory.h */,
 				200B62C91AD7FEF80049E35C /* UIScreen+TKCategory.m */,
+				2058B9FB1BA7487E002C2357 /* UITraitCollection+TKCategory.h */,
+				2058B9FC1BA7487E002C2357 /* UITraitCollection+TKCategory.m */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -856,6 +862,7 @@
 				207860161AD84A87000DC57F /* TKCreditCardCVVTextField.h in Headers */,
 				20CEA4DB1BA1503D0009D60C /* UIScrollView+Positioning.h in Headers */,
 				2078601C1AD84A87000DC57F /* TKCreditCardZipTextField.h in Headers */,
+				2058B9FD1BA7487E002C2357 /* UITraitCollection+TKCategory.h in Headers */,
 				207860181AD84A87000DC57F /* TKCreditCardExpirationTextField.h in Headers */,
 				200B62E81AD7FEF80049E35C /* UIViewController+TKCategory.h in Headers */,
 				207860261AD84F11000DC57F /* NSURLSession+TKCategory.h in Headers */,
@@ -1118,6 +1125,7 @@
 				200B62E11AD7FEF80049E35C /* UIScrollview+TKCategory.m in Sources */,
 				200B62AA1AD7FE0D0049E35C /* CALayer+TKAnimation.m in Sources */,
 				202DBE721AF4121C00B0CE67 /* TKCustomPresentationViewController.m in Sources */,
+				2058B9FE1BA7487E002C2357 /* UITraitCollection+TKCategory.m in Sources */,
 				200B62AC1AD7FE0D0049E35C /* CAKeyframeAnimation+TKAnimation.m in Sources */,
 				2078601D1AD84A87000DC57F /* TKCreditCardZipTextField.m in Sources */,
 				200B629E1AD7FD660049E35C /* NSObject+JSON.m in Sources */,
