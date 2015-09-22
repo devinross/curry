@@ -30,6 +30,7 @@
  */
 #import "UIScrollview+TKCategory.h"
 #import "TKFoundation.h"
+#import "TKUIKit.h"
 
 @implementation UIScrollView (TKCategory)
 

@@ -38,6 +38,7 @@
 #import "UIImageView+TKCategory.h"
 #import "UIImage+TKCategory.h"
 #import "TKFoundation.h"
+#import "TKUIKit.h"
 
 @interface TKInputView ()
 

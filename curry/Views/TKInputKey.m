@@ -35,6 +35,8 @@
 #import "UIDevice+TKCategory.h"
 #import "UIFont+TKCategory.h"
 #import "TKFoundation.h"
+#import "TKUIKit.h"
+
 
 
 @implementation TKInputKey

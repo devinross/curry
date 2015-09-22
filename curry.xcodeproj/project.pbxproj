@@ -102,7 +102,7 @@
 		200B63201AD804E30049E35C /* TKCardModalViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 200B631E1AD804E30049E35C /* TKCardModalViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		200B63211AD804E30049E35C /* TKCardModalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 200B631F1AD804E30049E35C /* TKCardModalViewController.m */; };
 		2010DCB31BB0E40E00810A98 /* curryWatch.h in Headers */ = {isa = PBXBuildFile; fileRef = 2010DCB21BB0E40E00810A98 /* curryWatch.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		2010DCC01BB0EA7800810A98 /* TKUIKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 2010DCBF1BB0EA0600810A98 /* TKUIKit.h */; settings = {ASSET_TAGS = (); }; };
+		2010DCC01BB0EA7800810A98 /* TKUIKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 2010DCBF1BB0EA0600810A98 /* TKUIKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2010DCC11BB0EA9400810A98 /* NSObject+JSON.h in Headers */ = {isa = PBXBuildFile; fileRef = 200B629B1AD7FD660049E35C /* NSObject+JSON.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2010DCC21BB0EA9900810A98 /* NSObject+JSON.m in Sources */ = {isa = PBXBuildFile; fileRef = 200B629C1AD7FD660049E35C /* NSObject+JSON.m */; settings = {ASSET_TAGS = (); }; };
 		2010DCC31BB0EA9B00810A98 /* NSObject+TKCategory.h in Headers */ = {isa = PBXBuildFile; fileRef = 200B62761AD7FC5E0049E35C /* NSObject+TKCategory.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -126,6 +126,9 @@
 		2010DCD51BB0EADF00810A98 /* NSURLSession+TKCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 207860251AD84F11000DC57F /* NSURLSession+TKCategory.m */; settings = {ASSET_TAGS = (); }; };
 		2010DCD61BB0EAE200810A98 /* NSTimer+Blocks.h in Headers */ = {isa = PBXBuildFile; fileRef = 2098BA221B0F6C4F000E0074 /* NSTimer+Blocks.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2010DCD71BB0EAE600810A98 /* NSTimer+Blocks.m in Sources */ = {isa = PBXBuildFile; fileRef = 2098BA231B0F6C4F000E0074 /* NSTimer+Blocks.m */; settings = {ASSET_TAGS = (); }; };
+		2010DCF01BB0F5F800810A98 /* TKUIKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 2010DCBF1BB0EA0600810A98 /* TKUIKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2010DCF11BB0F87900810A98 /* WatchHeaders.h in Headers */ = {isa = PBXBuildFile; fileRef = 2010DCBE1BB0E94A00810A98 /* WatchHeaders.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2010DCF21BB0F88F00810A98 /* TKFoundation.h in Headers */ = {isa = PBXBuildFile; fileRef = 200B62721AD7FBDC0049E35C /* TKFoundation.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		202DBE711AF4121C00B0CE67 /* TKCustomPresentationViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 202DBE6F1AF4121C00B0CE67 /* TKCustomPresentationViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		202DBE721AF4121C00B0CE67 /* TKCustomPresentationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 202DBE701AF4121C00B0CE67 /* TKCustomPresentationViewController.m */; };
 		202DBEB91AF4347A00B0CE67 /* TKInputView.h in Headers */ = {isa = PBXBuildFile; fileRef = 202DBEAD1AF4347A00B0CE67 /* TKInputView.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -188,7 +191,7 @@
 		20CB9D021AF405CD002E9F1C /* UIControl+Blocks.h in Headers */ = {isa = PBXBuildFile; fileRef = 20CB9D001AF405CD002E9F1C /* UIControl+Blocks.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		20CB9D031AF405CD002E9F1C /* UIControl+Blocks.m in Sources */ = {isa = PBXBuildFile; fileRef = 20CB9D011AF405CD002E9F1C /* UIControl+Blocks.m */; };
 		20CEA42E1BA1105D0009D60C /* curryTV.h in Headers */ = {isa = PBXBuildFile; fileRef = 20CEA42D1BA1105D0009D60C /* curryTV.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		20CEA4331BA110900009D60C /* TKFoundation.h in Headers */ = {isa = PBXBuildFile; fileRef = 200B62721AD7FBDC0049E35C /* TKFoundation.h */; };
+		20CEA4331BA110900009D60C /* TKFoundation.h in Headers */ = {isa = PBXBuildFile; fileRef = 200B62721AD7FBDC0049E35C /* TKFoundation.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		20CEA4341BA110A00009D60C /* NSObject+JSON.h in Headers */ = {isa = PBXBuildFile; fileRef = 200B629B1AD7FD660049E35C /* NSObject+JSON.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		20CEA4351BA110A60009D60C /* NSObject+JSON.m in Sources */ = {isa = PBXBuildFile; fileRef = 200B629C1AD7FD660049E35C /* NSObject+JSON.m */; };
 		20CEA4361BA110A90009D60C /* NSObject+TKCategory.h in Headers */ = {isa = PBXBuildFile; fileRef = 200B62761AD7FC5E0049E35C /* NSObject+TKCategory.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -950,6 +953,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2010DCF21BB0F88F00810A98 /* TKFoundation.h in Headers */,
 				2010DCCA1BB0EAB700810A98 /* NSArray+TKCategory.h in Headers */,
 				2010DCC71BB0EAAB00810A98 /* NSDate+TKCategory.h in Headers */,
 				2010DCD41BB0EADB00810A98 /* NSURLSession+TKCategory.h in Headers */,
@@ -959,6 +963,7 @@
 				2010DCC31BB0EA9B00810A98 /* NSObject+TKCategory.h in Headers */,
 				2010DCCE1BB0EAC600810A98 /* NSAttributedString+TKCategory.h in Headers */,
 				2010DCB31BB0E40E00810A98 /* curryWatch.h in Headers */,
+				2010DCF11BB0F87900810A98 /* WatchHeaders.h in Headers */,
 				2010DCD01BB0EACD00810A98 /* NSMutableAttributedString+TKCategory.h in Headers */,
 				2010DCD21BB0EAD300810A98 /* NSBundle+TKCategory.h in Headers */,
 				2010DCC51BB0EAA300810A98 /* NSString+TKCategory.h in Headers */,
@@ -981,6 +986,7 @@
 				20CEA4381BA110AF0009D60C /* NSString+TKCategory.h in Headers */,
 				20CEA4DC1BA1503D0009D60C /* UIScrollView+Positioning.h in Headers */,
 				20CEA48B1BA113450009D60C /* Header.h in Headers */,
+				2010DCF01BB0F5F800810A98 /* TKUIKit.h in Headers */,
 				20CEA4451BA110D90009D60C /* NSURLSession+TKCategory.h in Headers */,
 				20CEA4331BA110900009D60C /* TKFoundation.h in Headers */,
 				20CEA47A1BA112C40009D60C /* TKCurrentTimeLabel.h in Headers */,

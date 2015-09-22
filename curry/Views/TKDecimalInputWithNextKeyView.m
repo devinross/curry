@@ -35,6 +35,7 @@
 #import "TKFoundation.h"
 #import "TKInputKey.h"
 #import "UIImage+TKCategory.h"
+#import "TKUIKit.h"
 
 @implementation TKDecimalInputWithNextKeyView
 

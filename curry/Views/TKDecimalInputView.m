@@ -34,7 +34,7 @@
 #import "UIDevice+TKCategory.h"
 #import "TKInputKey.h"
 #import "TKFoundation.h"
-
+#import "TKUIKit.h"
 
 @implementation TKDecimalInputView
 
