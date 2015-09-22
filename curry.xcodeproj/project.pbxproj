@@ -101,6 +101,31 @@
 		200B631D1AD804400049E35C /* TKSoundAlertController.m in Sources */ = {isa = PBXBuildFile; fileRef = 200B63191AD804400049E35C /* TKSoundAlertController.m */; };
 		200B63201AD804E30049E35C /* TKCardModalViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 200B631E1AD804E30049E35C /* TKCardModalViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		200B63211AD804E30049E35C /* TKCardModalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 200B631F1AD804E30049E35C /* TKCardModalViewController.m */; };
+		2010DCB31BB0E40E00810A98 /* curryWatch.h in Headers */ = {isa = PBXBuildFile; fileRef = 2010DCB21BB0E40E00810A98 /* curryWatch.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2010DCC01BB0EA7800810A98 /* TKUIKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 2010DCBF1BB0EA0600810A98 /* TKUIKit.h */; settings = {ASSET_TAGS = (); }; };
+		2010DCC11BB0EA9400810A98 /* NSObject+JSON.h in Headers */ = {isa = PBXBuildFile; fileRef = 200B629B1AD7FD660049E35C /* NSObject+JSON.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2010DCC21BB0EA9900810A98 /* NSObject+JSON.m in Sources */ = {isa = PBXBuildFile; fileRef = 200B629C1AD7FD660049E35C /* NSObject+JSON.m */; settings = {ASSET_TAGS = (); }; };
+		2010DCC31BB0EA9B00810A98 /* NSObject+TKCategory.h in Headers */ = {isa = PBXBuildFile; fileRef = 200B62761AD7FC5E0049E35C /* NSObject+TKCategory.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2010DCC41BB0EA9F00810A98 /* NSObject+TKCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 200B62771AD7FC5E0049E35C /* NSObject+TKCategory.m */; settings = {ASSET_TAGS = (); }; };
+		2010DCC51BB0EAA300810A98 /* NSString+TKCategory.h in Headers */ = {isa = PBXBuildFile; fileRef = 200B62781AD7FC5E0049E35C /* NSString+TKCategory.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2010DCC61BB0EAA800810A98 /* NSString+TKCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 200B62791AD7FC5E0049E35C /* NSString+TKCategory.m */; settings = {ASSET_TAGS = (); }; };
+		2010DCC71BB0EAAB00810A98 /* NSDate+TKCategory.h in Headers */ = {isa = PBXBuildFile; fileRef = 204922C21B46F15900C22245 /* NSDate+TKCategory.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2010DCC81BB0EAAD00810A98 /* NSDate+TKCategory.h in Headers */ = {isa = PBXBuildFile; fileRef = 204922C21B46F15900C22245 /* NSDate+TKCategory.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2010DCC91BB0EAB500810A98 /* NSDate+TKCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 204922C31B46F15900C22245 /* NSDate+TKCategory.m */; settings = {ASSET_TAGS = (); }; };
+		2010DCCA1BB0EAB700810A98 /* NSArray+TKCategory.h in Headers */ = {isa = PBXBuildFile; fileRef = 200B627A1AD7FC5E0049E35C /* NSArray+TKCategory.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2010DCCB1BB0EABB00810A98 /* NSArray+TKCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 200B627B1AD7FC5E0049E35C /* NSArray+TKCategory.m */; settings = {ASSET_TAGS = (); }; };
+		2010DCCC1BB0EABF00810A98 /* NSMutableArray+TKCategory.h in Headers */ = {isa = PBXBuildFile; fileRef = 200B627C1AD7FC5E0049E35C /* NSMutableArray+TKCategory.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2010DCCD1BB0EAC300810A98 /* NSMutableArray+TKCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 200B627D1AD7FC5E0049E35C /* NSMutableArray+TKCategory.m */; settings = {ASSET_TAGS = (); }; };
+		2010DCCE1BB0EAC600810A98 /* NSAttributedString+TKCategory.h in Headers */ = {isa = PBXBuildFile; fileRef = 200B62801AD7FC5E0049E35C /* NSAttributedString+TKCategory.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2010DCCF1BB0EACB00810A98 /* NSAttributedString+TKCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 200B62811AD7FC5E0049E35C /* NSAttributedString+TKCategory.m */; settings = {ASSET_TAGS = (); }; };
+		2010DCD01BB0EACD00810A98 /* NSMutableAttributedString+TKCategory.h in Headers */ = {isa = PBXBuildFile; fileRef = 200B62821AD7FC5E0049E35C /* NSMutableAttributedString+TKCategory.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2010DCD11BB0EAD100810A98 /* NSMutableAttributedString+TKCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 200B62831AD7FC5E0049E35C /* NSMutableAttributedString+TKCategory.m */; settings = {ASSET_TAGS = (); }; };
+		2010DCD21BB0EAD300810A98 /* NSBundle+TKCategory.h in Headers */ = {isa = PBXBuildFile; fileRef = 20A75C831AD836DD00E2106A /* NSBundle+TKCategory.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2010DCD31BB0EAD800810A98 /* NSBundle+TKCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 20A75C841AD836DD00E2106A /* NSBundle+TKCategory.m */; settings = {ASSET_TAGS = (); }; };
+		2010DCD41BB0EADB00810A98 /* NSURLSession+TKCategory.h in Headers */ = {isa = PBXBuildFile; fileRef = 207860241AD84F11000DC57F /* NSURLSession+TKCategory.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2010DCD51BB0EADF00810A98 /* NSURLSession+TKCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 207860251AD84F11000DC57F /* NSURLSession+TKCategory.m */; settings = {ASSET_TAGS = (); }; };
+		2010DCD61BB0EAE200810A98 /* NSTimer+Blocks.h in Headers */ = {isa = PBXBuildFile; fileRef = 2098BA221B0F6C4F000E0074 /* NSTimer+Blocks.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2010DCD71BB0EAE600810A98 /* NSTimer+Blocks.m in Sources */ = {isa = PBXBuildFile; fileRef = 2098BA231B0F6C4F000E0074 /* NSTimer+Blocks.m */; settings = {ASSET_TAGS = (); }; };
 		202DBE711AF4121C00B0CE67 /* TKCustomPresentationViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 202DBE6F1AF4121C00B0CE67 /* TKCustomPresentationViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		202DBE721AF4121C00B0CE67 /* TKCustomPresentationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 202DBE701AF4121C00B0CE67 /* TKCustomPresentationViewController.m */; };
 		202DBEB91AF4347A00B0CE67 /* TKInputView.h in Headers */ = {isa = PBXBuildFile; fileRef = 202DBEAD1AF4347A00B0CE67 /* TKInputView.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -372,6 +397,11 @@
 		200B63191AD804400049E35C /* TKSoundAlertController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TKSoundAlertController.m; sourceTree = "<group>"; };
 		200B631E1AD804E30049E35C /* TKCardModalViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TKCardModalViewController.h; sourceTree = "<group>"; };
 		200B631F1AD804E30049E35C /* TKCardModalViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TKCardModalViewController.m; sourceTree = "<group>"; };
+		2010DCB01BB0E40E00810A98 /* curryWatch.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = curryWatch.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2010DCB21BB0E40E00810A98 /* curryWatch.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = curryWatch.h; sourceTree = "<group>"; };
+		2010DCB41BB0E40E00810A98 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2010DCBE1BB0E94A00810A98 /* WatchHeaders.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WatchHeaders.h; sourceTree = "<group>"; };
+		2010DCBF1BB0EA0600810A98 /* TKUIKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TKUIKit.h; sourceTree = "<group>"; };
 		202DBE6F1AF4121C00B0CE67 /* TKCustomPresentationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TKCustomPresentationViewController.h; sourceTree = "<group>"; };
 		202DBE701AF4121C00B0CE67 /* TKCustomPresentationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TKCustomPresentationViewController.m; sourceTree = "<group>"; };
 		202DBEAD1AF4347A00B0CE67 /* TKInputView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TKInputView.h; sourceTree = "<group>"; };
@@ -474,6 +504,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		2010DCAC1BB0E40E00810A98 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		20CEA4271BA1105D0009D60C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -490,6 +527,7 @@
 				200B62571AD7FB460049E35C /* curry */,
 				200B62641AD7FB460049E35C /* curryTests */,
 				20CEA42C1BA1105D0009D60C /* curryTV */,
+				2010DCB11BB0E40E00810A98 /* curryWatch */,
 				200B62561AD7FB460049E35C /* Products */,
 			);
 			sourceTree = "<group>";
@@ -500,6 +538,7 @@
 				200B62551AD7FB460049E35C /* curry.framework */,
 				200B62601AD7FB460049E35C /* curryTests.xctest */,
 				20CEA42B1BA1105D0009D60C /* curryTV.framework */,
+				2010DCB01BB0E40E00810A98 /* curryWatch.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -510,6 +549,7 @@
 				200B625A1AD7FB460049E35C /* curry.h */,
 				20A75C5E1AD82C8500E2106A /* Headers.h */,
 				200B62721AD7FBDC0049E35C /* TKFoundation.h */,
+				2010DCBF1BB0EA0600810A98 /* TKUIKit.h */,
 				200B629A1AD7FD4B0049E35C /* Categories */,
 				200B63231AD805400049E35C /* ViewControllers */,
 				200B63221AD805320049E35C /* Views */,
@@ -763,6 +803,16 @@
 			path = Extra;
 			sourceTree = "<group>";
 		};
+		2010DCB11BB0E40E00810A98 /* curryWatch */ = {
+			isa = PBXGroup;
+			children = (
+				2010DCB21BB0E40E00810A98 /* curryWatch.h */,
+				2010DCBE1BB0E94A00810A98 /* WatchHeaders.h */,
+				2010DCB41BB0E40E00810A98 /* Info.plist */,
+			);
+			path = curryWatch;
+			sourceTree = "<group>";
+		};
 		202DBEC51AF4347F00B0CE67 /* Keyboard */ = {
 			isa = PBXGroup;
 			children = (
@@ -847,6 +897,7 @@
 				200B62A91AD7FE0D0049E35C /* CALayer+TKAnimation.h in Headers */,
 				200B628A1AD7FC5E0049E35C /* NSString+TKCategory.h in Headers */,
 				200B62AD1AD7FE0D0049E35C /* CAAnimation+TKAnimation.h in Headers */,
+				2010DCC01BB0EA7800810A98 /* TKUIKit.h in Headers */,
 				200B62EA1AD7FEF80049E35C /* UIScreen+TKCategory.h in Headers */,
 				200B63201AD804E30049E35C /* TKCardModalViewController.h in Headers */,
 				200B63101AD804350049E35C /* TKWebViewController.h in Headers */,
@@ -895,6 +946,25 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		2010DCAD1BB0E40E00810A98 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2010DCCA1BB0EAB700810A98 /* NSArray+TKCategory.h in Headers */,
+				2010DCC71BB0EAAB00810A98 /* NSDate+TKCategory.h in Headers */,
+				2010DCD41BB0EADB00810A98 /* NSURLSession+TKCategory.h in Headers */,
+				2010DCC11BB0EA9400810A98 /* NSObject+JSON.h in Headers */,
+				2010DCCC1BB0EABF00810A98 /* NSMutableArray+TKCategory.h in Headers */,
+				2010DCD61BB0EAE200810A98 /* NSTimer+Blocks.h in Headers */,
+				2010DCC31BB0EA9B00810A98 /* NSObject+TKCategory.h in Headers */,
+				2010DCCE1BB0EAC600810A98 /* NSAttributedString+TKCategory.h in Headers */,
+				2010DCB31BB0E40E00810A98 /* curryWatch.h in Headers */,
+				2010DCD01BB0EACD00810A98 /* NSMutableAttributedString+TKCategory.h in Headers */,
+				2010DCD21BB0EAD300810A98 /* NSBundle+TKCategory.h in Headers */,
+				2010DCC51BB0EAA300810A98 /* NSString+TKCategory.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		20CEA4281BA1105D0009D60C /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -939,6 +1009,7 @@
 				20CEA4411BA110CE0009D60C /* NSMutableAttributedString+TKCategory.h in Headers */,
 				20CEA44B1BA110F40009D60C /* UIDevice+TKCategory.h in Headers */,
 				20CEA4651BA1114D0009D60C /* UIActionSheet+TKCategory.h in Headers */,
+				2010DCC81BB0EAAD00810A98 /* NSDate+TKCategory.h in Headers */,
 				20CEA4511BA1110A0009D60C /* UIScrollview+TKCategory.h in Headers */,
 				20CEA4D81BA1503D0009D60C /* UIView+Positioning.h in Headers */,
 				20CEA47E1BA112ED0009D60C /* TKGradientView.h in Headers */,
@@ -991,6 +1062,24 @@
 			productReference = 200B62601AD7FB460049E35C /* curryTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		2010DCAF1BB0E40E00810A98 /* curryWatch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2010DCB71BB0E40E00810A98 /* Build configuration list for PBXNativeTarget "curryWatch" */;
+			buildPhases = (
+				2010DCAB1BB0E40E00810A98 /* Sources */,
+				2010DCAC1BB0E40E00810A98 /* Frameworks */,
+				2010DCAD1BB0E40E00810A98 /* Headers */,
+				2010DCAE1BB0E40E00810A98 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = curryWatch;
+			productName = curryWatch;
+			productReference = 2010DCB01BB0E40E00810A98 /* curryWatch.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 		20CEA42A1BA1105D0009D60C /* curryTV */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 20CEA4321BA1105D0009D60C /* Build configuration list for PBXNativeTarget "curryTV" */;
@@ -1024,6 +1113,9 @@
 					200B625F1AD7FB460049E35C = {
 						CreatedOnToolsVersion = 6.3;
 					};
+					2010DCAF1BB0E40E00810A98 = {
+						CreatedOnToolsVersion = 7.0;
+					};
 					203FB7FA1B410DE0000D3B43 = {
 						CreatedOnToolsVersion = 6.3.2;
 					};
@@ -1048,6 +1140,7 @@
 				200B625F1AD7FB460049E35C /* curryTests */,
 				203FB7FA1B410DE0000D3B43 /* Documentation */,
 				20CEA42A1BA1105D0009D60C /* curryTV */,
+				2010DCAF1BB0E40E00810A98 /* curryWatch */,
 			);
 		};
 /* End PBXProject section */
@@ -1062,6 +1155,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		200B625E1AD7FB460049E35C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2010DCAE1BB0E40E00810A98 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -1186,6 +1286,24 @@
 				200B62681AD7FB460049E35C /* curryTests.m in Sources */,
 				20785F771AD8388E000DC57F /* NSStringTests.m in Sources */,
 				20785F781AD8388E000DC57F /* UIViewTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2010DCAB1BB0E40E00810A98 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2010DCC41BB0EA9F00810A98 /* NSObject+TKCategory.m in Sources */,
+				2010DCC91BB0EAB500810A98 /* NSDate+TKCategory.m in Sources */,
+				2010DCCB1BB0EABB00810A98 /* NSArray+TKCategory.m in Sources */,
+				2010DCD11BB0EAD100810A98 /* NSMutableAttributedString+TKCategory.m in Sources */,
+				2010DCD51BB0EADF00810A98 /* NSURLSession+TKCategory.m in Sources */,
+				2010DCD71BB0EAE600810A98 /* NSTimer+Blocks.m in Sources */,
+				2010DCCF1BB0EACB00810A98 /* NSAttributedString+TKCategory.m in Sources */,
+				2010DCD31BB0EAD800810A98 /* NSBundle+TKCategory.m in Sources */,
+				2010DCC61BB0EAA800810A98 /* NSString+TKCategory.m in Sources */,
+				2010DCCD1BB0EAC300810A98 /* NSMutableArray+TKCategory.m in Sources */,
+				2010DCC21BB0EA9900810A98 /* NSObject+JSON.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1412,6 +1530,44 @@
 			};
 			name = Release;
 		};
+		2010DCB51BB0E40E00810A98 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = curryWatch/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.devinross.curryWatch;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Debug;
+		};
+		2010DCB61BB0E40E00810A98 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = curryWatch/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.devinross.curryWatch;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Release;
+		};
 		203FB7FC1B410DE0000D3B43 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -1490,6 +1646,15 @@
 			buildConfigurations = (
 				200B626F1AD7FB460049E35C /* Debug */,
 				200B62701AD7FB460049E35C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2010DCB71BB0E40E00810A98 /* Build configuration list for PBXNativeTarget "curryWatch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2010DCB51BB0E40E00810A98 /* Debug */,
+				2010DCB61BB0E40E00810A98 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

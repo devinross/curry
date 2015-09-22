@@ -33,7 +33,9 @@
 #ifndef curry_Header_h
 #define curry_Header_h
 
+
 #import "TKFoundation.h"
+#import "TKUIKit.h"
 
 // Categories -> Foundation
 #import "NSObject+JSON.h"
