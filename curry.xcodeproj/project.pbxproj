@@ -182,6 +182,26 @@
 		20A75C691AD8332F00E2106A /* TKSectionedScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 20A75C671AD8332F00E2106A /* TKSectionedScrollView.m */; };
 		20A75C851AD836DD00E2106A /* NSBundle+TKCategory.h in Headers */ = {isa = PBXBuildFile; fileRef = 20A75C831AD836DD00E2106A /* NSBundle+TKCategory.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		20A75C861AD836DD00E2106A /* NSBundle+TKCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 20A75C841AD836DD00E2106A /* NSBundle+TKCategory.m */; };
+		20B5FE221BB3613F00C0F848 /* curryMac.h in Headers */ = {isa = PBXBuildFile; fileRef = 20B5FE211BB3613F00C0F848 /* curryMac.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		20B5FE281BB3618B00C0F848 /* MacHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = 20B5FE271BB3618B00C0F848 /* MacHeader.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		20B5FE361BB363A200C0F848 /* TKFoundation.h in Headers */ = {isa = PBXBuildFile; fileRef = 200B62721AD7FBDC0049E35C /* TKFoundation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		20B5FE371BB363A900C0F848 /* NSObject+JSON.h in Headers */ = {isa = PBXBuildFile; fileRef = 200B629B1AD7FD660049E35C /* NSObject+JSON.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		20B5FE381BB363AE00C0F848 /* NSObject+JSON.m in Sources */ = {isa = PBXBuildFile; fileRef = 200B629C1AD7FD660049E35C /* NSObject+JSON.m */; settings = {ASSET_TAGS = (); }; };
+		20B5FE391BB363B000C0F848 /* NSObject+TKCategory.h in Headers */ = {isa = PBXBuildFile; fileRef = 200B62761AD7FC5E0049E35C /* NSObject+TKCategory.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		20B5FE3A1BB363B400C0F848 /* NSObject+TKCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 200B62771AD7FC5E0049E35C /* NSObject+TKCategory.m */; settings = {ASSET_TAGS = (); }; };
+		20B5FE3B1BB363B600C0F848 /* NSString+TKCategory.h in Headers */ = {isa = PBXBuildFile; fileRef = 200B62781AD7FC5E0049E35C /* NSString+TKCategory.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		20B5FE3C1BB363BA00C0F848 /* NSString+TKCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 200B62791AD7FC5E0049E35C /* NSString+TKCategory.m */; settings = {ASSET_TAGS = (); }; };
+		20B5FE3D1BB363BD00C0F848 /* NSDate+TKCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 204922C31B46F15900C22245 /* NSDate+TKCategory.m */; settings = {ASSET_TAGS = (); }; };
+		20B5FE3E1BB363C000C0F848 /* NSDate+TKCategory.h in Headers */ = {isa = PBXBuildFile; fileRef = 204922C21B46F15900C22245 /* NSDate+TKCategory.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		20B5FE3F1BB363C600C0F848 /* NSArray+TKCategory.h in Headers */ = {isa = PBXBuildFile; fileRef = 200B627A1AD7FC5E0049E35C /* NSArray+TKCategory.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		20B5FE401BB363C900C0F848 /* NSArray+TKCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 200B627B1AD7FC5E0049E35C /* NSArray+TKCategory.m */; settings = {ASSET_TAGS = (); }; };
+		20B5FE411BB363CB00C0F848 /* NSMutableArray+TKCategory.h in Headers */ = {isa = PBXBuildFile; fileRef = 200B627C1AD7FC5E0049E35C /* NSMutableArray+TKCategory.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		20B5FE471BB363DE00C0F848 /* NSBundle+TKCategory.h in Headers */ = {isa = PBXBuildFile; fileRef = 20A75C831AD836DD00E2106A /* NSBundle+TKCategory.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		20B5FE481BB363E200C0F848 /* NSBundle+TKCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 20A75C841AD836DD00E2106A /* NSBundle+TKCategory.m */; settings = {ASSET_TAGS = (); }; };
+		20B5FE491BB363E400C0F848 /* NSURLSession+TKCategory.h in Headers */ = {isa = PBXBuildFile; fileRef = 207860241AD84F11000DC57F /* NSURLSession+TKCategory.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		20B5FE4A1BB363E800C0F848 /* NSURLSession+TKCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 207860251AD84F11000DC57F /* NSURLSession+TKCategory.m */; settings = {ASSET_TAGS = (); }; };
+		20B5FE4B1BB363EB00C0F848 /* NSTimer+Blocks.h in Headers */ = {isa = PBXBuildFile; fileRef = 2098BA221B0F6C4F000E0074 /* NSTimer+Blocks.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		20B5FE4C1BB363EE00C0F848 /* NSTimer+Blocks.m in Sources */ = {isa = PBXBuildFile; fileRef = 2098BA231B0F6C4F000E0074 /* NSTimer+Blocks.m */; settings = {ASSET_TAGS = (); }; };
 		20CAE0D41B0953E40088740E /* TKSwitchCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 20CAE0D21B0953E40088740E /* TKSwitchCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		20CAE0D51B0953E40088740E /* TKSwitchCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 20CAE0D31B0953E40088740E /* TKSwitchCell.m */; };
 		20CB9CF31AF3E4B0002E9F1C /* UIActionSheet+Blocks.h in Headers */ = {isa = PBXBuildFile; fileRef = 20CB9CF11AF3E4B0002E9F1C /* UIActionSheet+Blocks.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -459,6 +479,10 @@
 		20A75C671AD8332F00E2106A /* TKSectionedScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TKSectionedScrollView.m; sourceTree = "<group>"; };
 		20A75C831AD836DD00E2106A /* NSBundle+TKCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSBundle+TKCategory.h"; sourceTree = "<group>"; };
 		20A75C841AD836DD00E2106A /* NSBundle+TKCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSBundle+TKCategory.m"; sourceTree = "<group>"; };
+		20B5FE1F1BB3613F00C0F848 /* curryMac.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = curryMac.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		20B5FE211BB3613F00C0F848 /* curryMac.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = curryMac.h; sourceTree = "<group>"; };
+		20B5FE231BB3613F00C0F848 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		20B5FE271BB3618B00C0F848 /* MacHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MacHeader.h; sourceTree = "<group>"; };
 		20CAE0D21B0953E40088740E /* TKSwitchCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TKSwitchCell.h; sourceTree = "<group>"; };
 		20CAE0D31B0953E40088740E /* TKSwitchCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TKSwitchCell.m; sourceTree = "<group>"; };
 		20CB9CF11AF3E4B0002E9F1C /* UIActionSheet+Blocks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIActionSheet+Blocks.h"; path = "curry/Categories/UIKit/Controllers/UIActionSheet+Blocks.h"; sourceTree = SOURCE_ROOT; };
@@ -514,6 +538,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		20B5FE1B1BB3613F00C0F848 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		20CEA4271BA1105D0009D60C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -531,6 +562,7 @@
 				200B62641AD7FB460049E35C /* curryTests */,
 				20CEA42C1BA1105D0009D60C /* curryTV */,
 				2010DCB11BB0E40E00810A98 /* curryWatch */,
+				20B5FE201BB3613F00C0F848 /* curryMac */,
 				200B62561AD7FB460049E35C /* Products */,
 			);
 			sourceTree = "<group>";
@@ -542,6 +574,7 @@
 				200B62601AD7FB460049E35C /* curryTests.xctest */,
 				20CEA42B1BA1105D0009D60C /* curryTV.framework */,
 				2010DCB01BB0E40E00810A98 /* curryWatch.framework */,
+				20B5FE1F1BB3613F00C0F848 /* curryMac.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -852,6 +885,16 @@
 			path = CreditCard;
 			sourceTree = "<group>";
 		};
+		20B5FE201BB3613F00C0F848 /* curryMac */ = {
+			isa = PBXGroup;
+			children = (
+				20B5FE211BB3613F00C0F848 /* curryMac.h */,
+				20B5FE271BB3618B00C0F848 /* MacHeader.h */,
+				20B5FE231BB3613F00C0F848 /* Info.plist */,
+			);
+			path = curryMac;
+			sourceTree = "<group>";
+		};
 		20CEA42C1BA1105D0009D60C /* curryTV */ = {
 			isa = PBXGroup;
 			children = (
@@ -967,6 +1010,25 @@
 				2010DCD01BB0EACD00810A98 /* NSMutableAttributedString+TKCategory.h in Headers */,
 				2010DCD21BB0EAD300810A98 /* NSBundle+TKCategory.h in Headers */,
 				2010DCC51BB0EAA300810A98 /* NSString+TKCategory.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		20B5FE1C1BB3613F00C0F848 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				20B5FE361BB363A200C0F848 /* TKFoundation.h in Headers */,
+				20B5FE471BB363DE00C0F848 /* NSBundle+TKCategory.h in Headers */,
+				20B5FE491BB363E400C0F848 /* NSURLSession+TKCategory.h in Headers */,
+				20B5FE3E1BB363C000C0F848 /* NSDate+TKCategory.h in Headers */,
+				20B5FE4B1BB363EB00C0F848 /* NSTimer+Blocks.h in Headers */,
+				20B5FE3F1BB363C600C0F848 /* NSArray+TKCategory.h in Headers */,
+				20B5FE3B1BB363B600C0F848 /* NSString+TKCategory.h in Headers */,
+				20B5FE411BB363CB00C0F848 /* NSMutableArray+TKCategory.h in Headers */,
+				20B5FE221BB3613F00C0F848 /* curryMac.h in Headers */,
+				20B5FE371BB363A900C0F848 /* NSObject+JSON.h in Headers */,
+				20B5FE281BB3618B00C0F848 /* MacHeader.h in Headers */,
+				20B5FE391BB363B000C0F848 /* NSObject+TKCategory.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1086,6 +1148,24 @@
 			productReference = 2010DCB01BB0E40E00810A98 /* curryWatch.framework */;
 			productType = "com.apple.product-type.framework";
 		};
+		20B5FE1E1BB3613F00C0F848 /* curryMac */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 20B5FE261BB3613F00C0F848 /* Build configuration list for PBXNativeTarget "curryMac" */;
+			buildPhases = (
+				20B5FE1A1BB3613F00C0F848 /* Sources */,
+				20B5FE1B1BB3613F00C0F848 /* Frameworks */,
+				20B5FE1C1BB3613F00C0F848 /* Headers */,
+				20B5FE1D1BB3613F00C0F848 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = curryMac;
+			productName = curryMac;
+			productReference = 20B5FE1F1BB3613F00C0F848 /* curryMac.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 		20CEA42A1BA1105D0009D60C /* curryTV */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 20CEA4321BA1105D0009D60C /* Build configuration list for PBXNativeTarget "curryTV" */;
@@ -1125,6 +1205,9 @@
 					203FB7FA1B410DE0000D3B43 = {
 						CreatedOnToolsVersion = 6.3.2;
 					};
+					20B5FE1E1BB3613F00C0F848 = {
+						CreatedOnToolsVersion = 7.0;
+					};
 					20CEA42A1BA1105D0009D60C = {
 						CreatedOnToolsVersion = 7.1;
 					};
@@ -1147,6 +1230,7 @@
 				203FB7FA1B410DE0000D3B43 /* Documentation */,
 				20CEA42A1BA1105D0009D60C /* curryTV */,
 				2010DCAF1BB0E40E00810A98 /* curryWatch */,
+				20B5FE1E1BB3613F00C0F848 /* curryMac */,
 			);
 		};
 /* End PBXProject section */
@@ -1168,6 +1252,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		2010DCAE1BB0E40E00810A98 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		20B5FE1D1BB3613F00C0F848 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -1310,6 +1401,21 @@
 				2010DCC61BB0EAA800810A98 /* NSString+TKCategory.m in Sources */,
 				2010DCCD1BB0EAC300810A98 /* NSMutableArray+TKCategory.m in Sources */,
 				2010DCC21BB0EA9900810A98 /* NSObject+JSON.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		20B5FE1A1BB3613F00C0F848 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				20B5FE3A1BB363B400C0F848 /* NSObject+TKCategory.m in Sources */,
+				20B5FE3D1BB363BD00C0F848 /* NSDate+TKCategory.m in Sources */,
+				20B5FE401BB363C900C0F848 /* NSArray+TKCategory.m in Sources */,
+				20B5FE4A1BB363E800C0F848 /* NSURLSession+TKCategory.m in Sources */,
+				20B5FE4C1BB363EE00C0F848 /* NSTimer+Blocks.m in Sources */,
+				20B5FE481BB363E200C0F848 /* NSBundle+TKCategory.m in Sources */,
+				20B5FE3C1BB363BA00C0F848 /* NSString+TKCategory.m in Sources */,
+				20B5FE381BB363AE00C0F848 /* NSObject+JSON.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1588,6 +1694,46 @@
 			};
 			name = Release;
 		};
+		20B5FE241BB3613F00C0F848 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = curryMac/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				PRODUCT_BUNDLE_IDENTIFIER = com.devinross.curryMac;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		20B5FE251BB3613F00C0F848 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = curryMac/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				PRODUCT_BUNDLE_IDENTIFIER = com.devinross.curryMac;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
 		20CEA4301BA1105D0009D60C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -1673,6 +1819,14 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		20B5FE261BB3613F00C0F848 /* Build configuration list for PBXNativeTarget "curryMac" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				20B5FE241BB3613F00C0F848 /* Debug */,
+				20B5FE251BB3613F00C0F848 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 		20CEA4321BA1105D0009D60C /* Build configuration list for PBXNativeTarget "curryTV" */ = {
 			isa = XCConfigurationList;
