@@ -1,6 +1,9 @@
+![curry](https://github.com/devinross/curry/blob/master/Examples/appicon.png?raw=true)
+
 Curry
 ============
-Curry is an Cocoa Touch framework built to enhance and compliment Foundation and UIKit. If you're looking to see some of the framework in action see the example project or read the [documentation](http://devinross.com/curry/). 
+Curry is an Cocoa Touch framework built to enhance and compliment Foundation and UIKit. If you're looking to see some of the framework in action see the example project or read the [documentation](http://devinross.com/curry/
+). 
 
 ## Documentation
 Browse the documentation at [devinross.com/curry](http://devinross.com/curry/). To add the documentation directly to XCode, [download the docset](http://devinross.com/curry/com.devinross.curry.docset.zip) and place the docset into the `~/Library/Developer/Shared/Documentation/DocSets/` folder.
