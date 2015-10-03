@@ -34,14 +34,9 @@
 #import "UIDevice+TKCategory.h"
 #import "TKFoundation.h"
 #import "UIGestureRecognizer+TKCategory.h"
-#import "TKUIKit.h"
 
 @interface TKCardModalViewController () <UIGestureRecognizerDelegate>
 
-@property (nonatomic,strong) UIDynamicAnimator *animator;
-@property (nonatomic) UIAttachmentBehavior* attachmentBehavior;
-@property (nonatomic,strong) UIPushBehavior *pushBehavior;
-@property (nonatomic, strong) UIDynamicItemBehavior *itemBehavior;
 
 @property (nonatomic,assign) CGFloat angle;
 @property (nonatomic,assign) CGFloat magnitude;
@@ -189,6 +184,18 @@ static const CGFloat _minimumVelocityRequiredForPush = 50.0f;	// defines how muc
 	
 	
 }
+
+
+- (BOOL) shouldSnapBack{
+	
+	CGFloat deviceVelocityScale = (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad) ? 0.2f : 1.0f;
+	CGFloat velocityAdjust = 10.0f * deviceVelocityScale;
+	
+	BOOL willNotSnapBack = fabs(self.velocity.x / velocityAdjust) > _minimumVelocityRequiredForPush || fabs(self.velocity.y / velocityAdjust) > _minimumVelocityRequiredForPush;
+	
+	return !willNotSnapBack;
+}
+
 - (void) pan:(UIPanGestureRecognizer*)gesture{
 	if(!self.throwToDismissEnabled) return;
 	
@@ -216,6 +223,7 @@ static const CGFloat _minimumVelocityRequiredForPush = 50.0f;	// defines how muc
 		self.itemBehavior.resistance = _resistance;
 		[self.animator addBehavior:self.itemBehavior];
 		
+		
 		self.attachmentBehavior = [[UIAttachmentBehavior alloc] initWithItem:view offsetFromCenter:offset attachedToAnchor:p];
 		[self.animator addBehavior:self.attachmentBehavior];
 		
@@ -232,89 +240,103 @@ static const CGFloat _minimumVelocityRequiredForPush = 50.0f;	// defines how muc
 	if(gesture.state == UIGestureRecognizerStateEnded || gesture.state == UIGestureRecognizerStateCancelled){
 		
 		[self.animator removeAllBehaviors];
-		CGPoint location = [gesture locationInView:cnt];
-		CGPoint boxLocation = [gesture locationInView:view];
 		
-		// need to scale velocity values to tame down physics on the iPad
-		CGFloat deviceVelocityScale = (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad) ? 0.2f : 1.0f;
-		CGFloat deviceAngularScale = (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad) ? 0.7f : 1.0f;
-		// factor to increase delay before `dismissAfterPush` is called on iPad to account for more area to cover to disappear
-		//CGFloat deviceDismissDelay = (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad) ? 1.8f : 1.0f;
-		CGPoint velocity = [gesture velocityInView:self.view];
-		CGFloat velocityAdjust = 10.0f * deviceVelocityScale;
+		self.velocity = [gesture velocityInView:self.view];
 		
-		if (fabs(velocity.x / velocityAdjust) > _minimumVelocityRequiredForPush || fabs(velocity.y / velocityAdjust) > _minimumVelocityRequiredForPush) {
+		if(![self shouldSnapBack]) {
 			
 			
-			self.pushBehavior = [[UIPushBehavior alloc] initWithItems:@[view] mode:UIPushBehaviorModeInstantaneous];
-			self.pushBehavior.angle = 0.0f;
-			self.pushBehavior.magnitude = 0.0f;
-			
-			
-			UIOffset offsetFromCenter = UIOffsetMake(boxLocation.x - CGRectGetMidX(view.bounds), boxLocation.y - CGRectGetMidY(view.bounds));
-			CGFloat radius = sqrtf(powf(offsetFromCenter.horizontal, 2.0f) + powf(offsetFromCenter.vertical, 2.0f));
-			CGFloat pushVelocity = sqrtf(powf(velocity.x, 2.0f) + powf(velocity.y, 2.0f));
-			
-			// calculate angles needed for angular velocity formula
-			CGFloat velocityAngle = atan2f(velocity.y, velocity.x);
-			CGFloat locationAngle = atan2f(offsetFromCenter.vertical, offsetFromCenter.horizontal);
-			if (locationAngle > 0) {
-				locationAngle -= M_PI * 2;
-			}
-			
-			// angle (θ) is the angle between the push vector (V) and vector component parallel to radius, so it should always be positive
-			CGFloat angle = fabs(fabs(velocityAngle) - fabs(locationAngle));
-			// angular velocity formula: w = (abs(V) * sin(θ)) / abs(r)
-			CGFloat angularVelocity = fabs((fabs(pushVelocity) * sinf(angle)) / fabs(radius));
-			
-			// rotation direction is dependent upon which corner was pushed relative to the center of the view
-			// when velocity.y is positive, pushes to the right of center rotate clockwise, left is counterclockwise
-			CGFloat direction = (location.x < view.center.x) ? -1.0f : 1.0f;
-			// when y component of velocity is negative, reverse direction
-			if (velocity.y < 0) { direction *= -1; }
-			
-			// amount of angular velocity should be relative to how close to the edge of the view the force originated
-			// angular velocity is reduced the closer to the center the force is applied
-			// for angular velocity: positive = clockwise, negative = counterclockwise
-			CGFloat xRatioFromCenter = fabs(offsetFromCenter.horizontal) / (CGRectGetWidth(view.frame) / 2.0f);
-			CGFloat yRatioFromCetner = fabs(offsetFromCenter.vertical) / (CGRectGetHeight(view.frame) / 2.0f);
-			
-			// apply device scale to angular velocity
-			angularVelocity *= deviceAngularScale;
-			// adjust angular velocity based on distance from center, force applied farther towards the edges gets more spin
-			angularVelocity *= ((xRatioFromCenter + yRatioFromCetner) / 2.0f);
-			
-			
-			
-			
-			[self.itemBehavior addAngularVelocity:angularVelocity * _angularVelocityFactor * direction forItem:view];
-			[self.animator addBehavior:self.pushBehavior];
-			self.pushBehavior.pushDirection = CGVectorMake((velocity.x / velocityAdjust) * _velocityFactor, (velocity.y / velocityAdjust) * _velocityFactor);
-			self.pushBehavior.active = YES;
-			[self.animator addBehavior:self.pushBehavior];
-			
-			
-			CGFloat dimension = MAX(CGFrameGetHeight(self.contentView),CGFrameGetWidth(self.contentView)) * 1.1;
-			dimension = -MAX(dimension,420);
-			
-			UICollisionBehavior *collide = [[UICollisionBehavior alloc] initWithItems:@[view]];
-			collide.translatesReferenceBoundsIntoBoundary = YES;
-			[collide setTranslatesReferenceBoundsIntoBoundaryWithInsets:UIEdgeInsetsMake(dimension, dimension, dimension, dimension)];
-			collide.collisionDelegate = self;
-			[self.animator addBehavior:collide];
-			
-			// delay for dismissing is based on push velocity also
-			return;
+			[self interactiveDismissalWithGesture:gesture];
+		}else{
+			[self snapBackView:view];
 		}
 		
 		
-		//CGPoint pp = [self.view convertPoint:self.cardRestingPosition toView:cnt];
-		UISnapBehavior *snapBehavior = [[UISnapBehavior alloc] initWithItem:view snapToPoint:self.cardRestingPosition];
-		snapBehavior.damping = 0.85;
-		[self.animator addBehavior:snapBehavior];
 		
 	}
 	
+}
+
+- (void) interactiveDismissalWithGesture:(UIPanGestureRecognizer*)gesture{
+	
+	UIView *view = gesture.view;
+	UIView *cnt = view.superview;
+	
+	CGPoint location = [gesture locationInView:cnt];
+	CGPoint boxLocation = [gesture locationInView:view];
+	
+	// need to scale velocity values to tame down physics on the iPad
+	CGFloat deviceVelocityScale = (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad) ? 0.2f : 1.0f;
+	CGFloat deviceAngularScale = (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad) ? 0.7f : 1.0f;
+	// factor to increase delay before `dismissAfterPush` is called on iPad to account for more area to cover to disappear
+	//CGFloat deviceDismissDelay = (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad) ? 1.8f : 1.0f;
+	CGFloat velocityAdjust = 10.0f * deviceVelocityScale;
+	self.pushBehavior = [[UIPushBehavior alloc] initWithItems:@[view] mode:UIPushBehaviorModeInstantaneous];
+	self.pushBehavior.angle = 0.0f;
+	self.pushBehavior.magnitude = 0.0f;
+	
+	
+	UIOffset offsetFromCenter = UIOffsetMake(boxLocation.x - CGRectGetMidX(view.bounds), boxLocation.y - CGRectGetMidY(view.bounds));
+	CGFloat radius = sqrtf(powf(offsetFromCenter.horizontal, 2.0f) + powf(offsetFromCenter.vertical, 2.0f));
+	CGFloat pushVelocity = sqrtf(powf(self.velocity.x, 2.0f) + powf(self.velocity.y, 2.0f));
+	
+	// calculate angles needed for angular velocity formula
+	CGFloat velocityAngle = atan2f(self.velocity.y, self.velocity.x);
+	CGFloat locationAngle = atan2f(offsetFromCenter.vertical, offsetFromCenter.horizontal);
+	if (locationAngle > 0) {
+		locationAngle -= M_PI * 2;
+	}
+	
+	// angle (θ) is the angle between the push vector (V) and vector component parallel to radius, so it should always be positive
+	CGFloat angle = fabs(fabs(velocityAngle) - fabs(locationAngle));
+	// angular velocity formula: w = (abs(V) * sin(θ)) / abs(r)
+	CGFloat angularVelocity = fabs((fabs(pushVelocity) * sinf(angle)) / fabs(radius));
+	
+	// rotation direction is dependent upon which corner was pushed relative to the center of the view
+	// when velocity.y is positive, pushes to the right of center rotate clockwise, left is counterclockwise
+	CGFloat direction = (location.x < view.center.x) ? -1.0f : 1.0f;
+	// when y component of velocity is negative, reverse direction
+	if (self.velocity.y < 0) { direction *= -1; }
+	
+	// amount of angular velocity should be relative to how close to the edge of the view the force originated
+	// angular velocity is reduced the closer to the center the force is applied
+	// for angular velocity: positive = clockwise, negative = counterclockwise
+	CGFloat xRatioFromCenter = fabs(offsetFromCenter.horizontal) / (CGRectGetWidth(view.frame) / 2.0f);
+	CGFloat yRatioFromCetner = fabs(offsetFromCenter.vertical) / (CGRectGetHeight(view.frame) / 2.0f);
+	
+	// apply device scale to angular velocity
+	angularVelocity *= deviceAngularScale;
+	// adjust angular velocity based on distance from center, force applied farther towards the edges gets more spin
+	angularVelocity *= ((xRatioFromCenter + yRatioFromCetner) / 2.0f);
+	
+	
+	
+	
+	[self.itemBehavior addAngularVelocity:angularVelocity * _angularVelocityFactor * direction forItem:view];
+	[self.animator addBehavior:self.pushBehavior];
+	self.pushBehavior.pushDirection = CGVectorMake((self.velocity.x / velocityAdjust) * _velocityFactor, (self.velocity.y / velocityAdjust) * _velocityFactor);
+	self.pushBehavior.active = YES;
+	[self.animator addBehavior:self.pushBehavior];
+	
+	
+	CGFloat dimension = MAX(CGFrameGetHeight(self.contentView),CGFrameGetWidth(self.contentView)) * 1.1;
+	dimension = -MAX(dimension,420);
+	
+	UICollisionBehavior *collide = [[UICollisionBehavior alloc] initWithItems:@[view]];
+	collide.translatesReferenceBoundsIntoBoundary = YES;
+	[collide setTranslatesReferenceBoundsIntoBoundaryWithInsets:UIEdgeInsetsMake(dimension, dimension, dimension, dimension)];
+	collide.collisionDelegate = self;
+	[self.animator addBehavior:collide];
+	
+	// delay for dismissing is based on push velocity also
+	
+	
+}
+
+- (void) snapBackView:(UIView*)view{
+	UISnapBehavior *snapBehavior = [[UISnapBehavior alloc] initWithItem:view snapToPoint:self.cardRestingPosition];
+	snapBehavior.damping = 0.85;
+	[self.animator addBehavior:snapBehavior];
 }
 
 #pragma mark Actions

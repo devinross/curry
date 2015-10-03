@@ -32,8 +32,8 @@
 @import UIKit;
 #import "TKCustomPresentationViewController.h"
 
-/** `TKCardModalViewController` is a custom presented `UIViewController` 
- *  with a main white card view that drops in and can be easily dismissed 
+/** `TKCardModalViewController` is a custom presented `UIViewController`
+ *  with a main white card view that drops in and can be easily dismissed
  *  similiar to a `UIAlertView`.
  */
 @interface TKCardModalViewController : TKCustomPresentationViewController <UICollisionBehaviorDelegate>
@@ -56,6 +56,16 @@
 /** If a keyboard is displayed. The visible frame will adjust. */
 @property (nonatomic,assign) CGRect visibleFrame;
 
+@property (nonatomic,assign) CGPoint velocity;
+@property (nonatomic,strong) UIDynamicAnimator *animator;
+@property (nonatomic) UIAttachmentBehavior* attachmentBehavior;
+@property (nonatomic,strong) UIPushBehavior *pushBehavior;
+@property (nonatomic, strong) UIDynamicItemBehavior *itemBehavior;
+
+
+
+- (void) interactiveDismissalWithGesture:(UIPanGestureRecognizer*)gesture;
+
 /** A notification callback that a keyboard will be shown.
  @param notification The `NSNotification` sender.
  */
@@ -76,5 +86,8 @@
  @param sender The `UITapGestureRecognizer` sender.
  */
 - (void) tapped:(UITapGestureRecognizer*)sender;
+
+
+- (void) pan:(UIPanGestureRecognizer*)gesture;
 
 @end

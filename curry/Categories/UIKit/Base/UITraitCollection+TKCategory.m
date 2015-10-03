@@ -45,7 +45,7 @@
 	return self.horizontalSizeClass == UIUserInterfaceSizeClassCompact;
 }
 - (BOOL) compactVerticalSizeClass{
-	return self.verticalSizeClass == UIUserInterfaceSizeClassRegular;
+	return self.verticalSizeClass == UIUserInterfaceSizeClassCompact;
 }
 - (BOOL) regularVerticalSizeClass{
 	return self.verticalSizeClass == UIUserInterfaceSizeClassRegular;
