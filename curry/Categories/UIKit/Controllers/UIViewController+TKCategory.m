@@ -30,6 +30,7 @@
  */
 
 #import "UIViewController+TKCategory.h"
+#import "UIAlertController+TKCategory.h"
 
 @implementation UIViewController (TKCategory)
 
@@ -40,5 +41,9 @@
 }
 
 
+- (void) presentAlertControllWithTitle:(NSString*)title message:(NSString*)message dismiss:(NSString*)dismiss{
+	UIAlertController *alert = [UIAlertController alertControllerWithTitle:title message:message dismiss:dismiss];
+	[self presentViewController:alert animated:YES completion:nil];
+}
 
 @end

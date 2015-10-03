@@ -1,6 +1,6 @@
 //
-//  UIViewController+TKCategory.h
-//  Created by Devin Ross on 8/23/13.
+//  UIAlertController+TKCategory.h
+//  Created by Devin Ross on 10/2/15.
 //
 /*
  
@@ -31,18 +31,8 @@
 
 @import UIKit;
 
-/** Additional functionality for `UIViewController`. */
-@interface UIViewController (TKCategory)
+@interface UIAlertController (TKCategory)
 
-
-/** Present a `UINavigationController` with a given root view controller.
- @param rootViewControllerToPresent The root view controller for the `UINavigationController`.
- @param animated Present the navigation controller with animation.
- @param completion Completion callback block.
- */
-- (void) presentNavigationControllerWithRoot:(UIViewController *)rootViewControllerToPresent animated:(BOOL)animated completion:(void (^)(void))completion;
-
-
-- (void) presentAlertControllWithTitle:(NSString*)title message:(NSString*)message dismiss:(NSString*)dismiss;
++ (UIAlertController*) alertControllerWithTitle:(NSString*)title message:(NSString*)message dismiss:(NSString*)dismiss;
 
 @end

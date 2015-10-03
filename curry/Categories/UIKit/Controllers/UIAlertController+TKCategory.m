@@ -1,6 +1,6 @@
 //
-//  UIViewController+TKCategory.h
-//  Created by Devin Ross on 8/23/13.
+//  UIAlertController+TKCategory.m
+//  Created by Devin Ross on 10/2/15.
 //
 /*
  
@@ -29,20 +29,16 @@
  
  */
 
-@import UIKit;
 
-/** Additional functionality for `UIViewController`. */
-@interface UIViewController (TKCategory)
+#import "UIAlertController+TKCategory.h"
 
+@implementation UIAlertController (TKCategory)
 
-/** Present a `UINavigationController` with a given root view controller.
- @param rootViewControllerToPresent The root view controller for the `UINavigationController`.
- @param animated Present the navigation controller with animation.
- @param completion Completion callback block.
- */
-- (void) presentNavigationControllerWithRoot:(UIViewController *)rootViewControllerToPresent animated:(BOOL)animated completion:(void (^)(void))completion;
-
-
-- (void) presentAlertControllWithTitle:(NSString*)title message:(NSString*)message dismiss:(NSString*)dismiss;
++ (UIAlertController*) alertControllerWithTitle:(NSString*)title message:(NSString*)message dismiss:(NSString*)dismiss{
+	if(!dismiss) dismiss = NSLocalizedString(@"Dismiss", @"Dismiss Alert View");
+	UIAlertController *alert = [UIAlertController alertControllerWithTitle:title message:message preferredStyle:UIAlertControllerStyleAlert];
+	[alert addAction:[UIAlertAction actionWithTitle:dismiss style:UIAlertActionStyleCancel handler:nil]];
+	return alert;
+}
 
 @end

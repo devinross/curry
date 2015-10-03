@@ -35,6 +35,7 @@
 #import "BlocksViewController.h"
 #import "CustomKeyboardViewController.h"
 #import "VideoViewController.h"
+#import "PDFGeneratorViewController.h"
 
 @implementation RootTableViewController
 
@@ -42,7 +43,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.items = @[@"Card Modal",@"Custom Text Fields",@"Gestures Blocks",@"Action Sheet Blocks",@"Custom Keyboards",@"Video View Controller"];
+    self.items = @[@"Card Modal",@"Custom Text Fields",@"Gestures Blocks",@"Action Sheet Blocks",@"Custom Keyboards",@"Video View Controller",@"PDF Generation"];
     [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:IDENTIFIER];
     self.title = NSLocalizedString(@"Curry", @"");
 }
@@ -80,6 +81,10 @@
         ctr = CustomKeyboardViewController.new;
 	else if(indexPath.row == 5)
 		ctr = VideoViewController.new;
+	else if(indexPath.row == 6)
+		ctr = PDFGeneratorViewController.new;
+	
+	
 
     [self.navigationController pushViewController:ctr animated:YES];
     

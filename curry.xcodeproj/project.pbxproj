@@ -182,6 +182,8 @@
 		20A75C691AD8332F00E2106A /* TKSectionedScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 20A75C671AD8332F00E2106A /* TKSectionedScrollView.m */; };
 		20A75C851AD836DD00E2106A /* NSBundle+TKCategory.h in Headers */ = {isa = PBXBuildFile; fileRef = 20A75C831AD836DD00E2106A /* NSBundle+TKCategory.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		20A75C861AD836DD00E2106A /* NSBundle+TKCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 20A75C841AD836DD00E2106A /* NSBundle+TKCategory.m */; };
+		20A877131BBF554100A403C2 /* UIAlertController+TKCategory.h in Headers */ = {isa = PBXBuildFile; fileRef = 20A877111BBF554100A403C2 /* UIAlertController+TKCategory.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		20A877141BBF554100A403C2 /* UIAlertController+TKCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 20A877121BBF554100A403C2 /* UIAlertController+TKCategory.m */; settings = {ASSET_TAGS = (); }; };
 		20B5FE221BB3613F00C0F848 /* curryMac.h in Headers */ = {isa = PBXBuildFile; fileRef = 20B5FE211BB3613F00C0F848 /* curryMac.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		20B5FE281BB3618B00C0F848 /* MacHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = 20B5FE271BB3618B00C0F848 /* MacHeader.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		20B5FE361BB363A200C0F848 /* TKFoundation.h in Headers */ = {isa = PBXBuildFile; fileRef = 200B62721AD7FBDC0049E35C /* TKFoundation.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -479,6 +481,8 @@
 		20A75C671AD8332F00E2106A /* TKSectionedScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TKSectionedScrollView.m; sourceTree = "<group>"; };
 		20A75C831AD836DD00E2106A /* NSBundle+TKCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSBundle+TKCategory.h"; sourceTree = "<group>"; };
 		20A75C841AD836DD00E2106A /* NSBundle+TKCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSBundle+TKCategory.m"; sourceTree = "<group>"; };
+		20A877111BBF554100A403C2 /* UIAlertController+TKCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIAlertController+TKCategory.h"; sourceTree = "<group>"; };
+		20A877121BBF554100A403C2 /* UIAlertController+TKCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIAlertController+TKCategory.m"; sourceTree = "<group>"; };
 		20B5FE1F1BB3613F00C0F848 /* curryMac.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = curryMac.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		20B5FE211BB3613F00C0F848 /* curryMac.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = curryMac.h; sourceTree = "<group>"; };
 		20B5FE231BB3613F00C0F848 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -698,6 +702,8 @@
 		200B62FA1AD7FFD90049E35C /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				20A877111BBF554100A403C2 /* UIAlertController+TKCategory.h */,
+				20A877121BBF554100A403C2 /* UIAlertController+TKCategory.m */,
 				200B62C61AD7FEF80049E35C /* UIViewController+TKCategory.h */,
 				200B62C71AD7FEF80049E35C /* UIViewController+TKCategory.m */,
 				200B62C21AD7FEF80049E35C /* UIImagePickerController+TKCategory.h */,
@@ -915,6 +921,7 @@
 				200B630C1AD804350049E35C /* TKKeyboardTableViewController.h in Headers */,
 				20CEA4E51BA150510009D60C /* UIView+GestureRecognizerBlock.h in Headers */,
 				200B62E21AD7FEF80049E35C /* UIBarButtonItem+TKCategory.h in Headers */,
+				20A877131BBF554100A403C2 /* UIAlertController+TKCategory.h in Headers */,
 				200B62741AD7FBDC0049E35C /* TKFoundation.h in Headers */,
 				200B62F41AD7FEF80049E35C /* UINavigationBar+TKCategory.h in Headers */,
 				200B628E1AD7FC5E0049E35C /* NSMutableArray+TKCategory.h in Headers */,
@@ -1314,6 +1321,7 @@
 				20CEA4E61BA150510009D60C /* UIView+GestureRecognizerBlock.m in Sources */,
 				20CEA4DD1BA1503D0009D60C /* UIScrollView+Positioning.m in Sources */,
 				200B62951AD7FC5E0049E35C /* NSMutableAttributedString+TKCategory.m in Sources */,
+				20A877141BBF554100A403C2 /* UIAlertController+TKCategory.m in Sources */,
 				202DBEBA1AF4347A00B0CE67 /* TKInputView.m in Sources */,
 				20CB9CFF1AF3F126002E9F1C /* UIAlertView+Blocks.m in Sources */,
 				200B630D1AD804350049E35C /* TKKeyboardTableViewController.m in Sources */,
@@ -1827,6 +1835,7 @@
 				20B5FE251BB3613F00C0F848 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		20CEA4321BA1105D0009D60C /* Build configuration list for PBXNativeTarget "curryTV" */ = {
 			isa = XCConfigurationList;

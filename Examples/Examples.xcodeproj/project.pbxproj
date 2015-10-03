@@ -16,6 +16,7 @@
 		20785FFD1AD83DC1000DC57F /* CustomTextEntryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 20785FFC1AD83DC1000DC57F /* CustomTextEntryViewController.m */; };
 		2097F35C1B3DA3F100247736 /* VideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2097F35B1B3DA3F100247736 /* VideoViewController.m */; };
 		20CB9CF81AF3EA47002E9F1C /* BlocksViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 20CB9CF71AF3EA47002E9F1C /* BlocksViewController.m */; };
+		20D4C89C1BB52A0000C75EEC /* PDFGeneratorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 20D4C89B1BB52A0000C75EEC /* PDFGeneratorViewController.m */; settings = {ASSET_TAGS = (); }; };
 		20EC669D1B3DAD1D0027D6A2 /* balllin.mov in Resources */ = {isa = PBXBuildFile; fileRef = 20EC669C1B3DAD1D0027D6A2 /* balllin.mov */; };
 		20F19B1D1AE080F700077DA1 /* GesturesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 20F19B1C1AE080F700077DA1 /* GesturesViewController.m */; };
 /* End PBXBuildFile section */
@@ -41,6 +42,27 @@
 			proxyType = 1;
 			remoteGlobalIDString = 200B62541AD7FB450049E35C;
 			remoteInfo = curry;
+		};
+		20D4C8A21BB52A0100C75EEC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 20785FED1AD83CED000DC57F /* curry.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 20CEA42B1BA1105D0009D60C;
+			remoteInfo = curryTV;
+		};
+		20D4C8A41BB52A0100C75EEC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 20785FED1AD83CED000DC57F /* curry.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 2010DCB01BB0E40E00810A98;
+			remoteInfo = curryWatch;
+		};
+		20D4C8A61BB52A0100C75EEC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 20785FED1AD83CED000DC57F /* curry.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 20B5FE1F1BB3613F00C0F848;
+			remoteInfo = curryMac;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -75,6 +97,8 @@
 		2097F35B1B3DA3F100247736 /* VideoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VideoViewController.m; sourceTree = "<group>"; };
 		20CB9CF61AF3EA47002E9F1C /* BlocksViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BlocksViewController.h; sourceTree = "<group>"; };
 		20CB9CF71AF3EA47002E9F1C /* BlocksViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BlocksViewController.m; sourceTree = "<group>"; };
+		20D4C89A1BB52A0000C75EEC /* PDFGeneratorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PDFGeneratorViewController.h; sourceTree = "<group>"; };
+		20D4C89B1BB52A0000C75EEC /* PDFGeneratorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PDFGeneratorViewController.m; sourceTree = "<group>"; };
 		20EC669C1B3DAD1D0027D6A2 /* balllin.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = balllin.mov; sourceTree = "<group>"; };
 		20F19B1B1AE080F700077DA1 /* GesturesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GesturesViewController.h; sourceTree = "<group>"; };
 		20F19B1C1AE080F700077DA1 /* GesturesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GesturesViewController.m; sourceTree = "<group>"; };
@@ -123,6 +147,8 @@
 				207394231B14FC1600DBA74A /* CustomKeyboardViewController.m */,
 				20CB9CF61AF3EA47002E9F1C /* BlocksViewController.h */,
 				20CB9CF71AF3EA47002E9F1C /* BlocksViewController.m */,
+				20D4C89A1BB52A0000C75EEC /* PDFGeneratorViewController.h */,
+				20D4C89B1BB52A0000C75EEC /* PDFGeneratorViewController.m */,
 				2097F35A1B3DA3F100247736 /* VideoViewController.h */,
 				2097F35B1B3DA3F100247736 /* VideoViewController.m */,
 				20785FC21AD83BBE000DC57F /* Supporting Files */,
@@ -146,6 +172,9 @@
 			children = (
 				20785FF31AD83CEE000DC57F /* curry.framework */,
 				20785FF51AD83CEE000DC57F /* curryTests.xctest */,
+				20D4C8A31BB52A0100C75EEC /* curryTV.framework */,
+				20D4C8A51BB52A0100C75EEC /* curryWatch.framework */,
+				20D4C8A71BB52A0100C75EEC /* curryMac.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -242,6 +271,27 @@
 			remoteRef = 20785FF41AD83CEE000DC57F /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
+		20D4C8A31BB52A0100C75EEC /* curryTV.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = curryTV.framework;
+			remoteRef = 20D4C8A21BB52A0100C75EEC /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		20D4C8A51BB52A0100C75EEC /* curryWatch.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = curryWatch.framework;
+			remoteRef = 20D4C8A41BB52A0100C75EEC /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		20D4C8A71BB52A0100C75EEC /* curryMac.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = curryMac.framework;
+			remoteRef = 20D4C8A61BB52A0100C75EEC /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
 /* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
@@ -268,6 +318,7 @@
 				2097F35C1B3DA3F100247736 /* VideoViewController.m in Sources */,
 				207394241B14FC1600DBA74A /* CustomKeyboardViewController.m in Sources */,
 				20785FFD1AD83DC1000DC57F /* CustomTextEntryViewController.m in Sources */,
+				20D4C89C1BB52A0000C75EEC /* PDFGeneratorViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

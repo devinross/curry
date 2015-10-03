@@ -89,6 +89,8 @@
 #import "UIAlertView+TKCategory.h"
 #import "UIActionSheet+Blocks.h"
 #import "UIAlertView+Blocks.h"
+#import "UIAlertController+TKCategory.h"
+
 
 
 // Categories -> UIKit -> Animations
