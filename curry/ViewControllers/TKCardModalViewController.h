@@ -56,12 +56,20 @@
 /** If a keyboard is displayed. The visible frame will adjust. */
 @property (nonatomic,assign) CGRect visibleFrame;
 
+/** The velocity from a pan gesture on the card. */
 @property (nonatomic,assign) CGPoint velocity;
-@property (nonatomic,strong) UIDynamicAnimator *animator;
-@property (nonatomic) UIAttachmentBehavior* attachmentBehavior;
-@property (nonatomic,strong) UIPushBehavior *pushBehavior;
-@property (nonatomic, strong) UIDynamicItemBehavior *itemBehavior;
 
+/** The animator that controls the card physics animation. */
+@property (nonatomic,strong) UIDynamicAnimator *animator;
+
+/** The animator that controls the card physics animation. */
+@property (nonatomic,strong) UIAttachmentBehavior* attachmentBehavior;
+
+/** The push behavior from the velocity of the pan gesture. */
+@property (nonatomic,strong) UIPushBehavior *pushBehavior;
+
+/** The item behavior of the card. */
+@property (nonatomic,strong) UIDynamicItemBehavior *itemBehavior;
 
 
 - (void) interactiveDismissalWithGesture:(UIPanGestureRecognizer*)gesture;
@@ -82,12 +90,14 @@
 /** This will hide the view controller. */
 - (void) hide;
 
-/** The function called when a tap gesture is called.
+/** The function called when a tap gesture is called. For subclassing.
  @param sender The `UITapGestureRecognizer` sender.
  */
 - (void) tapped:(UITapGestureRecognizer*)sender;
 
-
+/** The function called when a pan gesture is called. For subclassing.
+ @param gesture The `UIPanGestureRecognizer` sender.
+ */
 - (void) pan:(UIPanGestureRecognizer*)gesture;
 
 @end
