@@ -34,6 +34,13 @@
 @implementation UIView (TKCategory)
 
 
+- (BOOL) visible{
+	return !self.hidden;
+}
+- (void) setVisible:(BOOL)visible{
+	self.hidden = !visible;
+}
+
 - (void) addSubviewToBack:(UIView*)view{
 	[self insertSubview:view atIndex:0];
 }

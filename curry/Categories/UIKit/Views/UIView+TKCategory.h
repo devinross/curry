@@ -36,6 +36,9 @@
 /** Additional functionality for `UIView`. */
 @interface UIView (TKCategory)
 
+/** The opposite of hidden. */
+@property (nonatomic,assign) BOOL visible;
+
 /** Adds a view to the beginning of the receiver’s list of subviews.
  @param view The view to be added. This view is retained by the receiver. After being added, this view appears below of any other subviews.
  */
