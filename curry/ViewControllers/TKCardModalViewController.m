@@ -62,12 +62,12 @@ static const CGFloat _minimumVelocityRequiredForPush = 50.0f;	// defines how muc
 	self.throwToDismissEnabled = YES;
 	return self;
 }
-- (UIInterfaceOrientationMask) supportedInterfaceOrientations{
-	if([[UIDevice currentDevice] padIdiom])
-		return UIInterfaceOrientationMaskAll;
-	return UIInterfaceOrientationMaskPortrait;
-}
 
+//- (UIInterfaceOrientationMask) supportedInterfaceOrientations{
+//	if([[UIDevice currentDevice] padIdiom])
+//		return UIInterfaceOrientationMaskAll;
+//	return UIInterfaceOrientationMaskPortrait;
+//}
 
 #pragma mark View Lifecycle
 - (void) loadView{
@@ -79,6 +79,7 @@ static const CGFloat _minimumVelocityRequiredForPush = 50.0f;	// defines how muc
 	self.backgroundView = [[UIView alloc] initWithFrame:self.view.bounds];
 	self.backgroundView.backgroundColor = [UIColor colorWithWhite:0 alpha:0.5];
 	self.backgroundView.alpha = 0;
+	self.backgroundView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
 	[self.view addSubview:self.backgroundView];
 	
 	

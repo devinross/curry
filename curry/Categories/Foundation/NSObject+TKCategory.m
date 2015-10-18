@@ -51,6 +51,7 @@
 	return self;
 }
 - (void) importDataWithDictionary:(NSDictionary*)rawData{
+	if(![rawData isKindOfClass:[NSDictionary class]]) return;
 	
 	NSDateFormatter *formatter = nil;
 	NSDictionary *propertyKeys = [[self class] dataKeys];
