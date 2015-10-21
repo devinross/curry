@@ -1,7 +1,6 @@
 //
-//  curryMac.h
-//  Created by Devin Ross on 9/23/15.
-//  Copyright © 2015 Devin Ross. All rights reserved.
+//  NSView+TKCategory.h
+//  Created by Devin Ross on 10/21/15.
 //
 /*
  
@@ -30,15 +29,16 @@
  
  */
 
-#import <Cocoa/Cocoa.h>
+@import Cocoa;
 
-//! Project version number for curryMac.
-FOUNDATION_EXPORT double curryMacVersionNumber;
+@interface NSView (TKCategory)
 
-//! Project version string for curryMac.
-FOUNDATION_EXPORT const unsigned char curryMacVersionString[];
+/** The opposite of hidden. */
+@property (nonatomic,assign) BOOL visible;
 
-// In this header, you should import all the public headers of your framework using statements like #import <curryMac/PublicHeader.h>
+/** Adds a view to the beginning of the receiver’s list of subviews.
+ @param view The view to be added. This view is retained by the receiver. After being added, this view appears below of any other subviews.
+ */
+- (void) addSubviewToBack:(NSView*)view;
 
-
-#import "MacHeader.h"
+@end

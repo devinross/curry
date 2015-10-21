@@ -104,28 +104,28 @@
 		2010DCB31BB0E40E00810A98 /* curryWatch.h in Headers */ = {isa = PBXBuildFile; fileRef = 2010DCB21BB0E40E00810A98 /* curryWatch.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2010DCC01BB0EA7800810A98 /* TKUIKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 2010DCBF1BB0EA0600810A98 /* TKUIKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2010DCC11BB0EA9400810A98 /* NSObject+JSON.h in Headers */ = {isa = PBXBuildFile; fileRef = 200B629B1AD7FD660049E35C /* NSObject+JSON.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		2010DCC21BB0EA9900810A98 /* NSObject+JSON.m in Sources */ = {isa = PBXBuildFile; fileRef = 200B629C1AD7FD660049E35C /* NSObject+JSON.m */; settings = {ASSET_TAGS = (); }; };
+		2010DCC21BB0EA9900810A98 /* NSObject+JSON.m in Sources */ = {isa = PBXBuildFile; fileRef = 200B629C1AD7FD660049E35C /* NSObject+JSON.m */; };
 		2010DCC31BB0EA9B00810A98 /* NSObject+TKCategory.h in Headers */ = {isa = PBXBuildFile; fileRef = 200B62761AD7FC5E0049E35C /* NSObject+TKCategory.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		2010DCC41BB0EA9F00810A98 /* NSObject+TKCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 200B62771AD7FC5E0049E35C /* NSObject+TKCategory.m */; settings = {ASSET_TAGS = (); }; };
+		2010DCC41BB0EA9F00810A98 /* NSObject+TKCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 200B62771AD7FC5E0049E35C /* NSObject+TKCategory.m */; };
 		2010DCC51BB0EAA300810A98 /* NSString+TKCategory.h in Headers */ = {isa = PBXBuildFile; fileRef = 200B62781AD7FC5E0049E35C /* NSString+TKCategory.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		2010DCC61BB0EAA800810A98 /* NSString+TKCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 200B62791AD7FC5E0049E35C /* NSString+TKCategory.m */; settings = {ASSET_TAGS = (); }; };
+		2010DCC61BB0EAA800810A98 /* NSString+TKCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 200B62791AD7FC5E0049E35C /* NSString+TKCategory.m */; };
 		2010DCC71BB0EAAB00810A98 /* NSDate+TKCategory.h in Headers */ = {isa = PBXBuildFile; fileRef = 204922C21B46F15900C22245 /* NSDate+TKCategory.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2010DCC81BB0EAAD00810A98 /* NSDate+TKCategory.h in Headers */ = {isa = PBXBuildFile; fileRef = 204922C21B46F15900C22245 /* NSDate+TKCategory.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		2010DCC91BB0EAB500810A98 /* NSDate+TKCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 204922C31B46F15900C22245 /* NSDate+TKCategory.m */; settings = {ASSET_TAGS = (); }; };
+		2010DCC91BB0EAB500810A98 /* NSDate+TKCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 204922C31B46F15900C22245 /* NSDate+TKCategory.m */; };
 		2010DCCA1BB0EAB700810A98 /* NSArray+TKCategory.h in Headers */ = {isa = PBXBuildFile; fileRef = 200B627A1AD7FC5E0049E35C /* NSArray+TKCategory.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		2010DCCB1BB0EABB00810A98 /* NSArray+TKCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 200B627B1AD7FC5E0049E35C /* NSArray+TKCategory.m */; settings = {ASSET_TAGS = (); }; };
+		2010DCCB1BB0EABB00810A98 /* NSArray+TKCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 200B627B1AD7FC5E0049E35C /* NSArray+TKCategory.m */; };
 		2010DCCC1BB0EABF00810A98 /* NSMutableArray+TKCategory.h in Headers */ = {isa = PBXBuildFile; fileRef = 200B627C1AD7FC5E0049E35C /* NSMutableArray+TKCategory.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		2010DCCD1BB0EAC300810A98 /* NSMutableArray+TKCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 200B627D1AD7FC5E0049E35C /* NSMutableArray+TKCategory.m */; settings = {ASSET_TAGS = (); }; };
+		2010DCCD1BB0EAC300810A98 /* NSMutableArray+TKCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 200B627D1AD7FC5E0049E35C /* NSMutableArray+TKCategory.m */; };
 		2010DCCE1BB0EAC600810A98 /* NSAttributedString+TKCategory.h in Headers */ = {isa = PBXBuildFile; fileRef = 200B62801AD7FC5E0049E35C /* NSAttributedString+TKCategory.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		2010DCCF1BB0EACB00810A98 /* NSAttributedString+TKCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 200B62811AD7FC5E0049E35C /* NSAttributedString+TKCategory.m */; settings = {ASSET_TAGS = (); }; };
+		2010DCCF1BB0EACB00810A98 /* NSAttributedString+TKCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 200B62811AD7FC5E0049E35C /* NSAttributedString+TKCategory.m */; };
 		2010DCD01BB0EACD00810A98 /* NSMutableAttributedString+TKCategory.h in Headers */ = {isa = PBXBuildFile; fileRef = 200B62821AD7FC5E0049E35C /* NSMutableAttributedString+TKCategory.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		2010DCD11BB0EAD100810A98 /* NSMutableAttributedString+TKCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 200B62831AD7FC5E0049E35C /* NSMutableAttributedString+TKCategory.m */; settings = {ASSET_TAGS = (); }; };
+		2010DCD11BB0EAD100810A98 /* NSMutableAttributedString+TKCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 200B62831AD7FC5E0049E35C /* NSMutableAttributedString+TKCategory.m */; };
 		2010DCD21BB0EAD300810A98 /* NSBundle+TKCategory.h in Headers */ = {isa = PBXBuildFile; fileRef = 20A75C831AD836DD00E2106A /* NSBundle+TKCategory.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		2010DCD31BB0EAD800810A98 /* NSBundle+TKCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 20A75C841AD836DD00E2106A /* NSBundle+TKCategory.m */; settings = {ASSET_TAGS = (); }; };
+		2010DCD31BB0EAD800810A98 /* NSBundle+TKCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 20A75C841AD836DD00E2106A /* NSBundle+TKCategory.m */; };
 		2010DCD41BB0EADB00810A98 /* NSURLSession+TKCategory.h in Headers */ = {isa = PBXBuildFile; fileRef = 207860241AD84F11000DC57F /* NSURLSession+TKCategory.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		2010DCD51BB0EADF00810A98 /* NSURLSession+TKCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 207860251AD84F11000DC57F /* NSURLSession+TKCategory.m */; settings = {ASSET_TAGS = (); }; };
+		2010DCD51BB0EADF00810A98 /* NSURLSession+TKCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 207860251AD84F11000DC57F /* NSURLSession+TKCategory.m */; };
 		2010DCD61BB0EAE200810A98 /* NSTimer+Blocks.h in Headers */ = {isa = PBXBuildFile; fileRef = 2098BA221B0F6C4F000E0074 /* NSTimer+Blocks.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		2010DCD71BB0EAE600810A98 /* NSTimer+Blocks.m in Sources */ = {isa = PBXBuildFile; fileRef = 2098BA231B0F6C4F000E0074 /* NSTimer+Blocks.m */; settings = {ASSET_TAGS = (); }; };
+		2010DCD71BB0EAE600810A98 /* NSTimer+Blocks.m in Sources */ = {isa = PBXBuildFile; fileRef = 2098BA231B0F6C4F000E0074 /* NSTimer+Blocks.m */; };
 		2010DCF01BB0F5F800810A98 /* TKUIKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 2010DCBF1BB0EA0600810A98 /* TKUIKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2010DCF11BB0F87900810A98 /* WatchHeaders.h in Headers */ = {isa = PBXBuildFile; fileRef = 2010DCBE1BB0E94A00810A98 /* WatchHeaders.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2010DCF21BB0F88F00810A98 /* TKFoundation.h in Headers */ = {isa = PBXBuildFile; fileRef = 200B62721AD7FBDC0049E35C /* TKFoundation.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -153,7 +153,7 @@
 		204922C41B46F15900C22245 /* NSDate+TKCategory.h in Headers */ = {isa = PBXBuildFile; fileRef = 204922C21B46F15900C22245 /* NSDate+TKCategory.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		204922C51B46F15900C22245 /* NSDate+TKCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 204922C31B46F15900C22245 /* NSDate+TKCategory.m */; };
 		2058B9FD1BA7487E002C2357 /* UITraitCollection+TKCategory.h in Headers */ = {isa = PBXBuildFile; fileRef = 2058B9FB1BA7487E002C2357 /* UITraitCollection+TKCategory.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		2058B9FE1BA7487E002C2357 /* UITraitCollection+TKCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 2058B9FC1BA7487E002C2357 /* UITraitCollection+TKCategory.m */; settings = {ASSET_TAGS = (); }; };
+		2058B9FE1BA7487E002C2357 /* UITraitCollection+TKCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 2058B9FC1BA7487E002C2357 /* UITraitCollection+TKCategory.m */; };
 		20785F771AD8388E000DC57F /* NSStringTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 20785F701AD8388E000DC57F /* NSStringTests.m */; };
 		20785F781AD8388E000DC57F /* UIViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 20785F721AD8388E000DC57F /* UIViewTests.m */; };
 		20785F791AD8388E000DC57F /* NSArrayTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 20785F741AD8388E000DC57F /* NSArrayTests.m */; };
@@ -171,6 +171,10 @@
 		2078601D1AD84A87000DC57F /* TKCreditCardZipTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 207860131AD84A87000DC57F /* TKCreditCardZipTextField.m */; };
 		207860261AD84F11000DC57F /* NSURLSession+TKCategory.h in Headers */ = {isa = PBXBuildFile; fileRef = 207860241AD84F11000DC57F /* NSURLSession+TKCategory.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		207860271AD84F11000DC57F /* NSURLSession+TKCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 207860251AD84F11000DC57F /* NSURLSession+TKCategory.m */; };
+		207C97B11BD7F1AC00342677 /* NSView+Positioning.h in Headers */ = {isa = PBXBuildFile; fileRef = 207C97AF1BD7F1AC00342677 /* NSView+Positioning.h */; };
+		207C97B21BD7F1AC00342677 /* NSView+Positioning.m in Sources */ = {isa = PBXBuildFile; fileRef = 207C97B01BD7F1AC00342677 /* NSView+Positioning.m */; };
+		207C97B51BD7F3F200342677 /* NSView+TKCategory.h in Headers */ = {isa = PBXBuildFile; fileRef = 207C97B31BD7F3F200342677 /* NSView+TKCategory.h */; };
+		207C97B61BD7F3F200342677 /* NSView+TKCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 207C97B41BD7F3F200342677 /* NSView+TKCategory.m */; };
 		2097F33E1B3D94C300247736 /* TKWindow.h in Headers */ = {isa = PBXBuildFile; fileRef = 2097F33C1B3D94C300247736 /* TKWindow.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2097F33F1B3D94C300247736 /* TKWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 2097F33D1B3D94C300247736 /* TKWindow.m */; };
 		2098BA241B0F6C4F000E0074 /* NSTimer+Blocks.h in Headers */ = {isa = PBXBuildFile; fileRef = 2098BA221B0F6C4F000E0074 /* NSTimer+Blocks.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -183,27 +187,27 @@
 		20A75C851AD836DD00E2106A /* NSBundle+TKCategory.h in Headers */ = {isa = PBXBuildFile; fileRef = 20A75C831AD836DD00E2106A /* NSBundle+TKCategory.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		20A75C861AD836DD00E2106A /* NSBundle+TKCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 20A75C841AD836DD00E2106A /* NSBundle+TKCategory.m */; };
 		20A877131BBF554100A403C2 /* UIAlertController+TKCategory.h in Headers */ = {isa = PBXBuildFile; fileRef = 20A877111BBF554100A403C2 /* UIAlertController+TKCategory.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		20A877141BBF554100A403C2 /* UIAlertController+TKCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 20A877121BBF554100A403C2 /* UIAlertController+TKCategory.m */; settings = {ASSET_TAGS = (); }; };
+		20A877141BBF554100A403C2 /* UIAlertController+TKCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 20A877121BBF554100A403C2 /* UIAlertController+TKCategory.m */; };
 		20B5FE221BB3613F00C0F848 /* curryMac.h in Headers */ = {isa = PBXBuildFile; fileRef = 20B5FE211BB3613F00C0F848 /* curryMac.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		20B5FE281BB3618B00C0F848 /* MacHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = 20B5FE271BB3618B00C0F848 /* MacHeader.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		20B5FE361BB363A200C0F848 /* TKFoundation.h in Headers */ = {isa = PBXBuildFile; fileRef = 200B62721AD7FBDC0049E35C /* TKFoundation.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		20B5FE371BB363A900C0F848 /* NSObject+JSON.h in Headers */ = {isa = PBXBuildFile; fileRef = 200B629B1AD7FD660049E35C /* NSObject+JSON.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		20B5FE381BB363AE00C0F848 /* NSObject+JSON.m in Sources */ = {isa = PBXBuildFile; fileRef = 200B629C1AD7FD660049E35C /* NSObject+JSON.m */; settings = {ASSET_TAGS = (); }; };
+		20B5FE381BB363AE00C0F848 /* NSObject+JSON.m in Sources */ = {isa = PBXBuildFile; fileRef = 200B629C1AD7FD660049E35C /* NSObject+JSON.m */; };
 		20B5FE391BB363B000C0F848 /* NSObject+TKCategory.h in Headers */ = {isa = PBXBuildFile; fileRef = 200B62761AD7FC5E0049E35C /* NSObject+TKCategory.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		20B5FE3A1BB363B400C0F848 /* NSObject+TKCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 200B62771AD7FC5E0049E35C /* NSObject+TKCategory.m */; settings = {ASSET_TAGS = (); }; };
+		20B5FE3A1BB363B400C0F848 /* NSObject+TKCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 200B62771AD7FC5E0049E35C /* NSObject+TKCategory.m */; };
 		20B5FE3B1BB363B600C0F848 /* NSString+TKCategory.h in Headers */ = {isa = PBXBuildFile; fileRef = 200B62781AD7FC5E0049E35C /* NSString+TKCategory.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		20B5FE3C1BB363BA00C0F848 /* NSString+TKCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 200B62791AD7FC5E0049E35C /* NSString+TKCategory.m */; settings = {ASSET_TAGS = (); }; };
-		20B5FE3D1BB363BD00C0F848 /* NSDate+TKCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 204922C31B46F15900C22245 /* NSDate+TKCategory.m */; settings = {ASSET_TAGS = (); }; };
+		20B5FE3C1BB363BA00C0F848 /* NSString+TKCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 200B62791AD7FC5E0049E35C /* NSString+TKCategory.m */; };
+		20B5FE3D1BB363BD00C0F848 /* NSDate+TKCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 204922C31B46F15900C22245 /* NSDate+TKCategory.m */; };
 		20B5FE3E1BB363C000C0F848 /* NSDate+TKCategory.h in Headers */ = {isa = PBXBuildFile; fileRef = 204922C21B46F15900C22245 /* NSDate+TKCategory.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		20B5FE3F1BB363C600C0F848 /* NSArray+TKCategory.h in Headers */ = {isa = PBXBuildFile; fileRef = 200B627A1AD7FC5E0049E35C /* NSArray+TKCategory.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		20B5FE401BB363C900C0F848 /* NSArray+TKCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 200B627B1AD7FC5E0049E35C /* NSArray+TKCategory.m */; settings = {ASSET_TAGS = (); }; };
+		20B5FE401BB363C900C0F848 /* NSArray+TKCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 200B627B1AD7FC5E0049E35C /* NSArray+TKCategory.m */; };
 		20B5FE411BB363CB00C0F848 /* NSMutableArray+TKCategory.h in Headers */ = {isa = PBXBuildFile; fileRef = 200B627C1AD7FC5E0049E35C /* NSMutableArray+TKCategory.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		20B5FE471BB363DE00C0F848 /* NSBundle+TKCategory.h in Headers */ = {isa = PBXBuildFile; fileRef = 20A75C831AD836DD00E2106A /* NSBundle+TKCategory.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		20B5FE481BB363E200C0F848 /* NSBundle+TKCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 20A75C841AD836DD00E2106A /* NSBundle+TKCategory.m */; settings = {ASSET_TAGS = (); }; };
+		20B5FE481BB363E200C0F848 /* NSBundle+TKCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 20A75C841AD836DD00E2106A /* NSBundle+TKCategory.m */; };
 		20B5FE491BB363E400C0F848 /* NSURLSession+TKCategory.h in Headers */ = {isa = PBXBuildFile; fileRef = 207860241AD84F11000DC57F /* NSURLSession+TKCategory.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		20B5FE4A1BB363E800C0F848 /* NSURLSession+TKCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 207860251AD84F11000DC57F /* NSURLSession+TKCategory.m */; settings = {ASSET_TAGS = (); }; };
+		20B5FE4A1BB363E800C0F848 /* NSURLSession+TKCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 207860251AD84F11000DC57F /* NSURLSession+TKCategory.m */; };
 		20B5FE4B1BB363EB00C0F848 /* NSTimer+Blocks.h in Headers */ = {isa = PBXBuildFile; fileRef = 2098BA221B0F6C4F000E0074 /* NSTimer+Blocks.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		20B5FE4C1BB363EE00C0F848 /* NSTimer+Blocks.m in Sources */ = {isa = PBXBuildFile; fileRef = 2098BA231B0F6C4F000E0074 /* NSTimer+Blocks.m */; settings = {ASSET_TAGS = (); }; };
+		20B5FE4C1BB363EE00C0F848 /* NSTimer+Blocks.m in Sources */ = {isa = PBXBuildFile; fileRef = 2098BA231B0F6C4F000E0074 /* NSTimer+Blocks.m */; };
 		20CAE0D41B0953E40088740E /* TKSwitchCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 20CAE0D21B0953E40088740E /* TKSwitchCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		20CAE0D51B0953E40088740E /* TKSwitchCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 20CAE0D31B0953E40088740E /* TKSwitchCell.m */; };
 		20CB9CF31AF3E4B0002E9F1C /* UIActionSheet+Blocks.h in Headers */ = {isa = PBXBuildFile; fileRef = 20CB9CF11AF3E4B0002E9F1C /* UIActionSheet+Blocks.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -470,6 +474,10 @@
 		207860131AD84A87000DC57F /* TKCreditCardZipTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TKCreditCardZipTextField.m; sourceTree = "<group>"; };
 		207860241AD84F11000DC57F /* NSURLSession+TKCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSURLSession+TKCategory.h"; sourceTree = "<group>"; };
 		207860251AD84F11000DC57F /* NSURLSession+TKCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSURLSession+TKCategory.m"; sourceTree = "<group>"; };
+		207C97AF1BD7F1AC00342677 /* NSView+Positioning.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSView+Positioning.h"; sourceTree = "<group>"; };
+		207C97B01BD7F1AC00342677 /* NSView+Positioning.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSView+Positioning.m"; sourceTree = "<group>"; };
+		207C97B31BD7F3F200342677 /* NSView+TKCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSView+TKCategory.h"; sourceTree = "<group>"; };
+		207C97B41BD7F3F200342677 /* NSView+TKCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSView+TKCategory.m"; sourceTree = "<group>"; };
 		2097F33C1B3D94C300247736 /* TKWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TKWindow.h; sourceTree = "<group>"; };
 		2097F33D1B3D94C300247736 /* TKWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TKWindow.m; sourceTree = "<group>"; };
 		2098BA221B0F6C4F000E0074 /* NSTimer+Blocks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSTimer+Blocks.h"; sourceTree = "<group>"; };
@@ -896,6 +904,10 @@
 			children = (
 				20B5FE211BB3613F00C0F848 /* curryMac.h */,
 				20B5FE271BB3618B00C0F848 /* MacHeader.h */,
+				207C97AF1BD7F1AC00342677 /* NSView+Positioning.h */,
+				207C97B01BD7F1AC00342677 /* NSView+Positioning.m */,
+				207C97B31BD7F3F200342677 /* NSView+TKCategory.h */,
+				207C97B41BD7F3F200342677 /* NSView+TKCategory.m */,
 				20B5FE231BB3613F00C0F848 /* Info.plist */,
 			);
 			path = curryMac;
@@ -1027,11 +1039,13 @@
 				20B5FE361BB363A200C0F848 /* TKFoundation.h in Headers */,
 				20B5FE471BB363DE00C0F848 /* NSBundle+TKCategory.h in Headers */,
 				20B5FE491BB363E400C0F848 /* NSURLSession+TKCategory.h in Headers */,
+				207C97B11BD7F1AC00342677 /* NSView+Positioning.h in Headers */,
 				20B5FE3E1BB363C000C0F848 /* NSDate+TKCategory.h in Headers */,
 				20B5FE4B1BB363EB00C0F848 /* NSTimer+Blocks.h in Headers */,
 				20B5FE3F1BB363C600C0F848 /* NSArray+TKCategory.h in Headers */,
 				20B5FE3B1BB363B600C0F848 /* NSString+TKCategory.h in Headers */,
 				20B5FE411BB363CB00C0F848 /* NSMutableArray+TKCategory.h in Headers */,
+				207C97B51BD7F3F200342677 /* NSView+TKCategory.h in Headers */,
 				20B5FE221BB3613F00C0F848 /* curryMac.h in Headers */,
 				20B5FE371BB363A900C0F848 /* NSObject+JSON.h in Headers */,
 				20B5FE281BB3618B00C0F848 /* MacHeader.h in Headers */,
@@ -1416,7 +1430,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				207C97B21BD7F1AC00342677 /* NSView+Positioning.m in Sources */,
 				20B5FE3A1BB363B400C0F848 /* NSObject+TKCategory.m in Sources */,
+				207C97B61BD7F3F200342677 /* NSView+TKCategory.m in Sources */,
 				20B5FE3D1BB363BD00C0F848 /* NSDate+TKCategory.m in Sources */,
 				20B5FE401BB363C900C0F848 /* NSArray+TKCategory.m in Sources */,
 				20B5FE4A1BB363E800C0F848 /* NSURLSession+TKCategory.m in Sources */,

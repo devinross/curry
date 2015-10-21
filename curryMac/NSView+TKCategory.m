@@ -1,7 +1,6 @@
 //
-//  curryMac.h
-//  Created by Devin Ross on 9/23/15.
-//  Copyright © 2015 Devin Ross. All rights reserved.
+//  NSView+TKCategory.m
+//  Created by Devin Ross on 10/21/15.
 //
 /*
  
@@ -30,15 +29,27 @@
  
  */
 
-#import <Cocoa/Cocoa.h>
+#import "NSView+TKCategory.h"
 
-//! Project version number for curryMac.
-FOUNDATION_EXPORT double curryMacVersionNumber;
-
-//! Project version string for curryMac.
-FOUNDATION_EXPORT const unsigned char curryMacVersionString[];
-
-// In this header, you should import all the public headers of your framework using statements like #import <curryMac/PublicHeader.h>
+@implementation NSView (TKCategory)
 
 
-#import "MacHeader.h"
+- (BOOL) visible{
+	return !self.hidden;
+}
+- (void) setVisible:(BOOL)visible{
+	self.hidden = !visible;
+}
+
+- (void) addSubviewToBack:(NSView*)view{
+	
+	if(self.subviews.count < 1)
+		[self addSubview:view];
+	else{
+		NSView *lowSubview = self.subviews.firstObject;
+		[self addSubview:view positioned:NSWindowBelow relativeTo:lowSubview];
+	}
+
+}
+
+@end
