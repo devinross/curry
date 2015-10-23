@@ -178,6 +178,10 @@
 		209761E91BD9EC0C00EE6F81 /* UIControl+Blocks.h in Headers */ = {isa = PBXBuildFile; fileRef = 20CB9D001AF405CD002E9F1C /* UIControl+Blocks.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		209761EC1BD9EC2F00EE6F81 /* TKVideoViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 20E110721B3B2651006A2CD6 /* TKVideoViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		209761ED1BD9EC3200EE6F81 /* TKVideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 20E110731B3B2651006A2CD6 /* TKVideoViewController.m */; };
+		209761F51BD9F27300EE6F81 /* UIGestureRecognizer+TKCategory.h in Headers */ = {isa = PBXBuildFile; fileRef = 200B62C41AD7FEF80049E35C /* UIGestureRecognizer+TKCategory.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		209761F61BD9F27900EE6F81 /* UIGestureRecognizer+TKCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 200B62C51AD7FEF80049E35C /* UIGestureRecognizer+TKCategory.m */; };
+		209761F71BD9F27C00EE6F81 /* UIGestureRecognizer+Blocks.h in Headers */ = {isa = PBXBuildFile; fileRef = 20F19B171AE07E8500077DA1 /* UIGestureRecognizer+Blocks.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		209761F81BD9F28100EE6F81 /* UIGestureRecognizer+Blocks.m in Sources */ = {isa = PBXBuildFile; fileRef = 20F19B181AE07E8500077DA1 /* UIGestureRecognizer+Blocks.m */; };
 		2097F33E1B3D94C300247736 /* TKWindow.h in Headers */ = {isa = PBXBuildFile; fileRef = 2097F33C1B3D94C300247736 /* TKWindow.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2097F33F1B3D94C300247736 /* TKWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 2097F33D1B3D94C300247736 /* TKWindow.m */; };
 		2098BA241B0F6C4F000E0074 /* NSTimer+Blocks.h in Headers */ = {isa = PBXBuildFile; fileRef = 2098BA221B0F6C4F000E0074 /* NSTimer+Blocks.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -1062,9 +1066,11 @@
 				20CEA4531BA111100009D60C /* UILabel+TKCategory.h in Headers */,
 				20CEA4801BA112FB0009D60C /* TKCreditCardNumberTextField.h in Headers */,
 				20CEA46D1BA1123F0009D60C /* CAKeyframeAnimation+TKAnimation.h in Headers */,
+				209761F71BD9F27C00EE6F81 /* UIGestureRecognizer+Blocks.h in Headers */,
 				20CEA4611BA1113A0009D60C /* UILabel+Initializers.h in Headers */,
 				20CEA43B1BA110BB0009D60C /* NSArray+TKCategory.h in Headers */,
 				20CEA4491BA110EB0009D60C /* UIApplication+TKCategory.h in Headers */,
+				209761F51BD9F27300EE6F81 /* UIGestureRecognizer+TKCategory.h in Headers */,
 				20CEA4711BA1124F0009D60C /* TKCustomPresentationViewController.h in Headers */,
 				20CEA4941BA113EE0009D60C /* TKTextFieldCell.h in Headers */,
 				209761E91BD9EC0C00EE6F81 /* UIControl+Blocks.h in Headers */,
@@ -1466,6 +1472,7 @@
 				20CEA4951BA113F10009D60C /* TKTextFieldCell.m in Sources */,
 				20CEA4521BA1110D0009D60C /* UIScrollview+TKCategory.m in Sources */,
 				20CEA4621BA1113D0009D60C /* UILabel+Initializers.m in Sources */,
+				209761F61BD9F27900EE6F81 /* UIGestureRecognizer+TKCategory.m in Sources */,
 				20CEA4871BA113110009D60C /* TKCreditCardZipTextField.m in Sources */,
 				20CEA47B1BA112C70009D60C /* TKCurrentTimeLabel.m in Sources */,
 				209761ED1BD9EC3200EE6F81 /* TKVideoViewController.m in Sources */,
@@ -1482,6 +1489,7 @@
 				20CEA4791BA112BB0009D60C /* TKShapeView.m in Sources */,
 				20CEA4501BA111070009D60C /* UIView+TKCategory.m in Sources */,
 				20CEA46E1BA112430009D60C /* CAKeyframeAnimation+TKAnimation.m in Sources */,
+				209761F81BD9F28100EE6F81 /* UIGestureRecognizer+Blocks.m in Sources */,
 				20CEA4831BA113040009D60C /* TKCreditCardCVVTextField.m in Sources */,
 				20CEA44A1BA110F20009D60C /* UIApplication+TKCategory.m in Sources */,
 				20CEA45C1BA1112C0009D60C /* UINavigationBar+TKCategory.m in Sources */,
