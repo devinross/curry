@@ -265,7 +265,6 @@
 		20CEA4601BA111380009D60C /* UIView+Initializers.m in Sources */ = {isa = PBXBuildFile; fileRef = 20E131CB1AF4107F0011492F /* UIView+Initializers.m */; };
 		20CEA4611BA1113A0009D60C /* UILabel+Initializers.h in Headers */ = {isa = PBXBuildFile; fileRef = 20E131C81AF4107F0011492F /* UILabel+Initializers.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		20CEA4621BA1113D0009D60C /* UILabel+Initializers.m in Sources */ = {isa = PBXBuildFile; fileRef = 20E131C91AF4107F0011492F /* UILabel+Initializers.m */; };
-		20CEA4631BA111400009D60C /* UIAlertView+TKCategory.h in Headers */ = {isa = PBXBuildFile; fileRef = 200B62CC1AD7FEF80049E35C /* UIAlertView+TKCategory.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		20CEA4651BA1114D0009D60C /* UIActionSheet+TKCategory.h in Headers */ = {isa = PBXBuildFile; fileRef = 200B62CE1AD7FEF80049E35C /* UIActionSheet+TKCategory.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		20CEA4661BA1121E0009D60C /* UIControl+Blocks.m in Sources */ = {isa = PBXBuildFile; fileRef = 20CB9D011AF405CD002E9F1C /* UIControl+Blocks.m */; };
 		20CEA4671BA112280009D60C /* UIViewController+TKCategory.h in Headers */ = {isa = PBXBuildFile; fileRef = 200B62C61AD7FEF80049E35C /* UIViewController+TKCategory.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -1077,7 +1076,6 @@
 				20CEA4571BA1111B0009D60C /* UIImageView+TKCategory.h in Headers */,
 				20CEA43D1BA110C20009D60C /* NSMutableArray+TKCategory.h in Headers */,
 				20CEA47C1BA112CB0009D60C /* TKSectionedScrollView.h in Headers */,
-				20CEA4631BA111400009D60C /* UIAlertView+TKCategory.h in Headers */,
 				20CEA4551BA111150009D60C /* UITextField+TKCategory.h in Headers */,
 				20CEA4731BA112550009D60C /* TKCardModalViewController.h in Headers */,
 				20CEA45D1BA1112F0009D60C /* UIBarButtonItem+TKCategory.h in Headers */,

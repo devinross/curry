@@ -11,7 +11,6 @@
 
 
 #import "TKFoundation.h"
-#import "TKUIKit.h"
 
 // Categories -> Foundation
 #import "NSObject+JSON.h"
@@ -32,8 +31,6 @@
 #import "UIScreen+TKCategory.h"
 
 // Categories -> UIKit -> Views
-#import "UIView+Positioning.h"
-#import "UIScrollView+Positioning.h"
 #import "UIView+TKCategory.h"
 #import "UIScrollview+TKCategory.h"
 #import "UILabel+TKCategory.h"
@@ -54,12 +51,8 @@
 #import "UIControl+Blocks.h"
 
 // Categories -> UIKit -> Controllers
-#import "UIImagePickerController+TKCategory.h"
 #import "UIViewController+TKCategory.h"
-#import "UIActionSheet+TKCategory.h"
-#import "UIAlertView+TKCategory.h"
-#import "UIActionSheet+Blocks.h"
-#import "UIAlertView+Blocks.h"
+
 
 
 // Categories -> UIKit -> Animations
@@ -79,7 +72,6 @@
 // Views
 #import "TKGradientView.h"
 #import "TKShapeView.h"
-#import "TKExtendedScrollView.h"
 #import "TKSectionedScrollView.h"
 #import "TKCurrentTimeLabel.h"
 #import "TKTextFieldCell.h"
