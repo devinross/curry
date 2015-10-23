@@ -60,8 +60,29 @@
 }
 
 - (void) testShouldEncodeString{
+	
+	XCTAssertEqualObjects([@"" URLEncode], @"");
 	XCTAssertEqualObjects([@"Bob Sanders" URLEncode], @"Bob%20Sanders");
+	XCTAssertEqualObjects([@";" URLEncode], @"%3B");
+	XCTAssertEqualObjects([@"?" URLEncode], @"%3F");
+	XCTAssertEqualObjects([@"/" URLEncode], @"%2F");
+	XCTAssertEqualObjects([@":" URLEncode], @"%3A");
+	XCTAssertEqualObjects([@"#" URLEncode], @"%23");
+	XCTAssertEqualObjects([@"&" URLEncode], @"%26");
+	XCTAssertEqualObjects([@" " URLEncode], @"%20");
+	XCTAssertEqualObjects([@"=" URLEncode], @"%3D");
+	XCTAssertEqualObjects([@"+" URLEncode], @"%2B");
+	XCTAssertEqualObjects([@"$" URLEncode], @"%24");
+	XCTAssertEqualObjects([@"," URLEncode], @"%2C");
+	XCTAssertEqualObjects([@"%" URLEncode], @"%25");
+	XCTAssertEqualObjects([@"<" URLEncode], @"%3C");
+	XCTAssertEqualObjects([@">" URLEncode], @"%3E");
+	XCTAssertEqualObjects([@"~" URLEncode], @"%7E");
+	XCTAssertEqualObjects([@"%" URLEncode], @"%25");
+	XCTAssertEqualObjects([@";?/:#& =+$,%<>~%" URLEncode], @"%3B%3F%2F%3A%23%26%20%3D%2B%24%2C%25%3C%3E%7E%25");
 	XCTAssertEqualObjects([@"\"Aardvarks lurk, OK?\"" URLEncode], @"%22Aardvarks%20lurk%2C%20OK%3F%22");
+	XCTAssertEqualObjects([@"hasldlasda32-1^&" URLEncode], @"hasldlasda32-1%5E%26");
+
 }
 
 - (void) testShouldHaveString{

@@ -144,16 +144,9 @@
 }
 
 - (NSString*) URLEncode{
-	
-	NSString *encodedString = (__bridge_transfer NSString *)CFURLCreateStringByAddingPercentEscapes(
-																						   NULL,
-																						   (__bridge CFStringRef)self,
-																						   NULL,
-																						   (CFStringRef)@"!*'();:@&=+$,/?%#[]",
-																						   kCFStringEncodingUTF8 );
-	
-	return encodedString;
-	
+	NSMutableCharacterSet *set = [NSCharacterSet URLQueryAllowedCharacterSet].mutableCopy;
+	[set removeCharactersInString:@";?/:#& =+$,%<>~%"];
+	return [self stringByAddingPercentEncodingWithAllowedCharacters:set];
 }
 
 - (NSString *) escapeHTML{
