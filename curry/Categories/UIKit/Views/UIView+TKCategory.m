@@ -83,6 +83,11 @@
 }
 
 
+- (void) removeAllGestureRecognizers{
+	for(NSInteger i=self.gestureRecognizers.count-1;i>=0;i--){
+		[self removeGestureRecognizer:self.gestureRecognizers[i]];
+	}
+}
 
 
 @end

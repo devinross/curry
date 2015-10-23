@@ -84,4 +84,7 @@
 @property (nonatomic,assign) CGFloat cornerRadius;
 
 
+- (void) removeAllGestureRecognizers;
+
+
 @end
