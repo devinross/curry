@@ -272,7 +272,6 @@
 		20CEA4601BA111380009D60C /* UIView+Initializers.m in Sources */ = {isa = PBXBuildFile; fileRef = 20E131CB1AF4107F0011492F /* UIView+Initializers.m */; };
 		20CEA4611BA1113A0009D60C /* UILabel+Initializers.h in Headers */ = {isa = PBXBuildFile; fileRef = 20E131C81AF4107F0011492F /* UILabel+Initializers.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		20CEA4621BA1113D0009D60C /* UILabel+Initializers.m in Sources */ = {isa = PBXBuildFile; fileRef = 20E131C91AF4107F0011492F /* UILabel+Initializers.m */; };
-		20CEA4651BA1114D0009D60C /* UIActionSheet+TKCategory.h in Headers */ = {isa = PBXBuildFile; fileRef = 200B62CE1AD7FEF80049E35C /* UIActionSheet+TKCategory.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		20CEA4661BA1121E0009D60C /* UIControl+Blocks.m in Sources */ = {isa = PBXBuildFile; fileRef = 20CB9D011AF405CD002E9F1C /* UIControl+Blocks.m */; };
 		20CEA4671BA112280009D60C /* UIViewController+TKCategory.h in Headers */ = {isa = PBXBuildFile; fileRef = 200B62C61AD7FEF80049E35C /* UIViewController+TKCategory.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		20CEA4681BA1122D0009D60C /* UIViewController+TKCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 200B62C71AD7FEF80049E35C /* UIViewController+TKCategory.m */; };
@@ -1106,7 +1105,6 @@
 				20CEA42E1BA1105D0009D60C /* curryTV.h in Headers */,
 				20CEA4411BA110CE0009D60C /* NSMutableAttributedString+TKCategory.h in Headers */,
 				20CEA44B1BA110F40009D60C /* UIDevice+TKCategory.h in Headers */,
-				20CEA4651BA1114D0009D60C /* UIActionSheet+TKCategory.h in Headers */,
 				2010DCC81BB0EAAD00810A98 /* NSDate+TKCategory.h in Headers */,
 				20CEA4511BA1110A0009D60C /* UIScrollview+TKCategory.h in Headers */,
 				20CEA4D81BA1503D0009D60C /* UIView+Positioning.h in Headers */,

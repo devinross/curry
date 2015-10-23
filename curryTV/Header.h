@@ -34,6 +34,7 @@
 // Categories -> UIKit -> Views
 #import "UIView+Positioning.h"
 #import "UIView+TKCategory.h"
+#import "UIScrollView+Positioning.h"
 #import "UIScrollview+TKCategory.h"
 #import "UILabel+TKCategory.h"
 #import "UITextField+TKCategory.h"
