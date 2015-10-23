@@ -175,6 +175,9 @@
 		207C97B21BD7F1AC00342677 /* NSView+Positioning.m in Sources */ = {isa = PBXBuildFile; fileRef = 207C97B01BD7F1AC00342677 /* NSView+Positioning.m */; };
 		207C97B51BD7F3F200342677 /* NSView+TKCategory.h in Headers */ = {isa = PBXBuildFile; fileRef = 207C97B31BD7F3F200342677 /* NSView+TKCategory.h */; };
 		207C97B61BD7F3F200342677 /* NSView+TKCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 207C97B41BD7F3F200342677 /* NSView+TKCategory.m */; };
+		209761E91BD9EC0C00EE6F81 /* UIControl+Blocks.h in Headers */ = {isa = PBXBuildFile; fileRef = 20CB9D001AF405CD002E9F1C /* UIControl+Blocks.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		209761EC1BD9EC2F00EE6F81 /* TKVideoViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 20E110721B3B2651006A2CD6 /* TKVideoViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		209761ED1BD9EC3200EE6F81 /* TKVideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 20E110731B3B2651006A2CD6 /* TKVideoViewController.m */; };
 		2097F33E1B3D94C300247736 /* TKWindow.h in Headers */ = {isa = PBXBuildFile; fileRef = 2097F33C1B3D94C300247736 /* TKWindow.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2097F33F1B3D94C300247736 /* TKWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 2097F33D1B3D94C300247736 /* TKWindow.m */; };
 		2098BA241B0F6C4F000E0074 /* NSTimer+Blocks.h in Headers */ = {isa = PBXBuildFile; fileRef = 2098BA221B0F6C4F000E0074 /* NSTimer+Blocks.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -1064,6 +1067,7 @@
 				20CEA4491BA110EB0009D60C /* UIApplication+TKCategory.h in Headers */,
 				20CEA4711BA1124F0009D60C /* TKCustomPresentationViewController.h in Headers */,
 				20CEA4941BA113EE0009D60C /* TKTextFieldCell.h in Headers */,
+				209761E91BD9EC0C00EE6F81 /* UIControl+Blocks.h in Headers */,
 				20CEA4671BA112280009D60C /* UIViewController+TKCategory.h in Headers */,
 				20CEA4381BA110AF0009D60C /* NSString+TKCategory.h in Headers */,
 				20CEA4DC1BA1503D0009D60C /* UIScrollView+Positioning.h in Headers */,
@@ -1083,6 +1087,7 @@
 				20CEA48E1BA113CC0009D60C /* UIFont+TKCategory.h in Headers */,
 				20CEA4341BA110A00009D60C /* NSObject+JSON.h in Headers */,
 				20CEA43F1BA110C80009D60C /* NSAttributedString+TKCategory.h in Headers */,
+				209761EC1BD9EC2F00EE6F81 /* TKVideoViewController.h in Headers */,
 				20CEA44D1BA110F90009D60C /* UIScreen+TKCategory.h in Headers */,
 				20CEA45F1BA111350009D60C /* UIView+Initializers.h in Headers */,
 				20CEA46B1BA112390009D60C /* CALayer+TKAnimation.h in Headers */,
@@ -1463,6 +1468,7 @@
 				20CEA4621BA1113D0009D60C /* UILabel+Initializers.m in Sources */,
 				20CEA4871BA113110009D60C /* TKCreditCardZipTextField.m in Sources */,
 				20CEA47B1BA112C70009D60C /* TKCurrentTimeLabel.m in Sources */,
+				209761ED1BD9EC3200EE6F81 /* TKVideoViewController.m in Sources */,
 				20CEA4851BA1130C0009D60C /* TKCreditCardExpirationTextField.m in Sources */,
 				20CEA48D1BA113C90009D60C /* UIImage+TKCategory.m in Sources */,
 				20CEA4421BA110D10009D60C /* NSMutableAttributedString+TKCategory.m in Sources */,

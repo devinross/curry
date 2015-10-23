@@ -11,6 +11,7 @@
 
 
 #import "TKFoundation.h"
+#import "TKUIKit.h"
 
 // Categories -> Foundation
 #import "NSObject+JSON.h"
@@ -31,6 +32,7 @@
 #import "UIScreen+TKCategory.h"
 
 // Categories -> UIKit -> Views
+#import "UIView+Positioning.h"
 #import "UIView+TKCategory.h"
 #import "UIScrollview+TKCategory.h"
 #import "UILabel+TKCategory.h"
@@ -75,7 +77,6 @@
 #import "TKSectionedScrollView.h"
 #import "TKCurrentTimeLabel.h"
 #import "TKTextFieldCell.h"
-#import "TKWindow.h"
 
 
 // Custom Text Field
@@ -84,7 +85,5 @@
 #import "TKCreditCardZipTextField.h"
 #import "TKCreditCardCVVTextField.h"
 #import "TKPhoneNumberTextField.h"
-
-
 
 #endif /* Header_h */
