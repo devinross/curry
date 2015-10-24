@@ -129,6 +129,10 @@
 		2010DCF01BB0F5F800810A98 /* TKUIKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 2010DCBF1BB0EA0600810A98 /* TKUIKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2010DCF11BB0F87900810A98 /* WatchHeaders.h in Headers */ = {isa = PBXBuildFile; fileRef = 2010DCBE1BB0E94A00810A98 /* WatchHeaders.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2010DCF21BB0F88F00810A98 /* TKFoundation.h in Headers */ = {isa = PBXBuildFile; fileRef = 200B62721AD7FBDC0049E35C /* TKFoundation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		202D35D51BDB252600886913 /* TKCollectionViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 202D35D31BDB252600886913 /* TKCollectionViewController.h */; };
+		202D35D61BDB252600886913 /* TKCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 202D35D41BDB252600886913 /* TKCollectionViewController.m */; };
+		202D35D71BDB2CAB00886913 /* TKCollectionViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 202D35D31BDB252600886913 /* TKCollectionViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		202D35D81BDB2CB000886913 /* TKCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 202D35D41BDB252600886913 /* TKCollectionViewController.m */; };
 		202DBE711AF4121C00B0CE67 /* TKCustomPresentationViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 202DBE6F1AF4121C00B0CE67 /* TKCustomPresentationViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		202DBE721AF4121C00B0CE67 /* TKCustomPresentationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 202DBE701AF4121C00B0CE67 /* TKCustomPresentationViewController.m */; };
 		202DBEB91AF4347A00B0CE67 /* TKInputView.h in Headers */ = {isa = PBXBuildFile; fileRef = 202DBEAD1AF4347A00B0CE67 /* TKInputView.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -436,6 +440,8 @@
 		2010DCB41BB0E40E00810A98 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2010DCBE1BB0E94A00810A98 /* WatchHeaders.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WatchHeaders.h; sourceTree = "<group>"; };
 		2010DCBF1BB0EA0600810A98 /* TKUIKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TKUIKit.h; sourceTree = "<group>"; };
+		202D35D31BDB252600886913 /* TKCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TKCollectionViewController.h; sourceTree = "<group>"; };
+		202D35D41BDB252600886913 /* TKCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TKCollectionViewController.m; sourceTree = "<group>"; };
 		202DBE6F1AF4121C00B0CE67 /* TKCustomPresentationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TKCustomPresentationViewController.h; sourceTree = "<group>"; };
 		202DBE701AF4121C00B0CE67 /* TKCustomPresentationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TKCustomPresentationViewController.m; sourceTree = "<group>"; };
 		202DBEAD1AF4347A00B0CE67 /* TKInputView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TKInputView.h; sourceTree = "<group>"; };
@@ -845,6 +851,8 @@
 				200B63051AD804340049E35C /* TKWebViewController.m */,
 				20E110721B3B2651006A2CD6 /* TKVideoViewController.h */,
 				20E110731B3B2651006A2CD6 /* TKVideoViewController.m */,
+				202D35D31BDB252600886913 /* TKCollectionViewController.h */,
+				202D35D41BDB252600886913 /* TKCollectionViewController.m */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -966,6 +974,7 @@
 				200B62941AD7FC5E0049E35C /* NSMutableAttributedString+TKCategory.h in Headers */,
 				200B62A91AD7FE0D0049E35C /* CALayer+TKAnimation.h in Headers */,
 				200B628A1AD7FC5E0049E35C /* NSString+TKCategory.h in Headers */,
+				202D35D51BDB252600886913 /* TKCollectionViewController.h in Headers */,
 				200B62AD1AD7FE0D0049E35C /* CAAnimation+TKAnimation.h in Headers */,
 				2010DCC01BB0EA7800810A98 /* TKUIKit.h in Headers */,
 				200B62EA1AD7FEF80049E35C /* UIScreen+TKCategory.h in Headers */,
@@ -1105,6 +1114,7 @@
 				20CEA42E1BA1105D0009D60C /* curryTV.h in Headers */,
 				20CEA4411BA110CE0009D60C /* NSMutableAttributedString+TKCategory.h in Headers */,
 				20CEA44B1BA110F40009D60C /* UIDevice+TKCategory.h in Headers */,
+				202D35D71BDB2CAB00886913 /* TKCollectionViewController.h in Headers */,
 				2010DCC81BB0EAAD00810A98 /* NSDate+TKCategory.h in Headers */,
 				20CEA4511BA1110A0009D60C /* UIScrollview+TKCategory.h in Headers */,
 				20CEA4D81BA1503D0009D60C /* UIView+Positioning.h in Headers */,
@@ -1376,6 +1386,7 @@
 				200B63111AD804350049E35C /* TKWebViewController.m in Sources */,
 				20DDB58C1B45A97C001C7751 /* TKStepperCell.m in Sources */,
 				200B62F31AD7FEF80049E35C /* UIFont+TKCategory.m in Sources */,
+				202D35D61BDB252600886913 /* TKCollectionViewController.m in Sources */,
 				200B62E51AD7FEF80049E35C /* UIImagePickerController+TKCategory.m in Sources */,
 				200B62971AD7FC5E0049E35C /* UIDevice+TKCategory.m in Sources */,
 				200B63211AD804E30049E35C /* TKCardModalViewController.m in Sources */,
@@ -1457,6 +1468,7 @@
 				20CEA4721BA112530009D60C /* TKCustomPresentationViewController.m in Sources */,
 				20CEA44C1BA110F70009D60C /* UIDevice+TKCategory.m in Sources */,
 				20CEA47D1BA112D00009D60C /* TKSectionedScrollView.m in Sources */,
+				202D35D81BDB2CB000886913 /* TKCollectionViewController.m in Sources */,
 				20CEA45E1BA111320009D60C /* UIBarButtonItem+TKCategory.m in Sources */,
 				20CEA4DA1BA1503D0009D60C /* UIView+Positioning.m in Sources */,
 				20CEA4371BA110AC0009D60C /* NSObject+TKCategory.m in Sources */,

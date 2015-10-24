@@ -107,6 +107,7 @@
 #import "TKKeyboardTableViewController.h"
 #import "TKWebViewController.h"
 #import "TKVideoViewController.h"
+#import "TKCollectionViewController.h"
 
 // Views -> Keyboard
 #import "TKInputView.h"
