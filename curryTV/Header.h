@@ -69,6 +69,7 @@
 #import "TKCustomPresentationViewController.h"
 #import "TKCardModalViewController.h"
 #import "TKVideoViewController.h"
+#import "TKCollectionViewController.h"
 
 
 
