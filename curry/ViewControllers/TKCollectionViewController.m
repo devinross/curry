@@ -53,7 +53,10 @@
 	self.collectionView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
 	self.collectionView.delegate = self;
 	self.collectionView.dataSource = self;
+	
+#ifndef SDK_HIDE_TIDE
 	self.collectionView.remembersLastFocusedIndexPath = YES;
+#endif
 	[self.view addSubview:self.collectionView];
 	
 }

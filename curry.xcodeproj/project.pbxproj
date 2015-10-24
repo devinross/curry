@@ -129,7 +129,7 @@
 		2010DCF01BB0F5F800810A98 /* TKUIKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 2010DCBF1BB0EA0600810A98 /* TKUIKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2010DCF11BB0F87900810A98 /* WatchHeaders.h in Headers */ = {isa = PBXBuildFile; fileRef = 2010DCBE1BB0E94A00810A98 /* WatchHeaders.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2010DCF21BB0F88F00810A98 /* TKFoundation.h in Headers */ = {isa = PBXBuildFile; fileRef = 200B62721AD7FBDC0049E35C /* TKFoundation.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		202D35D51BDB252600886913 /* TKCollectionViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 202D35D31BDB252600886913 /* TKCollectionViewController.h */; };
+		202D35D51BDB252600886913 /* TKCollectionViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 202D35D31BDB252600886913 /* TKCollectionViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		202D35D61BDB252600886913 /* TKCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 202D35D41BDB252600886913 /* TKCollectionViewController.m */; };
 		202D35D71BDB2CAB00886913 /* TKCollectionViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 202D35D31BDB252600886913 /* TKCollectionViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		202D35D81BDB2CB000886913 /* TKCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 202D35D41BDB252600886913 /* TKCollectionViewController.m */; };
