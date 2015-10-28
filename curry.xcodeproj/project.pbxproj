@@ -150,6 +150,8 @@
 		202DBEEB1AF6717A00B0CE67 /* CurryImages.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 202DBEEA1AF6717A00B0CE67 /* CurryImages.xcassets */; };
 		202DBEF41AF6727A00B0CE67 /* TKCurrentTimeLabel.h in Headers */ = {isa = PBXBuildFile; fileRef = 202DBEF21AF6727A00B0CE67 /* TKCurrentTimeLabel.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		202DBEF51AF6727A00B0CE67 /* TKCurrentTimeLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 202DBEF31AF6727A00B0CE67 /* TKCurrentTimeLabel.m */; };
+		203BDD3C1BE17CFC00572452 /* TKSoundAlertController.m in Sources */ = {isa = PBXBuildFile; fileRef = 200B63191AD804400049E35C /* TKSoundAlertController.m */; };
+		203BDD3D1BE17CFE00572452 /* TKSoundAlertController.h in Headers */ = {isa = PBXBuildFile; fileRef = 200B63181AD804400049E35C /* TKSoundAlertController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		204922B41B45D8DB00C22245 /* TKTextFieldCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 204922B21B45D8DB00C22245 /* TKTextFieldCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		204922B51B45D8DB00C22245 /* TKTextFieldCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 204922B31B45D8DB00C22245 /* TKTextFieldCell.m */; };
 		204922B81B46EF9200C22245 /* TKTextView.h in Headers */ = {isa = PBXBuildFile; fileRef = 204922B61B46EF9200C22245 /* TKTextView.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -1081,6 +1083,7 @@
 				209761F51BD9F27300EE6F81 /* UIGestureRecognizer+TKCategory.h in Headers */,
 				20CEA4711BA1124F0009D60C /* TKCustomPresentationViewController.h in Headers */,
 				20CEA4941BA113EE0009D60C /* TKTextFieldCell.h in Headers */,
+				203BDD3D1BE17CFE00572452 /* TKSoundAlertController.h in Headers */,
 				209761E91BD9EC0C00EE6F81 /* UIControl+Blocks.h in Headers */,
 				20CEA4671BA112280009D60C /* UIViewController+TKCategory.h in Headers */,
 				20CEA4381BA110AF0009D60C /* NSString+TKCategory.h in Headers */,
@@ -1487,6 +1490,7 @@
 				20CEA47B1BA112C70009D60C /* TKCurrentTimeLabel.m in Sources */,
 				209761ED1BD9EC3200EE6F81 /* TKVideoViewController.m in Sources */,
 				20CEA4851BA1130C0009D60C /* TKCreditCardExpirationTextField.m in Sources */,
+				203BDD3C1BE17CFC00572452 /* TKSoundAlertController.m in Sources */,
 				20CEA48D1BA113C90009D60C /* UIImage+TKCategory.m in Sources */,
 				20CEA4421BA110D10009D60C /* NSMutableAttributedString+TKCategory.m in Sources */,
 				20CEA4701BA112490009D60C /* CAAnimation+TKAnimation.m in Sources */,
