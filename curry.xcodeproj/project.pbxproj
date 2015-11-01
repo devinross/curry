@@ -129,6 +129,8 @@
 		2010DCF01BB0F5F800810A98 /* TKUIKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 2010DCBF1BB0EA0600810A98 /* TKUIKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2010DCF11BB0F87900810A98 /* WatchHeaders.h in Headers */ = {isa = PBXBuildFile; fileRef = 2010DCBE1BB0E94A00810A98 /* WatchHeaders.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2010DCF21BB0F88F00810A98 /* TKFoundation.h in Headers */ = {isa = PBXBuildFile; fileRef = 200B62721AD7FBDC0049E35C /* TKFoundation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		20173BD71BE62B8E00367A60 /* TKTableViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 200B62FE1AD804340049E35C /* TKTableViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		20173BD81BE62B9200367A60 /* TKTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 200B62FF1AD804340049E35C /* TKTableViewController.m */; };
 		202D35D51BDB252600886913 /* TKCollectionViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 202D35D31BDB252600886913 /* TKCollectionViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		202D35D61BDB252600886913 /* TKCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 202D35D41BDB252600886913 /* TKCollectionViewController.m */; };
 		202D35D71BDB2CAB00886913 /* TKCollectionViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 202D35D31BDB252600886913 /* TKCollectionViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -1126,6 +1128,7 @@
 				20CEA46F1BA112450009D60C /* CAAnimation+TKAnimation.h in Headers */,
 				20CEA4821BA113000009D60C /* TKCreditCardCVVTextField.h in Headers */,
 				20CEA4431BA110D30009D60C /* NSBundle+TKCategory.h in Headers */,
+				20173BD71BE62B8E00367A60 /* TKTableViewController.h in Headers */,
 				20CEA4361BA110A90009D60C /* NSObject+TKCategory.h in Headers */,
 				20CEA4841BA113070009D60C /* TKCreditCardExpirationTextField.h in Headers */,
 				20CEA4901BA113D30009D60C /* UIColor+TKCategory.h in Headers */,
@@ -1480,6 +1483,7 @@
 				20CEA43A1BA110B90009D60C /* NSDate+TKCategory.m in Sources */,
 				20CEA4681BA1122D0009D60C /* UIViewController+TKCategory.m in Sources */,
 				20CEA43C1BA110BF0009D60C /* NSArray+TKCategory.m in Sources */,
+				20173BD81BE62B9200367A60 /* TKTableViewController.m in Sources */,
 				20CEA4541BA111130009D60C /* UILabel+TKCategory.m in Sources */,
 				20CEA45A1BA111240009D60C /* UIButton+TKCategory.m in Sources */,
 				20CEA4951BA113F10009D60C /* TKTextFieldCell.m in Sources */,

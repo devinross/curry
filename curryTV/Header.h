@@ -70,7 +70,7 @@
 #import "TKCardModalViewController.h"
 #import "TKVideoViewController.h"
 #import "TKCollectionViewController.h"
-
+#import "TKTableViewController.h"
 
 
 // Views
