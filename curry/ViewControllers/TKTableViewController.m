@@ -101,9 +101,8 @@
 // -----------------------------
 
 
-#ifndef SDK_HIDE_TIDE
+#if TARGET_OS_IOS
 
-#else
 // -----------------------------
 #pragma mark Properties
 - (UISearchBar*) searchBar{

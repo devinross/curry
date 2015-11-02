@@ -42,13 +42,11 @@
  
  */
 
-#ifndef SDK_HIDE_TIDE
-@interface TKTableViewController : UIViewController <UITableViewDelegate,UITableViewDataSource,UISearchBarDelegate>
-
+@interface TKTableViewController : UIViewController
+#if TARGET_OS_TV
+<UITableViewDelegate,UITableViewDataSource,UISearchBarDelegate>
 #else
-@interface TKTableViewController : UIViewController <UITableViewDelegate,UITableViewDataSource,UISearchBarDelegate,UISearchDisplayDelegate>
-
-
+<UITableViewDelegate,UITableViewDataSource,UISearchBarDelegate,UISearchDisplayDelegate>
 #endif
 
 
@@ -74,14 +72,10 @@
 
 
 
-#ifndef SDK_HIDE_TIDE
-
-#else
+#if TARGET_OS_IOS
 
 /** Returns a `UISearchBar` view. */
 @property (nonatomic,strong) UISearchBar *searchBar;
-
-
 
 /** Returns a `UISearchDisplayController` for the search bar and table view. */
 #pragma clang diagnostic push
