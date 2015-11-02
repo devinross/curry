@@ -32,16 +32,26 @@
 
 @import UIKit;
 
-/** 
+/**
  This class provides basic `UITableViewController` functionality under the `TKViewController` class.
  
  The key differences between `TKTableViewController` and `UITableViewController`:
  - The `UITableView` is a subview of the base view.
  - The content offset of the `UITableView` is remembered if the view is ever deconstructed by a memory warning.
- - Built to easily allocate and handle an empty view and search functionality. 
+ - Built to easily allocate and handle an empty view and search functionality.
  
  */
+
+#ifndef SDK_HIDE_TIDE
+@interface TKTableViewController : UIViewController <UITableViewDelegate,UITableViewDataSource,UISearchBarDelegate>
+
+#else
 @interface TKTableViewController : UIViewController <UITableViewDelegate,UITableViewDataSource,UISearchBarDelegate,UISearchDisplayDelegate>
+
+
+#endif
+
+
 
 
 /** Initializes a table-view controller to manage a table view of a given style.
@@ -63,14 +73,23 @@
 @property (nonatomic,readonly) UITableViewStyle style;
 
 
+
+#ifndef SDK_HIDE_TIDE
+
+#else
+
 /** Returns a `UISearchBar` view. */
 @property (nonatomic,strong) UISearchBar *searchBar;
+
+
 
 /** Returns a `UISearchDisplayController` for the search bar and table view. */
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored "-Wdeprecated-declarations"
 @property (nonatomic,strong) UISearchDisplayController *searchBarDisplayController;
 #pragma clang diagnostic pop
+
+#endif
 
 /** The default value of this property is YES. When YES, the table view controller clears the table’s current selection when it receives a viewWillAppear: message. Setting this property to NO preserves the selection. */
 @property (nonatomic,assign) BOOL clearsSelectionOnViewWillAppear;

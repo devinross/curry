@@ -90,18 +90,20 @@
 // -----------------------------
 #pragma mark TableView Delegate & DataSource
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-    return 0;
+	return 0;
 }
 - (NSInteger)tableView:(UITableView *)tv numberOfRowsInSection:(NSInteger)section {
 	return 0;
 }
 - (UITableViewCell *)tableView:(UITableView *)tv cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    return nil;
+	return nil;
 }
 // -----------------------------
 
 
+#ifndef SDK_HIDE_TIDE
 
+#else
 // -----------------------------
 #pragma mark Properties
 - (UISearchBar*) searchBar{
@@ -122,5 +124,7 @@
 }
 #pragma clang diagnostic pop
 // -----------------------------
+#endif
+
 
 @end
