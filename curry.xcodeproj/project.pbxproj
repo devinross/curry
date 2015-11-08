@@ -131,6 +131,8 @@
 		2010DCF21BB0F88F00810A98 /* TKFoundation.h in Headers */ = {isa = PBXBuildFile; fileRef = 200B62721AD7FBDC0049E35C /* TKFoundation.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		20173BD71BE62B8E00367A60 /* TKTableViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 200B62FE1AD804340049E35C /* TKTableViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		20173BD81BE62B9200367A60 /* TKTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 200B62FF1AD804340049E35C /* TKTableViewController.m */; };
+		20173BFB1BE87B0900367A60 /* UIAlertController+TKCategory.h in Headers */ = {isa = PBXBuildFile; fileRef = 20A877111BBF554100A403C2 /* UIAlertController+TKCategory.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		20173BFC1BE87B0D00367A60 /* UIAlertController+TKCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 20A877121BBF554100A403C2 /* UIAlertController+TKCategory.m */; };
 		202D35D51BDB252600886913 /* TKCollectionViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 202D35D31BDB252600886913 /* TKCollectionViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		202D35D61BDB252600886913 /* TKCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 202D35D41BDB252600886913 /* TKCollectionViewController.m */; };
 		202D35D71BDB2CAB00886913 /* TKCollectionViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 202D35D31BDB252600886913 /* TKCollectionViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -1081,6 +1083,7 @@
 				209761F71BD9F27C00EE6F81 /* UIGestureRecognizer+Blocks.h in Headers */,
 				20CEA4611BA1113A0009D60C /* UILabel+Initializers.h in Headers */,
 				20CEA43B1BA110BB0009D60C /* NSArray+TKCategory.h in Headers */,
+				20173BFB1BE87B0900367A60 /* UIAlertController+TKCategory.h in Headers */,
 				20CEA4491BA110EB0009D60C /* UIApplication+TKCategory.h in Headers */,
 				209761F51BD9F27300EE6F81 /* UIGestureRecognizer+TKCategory.h in Headers */,
 				20CEA4711BA1124F0009D60C /* TKCustomPresentationViewController.h in Headers */,
@@ -1486,6 +1489,7 @@
 				20173BD81BE62B9200367A60 /* TKTableViewController.m in Sources */,
 				20CEA4541BA111130009D60C /* UILabel+TKCategory.m in Sources */,
 				20CEA45A1BA111240009D60C /* UIButton+TKCategory.m in Sources */,
+				20173BFC1BE87B0D00367A60 /* UIAlertController+TKCategory.m in Sources */,
 				20CEA4951BA113F10009D60C /* TKTextFieldCell.m in Sources */,
 				20CEA4521BA1110D0009D60C /* UIScrollview+TKCategory.m in Sources */,
 				20CEA4621BA1113D0009D60C /* UILabel+Initializers.m in Sources */,

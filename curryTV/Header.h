@@ -55,6 +55,7 @@
 
 // Categories -> UIKit -> Controllers
 #import "UIViewController+TKCategory.h"
+#import "UIAlertController+TKCategory.h"
 
 
 
