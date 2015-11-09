@@ -1,7 +1,6 @@
 //
-//  MacHeader.h
-//  Created by Devin Ross on 9/23/15.
-//  Copyright © 2015 Devin Ross. All rights reserved.
+//  NSUserDefaults+iCloud.h
+//  Created by Devin Ross on 11/9/15.
 //
 /*
  
@@ -30,25 +29,10 @@
  
  */
 
-#ifndef MacHeader_h
-#define MacHeader_h
+@import Foundation;
 
-#import "TKFoundation.h"
+@interface NSUserDefaults (iCloud)
 
-// Categories -> Foundation
-#import "NSObject+JSON.h"
-#import "NSObject+TKCategory.h"
-#import "NSString+TKCategory.h"
-#import "NSArray+TKCategory.h"
-#import "NSDate+TKCategory.h"
-#import "NSMutableArray+TKCategory.h"
-#import "NSBundle+TKCategory.h"
-#import "NSURLSession+TKCategory.h"
-#import "NSTimer+Blocks.h"
-#import "NSUserDefaults+iCloud.h"
++ (NSUbiquitousKeyValueStore*) iCloudStoreStore;
 
-#import "NSView+Positioning.h"
-#import "NSView+TKCategory.h"
-
-
-#endif /* MacHeader_h */
+@end

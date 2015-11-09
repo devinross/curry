@@ -164,6 +164,12 @@
 		204922C51B46F15900C22245 /* NSDate+TKCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 204922C31B46F15900C22245 /* NSDate+TKCategory.m */; };
 		2058B9FD1BA7487E002C2357 /* UITraitCollection+TKCategory.h in Headers */ = {isa = PBXBuildFile; fileRef = 2058B9FB1BA7487E002C2357 /* UITraitCollection+TKCategory.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2058B9FE1BA7487E002C2357 /* UITraitCollection+TKCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 2058B9FC1BA7487E002C2357 /* UITraitCollection+TKCategory.m */; };
+		205B9A8B1BF1058D008EDFD8 /* NSUserDefaults+iCloud.h in Headers */ = {isa = PBXBuildFile; fileRef = 205B9A891BF1058D008EDFD8 /* NSUserDefaults+iCloud.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		205B9A8C1BF1058D008EDFD8 /* NSUserDefaults+iCloud.h in Headers */ = {isa = PBXBuildFile; fileRef = 205B9A891BF1058D008EDFD8 /* NSUserDefaults+iCloud.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		205B9A8D1BF1058D008EDFD8 /* NSUserDefaults+iCloud.h in Headers */ = {isa = PBXBuildFile; fileRef = 205B9A891BF1058D008EDFD8 /* NSUserDefaults+iCloud.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		205B9A8E1BF1058D008EDFD8 /* NSUserDefaults+iCloud.m in Sources */ = {isa = PBXBuildFile; fileRef = 205B9A8A1BF1058D008EDFD8 /* NSUserDefaults+iCloud.m */; };
+		205B9A8F1BF1058D008EDFD8 /* NSUserDefaults+iCloud.m in Sources */ = {isa = PBXBuildFile; fileRef = 205B9A8A1BF1058D008EDFD8 /* NSUserDefaults+iCloud.m */; };
+		205B9A901BF1058D008EDFD8 /* NSUserDefaults+iCloud.m in Sources */ = {isa = PBXBuildFile; fileRef = 205B9A8A1BF1058D008EDFD8 /* NSUserDefaults+iCloud.m */; };
 		20785F771AD8388E000DC57F /* NSStringTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 20785F701AD8388E000DC57F /* NSStringTests.m */; };
 		20785F781AD8388E000DC57F /* UIViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 20785F721AD8388E000DC57F /* UIViewTests.m */; };
 		20785F791AD8388E000DC57F /* NSArrayTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 20785F741AD8388E000DC57F /* NSArrayTests.m */; };
@@ -473,6 +479,8 @@
 		204922C31B46F15900C22245 /* NSDate+TKCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+TKCategory.m"; sourceTree = "<group>"; };
 		2058B9FB1BA7487E002C2357 /* UITraitCollection+TKCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITraitCollection+TKCategory.h"; sourceTree = "<group>"; };
 		2058B9FC1BA7487E002C2357 /* UITraitCollection+TKCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITraitCollection+TKCategory.m"; sourceTree = "<group>"; };
+		205B9A891BF1058D008EDFD8 /* NSUserDefaults+iCloud.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSUserDefaults+iCloud.h"; sourceTree = "<group>"; };
+		205B9A8A1BF1058D008EDFD8 /* NSUserDefaults+iCloud.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSUserDefaults+iCloud.m"; sourceTree = "<group>"; };
 		20785F6F1AD8388E000DC57F /* NSStringTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSStringTests.h; sourceTree = "<group>"; };
 		20785F701AD8388E000DC57F /* NSStringTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSStringTests.m; sourceTree = "<group>"; };
 		20785F711AD8388E000DC57F /* UIViewTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIViewTests.h; sourceTree = "<group>"; };
@@ -709,6 +717,8 @@
 				207860251AD84F11000DC57F /* NSURLSession+TKCategory.m */,
 				2098BA221B0F6C4F000E0074 /* NSTimer+Blocks.h */,
 				2098BA231B0F6C4F000E0074 /* NSTimer+Blocks.m */,
+				205B9A891BF1058D008EDFD8 /* NSUserDefaults+iCloud.h */,
+				205B9A8A1BF1058D008EDFD8 /* NSUserDefaults+iCloud.m */,
 			);
 			path = Foundation;
 			sourceTree = "<group>";
@@ -965,6 +975,7 @@
 				200B62881AD7FC5E0049E35C /* NSObject+TKCategory.h in Headers */,
 				200B628C1AD7FC5E0049E35C /* NSArray+TKCategory.h in Headers */,
 				200B62DA1AD7FEF80049E35C /* UIImageView+TKCategory.h in Headers */,
+				205B9A8B1BF1058D008EDFD8 /* NSUserDefaults+iCloud.h in Headers */,
 				200B62A71AD7FE0D0049E35C /* UIView+TKAnimation.h in Headers */,
 				200B62E01AD7FEF80049E35C /* UIScrollview+TKCategory.h in Headers */,
 				200B62D81AD7FEF80049E35C /* UITextField+TKCategory.h in Headers */,
@@ -1062,6 +1073,7 @@
 				207C97B11BD7F1AC00342677 /* NSView+Positioning.h in Headers */,
 				20B5FE3E1BB363C000C0F848 /* NSDate+TKCategory.h in Headers */,
 				20B5FE4B1BB363EB00C0F848 /* NSTimer+Blocks.h in Headers */,
+				205B9A8D1BF1058D008EDFD8 /* NSUserDefaults+iCloud.h in Headers */,
 				20B5FE3F1BB363C600C0F848 /* NSArray+TKCategory.h in Headers */,
 				20B5FE3B1BB363B600C0F848 /* NSString+TKCategory.h in Headers */,
 				20B5FE411BB363CB00C0F848 /* NSMutableArray+TKCategory.h in Headers */,
@@ -1082,6 +1094,7 @@
 				20CEA46D1BA1123F0009D60C /* CAKeyframeAnimation+TKAnimation.h in Headers */,
 				209761F71BD9F27C00EE6F81 /* UIGestureRecognizer+Blocks.h in Headers */,
 				20CEA4611BA1113A0009D60C /* UILabel+Initializers.h in Headers */,
+				205B9A8C1BF1058D008EDFD8 /* NSUserDefaults+iCloud.h in Headers */,
 				20CEA43B1BA110BB0009D60C /* NSArray+TKCategory.h in Headers */,
 				20173BFB1BE87B0900367A60 /* UIAlertController+TKCategory.h in Headers */,
 				20CEA4491BA110EB0009D60C /* UIApplication+TKCategory.h in Headers */,
@@ -1359,6 +1372,7 @@
 				200B630B1AD804350049E35C /* TKTableViewController.m in Sources */,
 				200B631D1AD804400049E35C /* TKSoundAlertController.m in Sources */,
 				20CEA4E61BA150510009D60C /* UIView+GestureRecognizerBlock.m in Sources */,
+				205B9A8E1BF1058D008EDFD8 /* NSUserDefaults+iCloud.m in Sources */,
 				20CEA4DD1BA1503D0009D60C /* UIScrollView+Positioning.m in Sources */,
 				200B62951AD7FC5E0049E35C /* NSMutableAttributedString+TKCategory.m in Sources */,
 				20A877141BBF554100A403C2 /* UIAlertController+TKCategory.m in Sources */,
@@ -1464,6 +1478,7 @@
 				20B5FE401BB363C900C0F848 /* NSArray+TKCategory.m in Sources */,
 				20B5FE4A1BB363E800C0F848 /* NSURLSession+TKCategory.m in Sources */,
 				20B5FE4C1BB363EE00C0F848 /* NSTimer+Blocks.m in Sources */,
+				205B9A901BF1058D008EDFD8 /* NSUserDefaults+iCloud.m in Sources */,
 				20B5FE481BB363E200C0F848 /* NSBundle+TKCategory.m in Sources */,
 				20B5FE3C1BB363BA00C0F848 /* NSString+TKCategory.m in Sources */,
 				20B5FE381BB363AE00C0F848 /* NSObject+JSON.m in Sources */,
@@ -1501,6 +1516,7 @@
 				203BDD3C1BE17CFC00572452 /* TKSoundAlertController.m in Sources */,
 				20CEA48D1BA113C90009D60C /* UIImage+TKCategory.m in Sources */,
 				20CEA4421BA110D10009D60C /* NSMutableAttributedString+TKCategory.m in Sources */,
+				205B9A8F1BF1058D008EDFD8 /* NSUserDefaults+iCloud.m in Sources */,
 				20CEA4701BA112490009D60C /* CAAnimation+TKAnimation.m in Sources */,
 				20CEA4581BA1111D0009D60C /* UIImageView+TKCategory.m in Sources */,
 				20CEA4661BA1121E0009D60C /* UIControl+Blocks.m in Sources */,
