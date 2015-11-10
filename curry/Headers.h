@@ -62,7 +62,6 @@
 #import "UIScrollView+Positioning.h"
 #import "UIPanGestureRecognizer+VelocityDirection.h"
 #import "UIView+GestureRecognizerBlock.h"
-
 #import "UIView+TKCategory.h"
 #import "UIScrollview+TKCategory.h"
 #import "UILabel+TKCategory.h"
@@ -82,6 +81,7 @@
 #import "UIGestureRecognizer+TKCategory.h"
 #import "UIGestureRecognizer+Blocks.h"
 #import "UIControl+Blocks.h"
+#import "UIMotionEffectGroup+TKCategory.h"
 
 // Categories -> UIKit -> Controllers
 #import "UIImagePickerController+TKCategory.h"

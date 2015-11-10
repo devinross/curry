@@ -53,6 +53,7 @@
 #import "UIGestureRecognizer+TKCategory.h"
 #import "UIGestureRecognizer+Blocks.h"
 #import "UIControl+Blocks.h"
+#import "UIMotionEffectGroup+TKCategory.h"
 
 // Categories -> UIKit -> Controllers
 #import "UIViewController+TKCategory.h"

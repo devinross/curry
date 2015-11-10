@@ -90,4 +90,22 @@
 }
 
 
+- (BOOL) hasSuperview:(UIView*)parentView{
+	if(parentView == self.superview)
+		return YES;
+	if(!self.superview)
+		return NO;
+	return [self hasSuperview:self.superview];
+}
+
+- (void) removeAllMotionEffects{
+	
+	NSArray *effects = self.motionEffects.copy;
+	for(UIMotionEffect *effect in effects){
+		[self removeMotionEffect:effect];
+	}
+	
+}
+
+
 @end

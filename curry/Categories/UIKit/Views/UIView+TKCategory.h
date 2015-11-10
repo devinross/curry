@@ -87,4 +87,9 @@
 - (void) removeAllGestureRecognizers;
 
 
+- (BOOL) hasSuperview:(UIView*)parentView;
+
+- (void) removeAllMotionEffects;
+
+
 @end
