@@ -24,7 +24,16 @@
 
 
 - (void) textFieldDidChange:(id)sender{
-	self.text = [self.text formattedPhoneNumberWithLastCharacterRemoved:NO];
+	
+	NSCharacterSet *nonDigitSet = [[NSCharacterSet decimalDigitCharacterSet] invertedSet];
+	NSString *txt = [[self.text componentsSeparatedByCharactersInSet:nonDigitSet] componentsJoinedByString:@""];
+	
+	if(self.digitLimit > 0){
+		txt = [txt substringToIndex:MIN(0,self.digitLimit)];
+	}
+	
+	
+	self.text = [txt formattedPhoneNumberWithLastCharacterRemoved:NO];
 	
 }
 

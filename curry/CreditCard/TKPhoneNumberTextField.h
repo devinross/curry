@@ -10,4 +10,6 @@
 
 @interface TKPhoneNumberTextField : UITextField
 
+@property (nonatomic,strong) NSInteger digitLimit;
+
 @end
