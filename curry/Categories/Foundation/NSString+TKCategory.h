@@ -105,4 +105,6 @@
 - (NSString*) formattedPhoneNumberWithLastCharacterRemoved:(BOOL)deleteLastChar;
 
 
+- (NSString*) formattedPhoneNumberWithLastCharacterRemoved:(BOOL)deleteLastChar limit:(NSInteger)limit;
+
 @end

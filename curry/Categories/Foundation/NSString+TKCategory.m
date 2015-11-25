@@ -324,4 +324,58 @@
 }
 
 
+
+- (NSString*) formattedPhoneNumberWithLastCharacterRemoved:(BOOL)deleteLastChar limit:(NSInteger)limit{
+	if(self.length<1) return @"";
+	
+	NSError *error = NULL;
+	NSRegularExpression *regex = [NSRegularExpression regularExpressionWithPattern:@"[\\s-\\(\\)]" options:NSRegularExpressionCaseInsensitive error:&error];
+	NSString *digits = [regex stringByReplacingMatchesInString:self options:0 range:NSMakeRange(0, [self length]) withTemplate:@""];
+	
+	
+	// should we delete the last digit?
+	if(deleteLastChar)
+		digits = [digits substringToIndex:digits.length - 1];
+	
+	
+	// 123 456 7890
+	// format the number.. if it's less then 7 digits.. then use this regex.
+	BOOL leadingOne = [digits hasPrefix:@"1"];
+	
+	if((digits.length > 11 && leadingOne) || (digits.length > 10 && !leadingOne))
+		return [digits substringWithRange:NSMakeRange(0, MIN(limit,digits.length))];
+	
+	NSStringCompareOptions opt = NSRegularExpressionSearch;
+	NSRange range = NSMakeRange(0, digits.length);
+	
+	NSString *occurence, *replace;
+	
+	
+	if(digits.length < 5 && leadingOne){
+		occurence = @"(\\d{1})(\\d+)";
+		replace = @"$1 ($2)";
+		
+	}else if(digits.length < 8 && leadingOne){
+		occurence = @"(\\d{1})(\\d{3})(\\d+)";
+		replace = @"$1 ($2) $3";
+		
+	}else if(digits.length<7){
+		occurence = @"(\\d{3})(\\d+)";
+		replace = @"($1) $2";
+		
+	}else if(digits.length > 6 && leadingOne){
+		occurence = @"(\\d{1})(\\d{3})(\\d{3})(\\d+)";
+		replace = @"$1 ($2) $3-$4";
+		
+	}else{
+		occurence = @"(\\d{3})(\\d{3})(\\d+)";
+		replace = @"($1) $2-$3";
+	}
+	
+	digits = [digits stringByReplacingOccurrencesOfString:occurence withString:replace options:opt range:range];
+	
+	return digits;
+}
+
+
 @end
