@@ -39,10 +39,11 @@
  
 	
 	 @{
-		@"identifier" : @"id",
-		@"name" : @"name",
-		@"createdAt" : @[@"created_at",@"yyyy-MM-dd'T'HH:mm:ss"], // For NSDate
-		@"updatedAt" : @[@"updated_at",@"yyyy-MM-dd"]
+		@"identifier"		: @"id",
+		@"name"				: @"name",
+		@"createdAt"		: @[@"created_at",@"yyyy-MM-dd'T'HH:mm:ss"], // For NSDate
+		@"updatedAt"		: @[@"updated_at",@"yyyy-MM-dd"],
+		@"sub-objects"		: @{ @"class" : @"Product", @"structure" : @"NSArray", @"key" : @"products" }
 	 };
  
  
