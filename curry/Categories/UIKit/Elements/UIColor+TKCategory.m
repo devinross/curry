@@ -38,6 +38,9 @@
 	return [UIColor colorWithHex:hex alpha:1];
 }
 
+
+
+
 + (instancetype) colorWithHex:(unsigned int)hex alpha:(CGFloat)alpha{
 	
 	return [UIColor colorWithRed:((float)((hex & 0xFF0000) >> 16)) / 255.0
@@ -45,6 +48,17 @@
                             blue:((float)(hex & 0xFF)) / 255.0
                            alpha:alpha];
 	
+}
+
++ (UIColor *) colorWithHexString:(NSString *)hexString {
+	unsigned rgbValue = 0;
+	NSScanner *scanner = [NSScanner scannerWithString:hexString];
+	if([hexString hasPrefix:@"#"])// bypass '#' character
+		[scanner setScanLocation:1];
+	else if([hexString hasPrefix:@"0x"])
+		[scanner setScanLocation:2];
+	[scanner scanHexInt:&rgbValue];
+	return [UIColor colorWithRed:((rgbValue & 0xFF0000) >> 16)/255.0 green:((rgbValue & 0xFF00) >> 8)/255.0 blue:(rgbValue & 0xFF)/255.0 alpha:1.0];
 }
 
 + (UIColor*) randomColor{

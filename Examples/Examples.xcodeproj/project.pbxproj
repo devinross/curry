@@ -15,8 +15,9 @@
 		20785FF71AD83D0C000DC57F /* curry.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 20785FF31AD83CEE000DC57F /* curry.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		20785FFD1AD83DC1000DC57F /* CustomTextEntryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 20785FFC1AD83DC1000DC57F /* CustomTextEntryViewController.m */; };
 		2097F35C1B3DA3F100247736 /* VideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2097F35B1B3DA3F100247736 /* VideoViewController.m */; };
+		209EB3001C18011F002300A6 /* ColorsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 209EB2FF1C18011F002300A6 /* ColorsViewController.m */; };
 		20CB9CF81AF3EA47002E9F1C /* BlocksViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 20CB9CF71AF3EA47002E9F1C /* BlocksViewController.m */; };
-		20D4C89C1BB52A0000C75EEC /* PDFGeneratorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 20D4C89B1BB52A0000C75EEC /* PDFGeneratorViewController.m */; settings = {ASSET_TAGS = (); }; };
+		20D4C89C1BB52A0000C75EEC /* PDFGeneratorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 20D4C89B1BB52A0000C75EEC /* PDFGeneratorViewController.m */; };
 		20EC669D1B3DAD1D0027D6A2 /* balllin.mov in Resources */ = {isa = PBXBuildFile; fileRef = 20EC669C1B3DAD1D0027D6A2 /* balllin.mov */; };
 		20F19B1D1AE080F700077DA1 /* GesturesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 20F19B1C1AE080F700077DA1 /* GesturesViewController.m */; };
 /* End PBXBuildFile section */
@@ -95,6 +96,8 @@
 		20785FFC1AD83DC1000DC57F /* CustomTextEntryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomTextEntryViewController.m; sourceTree = "<group>"; };
 		2097F35A1B3DA3F100247736 /* VideoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VideoViewController.h; sourceTree = "<group>"; };
 		2097F35B1B3DA3F100247736 /* VideoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VideoViewController.m; sourceTree = "<group>"; };
+		209EB2FE1C18011F002300A6 /* ColorsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ColorsViewController.h; sourceTree = "<group>"; };
+		209EB2FF1C18011F002300A6 /* ColorsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ColorsViewController.m; sourceTree = "<group>"; };
 		20CB9CF61AF3EA47002E9F1C /* BlocksViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BlocksViewController.h; sourceTree = "<group>"; };
 		20CB9CF71AF3EA47002E9F1C /* BlocksViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BlocksViewController.m; sourceTree = "<group>"; };
 		20D4C89A1BB52A0000C75EEC /* PDFGeneratorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PDFGeneratorViewController.h; sourceTree = "<group>"; };
@@ -151,6 +154,8 @@
 				20D4C89B1BB52A0000C75EEC /* PDFGeneratorViewController.m */,
 				2097F35A1B3DA3F100247736 /* VideoViewController.h */,
 				2097F35B1B3DA3F100247736 /* VideoViewController.m */,
+				209EB2FE1C18011F002300A6 /* ColorsViewController.h */,
+				209EB2FF1C18011F002300A6 /* ColorsViewController.m */,
 				20785FC21AD83BBE000DC57F /* Supporting Files */,
 			);
 			path = Examples;
@@ -314,6 +319,7 @@
 				20F19B1D1AE080F700077DA1 /* GesturesViewController.m in Sources */,
 				20785FC51AD83BBE000DC57F /* AppDelegate.swift in Sources */,
 				20CB9CF81AF3EA47002E9F1C /* BlocksViewController.m in Sources */,
+				209EB3001C18011F002300A6 /* ColorsViewController.m in Sources */,
 				20785FEC1AD83C63000DC57F /* RootTableViewController.m in Sources */,
 				2097F35C1B3DA3F100247736 /* VideoViewController.m in Sources */,
 				207394241B14FC1600DBA74A /* CustomKeyboardViewController.m in Sources */,

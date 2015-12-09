@@ -48,6 +48,14 @@
 */
 + (UIColor *) colorWithHex:(unsigned int)hex alpha:(CGFloat)alpha;
 
+
+/** Creates and returns a color object using the specific hex value.
+ @param hexString The hex value that will decide the color.
+ @return The `UIColor` object.
+ */
++ (UIColor *) colorWithHexString:(NSString *)hexString;
+
+
 /** Creates and returns a color object with a random color value. The alpha property is 1.0.
  @return The `UIColor` object.
 */
@@ -58,5 +66,6 @@
  @return The `UIColor` object.
  */
 + (UIColor*) randomColorWithAlpha:(CGFloat)alpha;
+
 
 @end

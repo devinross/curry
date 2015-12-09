@@ -36,6 +36,7 @@
 #import "CustomKeyboardViewController.h"
 #import "VideoViewController.h"
 #import "PDFGeneratorViewController.h"
+#import "ColorsViewController.h"
 
 @implementation RootTableViewController
 
@@ -43,7 +44,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.items = @[@"Card Modal",@"Custom Text Fields",@"Gestures Blocks",@"Action Sheet Blocks",@"Custom Keyboards",@"Video View Controller",@"PDF Generation"];
+    self.items = @[@"Card Modal",@"Custom Text Fields",@"Gestures Blocks",@"Action Sheet Blocks",@"Custom Keyboards",@"Video View Controller",@"PDF Generation",@"Colors"];
     [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:IDENTIFIER];
     self.title = NSLocalizedString(@"Curry", @"");
 }
@@ -59,6 +60,7 @@
 - (UITableViewCell *) tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:IDENTIFIER forIndexPath:indexPath];
     cell.textLabel.text = self.items[indexPath.row];
+	cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
     return cell;
 }
 - (void) tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
@@ -83,6 +85,8 @@
 		ctr = VideoViewController.new;
 	else if(indexPath.row == 6)
 		ctr = PDFGeneratorViewController.new;
+	else if(indexPath.row == 7)
+		ctr = ColorsViewController.new;
 	
 	
 
