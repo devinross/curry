@@ -31,6 +31,12 @@
 
 #import "TKTableViewController.h"
 
+#if TARGET_OS_IOS
+@interface TKTableViewController (Search) <UISearchResultsUpdating,UISearchControllerDelegate>
+
+@end
+#endif
+
 @interface TKTableViewController () {
 @private
 	CGPoint _tableViewContentOffset;
@@ -122,6 +128,36 @@
 	return _searchBarDisplayController;
 }
 #pragma clang diagnostic pop
+
+
+- (UISearchController*) searchController{
+	if(_searchController) return _searchController;
+	_searchController = [[UISearchController alloc] initWithSearchResultsController:nil];
+	_searchController.searchResultsUpdater = self;
+	_searchController.delegate = self;
+	return _searchController;
+
+}
+
+- (void)updateSearchResultsForSearchController:(UISearchController *)searchController{
+
+}
+
+- (void)willPresentSearchController:(UISearchController *)searchController{
+	
+}
+- (void)didPresentSearchController:(UISearchController *)searchController{
+	
+}
+- (void)willDismissSearchController:(UISearchController *)searchController{
+	
+}
+- (void)didDismissSearchController:(UISearchController *)searchController{
+	
+}
+
+
+
 // -----------------------------
 #endif
 

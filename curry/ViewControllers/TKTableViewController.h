@@ -83,6 +83,9 @@
 @property (nonatomic,strong) UISearchDisplayController *searchBarDisplayController;
 #pragma clang diagnostic pop
 
+
+@property (nonatomic,strong) UISearchController *searchController;
+
 #endif
 
 /** The default value of this property is YES. When YES, the table view controller clears the table’s current selection when it receives a viewWillAppear: message. Setting this property to NO preserves the selection. */
