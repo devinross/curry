@@ -38,6 +38,7 @@
 // Categories -> Foundation
 #import "NSObject+JSON.h"
 #import "NSObject+TKCategory.h"
+#import "NSObject+DataHelper.h"
 #import "NSString+TKCategory.h"
 #import "NSArray+TKCategory.h"
 #import "NSDate+TKCategory.h"

@@ -195,10 +195,10 @@
 		20816C481BF177070042D557 /* UIMotionEffectGroup+TKCategory.h in Headers */ = {isa = PBXBuildFile; fileRef = 20816C451BF177070042D557 /* UIMotionEffectGroup+TKCategory.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		20816C491BF177070042D557 /* UIMotionEffectGroup+TKCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 20816C461BF177070042D557 /* UIMotionEffectGroup+TKCategory.m */; };
 		20816C4A1BF177070042D557 /* UIMotionEffectGroup+TKCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 20816C461BF177070042D557 /* UIMotionEffectGroup+TKCategory.m */; };
-		208CCE921C35855D009EE52E /* NSObject+DataHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = 208CCE901C35855D009EE52E /* NSObject+DataHelper.h */; };
-		208CCE931C35855D009EE52E /* NSObject+DataHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = 208CCE901C35855D009EE52E /* NSObject+DataHelper.h */; };
-		208CCE941C35855D009EE52E /* NSObject+DataHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = 208CCE901C35855D009EE52E /* NSObject+DataHelper.h */; };
-		208CCE951C35855D009EE52E /* NSObject+DataHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = 208CCE901C35855D009EE52E /* NSObject+DataHelper.h */; };
+		208CCE921C35855D009EE52E /* NSObject+DataHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = 208CCE901C35855D009EE52E /* NSObject+DataHelper.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		208CCE931C35855D009EE52E /* NSObject+DataHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = 208CCE901C35855D009EE52E /* NSObject+DataHelper.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		208CCE941C35855D009EE52E /* NSObject+DataHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = 208CCE901C35855D009EE52E /* NSObject+DataHelper.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		208CCE951C35855D009EE52E /* NSObject+DataHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = 208CCE901C35855D009EE52E /* NSObject+DataHelper.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		208CCE961C35855D009EE52E /* NSObject+DataHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 208CCE911C35855D009EE52E /* NSObject+DataHelper.m */; };
 		208CCE971C35855D009EE52E /* NSObject+DataHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 208CCE911C35855D009EE52E /* NSObject+DataHelper.m */; };
 		208CCE981C35855D009EE52E /* NSObject+DataHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 208CCE911C35855D009EE52E /* NSObject+DataHelper.m */; };
