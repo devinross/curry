@@ -44,12 +44,19 @@
 	CGImageRelease(imageRef);
 	return cropped;
 }
-- (UIImage *) squareImage{
-	CGFloat min = self.size.width <= self.size.height ? self.size.width : self.size.height;	
-	return [self imageCroppedToRect:CGRectMake(0,0,min,min)];
+- (UIImage *) imageByApplyingSquareCrop{
+	CGFloat min = self.size.width <= self.size.height ? self.size.width : self.size.height;
+	CGFloat scale = self.scale;
+	return [self imageCroppedToRect:CGRectMake(0,0,min*scale,min*scale)];
 }
 
-
+- (UIImage*) imageByApplyingCenteredSquareCrop{
+	CGFloat min = MIN(self.size.width,self.size.height);
+	CGFloat minX = round((self.size.width-min)/2);
+	CGFloat minY = round((self.size.height-min)/2);
+	CGFloat scale = self.scale;
+	return [self imageCroppedToRect:CGRectMake(minX*scale,minY*scale,min*scale,min*scale)];
+}
 
 
 - (UIImage *) imageByApplyingLightEffect{

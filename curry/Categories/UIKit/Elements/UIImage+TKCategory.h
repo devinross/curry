@@ -38,7 +38,9 @@
 
 - (UIImage *) imageCroppedToRect:(CGRect)rect;
 
-@property (nonatomic, readonly, strong) UIImage *squareImage;
+@property (nonatomic, readonly, strong) UIImage *imageByApplyingSquareCrop;
+
+@property (nonatomic, readonly, strong) UIImage *imageByApplyingCenteredSquareCrop;
 
 
 /** Creates and returns an image with the applyed lighting effect.
