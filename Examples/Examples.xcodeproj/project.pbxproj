@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		200C415F1C540B5E004492A5 /* BrightnessViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 200C415E1C540B5E004492A5 /* BrightnessViewController.m */; };
 		207394241B14FC1600DBA74A /* CustomKeyboardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 207394231B14FC1600DBA74A /* CustomKeyboardViewController.m */; };
 		20785FC51AD83BBE000DC57F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20785FC41AD83BBE000DC57F /* AppDelegate.swift */; };
 		20785FCC1AD83BBE000DC57F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 20785FCB1AD83BBE000DC57F /* Images.xcassets */; };
@@ -82,6 +83,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		200C415D1C540B5E004492A5 /* BrightnessViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BrightnessViewController.h; sourceTree = "<group>"; };
+		200C415E1C540B5E004492A5 /* BrightnessViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BrightnessViewController.m; sourceTree = "<group>"; };
 		207394221B14FC1600DBA74A /* CustomKeyboardViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomKeyboardViewController.h; sourceTree = "<group>"; };
 		207394231B14FC1600DBA74A /* CustomKeyboardViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomKeyboardViewController.m; sourceTree = "<group>"; };
 		20785FBF1AD83BBE000DC57F /* Examples.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Examples.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -144,6 +147,8 @@
 				20785FEB1AD83C63000DC57F /* RootTableViewController.m */,
 				20785FFB1AD83DC1000DC57F /* CustomTextEntryViewController.h */,
 				20785FFC1AD83DC1000DC57F /* CustomTextEntryViewController.m */,
+				200C415D1C540B5E004492A5 /* BrightnessViewController.h */,
+				200C415E1C540B5E004492A5 /* BrightnessViewController.m */,
 				20F19B1B1AE080F700077DA1 /* GesturesViewController.h */,
 				20F19B1C1AE080F700077DA1 /* GesturesViewController.m */,
 				207394221B14FC1600DBA74A /* CustomKeyboardViewController.h */,
@@ -317,6 +322,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				20F19B1D1AE080F700077DA1 /* GesturesViewController.m in Sources */,
+				200C415F1C540B5E004492A5 /* BrightnessViewController.m in Sources */,
 				20785FC51AD83BBE000DC57F /* AppDelegate.swift in Sources */,
 				20CB9CF81AF3EA47002E9F1C /* BlocksViewController.m in Sources */,
 				209EB3001C18011F002300A6 /* ColorsViewController.m in Sources */,

@@ -30,11 +30,28 @@
  */
 
 #import "UIScreen+TKCategory.h"
-
+#import "NSTimer+Blocks.h"
 @implementation UIScreen (TKCategory)
 
 - (CGFloat) onePixelSize{
 	return 1.0f / self.scale;
+}
+
+- (void) setBrightness:(CGFloat)brightness duration:(NSTimeInterval)duration{
+	
+	CGFloat currentBrightness = self.brightness;
+	if(brightness == currentBrightness) return;
+	CGFloat delta = brightness - currentBrightness;
+	
+	for(NSInteger i=0;i<duration*60;i++){
+		NSTimeInterval delay = (i +1) * 1.0f/60.0f;
+		CGFloat brightness = currentBrightness + delta * ((i+1) / (duration * 60));
+		dispatch_after(dispatch_time(DISPATCH_TIME_NOW, delay * NSEC_PER_SEC), dispatch_get_main_queue(), ^{
+			self.brightness = brightness;
+		});
+	}
+
+	
 }
 
 @end

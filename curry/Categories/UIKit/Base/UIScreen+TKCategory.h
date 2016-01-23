@@ -37,4 +37,10 @@
 /** The point size of one pixel on screen. (ie. @1x => 1, @2x => 0.5) */
 @property (nonatomic, readonly) CGFloat onePixelSize;
 
+/** Animate the screen brightness change.
+ @param brightness The brightness (from 0.0 to 1.0) the screen should illuminate to.
+ @param duration Duration of the screen brightness change.
+ */
+- (void) setBrightness:(CGFloat)brightness duration:(NSTimeInterval)duration;
+
 @end

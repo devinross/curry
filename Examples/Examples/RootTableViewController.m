@@ -37,6 +37,7 @@
 #import "VideoViewController.h"
 #import "PDFGeneratorViewController.h"
 #import "ColorsViewController.h"
+#import "BrightnessViewController.h"
 
 @implementation RootTableViewController
 
@@ -44,7 +45,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.items = @[@"Card Modal",@"Custom Text Fields",@"Gestures Blocks",@"Action Sheet Blocks",@"Custom Keyboards",@"Video View Controller",@"PDF Generation",@"Colors"];
+    self.items = @[@"Card Modal",@"Custom Text Fields",@"Gestures Blocks",@"Action Sheet Blocks",@"Custom Keyboards",@"Video View Controller",@"Screen Brightness",@"PDF Generation",@"Colors"];
     [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:IDENTIFIER];
     self.title = NSLocalizedString(@"Curry", @"");
 }
@@ -84,8 +85,10 @@
 	else if(indexPath.row == 5)
 		ctr = VideoViewController.new;
 	else if(indexPath.row == 6)
-		ctr = PDFGeneratorViewController.new;
+		ctr = BrightnessViewController.new;
 	else if(indexPath.row == 7)
+		ctr = PDFGeneratorViewController.new;
+	else if(indexPath.row == 8)
 		ctr = ColorsViewController.new;
 	
 	
