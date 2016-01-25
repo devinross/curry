@@ -34,7 +34,7 @@
 	if(sender.tag == 0){
 		
 		sender.tag = 1;
-		[[UIScreen mainScreen] setBrightness:0.2 duration:5];
+		[[UIScreen mainScreen] setBrightness:0.2 animated:YES];
 		[sender setTitle:NSLocalizedString(@"Raise Brightness",@"") forState:UIControlStateNormal];
 
 	}else{
@@ -42,7 +42,7 @@
 
 		[sender setTitle:NSLocalizedString(@"Lower Brightness",@"") forState:UIControlStateNormal];
 
-		[[UIScreen mainScreen] setBrightness:1 duration:5];
+		[[UIScreen mainScreen] setBrightness:1 animated:YES];
 		
 	}
 	

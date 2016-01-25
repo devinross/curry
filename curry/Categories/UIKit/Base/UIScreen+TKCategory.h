@@ -39,8 +39,8 @@
 
 /** Animate the screen brightness change.
  @param brightness The brightness (from 0.0 to 1.0) the screen should illuminate to.
- @param duration Duration of the screen brightness change.
+ @param animated Animate the screen brightness change.
  */
-- (void) setBrightness:(CGFloat)brightness duration:(NSTimeInterval)duration;
+- (void) setBrightness:(CGFloat)brightness animated:(BOOL)animated;
 
 @end

@@ -37,21 +37,28 @@
 	return 1.0f / self.scale;
 }
 
-- (void) setBrightness:(CGFloat)brightness duration:(NSTimeInterval)duration{
-	
-	CGFloat currentBrightness = self.brightness;
-	if(brightness == currentBrightness) return;
-	CGFloat delta = brightness - currentBrightness;
-	
-	for(NSInteger i=0;i<duration*60;i++){
-		NSTimeInterval delay = (i +1) * 1.0f/60.0f;
-		CGFloat brightness = currentBrightness + delta * ((i+1) / (duration * 60));
-		dispatch_after(dispatch_time(DISPATCH_TIME_NOW, delay * NSEC_PER_SEC), dispatch_get_main_queue(), ^{
-			self.brightness = brightness;
-		});
-	}
 
+
+
+- (void) setBrightness:(CGFloat)brightness animated:(BOOL)animated{
+	if(brightness==self.brightness) return;
 	
+	if(!animated){
+		self.brightness = brightness;
+		return;
+	}
+	[self performSelector:@selector(adjustBrightness:) withObject:@(brightness) afterDelay:.01];
+	
+	
+}
+
+- (void) adjustBrightness:(NSNumber*)sender {
+	CGFloat brightness = self.brightness;
+	CGFloat goalBrightness = sender.doubleValue;
+	if(fabs(brightness-goalBrightness)<0.01) return;
+	BOOL goUp = goalBrightness > brightness;
+	self.brightness += goUp ? 0.01 : -0.01;
+	[self performSelector:@selector(adjustBrightness:) withObject:sender afterDelay:.01];
 }
 
 @end
