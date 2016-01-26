@@ -143,6 +143,16 @@
     return [regExPredicate evaluateWithObject:[self lowercaseString]];  
 }
 
+
+- (NSString*) stripWhitespace{
+	return [self stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceCharacterSet]];
+}
+
+- (NSString*) stripWhitepspaceAndNewlines{
+	return [self stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
+}
+
+
 - (NSString*) URLEncode{
 	NSMutableCharacterSet *set = [NSCharacterSet URLQueryAllowedCharacterSet].mutableCopy;
 	[set removeCharactersInString:@";?/:#& =+$,%<>~%"];

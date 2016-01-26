@@ -43,6 +43,8 @@
 
 - (void) testShouldHaveString;
 
+- (void) testShouldHaveStripWhitespace;
+
 - (void) testShouldPassCreditCardValidation;
 
 - (void) testShouldFormatPhoneString;

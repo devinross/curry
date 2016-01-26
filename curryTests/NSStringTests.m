@@ -59,6 +59,17 @@
 	XCTAssertEqual(@"      \n\t".lengthWithoutWhitespace, 0);
 }
 
+
+- (void) testShouldHaveStripWhitespace{
+	
+	NSString *resultString = @"This is the final result string.";
+	NSString *test1 = [NSString stringWithFormat:@"   %@    ",resultString];
+	NSString *test2 = [NSString stringWithFormat:@"\n \t   %@    \n \t ",resultString];
+	XCTAssertEqualObjects(test1.stripWhitespace,resultString);
+	XCTAssertEqualObjects(test2.stripWhitepspaceAndNewlines,resultString);
+
+}
+
 - (void) testShouldEncodeString{
 	
 	XCTAssertEqualObjects([@"" URLEncode], @"");

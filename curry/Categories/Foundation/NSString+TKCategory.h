@@ -40,6 +40,17 @@
  */
 @property (nonatomic, getter=isEmail, readonly) BOOL email;
 
+
+/** Returns a `NSString` that removes blank space from the start and end of string.
+ @return A stripped string.
+ */
+@property (nonatomic, readonly, copy) NSString *stripWhitespace;
+
+/** Returns a `NSString` that removes blank space and new lines from the start and end of string.
+ @return A stripped string.
+ */
+@property (nonatomic, readonly, copy) NSString *stripWhitepspaceAndNewlines;
+
 /** Returns a `NSString` that is URL friendly. 
  @return A URL encoded string.
  */
