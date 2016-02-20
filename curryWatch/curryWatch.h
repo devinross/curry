@@ -17,4 +17,4 @@ FOUNDATION_EXPORT const unsigned char curryWatchVersionString[];
 // In this header, you should import all the public headers of your framework using statements like #import <curryWatch/PublicHeader.h>
 
 
-#import "WatchHeaders.h"
+#import "Headers.h"

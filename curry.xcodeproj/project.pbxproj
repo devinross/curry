@@ -138,7 +138,6 @@
 		2010DCD61BB0EAE200810A98 /* NSTimer+Blocks.h in Headers */ = {isa = PBXBuildFile; fileRef = 2098BA221B0F6C4F000E0074 /* NSTimer+Blocks.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2010DCD71BB0EAE600810A98 /* NSTimer+Blocks.m in Sources */ = {isa = PBXBuildFile; fileRef = 2098BA231B0F6C4F000E0074 /* NSTimer+Blocks.m */; };
 		2010DCF01BB0F5F800810A98 /* TKUIKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 2010DCBF1BB0EA0600810A98 /* TKUIKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		2010DCF11BB0F87900810A98 /* WatchHeaders.h in Headers */ = {isa = PBXBuildFile; fileRef = 2010DCBE1BB0E94A00810A98 /* WatchHeaders.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2010DCF21BB0F88F00810A98 /* TKFoundation.h in Headers */ = {isa = PBXBuildFile; fileRef = 200B62721AD7FBDC0049E35C /* TKFoundation.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		20173BD71BE62B8E00367A60 /* TKTableViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 200B62FE1AD804340049E35C /* TKTableViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		20173BD81BE62B9200367A60 /* TKTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 200B62FF1AD804340049E35C /* TKTableViewController.m */; };
@@ -181,6 +180,9 @@
 		205B9A8E1BF1058D008EDFD8 /* NSUserDefaults+iCloud.m in Sources */ = {isa = PBXBuildFile; fileRef = 205B9A8A1BF1058D008EDFD8 /* NSUserDefaults+iCloud.m */; };
 		205B9A8F1BF1058D008EDFD8 /* NSUserDefaults+iCloud.m in Sources */ = {isa = PBXBuildFile; fileRef = 205B9A8A1BF1058D008EDFD8 /* NSUserDefaults+iCloud.m */; };
 		205B9A901BF1058D008EDFD8 /* NSUserDefaults+iCloud.m in Sources */ = {isa = PBXBuildFile; fileRef = 205B9A8A1BF1058D008EDFD8 /* NSUserDefaults+iCloud.m */; };
+		2069E8171C78EEDB003035FF /* Headers.h in Headers */ = {isa = PBXBuildFile; fileRef = 20A75C5E1AD82C8500E2106A /* Headers.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2069E8181C78EFCD003035FF /* Headers.h in Headers */ = {isa = PBXBuildFile; fileRef = 20A75C5E1AD82C8500E2106A /* Headers.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2069E8191C78EFCD003035FF /* Headers.h in Headers */ = {isa = PBXBuildFile; fileRef = 20A75C5E1AD82C8500E2106A /* Headers.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		20785F771AD8388E000DC57F /* NSStringTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 20785F701AD8388E000DC57F /* NSStringTests.m */; };
 		20785F781AD8388E000DC57F /* UIViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 20785F721AD8388E000DC57F /* UIViewTests.m */; };
 		20785F791AD8388E000DC57F /* NSArrayTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 20785F741AD8388E000DC57F /* NSArrayTests.m */; };
@@ -235,7 +237,6 @@
 		20A877131BBF554100A403C2 /* UIAlertController+TKCategory.h in Headers */ = {isa = PBXBuildFile; fileRef = 20A877111BBF554100A403C2 /* UIAlertController+TKCategory.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		20A877141BBF554100A403C2 /* UIAlertController+TKCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 20A877121BBF554100A403C2 /* UIAlertController+TKCategory.m */; };
 		20B5FE221BB3613F00C0F848 /* curryMac.h in Headers */ = {isa = PBXBuildFile; fileRef = 20B5FE211BB3613F00C0F848 /* curryMac.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		20B5FE281BB3618B00C0F848 /* MacHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = 20B5FE271BB3618B00C0F848 /* MacHeader.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		20B5FE361BB363A200C0F848 /* TKFoundation.h in Headers */ = {isa = PBXBuildFile; fileRef = 200B62721AD7FBDC0049E35C /* TKFoundation.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		20B5FE371BB363A900C0F848 /* NSObject+JSON.h in Headers */ = {isa = PBXBuildFile; fileRef = 200B629B1AD7FD660049E35C /* NSObject+JSON.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		20B5FE381BB363AE00C0F848 /* NSObject+JSON.m in Sources */ = {isa = PBXBuildFile; fileRef = 200B629C1AD7FD660049E35C /* NSObject+JSON.m */; };
@@ -343,7 +344,6 @@
 		20CEA4871BA113110009D60C /* TKCreditCardZipTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 207860131AD84A87000DC57F /* TKCreditCardZipTextField.m */; };
 		20CEA4881BA113140009D60C /* TKPhoneNumberTextField.h in Headers */ = {isa = PBXBuildFile; fileRef = 20A46DDD1B61C097004A4153 /* TKPhoneNumberTextField.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		20CEA4891BA113170009D60C /* TKPhoneNumberTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 20A46DDE1B61C097004A4153 /* TKPhoneNumberTextField.m */; };
-		20CEA48B1BA113450009D60C /* Header.h in Headers */ = {isa = PBXBuildFile; fileRef = 20CEA48A1BA113450009D60C /* Header.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		20CEA48C1BA113C60009D60C /* UIImage+TKCategory.h in Headers */ = {isa = PBXBuildFile; fileRef = 200B62B41AD7FEF80049E35C /* UIImage+TKCategory.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		20CEA48D1BA113C90009D60C /* UIImage+TKCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 200B62B51AD7FEF80049E35C /* UIImage+TKCategory.m */; };
 		20CEA48E1BA113CC0009D60C /* UIFont+TKCategory.h in Headers */ = {isa = PBXBuildFile; fileRef = 200B62D01AD7FEF80049E35C /* UIFont+TKCategory.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -473,7 +473,6 @@
 		2010DCB01BB0E40E00810A98 /* curryWatch.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = curryWatch.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2010DCB21BB0E40E00810A98 /* curryWatch.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = curryWatch.h; sourceTree = "<group>"; };
 		2010DCB41BB0E40E00810A98 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		2010DCBE1BB0E94A00810A98 /* WatchHeaders.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WatchHeaders.h; sourceTree = "<group>"; };
 		2010DCBF1BB0EA0600810A98 /* TKUIKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TKUIKit.h; sourceTree = "<group>"; };
 		202D35D31BDB252600886913 /* TKCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TKCollectionViewController.h; sourceTree = "<group>"; };
 		202D35D41BDB252600886913 /* TKCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TKCollectionViewController.m; sourceTree = "<group>"; };
@@ -546,7 +545,6 @@
 		20B5FE1F1BB3613F00C0F848 /* curryMac.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = curryMac.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		20B5FE211BB3613F00C0F848 /* curryMac.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = curryMac.h; sourceTree = "<group>"; };
 		20B5FE231BB3613F00C0F848 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		20B5FE271BB3618B00C0F848 /* MacHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MacHeader.h; sourceTree = "<group>"; };
 		20CAE0D21B0953E40088740E /* TKSwitchCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TKSwitchCell.h; sourceTree = "<group>"; };
 		20CAE0D31B0953E40088740E /* TKSwitchCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TKSwitchCell.m; sourceTree = "<group>"; };
 		20CB9CF11AF3E4B0002E9F1C /* UIActionSheet+Blocks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIActionSheet+Blocks.h"; path = "curry/Categories/UIKit/Controllers/UIActionSheet+Blocks.h"; sourceTree = SOURCE_ROOT; };
@@ -558,7 +556,6 @@
 		20CEA42B1BA1105D0009D60C /* curryTV.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = curryTV.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		20CEA42D1BA1105D0009D60C /* curryTV.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = curryTV.h; sourceTree = "<group>"; };
 		20CEA42F1BA1105D0009D60C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		20CEA48A1BA113450009D60C /* Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Header.h; sourceTree = "<group>"; };
 		20CEA4D31BA1503D0009D60C /* UIView+Positioning.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Positioning.h"; sourceTree = "<group>"; };
 		20CEA4D41BA1503D0009D60C /* UIView+Positioning.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Positioning.m"; sourceTree = "<group>"; };
 		20CEA4D51BA1503D0009D60C /* UIScrollView+Positioning.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+Positioning.h"; sourceTree = "<group>"; };
@@ -917,7 +914,6 @@
 			isa = PBXGroup;
 			children = (
 				2010DCB21BB0E40E00810A98 /* curryWatch.h */,
-				2010DCBE1BB0E94A00810A98 /* WatchHeaders.h */,
 				2010DCB41BB0E40E00810A98 /* Info.plist */,
 			);
 			path = curryWatch;
@@ -963,7 +959,6 @@
 			isa = PBXGroup;
 			children = (
 				20B5FE211BB3613F00C0F848 /* curryMac.h */,
-				20B5FE271BB3618B00C0F848 /* MacHeader.h */,
 				207C97AF1BD7F1AC00342677 /* NSView+Positioning.h */,
 				207C97B01BD7F1AC00342677 /* NSView+Positioning.m */,
 				207C97B31BD7F3F200342677 /* NSView+TKCategory.h */,
@@ -977,7 +972,6 @@
 			isa = PBXGroup;
 			children = (
 				20CEA42D1BA1105D0009D60C /* curryTV.h */,
-				20CEA48A1BA113450009D60C /* Header.h */,
 				20CEA42F1BA1105D0009D60C /* Info.plist */,
 			);
 			path = curryTV;
@@ -1090,8 +1084,8 @@
 				2010DCC31BB0EA9B00810A98 /* NSObject+TKCategory.h in Headers */,
 				2010DCCE1BB0EAC600810A98 /* NSAttributedString+TKCategory.h in Headers */,
 				2010DCB31BB0E40E00810A98 /* curryWatch.h in Headers */,
-				2010DCF11BB0F87900810A98 /* WatchHeaders.h in Headers */,
 				2010DCD01BB0EACD00810A98 /* NSMutableAttributedString+TKCategory.h in Headers */,
+				2069E8181C78EFCD003035FF /* Headers.h in Headers */,
 				2010DCD21BB0EAD300810A98 /* NSBundle+TKCategory.h in Headers */,
 				2010DCC51BB0EAA300810A98 /* NSString+TKCategory.h in Headers */,
 			);
@@ -1112,10 +1106,10 @@
 				208CCE951C35855D009EE52E /* NSObject+DataHelper.h in Headers */,
 				20B5FE3B1BB363B600C0F848 /* NSString+TKCategory.h in Headers */,
 				20B5FE411BB363CB00C0F848 /* NSMutableArray+TKCategory.h in Headers */,
+				2069E8191C78EFCD003035FF /* Headers.h in Headers */,
 				207C97B51BD7F3F200342677 /* NSView+TKCategory.h in Headers */,
 				20B5FE221BB3613F00C0F848 /* curryMac.h in Headers */,
 				20B5FE371BB363A900C0F848 /* NSObject+JSON.h in Headers */,
-				20B5FE281BB3618B00C0F848 /* MacHeader.h in Headers */,
 				20B5FE391BB363B000C0F848 /* NSObject+TKCategory.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1137,11 +1131,11 @@
 				20CEA4711BA1124F0009D60C /* TKCustomPresentationViewController.h in Headers */,
 				20CEA4941BA113EE0009D60C /* TKTextFieldCell.h in Headers */,
 				203BDD3D1BE17CFE00572452 /* TKSoundAlertController.h in Headers */,
+				2069E8171C78EEDB003035FF /* Headers.h in Headers */,
 				209761E91BD9EC0C00EE6F81 /* UIControl+Blocks.h in Headers */,
 				20CEA4671BA112280009D60C /* UIViewController+TKCategory.h in Headers */,
 				20CEA4381BA110AF0009D60C /* NSString+TKCategory.h in Headers */,
 				20CEA4DC1BA1503D0009D60C /* UIScrollView+Positioning.h in Headers */,
-				20CEA48B1BA113450009D60C /* Header.h in Headers */,
 				2010DCF01BB0F5F800810A98 /* TKUIKit.h in Headers */,
 				20CEA4451BA110D90009D60C /* NSURLSession+TKCategory.h in Headers */,
 				20CEA4331BA110900009D60C /* TKFoundation.h in Headers */,

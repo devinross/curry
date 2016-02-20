@@ -37,10 +37,15 @@
 /** The point size of one pixel on screen. (ie. @1x => 1, @2x => 0.5) */
 @property (nonatomic, readonly) CGFloat onePixelSize;
 
+
+#if !TARGET_OS_TV
+
 /** Animate the screen brightness change.
  @param brightness The brightness (from 0.0 to 1.0) the screen should illuminate to.
  @param animated Animate the screen brightness change.
  */
 - (void) setBrightness:(CGFloat)brightness animated:(BOOL)animated;
+
+#endif
 
 @end

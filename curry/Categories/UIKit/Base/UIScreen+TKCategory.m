@@ -39,7 +39,7 @@
 
 
 
-
+#if !TARGET_OS_TV
 - (void) setBrightness:(CGFloat)brightness animated:(BOOL)animated{
 	if(brightness==self.brightness) return;
 	
@@ -60,5 +60,7 @@
 	self.brightness += goUp ? 0.01 : -0.01;
 	[self performSelector:@selector(adjustBrightness:) withObject:sender afterDelay:.01];
 }
+
+#endif
 
 @end

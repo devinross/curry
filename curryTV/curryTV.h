@@ -42,4 +42,4 @@ FOUNDATION_EXPORT const unsigned char curryTVVersionString[];
 // In this header, you should import all the public headers of your framework using statements like #import <curryTV/PublicHeader.h>
 
 
-#import "Header.h"
+#import "Headers.h"

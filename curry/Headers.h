@@ -33,17 +33,19 @@
 #ifndef curry_Header_h
 #define curry_Header_h
 
-
 #import "TKFoundation.h"
+
+#if TARGET_OS_IOS || TARGET_OS_TV
 #import "TKUIKit.h"
+#endif
 
 // Categories -> Foundation
 #import "NSObject+JSON.h"
 #import "NSObject+TKCategory.h"
-#import "NSObject+DataHelper.h"
 #import "NSString+TKCategory.h"
 #import "NSArray+TKCategory.h"
 #import "NSDate+TKCategory.h"
+#import "NSObject+DataHelper.h"
 #import "NSMutableArray+TKCategory.h"
 #import "NSAttributedString+TKCategory.h"
 #import "NSMutableAttributedString+TKCategory.h"
@@ -51,6 +53,8 @@
 #import "NSURLSession+TKCategory.h"
 #import "NSTimer+Blocks.h"
 #import "NSUserDefaults+iCloud.h"
+
+#if TARGET_OS_IOS || TARGET_OS_TV
 
 // Categories -> UIKit -> Base
 #import "UIApplication+TKCategory.h"
@@ -107,9 +111,13 @@
 #import "TKCardModalViewController.h"
 #import "TKTableViewController.h"
 #import "TKKeyboardTableViewController.h"
-#import "TKWebViewController.h"
 #import "TKVideoViewController.h"
 #import "TKCollectionViewController.h"
+
+#if !TARGET_OS_TV
+#import "TKWebViewController.h"
+#endif
+
 
 // Views -> Keyboard
 #import "TKInputView.h"
@@ -125,8 +133,10 @@
 #import "TKExtendedScrollView.h"
 #import "TKSectionedScrollView.h"
 #import "TKCurrentTimeLabel.h"
+#if !TARGET_OS_TV
 #import "TKSwitchCell.h"
 #import "TKStepperCell.h"
+#endif
 #import "TKTextFieldCell.h"
 #import "TKWindow.h"
 #import "TKTextView.h"
@@ -141,5 +151,12 @@
 // Extra
 #import "TKSoundAlertController.h"
 
+#endif
+
+
+#if TARGET_OS_MAC && !TARGET_OS_SIMULATOR
+#import "NSView+Positioning.h"
+#import "NSView+TKCategory.h"
+#endif
 
 #endif
