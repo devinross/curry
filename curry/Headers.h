@@ -154,7 +154,7 @@
 #endif
 
 
-#if TARGET_OS_MAC && !TARGET_OS_SIMULATOR
+#if TARGET_OS_X
 #import "NSView+Positioning.h"
 #import "NSView+TKCategory.h"
 #endif
