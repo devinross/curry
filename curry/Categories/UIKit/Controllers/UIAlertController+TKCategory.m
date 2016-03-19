@@ -41,4 +41,8 @@
 	return alert;
 }
 
+- (void) addActionWithTitle:(nullable NSString *)title style:(UIAlertActionStyle)style handler:(void (^ __nullable)(UIAlertAction *action))handler{
+	[self addAction:[UIActionSheet [UIAlertAction actionWithTitle:title style:style handler:handler]];
+}
+
 @end
