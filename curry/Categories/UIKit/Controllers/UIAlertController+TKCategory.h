@@ -35,7 +35,7 @@
 
 + (UIAlertController*) alertControllerWithTitle:(NSString*)title message:(NSString*)message dismiss:(NSString*)dismiss;
 
-- (void) addActionWithTitle:(nullable NSString *)title style:(UIAlertActionStyle)style handler:(void (^ __nullable)(UIAlertAction *action))handler;
+- (void) addActionWithTitle:(NSString *)title style:(UIAlertActionStyle)style handler:(void (^)(UIAlertAction *action))handler;
 
 
 @end
