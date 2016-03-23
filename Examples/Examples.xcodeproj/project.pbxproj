@@ -17,6 +17,13 @@
 		20785FFD1AD83DC1000DC57F /* CustomTextEntryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 20785FFC1AD83DC1000DC57F /* CustomTextEntryViewController.m */; };
 		2097F35C1B3DA3F100247736 /* VideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2097F35B1B3DA3F100247736 /* VideoViewController.m */; };
 		209EB3001C18011F002300A6 /* ColorsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 209EB2FF1C18011F002300A6 /* ColorsViewController.m */; };
+		20A85BC91CA3522C00632668 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 20A85BC81CA3522C00632668 /* main.m */; };
+		20A85BCC1CA3522C00632668 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 20A85BCB1CA3522C00632668 /* AppDelegate.m */; };
+		20A85BCF1CA3522C00632668 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 20A85BCE1CA3522C00632668 /* ViewController.m */; };
+		20A85BD21CA3522C00632668 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 20A85BD01CA3522C00632668 /* Main.storyboard */; };
+		20A85BD41CA3522C00632668 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 20A85BD31CA3522C00632668 /* Assets.xcassets */; };
+		20A85BDE1CA3523C00632668 /* curryTV.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20D4C8A31BB52A0100C75EEC /* curryTV.framework */; };
+		20A85BDF1CA3523C00632668 /* curryTV.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 20D4C8A31BB52A0100C75EEC /* curryTV.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		20CB9CF81AF3EA47002E9F1C /* BlocksViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 20CB9CF71AF3EA47002E9F1C /* BlocksViewController.m */; };
 		20D4C89C1BB52A0000C75EEC /* PDFGeneratorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 20D4C89B1BB52A0000C75EEC /* PDFGeneratorViewController.m */; };
 		20EC669D1B3DAD1D0027D6A2 /* balllin.mov in Resources */ = {isa = PBXBuildFile; fileRef = 20EC669C1B3DAD1D0027D6A2 /* balllin.mov */; };
@@ -44,6 +51,13 @@
 			proxyType = 1;
 			remoteGlobalIDString = 200B62541AD7FB450049E35C;
 			remoteInfo = curry;
+		};
+		20A85BE01CA3523C00632668 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 20785FED1AD83CED000DC57F /* curry.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 20CEA42A1BA1105D0009D60C;
+			remoteInfo = curryTV;
 		};
 		20D4C8A21BB52A0100C75EEC /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -80,6 +94,17 @@
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		20A85BE21CA3523C00632668 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				20A85BDF1CA3523C00632668 /* curryTV.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
@@ -101,6 +126,15 @@
 		2097F35B1B3DA3F100247736 /* VideoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VideoViewController.m; sourceTree = "<group>"; };
 		209EB2FE1C18011F002300A6 /* ColorsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ColorsViewController.h; sourceTree = "<group>"; };
 		209EB2FF1C18011F002300A6 /* ColorsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ColorsViewController.m; sourceTree = "<group>"; };
+		20A85BC51CA3522C00632668 /* TVExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TVExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		20A85BC81CA3522C00632668 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		20A85BCA1CA3522C00632668 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		20A85BCB1CA3522C00632668 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		20A85BCD1CA3522C00632668 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		20A85BCE1CA3522C00632668 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		20A85BD11CA3522C00632668 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		20A85BD31CA3522C00632668 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		20A85BD51CA3522C00632668 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		20CB9CF61AF3EA47002E9F1C /* BlocksViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BlocksViewController.h; sourceTree = "<group>"; };
 		20CB9CF71AF3EA47002E9F1C /* BlocksViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BlocksViewController.m; sourceTree = "<group>"; };
 		20D4C89A1BB52A0000C75EEC /* PDFGeneratorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PDFGeneratorViewController.h; sourceTree = "<group>"; };
@@ -119,6 +153,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		20A85BC21CA3522C00632668 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				20A85BDE1CA3523C00632668 /* curryTV.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -127,6 +169,7 @@
 			children = (
 				20785FED1AD83CED000DC57F /* curry.xcodeproj */,
 				20785FC11AD83BBE000DC57F /* Examples */,
+				20A85BC61CA3522C00632668 /* TVExample */,
 				20785FC01AD83BBE000DC57F /* Products */,
 			);
 			sourceTree = "<group>";
@@ -135,6 +178,7 @@
 			isa = PBXGroup;
 			children = (
 				20785FBF1AD83BBE000DC57F /* Examples.app */,
+				20A85BC51CA3522C00632668 /* TVExample.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -189,6 +233,29 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		20A85BC61CA3522C00632668 /* TVExample */ = {
+			isa = PBXGroup;
+			children = (
+				20A85BCA1CA3522C00632668 /* AppDelegate.h */,
+				20A85BCB1CA3522C00632668 /* AppDelegate.m */,
+				20A85BCD1CA3522C00632668 /* ViewController.h */,
+				20A85BCE1CA3522C00632668 /* ViewController.m */,
+				20A85BD01CA3522C00632668 /* Main.storyboard */,
+				20A85BD31CA3522C00632668 /* Assets.xcassets */,
+				20A85BD51CA3522C00632668 /* Info.plist */,
+				20A85BC71CA3522C00632668 /* Supporting Files */,
+			);
+			path = TVExample;
+			sourceTree = "<group>";
+		};
+		20A85BC71CA3522C00632668 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				20A85BC81CA3522C00632668 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		20EC669A1B3DAD1D0027D6A2 /* Assets */ = {
 			isa = PBXGroup;
 			children = (
@@ -227,6 +294,25 @@
 			productReference = 20785FBF1AD83BBE000DC57F /* Examples.app */;
 			productType = "com.apple.product-type.application";
 		};
+		20A85BC41CA3522C00632668 /* TVExample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 20A85BDD1CA3522C00632668 /* Build configuration list for PBXNativeTarget "TVExample" */;
+			buildPhases = (
+				20A85BC11CA3522C00632668 /* Sources */,
+				20A85BC21CA3522C00632668 /* Frameworks */,
+				20A85BC31CA3522C00632668 /* Resources */,
+				20A85BE21CA3523C00632668 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				20A85BE11CA3523C00632668 /* PBXTargetDependency */,
+			);
+			name = TVExample;
+			productName = TVExample;
+			productReference = 20A85BC51CA3522C00632668 /* TVExample.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -239,6 +325,9 @@
 				TargetAttributes = {
 					20785FBE1AD83BBE000DC57F = {
 						CreatedOnToolsVersion = 6.3;
+					};
+					20A85BC41CA3522C00632668 = {
+						CreatedOnToolsVersion = 7.3;
 					};
 				};
 			};
@@ -262,6 +351,7 @@
 			projectRoot = "";
 			targets = (
 				20785FBE1AD83BBE000DC57F /* Examples */,
+				20A85BC41CA3522C00632668 /* TVExample */,
 			);
 		};
 /* End PBXProject section */
@@ -314,6 +404,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		20A85BC31CA3522C00632668 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				20A85BD41CA3522C00632668 /* Assets.xcassets in Resources */,
+				20A85BD21CA3522C00632668 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -334,6 +433,16 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		20A85BC11CA3522C00632668 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				20A85BCF1CA3522C00632668 /* ViewController.m in Sources */,
+				20A85BCC1CA3522C00632668 /* AppDelegate.m in Sources */,
+				20A85BC91CA3522C00632668 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -342,7 +451,23 @@
 			name = curry;
 			targetProxy = 20785FF81AD83D0C000DC57F /* PBXContainerItemProxy */;
 		};
+		20A85BE11CA3523C00632668 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = curryTV;
+			targetProxy = 20A85BE01CA3523C00632668 /* PBXContainerItemProxy */;
+		};
 /* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		20A85BD01CA3522C00632668 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				20A85BD11CA3522C00632668 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		20785FDC1AD83BBE000DC57F /* Debug */ = {
@@ -457,6 +582,38 @@
 			};
 			name = Release;
 		};
+		20A85BD61CA3522C00632668 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ANALYZER_NONNULL = YES;
+				INFOPLIST_FILE = TVExample/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.curry.TVExample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 9.2;
+			};
+			name = Debug;
+		};
+		20A85BD71CA3522C00632668 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ANALYZER_NONNULL = YES;
+				INFOPLIST_FILE = TVExample/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.curry.TVExample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 9.2;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -477,6 +634,14 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		20A85BDD1CA3522C00632668 /* Build configuration list for PBXNativeTarget "TVExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				20A85BD61CA3522C00632668 /* Debug */,
+				20A85BD71CA3522C00632668 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};

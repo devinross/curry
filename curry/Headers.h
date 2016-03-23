@@ -89,12 +89,14 @@
 #import "UIMotionEffectGroup+TKCategory.h"
 
 // Categories -> UIKit -> Controllers
+#if !TARGET_OS_TV
 #import "UIImagePickerController+TKCategory.h"
-#import "UIViewController+TKCategory.h"
 #import "UIActionSheet+TKCategory.h"
-#import "UIAlertView+TKCategory.h"
 #import "UIActionSheet+Blocks.h"
+#import "UIAlertView+TKCategory.h"
 #import "UIAlertView+Blocks.h"
+#endif
+#import "UIViewController+TKCategory.h"
 #import "UIAlertController+TKCategory.h"
 
 
@@ -110,7 +112,9 @@
 #import "TKCustomPresentationViewController.h"
 #import "TKCardModalViewController.h"
 #import "TKTableViewController.h"
+#if !TARGET_OS_TV
 #import "TKKeyboardTableViewController.h"
+#endif
 #import "TKVideoViewController.h"
 #import "TKCollectionViewController.h"
 
@@ -118,7 +122,7 @@
 #import "TKWebViewController.h"
 #endif
 
-
+#if !TARGET_OS_TV
 // Views -> Keyboard
 #import "TKInputView.h"
 #import "TKInputKey.h"
@@ -126,20 +130,21 @@
 #import "TKDecimalInputView.h"
 #import "TKNumberInputWithNextKeyView.h"
 #import "TKDecimalInputWithNextKeyView.h"
+#endif
 
 // Views
 #import "TKGradientView.h"
 #import "TKShapeView.h"
-#import "TKExtendedScrollView.h"
 #import "TKSectionedScrollView.h"
 #import "TKCurrentTimeLabel.h"
-#if !TARGET_OS_TV
-#import "TKSwitchCell.h"
-#import "TKStepperCell.h"
-#endif
 #import "TKTextFieldCell.h"
 #import "TKWindow.h"
+#if !TARGET_OS_TV
+#import "TKExtendedScrollView.h"
+#import "TKSwitchCell.h"
+#import "TKStepperCell.h"
 #import "TKTextView.h"
+#endif
 
 // Custom Text Field
 #import "TKCreditCardNumberTextField.h"

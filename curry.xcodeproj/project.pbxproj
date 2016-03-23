@@ -7,17 +7,6 @@
 	objects = {
 
 /* Begin PBXAggregateTarget section */
-		2014FD751C78B1F80007129A /* curry-Universal */ = {
-			isa = PBXAggregateTarget;
-			buildConfigurationList = 2014FD781C78B1F80007129A /* Build configuration list for PBXAggregateTarget "curry-Universal" */;
-			buildPhases = (
-				2014FD791C78B2040007129A /* ShellScript */,
-			);
-			dependencies = (
-			);
-			name = "curry-Universal";
-			productName = "curry-Universal";
-		};
 		203FB7FA1B410DE0000D3B43 /* Documentation */ = {
 			isa = PBXAggregateTarget;
 			buildConfigurationList = 203FB7FB1B410DE0000D3B43 /* Build configuration list for PBXAggregateTarget "Documentation" */;
@@ -234,6 +223,14 @@
 		20A75C691AD8332F00E2106A /* TKSectionedScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 20A75C671AD8332F00E2106A /* TKSectionedScrollView.m */; };
 		20A75C851AD836DD00E2106A /* NSBundle+TKCategory.h in Headers */ = {isa = PBXBuildFile; fileRef = 20A75C831AD836DD00E2106A /* NSBundle+TKCategory.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		20A75C861AD836DD00E2106A /* NSBundle+TKCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 20A75C841AD836DD00E2106A /* NSBundle+TKCategory.m */; };
+		20A85BE31CA3529D00632668 /* UITraitCollection+TKCategory.h in Headers */ = {isa = PBXBuildFile; fileRef = 2058B9FB1BA7487E002C2357 /* UITraitCollection+TKCategory.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		20A85BE41CA352A300632668 /* UITraitCollection+TKCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 2058B9FC1BA7487E002C2357 /* UITraitCollection+TKCategory.m */; };
+		20A85BE51CA352BB00632668 /* UIPanGestureRecognizer+VelocityDirection.h in Headers */ = {isa = PBXBuildFile; fileRef = 20CEA4DF1BA150510009D60C /* UIPanGestureRecognizer+VelocityDirection.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		20A85BE61CA352BE00632668 /* UIPanGestureRecognizer+VelocityDirection.m in Sources */ = {isa = PBXBuildFile; fileRef = 20CEA4E01BA150510009D60C /* UIPanGestureRecognizer+VelocityDirection.m */; };
+		20A85BE71CA352CF00632668 /* UIView+GestureRecognizerBlock.h in Headers */ = {isa = PBXBuildFile; fileRef = 20CEA4E11BA150510009D60C /* UIView+GestureRecognizerBlock.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		20A85BE81CA352D300632668 /* UIView+GestureRecognizerBlock.m in Sources */ = {isa = PBXBuildFile; fileRef = 20CEA4E21BA150510009D60C /* UIView+GestureRecognizerBlock.m */; };
+		20A85BEB1CA3543D00632668 /* TKWindow.h in Headers */ = {isa = PBXBuildFile; fileRef = 2097F33C1B3D94C300247736 /* TKWindow.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		20A85BEC1CA3544100632668 /* TKWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 2097F33D1B3D94C300247736 /* TKWindow.m */; };
 		20A877131BBF554100A403C2 /* UIAlertController+TKCategory.h in Headers */ = {isa = PBXBuildFile; fileRef = 20A877111BBF554100A403C2 /* UIAlertController+TKCategory.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		20A877141BBF554100A403C2 /* UIAlertController+TKCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 20A877121BBF554100A403C2 /* UIAlertController+TKCategory.m */; };
 		20B5FE221BB3613F00C0F848 /* curryMac.h in Headers */ = {isa = PBXBuildFile; fileRef = 20B5FE211BB3613F00C0F848 /* curryMac.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -1158,13 +1155,16 @@
 				20CEA4691BA112330009D60C /* UIView+TKAnimation.h in Headers */,
 				20CEA45B1BA111270009D60C /* UINavigationBar+TKCategory.h in Headers */,
 				20CEA4781BA112B70009D60C /* TKShapeView.h in Headers */,
+				20A85BE31CA3529D00632668 /* UITraitCollection+TKCategory.h in Headers */,
 				20CEA4881BA113140009D60C /* TKPhoneNumberTextField.h in Headers */,
 				20CEA44F1BA111020009D60C /* UIView+TKCategory.h in Headers */,
 				20CEA4861BA1130E0009D60C /* TKCreditCardZipTextField.h in Headers */,
+				20A85BEB1CA3543D00632668 /* TKWindow.h in Headers */,
 				20CEA42E1BA1105D0009D60C /* curryTV.h in Headers */,
 				20CEA4411BA110CE0009D60C /* NSMutableAttributedString+TKCategory.h in Headers */,
 				20CEA44B1BA110F40009D60C /* UIDevice+TKCategory.h in Headers */,
 				202D35D71BDB2CAB00886913 /* TKCollectionViewController.h in Headers */,
+				20A85BE51CA352BB00632668 /* UIPanGestureRecognizer+VelocityDirection.h in Headers */,
 				2010DCC81BB0EAAD00810A98 /* NSDate+TKCategory.h in Headers */,
 				20CEA4511BA1110A0009D60C /* UIScrollview+TKCategory.h in Headers */,
 				20CEA4D81BA1503D0009D60C /* UIView+Positioning.h in Headers */,
@@ -1175,6 +1175,7 @@
 				20CEA46F1BA112450009D60C /* CAAnimation+TKAnimation.h in Headers */,
 				20CEA4821BA113000009D60C /* TKCreditCardCVVTextField.h in Headers */,
 				20CEA4431BA110D30009D60C /* NSBundle+TKCategory.h in Headers */,
+				20A85BE71CA352CF00632668 /* UIView+GestureRecognizerBlock.h in Headers */,
 				20173BD71BE62B8E00367A60 /* TKTableViewController.h in Headers */,
 				20CEA4361BA110A90009D60C /* NSObject+TKCategory.h in Headers */,
 				20CEA4841BA113070009D60C /* TKCreditCardExpirationTextField.h in Headers */,
@@ -1293,9 +1294,6 @@
 					2010DCAF1BB0E40E00810A98 = {
 						CreatedOnToolsVersion = 7.0;
 					};
-					2014FD751C78B1F80007129A = {
-						CreatedOnToolsVersion = 7.2.1;
-					};
 					203FB7FA1B410DE0000D3B43 = {
 						CreatedOnToolsVersion = 6.3.2;
 					};
@@ -1325,7 +1323,6 @@
 				20CEA42A1BA1105D0009D60C /* curryTV */,
 				2010DCAF1BB0E40E00810A98 /* curryWatch */,
 				20B5FE1E1BB3613F00C0F848 /* curryMac */,
-				2014FD751C78B1F80007129A /* curry-Universal */,
 			);
 		};
 /* End PBXProject section */
@@ -1370,19 +1367,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		2014FD791C78B2040007129A /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "# This script is based on Jacob Van Order's answer on apple dev forums https://devforums.apple.com/message/971277\n# See also http://spin.atomicobject.com/2011/12/13/building-a-universal-framework-for-ios/ for the start\n\n\n# To get this to work with a Xcode 6 Cocoa Touch Framework, create Framework\n# Then create a new Aggregate Target. Throw this script into a Build Script Phrase on the Aggregate\n\n\n######################\n# Options\n######################\n\nREVEAL_ARCHIVE_IN_FINDER=true\n\nFRAMEWORK_NAME=\"${PROJECT_NAME}\"\n\nSIMULATOR_LIBRARY_PATH=\"${BUILD_DIR}/${CONFIGURATION}-iphonesimulator/${FRAMEWORK_NAME}.framework\"\n\nDEVICE_LIBRARY_PATH=\"${BUILD_DIR}/${CONFIGURATION}-iphoneos/${FRAMEWORK_NAME}.framework\"\n\nUNIVERSAL_LIBRARY_DIR=\"${BUILD_DIR}/${CONFIGURATION}-iphoneuniversal\"\n\nFRAMEWORK=\"${UNIVERSAL_LIBRARY_DIR}/${FRAMEWORK_NAME}.framework\"\n\n\n######################\n# Build Frameworks\n######################\n\nxcodebuild -project ${PROJECT_NAME}.xcodeproj -sdk iphonesimulator -target ${PROJECT_NAME} -configuration ${CONFIGURATION} clean build CONFIGURATION_BUILD_DIR=${BUILD_DIR}/${CONFIGURATION}-iphonesimulator | echo\n\nxcodebuild -project ${PROJECT_NAME}.xcodeproj -sdk iphoneos -target ${PROJECT_NAME} -configuration ${CONFIGURATION} clean build CONFIGURATION_BUILD_DIR=${BUILD_DIR}/${CONFIGURATION}-iphoneos | echo\n\n#xcodebuild -target ${PROJECT_NAME} ONLY_ACTIVE_ARCH=NO -configuration ${CONFIGURATION} -sdk iphoneos  BUILD_DIR=\"${BUILD_DIR}\" BUILD_ROOT=\"${BUILD_ROOT}\" | echo\n\n#xcodebuild -target ${PROJECT_NAME} ONLY_ACTIVE_ARCH=NO -configuration ${CONFIGURATION} -sdk iphonesimulator  BUILD_DIR=\"${BUILD_DIR}\" BUILD_ROOT=\"${BUILD_ROOT}\" | echo\n\n\n######################\n# Create directory for universal\n######################\n\nrm -rf \"${UNIVERSAL_LIBRARY_DIR}\"\n\nmkdir \"${UNIVERSAL_LIBRARY_DIR}\"\n\nmkdir \"${FRAMEWORK}\"\n\n\n######################\n# Copy files Framework\n######################\n\ncp -r \"${DEVICE_LIBRARY_PATH}/.\" \"${FRAMEWORK}\"\n\n\n######################\n# Make fat universal binary\n######################\n\nlipo \"${SIMULATOR_LIBRARY_PATH}/${FRAMEWORK_NAME}\" \"${DEVICE_LIBRARY_PATH}/${FRAMEWORK_NAME}\" -create -output \"${FRAMEWORK}/${FRAMEWORK_NAME}\" | echo\n\n\n######################\n# On Release, copy the result to desktop folder\n######################\n\nif [ \"${CONFIGURATION}\" == \"Release\" ]; then\nmkdir \"${HOME}/Desktop/${FRAMEWORK_NAME}-${CONFIGURATION}-iphoneuniversal/\"\ncp -r \"${FRAMEWORK}\" \"${HOME}/Desktop/${FRAMEWORK_NAME}-${CONFIGURATION}-iphoneuniversal/\"\nfi\n\n\n######################\n# If needed, open the Framework folder\n######################\n\nif [ ${REVEAL_ARCHIVE_IN_FINDER} = true ]; then\nif [ \"${CONFIGURATION}\" == \"Release\" ]; then\nopen \"${HOME}/Desktop/${FRAMEWORK_NAME}-${CONFIGURATION}-iphoneuniversal/\"\nelse\nopen \"${UNIVERSAL_LIBRARY_DIR}/\"\nfi\nfi";
-		};
 		203FB7FE1B410E30000D3B43 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -1546,6 +1530,7 @@
 				20CEA47D1BA112D00009D60C /* TKSectionedScrollView.m in Sources */,
 				202D35D81BDB2CB000886913 /* TKCollectionViewController.m in Sources */,
 				20CEA45E1BA111320009D60C /* UIBarButtonItem+TKCategory.m in Sources */,
+				20A85BE81CA352D300632668 /* UIView+GestureRecognizerBlock.m in Sources */,
 				20CEA4DA1BA1503D0009D60C /* UIView+Positioning.m in Sources */,
 				20CEA4371BA110AC0009D60C /* NSObject+TKCategory.m in Sources */,
 				20CEA4561BA111180009D60C /* UITextField+TKCategory.m in Sources */,
@@ -1577,12 +1562,14 @@
 				20CEA4481BA110E70009D60C /* NSTimer+Blocks.m in Sources */,
 				20CEA4401BA110CC0009D60C /* NSAttributedString+TKCategory.m in Sources */,
 				20CEA4DE1BA1503D0009D60C /* UIScrollView+Positioning.m in Sources */,
+				20A85BE61CA352BE00632668 /* UIPanGestureRecognizer+VelocityDirection.m in Sources */,
 				20CEA4791BA112BB0009D60C /* TKShapeView.m in Sources */,
 				20CEA4501BA111070009D60C /* UIView+TKCategory.m in Sources */,
 				20CEA46E1BA112430009D60C /* CAKeyframeAnimation+TKAnimation.m in Sources */,
 				209761F81BD9F28100EE6F81 /* UIGestureRecognizer+Blocks.m in Sources */,
 				20CEA4831BA113040009D60C /* TKCreditCardCVVTextField.m in Sources */,
 				20CEA44A1BA110F20009D60C /* UIApplication+TKCategory.m in Sources */,
+				20A85BEC1CA3544100632668 /* TKWindow.m in Sources */,
 				20CEA45C1BA1112C0009D60C /* UINavigationBar+TKCategory.m in Sources */,
 				20CEA4441BA110D70009D60C /* NSBundle+TKCategory.m in Sources */,
 				20CEA44E1BA110FF0009D60C /* UIScreen+TKCategory.m in Sources */,
@@ -1590,6 +1577,7 @@
 				20CEA48F1BA113D10009D60C /* UIFont+TKCategory.m in Sources */,
 				20CEA4391BA110B70009D60C /* NSString+TKCategory.m in Sources */,
 				20CEA46A1BA112370009D60C /* UIView+TKAnimation.m in Sources */,
+				20A85BE41CA352A300632668 /* UITraitCollection+TKCategory.m in Sources */,
 				20CEA4811BA112FE0009D60C /* TKCreditCardNumberTextField.m in Sources */,
 				20CEA43E1BA110C60009D60C /* NSMutableArray+TKCategory.m in Sources */,
 				20CEA47F1BA112F30009D60C /* TKGradientView.m in Sources */,
@@ -1810,21 +1798,6 @@
 			};
 			name = Release;
 		};
-		2014FD761C78B1F80007129A /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ONLY_ACTIVE_ARCH = NO;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Debug;
-		};
-		2014FD771C78B1F80007129A /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Release;
-		};
 		203FB7FC1B410DE0000D3B43 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -1952,15 +1925,6 @@
 			buildConfigurations = (
 				2010DCB51BB0E40E00810A98 /* Debug */,
 				2010DCB61BB0E40E00810A98 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		2014FD781C78B1F80007129A /* Build configuration list for PBXAggregateTarget "curry-Universal" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				2014FD761C78B1F80007129A /* Debug */,
-				2014FD771C78B1F80007129A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
