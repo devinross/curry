@@ -31,6 +31,7 @@
 
 
 #import "NSArrayTests.h"
+#import "NSArray+TKCategory.h"
 
 @implementation NSArrayTests
 
@@ -42,6 +43,34 @@
 	XCTAssertEqualObjects([ar firstObject], @"BOB");
 	XCTAssertEqual([ar firstObject], ar[0]);
 
+}
+
+- (void) testShouldReturnRandomObjects{
+	NSMutableArray *array = [NSMutableArray arrayWithCapacity:5000];
+	for(NSInteger i=0;i<5000;i++){
+		[array addObject:@(i)];
+	}
+	
+
+	NSNumber *lastNumber = [array randomObject];
+	NSInteger equal = 0, different = 0;
+	for(NSInteger i=0;i<500;i++){
+		
+		NSNumber *number = [array randomObject];
+		
+		if([number isEqualToNumber:lastNumber]){
+			equal++;
+		}else{
+			different++;
+		}
+		
+		lastNumber = number;
+		
+	}
+	
+	XCTAssert(different>equal);
+	
+	
 }
 
 

@@ -35,9 +35,10 @@
 @interface SampleItem : NSObject
 
 @property (nonatomic,strong) NSNumber *identifier;
-@property (nonatomic,strong) NSString *name;
-@property (nonatomic,strong) NSString *position;
-@property (nonatomic,strong) NSString *email;
+@property (nonatomic,copy) NSString *name;
+@property (nonatomic,copy) NSString *position;
+@property (nonatomic,copy) NSString *email;
+@property (nonatomic,copy) NSString *phone;
 
 @property (nonatomic,strong) NSDate *createdAt;
 @property (nonatomic,strong) NSDate *updatedAt;
@@ -58,10 +59,11 @@
 	@"name"			: @"name",
 	@"createdAt"	: @[@"created_at",@"yyyy-MM-dd'T'HH:mm:ss"],
 	@"updatedAt"	: @[@"updated_at",@"yyyy-MM-dd"],
-	@"deletedAt"	: @[@"deleted_at"],
+	@"deletedAt"	: @[@"deleted_at",@"yyyy-MM-dd"],
 	@"finishedAt"	: @[@"finished_at",@"yyyy-MM-dd"],
 	@"parentItem"	: @{@"class": NSStringFromClass([SampleItem class]),		@"key": @"parent" },
 	@"childItems"	: @{@"class": NSStringFromClass([SampleItem class]),		@"key": @"children", @"structure" :  NSStringFromClass([NSArray class]) },
+	@"phone"		: @"phone",
 
 	
 	};
@@ -163,6 +165,50 @@
 	
 	item = [SampleItem createObject:nil];
 	XCTAssertNotNil(item, @"Item is nil");
+}
+
+- (void) testShouldHaveDataKeys{
+	NSDictionary *keys = [SampleItem dataKeys];
+	NSDictionary *empty = [NSObject dataKeys];
+	
+	
+	XCTAssertTrue([keys isKindOfClass:[NSDictionary class]]);
+	XCTAssertTrue([empty isKindOfClass:[NSDictionary class]]);
+	XCTAssertTrue(empty.allKeys.count==0);
+	XCTAssertTrue(keys.allKeys.count!=0);
+
+}
+
+- (void) testShouldHandleCreatingADataDictionary{
+	
+	
+	NSDictionary *input = @{
+						   @"id"			: @8000,
+						   @"created_at"	: @"2012-03-12T18:45:00",
+						   @"updated_at"	: @"2013-04-15",
+						   @"name"			: @"Bobby Sanderson",
+						   @"position"		: [NSNull null],
+						   @"phone"			: @"1-800-123-4567",
+						   @"deletedAt"		: @"2012-03-12",
+						   @"finishedAt"	: [NSNull null],
+						   @"children"		: @[@{@"id": @5},@{@"id": @20}],
+						   @"parent"		: @{@"id": @5}
+						   
+						   };
+	
+	SampleItem *item = [SampleItem createObject:input];
+	
+	NSDictionary *output = item.dataDictionary;
+	
+	
+	XCTAssertEqualObjects(input[@"id"],			output[@"id"], @"%@ isn't equal to %@",			input[@"id"],			output[@"id"]);
+	XCTAssertEqualObjects(input[@"created_at"], output[@"created_at"], @"%@ isn't equal to %@",	input[@"created_at"],	output[@"created_at"]);
+	XCTAssertEqualObjects(input[@"updated_at"], output[@"updated_at"], @"%@ isn't equal to %@",	input[@"updated_at"],	output[@"updated_at"]);
+	XCTAssertEqualObjects(input[@"phone"],		output[@"phone"], @"%@ isn't equal to %@",		input[@"phone"],		output[@"phone"]);
+
+	
+	
+	
 }
 
 @end

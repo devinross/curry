@@ -50,7 +50,6 @@
 	XCTAssertEqualObjects([@"devin" md5sum], @"11ef1590a74e1ab26c31a4e13f52d71b");
 }
 
-
 - (void) testShouldCountWhitespaceCorrectly{
 	XCTAssertEqual(@"hello".lengthWithoutWhitespace, 5);
 	XCTAssertEqual(@"hello bob".lengthWithoutWhitespace, 8);
@@ -58,7 +57,6 @@
 	XCTAssertEqual(@"".lengthWithoutWhitespace, 0);
 	XCTAssertEqual(@"      \n\t".lengthWithoutWhitespace, 0);
 }
-
 
 - (void) testShouldHaveStripWhitespace{
 	
@@ -185,6 +183,13 @@
 	output = [@"529112345678912" formattedPhoneNumberWithLastCharacterRemoved:NO];
 	XCTAssertEqualObjects(output, @"529112345678912");
 
+}
+
+- (void) testShouldCapitalizeSentence{
+	
+	NSString *output = @"this is a sentence. this is another one.".capitalizeSentence;
+	XCTAssertEqualObjects(output, @"This is a sentence. this is another one.");
+	
 }
 
 

@@ -50,4 +50,19 @@
 	XCTAssertTrue(superview.subviews[0] == three);
 }
 
+
+- (void) testShouldMakeViewVisible{
+	
+	UIView *view = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 100, 100)];
+	view.visible = NO;
+	
+	XCTAssertTrue(view.hidden, @"View is visible");
+	
+	view.visible = YES;
+	
+	XCTAssertFalse(view.hidden, @"View is not visible");
+
+	
+}
+
 @end
