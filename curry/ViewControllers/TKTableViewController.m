@@ -65,8 +65,10 @@
 	return self;
 }
 - (void) dealloc{
+#if TARGET_OS_IOS
 	[[NSNotificationCenter defaultCenter] removeObserver:self name:UIKeyboardWillShowNotification object:nil];
 	[[NSNotificationCenter defaultCenter] removeObserver:self name:UIKeyboardDidHideNotification object:nil];
+#endif
 	[[NSNotificationCenter defaultCenter] removeObserver:self];
 }
 
