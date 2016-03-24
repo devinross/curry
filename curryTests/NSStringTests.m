@@ -42,7 +42,18 @@
     XCTAssertFalse([@"ao,sda.bOb@sANDdsadrs.c" isEmail], @"Expected to be an invalid email");
     XCTAssertFalse([@"" isEmail], @"Expected to be an invalid email");
     XCTAssertFalse([@"@b.d" isEmail], @"Expected to be an invalid email");
-    
+	XCTAssertFalse([@"hello#bob@bee.com" isEmail], @"Expected to be an invalid email");
+
+	XCTAssertFalse([@"hello|bob@bee.com" isEmail], @"Expected to be an invalid email");
+	XCTAssertFalse([@"hello!bob@bee.com" isEmail], @"Expected to be an invalid email");
+	XCTAssertFalse([@"hello<bob@bee.com" isEmail], @"Expected to be an invalid email");
+	XCTAssertFalse([@"hello>bob@bee.com" isEmail], @"Expected to be an invalid email");
+	XCTAssertFalse([@"hello[bob@bee.com" isEmail], @"Expected to be an invalid email");
+	XCTAssertFalse([@"hello]bob@bee.com" isEmail], @"Expected to be an invalid email");
+	XCTAssertFalse([@"hello(bob@bee.com" isEmail], @"Expected to be an invalid email");
+	XCTAssertFalse([@"hello)bob@bee.com" isEmail], @"Expected to be an invalid email");
+
+
 }
 
 - (void) testShouldGenerateMD5Sum{

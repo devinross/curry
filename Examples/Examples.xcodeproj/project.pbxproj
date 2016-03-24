@@ -642,6 +642,7 @@
 				20A85BD71CA3522C00632668 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
