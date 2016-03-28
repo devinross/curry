@@ -102,8 +102,6 @@
 	
 	if([UIDevice currentDevice].padIdiom)
 		self.containerView.autoresizingMask = UIViewAutoresizingFlexibleLeftMargin | UIViewAutoresizingFlexibleHeight | UIViewAutoresizingFlexibleRightMargin;
-//	else
-//		self.containerView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
 	self.containerView.clipsToBounds = YES;
 	[self addSubview:self.containerView];
 	
@@ -298,6 +296,7 @@
 	UIImage *back = [UIImage imageNamed:@"keyboard-backspace-key" inBundle:[NSBundle bundleForClass:[TKInputView class]] compatibleWithTraitCollection:[UITraitCollection traitCollectionWithDisplayScale:[UIScreen mainScreen].scale]];
 	_backspaceKey = [[TKInputKey alloc] initWithFrame:CGRectMake(0, 0, self.frame.size.width * 0.25, self.frame.size.height) symbol:back normalType:TKInputKeyTypeDefault selectedType:TKInputKeyTypeDark runner:NO];
 	_backspaceKey.canTapAndHold = YES;
+	_backspaceKey.accessibilityLabel = NSLocalizedString(@"Delete", @"");
 	return _backspaceKey;
 }
 

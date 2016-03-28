@@ -45,6 +45,7 @@
     UIImage *next = [UIImage imageNamed:@"keyboard-next-key" inBundle:[NSBundle bundleForClass:[TKInputView class]] compatibleWithTraitCollection:[UITraitCollection traitCollectionWithDisplayScale:[UIScreen mainScreen].scale]];
 
 	self.nextKey = [[TKInputKey alloc] initWithFrame:CGRectMake(0, 0, frame.size.width * 0.25, frame.size.height) symbol:next normalType:TKInputKeyTypeDefault selectedType:TKInputKeyTypeDark runner:NO];
+	self.nextKey.accessibilityLabel = NSLocalizedString(@"Next", @"");
 
 	NSMutableArray *array = [NSMutableArray arrayWithArray:keys];
 	[array addObjectsFromArray:@[self.nextKey,self.backspaceKey]];

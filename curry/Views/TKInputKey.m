@@ -47,6 +47,9 @@
 - (instancetype) initWithFrame:(CGRect)frame symbol:(id)symbol normalType:(TKInputKeyType)normal selectedType:(TKInputKeyType)highlighted runner:(BOOL)runner{
 	if(!(self=[super initWithFrame:frame])) return nil;
 	
+	self.isAccessibilityElement = YES;
+	self.accessibilityTraits = UIAccessibilityTraitKeyboardKey;
+	
 	if([UIDevice currentDevice].padIdiom){
 		
 		self.layer.cornerRadius = 5;
@@ -84,6 +87,8 @@
 		self.label.adjustsFontSizeToFitWidth = YES;
 		self.label.text = symbol;
 		[self addSubview:self.label];
+		
+		self.accessibilityLabel = symbol;
 		
 	}else if([symbol isKindOfClass:[UIImage class]]){
 		
