@@ -30,6 +30,7 @@
  */
 
 @import Foundation;
+@import UIKit;
 
 /** Additional functionality for `NSString`.  */
 @interface NSString (TKCategory)
@@ -117,5 +118,7 @@
 
 
 - (NSString*) formattedPhoneNumberWithLastCharacterRemoved:(BOOL)deleteLastChar limit:(NSInteger)limit;
+
+- (CGFloat) heightForWidth:(CGFloat)width andFont:(UIFont *)font;
 
 @end

@@ -393,4 +393,14 @@
 }
 
 
+- (CGFloat) heightForWidth:(CGFloat)widthValue andFont:(UIFont *)font{
+	CGFloat result = font.pointSize + 4;
+	CGSize textSize = { widthValue, CGFLOAT_MAX };       //Width and height of text area
+	NSDictionary *atr = @{ NSFontAttributeName:font };
+	CGRect frame = [self boundingRectWithSize:textSize options:NSStringDrawingUsesLineFragmentOrigin attributes:atr context:nil];
+	CGSize size = CGSizeMake(frame.size.width, frame.size.height+1);
+	return MAX(size.height, result); //At least one row
+}
+
+
 @end
