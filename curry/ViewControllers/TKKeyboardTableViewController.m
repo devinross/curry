@@ -93,7 +93,8 @@
 	self.tableView.contentInset = UIEdgeInsetsMake(self.tableView.contentInset.top, 0, self.bottomLayoutGuide.length, 0);
 	[UIView commitAnimations];
 	
-	self.tableView.scrollIndicatorInsets = self.tableView.contentInset;
+	self.tableView.scrollIndicatorInsets = UIEdgeInsetsMake(self.tableView.scrollIndicatorInsets.top, 0, self.bottomLayoutGuide.length, 0);
+	
 }
 - (void) textViewDidBeginEditing:(UITextView *)textView{
 	if(!self.scrollToTextField) return;
@@ -117,7 +118,9 @@
 	[UIView setAnimationDuration:0.05];
 	[UIView setAnimationBeginsFromCurrentState:YES];
 	[UIView setAnimationCurve:UIViewAnimationCurveLinear];
-	self.tableView.contentInset = self.tableView.scrollIndicatorInsets = UIEdgeInsetsMake(self.tableView.contentInset.top, 0, CGRectGetHeight(rect), 0);
+	self.tableView.contentInset = UIEdgeInsetsMake(self.tableView.contentInset.top, 0, CGRectGetHeight(rect), 0);
+	self.tableView.scrollIndicatorInsets = UIEdgeInsetsMake(self.tableView.scrollIndicatorInsets.top, 0, CGRectGetHeight(rect), 0);
+	
 	[UIView commitAnimations];
 }
 
