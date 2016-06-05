@@ -46,9 +46,19 @@
 }
 
 - (CGPoint) contentOffsetFromEnd{
-    return CGPointMake(self.contentSize.width - self.contentOffset.x - CGFrameGetWidth(self), self.contentSize.height - self.contentOffset.y - CGFrameGetHeight(self));
+	CGFloat x = self.contentSize.width - self.contentOffset.x - CGFrameGetWidth(self);
+	CGFloat y = self.contentSize.height - self.contentOffset.y - CGFrameGetHeight(self);
+	
+	if(self.contentSize.width < CGFrameGetWidth(self)){
+		x = -self.contentOffset.x;
+	}
+	
+	if(self.contentSize.height < CGFrameGetHeight(self)){
+		y = -self.contentOffset.y;
+	}
+	
+	return CGPointMake(x, y);
 }
-
 
 
 @end
