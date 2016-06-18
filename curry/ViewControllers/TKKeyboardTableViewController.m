@@ -165,7 +165,7 @@
 	}
 	
 	CGRect rect = [view convertRect:view.bounds toView:self.tableView];
-	rect = CGRectInset(rect, 0, -15);
+	rect.size.height += 15;
 	[self.tableView scrollRectToVisible:rect animated:YES];
 	[self performSelector:@selector(_unlock) withObject:nil afterDelay:0.35];
 }
