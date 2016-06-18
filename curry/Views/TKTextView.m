@@ -67,7 +67,7 @@
 		}
 		
 		if([self respondsToSelector:@selector(textContainer)])
-			self.placeHolderLabel.frame = CGRectMake(4, self.textContainerInset.top, CGRectGetWidth(self.bounds) - 8, 0);
+			self.placeHolderLabel.frame = CGRectMake(self.textContainerInset.left + 4, self.textContainerInset.top, CGRectGetWidth(self.bounds) - 8, 0);
 		else
 			self.placeHolderLabel.frame = CGRectMake(8,8,CGRectGetWidth(self.bounds) - 16,0);
 		
