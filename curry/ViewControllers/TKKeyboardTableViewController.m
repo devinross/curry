@@ -97,12 +97,12 @@
 	
 }
 - (void) textViewDidBeginEditing:(UITextView *)textView{
-	if(!self.scrollToTextField) return;
+	if(!self.scrollToTextField || ![textView isDescendantOfView:self.tableView]) return;
 	self.scrollLock = YES;
 	[self performSelector:@selector(scrollToView:) withObject:textView afterDelay:0.1];
 }
 - (void) textFieldDidBeginEditing:(UITextField *)textField{
-	if(!self.scrollToTextField) return;
+	if(!self.scrollToTextField || ![textField isDescendantOfView:self.tableView]) return;
 	self.scrollLock = YES;
 	[self performSelector:@selector(scrollToView:) withObject:textField afterDelay:0.1];
 }
