@@ -87,4 +87,15 @@
  */
 - (void) addLineHeight:(CGFloat)lineHeight;
 
+/** Set the background color of the string.
+ @param color The color that will be set.
+ @param range The range of text that will be set as the color.
+ */
+- (void) addBackgroundColor:(UIColor*)color range:(NSRange)range;
+
+/** Set the background color of the string.
+ @param color The color that will be set.
+ */
+- (void) addBackgroundColor:(UIColor *)color;
+
 @end

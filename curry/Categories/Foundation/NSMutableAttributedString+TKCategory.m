@@ -40,6 +40,13 @@
 	[self addTextColor:color range:NSMakeRange(0, self.length)];
 }
 
+- (void) addBackgroundColor:(UIColor*)color range:(NSRange)range{
+	[self addAttribute:NSBackgroundColorAttributeName value:color range:range];
+}
+- (void) addBackgroundColor:(UIColor *)color{
+	[self addBackgroundColor:color range:NSMakeRange(0, self.length)];
+}
+
 - (void) addFont:(UIFont*)font range:(NSRange)range{
 	[self addAttribute:NSFontAttributeName value:font range:range];
 }
