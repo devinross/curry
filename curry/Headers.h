@@ -35,10 +35,6 @@
 
 #import "TKFoundation.h"
 
-#if TARGET_OS_IOS || TARGET_OS_TV
-#import "TKUIKit.h"
-#endif
-
 // Categories -> Foundation
 #import "NSObject+JSON.h"
 #import "NSObject+TKCategory.h"
@@ -55,6 +51,8 @@
 #import "NSUserDefaults+iCloud.h"
 
 #if TARGET_OS_IOS || TARGET_OS_TV
+
+#import "TKUIKit.h"
 
 // Categories -> UIKit -> Base
 #import "UIApplication+TKCategory.h"
@@ -89,6 +87,8 @@
 #import "UIMotionEffectGroup+TKCategory.h"
 
 // Categories -> UIKit -> Controllers
+#import "UIViewController+TKCategory.h"
+#import "UIAlertController+TKCategory.h"
 #if !TARGET_OS_TV
 #import "UIImagePickerController+TKCategory.h"
 #import "UIActionSheet+TKCategory.h"
@@ -96,8 +96,7 @@
 #import "UIAlertView+TKCategory.h"
 #import "UIAlertView+Blocks.h"
 #endif
-#import "UIViewController+TKCategory.h"
-#import "UIAlertController+TKCategory.h"
+
 
 
 
@@ -112,15 +111,14 @@
 #import "TKCustomPresentationViewController.h"
 #import "TKCardModalViewController.h"
 #import "TKTableViewController.h"
-#if !TARGET_OS_TV
-#import "TKKeyboardTableViewController.h"
-#endif
 #import "TKVideoViewController.h"
 #import "TKCollectionViewController.h"
-
 #if !TARGET_OS_TV
+#import "TKKeyboardTableViewController.h"
 #import "TKWebViewController.h"
 #endif
+
+
 
 #if !TARGET_OS_TV
 // Views -> Keyboard
@@ -156,7 +154,7 @@
 // Extra
 #import "TKSoundAlertController.h"
 
-#endif
+#endif // END TARGET_OS_IOS || TARGET_OS_TV
 
 
 #if TARGET_OS_X
