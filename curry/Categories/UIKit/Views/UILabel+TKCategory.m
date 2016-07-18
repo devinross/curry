@@ -63,4 +63,12 @@
 
 }
 
+- (void) sizeToFitHeight{
+	CGFloat width = CGRectGetWidth(self.frame);
+	[self sizeToFit];
+	CGRect frame = self.frame;
+	frame.size.width = width;
+	self.frame = frame;
+}
+
 @end

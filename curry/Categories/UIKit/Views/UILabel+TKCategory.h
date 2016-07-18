@@ -40,4 +40,7 @@
 /** This function will size to fit based on the `textAlignment`'s property and vertically center the label. */
 - (void) sizeToFitWithAlignmentAndVerticalCentering;
 
+/** This function will adjust the labels height but keep the width the same. */
+- (void) sizeToFitHeight;
+
 @end
