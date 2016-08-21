@@ -53,6 +53,7 @@
 @property (nonatomic,strong) TKPlayerView *videoView;
 @property (nonatomic,copy) NSString *videoTitle;
 @property (nonatomic,copy) NSString *videoType;
+@property (nonatomic,assign) NSInteger currentLoop;
 @end
 
 @implementation TKVideoViewController
@@ -99,6 +100,8 @@
 #pragma mark Notifications
 - (void) playerItemDidReachEnd:(NSNotification *)notification{
 	if(!self.shouldLoop) return;
+	if(self.loopCount > 0 && self.currentLoop >= self.loopCount) return;
+	self.currentLoop++;
 	AVPlayerItem *p = [notification object];
 	[p seekToTime:kCMTimeZero];
 }
@@ -110,6 +113,7 @@
 }
 - (void) play{
 	[self.player play];
+	self.currentLoop = 1;
 }
 - (void) pause{
 	[self.player pause];

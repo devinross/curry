@@ -55,6 +55,9 @@
 /** A flag to set to have the video play over and over again. */
 @property (nonatomic,assign) BOOL shouldLoop;
 
+@property (nonatomic,assign) NSInteger loopCount;
+
+
 
 ///----------------------------
 /// @name Methods
