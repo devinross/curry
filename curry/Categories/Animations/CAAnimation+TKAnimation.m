@@ -31,7 +31,7 @@
 
 #import "CAAnimation+TKAnimation.h"
 
-@interface CAAnimationDelegate : NSObject
+@interface CAAnimationDelegate : NSObject <CAAnimationDelegate>
 
 @property (nonatomic, copy) void (^completion)(BOOL);
 @property (nonatomic, copy) void (^start)(void);
