@@ -33,23 +33,23 @@
 
 @implementation NSTimer (Blocks)
 
-+ (NSTimer *) scheduledTimerWithTimeInterval:(NSTimeInterval)seconds repeats:(BOOL)repeats block:(void (^)(void))block{
-    return [NSTimer scheduledTimerWithTimeInterval:seconds target:self selector:@selector(runBlockHandler:) userInfo:block repeats:repeats];
++ (NSTimer *) tk_scheduledTimerWithTimeInterval:(NSTimeInterval)seconds repeats:(BOOL)repeats block:(void (^)(void))block{
+	return [NSTimer scheduledTimerWithTimeInterval:seconds target:self selector:@selector(runBlockHandler:) userInfo:block repeats:repeats];
 }
 
-+ (NSTimer *) timerWithTimeInterval:(NSTimeInterval)seconds repeats:(BOOL)repeats block:(void (^)(void))block{
-    return [NSTimer timerWithTimeInterval:seconds target:self selector:@selector(runBlockHandler:) userInfo:block repeats:repeats];
++ (NSTimer *) tk_timerWithTimeInterval:(NSTimeInterval)seconds repeats:(BOOL)repeats block:(void (^)(void))block{
+	return [NSTimer timerWithTimeInterval:seconds target:self selector:@selector(runBlockHandler:) userInfo:block repeats:repeats];
 }
 
-- (instancetype) initWithFireDate:(NSDate *)date interval:(NSTimeInterval)seconds repeats:(BOOL)repeats block:(void (^)(void))block{
-    return [self initWithFireDate:date interval:seconds target:self.class selector:@selector(runBlockHandler:) userInfo:block repeats:repeats];
+- (instancetype) tk_initWithFireDate:(NSDate *)date interval:(NSTimeInterval)seconds repeats:(BOOL)repeats block:(void (^)(void))block{
+	return [self initWithFireDate:date interval:seconds target:self.class selector:@selector(runBlockHandler:) userInfo:block repeats:repeats];
 }
 
 + (void) runBlockHandler:(NSTimer *)timer{
-    if ([timer.userInfo isKindOfClass:NSClassFromString(@"NSBlock")]){
-        void (^block)(void) = timer.userInfo;
-        block();
-    }
+	if ([timer.userInfo isKindOfClass:NSClassFromString(@"NSBlock")]){
+		void (^block)(void) = timer.userInfo;
+		block();
+	}
 }
 
 @end

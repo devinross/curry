@@ -40,7 +40,7 @@
  @param block The block that will be called by the timer.
  @return The `NSTimer` object.
  */
-+ (NSTimer *) scheduledTimerWithTimeInterval:(NSTimeInterval)seconds repeats:(BOOL)repeats block:(void (^)(void))block;
++ (NSTimer *) tk_scheduledTimerWithTimeInterval:(NSTimeInterval)seconds repeats:(BOOL)repeats block:(void (^)(void))block;
 
 /** Additional functionality for `NSTimer` with block functionality.
  @param seconds The time until the timer fire.
@@ -48,7 +48,7 @@
  @param block The block that will be called by the timer.
  @return The `NSTimer` object.
  */
-+ (NSTimer *) timerWithTimeInterval:(NSTimeInterval)seconds repeats:(BOOL)repeats block:(void (^)(void))block;
++ (NSTimer *) tk_timerWithTimeInterval:(NSTimeInterval)seconds repeats:(BOOL)repeats block:(void (^)(void))block;
 
 /** Additional functionality for `NSTimer` with block functionality.
  @param date The date the timer will first fire.
@@ -57,6 +57,6 @@
  @param block The block that will be called by the timer.
  @return The `NSTimer` object.
  */
-- (instancetype) initWithFireDate:(NSDate *)date interval:(NSTimeInterval)seconds repeats:(BOOL)repeats block:(void (^)(void))block;
+- (instancetype) tk_initWithFireDate:(NSDate *)date interval:(NSTimeInterval)seconds repeats:(BOOL)repeats block:(void (^)(void))block;
 
 @end
