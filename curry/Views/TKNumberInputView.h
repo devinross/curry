@@ -78,6 +78,6 @@
 /** Zero key. 
  @return An array of all the number keys.
  */
-@property (nonatomic, readonly, copy) NSArray *keypadKeys;
+@property (nonatomic, readonly, copy) NSArray<TKInputKey*> *keypadKeys;
 
 @end

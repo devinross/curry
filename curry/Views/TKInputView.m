@@ -74,7 +74,7 @@
 	return CGSizeMake([UIScreen mainScreen].bounds.size.width, height);
 }
 
-- (instancetype) initWithFrame:(CGRect)frame withKeysModels:(NSArray*)keys{
+- (instancetype) initWithFrame:(CGRect)frame withKeysModels:(NSArray<TKInputKey*>*)keys{
 	frame.size = [TKInputView sizeOfKeyboardForMainScreen];
 	if(!(self=[super initWithFrame:frame])) return nil;
 	

@@ -39,7 +39,7 @@
 @implementation TKDecimalInputView
 
 
-- (instancetype) initWithFrame:(CGRect)frame withKeysModels:(NSArray*)keys{
+- (instancetype) initWithFrame:(CGRect)frame withKeysModels:(NSArray<TKInputKey*>*)keys{
 	frame.size = [TKInputView sizeOfKeyboardForMainScreen];
 	
 	self.padRect = CGRectMake(0, 0, 0.75, 1);

@@ -45,7 +45,7 @@
 }
 
 
-- (instancetype) initWithFrame:(CGRect)frame withKeysModels:(NSArray*)keys{
+- (instancetype) initWithFrame:(CGRect)frame withKeysModels:(NSArray<TKInputKey*>*)keys{
 	frame.size = [TKInputView sizeOfKeyboardForMainScreen];
 	
 	self.padRect = CGRectMake(0, 0, 0.75, 1);
@@ -115,7 +115,7 @@
 	
 }
 
-- (NSArray*) keypadKeys{
+- (NSArray<TKInputKey*>*) keypadKeys{
 	return @[self.oneKey,self.twoKey,self.threeKey,self.fourKey,self.fiveKey,self.sixKey,self.sevenKey,self.eightKey,self.nineKey,self.zeroKey];
 }
 - (void) touchesEnded:(NSSet *)touches withEvent:(UIEvent *)event{
