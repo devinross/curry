@@ -30,7 +30,8 @@
  */
 
 #import "TKKeyboardTableViewController.h"
-#import "UIDevice+TKCategory.h"
+#import <curry/curry-Swift.h>
+
 
 @interface TKKeyboardTableViewController ()
 @property (nonatomic,assign) BOOL scrollLock;
@@ -42,13 +43,14 @@
 - (instancetype) init{
 	if(!(self=[super init])) return nil;
 	self.scrollToTextField = YES;
-	self.hideKeyboardOnScroll = [[UIDevice currentDevice] phoneIdiom];
+	
+	self.hideKeyboardOnScroll = [UIDevice currentDevice].phoneIdiom;
 	return self;
 }
 - (instancetype) initWithStyle:(UITableViewStyle)style{
 	if(!(self=[super initWithStyle:style])) return nil;
 	self.scrollToTextField = YES;
-	self.hideKeyboardOnScroll = [[UIDevice currentDevice] phoneIdiom];
+	self.hideKeyboardOnScroll = [UIDevice currentDevice].phoneIdiom;
 	return self;
 }
 - (void) dealloc{

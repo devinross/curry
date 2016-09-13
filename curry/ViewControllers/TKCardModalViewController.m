@@ -31,10 +31,10 @@
 
 
 #import "TKCardModalViewController.h"
-#import "UIDevice+TKCategory.h"
 #import "TKFoundation.h"
 #import "UIGestureRecognizer+TKCategory.h"
 #import "TKUIKit.h"
+#import <curry/curry-Swift.h>
 
 @interface TKCardModalViewController () <UIGestureRecognizerDelegate>
 

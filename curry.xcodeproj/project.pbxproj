@@ -37,8 +37,6 @@
 		200B62931AD7FC5E0049E35C /* NSAttributedString+TKCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 200B62811AD7FC5E0049E35C /* NSAttributedString+TKCategory.m */; };
 		200B62941AD7FC5E0049E35C /* NSMutableAttributedString+TKCategory.h in Headers */ = {isa = PBXBuildFile; fileRef = 200B62821AD7FC5E0049E35C /* NSMutableAttributedString+TKCategory.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		200B62951AD7FC5E0049E35C /* NSMutableAttributedString+TKCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 200B62831AD7FC5E0049E35C /* NSMutableAttributedString+TKCategory.m */; };
-		200B62961AD7FC5E0049E35C /* UIDevice+TKCategory.h in Headers */ = {isa = PBXBuildFile; fileRef = 200B62841AD7FC5E0049E35C /* UIDevice+TKCategory.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		200B62971AD7FC5E0049E35C /* UIDevice+TKCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 200B62851AD7FC5E0049E35C /* UIDevice+TKCategory.m */; };
 		200B62981AD7FC5E0049E35C /* UIView+TKCategory.h in Headers */ = {isa = PBXBuildFile; fileRef = 200B62861AD7FC5E0049E35C /* UIView+TKCategory.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		200B62991AD7FC5E0049E35C /* UIView+TKCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 200B62871AD7FC5E0049E35C /* UIView+TKCategory.m */; };
 		200B629D1AD7FD660049E35C /* NSObject+JSON.h in Headers */ = {isa = PBXBuildFile; fileRef = 200B629B1AD7FD660049E35C /* NSObject+JSON.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -193,6 +191,8 @@
 		207C97B21BD7F1AC00342677 /* NSView+Positioning.m in Sources */ = {isa = PBXBuildFile; fileRef = 207C97B01BD7F1AC00342677 /* NSView+Positioning.m */; };
 		207C97B51BD7F3F200342677 /* NSView+TKCategory.h in Headers */ = {isa = PBXBuildFile; fileRef = 207C97B31BD7F3F200342677 /* NSView+TKCategory.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		207C97B61BD7F3F200342677 /* NSView+TKCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 207C97B41BD7F3F200342677 /* NSView+TKCategory.m */; };
+		207E91AF1D87D17D00EECF1D /* UIDevice+TKCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 207E91AE1D87D17D00EECF1D /* UIDevice+TKCategory.swift */; };
+		207E91B01D87D61900EECF1D /* UIDevice+TKCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 207E91AE1D87D17D00EECF1D /* UIDevice+TKCategory.swift */; };
 		20816C471BF177070042D557 /* UIMotionEffectGroup+TKCategory.h in Headers */ = {isa = PBXBuildFile; fileRef = 20816C451BF177070042D557 /* UIMotionEffectGroup+TKCategory.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		20816C481BF177070042D557 /* UIMotionEffectGroup+TKCategory.h in Headers */ = {isa = PBXBuildFile; fileRef = 20816C451BF177070042D557 /* UIMotionEffectGroup+TKCategory.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		20816C491BF177070042D557 /* UIMotionEffectGroup+TKCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 20816C461BF177070042D557 /* UIMotionEffectGroup+TKCategory.m */; };
@@ -285,8 +285,6 @@
 		20CEA4481BA110E70009D60C /* NSTimer+Blocks.m in Sources */ = {isa = PBXBuildFile; fileRef = 2098BA231B0F6C4F000E0074 /* NSTimer+Blocks.m */; };
 		20CEA4491BA110EB0009D60C /* UIApplication+TKCategory.h in Headers */ = {isa = PBXBuildFile; fileRef = 200B62D41AD7FEF80049E35C /* UIApplication+TKCategory.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		20CEA44A1BA110F20009D60C /* UIApplication+TKCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 200B62D51AD7FEF80049E35C /* UIApplication+TKCategory.m */; };
-		20CEA44B1BA110F40009D60C /* UIDevice+TKCategory.h in Headers */ = {isa = PBXBuildFile; fileRef = 200B62841AD7FC5E0049E35C /* UIDevice+TKCategory.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		20CEA44C1BA110F70009D60C /* UIDevice+TKCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 200B62851AD7FC5E0049E35C /* UIDevice+TKCategory.m */; };
 		20CEA44D1BA110F90009D60C /* UIScreen+TKCategory.h in Headers */ = {isa = PBXBuildFile; fileRef = 200B62C81AD7FEF80049E35C /* UIScreen+TKCategory.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		20CEA44E1BA110FF0009D60C /* UIScreen+TKCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 200B62C91AD7FEF80049E35C /* UIScreen+TKCategory.m */; };
 		20CEA44F1BA111020009D60C /* UIView+TKCategory.h in Headers */ = {isa = PBXBuildFile; fileRef = 200B62861AD7FC5E0049E35C /* UIView+TKCategory.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -403,8 +401,6 @@
 		200B62811AD7FC5E0049E35C /* NSAttributedString+TKCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSAttributedString+TKCategory.m"; sourceTree = "<group>"; };
 		200B62821AD7FC5E0049E35C /* NSMutableAttributedString+TKCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableAttributedString+TKCategory.h"; sourceTree = "<group>"; };
 		200B62831AD7FC5E0049E35C /* NSMutableAttributedString+TKCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableAttributedString+TKCategory.m"; sourceTree = "<group>"; };
-		200B62841AD7FC5E0049E35C /* UIDevice+TKCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIDevice+TKCategory.h"; sourceTree = "<group>"; };
-		200B62851AD7FC5E0049E35C /* UIDevice+TKCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIDevice+TKCategory.m"; sourceTree = "<group>"; };
 		200B62861AD7FC5E0049E35C /* UIView+TKCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+TKCategory.h"; sourceTree = "<group>"; };
 		200B62871AD7FC5E0049E35C /* UIView+TKCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+TKCategory.m"; sourceTree = "<group>"; };
 		200B629B1AD7FD660049E35C /* NSObject+JSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+JSON.h"; sourceTree = "<group>"; };
@@ -522,6 +518,7 @@
 		207C97B01BD7F1AC00342677 /* NSView+Positioning.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSView+Positioning.m"; sourceTree = "<group>"; };
 		207C97B31BD7F3F200342677 /* NSView+TKCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSView+TKCategory.h"; sourceTree = "<group>"; };
 		207C97B41BD7F3F200342677 /* NSView+TKCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSView+TKCategory.m"; sourceTree = "<group>"; };
+		207E91AE1D87D17D00EECF1D /* UIDevice+TKCategory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIDevice+TKCategory.swift"; sourceTree = "<group>"; };
 		20816C451BF177070042D557 /* UIMotionEffectGroup+TKCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIMotionEffectGroup+TKCategory.h"; sourceTree = "<group>"; };
 		20816C461BF177070042D557 /* UIMotionEffectGroup+TKCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIMotionEffectGroup+TKCategory.m"; sourceTree = "<group>"; };
 		208CCE901C35855D009EE52E /* NSObject+DataHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+DataHelper.h"; sourceTree = "<group>"; };
@@ -794,8 +791,7 @@
 			children = (
 				200B62D41AD7FEF80049E35C /* UIApplication+TKCategory.h */,
 				200B62D51AD7FEF80049E35C /* UIApplication+TKCategory.m */,
-				200B62841AD7FC5E0049E35C /* UIDevice+TKCategory.h */,
-				200B62851AD7FC5E0049E35C /* UIDevice+TKCategory.m */,
+				207E91AE1D87D17D00EECF1D /* UIDevice+TKCategory.swift */,
 				200B62C81AD7FEF80049E35C /* UIScreen+TKCategory.h */,
 				200B62C91AD7FEF80049E35C /* UIScreen+TKCategory.m */,
 				2058B9FB1BA7487E002C2357 /* UITraitCollection+TKCategory.h */,
@@ -990,7 +986,6 @@
 				200B628E1AD7FC5E0049E35C /* NSMutableArray+TKCategory.h in Headers */,
 				20CEA4E31BA150510009D60C /* UIPanGestureRecognizer+VelocityDirection.h in Headers */,
 				200B63141AD804350049E35C /* TKShapeView.h in Headers */,
-				200B62961AD7FC5E0049E35C /* UIDevice+TKCategory.h in Headers */,
 				200B62F01AD7FEF80049E35C /* UIActionSheet+TKCategory.h in Headers */,
 				200B62F21AD7FEF80049E35C /* UIFont+TKCategory.h in Headers */,
 				200B62F61AD7FEF80049E35C /* UIApplication+TKCategory.h in Headers */,
@@ -1162,7 +1157,6 @@
 				20A85BEB1CA3543D00632668 /* TKWindow.h in Headers */,
 				20CEA42E1BA1105D0009D60C /* curryTV.h in Headers */,
 				20CEA4411BA110CE0009D60C /* NSMutableAttributedString+TKCategory.h in Headers */,
-				20CEA44B1BA110F40009D60C /* UIDevice+TKCategory.h in Headers */,
 				202D35D71BDB2CAB00886913 /* TKCollectionViewController.h in Headers */,
 				20A85BE51CA352BB00632668 /* UIPanGestureRecognizer+VelocityDirection.h in Headers */,
 				2010DCC81BB0EAAD00810A98 /* NSDate+TKCategory.h in Headers */,
@@ -1435,6 +1429,7 @@
 				200B628D1AD7FC5E0049E35C /* NSArray+TKCategory.m in Sources */,
 				20A46DE01B61C097004A4153 /* TKPhoneNumberTextField.m in Sources */,
 				202DBEBC1AF4347A00B0CE67 /* TKInputKey.m in Sources */,
+				207E91AF1D87D17D00EECF1D /* UIDevice+TKCategory.swift in Sources */,
 				20A75C861AD836DD00E2106A /* NSBundle+TKCategory.m in Sources */,
 				20E131CF1AF4107F0011492F /* UIView+Initializers.m in Sources */,
 				200B62D71AD7FEF80049E35C /* UIImage+TKCategory.m in Sources */,
@@ -1449,7 +1444,6 @@
 				200B62F31AD7FEF80049E35C /* UIFont+TKCategory.m in Sources */,
 				202D35D61BDB252600886913 /* TKCollectionViewController.m in Sources */,
 				200B62E51AD7FEF80049E35C /* UIImagePickerController+TKCategory.m in Sources */,
-				200B62971AD7FC5E0049E35C /* UIDevice+TKCategory.m in Sources */,
 				200B63211AD804E30049E35C /* TKCardModalViewController.m in Sources */,
 				20CAE0D51B0953E40088740E /* TKSwitchCell.m in Sources */,
 				20CEA4D91BA1503D0009D60C /* UIView+Positioning.m in Sources */,
@@ -1530,7 +1524,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				20CEA4721BA112530009D60C /* TKCustomPresentationViewController.m in Sources */,
-				20CEA44C1BA110F70009D60C /* UIDevice+TKCategory.m in Sources */,
 				20CEA47D1BA112D00009D60C /* TKSectionedScrollView.m in Sources */,
 				202D35D81BDB2CB000886913 /* TKCollectionViewController.m in Sources */,
 				20CEA45E1BA111320009D60C /* UIBarButtonItem+TKCategory.m in Sources */,
@@ -1580,6 +1573,7 @@
 				208CCE971C35855D009EE52E /* NSObject+DataHelper.m in Sources */,
 				20CEA48F1BA113D10009D60C /* UIFont+TKCategory.m in Sources */,
 				20CEA4391BA110B70009D60C /* NSString+TKCategory.m in Sources */,
+				207E91B01D87D61900EECF1D /* UIDevice+TKCategory.swift in Sources */,
 				20CEA46A1BA112370009D60C /* UIView+TKAnimation.m in Sources */,
 				20A85BE41CA352A300632668 /* UITraitCollection+TKCategory.m in Sources */,
 				20CEA4811BA112FE0009D60C /* TKCreditCardNumberTextField.m in Sources */,
@@ -1752,6 +1746,7 @@
 		200B626F1AD7FB460049E35C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
@@ -1767,6 +1762,7 @@
 		200B62701AD7FB460049E35C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = "curryTests/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";

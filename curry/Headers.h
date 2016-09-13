@@ -56,7 +56,6 @@
 
 // Categories -> UIKit -> Base
 #import "UIApplication+TKCategory.h"
-#import "UIDevice+TKCategory.h"
 #import "UIScreen+TKCategory.h"
 #import "UITraitCollection+TKCategory.h"
 

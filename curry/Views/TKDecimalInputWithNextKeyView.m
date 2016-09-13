@@ -31,11 +31,12 @@
 
 
 #import "TKDecimalInputWithNextKeyView.h"
-#import "UIDevice+TKCategory.h"
 #import "TKFoundation.h"
 #import "TKInputKey.h"
 #import "UIImage+TKCategory.h"
 #import "TKUIKit.h"
+
+
 
 @implementation TKDecimalInputWithNextKeyView
 
@@ -58,7 +59,7 @@
 	[super layoutSubviews];
 	
 	CGRect backRect = self.backspaceKey.frame;
-	if([UIDevice currentDevice].phoneIdiom){
+	if([UIDevice currentDevice].userInterfaceIdiom == UIUserInterfaceIdiomPhone){
 		self.nextKey.frame = CGRectMake(backRect.origin.x, 0, backRect.size.width, CGFrameGetMaxY(self.sixKey));
 		self.backspaceKey.frame = CGRectMake(backRect.origin.x, CGFrameGetMaxY(self.sixKey), backRect.size.width, CGFrameGetMaxY(self.zeroKey) - CGFrameGetMaxY(self.sixKey));
 	}else{

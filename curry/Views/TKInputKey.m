@@ -32,12 +32,11 @@
 
 #import "TKInputKey.h"
 #import "UIColor+TKCategory.h"
-#import "UIDevice+TKCategory.h"
 #import "UIFont+TKCategory.h"
 #import "TKFoundation.h"
 #import "TKUIKit.h"
 
-
+#import <curry/curry-Swift.h>
 
 @implementation TKInputKey
 

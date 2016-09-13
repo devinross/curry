@@ -31,11 +31,11 @@
 
 
 #import "TKNumberInputView.h"
-#import "UIDevice+TKCategory.h"
 #import "TKInputKey.h"
 #import "UIImage+TKCategory.h"
 #import "TKFoundation.h"
 #import "TKUIKit.h"
+#import <curry/curry-Swift.h>
 
 @implementation TKNumberInputView
 
@@ -107,7 +107,7 @@
 	
 	NSInteger minX = CGRectGetMaxX(self.threeKey.frame) + xPad;
 	
-	if([UIDevice currentDevice].phoneIdiom){
+	if([UIDevice currentDevice].userInterfaceIdiom == UIUserInterfaceIdiomPhone){
 		self.backspaceKey.frame = CGRectMake(minX, vertInset, self.containerView.frame.size.width - minX + 1, padRect.size.height + bottomPad);
 	}else{
 		self.backspaceKey.frame = CGRectMake(minX, vertInset, s.width, h);

@@ -32,7 +32,7 @@
 
 #import "TKWebViewController.h"
 #import "UIBarButtonItem+TKCategory.h"
-#import "UIDevice+TKCategory.h"
+#import <curry/curry-Swift.h>
 
 @interface TKWebViewController ()
 @property (nonatomic,strong) UIBarButtonItem *loadingActivityBarButtonItem;
@@ -75,7 +75,7 @@
 	activityVC.excludedActivityTypes = @[UIActivityTypePostToWeibo, UIActivityTypeSaveToCameraRoll, UIActivityTypeAssignToContact];
 	
 	
-	if([[UIDevice currentDevice] padIdiom]){
+	if([UIDevice currentDevice].padIdiom){
 		
 		UIPopoverController *popup = [[UIPopoverController alloc] initWithContentViewController:activityVC];
 		[popup presentPopoverFromBarButtonItem:sender permittedArrowDirections:UIPopoverArrowDirectionAny animated:YES];

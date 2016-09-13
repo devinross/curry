@@ -31,7 +31,6 @@
 
 
 #import "TKInputView.h"
-#import "UIDevice+TKCategory.h"
 #import "UIColor+TKCategory.h"
 #import "TKInputKey.h"
 #import "UIView+TKCategory.h"
@@ -39,6 +38,8 @@
 #import "UIImage+TKCategory.h"
 #import "TKFoundation.h"
 #import "TKUIKit.h"
+#import <curry/curry-Swift.h>
+
 
 @interface TKInputView ()
 
@@ -68,7 +69,7 @@
 
 + (CGSize) sizeOfKeyboardForMainScreen{
 	CGFloat height = 352;
-	if([UIDevice currentDevice].phoneIdiom){
+	if([UIDevice currentDevice].userInterfaceIdiom == UIUserInterfaceIdiomPhone){
 		height = [UIScreen mainScreen].traitCollection.verticalSizeClass == UIUserInterfaceSizeClassCompact ? 162 :  216;
 	}
 	return CGSizeMake([UIScreen mainScreen].bounds.size.width, height);
