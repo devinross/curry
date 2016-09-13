@@ -30,11 +30,9 @@
  */
 
 #import "RootTableViewController.h"
-#import "CustomTextEntryViewController.h"
 #import "BlocksViewController.h"
 #import "VideoViewController.h"
 #import "PDFGeneratorViewController.h"
-#import "ColorsViewController.h"
 
 #import <Examples-Swift.h>
 

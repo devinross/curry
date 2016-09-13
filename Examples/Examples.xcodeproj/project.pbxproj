@@ -12,12 +12,12 @@
 		20785FEC1AD83C63000DC57F /* RootTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 20785FEB1AD83C63000DC57F /* RootTableViewController.m */; };
 		20785FF61AD83D0C000DC57F /* curry.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20785FF31AD83CEE000DC57F /* curry.framework */; };
 		20785FF71AD83D0C000DC57F /* curry.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 20785FF31AD83CEE000DC57F /* curry.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		20785FFD1AD83DC1000DC57F /* CustomTextEntryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 20785FFC1AD83DC1000DC57F /* CustomTextEntryViewController.m */; };
 		207E914E1D879D6B00EECF1D /* CustomKeyboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 207E913F1D87958D00EECF1D /* CustomKeyboardViewController.swift */; };
 		207E914F1D879D6E00EECF1D /* GesturesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 207E914A1D879D3100EECF1D /* GesturesViewController.swift */; };
 		207E91511D879F3100EECF1D /* BrightnessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 207E91501D879F3100EECF1D /* BrightnessViewController.swift */; };
+		207E91531D87A1C800EECF1D /* ColorsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 207E91521D87A1C800EECF1D /* ColorsViewController.swift */; };
+		207E91551D87A45600EECF1D /* CustomTextEntryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 207E91541D87A45600EECF1D /* CustomTextEntryViewController.swift */; };
 		2097F35C1B3DA3F100247736 /* VideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2097F35B1B3DA3F100247736 /* VideoViewController.m */; };
-		209EB3001C18011F002300A6 /* ColorsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 209EB2FF1C18011F002300A6 /* ColorsViewController.m */; };
 		20A85BC91CA3522C00632668 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 20A85BC81CA3522C00632668 /* main.m */; };
 		20A85BCC1CA3522C00632668 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 20A85BCB1CA3522C00632668 /* AppDelegate.m */; };
 		20A85BCF1CA3522C00632668 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 20A85BCE1CA3522C00632668 /* ViewController.m */; };
@@ -116,15 +116,13 @@
 		20785FEA1AD83C63000DC57F /* RootTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootTableViewController.h; sourceTree = "<group>"; };
 		20785FEB1AD83C63000DC57F /* RootTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootTableViewController.m; sourceTree = "<group>"; };
 		20785FED1AD83CED000DC57F /* curry.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = curry.xcodeproj; path = ../curry.xcodeproj; sourceTree = "<group>"; };
-		20785FFB1AD83DC1000DC57F /* CustomTextEntryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomTextEntryViewController.h; sourceTree = "<group>"; };
-		20785FFC1AD83DC1000DC57F /* CustomTextEntryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomTextEntryViewController.m; sourceTree = "<group>"; };
 		207E913F1D87958D00EECF1D /* CustomKeyboardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomKeyboardViewController.swift; sourceTree = "<group>"; };
 		207E914A1D879D3100EECF1D /* GesturesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GesturesViewController.swift; sourceTree = "<group>"; };
 		207E91501D879F3100EECF1D /* BrightnessViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BrightnessViewController.swift; sourceTree = "<group>"; };
+		207E91521D87A1C800EECF1D /* ColorsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorsViewController.swift; sourceTree = "<group>"; };
+		207E91541D87A45600EECF1D /* CustomTextEntryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTextEntryViewController.swift; sourceTree = "<group>"; };
 		2097F35A1B3DA3F100247736 /* VideoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VideoViewController.h; sourceTree = "<group>"; };
 		2097F35B1B3DA3F100247736 /* VideoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VideoViewController.m; sourceTree = "<group>"; };
-		209EB2FE1C18011F002300A6 /* ColorsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ColorsViewController.h; sourceTree = "<group>"; };
-		209EB2FF1C18011F002300A6 /* ColorsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ColorsViewController.m; sourceTree = "<group>"; };
 		20A85BC51CA3522C00632668 /* TVExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TVExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		20A85BC81CA3522C00632668 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		20A85BCA1CA3522C00632668 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -186,8 +184,7 @@
 				20785FC41AD83BBE000DC57F /* AppDelegate.swift */,
 				20785FEA1AD83C63000DC57F /* RootTableViewController.h */,
 				20785FEB1AD83C63000DC57F /* RootTableViewController.m */,
-				20785FFB1AD83DC1000DC57F /* CustomTextEntryViewController.h */,
-				20785FFC1AD83DC1000DC57F /* CustomTextEntryViewController.m */,
+				207E91541D87A45600EECF1D /* CustomTextEntryViewController.swift */,
 				207E91501D879F3100EECF1D /* BrightnessViewController.swift */,
 				207E914A1D879D3100EECF1D /* GesturesViewController.swift */,
 				207E913F1D87958D00EECF1D /* CustomKeyboardViewController.swift */,
@@ -197,8 +194,7 @@
 				20D4C89B1BB52A0000C75EEC /* PDFGeneratorViewController.m */,
 				2097F35A1B3DA3F100247736 /* VideoViewController.h */,
 				2097F35B1B3DA3F100247736 /* VideoViewController.m */,
-				209EB2FE1C18011F002300A6 /* ColorsViewController.h */,
-				209EB2FF1C18011F002300A6 /* ColorsViewController.m */,
+				207E91521D87A1C800EECF1D /* ColorsViewController.swift */,
 				20785FC21AD83BBE000DC57F /* Supporting Files */,
 			);
 			path = Examples;
@@ -418,11 +414,11 @@
 				207E91511D879F3100EECF1D /* BrightnessViewController.swift in Sources */,
 				20785FC51AD83BBE000DC57F /* AppDelegate.swift in Sources */,
 				20CB9CF81AF3EA47002E9F1C /* BlocksViewController.m in Sources */,
+				207E91531D87A1C800EECF1D /* ColorsViewController.swift in Sources */,
 				207E914E1D879D6B00EECF1D /* CustomKeyboardViewController.swift in Sources */,
-				209EB3001C18011F002300A6 /* ColorsViewController.m in Sources */,
 				20785FEC1AD83C63000DC57F /* RootTableViewController.m in Sources */,
 				2097F35C1B3DA3F100247736 /* VideoViewController.m in Sources */,
-				20785FFD1AD83DC1000DC57F /* CustomTextEntryViewController.m in Sources */,
+				207E91551D87A45600EECF1D /* CustomTextEntryViewController.swift in Sources */,
 				20D4C89C1BB52A0000C75EEC /* PDFGeneratorViewController.m in Sources */,
 				207E914F1D879D6E00EECF1D /* GesturesViewController.swift in Sources */,
 			);
