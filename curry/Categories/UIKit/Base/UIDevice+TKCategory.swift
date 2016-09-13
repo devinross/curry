@@ -1,5 +1,5 @@
 //
-//  UIDevice-TKCategory.swift
+//  UIDevice+TKCategory.swift
 //  Created by Devin Ross on 9/13/16.
 //
 /*
