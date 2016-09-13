@@ -43,7 +43,7 @@
  @param alignment The text alignment of the label.
  @return An initialized label object or nil if the object couldn't be created.
  */
-+ (instancetype) labelWithFrame:(CGRect)frame attributedText:(NSAttributedString*)attributedText font:(UIFont*)font textColor:(UIColor*)textColor textAlignment:(NSTextAlignment)alignment;
++ (nonnull instancetype) labelWithFrame:(CGRect)frame attributedText:(NSAttributedString* _Nullable )attributedText font:(UIFont* _Nonnull )font textColor:(UIColor* _Nonnull)textColor textAlignment:(NSTextAlignment)alignment;
 
 /** Initializes and returns a newly allocated label object with the specified frame rectangle.
  @param frame The frame rectangle for the view, measured in points. The origin of the frame is relative to the superview in which you plan to add it. This method uses the frame rectangle to set the center and bounds properties accordingly.
@@ -53,7 +53,7 @@
  @param alignment The text alignment of the label.
  @return An initialized label object or nil if the object couldn't be created.
  */
-- (instancetype) initWithFrame:(CGRect)frame attributedText:(NSAttributedString*)attributedText font:(UIFont*)font textColor:(UIColor*)textColor textAlignment:(NSTextAlignment)alignment;
+- (nonnull instancetype) initWithFrame:(CGRect)frame attributedText:(NSAttributedString* _Nullable)attributedText font:(UIFont* _Nonnull)font textColor:(UIColor*_Nonnull )textColor textAlignment:(NSTextAlignment)alignment;
 
 
 
@@ -65,7 +65,7 @@
  @param alignment The text alignment of the label.
  @return An initialized label object or nil if the object couldn't be created.
  */
-+ (instancetype) labelWithFrame:(CGRect)frame text:(NSString*)text font:(UIFont*)font textColor:(UIColor*)textColor textAlignment:(NSTextAlignment)alignment;
++ (nonnull instancetype) labelWithFrame:(CGRect)frame text:(NSString* _Nullable)text font:(UIFont* _Nonnull)font textColor:(UIColor* _Nonnull)textColor textAlignment:(NSTextAlignment)alignment;
 
 
 /** Initializes and returns a newly allocated label object with the specified frame rectangle.
@@ -76,7 +76,7 @@
  @param alignment The text alignment of the label.
  @return An initialized label object or nil if the object couldn't be created.
  */
-- (instancetype) initWithFrame:(CGRect)frame text:(NSString*)text font:(UIFont*)font textColor:(UIColor*)textColor textAlignment:(NSTextAlignment)alignment;
+- (nonnull instancetype) initWithFrame:(CGRect)frame text:(NSString* _Nullable)text font:(UIFont* _Nonnull)font textColor:(UIColor* _Nonnull)textColor textAlignment:(NSTextAlignment)alignment;
 
 
 
@@ -86,24 +86,16 @@
  @param font The font set to the font.
  @return An initialized label object or nil if the object couldn't be created.
  */
-+ (instancetype) labelWithFrame:(CGRect)frame font:(UIFont*)font;
++ (nonnull instancetype) labelWithFrame:(CGRect)frame font:(UIFont* _Nonnull)font;
 
 /** Initializes and returns a newly allocated label object with the specified frame rectangle.
  @param frame The frame rectangle for the view, measured in points. The origin of the frame is relative to the superview in which you plan to add it. This method uses the frame rectangle to set the center and bounds properties accordingly.
  @param font The font set to the font.
  @return An initialized label object or nil if the object couldn't be created.
  */
-- (instancetype) initWithFrame:(CGRect)frame font:(UIFont*)font;
+- (nonnull instancetype) initWithFrame:(CGRect)frame font:(UIFont* _Nonnull)font;
 
 
-
-/** Initializes and returns a newly allocated label object with the specified frame rectangle.
- @param frame The frame rectangle for the view, measured in points. The origin of the frame is relative to the superview in which you plan to add it. This method uses the frame rectangle to set the center and bounds properties accordingly.
- @param font The font set to the font.
- @param textColor The text color.
- @return An initialized label object or nil if the object couldn't be created.
- */
-+ (instancetype) labelWithFrame:(CGRect)frame font:(UIFont*)font textColor:(UIColor*)textColor;
 
 /** Initializes and returns a newly allocated label object with the specified frame rectangle.
  @param frame The frame rectangle for the view, measured in points. The origin of the frame is relative to the superview in which you plan to add it. This method uses the frame rectangle to set the center and bounds properties accordingly.
@@ -111,7 +103,15 @@
  @param textColor The text color.
  @return An initialized label object or nil if the object couldn't be created.
  */
-- (instancetype) initWithFrame:(CGRect)frame font:(UIFont*)font textColor:(UIColor*)textColor;
++ (nonnull instancetype) labelWithFrame:(CGRect)frame font:(UIFont* _Nonnull)font textColor:(UIColor* _Nonnull)textColor;
+
+/** Initializes and returns a newly allocated label object with the specified frame rectangle.
+ @param frame The frame rectangle for the view, measured in points. The origin of the frame is relative to the superview in which you plan to add it. This method uses the frame rectangle to set the center and bounds properties accordingly.
+ @param font The font set to the font.
+ @param textColor The text color.
+ @return An initialized label object or nil if the object couldn't be created.
+ */
+- (nonnull instancetype) initWithFrame:(CGRect)frame font:(UIFont* _Nonnull)font textColor:(UIColor* _Nonnull)textColor;
 
 
 
@@ -122,7 +122,7 @@
  @param alignment The text alignment of the label.
  @return An initialized view object or nil if the object couldn't be created.
  */
-+ (instancetype) labelWithFrame:(CGRect)frame font:(UIFont*)font textColor:(UIColor*)textColor textAlignment:(NSTextAlignment)alignment;
++ (nonnull instancetype) labelWithFrame:(CGRect)frame font:(UIFont* _Nonnull)font textColor:(UIColor* _Nonnull)textColor textAlignment:(NSTextAlignment)alignment;
 
 /** Creates and returns a newly allocated view object with the specified frame rectangle.
  @param frame The frame rectangle for the view, measured in points. The origin of the frame is relative to the superview in which you plan to add it. This method uses the frame rectangle to set the center and bounds properties accordingly.
@@ -131,7 +131,7 @@
  @param alignment The text alignment of the label.
  @return An initialized view object or nil if the object couldn't be created.
  */
-- (instancetype) initWithFrame:(CGRect)frame font:(UIFont*)font textColor:(UIColor*)textColor textAlignment:(NSTextAlignment)alignment;
+- (nonnull instancetype) initWithFrame:(CGRect)frame font:(UIFont* _Nonnull)font textColor:(UIColor* _Nonnull)textColor textAlignment:(NSTextAlignment)alignment;
 
 
 
@@ -141,7 +141,7 @@
  @param alignment The text alignment of the label.
  @return An initialized view object or nil if the object couldn't be created.
  */
-+ (instancetype) labelWithFrame:(CGRect)frame attributedText:(NSAttributedString*)attributedText textAlignment:(NSTextAlignment)alignment;
++ (nonnull instancetype) labelWithFrame:(CGRect)frame attributedText:(NSAttributedString* _Nullable)attributedText textAlignment:(NSTextAlignment)alignment;
 
 /** Creates and returns a newly allocated view object with the specified frame rectangle.
  @param frame The frame rectangle for the view, measured in points. The origin of the frame is relative to the superview in which you plan to add it. This method uses the frame rectangle to set the center and bounds properties accordingly.
@@ -149,7 +149,7 @@
  @param alignment The text alignment of the label.
  @return An initialized view object or nil if the object couldn't be created.
  */
-- (instancetype) initWithFrame:(CGRect)frame attributedText:(NSAttributedString*)attributedText textAlignment:(NSTextAlignment)alignment;
+- (nonnull instancetype) initWithFrame:(CGRect)frame attributedText:(NSAttributedString* _Nullable)attributedText textAlignment:(NSTextAlignment)alignment;
 
 
 

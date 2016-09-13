@@ -47,7 +47,7 @@
  @param backgroundColor The views background color.
  @return An initialized view object or nil if the object couldn't be created.
  */
-+ (nonnull instancetype) viewWithFrame:(CGRect)frame backgroundColor:(UIColor*)backgroundColor;
++ (nonnull instancetype) viewWithFrame:(CGRect)frame backgroundColor:(nonnull UIColor*)backgroundColor;
 
 
 /** Creates and returns a newly allocated view object with the specified frame rectangle and background color.
@@ -55,7 +55,7 @@
  @param backgroundColor The views background color.
  @return An initialized view object or nil if the object couldn't be created.
  */
-- (nonnull instancetype) initWithFrame:(CGRect)frame backgroundColor:(UIColor*)backgroundColor;
+- (nonnull instancetype) initWithFrame:(CGRect)frame backgroundColor:(nonnull UIColor*)backgroundColor;
 
 /** Creates and returns a newly allocated view object with the specified frame rectangle and background color.
  @param frame The frame rectangle for the view, measured in points. The origin of the frame is relative to the superview in which you plan to add it. This method uses the frame rectangle to set the center and bounds properties accordingly.
@@ -63,7 +63,7 @@
  @param cornerRadius The corner radius of the view.
  @return An initialized view object or nil if the object couldn't be created.
  */
-+ (nonnull instancetype) viewWithFrame:(CGRect)frame backgroundColor:(UIColor*)backgroundColor cornerRadius:(CGFloat)cornerRadius;
++ (nonnull instancetype) viewWithFrame:(CGRect)frame backgroundColor:(nonnull UIColor*)backgroundColor cornerRadius:(CGFloat)cornerRadius;
 
 
 /** Initializes and returns a newly allocated view object with the specified frame rectangle and background color.
@@ -72,7 +72,7 @@
  @param cornerRadius The corner radius of the view.
  @return An initialized view object or nil if the object couldn't be created.
  */
-- (nonnull instancetype) initWithFrame:(CGRect)frame backgroundColor:(UIColor*)backgroundColor cornerRadius:(CGFloat)cornerRadius;
+- (nonnull instancetype) initWithFrame:(CGRect)frame backgroundColor:(nonnull UIColor*)backgroundColor cornerRadius:(CGFloat)cornerRadius;
 
 
 /** Creates and returns a newly allocated view object with the specified frame rectangle and background color.
@@ -83,7 +83,7 @@
  @param borderWidth The border width.
  @return An initialized view object or nil if the object couldn't be created.
  */
-+ (nonnull instancetype) viewWithFrame:(CGRect)frame backgroundColor:(UIColor*)backgroundColor cornerRadius:(CGFloat)cornerRadius borderColor:(UIColor*)borderColor borderWidth:(CGFloat)borderWidth;
++ (nonnull instancetype) viewWithFrame:(CGRect)frame backgroundColor:(nonnull UIColor*)backgroundColor cornerRadius:(CGFloat)cornerRadius borderColor:(nonnull UIColor*)borderColor borderWidth:(CGFloat)borderWidth;
 
 /** Initializes and returns a newly allocated view object with the specified frame rectangle and background color.
  @param frame The frame rectangle for the view, measured in points. The origin of the frame is relative to the superview in which you plan to add it. This method uses the frame rectangle to set the center and bounds properties accordingly.
@@ -93,6 +93,6 @@
  @param borderWidth The border width.
  @return An initialized view object or nil if the object couldn't be created.
  */
-- (nonnull instancetype) initWithFrame:(CGRect)frame backgroundColor:(UIColor*)backgroundColor cornerRadius:(CGFloat)cornerRadius borderColor:(UIColor*)borderColor borderWidth:(CGFloat)borderWidth;
+- (nonnull instancetype) initWithFrame:(CGRect)frame backgroundColor:(nonnull UIColor*)backgroundColor cornerRadius:(CGFloat)cornerRadius borderColor:(nonnull UIColor*)borderColor borderWidth:(CGFloat)borderWidth;
 
 @end

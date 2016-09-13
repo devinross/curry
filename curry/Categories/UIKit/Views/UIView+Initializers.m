@@ -38,7 +38,7 @@
     return [[[self class] alloc] initWithFrame:frame];
 }
 
-+ (instancetype) viewWithFrame:(CGRect)frame backgroundColor:(UIColor*)backgroundColor{
++ (instancetype) viewWithFrame:(CGRect)frame backgroundColor:(nonnull UIColor*)backgroundColor{
     return [[[self class] alloc] initWithFrame:frame backgroundColor:backgroundColor];
 }
 
@@ -48,22 +48,22 @@
     return self;
 }
 
-+ (instancetype) viewWithFrame:(CGRect)frame backgroundColor:(UIColor*)backgroundColor cornerRadius:(CGFloat)cornerRadius{
++ (instancetype) viewWithFrame:(CGRect)frame backgroundColor:(nonnull UIColor*)backgroundColor cornerRadius:(CGFloat)cornerRadius{
     return [[[self class] alloc] initWithFrame:frame backgroundColor:backgroundColor cornerRadius:cornerRadius];
 }
 
-- (instancetype) initWithFrame:(CGRect)frame backgroundColor:(UIColor*)backgroundColor cornerRadius:(CGFloat)cornerRadius{
+- (instancetype) initWithFrame:(CGRect)frame backgroundColor:(nonnull UIColor*)backgroundColor cornerRadius:(CGFloat)cornerRadius{
     self = [self initWithFrame:frame];
     self.backgroundColor = backgroundColor;
     self.cornerRadius = cornerRadius;
     return self;
 }
 
-+ (instancetype) viewWithFrame:(CGRect)frame backgroundColor:(UIColor*)backgroundColor cornerRadius:(CGFloat)cornerRadius borderColor:(UIColor*)borderColor borderWidth:(CGFloat)borderWidth{
++ (instancetype) viewWithFrame:(CGRect)frame backgroundColor:(nonnull UIColor*)backgroundColor cornerRadius:(CGFloat)cornerRadius borderColor:(nonnull UIColor*)borderColor borderWidth:(CGFloat)borderWidth{
     return [[[self class] alloc] initWithFrame:frame backgroundColor:backgroundColor cornerRadius:cornerRadius borderColor:borderColor borderWidth:borderWidth];
 }
 
-- (instancetype) initWithFrame:(CGRect)frame backgroundColor:(UIColor*)backgroundColor cornerRadius:(CGFloat)cornerRadius borderColor:(UIColor*)borderColor borderWidth:(CGFloat)borderWidth{
+- (instancetype) initWithFrame:(CGRect)frame backgroundColor:(nonnull UIColor*)backgroundColor cornerRadius:(CGFloat)cornerRadius borderColor:(nonnull UIColor*)borderColor borderWidth:(CGFloat)borderWidth{
     self = [self initWithFrame:frame];
     self.backgroundColor = backgroundColor;
     self.cornerRadius = cornerRadius;
