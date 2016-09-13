@@ -1,5 +1,5 @@
 //
-//  CustomKeyboardViewController.swift
+//  GesturesViewController.swift
 //  Created by Devin Ross on 9/12/16.
 //
 /*
@@ -29,28 +29,29 @@ OTHER DEALINGS IN THE SOFTWARE.
 
 */
 
-
 import UIKit
 
-class CustomKeyboardViewController: UIViewController {
+class GesturesViewController: UIViewController {
 
 	
-	override func loadView() {
+	override func loadView(){
 		super.loadView()
 		
 		self.view.backgroundColor = UIColor.white
 		
-		let textField = UITextField(frame: CGRectMakeInset(0, 0, self.view.width, 100, 30, 20))
-		textField.autoresizingMask = [.flexibleWidth]
-		textField.backgroundColor = UIColor(white: 0.95, alpha: 1)
-		self.view.addSubview(textField)
 		
-		let input = TKNumberInputView(frame: CGRect(x: 0, y: 0, width: self.view.width, height: 216))
-		input.textField = textField
-		textField.inputView = input
+		let label = UILabel(frame: CGRect(x: 0, y: self.view.height - 60, width: self.view.width, height: 60))
+		label.textAlignment = .center
+		self.view.addSubview(label)
 		
+		let pan = UIPanGestureRecognizer { (sender) in
+			label.text = "\(sender.state) (\(sender.location(in: self.view).x),\(sender.location(in: self.view).y))"
+		}
+		self.view.addGestureRecognizer(pan)
 		
+
 	}
+
 	
 
 }

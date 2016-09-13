@@ -7,14 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		200C415F1C540B5E004492A5 /* BrightnessViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 200C415E1C540B5E004492A5 /* BrightnessViewController.m */; };
 		20785FC51AD83BBE000DC57F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20785FC41AD83BBE000DC57F /* AppDelegate.swift */; };
 		20785FCC1AD83BBE000DC57F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 20785FCB1AD83BBE000DC57F /* Images.xcassets */; };
 		20785FEC1AD83C63000DC57F /* RootTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 20785FEB1AD83C63000DC57F /* RootTableViewController.m */; };
 		20785FF61AD83D0C000DC57F /* curry.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20785FF31AD83CEE000DC57F /* curry.framework */; };
 		20785FF71AD83D0C000DC57F /* curry.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 20785FF31AD83CEE000DC57F /* curry.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		20785FFD1AD83DC1000DC57F /* CustomTextEntryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 20785FFC1AD83DC1000DC57F /* CustomTextEntryViewController.m */; };
-		207E91401D87958D00EECF1D /* CustomKeyboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 207E913F1D87958D00EECF1D /* CustomKeyboardViewController.swift */; };
+		207E914E1D879D6B00EECF1D /* CustomKeyboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 207E913F1D87958D00EECF1D /* CustomKeyboardViewController.swift */; };
+		207E914F1D879D6E00EECF1D /* GesturesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 207E914A1D879D3100EECF1D /* GesturesViewController.swift */; };
+		207E91511D879F3100EECF1D /* BrightnessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 207E91501D879F3100EECF1D /* BrightnessViewController.swift */; };
 		2097F35C1B3DA3F100247736 /* VideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2097F35B1B3DA3F100247736 /* VideoViewController.m */; };
 		209EB3001C18011F002300A6 /* ColorsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 209EB2FF1C18011F002300A6 /* ColorsViewController.m */; };
 		20A85BC91CA3522C00632668 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 20A85BC81CA3522C00632668 /* main.m */; };
@@ -27,7 +28,6 @@
 		20CB9CF81AF3EA47002E9F1C /* BlocksViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 20CB9CF71AF3EA47002E9F1C /* BlocksViewController.m */; };
 		20D4C89C1BB52A0000C75EEC /* PDFGeneratorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 20D4C89B1BB52A0000C75EEC /* PDFGeneratorViewController.m */; };
 		20EC669D1B3DAD1D0027D6A2 /* balllin.mov in Resources */ = {isa = PBXBuildFile; fileRef = 20EC669C1B3DAD1D0027D6A2 /* balllin.mov */; };
-		20F19B1D1AE080F700077DA1 /* GesturesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 20F19B1C1AE080F700077DA1 /* GesturesViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -108,8 +108,6 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		200C415D1C540B5E004492A5 /* BrightnessViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BrightnessViewController.h; sourceTree = "<group>"; };
-		200C415E1C540B5E004492A5 /* BrightnessViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BrightnessViewController.m; sourceTree = "<group>"; };
 		20785FBF1AD83BBE000DC57F /* Examples.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Examples.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		20785FC31AD83BBE000DC57F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		20785FC41AD83BBE000DC57F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -121,6 +119,8 @@
 		20785FFB1AD83DC1000DC57F /* CustomTextEntryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomTextEntryViewController.h; sourceTree = "<group>"; };
 		20785FFC1AD83DC1000DC57F /* CustomTextEntryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomTextEntryViewController.m; sourceTree = "<group>"; };
 		207E913F1D87958D00EECF1D /* CustomKeyboardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomKeyboardViewController.swift; sourceTree = "<group>"; };
+		207E914A1D879D3100EECF1D /* GesturesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GesturesViewController.swift; sourceTree = "<group>"; };
+		207E91501D879F3100EECF1D /* BrightnessViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BrightnessViewController.swift; sourceTree = "<group>"; };
 		2097F35A1B3DA3F100247736 /* VideoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VideoViewController.h; sourceTree = "<group>"; };
 		2097F35B1B3DA3F100247736 /* VideoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VideoViewController.m; sourceTree = "<group>"; };
 		209EB2FE1C18011F002300A6 /* ColorsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ColorsViewController.h; sourceTree = "<group>"; };
@@ -139,8 +139,6 @@
 		20D4C89A1BB52A0000C75EEC /* PDFGeneratorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PDFGeneratorViewController.h; sourceTree = "<group>"; };
 		20D4C89B1BB52A0000C75EEC /* PDFGeneratorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PDFGeneratorViewController.m; sourceTree = "<group>"; };
 		20EC669C1B3DAD1D0027D6A2 /* balllin.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = balllin.mov; sourceTree = "<group>"; };
-		20F19B1B1AE080F700077DA1 /* GesturesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GesturesViewController.h; sourceTree = "<group>"; };
-		20F19B1C1AE080F700077DA1 /* GesturesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GesturesViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -190,10 +188,8 @@
 				20785FEB1AD83C63000DC57F /* RootTableViewController.m */,
 				20785FFB1AD83DC1000DC57F /* CustomTextEntryViewController.h */,
 				20785FFC1AD83DC1000DC57F /* CustomTextEntryViewController.m */,
-				200C415D1C540B5E004492A5 /* BrightnessViewController.h */,
-				200C415E1C540B5E004492A5 /* BrightnessViewController.m */,
-				20F19B1B1AE080F700077DA1 /* GesturesViewController.h */,
-				20F19B1C1AE080F700077DA1 /* GesturesViewController.m */,
+				207E91501D879F3100EECF1D /* BrightnessViewController.swift */,
+				207E914A1D879D3100EECF1D /* GesturesViewController.swift */,
 				207E913F1D87958D00EECF1D /* CustomKeyboardViewController.swift */,
 				20CB9CF61AF3EA47002E9F1C /* BlocksViewController.h */,
 				20CB9CF71AF3EA47002E9F1C /* BlocksViewController.m */,
@@ -419,16 +415,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				20F19B1D1AE080F700077DA1 /* GesturesViewController.m in Sources */,
-				200C415F1C540B5E004492A5 /* BrightnessViewController.m in Sources */,
+				207E91511D879F3100EECF1D /* BrightnessViewController.swift in Sources */,
 				20785FC51AD83BBE000DC57F /* AppDelegate.swift in Sources */,
 				20CB9CF81AF3EA47002E9F1C /* BlocksViewController.m in Sources */,
+				207E914E1D879D6B00EECF1D /* CustomKeyboardViewController.swift in Sources */,
 				209EB3001C18011F002300A6 /* ColorsViewController.m in Sources */,
 				20785FEC1AD83C63000DC57F /* RootTableViewController.m in Sources */,
-				207E91401D87958D00EECF1D /* CustomKeyboardViewController.swift in Sources */,
 				2097F35C1B3DA3F100247736 /* VideoViewController.m in Sources */,
 				20785FFD1AD83DC1000DC57F /* CustomTextEntryViewController.m in Sources */,
 				20D4C89C1BB52A0000C75EEC /* PDFGeneratorViewController.m in Sources */,
+				207E914F1D879D6E00EECF1D /* GesturesViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

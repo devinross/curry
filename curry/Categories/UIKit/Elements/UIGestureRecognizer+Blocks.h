@@ -38,17 +38,17 @@
  @param block The callback handler.
  @return A gesture recognizer.
  */
-+ (instancetype) recognizerWithHandler:(void (^)(UIGestureRecognizer *sender))block;
++ (nonnull instancetype) recognizerWithHandler:(void (^ _Nonnull )(UIGestureRecognizer *_Nonnull sender))block;
 
 /** Creates a `UIGestureRecognizer` with a callback handler.
  @param block The callback handler.
  @return A gesture recognizer.
  */
-- (instancetype) initWithHandler:(void (^)(UIGestureRecognizer *sender))block NS_REPLACES_RECEIVER;
+- (nonnull instancetype) initWithHandler:(void (^ _Nonnull )(UIGestureRecognizer *_Nonnull sender))block NS_REPLACES_RECEIVER;
 
 
 /** Set the gesture recognizer callback handler. */
-@property (nonatomic, copy, setter = setHandler:) void (^handler)(UIGestureRecognizer *sender);
+@property (nonatomic, copy, setter = setHandler:) void (^ _Nonnull handler)(UIGestureRecognizer *_Nonnull sender);
 
 
 @end

@@ -1,5 +1,5 @@
 //
-//  CustomKeyboardViewController.swift
+//  BrightnessViewController.swift
 //  Created by Devin Ross on 9/12/16.
 //
 /*
@@ -32,25 +32,43 @@ OTHER DEALINGS IN THE SOFTWARE.
 
 import UIKit
 
-class CustomKeyboardViewController: UIViewController {
+class BrightnessViewController: UIViewController {
 
-	
 	override func loadView() {
 		super.loadView()
 		
 		self.view.backgroundColor = UIColor.white
 		
-		let textField = UITextField(frame: CGRectMakeInset(0, 0, self.view.width, 100, 30, 20))
-		textField.autoresizingMask = [.flexibleWidth]
-		textField.backgroundColor = UIColor(white: 0.95, alpha: 1)
-		self.view.addSubview(textField)
 		
-		let input = TKNumberInputView(frame: CGRect(x: 0, y: 0, width: self.view.width, height: 216))
-		input.textField = textField
-		textField.inputView = input
+		let btn = UIButton(type: .roundedRect)
+		btn.frame = CGRectCenteredInRect(self.view.bounds, 200, 60)
 		
+		btn.setTitle("Lower Brightness", for: .normal)
+		btn.addTarget(self, action: #selector(changeBrightness), for: .touchUpInside)
+		
+		self.view.addSubview(btn)
 		
 	}
 	
+	func changeBrightness(sender: UIButton){
+		
+		
+		if sender.tag == 0 {
+			
+			sender.tag = 1
+			UIScreen.main.setBrightness(0.2, animated: true)
+			sender.setTitle("Raise Brightness", for: .normal)
+
+		}else{
+			
+			sender.tag = 0
+			UIScreen.main.setBrightness(1, animated: true)
+			sender.setTitle("Lower Brightness", for: .normal)
+
+		}
+		
+		
+	}
+
 
 }
