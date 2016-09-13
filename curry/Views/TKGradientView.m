@@ -42,7 +42,7 @@
     return (CAGradientLayer *)self.layer;
 }
 
-- (NSArray *) colors{
+- (NSArray<UIColor*>*) colors{
     NSArray *cgColors = [self _gradientLayer].colors;
     
 	if (cgColors == nil) return nil;
@@ -55,7 +55,7 @@
     
     return [NSArray arrayWithArray:uiColors];
 }
-- (void)setColors:(NSArray *)newColors {
+- (void)setColors:(NSArray<UIColor*> *)newColors {
     NSMutableArray *newCGColors = nil;
 	
     if (newColors != nil) {
@@ -73,10 +73,10 @@
 }
 
 
-- (NSArray *)locations {
+- (NSArray<NSNumber *>*)locations {
     return [self _gradientLayer].locations;
 }
-- (void) setLocations:(NSArray *)newLocations {
+- (void) setLocations:(NSArray<NSNumber *>*)newLocations {
     [self _gradientLayer].locations = newLocations;
 }
 

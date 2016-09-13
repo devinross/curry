@@ -42,10 +42,10 @@
 ///----------------------------
 
 /*! An array of `UIColor` objects defining the color of each gradient stop. */
-@property (nonatomic,strong) NSArray *colors;
+@property (nonatomic,strong) NSArray<UIColor*> *colors;
 
 /*! An optional array of NSNumber objects defining the location of each gradient stop. */
-@property (nonatomic,strong) NSArray *locations;
+@property (nonatomic,strong) NSArray<NSNumber *> *locations;
 
 
 /*!

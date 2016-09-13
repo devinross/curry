@@ -33,17 +33,19 @@
 #import "CustomTextEntryViewController.h"
 #import "GesturesViewController.h"
 #import "BlocksViewController.h"
-#import "CustomKeyboardViewController.h"
 #import "VideoViewController.h"
 #import "PDFGeneratorViewController.h"
 #import "ColorsViewController.h"
 #import "BrightnessViewController.h"
 
+#import <Examples-Swift.h>
+
+
 @implementation RootTableViewController
 
 #define IDENTIFIER @"cellIdentifier"
 
-- (void)viewDidLoad {
+- (void) viewDidLoad {
     [super viewDidLoad];
     self.items = @[@"Card Modal",@"Custom Text Fields",@"Gestures Blocks",@"Action Sheet Blocks",@"Custom Keyboards",@"Video View Controller",@"Screen Brightness",@"PDF Generation",@"Colors"];
     [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:IDENTIFIER];
