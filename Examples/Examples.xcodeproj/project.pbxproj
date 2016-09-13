@@ -17,7 +17,7 @@
 		207E91511D879F3100EECF1D /* BrightnessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 207E91501D879F3100EECF1D /* BrightnessViewController.swift */; };
 		207E91531D87A1C800EECF1D /* ColorsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 207E91521D87A1C800EECF1D /* ColorsViewController.swift */; };
 		207E91551D87A45600EECF1D /* CustomTextEntryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 207E91541D87A45600EECF1D /* CustomTextEntryViewController.swift */; };
-		2097F35C1B3DA3F100247736 /* VideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2097F35B1B3DA3F100247736 /* VideoViewController.m */; };
+		207E91571D87A67000EECF1D /* VideoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 207E91561D87A67000EECF1D /* VideoViewController.swift */; };
 		20A85BC91CA3522C00632668 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 20A85BC81CA3522C00632668 /* main.m */; };
 		20A85BCC1CA3522C00632668 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 20A85BCB1CA3522C00632668 /* AppDelegate.m */; };
 		20A85BCF1CA3522C00632668 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 20A85BCE1CA3522C00632668 /* ViewController.m */; };
@@ -121,8 +121,7 @@
 		207E91501D879F3100EECF1D /* BrightnessViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BrightnessViewController.swift; sourceTree = "<group>"; };
 		207E91521D87A1C800EECF1D /* ColorsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorsViewController.swift; sourceTree = "<group>"; };
 		207E91541D87A45600EECF1D /* CustomTextEntryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTextEntryViewController.swift; sourceTree = "<group>"; };
-		2097F35A1B3DA3F100247736 /* VideoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VideoViewController.h; sourceTree = "<group>"; };
-		2097F35B1B3DA3F100247736 /* VideoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VideoViewController.m; sourceTree = "<group>"; };
+		207E91561D87A67000EECF1D /* VideoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoViewController.swift; sourceTree = "<group>"; };
 		20A85BC51CA3522C00632668 /* TVExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TVExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		20A85BC81CA3522C00632668 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		20A85BCA1CA3522C00632668 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -192,8 +191,7 @@
 				20CB9CF71AF3EA47002E9F1C /* BlocksViewController.m */,
 				20D4C89A1BB52A0000C75EEC /* PDFGeneratorViewController.h */,
 				20D4C89B1BB52A0000C75EEC /* PDFGeneratorViewController.m */,
-				2097F35A1B3DA3F100247736 /* VideoViewController.h */,
-				2097F35B1B3DA3F100247736 /* VideoViewController.m */,
+				207E91561D87A67000EECF1D /* VideoViewController.swift */,
 				207E91521D87A1C800EECF1D /* ColorsViewController.swift */,
 				20785FC21AD83BBE000DC57F /* Supporting Files */,
 			);
@@ -417,7 +415,7 @@
 				207E91531D87A1C800EECF1D /* ColorsViewController.swift in Sources */,
 				207E914E1D879D6B00EECF1D /* CustomKeyboardViewController.swift in Sources */,
 				20785FEC1AD83C63000DC57F /* RootTableViewController.m in Sources */,
-				2097F35C1B3DA3F100247736 /* VideoViewController.m in Sources */,
+				207E91571D87A67000EECF1D /* VideoViewController.swift in Sources */,
 				207E91551D87A45600EECF1D /* CustomTextEntryViewController.swift in Sources */,
 				20D4C89C1BB52A0000C75EEC /* PDFGeneratorViewController.m in Sources */,
 				207E914F1D879D6E00EECF1D /* GesturesViewController.swift in Sources */,

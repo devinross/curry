@@ -1,5 +1,5 @@
 //
-//  ColorsViewController.swift
+//  VideoViewController.swift
 //  Created by Devin Ross on 9/12/16.
 //
 /*
@@ -31,57 +31,33 @@ OTHER DEALINGS IN THE SOFTWARE.
 
 import UIKit
 
-class ColorsViewController: UIViewController {
-
+class VideoViewController: UIViewController {
+	
+	var videoViewController: TKVideoViewController?
 
 	override func loadView() {
 		super.loadView()
+
+		self.title = "Video"
 		self.view.backgroundColor = UIColor.white
 		
 		
-		let scrollView = UIScrollView(frame: self.view.bounds)
-		self.view.addSubview(scrollView)
-		
-		let pad = CGFloat(20.0)
-		let width = (self.view.width - (pad*4.0)) / 3.0
-		let middleX = pad*2 + width
-		let rightX = pad*3 + width*2
-		
-		
-		let colors = [[UIColor(colorLiteralRed: 0, green: 121/255.0, blue: 210/255.0, alpha: 1),]]
-		
-		
-		
-		
-		var middle = CGRect(x: middleX, y: pad, width: width, height: width)
-		var left = CGRect(x:pad, y: pad, width: width, height: width)
-		var right = CGRect(x:rightX, y: pad, width: width, height: width)
-		
-		for array in colors {
-			
-			
-			let block1 = UIView(frame: left, backgroundColor: array.first!)
-			scrollView.addSubview(block1)
-			
-			let block2 = UIView(frame: middle, backgroundColor: array[1])
-			scrollView.addSubview(block2)
-			
-			let block3 = UIView(frame: right, backgroundColor: array.last!)
-			scrollView.addSubview(block3)
-			
-			
-			left.origin.y = block1.maxY + pad
-			middle.origin.y = block1.maxY + pad;
-			right.origin.y = block1.maxY + pad;
-
-			
-		}
-		
-		scrollView.contentHeight = right.origin.y
-		
-		
+		self.videoViewController = TKVideoViewController(videoTitle: "balllin", ofType: "mov")
+		self.videoViewController?.view.frame = self.view.bounds.insetBy(dx: 40, dy: 60)
+		self.view.addSubview((self.videoViewController?.view)!)
 		
 	}
-
+	
+	override func viewDidAppear(_ animated: Bool) {
+		super.viewDidAppear(animated)
+		self.videoViewController?.play()
+	}
+	
+	override func viewWillDisappear(_ animated: Bool) {
+		super.viewWillDisappear(animated)
+		self.videoViewController?.pause()
+	}
 
 }
+
+
