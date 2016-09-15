@@ -118,8 +118,6 @@
 		2010DCCF1BB0EACB00810A98 /* NSAttributedString+TKCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 200B62811AD7FC5E0049E35C /* NSAttributedString+TKCategory.m */; };
 		2010DCD01BB0EACD00810A98 /* NSMutableAttributedString+TKCategory.h in Headers */ = {isa = PBXBuildFile; fileRef = 200B62821AD7FC5E0049E35C /* NSMutableAttributedString+TKCategory.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2010DCD11BB0EAD100810A98 /* NSMutableAttributedString+TKCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 200B62831AD7FC5E0049E35C /* NSMutableAttributedString+TKCategory.m */; };
-		2010DCD21BB0EAD300810A98 /* NSBundle+TKCategory.h in Headers */ = {isa = PBXBuildFile; fileRef = 20A75C831AD836DD00E2106A /* NSBundle+TKCategory.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		2010DCD31BB0EAD800810A98 /* NSBundle+TKCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 20A75C841AD836DD00E2106A /* NSBundle+TKCategory.m */; };
 		2010DCD41BB0EADB00810A98 /* NSURLSession+TKCategory.h in Headers */ = {isa = PBXBuildFile; fileRef = 207860241AD84F11000DC57F /* NSURLSession+TKCategory.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2010DCD51BB0EADF00810A98 /* NSURLSession+TKCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 207860251AD84F11000DC57F /* NSURLSession+TKCategory.m */; };
 		2010DCD61BB0EAE200810A98 /* NSTimer+Blocks.h in Headers */ = {isa = PBXBuildFile; fileRef = 2098BA221B0F6C4F000E0074 /* NSTimer+Blocks.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -167,6 +165,10 @@
 		205B9A8E1BF1058D008EDFD8 /* NSUserDefaults+iCloud.m in Sources */ = {isa = PBXBuildFile; fileRef = 205B9A8A1BF1058D008EDFD8 /* NSUserDefaults+iCloud.m */; };
 		205B9A8F1BF1058D008EDFD8 /* NSUserDefaults+iCloud.m in Sources */ = {isa = PBXBuildFile; fileRef = 205B9A8A1BF1058D008EDFD8 /* NSUserDefaults+iCloud.m */; };
 		205B9A901BF1058D008EDFD8 /* NSUserDefaults+iCloud.m in Sources */ = {isa = PBXBuildFile; fileRef = 205B9A8A1BF1058D008EDFD8 /* NSUserDefaults+iCloud.m */; };
+		2069C12C1D8AFEB9000BD656 /* Bundle+TKCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2069C12B1D8AFEB9000BD656 /* Bundle+TKCategory.swift */; };
+		2069C12D1D8AFEB9000BD656 /* Bundle+TKCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2069C12B1D8AFEB9000BD656 /* Bundle+TKCategory.swift */; };
+		2069C12E1D8AFEB9000BD656 /* Bundle+TKCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2069C12B1D8AFEB9000BD656 /* Bundle+TKCategory.swift */; };
+		2069C12F1D8AFEB9000BD656 /* Bundle+TKCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2069C12B1D8AFEB9000BD656 /* Bundle+TKCategory.swift */; };
 		2069E8171C78EEDB003035FF /* Headers.h in Headers */ = {isa = PBXBuildFile; fileRef = 20A75C5E1AD82C8500E2106A /* Headers.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2069E8181C78EFCD003035FF /* Headers.h in Headers */ = {isa = PBXBuildFile; fileRef = 20A75C5E1AD82C8500E2106A /* Headers.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2069E8191C78EFCD003035FF /* Headers.h in Headers */ = {isa = PBXBuildFile; fileRef = 20A75C5E1AD82C8500E2106A /* Headers.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -221,8 +223,6 @@
 		20A75C5F1AD82C8500E2106A /* Headers.h in Headers */ = {isa = PBXBuildFile; fileRef = 20A75C5E1AD82C8500E2106A /* Headers.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		20A75C681AD8332F00E2106A /* TKSectionedScrollView.h in Headers */ = {isa = PBXBuildFile; fileRef = 20A75C661AD8332F00E2106A /* TKSectionedScrollView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		20A75C691AD8332F00E2106A /* TKSectionedScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 20A75C671AD8332F00E2106A /* TKSectionedScrollView.m */; };
-		20A75C851AD836DD00E2106A /* NSBundle+TKCategory.h in Headers */ = {isa = PBXBuildFile; fileRef = 20A75C831AD836DD00E2106A /* NSBundle+TKCategory.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		20A75C861AD836DD00E2106A /* NSBundle+TKCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 20A75C841AD836DD00E2106A /* NSBundle+TKCategory.m */; };
 		20A85BE31CA3529D00632668 /* UITraitCollection+TKCategory.h in Headers */ = {isa = PBXBuildFile; fileRef = 2058B9FB1BA7487E002C2357 /* UITraitCollection+TKCategory.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		20A85BE41CA352A300632668 /* UITraitCollection+TKCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 2058B9FC1BA7487E002C2357 /* UITraitCollection+TKCategory.m */; };
 		20A85BE51CA352BB00632668 /* UIPanGestureRecognizer+VelocityDirection.h in Headers */ = {isa = PBXBuildFile; fileRef = 20CEA4DF1BA150510009D60C /* UIPanGestureRecognizer+VelocityDirection.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -246,8 +246,6 @@
 		20B5FE3F1BB363C600C0F848 /* NSArray+TKCategory.h in Headers */ = {isa = PBXBuildFile; fileRef = 200B627A1AD7FC5E0049E35C /* NSArray+TKCategory.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		20B5FE401BB363C900C0F848 /* NSArray+TKCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 200B627B1AD7FC5E0049E35C /* NSArray+TKCategory.m */; };
 		20B5FE411BB363CB00C0F848 /* NSMutableArray+TKCategory.h in Headers */ = {isa = PBXBuildFile; fileRef = 200B627C1AD7FC5E0049E35C /* NSMutableArray+TKCategory.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		20B5FE471BB363DE00C0F848 /* NSBundle+TKCategory.h in Headers */ = {isa = PBXBuildFile; fileRef = 20A75C831AD836DD00E2106A /* NSBundle+TKCategory.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		20B5FE481BB363E200C0F848 /* NSBundle+TKCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 20A75C841AD836DD00E2106A /* NSBundle+TKCategory.m */; };
 		20B5FE491BB363E400C0F848 /* NSURLSession+TKCategory.h in Headers */ = {isa = PBXBuildFile; fileRef = 207860241AD84F11000DC57F /* NSURLSession+TKCategory.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		20B5FE4A1BB363E800C0F848 /* NSURLSession+TKCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 207860251AD84F11000DC57F /* NSURLSession+TKCategory.m */; };
 		20B5FE4B1BB363EB00C0F848 /* NSTimer+Blocks.h in Headers */ = {isa = PBXBuildFile; fileRef = 2098BA221B0F6C4F000E0074 /* NSTimer+Blocks.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -277,8 +275,6 @@
 		20CEA4401BA110CC0009D60C /* NSAttributedString+TKCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 200B62811AD7FC5E0049E35C /* NSAttributedString+TKCategory.m */; };
 		20CEA4411BA110CE0009D60C /* NSMutableAttributedString+TKCategory.h in Headers */ = {isa = PBXBuildFile; fileRef = 200B62821AD7FC5E0049E35C /* NSMutableAttributedString+TKCategory.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		20CEA4421BA110D10009D60C /* NSMutableAttributedString+TKCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 200B62831AD7FC5E0049E35C /* NSMutableAttributedString+TKCategory.m */; };
-		20CEA4431BA110D30009D60C /* NSBundle+TKCategory.h in Headers */ = {isa = PBXBuildFile; fileRef = 20A75C831AD836DD00E2106A /* NSBundle+TKCategory.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		20CEA4441BA110D70009D60C /* NSBundle+TKCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 20A75C841AD836DD00E2106A /* NSBundle+TKCategory.m */; };
 		20CEA4451BA110D90009D60C /* NSURLSession+TKCategory.h in Headers */ = {isa = PBXBuildFile; fileRef = 207860241AD84F11000DC57F /* NSURLSession+TKCategory.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		20CEA4461BA110E10009D60C /* NSURLSession+TKCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 207860251AD84F11000DC57F /* NSURLSession+TKCategory.m */; };
 		20CEA4471BA110E30009D60C /* NSTimer+Blocks.h in Headers */ = {isa = PBXBuildFile; fileRef = 2098BA221B0F6C4F000E0074 /* NSTimer+Blocks.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -496,6 +492,7 @@
 		2058B9FC1BA7487E002C2357 /* UITraitCollection+TKCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITraitCollection+TKCategory.m"; sourceTree = "<group>"; };
 		205B9A891BF1058D008EDFD8 /* NSUserDefaults+iCloud.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSUserDefaults+iCloud.h"; sourceTree = "<group>"; };
 		205B9A8A1BF1058D008EDFD8 /* NSUserDefaults+iCloud.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSUserDefaults+iCloud.m"; sourceTree = "<group>"; };
+		2069C12B1D8AFEB9000BD656 /* Bundle+TKCategory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Bundle+TKCategory.swift"; sourceTree = "<group>"; };
 		20785F6F1AD8388E000DC57F /* NSStringTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSStringTests.h; sourceTree = "<group>"; };
 		20785F701AD8388E000DC57F /* NSStringTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSStringTests.m; sourceTree = "<group>"; };
 		20785F711AD8388E000DC57F /* UIViewTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIViewTests.h; sourceTree = "<group>"; };
@@ -532,8 +529,6 @@
 		20A75C5E1AD82C8500E2106A /* Headers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Headers.h; sourceTree = "<group>"; };
 		20A75C661AD8332F00E2106A /* TKSectionedScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TKSectionedScrollView.h; sourceTree = "<group>"; };
 		20A75C671AD8332F00E2106A /* TKSectionedScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TKSectionedScrollView.m; sourceTree = "<group>"; };
-		20A75C831AD836DD00E2106A /* NSBundle+TKCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSBundle+TKCategory.h"; sourceTree = "<group>"; };
-		20A75C841AD836DD00E2106A /* NSBundle+TKCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSBundle+TKCategory.m"; sourceTree = "<group>"; };
 		20A877111BBF554100A403C2 /* UIAlertController+TKCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIAlertController+TKCategory.h"; sourceTree = "<group>"; };
 		20A877121BBF554100A403C2 /* UIAlertController+TKCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIAlertController+TKCategory.m"; sourceTree = "<group>"; };
 		20B5FE1F1BB3613F00C0F848 /* curryMac.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = curryMac.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -731,8 +726,7 @@
 				200B62811AD7FC5E0049E35C /* NSAttributedString+TKCategory.m */,
 				200B62821AD7FC5E0049E35C /* NSMutableAttributedString+TKCategory.h */,
 				200B62831AD7FC5E0049E35C /* NSMutableAttributedString+TKCategory.m */,
-				20A75C831AD836DD00E2106A /* NSBundle+TKCategory.h */,
-				20A75C841AD836DD00E2106A /* NSBundle+TKCategory.m */,
+				2069C12B1D8AFEB9000BD656 /* Bundle+TKCategory.swift */,
 				207860241AD84F11000DC57F /* NSURLSession+TKCategory.h */,
 				207860251AD84F11000DC57F /* NSURLSession+TKCategory.m */,
 				2098BA221B0F6C4F000E0074 /* NSTimer+Blocks.h */,
@@ -1017,7 +1011,6 @@
 				200B631A1AD804400049E35C /* TKExtendedScrollView.h in Headers */,
 				20CEA4D71BA1503D0009D60C /* UIView+Positioning.h in Headers */,
 				20A75C681AD8332F00E2106A /* TKSectionedScrollView.h in Headers */,
-				20A75C851AD836DD00E2106A /* NSBundle+TKCategory.h in Headers */,
 				20A75C5F1AD82C8500E2106A /* Headers.h in Headers */,
 				200B62E41AD7FEF80049E35C /* UIImagePickerController+TKCategory.h in Headers */,
 				200B62DC1AD7FEF80049E35C /* UIButton+TKCategory.h in Headers */,
@@ -1078,7 +1071,6 @@
 				2010DCB31BB0E40E00810A98 /* curryWatch.h in Headers */,
 				2010DCD01BB0EACD00810A98 /* NSMutableAttributedString+TKCategory.h in Headers */,
 				2069E8181C78EFCD003035FF /* Headers.h in Headers */,
-				2010DCD21BB0EAD300810A98 /* NSBundle+TKCategory.h in Headers */,
 				2010DCC51BB0EAA300810A98 /* NSString+TKCategory.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1088,7 +1080,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				20B5FE361BB363A200C0F848 /* TKFoundation.h in Headers */,
-				20B5FE471BB363DE00C0F848 /* NSBundle+TKCategory.h in Headers */,
 				20B5FE491BB363E400C0F848 /* NSURLSession+TKCategory.h in Headers */,
 				207C97B11BD7F1AC00342677 /* NSView+Positioning.h in Headers */,
 				20B5FE3E1BB363C000C0F848 /* NSDate+TKCategory.h in Headers */,
@@ -1168,7 +1159,6 @@
 				20CEA4591BA111200009D60C /* UIButton+TKCategory.h in Headers */,
 				20CEA46F1BA112450009D60C /* CAAnimation+TKAnimation.h in Headers */,
 				20CEA4821BA113000009D60C /* TKCreditCardCVVTextField.h in Headers */,
-				20CEA4431BA110D30009D60C /* NSBundle+TKCategory.h in Headers */,
 				20A85BE71CA352CF00632668 /* UIView+GestureRecognizerBlock.h in Headers */,
 				20173BD71BE62B8E00367A60 /* TKTableViewController.h in Headers */,
 				20CEA4361BA110A90009D60C /* NSObject+TKCategory.h in Headers */,
@@ -1430,12 +1420,12 @@
 				20A46DE01B61C097004A4153 /* TKPhoneNumberTextField.m in Sources */,
 				202DBEBC1AF4347A00B0CE67 /* TKInputKey.m in Sources */,
 				207E91AF1D87D17D00EECF1D /* UIDevice+TKCategory.swift in Sources */,
-				20A75C861AD836DD00E2106A /* NSBundle+TKCategory.m in Sources */,
 				20E131CF1AF4107F0011492F /* UIView+Initializers.m in Sources */,
 				200B62D71AD7FEF80049E35C /* UIImage+TKCategory.m in Sources */,
 				2078601B1AD84A87000DC57F /* TKCreditCardNumberTextField.m in Sources */,
 				200B62AE1AD7FE0D0049E35C /* CAAnimation+TKAnimation.m in Sources */,
 				200B62F71AD7FEF80049E35C /* UIApplication+TKCategory.m in Sources */,
+				2069C12C1D8AFEB9000BD656 /* Bundle+TKCategory.swift in Sources */,
 				20CB9CF41AF3E4B0002E9F1C /* UIActionSheet+Blocks.m in Sources */,
 				200B62931AD7FC5E0049E35C /* NSAttributedString+TKCategory.m in Sources */,
 				207860191AD84A87000DC57F /* TKCreditCardExpirationTextField.m in Sources */,
@@ -1493,7 +1483,7 @@
 				208CCE981C35855D009EE52E /* NSObject+DataHelper.m in Sources */,
 				2010DCD71BB0EAE600810A98 /* NSTimer+Blocks.m in Sources */,
 				2010DCCF1BB0EACB00810A98 /* NSAttributedString+TKCategory.m in Sources */,
-				2010DCD31BB0EAD800810A98 /* NSBundle+TKCategory.m in Sources */,
+				2069C12E1D8AFEB9000BD656 /* Bundle+TKCategory.swift in Sources */,
 				2010DCC61BB0EAA800810A98 /* NSString+TKCategory.m in Sources */,
 				2010DCCD1BB0EAC300810A98 /* NSMutableArray+TKCategory.m in Sources */,
 				2010DCC21BB0EA9900810A98 /* NSObject+JSON.m in Sources */,
@@ -1512,8 +1502,8 @@
 				208CCE991C35855D009EE52E /* NSObject+DataHelper.m in Sources */,
 				20B5FE4A1BB363E800C0F848 /* NSURLSession+TKCategory.m in Sources */,
 				20B5FE4C1BB363EE00C0F848 /* NSTimer+Blocks.m in Sources */,
+				2069C12F1D8AFEB9000BD656 /* Bundle+TKCategory.swift in Sources */,
 				205B9A901BF1058D008EDFD8 /* NSUserDefaults+iCloud.m in Sources */,
-				20B5FE481BB363E200C0F848 /* NSBundle+TKCategory.m in Sources */,
 				20B5FE3C1BB363BA00C0F848 /* NSString+TKCategory.m in Sources */,
 				20B5FE381BB363AE00C0F848 /* NSObject+JSON.m in Sources */,
 			);
@@ -1551,6 +1541,7 @@
 				20CEA48D1BA113C90009D60C /* UIImage+TKCategory.m in Sources */,
 				20816C4A1BF177070042D557 /* UIMotionEffectGroup+TKCategory.m in Sources */,
 				20CEA4421BA110D10009D60C /* NSMutableAttributedString+TKCategory.m in Sources */,
+				2069C12D1D8AFEB9000BD656 /* Bundle+TKCategory.swift in Sources */,
 				205B9A8F1BF1058D008EDFD8 /* NSUserDefaults+iCloud.m in Sources */,
 				20CEA4701BA112490009D60C /* CAAnimation+TKAnimation.m in Sources */,
 				20CEA4581BA1111D0009D60C /* UIImageView+TKCategory.m in Sources */,
@@ -1568,7 +1559,6 @@
 				20CEA44A1BA110F20009D60C /* UIApplication+TKCategory.m in Sources */,
 				20A85BEC1CA3544100632668 /* TKWindow.m in Sources */,
 				20CEA45C1BA1112C0009D60C /* UINavigationBar+TKCategory.m in Sources */,
-				20CEA4441BA110D70009D60C /* NSBundle+TKCategory.m in Sources */,
 				20CEA44E1BA110FF0009D60C /* UIScreen+TKCategory.m in Sources */,
 				208CCE971C35855D009EE52E /* NSObject+DataHelper.m in Sources */,
 				20CEA48F1BA113D10009D60C /* UIFont+TKCategory.m in Sources */,
