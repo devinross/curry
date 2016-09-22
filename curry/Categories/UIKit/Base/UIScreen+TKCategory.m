@@ -47,9 +47,8 @@
 		self.brightness = brightness;
 		return;
 	}
+	[NSObject cancelPreviousPerformRequestsWithTarget:self selector:@selector(adjustBrightness:) object:nil];
 	[self performSelector:@selector(adjustBrightness:) withObject:@(brightness) afterDelay:.01];
-	
-	
 }
 
 - (void) adjustBrightness:(NSNumber*)sender {
@@ -58,6 +57,7 @@
 	if(fabs(brightness-goalBrightness)<0.01) return;
 	BOOL goUp = goalBrightness > brightness;
 	self.brightness += goUp ? 0.01 : -0.01;
+	[NSObject cancelPreviousPerformRequestsWithTarget:self selector:@selector(adjustBrightness:) object:nil];
 	[self performSelector:@selector(adjustBrightness:) withObject:sender afterDelay:.01];
 }
 
