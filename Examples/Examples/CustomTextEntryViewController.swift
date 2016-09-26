@@ -39,7 +39,9 @@ class CustomTextEntryViewController: UIViewController {
 		super.loadView()
 		self.view.backgroundColor = UIColor.white
 		
-		let numberField = TKCreditCardNumberTextField(frame: CGRect(x: 20, y: 80, width: self.view.width - 40, height: 60))
+		self.edgesForExtendedLayout = .bottom
+		
+		let numberField = TKCreditCardNumberTextField(frame: CGRect(x: 20, y: 64 + 80, width: self.view.width - 40, height: 60))
 		numberField.backgroundColor = UIColor(white: 0.93, alpha: 1)
 		numberField.placeholder = "Credit Card Number"
 		self.view.addSubview(numberField)

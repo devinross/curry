@@ -39,7 +39,8 @@ class CustomKeyboardViewController: UIViewController {
 		super.loadView()
 		
 		self.view.backgroundColor = UIColor.white
-		
+		self.edgesForExtendedLayout = .bottom
+
 		let textField = UITextField(frame: CGRectMakeInset(0, 0, self.view.width, 100, 30, 20))
 		textField.autoresizingMask = [.flexibleWidth]
 		textField.backgroundColor = UIColor(white: 0.95, alpha: 1)
