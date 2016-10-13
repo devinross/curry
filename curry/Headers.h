@@ -53,6 +53,8 @@
 
 #import "TKUIKit.h"
 
+#import "NSString+TKUIKit.h"
+
 // Categories -> UIKit -> Base
 #import "UIApplication+TKCategory.h"
 #import "UIScreen+TKCategory.h"

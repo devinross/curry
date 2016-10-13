@@ -119,6 +119,5 @@
 
 - (NSString*) formattedPhoneNumberWithLastCharacterRemoved:(BOOL)deleteLastChar limit:(NSInteger)limit;
 
-- (CGFloat) heightForWidth:(CGFloat)width andFont:(UIFont *)font;
 
 @end
