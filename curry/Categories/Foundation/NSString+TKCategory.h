@@ -30,7 +30,6 @@
  */
 
 @import Foundation;
-@import UIKit;
 
 /** Additional functionality for `NSString`.  */
 @interface NSString (TKCategory)

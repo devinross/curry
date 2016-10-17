@@ -43,8 +43,7 @@
 #import "NSDate+TKCategory.h"
 #import "NSObject+DataHelper.h"
 #import "NSMutableArray+TKCategory.h"
-#import "NSAttributedString+TKCategory.h"
-#import "NSMutableAttributedString+TKCategory.h"
+
 #import "NSURLSession+TKCategory.h"
 #import "NSTimer+Blocks.h"
 #import "NSUserDefaults+iCloud.h"
@@ -54,6 +53,8 @@
 #import "TKUIKit.h"
 
 #import "NSString+TKUIKit.h"
+#import "NSAttributedString+TKCategory.h"
+#import "NSMutableAttributedString+TKCategory.h"
 
 // Categories -> UIKit -> Base
 #import "UIApplication+TKCategory.h"
