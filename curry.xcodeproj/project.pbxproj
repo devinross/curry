@@ -151,6 +151,10 @@
 		202DBEF51AF6727A00B0CE67 /* TKCurrentTimeLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 202DBEF31AF6727A00B0CE67 /* TKCurrentTimeLabel.m */; };
 		203BDD3C1BE17CFC00572452 /* TKSoundAlertController.m in Sources */ = {isa = PBXBuildFile; fileRef = 200B63191AD804400049E35C /* TKSoundAlertController.m */; };
 		203BDD3D1BE17CFE00572452 /* TKSoundAlertController.h in Headers */ = {isa = PBXBuildFile; fileRef = 200B63181AD804400049E35C /* TKSoundAlertController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2040D5931DBF11A900430963 /* NSBundle+Receipts.h in Headers */ = {isa = PBXBuildFile; fileRef = 2040D5911DBF11A900430963 /* NSBundle+Receipts.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2040D5941DBF11A900430963 /* NSBundle+Receipts.h in Headers */ = {isa = PBXBuildFile; fileRef = 2040D5911DBF11A900430963 /* NSBundle+Receipts.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2040D5951DBF11A900430963 /* NSBundle+Receipts.m in Sources */ = {isa = PBXBuildFile; fileRef = 2040D5921DBF11A900430963 /* NSBundle+Receipts.m */; };
+		2040D5961DBF11A900430963 /* NSBundle+Receipts.m in Sources */ = {isa = PBXBuildFile; fileRef = 2040D5921DBF11A900430963 /* NSBundle+Receipts.m */; };
 		204922B41B45D8DB00C22245 /* TKTextFieldCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 204922B21B45D8DB00C22245 /* TKTextFieldCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		204922B51B45D8DB00C22245 /* TKTextFieldCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 204922B31B45D8DB00C22245 /* TKTextFieldCell.m */; };
 		204922B81B46EF9200C22245 /* TKTextView.h in Headers */ = {isa = PBXBuildFile; fileRef = 204922B61B46EF9200C22245 /* TKTextView.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -486,6 +490,8 @@
 		202DBEEA1AF6717A00B0CE67 /* CurryImages.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = CurryImages.xcassets; sourceTree = "<group>"; };
 		202DBEF21AF6727A00B0CE67 /* TKCurrentTimeLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TKCurrentTimeLabel.h; sourceTree = "<group>"; };
 		202DBEF31AF6727A00B0CE67 /* TKCurrentTimeLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TKCurrentTimeLabel.m; sourceTree = "<group>"; };
+		2040D5911DBF11A900430963 /* NSBundle+Receipts.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSBundle+Receipts.h"; sourceTree = "<group>"; };
+		2040D5921DBF11A900430963 /* NSBundle+Receipts.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSBundle+Receipts.m"; sourceTree = "<group>"; };
 		204922B21B45D8DB00C22245 /* TKTextFieldCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TKTextFieldCell.h; sourceTree = "<group>"; };
 		204922B31B45D8DB00C22245 /* TKTextFieldCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TKTextFieldCell.m; sourceTree = "<group>"; };
 		204922B61B46EF9200C22245 /* TKTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TKTextView.h; sourceTree = "<group>"; };
@@ -741,6 +747,8 @@
 				2098BA231B0F6C4F000E0074 /* NSTimer+Blocks.m */,
 				205B9A891BF1058D008EDFD8 /* NSUserDefaults+iCloud.h */,
 				205B9A8A1BF1058D008EDFD8 /* NSUserDefaults+iCloud.m */,
+				2040D5911DBF11A900430963 /* NSBundle+Receipts.h */,
+				2040D5921DBF11A900430963 /* NSBundle+Receipts.m */,
 			);
 			path = Foundation;
 			sourceTree = "<group>";
@@ -1013,6 +1021,7 @@
 				202D35D51BDB252600886913 /* TKCollectionViewController.h in Headers */,
 				200B62AD1AD7FE0D0049E35C /* CAAnimation+TKAnimation.h in Headers */,
 				2010DCC01BB0EA7800810A98 /* TKUIKit.h in Headers */,
+				2040D5931DBF11A900430963 /* NSBundle+Receipts.h in Headers */,
 				200B62EA1AD7FEF80049E35C /* UIScreen+TKCategory.h in Headers */,
 				200B63201AD804E30049E35C /* TKCardModalViewController.h in Headers */,
 				200B63101AD804350049E35C /* TKWebViewController.h in Headers */,
@@ -1150,6 +1159,7 @@
 				20CEA46B1BA112390009D60C /* CALayer+TKAnimation.h in Headers */,
 				20CEA4691BA112330009D60C /* UIView+TKAnimation.h in Headers */,
 				20CEA45B1BA111270009D60C /* UINavigationBar+TKCategory.h in Headers */,
+				2040D5941DBF11A900430963 /* NSBundle+Receipts.h in Headers */,
 				20CEA4781BA112B70009D60C /* TKShapeView.h in Headers */,
 				20A85BE31CA3529D00632668 /* UITraitCollection+TKCategory.h in Headers */,
 				20CEA4881BA113140009D60C /* TKPhoneNumberTextField.h in Headers */,
@@ -1420,6 +1430,7 @@
 				2058B9FE1BA7487E002C2357 /* UITraitCollection+TKCategory.m in Sources */,
 				200B62AC1AD7FE0D0049E35C /* CAKeyframeAnimation+TKAnimation.m in Sources */,
 				2078601D1AD84A87000DC57F /* TKCreditCardZipTextField.m in Sources */,
+				2040D5951DBF11A900430963 /* NSBundle+Receipts.m in Sources */,
 				200B629E1AD7FD660049E35C /* NSObject+JSON.m in Sources */,
 				200B628B1AD7FC5E0049E35C /* NSString+TKCategory.m in Sources */,
 				207860271AD84F11000DC57F /* NSURLSession+TKCategory.m in Sources */,
@@ -1531,6 +1542,7 @@
 				20CEA45E1BA111320009D60C /* UIBarButtonItem+TKCategory.m in Sources */,
 				20A85BE81CA352D300632668 /* UIView+GestureRecognizerBlock.m in Sources */,
 				20CEA4DA1BA1503D0009D60C /* UIView+Positioning.m in Sources */,
+				2040D5961DBF11A900430963 /* NSBundle+Receipts.m in Sources */,
 				20CEA4371BA110AC0009D60C /* NSObject+TKCategory.m in Sources */,
 				20CEA4561BA111180009D60C /* UITextField+TKCategory.m in Sources */,
 				20CEA4891BA113170009D60C /* TKPhoneNumberTextField.m in Sources */,

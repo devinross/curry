@@ -55,6 +55,7 @@
 #import "NSString+TKUIKit.h"
 #import "NSAttributedString+TKCategory.h"
 #import "NSMutableAttributedString+TKCategory.h"
+#import "NSBundle+Receipts.h"
 
 // Categories -> UIKit -> Base
 #import "UIApplication+TKCategory.h"
