@@ -159,14 +159,14 @@
 - (NSInteger) daysBetweenDate:(NSDate*)date;
 
 /** Returns number of days between two dates.
- @param fromDateTime The date to compare.
+ @param fromDate The date to compare.
  @param toDate The other date to compare.
  @return Returns number of days between two dates.
  */
 + (NSInteger) daysBetweenDate:(NSDate*)fromDate andDate:(NSDate*)toDate;
 
 /** Returns number of days between two dates.
- @param fromDateTime The date to compare.
+ @param fromDate The date to compare.
  @param toDate The other date to compare.
  @param timeZone The time zone to respect.
  @return Returns number of days between two dates.

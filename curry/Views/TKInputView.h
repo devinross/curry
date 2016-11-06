@@ -40,7 +40,6 @@
 /** When a key is tapped, this delegate method is invoked.
  @param inputView The input view.
  @param key The input key tapped.
- @return
  */
 - (void) inputView:(TKInputView*)inputView didSelectKey:(TKInputKey*)key;
 
