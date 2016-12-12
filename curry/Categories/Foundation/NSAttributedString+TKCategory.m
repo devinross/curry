@@ -33,6 +33,17 @@
 
 @implementation NSAttributedString (TKCategory)
 
+
++ (instancetype) attributedStringWithFormat:(NSString*)format, ...{
+	va_list args;
+	va_start(args, format);
+	NSString *str = [[NSString alloc] initWithFormat:format arguments:args];
+	
+	NSAttributedString *atr = [[[self class] alloc] initWithString:str];
+	va_end(args);
+	return atr;
+}
+
 + (NSAttributedString*) attributedStringWithText:(NSString*)text lineHeight:(CGFloat)space{
 	if(text.length < 1) return nil;
 	NSMutableParagraphStyle *paragrahStyle = [[NSMutableParagraphStyle alloc] init];

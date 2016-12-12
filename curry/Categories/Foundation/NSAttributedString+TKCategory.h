@@ -35,6 +35,9 @@
 /** Additional functionality for `NSAttributedString`.  */
 @interface NSAttributedString (TKCategory)
 
+
++ (instancetype) attributedStringWithFormat:(NSString *)format, ...;
+
 /** Creates an attributed string with a line height.
  @param text The text of the string.
  @param lineHeight The line height of the attributed string.
