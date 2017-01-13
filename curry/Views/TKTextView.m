@@ -59,7 +59,6 @@
 - (void) drawRect:(CGRect)rect{
 	[super drawRect:rect];
 	
-	
 	if(_placeHolderLabel){
 		if(self.placeHolderLabel.superview==nil){
 			[self addSubview:self.placeHolderLabel];
@@ -70,9 +69,6 @@
 			self.placeHolderLabel.frame = CGRectMake(self.textContainerInset.left + 4, self.textContainerInset.top, CGRectGetWidth(self.bounds) - 8, 0);
 		else
 			self.placeHolderLabel.frame = CGRectMake(8,8,CGRectGetWidth(self.bounds) - 16,0);
-		
-		
-		
 		
 		[self.placeHolderLabel sizeToFit];
 		
@@ -85,7 +81,16 @@
 
 - (void) _textChanged:(NSNotification *)notification{
     if(self.placeholder.length == 0) return;
-	_placeHolderLabel.alpha = self.text.length < 1 ? 1 : 0;
+	BOOL showPlaceholder = self.text.length < 1;
+	_placeHolderLabel.alpha = showPlaceholder ? 1 : 0;
+	
+	if(showPlaceholder) {
+		self.accessibilityLabel = _placeHolderLabel.text;
+	}else{
+		self.accessibilityLabel = self.text;
+	}
+	
+	
 }
 
 
@@ -108,6 +113,7 @@
 	}
 	
 	self.placeHolderLabel.text = placeholder;
+	
 	[self setNeedsDisplay];
 }
 - (NSString*) placeholder{
@@ -129,6 +135,7 @@
 	_placeHolderLabel.font = self.font;
 	_placeHolderLabel.backgroundColor = [UIColor clearColor];
 	_placeHolderLabel.textColor = [UIColor lightGrayColor];
+	_placeHolderLabel.isAccessibilityElement = NO;
 	
 	
 	if([self respondsToSelector:@selector(textContainer)]){
