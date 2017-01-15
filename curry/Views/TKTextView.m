@@ -38,27 +38,26 @@
 - (instancetype) initWithFrame:(CGRect)frame{
 	if(!(self=[super initWithFrame:frame])) return nil;
 	[self _setupView];
-    return self;
+	return self;
 }
 - (instancetype) initWithCoder:(NSCoder *)aDecoder{
 	if(!(self=[super initWithCoder:aDecoder])) return nil;
 	[self _setupView];
-    return self;
+	return self;
 }
 - (void) awakeFromNib{
-    [super awakeFromNib];
+	[super awakeFromNib];
 	[self _setupView];
 }
 - (void) _setupView{
-    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(_textChanged:) name:UITextViewTextDidChangeNotification object:nil];
+	[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(_textChanged:) name:UITextViewTextDidChangeNotification object:nil];
 }
 - (void) dealloc{
-    [[NSNotificationCenter defaultCenter] removeObserver:self];
+	[[NSNotificationCenter defaultCenter] removeObserver:self];
 }
 
 - (void) drawRect:(CGRect)rect{
 	[super drawRect:rect];
-	
 	
 	if(_placeHolderLabel){
 		if(self.placeHolderLabel.superview==nil){
@@ -71,21 +70,26 @@
 		else
 			self.placeHolderLabel.frame = CGRectMake(8,8,CGRectGetWidth(self.bounds) - 16,0);
 		
-		
-		
-		
 		[self.placeHolderLabel sizeToFit];
 		
 	}
-    
+	
 	_placeHolderLabel.alpha = self.text.length < 1 ? 1 : 0;
 	
 }
 
 
 - (void) _textChanged:(NSNotification *)notification{
-    if(self.placeholder.length == 0) return;
-	_placeHolderLabel.alpha = self.text.length < 1 ? 1 : 0;
+	if(self.placeholder.length == 0) return;
+	BOOL showPlaceholder = self.text.length < 1;
+	_placeHolderLabel.alpha = showPlaceholder ? 1 : 0;
+	
+	if(showPlaceholder) {
+		self.accessibilityLabel = _placeHolderLabel.text;
+	}else{
+		self.accessibilityLabel = self.text;
+	}
+	
 }
 
 
@@ -96,8 +100,8 @@
 	[self setNeedsDisplay];
 }
 - (void) setText:(NSString *)text{
-    [super setText:text];
-    [self _textChanged:nil];
+	[super setText:text];
+	[self _textChanged:nil];
 }
 - (void) setPlaceholder:(NSString *)placeholder{
 	
@@ -108,6 +112,7 @@
 	}
 	
 	self.placeHolderLabel.text = placeholder;
+	
 	[self setNeedsDisplay];
 }
 - (NSString*) placeholder{
@@ -129,17 +134,12 @@
 	_placeHolderLabel.font = self.font;
 	_placeHolderLabel.backgroundColor = [UIColor clearColor];
 	_placeHolderLabel.textColor = [UIColor lightGrayColor];
-	
+	_placeHolderLabel.isAccessibilityElement = NO;
 	
 	if([self respondsToSelector:@selector(textContainer)]){
-		
 		_placeHolderLabel.textColor = [UIColor colorWithWhite:0.80 alpha:1];
 		_placeHolderLabel.frame = CGRectMake(2, 8, CGRectGetWidth(self.bounds) - 8, 0);
-		
 	}
-	
-	
-	
 	
 	_placeHolderLabel.alpha = 0;
 	return _placeHolderLabel;

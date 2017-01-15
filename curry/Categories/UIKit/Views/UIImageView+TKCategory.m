@@ -38,6 +38,11 @@
 	return [[[self class] alloc] initWithImage:[UIImage imageNamed:imageName]];
 }
 
++ (instancetype) imageViewWithImageNamed:(NSString*)imageName renderMode:(UIImageRenderingMode)mode{
+	UIImage *img = [[UIImage imageNamed:imageName] imageWithRenderingMode:mode];
+	return [[[self class] alloc] initWithImage:img];
+}
+
 + (instancetype) imageViewWithFrame:(CGRect)frame{
 	return [[[self class] alloc] initWithFrame:frame];
 }
