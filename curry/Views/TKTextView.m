@@ -89,7 +89,6 @@
 	}else{
 		self.accessibilityLabel = self.text;
 	}
-	
 }
 
 
