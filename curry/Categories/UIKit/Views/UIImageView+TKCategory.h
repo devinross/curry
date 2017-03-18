@@ -40,6 +40,13 @@
  */
 + (instancetype) imageViewWithImageNamed:(NSString*)imageName;
 
+/** Returns a image view with an image of the given image name.
+ @param imageName The name of the image to create the imagename with.
+ @param mode The image render mode.
+ @return Returns `UIImageView` object.
+ */
++ (instancetype) imageViewWithImageNamed:(NSString*)imageName renderMode:(UIImageRenderingMode)mode;
+
 /** Returns a image view with the given frame.
  @param frame The frame of the view.
  @return Returns `UIImageView` object.

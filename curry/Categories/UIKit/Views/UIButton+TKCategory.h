@@ -39,14 +39,14 @@
  @param frame The frame for the button view.
  @return A newly create button.
  */
-+ (instancetype) buttonWithFrame:(CGRect)frame;
++ (nonnull instancetype) buttonWithFrame:(CGRect)frame;
 
 /** Creates and returns a new button of type `UIButtonCustom` with the specified frame and title.
 @param frame The frame for the button view.
 @param title The title for `UIControlStateNormal`.
 @return A newly create button.
  */
-+ (instancetype) buttonWithFrame:(CGRect)frame title:(NSString*)title;
++ (nonnull instancetype) buttonWithFrame:(CGRect)frame title:(nonnull NSString*)title;
 
 /** Creates and returns a new button of type `UIButtonCustom` with the specified frame, title and background image.
  @param frame The frame for the button view.
@@ -54,7 +54,7 @@
  @param backgroundImage The background image for `UIControlStateNormal`.
  @return A newly create button.
  */
-+ (instancetype) buttonWithFrame:(CGRect)frame title:(NSString*)title backgroundImage:(UIImage*)backgroundImage;
++ (nonnull instancetype) buttonWithFrame:(CGRect)frame title:(nonnull NSString*)title backgroundImage:(nonnull UIImage*)backgroundImage;
 
 /** Creates and returns a new button of type `UIButtonCustom` with the specified frame, title and background image.
  @param frame The frame for the button view.
@@ -63,7 +63,7 @@
  @param highlightedBackgroundImage The background image for `UIControlStateHighlighted`
  @return A newly create button.
  */
-+ (instancetype) buttonWithFrame:(CGRect)frame title:(NSString*)title backgroundImage:(UIImage*)backgroundImage highlightedBackgroundImage:(UIImage*)highlightedBackgroundImage;
++ (nonnull instancetype) buttonWithFrame:(CGRect)frame title:(nonnull NSString*)title backgroundImage:(nonnull UIImage*)backgroundImage highlightedBackgroundImage:(nonnull UIImage*)highlightedBackgroundImage;
 
 
 /** Creates and returns a new button of type `UIButtonCustom` with the specified frame and image.
@@ -71,7 +71,7 @@
  @param image The image for `UIControlStateNormal`.
  @return A newly create button.
  */
-+ (instancetype) buttonWithFrame:(CGRect)frame image:(UIImage*)image;
++ (nonnull instancetype) buttonWithFrame:(CGRect)frame image:(nonnull UIImage*)image;
 
 /** Creates and returns a new button of type `UIButtonCustom` with the specified frame, title and background image.
  @param frame The frame for the button view.
@@ -79,6 +79,6 @@
  @param highlightedImage The image for `UIControlStateHighlighted`.
  @return A newly create button.
  */
-+ (instancetype) buttonWithFrame:(CGRect)frame image:(UIImage*)image highlightedImage:(UIImage*)highlightedImage;
++ (nonnull instancetype) buttonWithFrame:(CGRect)frame image:(nonnull UIImage*)image highlightedImage:(nonnull UIImage*)highlightedImage;
 
 @end
