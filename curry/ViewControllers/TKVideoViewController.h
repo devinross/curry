@@ -42,6 +42,8 @@
  */
 - (instancetype) initWithVideoTitle:(NSString*)title ofType:(NSString*)type;
 
+- (instancetype) initWithURL:(NSURL*)url;
+
 ///----------------------------
 /// @name Properties
 ///----------------------------
