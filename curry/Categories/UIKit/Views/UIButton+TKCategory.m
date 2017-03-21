@@ -38,13 +38,20 @@
 
 
 + (instancetype) buttonWithFrame:(CGRect)frame{
-	return [[self class] buttonWithFrame:frame title:nil];
+	return [[[self class] alloc] initWithFrame:frame];
 }
 + (instancetype) buttonWithFrame:(CGRect)frame title:(NSString*)title{
-	return [[self class] buttonWithFrame:frame title:title backgroundImage:nil];
+	UIButton *btn = [[self class] buttonWithType:UIButtonTypeCustom];
+	btn.frame = frame;
+	[btn setTitle:title forState:UIControlStateNormal];
+	return btn;
 }
 + (instancetype) buttonWithFrame:(CGRect)frame title:(NSString*)title backgroundImage:(UIImage*)backgroundImage{
-	return [[self class] buttonWithFrame:frame title:title backgroundImage:backgroundImage highlightedBackgroundImage:nil];
+	UIButton *btn = [[self class] buttonWithType:UIButtonTypeCustom];
+	btn.frame = frame;
+	[btn setTitle:title forState:UIControlStateNormal];
+	[btn setBackgroundImage:backgroundImage forState:UIControlStateNormal];
+	return btn;
 }
 + (instancetype) buttonWithFrame:(CGRect)frame title:(NSString*)title backgroundImage:(UIImage*)backgroundImage highlightedBackgroundImage:(UIImage*)highlightedBackgroundImage{
 	UIButton *btn = [[self class] buttonWithType:UIButtonTypeCustom];
@@ -56,7 +63,10 @@
 }
 
 + (instancetype) buttonWithFrame:(CGRect)frame image:(UIImage*)image{
-	return [[self class] buttonWithFrame:frame image:image highlightedImage:nil];
+	UIButton *btn = [[self class] buttonWithType:UIButtonTypeCustom];
+	btn.frame = frame;
+	[btn setImage:image forState:UIControlStateNormal];
+	return btn;
 }
 + (instancetype) buttonWithFrame:(CGRect)frame image:(UIImage*)image highlightedImage:(UIImage*)highlightedImage{
 	UIButton *btn = [[self class] buttonWithType:UIButtonTypeCustom];

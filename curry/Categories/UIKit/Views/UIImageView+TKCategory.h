@@ -53,4 +53,9 @@
  */
 + (instancetype) imageViewWithFrame:(CGRect)frame;
 
+/** Set animation names.
+ @param names The image names that will be used with [UIImage imageNamed:]
+ */
+- (void) setAnimationImageNames:(NSArray<NSString*>*)names;
+
 @end

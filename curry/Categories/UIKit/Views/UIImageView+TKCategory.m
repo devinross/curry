@@ -47,4 +47,14 @@
 	return [[[self class] alloc] initWithFrame:frame];
 }
 
+
+
+- (void) setAnimationImageNames:(NSArray <NSString*>*)names{
+	NSMutableArray *images = [NSMutableArray arrayWithCapacity:names.count];
+	for(NSString *name in names){
+		[images addObject:[UIImage imageNamed:name]];
+	}
+	self.animationImages = images;
+}
+
 @end
