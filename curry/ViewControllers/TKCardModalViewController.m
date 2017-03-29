@@ -151,7 +151,7 @@ static const CGFloat _minimumVelocityRequiredForPush = 50.0f;	// defines how muc
 	self.visibleFrame = bounds;
 	
 	[UIView animateWithDuration:0.6 delay:0 usingSpringWithDamping:0.6 initialSpringVelocity:0.4 options:0 animations:^{
-		NSInteger y = (CGRectGetHeight(bounds)-CGFrameGetHeight(self.contentView))/2;
+		NSInteger y = (CGRectGetHeight(bounds)-CGFrameGetHeight(self.contentView))/2 + 20;
 		CGRect rr = self.contentView.frame;
 		rr.origin.y = y;
 		self.contentView.frame = rr;
