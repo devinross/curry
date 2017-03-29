@@ -53,6 +53,7 @@
 @property (nonatomic,strong) TKPlayerView *videoView;
 @property (nonatomic,copy) NSString *videoTitle;
 @property (nonatomic,copy) NSString *videoType;
+@property (nonatomic,strong) NSURL *url;
 @property (nonatomic,assign) NSInteger currentLoop;
 @end
 
@@ -62,6 +63,11 @@
 	if(!(self=[super init])) return nil;
 	self.videoTitle = title;
 	self.videoType = type;
+	return self;
+}
+- (instancetype) initWithURL:(NSURL*)url{
+	if(!(self=[super init])) return nil;
+	self.url = url;
 	return self;
 }
 - (void) dealloc{
@@ -82,8 +88,14 @@
 }
 - (void) _setupPlayer{
 	[[NSNotificationCenter defaultCenter] removeObserver:self name:AVPlayerItemDidPlayToEndTimeNotification object:[self.player currentItem]];
-	NSString *videoFile = [[NSBundle mainBundle] pathForResource:self.videoTitle ofType:self.videoType];
-	self.player = [[AVPlayer alloc] initWithURL:[NSURL fileURLWithPath:videoFile]];
+	NSURL *url;
+	if(self.url){
+		url = self.url;
+	}else{
+		NSString *videoFile = [[NSBundle mainBundle] pathForResource:self.videoTitle ofType:self.videoType];
+		url = [NSURL fileURLWithPath:videoFile];
+	}
+	self.player = [[AVPlayer alloc] initWithURL:url];
 	self.player.actionAtItemEnd =  AVPlayerActionAtItemEndNone;
 	self.videoView.player = self.player;
 	[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(playerItemDidReachEnd:) name:AVPlayerItemDidPlayToEndTimeNotification object:[self.player currentItem]];
