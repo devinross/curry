@@ -197,5 +197,6 @@
 + (CGFloat) pointSizeWithXS:(CGFloat)xs s:(CGFloat)s m:(CGFloat)m l:(CGFloat)l xl:(CGFloat)xl xxl:(CGFloat)xxl xxxl:(CGFloat)xxxl;
 + (CGFloat) pointSizeWithMedium:(CGFloat)m scaleFactor:(CGFloat)scale;
 + (CGFloat) pointSizeWithLarge:(CGFloat)l scaleFactor:(CGFloat)scale;
++ (CGFloat) pointSizeWithLarge:(CGFloat)l upScaleFactor:(CGFloat)upScale downScaleFactor:(CGFloat)downScale;
 
 @end

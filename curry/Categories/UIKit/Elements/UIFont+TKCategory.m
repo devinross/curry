@@ -196,5 +196,32 @@
 	return fontSize;
 }
 
++ (CGFloat) pointSizeWithLarge:(CGFloat)l upScaleFactor:(CGFloat)upScale downScaleFactor:(CGFloat)downScale{
+	
+	UIContentSizeCategory cat = [UIApplication sharedApplication].preferredContentSizeCategory;
+	CGFloat fontSize = l;
+	
+	CGFloat delta = l * upScale - l;
+	CGFloat downDelta = l * downScale - l;
+	
+	if([cat isEqualToString:UIContentSizeCategoryAccessibilityMedium] || [cat isEqualToString:UIContentSizeCategoryMedium]){
+		fontSize = l - downDelta;
+	}else if([cat isEqualToString:UIContentSizeCategoryAccessibilityLarge] || [cat isEqualToString:UIContentSizeCategoryLarge]){
+		fontSize = l;
+	}else if([cat isEqualToString:UIContentSizeCategoryAccessibilityExtraLarge] || [cat isEqualToString:UIContentSizeCategoryExtraLarge]){
+		fontSize = l+ delta;
+	}else if([cat isEqualToString:UIContentSizeCategoryExtraExtraLarge]){
+		fontSize = l + delta * 2;
+	}else if([cat isEqualToString:UIContentSizeCategoryExtraExtraExtraLarge]){
+		fontSize = l + delta * 3;
+	}else if([cat isEqualToString:UIContentSizeCategorySmall]){
+		fontSize = l - downDelta * 2;
+	}else if([cat isEqualToString:UIContentSizeCategoryExtraSmall]){
+		fontSize = l - downDelta * 3;
+	}
+	
+	return fontSize;
+}
+
 
 @end
