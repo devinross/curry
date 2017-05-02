@@ -45,6 +45,7 @@
 #import "NSMutableArray+TKCategory.h"
 
 #import "NSURLSession+TKCategory.h"
+#import "NSURLSession+TKProgressDataTask.h"
 #import "NSTimer+Blocks.h"
 #import "NSUserDefaults+iCloud.h"
 

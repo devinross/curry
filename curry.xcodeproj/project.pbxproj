@@ -169,6 +169,10 @@
 		205B9A8E1BF1058D008EDFD8 /* NSUserDefaults+iCloud.m in Sources */ = {isa = PBXBuildFile; fileRef = 205B9A8A1BF1058D008EDFD8 /* NSUserDefaults+iCloud.m */; };
 		205B9A8F1BF1058D008EDFD8 /* NSUserDefaults+iCloud.m in Sources */ = {isa = PBXBuildFile; fileRef = 205B9A8A1BF1058D008EDFD8 /* NSUserDefaults+iCloud.m */; };
 		205B9A901BF1058D008EDFD8 /* NSUserDefaults+iCloud.m in Sources */ = {isa = PBXBuildFile; fileRef = 205B9A8A1BF1058D008EDFD8 /* NSUserDefaults+iCloud.m */; };
+		2068B5A51EB91F77007FB656 /* NSURLSession+TKProgressDataTask.h in Headers */ = {isa = PBXBuildFile; fileRef = 2068B5A31EB91F77007FB656 /* NSURLSession+TKProgressDataTask.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2068B5A61EB91F77007FB656 /* NSURLSession+TKProgressDataTask.m in Sources */ = {isa = PBXBuildFile; fileRef = 2068B5A41EB91F77007FB656 /* NSURLSession+TKProgressDataTask.m */; };
+		2068B5A71EB9268A007FB656 /* NSURLSession+TKProgressDataTask.h in Headers */ = {isa = PBXBuildFile; fileRef = 2068B5A31EB91F77007FB656 /* NSURLSession+TKProgressDataTask.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2068B5A81EB9268B007FB656 /* NSURLSession+TKProgressDataTask.h in Headers */ = {isa = PBXBuildFile; fileRef = 2068B5A31EB91F77007FB656 /* NSURLSession+TKProgressDataTask.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2069C12C1D8AFEB9000BD656 /* Bundle+TKCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2069C12B1D8AFEB9000BD656 /* Bundle+TKCategory.swift */; };
 		2069C12D1D8AFEB9000BD656 /* Bundle+TKCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2069C12B1D8AFEB9000BD656 /* Bundle+TKCategory.swift */; };
 		2069C12E1D8AFEB9000BD656 /* Bundle+TKCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2069C12B1D8AFEB9000BD656 /* Bundle+TKCategory.swift */; };
@@ -502,6 +506,8 @@
 		2058B9FC1BA7487E002C2357 /* UITraitCollection+TKCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITraitCollection+TKCategory.m"; sourceTree = "<group>"; };
 		205B9A891BF1058D008EDFD8 /* NSUserDefaults+iCloud.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSUserDefaults+iCloud.h"; sourceTree = "<group>"; };
 		205B9A8A1BF1058D008EDFD8 /* NSUserDefaults+iCloud.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSUserDefaults+iCloud.m"; sourceTree = "<group>"; };
+		2068B5A31EB91F77007FB656 /* NSURLSession+TKProgressDataTask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSURLSession+TKProgressDataTask.h"; sourceTree = "<group>"; };
+		2068B5A41EB91F77007FB656 /* NSURLSession+TKProgressDataTask.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSURLSession+TKProgressDataTask.m"; sourceTree = "<group>"; };
 		2069C12B1D8AFEB9000BD656 /* Bundle+TKCategory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Bundle+TKCategory.swift"; sourceTree = "<group>"; };
 		20785F6F1AD8388E000DC57F /* NSStringTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSStringTests.h; sourceTree = "<group>"; };
 		20785F701AD8388E000DC57F /* NSStringTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSStringTests.m; sourceTree = "<group>"; };
@@ -749,6 +755,8 @@
 				205B9A8A1BF1058D008EDFD8 /* NSUserDefaults+iCloud.m */,
 				2040D5911DBF11A900430963 /* NSBundle+Receipts.h */,
 				2040D5921DBF11A900430963 /* NSBundle+Receipts.m */,
+				2068B5A31EB91F77007FB656 /* NSURLSession+TKProgressDataTask.h */,
+				2068B5A41EB91F77007FB656 /* NSURLSession+TKProgressDataTask.m */,
 			);
 			path = Foundation;
 			sourceTree = "<group>";
@@ -1013,6 +1021,7 @@
 				200B62E61AD7FEF80049E35C /* UIGestureRecognizer+TKCategory.h in Headers */,
 				200B625B1AD7FB460049E35C /* curry.h in Headers */,
 				200B62EC1AD7FEF80049E35C /* UILabel+TKCategory.h in Headers */,
+				2068B5A51EB91F77007FB656 /* NSURLSession+TKProgressDataTask.h in Headers */,
 				200B631C1AD804400049E35C /* TKSoundAlertController.h in Headers */,
 				200B62EE1AD7FEF80049E35C /* UIAlertView+TKCategory.h in Headers */,
 				200B62941AD7FC5E0049E35C /* NSMutableAttributedString+TKCategory.h in Headers */,
@@ -1109,6 +1118,7 @@
 				20B5FE411BB363CB00C0F848 /* NSMutableArray+TKCategory.h in Headers */,
 				2069E8191C78EFCD003035FF /* Headers.h in Headers */,
 				207C97B51BD7F3F200342677 /* NSView+TKCategory.h in Headers */,
+				2068B5A81EB9268B007FB656 /* NSURLSession+TKProgressDataTask.h in Headers */,
 				20B5FE221BB3613F00C0F848 /* curryMac.h in Headers */,
 				20B5FE371BB363A900C0F848 /* NSObject+JSON.h in Headers */,
 				20B5FE391BB363B000C0F848 /* NSObject+TKCategory.h in Headers */,
@@ -1129,6 +1139,7 @@
 				20173BFB1BE87B0900367A60 /* UIAlertController+TKCategory.h in Headers */,
 				20CEA4491BA110EB0009D60C /* UIApplication+TKCategory.h in Headers */,
 				209761F51BD9F27300EE6F81 /* UIGestureRecognizer+TKCategory.h in Headers */,
+				2068B5A71EB9268A007FB656 /* NSURLSession+TKProgressDataTask.h in Headers */,
 				20CEA4711BA1124F0009D60C /* TKCustomPresentationViewController.h in Headers */,
 				20CEA4941BA113EE0009D60C /* TKTextFieldCell.h in Headers */,
 				203BDD3D1BE17CFE00572452 /* TKSoundAlertController.h in Headers */,
@@ -1474,6 +1485,7 @@
 				200B62F11AD7FEF80049E35C /* UIActionSheet+TKCategory.m in Sources */,
 				200B62ED1AD7FEF80049E35C /* UILabel+TKCategory.m in Sources */,
 				204922B91B46EF9200C22245 /* TKTextView.m in Sources */,
+				2068B5A61EB91F77007FB656 /* NSURLSession+TKProgressDataTask.m in Sources */,
 				200B62E91AD7FEF80049E35C /* UIViewController+TKCategory.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

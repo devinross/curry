@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2068B5B21EB927E4007FB656 /* ProgressTaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2068B5B11EB927E4007FB656 /* ProgressTaskViewController.swift */; };
 		20785FC51AD83BBE000DC57F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20785FC41AD83BBE000DC57F /* AppDelegate.swift */; };
 		20785FCC1AD83BBE000DC57F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 20785FCB1AD83BBE000DC57F /* Images.xcassets */; };
 		20785FEC1AD83C63000DC57F /* RootTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 20785FEB1AD83C63000DC57F /* RootTableViewController.m */; };
@@ -108,6 +109,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		2068B5B11EB927E4007FB656 /* ProgressTaskViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProgressTaskViewController.swift; sourceTree = "<group>"; };
 		20785FBF1AD83BBE000DC57F /* Examples.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Examples.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		20785FC31AD83BBE000DC57F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		20785FC41AD83BBE000DC57F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -193,6 +195,7 @@
 				20D4C89B1BB52A0000C75EEC /* PDFGeneratorViewController.m */,
 				207E91561D87A67000EECF1D /* VideoViewController.swift */,
 				207E91521D87A1C800EECF1D /* ColorsViewController.swift */,
+				2068B5B11EB927E4007FB656 /* ProgressTaskViewController.swift */,
 				20785FC21AD83BBE000DC57F /* Supporting Files */,
 			);
 			path = Examples;
@@ -413,6 +416,7 @@
 				20785FC51AD83BBE000DC57F /* AppDelegate.swift in Sources */,
 				20CB9CF81AF3EA47002E9F1C /* BlocksViewController.m in Sources */,
 				207E91531D87A1C800EECF1D /* ColorsViewController.swift in Sources */,
+				2068B5B21EB927E4007FB656 /* ProgressTaskViewController.swift in Sources */,
 				207E914E1D879D6B00EECF1D /* CustomKeyboardViewController.swift in Sources */,
 				20785FEC1AD83C63000DC57F /* RootTableViewController.m in Sources */,
 				207E91571D87A67000EECF1D /* VideoViewController.swift in Sources */,

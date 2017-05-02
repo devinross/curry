@@ -41,7 +41,7 @@
 
 - (void) viewDidLoad {
     [super viewDidLoad];
-    self.items = @[@"Card Modal",@"Custom Text Fields",@"Gestures Blocks",@"Action Sheet Blocks",@"Custom Keyboards",@"Video View Controller",@"Screen Brightness",@"PDF Generation",@"Colors"];
+    self.items = @[@"Card Modal",@"Custom Text Fields",@"Gestures Blocks",@"Action Sheet Blocks",@"Custom Keyboards",@"Video View Controller",@"Screen Brightness",@"PDF Generation",@"Colors",@"Progress Task"];
     [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:IDENTIFIER];
     self.title = NSLocalizedString(@"Curry", @"");
 }
@@ -86,7 +86,8 @@
 		ctr = PDFGeneratorViewController.new;
 	else if(indexPath.row == 8)
 		ctr = ColorsViewController.new;
-	
+	else if(indexPath.row == 9)
+		ctr = ProgressTaskViewController.new;
 	
 
     [self.navigationController pushViewController:ctr animated:YES];
