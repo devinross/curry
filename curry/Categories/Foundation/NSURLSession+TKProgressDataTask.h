@@ -38,6 +38,8 @@
 
 + (TKProgressDataTask* _Nonnull) progressDataTaskWithURL:(NSURL* _Nonnull)url progressHandler:(void (^ __nullable)(double loadedDataSize, double expectedDataSize))progressHandler completionHandler:(void (^ __nullable)(NSData * _Nullable data, NSURLResponse  * _Nullable response, NSError * _Nullable error))completionHandler;
 
++ (TKProgressDataTask* _Nonnull) progressDataTaskWithURL:(NSURL* _Nonnull)url uploadProgressHandler:(void (^ __nullable)(double uploadedDataSize, double expectedUploadedDataSize))uploadProgressHandler completionHandler:(void (^ __nullable)(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError  * _Nullable error))completionHandler;
+
 @end
 
 
@@ -47,6 +49,12 @@
 
 + (instancetype _Nonnull) progressDataTaskWithURL:(NSURL* _Nonnull)url progressHandler:(void (^ __nullable)(double loadedDataSize, double expectedDataSize))progressHandler completionHandler:(void (^ __nullable)(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError  * _Nullable error))completionHandler;
 
++ (instancetype _Nonnull) progressDataTaskWithURL:(NSURL* _Nonnull)url uploadProgressHandler:(void (^ __nullable)(double uploadedDataSize, double expectedUploadedDataSize))uploadProgressHandler completionHandler:(void (^ __nullable)(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError  * _Nullable error))completionHandler;
+
++ (instancetype _Nonnull) progressDataTaskWithURL:(NSURL* _Nonnull)url
+								  progressHandler:(void (^ __nullable)(double loadedDataSize, double expectedDataSize))progressHandler
+							uploadProgressHandler:(void (^ __nullable)(double uploadedDataSize, double expectedUploadedDataSize))uploadProgressHandler
+								completionHandler:(void (^ __nullable)(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError  * _Nullable error))completionHandler;
 
 
 
@@ -55,6 +63,7 @@
 
 @property (nonatomic,copy) void (^ _Nullable completionHandler)(id _Nullable json, NSURLResponse * _Nullable response, NSError * _Nullable error);
 @property (nonatomic,copy) void (^ _Nullable progressHandler)(double loadedDataSize, double expectedDataSize);
+@property (nonatomic,copy) void (^ _Nullable uploadProgressHandler)(double uploadedDataSize, double expectedUploadedDataSize);
 
 
 - (void) resume;

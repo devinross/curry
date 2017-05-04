@@ -35,12 +35,9 @@
 
 @interface TKProgressDataTask ()
 
-- (instancetype) initWithDataTaskWithURL:(NSURL*)url progressHandler:(void (^)(double loadedDataSize, double expectedDataSize))progressHandler completionHandler:(void (^)(NSData *data, NSURLResponse *response, NSError *error))completionHandler;
-
 @property (nonatomic,strong) NSURLSessionDataTask *task;
 @property (nonatomic,strong) NSURLSession *session;
 @property (nonatomic,strong) NSMutableData *data;
-
 
 @end
 
@@ -55,6 +52,21 @@
 	return task;
 }
 
++ (TKProgressDataTask* _Nonnull) progressDataTaskWithURL:(NSURL* _Nonnull)url
+								   uploadProgressHandler:(void (^ __nullable)(double uploadedDataSize, double expectedUploadedDataSize))uploadProgressHandler
+									   completionHandler:(void (^ __nullable)(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError  * _Nullable error))completionHandler{
+	TKProgressDataTask *task = [TKProgressDataTask progressDataTaskWithURL:url uploadProgressHandler:uploadProgressHandler completionHandler:completionHandler];
+	return task;
+}
+
++ (TKProgressDataTask* _Nonnull) progressDataTaskWithURL:(NSURL* _Nonnull)url
+										 progressHandler:(void (^ __nullable)(double loadedDataSize, double expectedDataSize))progressHandler
+								   uploadProgressHandler:(void (^ __nullable)(double uploadedDataSize, double expectedUploadedDataSize))uploadProgressHandler
+									   completionHandler:(void (^ __nullable)(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError  * _Nullable error))completionHandler{
+	TKProgressDataTask *task = [TKProgressDataTask progressDataTaskWithURL:url progressHandler:progressHandler uploadProgressHandler:uploadProgressHandler completionHandler:completionHandler];
+	return task;
+}
+
 @end
 
 @implementation TKProgressDataTask
@@ -63,17 +75,38 @@
 + (instancetype _Nonnull) progressDataTaskWithURL:(NSURL* _Nonnull)url
 								  progressHandler:(void (^ __nullable)(double loadedDataSize, double expectedDataSize))progressHandler
 								completionHandler:(void (^ __nullable)(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError  * _Nullable error))completionHandler{
-	TKProgressDataTask *task = [[TKProgressDataTask alloc] initWithDataTaskWithURL:url progressHandler:progressHandler completionHandler:completionHandler];
+	TKProgressDataTask *task = [[TKProgressDataTask alloc] initWithDataTaskWithURL:url progressHandler:progressHandler uploadProgressHandler:nil completionHandler:completionHandler];
 	return task;
 }
 
 
-- (instancetype) initWithDataTaskWithURL:(NSURL*)url progressHandler:(void (^)(double loadedDataSize, double expectedDataSize))progressHandler completionHandler:(void (^)(NSData *data, NSURLResponse *response, NSError *error))completionHandler{
++ (instancetype _Nonnull) progressDataTaskWithURL:(NSURL* _Nonnull)url
+								  progressHandler:(void (^ __nullable)(double loadedDataSize, double expectedDataSize))progressHandler
+							uploadProgressHandler:(void (^ __nullable)(double uploadedDataSize, double expectedUploadedDataSize))uploadProgressHandler
+								completionHandler:(void (^ __nullable)(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError  * _Nullable error))completionHandler{
+	TKProgressDataTask *task = [[TKProgressDataTask alloc] initWithDataTaskWithURL:url progressHandler:progressHandler uploadProgressHandler:uploadProgressHandler completionHandler:completionHandler];
+	return task;
+}
+
++ (instancetype _Nonnull) progressDataTaskWithURL:(NSURL* _Nonnull)url
+							uploadProgressHandler:(void (^ __nullable)(double uploadedDataSize, double expectedUploadedDataSize))uploadProgressHandler
+								completionHandler:(void (^ __nullable)(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError  * _Nullable error))completionHandler{
+	TKProgressDataTask *task = [[TKProgressDataTask alloc] initWithDataTaskWithURL:url progressHandler:nil uploadProgressHandler:uploadProgressHandler completionHandler:completionHandler];
+	return task;
+}
+
+
+
+- (instancetype) initWithDataTaskWithURL:(NSURL*)url
+						 progressHandler:(void (^ __nullable)(double loadedDataSize, double expectedDataSize))progressHandler
+				   uploadProgressHandler:(void (^ __nullable)(double uploadedDataSize, double expectedUploadedDataSize))uploadProgressHandler
+					   completionHandler:(void (^ __nullable)(NSData *data, NSURLResponse *response, NSError *error))completionHandler{
 	if(!(self=[super init])) return nil;
 	
 	self.data = [[NSMutableData alloc] init];
-
+	
 	self.progressHandler = progressHandler;
+	self.uploadProgressHandler = uploadProgressHandler;
 	self.completionHandler = completionHandler;
 	
 	NSURLSessionConfiguration *defaultConfigObject = [NSURLSessionConfiguration defaultSessionConfiguration];
@@ -85,11 +118,14 @@
 }
 
 
+
+
+
 #pragma mark GIF Loading
 - (void) URLSession:(NSURLSession *)session task:(NSURLSessionTask *)task didSendBodyData:(int64_t)bytesSent totalBytesSent:(int64_t)totalBytesSent totalBytesExpectedToSend:(int64_t)totalBytesExpectedToSend{
 	dispatch_async(dispatch_get_main_queue(), ^{
-		if(self.progressHandler)
-			self.progressHandler((double)totalBytesSent, (double)totalBytesExpectedToSend);
+		if(self.uploadProgressHandler)
+			self.uploadProgressHandler((double)totalBytesSent, (double)totalBytesExpectedToSend);
 	});
 }
 - (void) URLSession:(NSURLSession *)session dataTask:(NSURLSessionDataTask *)dataTask didReceiveResponse:(NSURLResponse *)response completionHandler:(void (^)(NSURLSessionResponseDisposition disposition))completionHandler {
