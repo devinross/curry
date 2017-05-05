@@ -29,6 +29,7 @@
 		20CB9CF81AF3EA47002E9F1C /* BlocksViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 20CB9CF71AF3EA47002E9F1C /* BlocksViewController.m */; };
 		20D4C89C1BB52A0000C75EEC /* PDFGeneratorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 20D4C89B1BB52A0000C75EEC /* PDFGeneratorViewController.m */; };
 		20EC669D1B3DAD1D0027D6A2 /* balllin.mov in Resources */ = {isa = PBXBuildFile; fileRef = 20EC669C1B3DAD1D0027D6A2 /* balllin.mov */; };
+		20EE3BF11EBCFE9B00732C78 /* TextViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20EE3BF01EBCFE9B00732C78 /* TextViewViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -138,6 +139,7 @@
 		20D4C89A1BB52A0000C75EEC /* PDFGeneratorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PDFGeneratorViewController.h; sourceTree = "<group>"; };
 		20D4C89B1BB52A0000C75EEC /* PDFGeneratorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PDFGeneratorViewController.m; sourceTree = "<group>"; };
 		20EC669C1B3DAD1D0027D6A2 /* balllin.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = balllin.mov; sourceTree = "<group>"; };
+		20EE3BF01EBCFE9B00732C78 /* TextViewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextViewViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -193,6 +195,7 @@
 				20CB9CF71AF3EA47002E9F1C /* BlocksViewController.m */,
 				20D4C89A1BB52A0000C75EEC /* PDFGeneratorViewController.h */,
 				20D4C89B1BB52A0000C75EEC /* PDFGeneratorViewController.m */,
+				20EE3BF01EBCFE9B00732C78 /* TextViewViewController.swift */,
 				207E91561D87A67000EECF1D /* VideoViewController.swift */,
 				207E91521D87A1C800EECF1D /* ColorsViewController.swift */,
 				2068B5B11EB927E4007FB656 /* ProgressTaskViewController.swift */,
@@ -422,6 +425,7 @@
 				207E91571D87A67000EECF1D /* VideoViewController.swift in Sources */,
 				207E91551D87A45600EECF1D /* CustomTextEntryViewController.swift in Sources */,
 				20D4C89C1BB52A0000C75EEC /* PDFGeneratorViewController.m in Sources */,
+				20EE3BF11EBCFE9B00732C78 /* TextViewViewController.swift in Sources */,
 				207E914F1D879D6E00EECF1D /* GesturesViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

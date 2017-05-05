@@ -41,7 +41,7 @@
 
 - (void) viewDidLoad {
     [super viewDidLoad];
-    self.items = @[@"Card Modal",@"Custom Text Fields",@"Gestures Blocks",@"Action Sheet Blocks",@"Custom Keyboards",@"Video View Controller",@"Screen Brightness",@"PDF Generation",@"Colors",@"Progress Task"];
+    self.items = @[@"Card Modal",@"Custom Text Fields",@"Gestures Blocks",@"Action Sheet Blocks",@"Custom Keyboards",@"Video View Controller",@"Screen Brightness",@"PDF Generation",@"Colors",@"Progress Task",@"Text View"];
     [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:IDENTIFIER];
     self.title = NSLocalizedString(@"Curry", @"");
 }
@@ -88,7 +88,8 @@
 		ctr = ColorsViewController.new;
 	else if(indexPath.row == 9)
 		ctr = ProgressTaskViewController.new;
-	
+	else if(indexPath.row == 10)
+		ctr = TextViewViewController.new;
 
     [self.navigationController pushViewController:ctr animated:YES];
     

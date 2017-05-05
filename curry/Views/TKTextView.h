@@ -39,11 +39,11 @@
 ///----------------------------
 
 /** The placeholder label. */
-@property (nonatomic,strong) UILabel *placeHolderLabel;
+@property (nonatomic,strong) UILabel *placeholderLabel;
 
 
 /** The placeholder text. */
-@property (nonatomic,strong) NSString *placeholder;
+@property (nonatomic,copy) NSString *placeholder;
 
 /** The text color of the placehold text. */
 @property (nonatomic,strong) UIColor *placeholderColor;
