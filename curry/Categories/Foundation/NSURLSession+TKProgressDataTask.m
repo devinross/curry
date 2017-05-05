@@ -226,7 +226,7 @@
 
 + (instancetype _Nonnull) progressJSONDataTaskWithURL:(NSURL* _Nonnull)url
 								  progressHandler:(void (^ __nullable)(double loadedDataSize, double expectedDataSize))progressHandler
-								completionHandler:(void (^ __nullable)(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError  * _Nullable error))completionHandler{
+								completionHandler:(void (^ __nullable)(id _Nullable data, NSURLResponse * _Nullable response, NSError  * _Nullable error))completionHandler{
 	TKProgressDataTask *task = [[TKProgressDataTask alloc] initWithJSONDataTaskWithURL:url progressHandler:progressHandler uploadProgressHandler:nil completionHandler:completionHandler];
 	return task;
 }
@@ -235,14 +235,14 @@
 + (instancetype _Nonnull) progressJSONDataTaskWithURL:(NSURL* _Nonnull)url
 								  progressHandler:(void (^ __nullable)(double loadedDataSize, double expectedDataSize))progressHandler
 							uploadProgressHandler:(void (^ __nullable)(double uploadedDataSize, double expectedUploadedDataSize))uploadProgressHandler
-								completionHandler:(void (^ __nullable)(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError  * _Nullable error))completionHandler{
+								completionHandler:(void (^ __nullable)(id _Nullable data, NSURLResponse * _Nullable response, NSError  * _Nullable error))completionHandler{
 	TKProgressDataTask *task = [[TKProgressDataTask alloc] initWithJSONDataTaskWithURL:url progressHandler:progressHandler uploadProgressHandler:uploadProgressHandler completionHandler:completionHandler];
 	return task;
 }
 
 + (instancetype _Nonnull) progressJSONDataTaskWithURL:(NSURL* _Nonnull)url
 							uploadProgressHandler:(void (^ __nullable)(double uploadedDataSize, double expectedUploadedDataSize))uploadProgressHandler
-								completionHandler:(void (^ __nullable)(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError  * _Nullable error))completionHandler{
+								completionHandler:(void (^ __nullable)(id _Nullable data, NSURLResponse * _Nullable response, NSError  * _Nullable error))completionHandler{
 	TKProgressDataTask *task = [[TKProgressDataTask alloc] initWithJSONDataTaskWithURL:url progressHandler:nil uploadProgressHandler:uploadProgressHandler completionHandler:completionHandler];
 	return task;
 }
@@ -250,7 +250,7 @@
 
 + (instancetype _Nonnull) progressJSONDataTaskWithRequest:(NSURLRequest*)request
 									  progressHandler:(void (^ __nullable)(double loadedDataSize, double expectedDataSize))progressHandler
-									completionHandler:(void (^ __nullable)(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError  * _Nullable error))completionHandler{
+									completionHandler:(void (^ __nullable)(id _Nullable data, NSURLResponse * _Nullable response, NSError  * _Nullable error))completionHandler{
 	TKProgressDataTask *task = [[TKProgressDataTask alloc] initWithJSONDataTaskWithRequest:request progressHandler:progressHandler uploadProgressHandler:nil completionHandler:completionHandler];
 	return task;
 }
@@ -259,14 +259,14 @@
 + (instancetype _Nonnull) progressJSONDataTaskWithRequest:(NSURLRequest*)request
 									  progressHandler:(void (^ __nullable)(double loadedDataSize, double expectedDataSize))progressHandler
 								uploadProgressHandler:(void (^ __nullable)(double uploadedDataSize, double expectedUploadedDataSize))uploadProgressHandler
-									completionHandler:(void (^ __nullable)(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError  * _Nullable error))completionHandler{
+									completionHandler:(void (^ __nullable)(id _Nullable data, NSURLResponse * _Nullable response, NSError  * _Nullable error))completionHandler{
 	TKProgressDataTask *task = [[TKProgressDataTask alloc] initWithJSONDataTaskWithRequest:request progressHandler:progressHandler uploadProgressHandler:uploadProgressHandler completionHandler:completionHandler];
 	return task;
 }
 
 + (instancetype _Nonnull) progressJSONDataTaskWithRequest:(NSURLRequest*)request
 								uploadProgressHandler:(void (^ __nullable)(double uploadedDataSize, double expectedUploadedDataSize))uploadProgressHandler
-									completionHandler:(void (^ __nullable)(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError  * _Nullable error))completionHandler{
+									completionHandler:(void (^ __nullable)(id _Nullable data, NSURLResponse * _Nullable response, NSError  * _Nullable error))completionHandler{
 	TKProgressDataTask *task = [[TKProgressDataTask alloc] initWithJSONDataTaskWithRequest:request progressHandler:nil uploadProgressHandler:uploadProgressHandler completionHandler:completionHandler];
 	return task;
 }
@@ -305,7 +305,7 @@
 - (instancetype) initWithJSONDataTaskWithURL:(NSURL*)url
 						 progressHandler:(void (^ __nullable)(double loadedDataSize, double expectedDataSize))progressHandler
 				   uploadProgressHandler:(void (^ __nullable)(double uploadedDataSize, double expectedUploadedDataSize))uploadProgressHandler
-					   completionHandler:(void (^ __nullable)(NSData *data, NSURLResponse *response, NSError *error))completionHandler{
+					   completionHandler:(void (^ __nullable)(id data, NSURLResponse *response, NSError *error))completionHandler{
 	if(!(self=[super init])) return nil;
 	
 	self.shouldProcessJSON = YES;
@@ -318,7 +318,7 @@
 - (instancetype) initWithJSONDataTaskWithRequest:(NSURLRequest*)request
 							 progressHandler:(void (^ __nullable)(double loadedDataSize, double expectedDataSize))progressHandler
 					   uploadProgressHandler:(void (^ __nullable)(double uploadedDataSize, double expectedUploadedDataSize))uploadProgressHandler
-						   completionHandler:(void (^ __nullable)(NSData *data, NSURLResponse *response, NSError *error))completionHandler{
+						   completionHandler:(void (^ __nullable)(id data, NSURLResponse *response, NSError *error))completionHandler{
 	if(!(self=[super init])) return nil;
 	
 	self.shouldProcessJSON = YES;
@@ -331,7 +331,7 @@
 
 - (void) setupWithProgressHandler:(void (^ __nullable)(double loadedDataSize, double expectedDataSize))progressHandler
 			uploadProgressHandler:(void (^ __nullable)(double uploadedDataSize, double expectedUploadedDataSize))uploadProgressHandler
-				completionHandler:(void (^ __nullable)(NSData *data, NSURLResponse *response, NSError *error))completionHandler{
+				completionHandler:(void (^ __nullable)(id data, NSURLResponse *response, NSError *error))completionHandler{
 	
 	
 	self.data = [[NSMutableData alloc] init];
