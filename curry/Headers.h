@@ -156,6 +156,7 @@
 
 // Extra
 #import "TKSoundAlertController.h"
+#import "TKSafariWebCredentials.h"
 
 #endif // END TARGET_OS_IOS || TARGET_OS_TV
 
