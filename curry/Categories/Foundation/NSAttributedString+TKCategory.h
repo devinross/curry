@@ -52,4 +52,7 @@
  */
 + (NSAttributedString*) attributedStringWithText:(NSString *)text kerning:(CGFloat)kerning;
 
+
++ (NSAttributedString*) attributedStringWithText:(NSString *)text lineHeight:(CGFloat)space kerning:(CGFloat)kerning;
+
 @end

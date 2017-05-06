@@ -60,4 +60,16 @@
 	return attr;
 }
 
+
++ (NSAttributedString*) attributedStringWithText:(NSString *)text lineHeight:(CGFloat)space kerning:(CGFloat)kerning{
+	if(text.length < 1) return nil;
+	NSMutableParagraphStyle *paragrahStyle = [[NSMutableParagraphStyle alloc] init];
+	[paragrahStyle setLineSpacing:space];
+	NSMutableAttributedString *attr = [[NSMutableAttributedString alloc] initWithString:text];
+	[attr addAttribute:NSParagraphStyleAttributeName value:paragrahStyle range:NSMakeRange(0,attr.length)];
+	[attr addAttribute:NSKernAttributeName value:@(kerning) range:NSMakeRange(0, text.length)];
+	return attr;
+}
+
+
 @end
