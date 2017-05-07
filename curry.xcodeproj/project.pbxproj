@@ -199,8 +199,6 @@
 		207860271AD84F11000DC57F /* NSURLSession+TKCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 207860251AD84F11000DC57F /* NSURLSession+TKCategory.m */; };
 		207A76811EBE7EBE006BE019 /* TKSafariWebCredentials.h in Headers */ = {isa = PBXBuildFile; fileRef = 207A767F1EBE7EBE006BE019 /* TKSafariWebCredentials.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		207A76821EBE7EBE006BE019 /* TKSafariWebCredentials.m in Sources */ = {isa = PBXBuildFile; fileRef = 207A76801EBE7EBE006BE019 /* TKSafariWebCredentials.m */; };
-		207A76831EBE7FBC006BE019 /* TKSafariWebCredentials.h in Headers */ = {isa = PBXBuildFile; fileRef = 207A767F1EBE7EBE006BE019 /* TKSafariWebCredentials.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		207A76841EBE7FC1006BE019 /* TKSafariWebCredentials.m in Sources */ = {isa = PBXBuildFile; fileRef = 207A76801EBE7EBE006BE019 /* TKSafariWebCredentials.m */; };
 		207C97B11BD7F1AC00342677 /* NSView+Positioning.h in Headers */ = {isa = PBXBuildFile; fileRef = 207C97AF1BD7F1AC00342677 /* NSView+Positioning.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		207C97B21BD7F1AC00342677 /* NSView+Positioning.m in Sources */ = {isa = PBXBuildFile; fileRef = 207C97B01BD7F1AC00342677 /* NSView+Positioning.m */; };
 		207C97B51BD7F3F200342677 /* NSView+TKCategory.h in Headers */ = {isa = PBXBuildFile; fileRef = 207C97B31BD7F3F200342677 /* NSView+TKCategory.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -1181,7 +1179,6 @@
 				20CEA45B1BA111270009D60C /* UINavigationBar+TKCategory.h in Headers */,
 				2040D5941DBF11A900430963 /* NSBundle+Receipts.h in Headers */,
 				20CEA4781BA112B70009D60C /* TKShapeView.h in Headers */,
-				207A76831EBE7FBC006BE019 /* TKSafariWebCredentials.h in Headers */,
 				20A85BE31CA3529D00632668 /* UITraitCollection+TKCategory.h in Headers */,
 				20CEA4881BA113140009D60C /* TKPhoneNumberTextField.h in Headers */,
 				20CEA44F1BA111020009D60C /* UIView+TKCategory.h in Headers */,
@@ -1616,7 +1613,6 @@
 				20CEA4811BA112FE0009D60C /* TKCreditCardNumberTextField.m in Sources */,
 				20CEA43E1BA110C60009D60C /* NSMutableArray+TKCategory.m in Sources */,
 				20CEA47F1BA112F30009D60C /* TKGradientView.m in Sources */,
-				207A76841EBE7FC1006BE019 /* TKSafariWebCredentials.m in Sources */,
 				20CEA4351BA110A60009D60C /* NSObject+JSON.m in Sources */,
 				20CEA4601BA111380009D60C /* UIView+Initializers.m in Sources */,
 				20CEA46C1BA1123D0009D60C /* CALayer+TKAnimation.m in Sources */,
