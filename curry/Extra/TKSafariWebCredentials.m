@@ -72,6 +72,13 @@
 					success((__bridge NSString *)(userName),(__bridge NSString *)(password));
 			});
 			
+		}else{
+			
+			dispatch_async(dispatch_get_main_queue(), ^{
+				if(failure)
+					failure(nil);
+			});
+
 		}
 		
 		
