@@ -51,25 +51,24 @@
 		}
 		
 		CFStringRef server = NULL;
-		CFStringRef userName = NULL;
-		CFStringRef password = NULL;
+		NSString *userName = nil;
+		NSString *password = nil;
 		
 		// If credentials are found, use them.
 		if (CFArrayGetCount(credentials) > 0) {
 			
 			// There will only ever be one credential dictionary
-			CFDictionaryRef credentialDict =
-			CFArrayGetValueAtIndex(credentials, 0);
+			CFDictionaryRef credentialDict = CFArrayGetValueAtIndex(credentials, 0);
 			
 			server = CFDictionaryGetValue(credentialDict, kSecAttrServer);
-			userName = CFDictionaryGetValue(credentialDict, kSecAttrAccount);
-			password = CFDictionaryGetValue(credentialDict, kSecSharedPassword);
+			userName = [(__bridge NSString *)CFDictionaryGetValue(credentialDict, kSecAttrAccount) copy];
+			password = [(__bridge NSString *)CFDictionaryGetValue(credentialDict, kSecSharedPassword) copy];
 			
 			// Attempt to log in
 			
 			dispatch_async(dispatch_get_main_queue(), ^{
 				if(success)
-					success((__bridge NSString *)(userName),(__bridge NSString *)(password));
+					success(userName,password);
 			});
 			
 		}else{
