@@ -174,6 +174,7 @@
 @property (nonatomic,copy) void (^ _Nullable progressHandler)(double loadedDataSize, double expectedDataSize);
 @property (nonatomic,copy) void (^ _Nullable uploadProgressHandler)(double uploadedDataSize, double expectedUploadedDataSize);
 
+@property (nonatomic,assign) float priority;
 
 - (void) resume;
 - (void) suspend;

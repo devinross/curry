@@ -390,6 +390,12 @@
 	[self.task cancel];
 	self.data = nil;
 }
+- (float) priority{
+	return self.task.priority;
+}
+- (void) setPriority:(float)priority{
+	self.task.priority = priority;
+}
 
 
 @end
