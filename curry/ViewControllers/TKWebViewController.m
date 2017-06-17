@@ -51,6 +51,11 @@
 	return self;
 }
 
+- (void) dealloc{
+	_webView.delegate = nil;
+	[_webView stopLoading];
+}
+
 #pragma mark View Lifecycle
 - (void) loadView{
 	[super loadView];
