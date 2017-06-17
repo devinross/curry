@@ -345,7 +345,13 @@
 	self.session = session;
 }
 
-
+- (void) dealloc{
+	self.data = nil;
+	self.progressHandler = nil;
+	self.completionHandler = nil;
+	self.session = nil;
+	self.task = nil;
+}
 
 #pragma mark GIF Loading
 - (void) URLSession:(NSURLSession *)session task:(NSURLSessionTask *)task didSendBodyData:(int64_t)bytesSent totalBytesSent:(int64_t)totalBytesSent totalBytesExpectedToSend:(int64_t)totalBytesExpectedToSend{
