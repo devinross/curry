@@ -349,8 +349,9 @@
 	self.data = nil;
 	self.progressHandler = nil;
 	self.completionHandler = nil;
-	self.session = nil;
 	self.task = nil;
+	[self.session finishTasksAndInvalidate];
+	self.session = nil;
 }
 
 #pragma mark GIF Loading
@@ -377,9 +378,23 @@
 	dispatch_async(dispatch_get_main_queue(), ^{
 		if(self.completionHandler){
 			if(self.shouldProcessJSON){
-				[self processJSON:self.data response:task.response error:error options:0 withCompletion:self.completionHandler];
+				[self processJSON:self.data response:task.response error:error options:0 withCompletion:^(id object, NSURLResponse *response, NSError *error) {
+					self.completionHandler(object, response, error);
+					self.data = nil;
+					self.progressHandler = nil;
+					self.completionHandler = nil;
+					self.task = nil;
+					[self.session finishTasksAndInvalidate];
+					self.session = nil;
+				}];
 			}else{
 				self.completionHandler(self.data, task.response, error);
+				self.data = nil;
+				self.progressHandler = nil;
+				self.completionHandler = nil;
+				self.task = nil;
+				[self.session finishTasksAndInvalidate];
+				self.session = nil;
 			}
 		}
 	});
