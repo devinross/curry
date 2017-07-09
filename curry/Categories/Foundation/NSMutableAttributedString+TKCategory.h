@@ -98,4 +98,11 @@
  */
 - (void) addBackgroundColor:(UIColor *)color;
 
+
+
+
+- (void) appendImage:(UIImage*)image;
+
+- (void) insertImage:(UIImage*)image atIndex:(NSUInteger)index;
+
 @end

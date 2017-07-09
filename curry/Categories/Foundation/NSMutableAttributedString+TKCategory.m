@@ -31,6 +31,7 @@
 
 #import "NSMutableAttributedString+TKCategory.h"
 
+
 @implementation NSMutableAttributedString (TKCategory)
 
 - (void) addTextColor:(UIColor*)color range:(NSRange)range{
@@ -69,5 +70,19 @@
 - (void) addLineHeight:(CGFloat)lineHeight{
 	[self addLineHeight:lineHeight range:NSMakeRange(0, self.length)];
 }
+
+
+- (void) appendImage:(UIImage*)image{
+	NSTextAttachment *attachment = [[NSTextAttachment alloc] init];
+	attachment.image = image;
+	[self appendAttributedString:[NSAttributedString attributedStringWithAttachment:attachment]];
+}
+
+- (void) insertImage:(UIImage*)image atIndex:(NSUInteger)index{
+	NSTextAttachment *attachment = [[NSTextAttachment alloc] init];
+	attachment.image = image;
+	[self insertAttributedString:[NSAttributedString attributedStringWithAttachment:attachment] atIndex:index];
+}
+
 
 @end
