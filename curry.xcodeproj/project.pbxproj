@@ -161,6 +161,8 @@
 		204922B91B46EF9200C22245 /* TKTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 204922B71B46EF9200C22245 /* TKTextView.m */; };
 		204922C41B46F15900C22245 /* NSDate+TKCategory.h in Headers */ = {isa = PBXBuildFile; fileRef = 204922C21B46F15900C22245 /* NSDate+TKCategory.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		204922C51B46F15900C22245 /* NSDate+TKCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 204922C31B46F15900C22245 /* NSDate+TKCategory.m */; };
+		205585681F1DB6A5009559FF /* NSURLSession+TKProgressDataTask.m in Sources */ = {isa = PBXBuildFile; fileRef = 2068B5A41EB91F77007FB656 /* NSURLSession+TKProgressDataTask.m */; };
+		205585691F1DB6A8009559FF /* NSURLSession+TKProgressDataTask.m in Sources */ = {isa = PBXBuildFile; fileRef = 2068B5A41EB91F77007FB656 /* NSURLSession+TKProgressDataTask.m */; };
 		2058B9FD1BA7487E002C2357 /* UITraitCollection+TKCategory.h in Headers */ = {isa = PBXBuildFile; fileRef = 2058B9FB1BA7487E002C2357 /* UITraitCollection+TKCategory.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2058B9FE1BA7487E002C2357 /* UITraitCollection+TKCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 2058B9FC1BA7487E002C2357 /* UITraitCollection+TKCategory.m */; };
 		205B9A8B1BF1058D008EDFD8 /* NSUserDefaults+iCloud.h in Headers */ = {isa = PBXBuildFile; fileRef = 205B9A891BF1058D008EDFD8 /* NSUserDefaults+iCloud.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -1548,6 +1550,7 @@
 				205B9A901BF1058D008EDFD8 /* NSUserDefaults+iCloud.m in Sources */,
 				20B5FE3C1BB363BA00C0F848 /* NSString+TKCategory.m in Sources */,
 				20B5FE381BB363AE00C0F848 /* NSObject+JSON.m in Sources */,
+				205585691F1DB6A8009559FF /* NSURLSession+TKProgressDataTask.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1594,6 +1597,7 @@
 				20CEA4481BA110E70009D60C /* NSTimer+Blocks.m in Sources */,
 				20CEA4401BA110CC0009D60C /* NSAttributedString+TKCategory.m in Sources */,
 				20CEA4DE1BA1503D0009D60C /* UIScrollView+Positioning.m in Sources */,
+				205585681F1DB6A5009559FF /* NSURLSession+TKProgressDataTask.m in Sources */,
 				20A85BE61CA352BE00632668 /* UIPanGestureRecognizer+VelocityDirection.m in Sources */,
 				20CEA4791BA112BB0009D60C /* TKShapeView.m in Sources */,
 				20CEA4501BA111070009D60C /* UIView+TKCategory.m in Sources */,
