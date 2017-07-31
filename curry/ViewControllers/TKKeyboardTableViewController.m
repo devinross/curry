@@ -36,6 +36,8 @@
 @interface TKKeyboardTableViewController ()
 @property (nonatomic,assign) BOOL scrollLock;
 @property (nonatomic,assign) CGRect keyboardRect;
+@property (nonatomic,assign) UIEdgeInsets prevContentInset;
+@property (nonatomic,assign) UIEdgeInsets prevScrollInset;
 @end
 
 @implementation TKKeyboardTableViewController
@@ -79,6 +81,13 @@
 	
 	self.scrollLock = YES;
 	
+	if(CGRectEqualToRect(self.keyboardRect, CGRectZero)){
+		self.prevScrollInset = self.tableView.scrollIndicatorInsets;
+		self.prevContentInset = self.tableView.contentInset;
+	}
+	
+
+	
 	self.keyboardRect = [sender.userInfo[UIKeyboardFrameEndUserInfoKey] CGRectValue];
 	
 	[self _updateInsetWithKeyboard];
@@ -92,10 +101,10 @@
 	[UIView beginAnimations:nil context:nil];
 	[UIView setAnimationBeginsFromCurrentState:YES];
 	[UIView setAnimationCurve:UIViewAnimationCurveLinear];
-	self.tableView.contentInset = UIEdgeInsetsMake(self.tableView.contentInset.top, 0, self.bottomLayoutGuide.length, 0);
+	self.tableView.contentInset = self.prevContentInset;
 	[UIView commitAnimations];
 	
-	self.tableView.scrollIndicatorInsets = UIEdgeInsetsMake(self.tableView.scrollIndicatorInsets.top, 0, self.bottomLayoutGuide.length, 0);
+	self.tableView.scrollIndicatorInsets = self.prevScrollInset;
 	
 }
 - (void) textViewDidBeginEditing:(UITextView *)textView{
