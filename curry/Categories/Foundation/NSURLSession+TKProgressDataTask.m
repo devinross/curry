@@ -371,7 +371,8 @@
 - (void) URLSession:(NSURLSession *)session dataTask:(NSURLSessionDataTask *)dataTask didReceiveData:(NSData *)data {
 	[self.data appendData:data];
 	dispatch_async(dispatch_get_main_queue(), ^{
-		self.progressHandler(self.data.length, (double)self.expectedData);
+		if(self.progressHandler)
+			self.progressHandler(self.data.length, (double)self.expectedData);
 	});
 }
 - (void) URLSession:(NSURLSession *)session task:(NSURLSessionTask *)task didCompleteWithError:(nullable NSError *)error{
