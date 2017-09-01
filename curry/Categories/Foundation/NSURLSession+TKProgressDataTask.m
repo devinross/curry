@@ -379,6 +379,19 @@
 	dispatch_async(dispatch_get_main_queue(), ^{
 		if(self.completionHandler){
 			if(self.shouldProcessJSON){
+				
+				if(self.data.length < 1){
+					self.completionHandler(nil, task.response, error);
+					self.data = nil;
+					self.progressHandler = nil;
+					self.completionHandler = nil;
+					self.task = nil;
+					[self.session finishTasksAndInvalidate];
+					self.session = nil;
+					return;
+				}
+				
+				
 				[self processJSON:self.data response:task.response error:error options:0 withCompletion:^(id object, NSURLResponse *response, NSError *error) {
 					self.completionHandler(object, response, error);
 					self.data = nil;

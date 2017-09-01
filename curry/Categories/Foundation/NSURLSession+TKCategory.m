@@ -36,6 +36,11 @@
 
 - (NSURLSessionDataTask*) jsonDataTaskWithRequest:(NSURLRequest*)request options:(NSJSONReadingOptions)options completionHandler:(void(^)(id object, NSURLResponse *response, NSError *error))completion{
     NSURLSessionDataTask *task = [self dataTaskWithRequest:request completionHandler:^(NSData *data, NSURLResponse *response, NSError *error){
+		if(data.length<1){
+			if(completion)
+				completion(nil,response,error);
+		}
+		
         [self processJSON:data response:response error:error options:options withCompletion:completion];
     }];
     return task;
@@ -43,6 +48,10 @@
 
 - (NSURLSessionDataTask*) jsonDataTaskWithURL:(NSURL*)URL options:(NSJSONReadingOptions)options completionHandler:(void(^)(id object, NSURLResponse *response, NSError *error))completion{
     NSURLSessionDataTask *task = [self dataTaskWithURL:URL completionHandler:^(NSData *data, NSURLResponse *response, NSError *error){
+		if(data.length<1){
+			if(completion)
+				completion(nil,response,error);
+		}
         [self processJSON:data response:response error:error options:options withCompletion:completion];
     }];
     return task;
