@@ -392,8 +392,15 @@
 				}
 				
 				
-				[self processJSON:self.data response:task.response error:error options:0 withCompletion:^(id object, NSURLResponse *response, NSError *error) {
-					self.completionHandler(object, response, error);
+				[self processJSON:self.data response:task.response error:error options:NSJSONReadingAllowFragments withCompletion:^(id object, NSURLResponse *response, NSError *jsonError) {
+					
+					if(jsonError.code == 3840){
+						id dataObj = self.data.length > 0 ? [[NSString alloc] initWithData:self.data encoding:NSUTF8StringEncoding] : nil;
+						self.completionHandler(dataObj, response, self.data.length > 0 ? jsonError : error);
+					}else{
+						self.completionHandler(object, response, error);
+					}
+					
 					self.data = nil;
 					self.progressHandler = nil;
 					self.completionHandler = nil;

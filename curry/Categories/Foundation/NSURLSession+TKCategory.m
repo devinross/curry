@@ -37,11 +37,24 @@
 - (NSURLSessionDataTask*) jsonDataTaskWithRequest:(NSURLRequest*)request options:(NSJSONReadingOptions)options completionHandler:(void(^)(id object, NSURLResponse *response, NSError *error))completion{
     NSURLSessionDataTask *task = [self dataTaskWithRequest:request completionHandler:^(NSData *data, NSURLResponse *response, NSError *error){
 		if(data.length<1){
-			if(completion)
-				completion(nil,response,error);
+			dispatch_async(dispatch_get_main_queue(), ^{
+				if(completion)
+					completion(nil,response,error);
+			});
+		
+			return;
 		}
 		
-        [self processJSON:data response:response error:error options:options withCompletion:completion];
+		[self processJSON:data response:response error:error options:options withCompletion:^(id object, NSURLResponse *response, NSError *jsonError) {
+			if(!completion) return;
+			
+			if(jsonError.code == 3840){
+				id dataObj = object ?: [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
+				completion(dataObj, response, error ?: jsonError);
+			}else{
+				completion(object, response, error ?: jsonError);
+			}
+		}];
     }];
     return task;
 }
@@ -49,10 +62,22 @@
 - (NSURLSessionDataTask*) jsonDataTaskWithURL:(NSURL*)URL options:(NSJSONReadingOptions)options completionHandler:(void(^)(id object, NSURLResponse *response, NSError *error))completion{
     NSURLSessionDataTask *task = [self dataTaskWithURL:URL completionHandler:^(NSData *data, NSURLResponse *response, NSError *error){
 		if(data.length<1){
-			if(completion)
-				completion(nil,response,error);
+			dispatch_async(dispatch_get_main_queue(), ^{
+				if(completion)
+					completion(nil,response,error);
+			});
+			return;
 		}
-        [self processJSON:data response:response error:error options:options withCompletion:completion];
+        [self processJSON:data response:response error:error options:options withCompletion:^(id object, NSURLResponse *response, NSError *jsonError) {
+			if(!completion) return;
+			
+			if(jsonError.code == 3840){
+				id dataObj = object ?: [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
+				completion(dataObj, response, error ?: jsonError);
+			}else{
+				completion(object, response, error ?: jsonError);
+			}
+		}];
     }];
     return task;
 }
