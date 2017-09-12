@@ -35,17 +35,17 @@ import UIKit
 extension UIDevice {
 	
 	/// Returns `true` if the device is an iPad.
-	public var padIdiom: Bool {
+	@objc public var padIdiom: Bool {
 		return self.userInterfaceIdiom == .pad
 	}
 	
 	/// Returns `true` if the device is an iPhone or iPod touch.
-	public var phoneIdiom: Bool {
+	@objc public var phoneIdiom: Bool {
 		return self.userInterfaceIdiom == .phone
 	}
 	
 	/// Returns `true` if the device is a tvOS device
-	public var tvIdiom: Bool {
+	@objc public var tvIdiom: Bool {
 		if #available(iOS 9.0, *) {
 			return self.userInterfaceIdiom == .tv
 		} else {
@@ -54,7 +54,7 @@ extension UIDevice {
 	}
 	
 	/// Returns `true` if the device is a car play device
-	public var carPlayIdiom: Bool {
+	@objc public var carPlayIdiom: Bool {
 		if #available(iOS 9.0, *) {
 			return self.userInterfaceIdiom == .carPlay
 		} else {
