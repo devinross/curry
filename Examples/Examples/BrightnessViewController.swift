@@ -50,7 +50,7 @@ class BrightnessViewController: UIViewController {
 		
 	}
 	
-	func changeBrightness(sender: UIButton){
+	@objc func changeBrightness(sender: UIButton){
 		
 		
 		if sender.tag == 0 {

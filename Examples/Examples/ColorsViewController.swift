@@ -48,7 +48,7 @@ class ColorsViewController: UIViewController {
 		let rightX = pad*3 + width*2
 		
 		
-		let colors = [[UIColor(colorLiteralRed: 0, green: 121/255.0, blue: 210/255.0, alpha: 1),]]
+		let colors = [[UIColor(red: 0, green: 121/255.0, blue: 210/255.0, alpha: 1),]]
 		
 		
 		
