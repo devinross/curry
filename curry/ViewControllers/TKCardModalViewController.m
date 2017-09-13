@@ -321,15 +321,20 @@ static const CGFloat _minimumVelocityRequiredForPush = 50.0f;	// defines how muc
 	[self.animator addBehavior:self.pushBehavior];
 	
 	
-	CGFloat dimension = MAX(CGFrameGetHeight(self.contentView),CGFrameGetWidth(self.contentView)) * 1.1;
-	dimension = -MAX(dimension,420);
+	CGFloat off = MAX(CGFrameGetHeight(self.contentView),CGFrameGetWidth(self.contentView)) * 1.1;
+	off = MAX(off,420);
+	//off = 0;
 	
 	UICollisionBehavior *collide = [[UICollisionBehavior alloc] initWithItems:@[view]];
-	collide.translatesReferenceBoundsIntoBoundary = YES;
-	[collide setTranslatesReferenceBoundsIntoBoundaryWithInsets:UIEdgeInsetsMake(dimension, dimension, dimension, dimension)];
+	[collide setTranslatesReferenceBoundsIntoBoundaryWithInsets:UIEdgeInsetsMake(-off, -off, -off, -off)];
 	collide.collisionDelegate = self;
 	[self.animator addBehavior:collide];
 	
+	CGSize size = self.view.bounds.size;
+	[collide addBoundaryWithIdentifier:@"top" fromPoint:CGPointMake(-off, -off) toPoint:CGPointMake(size.width+off, -off)];
+	[collide addBoundaryWithIdentifier:@"left" fromPoint:CGPointMake(-off, -off) toPoint:CGPointMake(-off, size.height+off)];
+	[collide addBoundaryWithIdentifier:@"right" fromPoint:CGPointMake(size.width + off, -off) toPoint:CGPointMake(size.width+off, size.height + off)];
+	[collide addBoundaryWithIdentifier:@"bottom" fromPoint:CGPointMake(-off, size.height + off) toPoint:CGPointMake(size.width+off, size.height+off)];
 	// delay for dismissing is based on push velocity also
 	
 	
@@ -416,7 +421,13 @@ static const CGFloat _minimumVelocityRequiredForPush = 50.0f;	// defines how muc
 }
 
 
-- (void) collisionBehavior:(UICollisionBehavior*)behavior beganContactForItem:(id<UIDynamicItem>)item withBoundaryIdentifier:(id<NSCopying>)identifier atPoint:(CGPoint)p{
+- (void) collisionBehavior:(UICollisionBehavior *)behavior beganContactForItem:(id<UIDynamicItem>)item1 withItem:(id<UIDynamicItem>)item2 atPoint:(CGPoint)p{
+	
+	TKLog(@"==");
+
+}
+- (void) collisionBehavior:(UICollisionBehavior*)behavior beganContactForItem:(id <UIDynamicItem>)item withBoundaryIdentifier:(nullable id <NSCopying>)identifier atPoint:(CGPoint)p{
+	
 	[self.animator removeAllBehaviors];
 	[self.contentView removeFromSuperview];
 	[self hide];
