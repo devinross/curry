@@ -117,12 +117,16 @@
 }
 
 
+#define EQL(_CAT,_TYPE) [_CAT isEqualToString:_TYPE]
+
 + (CGFloat) pointSizeWithXS:(CGFloat)xs s:(CGFloat)s m:(CGFloat)m l:(CGFloat)l xl:(CGFloat)xl xxl:(CGFloat)xxl xxxl:(CGFloat)xxxl{
 	
 	UIContentSizeCategory cat = [UIApplication sharedApplication].preferredContentSizeCategory;
 	CGFloat fontSize = m;
 	
-	if([cat isEqualToString:UIContentSizeCategoryAccessibilityMedium] || [cat isEqualToString:UIContentSizeCategoryMedium]){
+
+	
+	if(EQL(cat,UIContentSizeCategoryAccessibilityMedium)){
 		fontSize = m;
 	}else if([cat isEqualToString:UIContentSizeCategoryAccessibilityLarge] || [cat isEqualToString:UIContentSizeCategoryLarge]){
 		fontSize = l;
@@ -147,22 +151,53 @@
 	
 	UIContentSizeCategory cat = [UIApplication sharedApplication].preferredContentSizeCategory;
 	CGFloat fontSize = m;
-	
 	CGFloat delta = m * scale - m;
 	
-	if([cat isEqualToString:UIContentSizeCategoryAccessibilityMedium] || [cat isEqualToString:UIContentSizeCategoryMedium]){
+	if( EQL(cat,UIContentSizeCategoryMedium) ){
 		fontSize = m;
-	}else if([cat isEqualToString:UIContentSizeCategoryAccessibilityLarge] || [cat isEqualToString:UIContentSizeCategoryLarge]){
+	}
+	
+	else if( EQL(cat,UIContentSizeCategoryLarge) ){
 		fontSize = m + delta;
-	}else if([cat isEqualToString:UIContentSizeCategoryAccessibilityExtraLarge] || [cat isEqualToString:UIContentSizeCategoryExtraLarge]){
+	}
+	
+	else if( EQL(cat,UIContentSizeCategoryExtraLarge) ){
 		fontSize = m + delta * 2;
-	}else if([cat isEqualToString:UIContentSizeCategoryExtraExtraLarge]){
+	}
+	
+	else if( EQL(cat,UIContentSizeCategoryExtraExtraLarge) ){
 		fontSize = m + delta * 3;
-	}else if([cat isEqualToString:UIContentSizeCategoryExtraExtraExtraLarge]){
+	}
+	
+	else if( EQL(cat,UIContentSizeCategoryExtraExtraExtraLarge) ){
 		fontSize = m + delta * 4;
-	}else if([cat isEqualToString:UIContentSizeCategorySmall]){
+	}
+	
+	else if( EQL(cat,UIContentSizeCategoryAccessibilityMedium) ){
+		fontSize = m + delta * 5;
+	}
+	
+	else if( EQL(cat,UIContentSizeCategoryAccessibilityLarge) ){
+		fontSize = m + delta * 6;
+	}
+	
+	else if( EQL(cat,UIContentSizeCategoryAccessibilityExtraLarge) ){
+		fontSize = m + delta * 7;
+	}
+	
+	else if( EQL(cat,UIContentSizeCategoryAccessibilityExtraExtraLarge) ){
+		fontSize = m + delta * 8;
+	}
+	
+	else if( EQL(cat,UIContentSizeCategoryAccessibilityExtraExtraExtraLarge) ){
+		fontSize = m + delta * 9;
+	}
+	
+	else if( EQL(cat,UIContentSizeCategorySmall) ){
 		fontSize = m - delta;
-	}else if([cat isEqualToString:UIContentSizeCategoryExtraSmall]){
+	}
+	
+	else if( EQL(cat,UIContentSizeCategoryExtraSmall) ){
 		fontSize = m - (delta * 2);
 	}
 	
@@ -177,20 +212,53 @@
 	
 	CGFloat delta = l * scale - l;
 	
-	if([cat isEqualToString:UIContentSizeCategoryAccessibilityMedium] || [cat isEqualToString:UIContentSizeCategoryMedium]){
+	
+	if( EQL(cat,UIContentSizeCategoryMedium) ){
 		fontSize = l - delta;
-	}else if([cat isEqualToString:UIContentSizeCategoryAccessibilityLarge] || [cat isEqualToString:UIContentSizeCategoryLarge]){
+	}
+	
+	else if( EQL(cat,UIContentSizeCategoryLarge) ){
 		fontSize = l;
-	}else if([cat isEqualToString:UIContentSizeCategoryAccessibilityExtraLarge] || [cat isEqualToString:UIContentSizeCategoryExtraLarge]){
-		fontSize = l+ delta;
-	}else if([cat isEqualToString:UIContentSizeCategoryExtraExtraLarge]){
+	}
+	
+	else if( EQL(cat,UIContentSizeCategoryExtraLarge) ){
+		fontSize = l + delta;
+	}
+	
+	else if( EQL(cat,UIContentSizeCategoryExtraExtraLarge) ){
 		fontSize = l + delta * 2;
-	}else if([cat isEqualToString:UIContentSizeCategoryExtraExtraExtraLarge]){
+	}
+	
+	else if( EQL(cat,UIContentSizeCategoryExtraExtraExtraLarge) ){
 		fontSize = l + delta * 3;
-	}else if([cat isEqualToString:UIContentSizeCategorySmall]){
-		fontSize = l - delta * 2;
-	}else if([cat isEqualToString:UIContentSizeCategoryExtraSmall]){
-		fontSize = l - delta * 3;
+	}
+	
+	else if( EQL(cat,UIContentSizeCategoryAccessibilityMedium) ){
+		fontSize = l + delta * 4;
+	}
+	
+	else if( EQL(cat,UIContentSizeCategoryAccessibilityLarge) ){
+		fontSize = l + delta * 4;
+	}
+	
+	else if( EQL(cat,UIContentSizeCategoryAccessibilityExtraLarge) ){
+		fontSize = l + delta * 5;
+	}
+	
+	else if( EQL(cat,UIContentSizeCategoryAccessibilityExtraExtraLarge) ){
+		fontSize = l + delta * 6;
+	}
+	
+	else if( EQL(cat,UIContentSizeCategoryAccessibilityExtraExtraExtraLarge) ){
+		fontSize = l + delta * 7;
+	}
+	
+	else if( EQL(cat,UIContentSizeCategorySmall) ){
+		fontSize = delta - (delta * 2);
+	}
+	
+	else if( EQL(cat,UIContentSizeCategoryExtraSmall) ){
+		fontSize = l - (delta * 3);
 	}
 	
 	return fontSize;
@@ -201,24 +269,59 @@
 	UIContentSizeCategory cat = [UIApplication sharedApplication].preferredContentSizeCategory;
 	CGFloat fontSize = l;
 	
+	
 	CGFloat delta = l * upScale - l;
 	CGFloat downDelta = l * downScale - l;
 	
-	if([cat isEqualToString:UIContentSizeCategoryAccessibilityMedium] || [cat isEqualToString:UIContentSizeCategoryMedium]){
+	
+	if( EQL(cat,UIContentSizeCategoryMedium) ){
 		fontSize = l - downDelta;
-	}else if([cat isEqualToString:UIContentSizeCategoryAccessibilityLarge] || [cat isEqualToString:UIContentSizeCategoryLarge]){
-		fontSize = l;
-	}else if([cat isEqualToString:UIContentSizeCategoryAccessibilityExtraLarge] || [cat isEqualToString:UIContentSizeCategoryExtraLarge]){
-		fontSize = l+ delta;
-	}else if([cat isEqualToString:UIContentSizeCategoryExtraExtraLarge]){
-		fontSize = l + delta * 2;
-	}else if([cat isEqualToString:UIContentSizeCategoryExtraExtraExtraLarge]){
-		fontSize = l + delta * 3;
-	}else if([cat isEqualToString:UIContentSizeCategorySmall]){
-		fontSize = l - downDelta * 2;
-	}else if([cat isEqualToString:UIContentSizeCategoryExtraSmall]){
-		fontSize = l - downDelta * 3;
 	}
+	
+	else if( EQL(cat,UIContentSizeCategoryLarge) ){
+		fontSize = l;
+	}
+	
+	else if( EQL(cat,UIContentSizeCategoryExtraLarge) ){
+		fontSize = l + delta;
+	}
+	
+	else if( EQL(cat,UIContentSizeCategoryExtraExtraLarge) ){
+		fontSize = l + delta * 2;
+	}
+	
+	else if( EQL(cat,UIContentSizeCategoryExtraExtraExtraLarge) ){
+		fontSize = l + delta * 3;
+	}
+	
+	else if( EQL(cat,UIContentSizeCategoryAccessibilityMedium) ){
+		fontSize = l + delta * 4;
+	}
+	
+	else if( EQL(cat,UIContentSizeCategoryAccessibilityLarge) ){
+		fontSize = l + delta * 4;
+	}
+	
+	else if( EQL(cat,UIContentSizeCategoryAccessibilityExtraLarge) ){
+		fontSize = l + delta * 5;
+	}
+	
+	else if( EQL(cat,UIContentSizeCategoryAccessibilityExtraExtraLarge) ){
+		fontSize = l + delta * 6;
+	}
+	
+	else if( EQL(cat,UIContentSizeCategoryAccessibilityExtraExtraExtraLarge) ){
+		fontSize = l + delta * 7;
+	}
+	
+	else if( EQL(cat,UIContentSizeCategorySmall) ){
+		fontSize = delta - (downDelta * 2);
+	}
+	
+	else if( EQL(cat,UIContentSizeCategoryExtraSmall) ){
+		fontSize = l - (downDelta * 3);
+	}
+	
 	
 	return fontSize;
 }

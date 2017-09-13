@@ -371,15 +371,36 @@
 - (void) URLSession:(NSURLSession *)session dataTask:(NSURLSessionDataTask *)dataTask didReceiveData:(NSData *)data {
 	[self.data appendData:data];
 	dispatch_async(dispatch_get_main_queue(), ^{
-		self.progressHandler(self.data.length, (double)self.expectedData);
+		if(self.progressHandler)
+			self.progressHandler(self.data.length, (double)self.expectedData);
 	});
 }
 - (void) URLSession:(NSURLSession *)session task:(NSURLSessionTask *)task didCompleteWithError:(nullable NSError *)error{
 	dispatch_async(dispatch_get_main_queue(), ^{
 		if(self.completionHandler){
 			if(self.shouldProcessJSON){
-				[self processJSON:self.data response:task.response error:error options:0 withCompletion:^(id object, NSURLResponse *response, NSError *error) {
-					self.completionHandler(object, response, error);
+				
+				if(self.data.length < 1){
+					self.completionHandler(nil, task.response, error);
+					self.data = nil;
+					self.progressHandler = nil;
+					self.completionHandler = nil;
+					self.task = nil;
+					[self.session finishTasksAndInvalidate];
+					self.session = nil;
+					return;
+				}
+				
+				
+				[self processJSON:self.data response:task.response error:error options:NSJSONReadingAllowFragments withCompletion:^(id object, NSURLResponse *response, NSError *jsonError) {
+					
+					if(jsonError.code == 3840){
+						id dataObj = self.data.length > 0 ? [[NSString alloc] initWithData:self.data encoding:NSUTF8StringEncoding] : nil;
+						self.completionHandler(dataObj, response, self.data.length > 0 ? jsonError : error);
+					}else{
+						self.completionHandler(object, response, error);
+					}
+					
 					self.data = nil;
 					self.progressHandler = nil;
 					self.completionHandler = nil;
