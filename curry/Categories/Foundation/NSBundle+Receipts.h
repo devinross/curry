@@ -34,6 +34,6 @@
 
 @interface NSBundle (Receipts)
 
-- (void) requestReceiptOnAppStore:(void(^)(NSDictionary *receipt, NSURLResponse *response, NSError *error))completion;
+- (void) requestReceiptOnAppStore:(void(^)(id receipt, NSURLResponse *response, NSError *error))completion;
 
 @end
