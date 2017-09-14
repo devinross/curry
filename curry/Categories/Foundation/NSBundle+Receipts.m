@@ -35,7 +35,7 @@
 @implementation NSBundle (Receipts)
 
 
-- (void) requestReceiptWithURL:(NSURL*)url receiptData:(NSData*)receiptData Completion:(void(^)(id object, NSURLResponse *response, NSError *error))completion{
+- (void) requestReceiptWithURL:(NSURL*)url receiptData:(NSData*)receiptData completion:(void(^)(id object, NSURLResponse *response, NSError *error))completion{
 	
 	NSString *data = [receiptData base64EncodedStringWithOptions:0];
 	NSError *error = nil;
@@ -50,7 +50,7 @@
 	
 }
 
-- (void) requestReceiptOnAppStore:(void(^)(NSDictionary *receipt, NSURLResponse *response, NSError *error))completion{
+- (void) requestReceiptOnAppStore:(void(^)(id receipt, NSURLResponse *response, NSError *error))completion{
 	
 	NSURL *receipt_url = [[NSBundle mainBundle] appStoreReceiptURL];
 	NSData *receiptData = [NSData dataWithContentsOfURL:receipt_url];
@@ -60,10 +60,10 @@
 	}
 	
 	NSURL *productionURL = [NSURL URLWithString:@"https://buy.itunes.apple.com/verifyReceipt"];
-	[self requestReceiptWithURL:productionURL receiptData:receiptData Completion:^(id object, NSURLResponse *response, NSError *error) {
+	[self requestReceiptWithURL:productionURL receiptData:receiptData completion:^(id object, NSURLResponse *response, NSError *error) {
 		if([object isKindOfClass:[NSDictionary class]] && [object[@"status"] intValue] == 21007){
 			NSURL *sandboxURL = [NSURL URLWithString:@"https://sandbox.itunes.apple.com/verifyReceipt"];
-			[self requestReceiptWithURL:sandboxURL receiptData:receiptData Completion:^(id object, NSURLResponse *response, NSError *error) {
+			[self requestReceiptWithURL:sandboxURL receiptData:receiptData completion:^(id object, NSURLResponse *response, NSError *error) {
 				completion(object, response, error);
 			}];
 			return;
