@@ -34,7 +34,7 @@ import Foundation
 
 extension Bundle {
 	
-	public var appName: String? {
+	@objc public var appName: String? {
 		
 		if let info = self.infoDictionary {
 			if let appName = info[kCFBundleNameKey as String]{
@@ -45,7 +45,7 @@ extension Bundle {
 		return nil
 	}
 	
-	public var version: String? {
+	@objc public var version: String? {
 		
 		if let info = self.infoDictionary {
 			if let version = info["CFBundleShortVersionString"]{
@@ -56,7 +56,7 @@ extension Bundle {
 		return nil
 	}
 	
-	public var build: String? {
+	@objc public var build: String? {
 		
 		if let info = self.infoDictionary {
 			if let build = info[kCFBundleVersionKey as String]{
