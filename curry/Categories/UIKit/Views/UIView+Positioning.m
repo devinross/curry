@@ -72,6 +72,14 @@
 - (CGFloat) height{
     return CGFrameGetHeight(self);
 }
+
+- (CGFloat) boundsWidth{
+	return CGBoundsGetWidth(self);
+}
+- (CGFloat) boundsHeight{
+	return CGBoundsGetHeight(self.bounds);
+}
+
 - (void) setHeight:(CGFloat)height{
     CGRect frame = self.frame;
     frame.size.height = height;

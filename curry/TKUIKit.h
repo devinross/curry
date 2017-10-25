@@ -182,6 +182,16 @@ UIKIT_STATIC_INLINE CGFloat CGFrameGetHeight(UIView *view){
 	return CGRectGetHeight(view.frame);
 }
 
+UIKIT_STATIC_INLINE CGFloat CGBoundsGetWidth(UIView *view);
+UIKIT_STATIC_INLINE CGFloat CGBoundsGetWidth(UIView *view){
+	return CGRectGetWidth(view.bounds);
+}
+
+UIKIT_STATIC_INLINE CGFloat CGBoundsGetHeight(UIView *view);
+UIKIT_STATIC_INLINE CGFloat CGBoundsGetHeight(UIView *view){
+	return CGRectGetHeight(view.bounds);
+}
+
 UIKIT_STATIC_INLINE CGFloat CGFrameGetMinX(UIView *view);
 UIKIT_STATIC_INLINE CGFloat CGFrameGetMinX(UIView *view){
 	return CGRectGetMinX(view.frame);
