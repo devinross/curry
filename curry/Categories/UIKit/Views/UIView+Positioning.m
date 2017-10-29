@@ -77,7 +77,7 @@
 	return CGBoundsGetWidth(self);
 }
 - (CGFloat) boundsHeight{
-	return CGBoundsGetHeight(self.bounds);
+	return CGBoundsGetHeight(self);
 }
 
 - (void) setHeight:(CGFloat)height{
