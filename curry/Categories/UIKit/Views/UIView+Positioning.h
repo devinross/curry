@@ -66,10 +66,10 @@
 @property (nonatomic,assign) CGFloat height;
 
 /** The width of the view's frame. */
-@property (nonatomic,assign) CGFloat boundsWidth;
+@property (nonatomic,readonly) CGFloat boundsWidth;
 
 /** The height of the view's frame. */
-@property (nonatomic,assign) CGFloat boundsHeight;
+@property (nonatomic,readonly) CGFloat boundsHeight;
 
 /** The size of the view's frame. */
 @property (nonatomic,assign) CGSize size;

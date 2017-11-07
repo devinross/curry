@@ -86,7 +86,7 @@
 	
 	
 	if([UIDevice currentDevice].padIdiom){
-		xPad = 16, leftInset = 24, vertInset = 12, vertSpace = 10;
+		xPad = 16; leftInset = 24; vertInset = 12; vertSpace = 10;
 		w = (padRect.size.width - leftInset - leftInset - (xPad * 2)) / 3;
 		h = (padRect.size.height - vertInset - vertInset - (vertSpace * 3)) / 4;
 		bottomPad = 0;
