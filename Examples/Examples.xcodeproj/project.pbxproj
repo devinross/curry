@@ -26,6 +26,7 @@
 		20A85BD41CA3522C00632668 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 20A85BD31CA3522C00632668 /* Assets.xcassets */; };
 		20A85BDE1CA3523C00632668 /* curryTV.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20D4C8A31BB52A0100C75EEC /* curryTV.framework */; };
 		20A85BDF1CA3523C00632668 /* curryTV.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 20D4C8A31BB52A0100C75EEC /* curryTV.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		20B986F02040A88E00F7BF6A /* VelocityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 20B986EA2040A88E00F7BF6A /* VelocityViewController.m */; };
 		20CB9CF81AF3EA47002E9F1C /* BlocksViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 20CB9CF71AF3EA47002E9F1C /* BlocksViewController.m */; };
 		20D4C89C1BB52A0000C75EEC /* PDFGeneratorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 20D4C89B1BB52A0000C75EEC /* PDFGeneratorViewController.m */; };
 		20EC669D1B3DAD1D0027D6A2 /* balllin.mov in Resources */ = {isa = PBXBuildFile; fileRef = 20EC669C1B3DAD1D0027D6A2 /* balllin.mov */; };
@@ -134,6 +135,8 @@
 		20A85BD11CA3522C00632668 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		20A85BD31CA3522C00632668 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		20A85BD51CA3522C00632668 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		20B986EA2040A88E00F7BF6A /* VelocityViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VelocityViewController.m; sourceTree = "<group>"; };
+		20B986EF2040A88E00F7BF6A /* VelocityViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VelocityViewController.h; sourceTree = "<group>"; };
 		20CB9CF61AF3EA47002E9F1C /* BlocksViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BlocksViewController.h; sourceTree = "<group>"; };
 		20CB9CF71AF3EA47002E9F1C /* BlocksViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BlocksViewController.m; sourceTree = "<group>"; };
 		20D4C89A1BB52A0000C75EEC /* PDFGeneratorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PDFGeneratorViewController.h; sourceTree = "<group>"; };
@@ -187,6 +190,8 @@
 				20785FC41AD83BBE000DC57F /* AppDelegate.swift */,
 				20785FEA1AD83C63000DC57F /* RootTableViewController.h */,
 				20785FEB1AD83C63000DC57F /* RootTableViewController.m */,
+				20B986EF2040A88E00F7BF6A /* VelocityViewController.h */,
+				20B986EA2040A88E00F7BF6A /* VelocityViewController.m */,
 				207E91541D87A45600EECF1D /* CustomTextEntryViewController.swift */,
 				207E91501D879F3100EECF1D /* BrightnessViewController.swift */,
 				207E914A1D879D3100EECF1D /* GesturesViewController.swift */,
@@ -417,6 +422,7 @@
 			files = (
 				207E91511D879F3100EECF1D /* BrightnessViewController.swift in Sources */,
 				20785FC51AD83BBE000DC57F /* AppDelegate.swift in Sources */,
+				20B986F02040A88E00F7BF6A /* VelocityViewController.m in Sources */,
 				20CB9CF81AF3EA47002E9F1C /* BlocksViewController.m in Sources */,
 				207E91531D87A1C800EECF1D /* ColorsViewController.swift in Sources */,
 				2068B5B21EB927E4007FB656 /* ProgressTaskViewController.swift in Sources */,

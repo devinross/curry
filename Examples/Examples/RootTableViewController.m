@@ -33,7 +33,7 @@
 #import "BlocksViewController.h"
 #import "PDFGeneratorViewController.h"
 #import <Examples-Swift.h>
-
+#import "VelocityViewController.h"
 
 @implementation RootTableViewController
 
@@ -41,7 +41,7 @@
 
 - (void) viewDidLoad {
     [super viewDidLoad];
-    self.items = @[@"Card Modal",@"Custom Text Fields",@"Gestures Blocks",@"Action Sheet Blocks",@"Custom Keyboards",@"Video View Controller",@"Screen Brightness",@"PDF Generation",@"Colors",@"Progress Task",@"Text View"];
+    self.items = @[@"Card Modal",@"Custom Text Fields",@"Gestures Blocks",@"Action Sheet Blocks",@"Custom Keyboards",@"Video View Controller",@"Screen Brightness",@"PDF Generation",@"Colors",@"Progress Task",@"Text View",@"Velocity"];
     [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:IDENTIFIER];
     self.title = NSLocalizedString(@"Curry", @"");
 }
@@ -90,6 +90,9 @@
 		ctr = ProgressTaskViewController.new;
 	else if(indexPath.row == 10)
 		ctr = TextViewViewController.new;
+	else if(indexPath.row == 11){
+		ctr = VelocityViewController.new;
+	}
 
     [self.navigationController pushViewController:ctr animated:YES];
     
