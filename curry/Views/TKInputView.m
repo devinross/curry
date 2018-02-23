@@ -49,6 +49,8 @@
 @property (nonatomic,strong) NSTimer *holdTimer;
 @property (nonatomic,assign) NSInteger holdCounter;
 
+@property (nonatomic,assign) CGRect originalFrame;
+
 @end
 
 @implementation TKInputView
@@ -78,7 +80,8 @@
 - (instancetype) initWithFrame:(CGRect)frame withKeysModels:(NSArray<TKInputKey*>*)keys{
 	frame.size = [TKInputView sizeOfKeyboardForMainScreen];
 	if(!(self=[super initWithFrame:frame])) return nil;
-	
+	self.originalFrame = frame;
+
 	self.keyViews = keys;
 	self.autoresizingMask = UIViewAutoresizingFlexibleHeight | UIViewAutoresizingFlexibleWidth;
 	self.backgroundColor = [UIColor colorWithHex:0xd7dadf];
@@ -158,24 +161,34 @@
 - (void) layoutSubviews{
 	[super layoutSubviews];
 	
+	CGFloat bottom = 0;
+	CGRect rr = self.frame;
+	
+	if (@available(iOS 11.0, *)) {
+		if(self.safeAreaInsets.bottom > 0){
+			rr.size.height += self.safeAreaInsets.bottom;
+			rr.origin.y -= self.safeAreaInsets.bottom;
+			self.frame =  rr;
+			
+			bottom = self.safeAreaInsets.bottom;
+
+		}
+	}
+	
+	
+	
 	if(self.traitCollection.userInterfaceIdiom == UIUserInterfaceIdiomPhone){
 		
-		CGFloat compact = self.traitCollection.verticalSizeClass == UIUserInterfaceSizeClassCompact;
-		
+		BOOL compact = self.traitCollection.verticalSizeClass == UIUserInterfaceSizeClassCompact;
 		NSInteger x = (self.bounds.size.width - 450) / 2;
-		
-		
 		CGRect frame = CGRectInset(self.bounds, compact ? x : 0, 0);
-		
 		frame.origin.y += 1;
 		frame.size.height += 1;
-		
+		frame.size.height -= bottom;
 		self.containerView.frame = frame;
-		
-		
-		
-		
+
 	}
+	
 	
 }
 

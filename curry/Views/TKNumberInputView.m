@@ -102,7 +102,9 @@
 	self.sevenKey.frame =	CGRectMakeWithSize( leftInset,				(h+vertSpace)*2 + vertInset,	s);
 	self.eightKey.frame =	CGRectMakeWithSize( leftInset+w+xPad,		(h+vertSpace)*2 + vertInset,	s);
 	self.nineKey.frame =	CGRectMakeWithSize( leftInset+w*2+xPad*2,	(h+vertSpace)*2 + vertInset,	s);
-	self.zeroKey.frame =	CGRectMake( leftInset, h*3+vertSpace*3 + vertInset,	w*3+xPad*2, s.height);
+	
+	CGFloat bottom = h*3+vertSpace*3 + vertInset;
+	self.zeroKey.frame =	CGRectMake( leftInset, bottom,	w*3+xPad*2, padRect.size.height + bottomPad - bottom);
 	
 	
 	NSInteger minX = CGRectGetMaxX(self.threeKey.frame) + xPad;
