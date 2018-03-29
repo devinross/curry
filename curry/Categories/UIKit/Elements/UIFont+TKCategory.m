@@ -315,7 +315,7 @@
 	}
 	
 	else if( EQL(cat,UIContentSizeCategorySmall) ){
-		fontSize = delta - (downDelta * 2);
+		fontSize = l - (downDelta * 2);
 	}
 	
 	else if( EQL(cat,UIContentSizeCategoryExtraSmall) ){
