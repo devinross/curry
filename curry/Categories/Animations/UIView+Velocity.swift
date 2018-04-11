@@ -34,6 +34,7 @@ import UIKit
 extension UIView {
 	
 	
+	@available(tvOS 10.0, *)
 	@available(iOS 10.0, *)
 	@discardableResult @objc public class func animate(withDuration: TimeInterval, dampingRatio: CGFloat, initialVelocity:CGVector, animations: @escaping (()->Void), completion: ((UIViewAnimatingPosition) -> Swift.Void)?) -> UIViewPropertyAnimator {
 

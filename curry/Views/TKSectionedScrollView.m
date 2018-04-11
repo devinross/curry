@@ -196,7 +196,7 @@
                 sv.center = CGPointMake(minX + CGFrameGetWidth(sv)/2, sv.center.y);
                 
                 CGFloat end = sv.contentSize.width - CGFrameGetWidth(sv);
-                sv.contentOffset = CGPointMake( ctr >= _currentSection ? 0 : end , 0);
+				sv.contentOffset = CGPointMake( ctr >= currentSection ? 0 : end , 0);
                 
                 ctr++;
             }
@@ -212,7 +212,7 @@
                 sv.center = CGPointMake(minX + CGFrameGetWidth(sv)/2, sv.center.y);
                 
                 CGFloat end = sv.contentSize.width - CGFrameGetWidth(sv);
-                sv.contentOffset = CGPointMake( ctr >= _currentSection ? 0 : end , 0);
+                sv.contentOffset = CGPointMake( ctr >= currentSection ? 0 : end , 0);
                 
                 ctr++;
             }
