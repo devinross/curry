@@ -64,7 +64,7 @@ class TextViewViewController: UIViewController {
 		insetSlider.maximumValue = 12
 		insetSlider.addEventHandler({ (sender) in
 			let inset = CGFloat(self.insetSlider.value)
-			self.textView.textContainerInset = UIEdgeInsetsMake(inset, inset, inset, inset)
+			self.textView.textContainerInset = UIEdgeInsets.init(top: inset, left: inset, bottom: inset, right: inset)
 		}, for: .valueChanged)
 		self.insetSlider = insetSlider
 		self.view.addSubview(self.insetSlider)

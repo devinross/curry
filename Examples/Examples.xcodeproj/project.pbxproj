@@ -324,7 +324,7 @@
 				TargetAttributes = {
 					20785FBE1AD83BBE000DC57F = {
 						CreatedOnToolsVersion = 6.3;
-						LastSwiftMigration = 0900;
+						LastSwiftMigration = 1000;
 					};
 					20A85BC41CA3522C00632668 = {
 						CreatedOnToolsVersion = 7.3;
@@ -588,8 +588,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.devinross.curryexamples.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "Examples/Bridging-Header.h";
-				SWIFT_SWIFT3_OBJC_INFERENCE = Off;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
@@ -606,8 +605,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.devinross.curryexamples.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "Examples/Bridging-Header.h";
-				SWIFT_SWIFT3_OBJC_INFERENCE = Off;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;

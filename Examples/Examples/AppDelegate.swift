@@ -41,11 +41,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
 	
-	func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+	func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         
         window = UIWindow(frame: UIScreen.main.bounds)
-        window?.windowLevel = UIWindowLevelNormal
+        window?.windowLevel = UIWindow.Level.normal
         window?.backgroundColor = UIColor.white
         
         rootViewController = RootTableViewController()
