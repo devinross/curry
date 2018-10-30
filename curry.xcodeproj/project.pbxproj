@@ -223,6 +223,11 @@
 		208CCE971C35855D009EE52E /* NSObject+DataHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 208CCE911C35855D009EE52E /* NSObject+DataHelper.m */; };
 		208CCE981C35855D009EE52E /* NSObject+DataHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 208CCE911C35855D009EE52E /* NSObject+DataHelper.m */; };
 		208CCE991C35855D009EE52E /* NSObject+DataHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 208CCE911C35855D009EE52E /* NSObject+DataHelper.m */; };
+		209507352188EA7E00AD35F0 /* URLRequest+TKCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 209507342188EA7E00AD35F0 /* URLRequest+TKCategory.swift */; };
+		209507382188EB3700AD35F0 /* NSURLRequest+TKCategory.h in Headers */ = {isa = PBXBuildFile; fileRef = 209507362188EB3700AD35F0 /* NSURLRequest+TKCategory.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		209507392188EB3700AD35F0 /* NSURLRequest+TKCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 209507372188EB3700AD35F0 /* NSURLRequest+TKCategory.m */; };
+		2095073A2188EB4500AD35F0 /* NSURLRequest+TKCategory.h in Headers */ = {isa = PBXBuildFile; fileRef = 209507362188EB3700AD35F0 /* NSURLRequest+TKCategory.h */; };
+		2095073B2188EB4700AD35F0 /* NSURLRequest+TKCategory.h in Headers */ = {isa = PBXBuildFile; fileRef = 209507362188EB3700AD35F0 /* NSURLRequest+TKCategory.h */; };
 		209761E91BD9EC0C00EE6F81 /* UIControl+Blocks.h in Headers */ = {isa = PBXBuildFile; fileRef = 20CB9D001AF405CD002E9F1C /* UIControl+Blocks.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		209761EC1BD9EC2F00EE6F81 /* TKVideoViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 20E110721B3B2651006A2CD6 /* TKVideoViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		209761ED1BD9EC3200EE6F81 /* TKVideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 20E110731B3B2651006A2CD6 /* TKVideoViewController.m */; };
@@ -546,6 +551,9 @@
 		2082D0881DB00EB3000C4ED7 /* NSString+TKUIKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+TKUIKit.m"; sourceTree = "<group>"; };
 		208CCE901C35855D009EE52E /* NSObject+DataHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+DataHelper.h"; sourceTree = "<group>"; };
 		208CCE911C35855D009EE52E /* NSObject+DataHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+DataHelper.m"; sourceTree = "<group>"; };
+		209507342188EA7E00AD35F0 /* URLRequest+TKCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URLRequest+TKCategory.swift"; sourceTree = "<group>"; };
+		209507362188EB3700AD35F0 /* NSURLRequest+TKCategory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSURLRequest+TKCategory.h"; sourceTree = "<group>"; };
+		209507372188EB3700AD35F0 /* NSURLRequest+TKCategory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSURLRequest+TKCategory.m"; sourceTree = "<group>"; };
 		2097F33C1B3D94C300247736 /* TKWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TKWindow.h; sourceTree = "<group>"; };
 		2097F33D1B3D94C300247736 /* TKWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TKWindow.m; sourceTree = "<group>"; };
 		2098BA221B0F6C4F000E0074 /* NSTimer+Blocks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSTimer+Blocks.h"; sourceTree = "<group>"; };
@@ -767,6 +775,9 @@
 				2040D5921DBF11A900430963 /* NSBundle+Receipts.m */,
 				2068B5A31EB91F77007FB656 /* NSURLSession+TKProgressDataTask.h */,
 				2068B5A41EB91F77007FB656 /* NSURLSession+TKProgressDataTask.m */,
+				209507342188EA7E00AD35F0 /* URLRequest+TKCategory.swift */,
+				209507362188EB3700AD35F0 /* NSURLRequest+TKCategory.h */,
+				209507372188EB3700AD35F0 /* NSURLRequest+TKCategory.m */,
 			);
 			path = Foundation;
 			sourceTree = "<group>";
@@ -1034,6 +1045,7 @@
 				200B625B1AD7FB460049E35C /* curry.h in Headers */,
 				200B62EC1AD7FEF80049E35C /* UILabel+TKCategory.h in Headers */,
 				2068B5A51EB91F77007FB656 /* NSURLSession+TKProgressDataTask.h in Headers */,
+				209507382188EB3700AD35F0 /* NSURLRequest+TKCategory.h in Headers */,
 				200B631C1AD804400049E35C /* TKSoundAlertController.h in Headers */,
 				200B62EE1AD7FEF80049E35C /* UIAlertView+TKCategory.h in Headers */,
 				200B62941AD7FC5E0049E35C /* NSMutableAttributedString+TKCategory.h in Headers */,
@@ -1129,6 +1141,7 @@
 				208CCE951C35855D009EE52E /* NSObject+DataHelper.h in Headers */,
 				20B5FE3B1BB363B600C0F848 /* NSString+TKCategory.h in Headers */,
 				20B5FE411BB363CB00C0F848 /* NSMutableArray+TKCategory.h in Headers */,
+				2095073B2188EB4700AD35F0 /* NSURLRequest+TKCategory.h in Headers */,
 				2069E8191C78EFCD003035FF /* Headers.h in Headers */,
 				207C97B51BD7F3F200342677 /* NSView+TKCategory.h in Headers */,
 				2068B5A81EB9268B007FB656 /* NSURLSession+TKProgressDataTask.h in Headers */,
@@ -1163,6 +1176,7 @@
 				20CEA4381BA110AF0009D60C /* NSString+TKCategory.h in Headers */,
 				20CEA4DC1BA1503D0009D60C /* UIScrollView+Positioning.h in Headers */,
 				2010DCF01BB0F5F800810A98 /* TKUIKit.h in Headers */,
+				2095073A2188EB4500AD35F0 /* NSURLRequest+TKCategory.h in Headers */,
 				20CEA4451BA110D90009D60C /* NSURLSession+TKCategory.h in Headers */,
 				20CEA4331BA110900009D60C /* TKFoundation.h in Headers */,
 				20CEA47A1BA112C40009D60C /* TKCurrentTimeLabel.h in Headers */,
@@ -1420,6 +1434,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				200B62EF1AD7FEF80049E35C /* UIAlertView+TKCategory.m in Sources */,
+				209507352188EA7E00AD35F0 /* URLRequest+TKCategory.swift in Sources */,
 				20E131CD1AF4107F0011492F /* UILabel+Initializers.m in Sources */,
 				204922B51B45D8DB00C22245 /* TKTextFieldCell.m in Sources */,
 				20F19B1A1AE07E8500077DA1 /* UIGestureRecognizer+Blocks.m in Sources */,
@@ -1460,6 +1475,7 @@
 				200B628B1AD7FC5E0049E35C /* NSString+TKCategory.m in Sources */,
 				207860271AD84F11000DC57F /* NSURLSession+TKCategory.m in Sources */,
 				200B63151AD804350049E35C /* TKShapeView.m in Sources */,
+				209507392188EB3700AD35F0 /* NSURLRequest+TKCategory.m in Sources */,
 				200B63131AD804350049E35C /* TKGradientView.m in Sources */,
 				202DBEBE1AF4347A00B0CE67 /* TKNumberInputView.m in Sources */,
 				20A75C691AD8332F00E2106A /* TKSectionedScrollView.m in Sources */,
