@@ -128,6 +128,8 @@
 		20173BD81BE62B9200367A60 /* TKTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 200B62FF1AD804340049E35C /* TKTableViewController.m */; };
 		20173BFB1BE87B0900367A60 /* UIAlertController+TKCategory.h in Headers */ = {isa = PBXBuildFile; fileRef = 20A877111BBF554100A403C2 /* UIAlertController+TKCategory.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		20173BFC1BE87B0D00367A60 /* UIAlertController+TKCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 20A877121BBF554100A403C2 /* UIAlertController+TKCategory.m */; };
+		201BED4621C0681600CC13BE /* UILabel+Spacing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 201BED4521C0681600CC13BE /* UILabel+Spacing.swift */; };
+		201BED4721C0687600CC13BE /* UILabel+Spacing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 201BED4521C0681600CC13BE /* UILabel+Spacing.swift */; };
 		202D35D51BDB252600886913 /* TKCollectionViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 202D35D31BDB252600886913 /* TKCollectionViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		202D35D61BDB252600886913 /* TKCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 202D35D41BDB252600886913 /* TKCollectionViewController.m */; };
 		202D35D71BDB2CAB00886913 /* TKCollectionViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 202D35D31BDB252600886913 /* TKCollectionViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -226,8 +228,10 @@
 		209507352188EA7E00AD35F0 /* URLRequest+TKCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 209507342188EA7E00AD35F0 /* URLRequest+TKCategory.swift */; };
 		209507382188EB3700AD35F0 /* NSURLRequest+TKCategory.h in Headers */ = {isa = PBXBuildFile; fileRef = 209507362188EB3700AD35F0 /* NSURLRequest+TKCategory.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		209507392188EB3700AD35F0 /* NSURLRequest+TKCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 209507372188EB3700AD35F0 /* NSURLRequest+TKCategory.m */; };
-		2095073A2188EB4500AD35F0 /* NSURLRequest+TKCategory.h in Headers */ = {isa = PBXBuildFile; fileRef = 209507362188EB3700AD35F0 /* NSURLRequest+TKCategory.h */; };
-		2095073B2188EB4700AD35F0 /* NSURLRequest+TKCategory.h in Headers */ = {isa = PBXBuildFile; fileRef = 209507362188EB3700AD35F0 /* NSURLRequest+TKCategory.h */; };
+		2095073A2188EB4500AD35F0 /* NSURLRequest+TKCategory.h in Headers */ = {isa = PBXBuildFile; fileRef = 209507362188EB3700AD35F0 /* NSURLRequest+TKCategory.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2095073B2188EB4700AD35F0 /* NSURLRequest+TKCategory.h in Headers */ = {isa = PBXBuildFile; fileRef = 209507362188EB3700AD35F0 /* NSURLRequest+TKCategory.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2095073C2188EE2200AD35F0 /* URLRequest+TKCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 209507342188EA7E00AD35F0 /* URLRequest+TKCategory.swift */; };
+		2095073D2188EE2300AD35F0 /* URLRequest+TKCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 209507342188EA7E00AD35F0 /* URLRequest+TKCategory.swift */; };
 		209761E91BD9EC0C00EE6F81 /* UIControl+Blocks.h in Headers */ = {isa = PBXBuildFile; fileRef = 20CB9D001AF405CD002E9F1C /* UIControl+Blocks.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		209761EC1BD9EC2F00EE6F81 /* TKVideoViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 20E110721B3B2651006A2CD6 /* TKVideoViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		209761ED1BD9EC3200EE6F81 /* TKVideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 20E110731B3B2651006A2CD6 /* TKVideoViewController.m */; };
@@ -486,6 +490,7 @@
 		2010DCB21BB0E40E00810A98 /* curryWatch.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = curryWatch.h; sourceTree = "<group>"; };
 		2010DCB41BB0E40E00810A98 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2010DCBF1BB0EA0600810A98 /* TKUIKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TKUIKit.h; sourceTree = "<group>"; };
+		201BED4521C0681600CC13BE /* UILabel+Spacing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILabel+Spacing.swift"; sourceTree = "<group>"; };
 		202D35D31BDB252600886913 /* TKCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TKCollectionViewController.h; sourceTree = "<group>"; };
 		202D35D41BDB252600886913 /* TKCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TKCollectionViewController.m; sourceTree = "<group>"; };
 		202DBE6F1AF4121C00B0CE67 /* TKCustomPresentationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TKCustomPresentationViewController.h; sourceTree = "<group>"; };
@@ -868,6 +873,7 @@
 				200B62C11AD7FEF80049E35C /* UIBarButtonItem+TKCategory.m */,
 				20E131CA1AF4107F0011492F /* UIView+Initializers.h */,
 				20E131CB1AF4107F0011492F /* UIView+Initializers.m */,
+				201BED4521C0681600CC13BE /* UILabel+Spacing.swift */,
 				20E131C81AF4107F0011492F /* UILabel+Initializers.h */,
 				20E131C91AF4107F0011492F /* UILabel+Initializers.m */,
 				200B62CC1AD7FEF80049E35C /* UIAlertView+TKCategory.h */,
@@ -1483,6 +1489,7 @@
 				20A46DE01B61C097004A4153 /* TKPhoneNumberTextField.m in Sources */,
 				202DBEBC1AF4347A00B0CE67 /* TKInputKey.m in Sources */,
 				207E91AF1D87D17D00EECF1D /* UIDevice+TKCategory.swift in Sources */,
+				201BED4621C0681600CC13BE /* UILabel+Spacing.swift in Sources */,
 				20E131CF1AF4107F0011492F /* UIView+Initializers.m in Sources */,
 				200B62D71AD7FEF80049E35C /* UIImage+TKCategory.m in Sources */,
 				2078601B1AD84A87000DC57F /* TKCreditCardNumberTextField.m in Sources */,
@@ -1559,6 +1566,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2095073D2188EE2300AD35F0 /* URLRequest+TKCategory.swift in Sources */,
 				207C97B21BD7F1AC00342677 /* NSView+Positioning.m in Sources */,
 				20B5FE3A1BB363B400C0F848 /* NSObject+TKCategory.m in Sources */,
 				207C97B61BD7F3F200342677 /* NSView+TKCategory.m in Sources */,
@@ -1579,6 +1587,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				201BED4721C0687600CC13BE /* UILabel+Spacing.swift in Sources */,
 				20CEA4721BA112530009D60C /* TKCustomPresentationViewController.m in Sources */,
 				20CEA47D1BA112D00009D60C /* TKSectionedScrollView.m in Sources */,
 				2082D08D1DB00EB3000C4ED7 /* NSString+TKUIKit.m in Sources */,
@@ -1603,6 +1612,7 @@
 				209761F61BD9F27900EE6F81 /* UIGestureRecognizer+TKCategory.m in Sources */,
 				20CEA4871BA113110009D60C /* TKCreditCardZipTextField.m in Sources */,
 				20CEA47B1BA112C70009D60C /* TKCurrentTimeLabel.m in Sources */,
+				2095073C2188EE2200AD35F0 /* URLRequest+TKCategory.swift in Sources */,
 				209761ED1BD9EC3200EE6F81 /* TKVideoViewController.m in Sources */,
 				20CEA4851BA1130C0009D60C /* TKCreditCardExpirationTextField.m in Sources */,
 				203BDD3C1BE17CFC00572452 /* TKSoundAlertController.m in Sources */,
