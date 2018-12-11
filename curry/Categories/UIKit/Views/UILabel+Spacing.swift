@@ -33,7 +33,7 @@ import UIKit
 
 extension UILabel {
 	
-	@objc func setLineSpacing(lineSpacing: CGFloat = 0.0, lineHeightMultiple: CGFloat = 0.0) {
+	@objc public func setLineSpacing(lineSpacing: CGFloat = 0.0, lineHeightMultiple: CGFloat = 0.0) {
 		
 		guard let labelText = self.text else { return }
 		
@@ -58,7 +58,12 @@ extension UILabel {
 		self.attributedText = attributedString
 	}
 	
-	@objc func setLineSpacing(lineSpacing: CGFloat = 0.0) {
-		setLineSpacing(lineSpacing: lineSpacing, lineHeightMultiple: 0)
+	@objc public var lineSpacing : CGFloat {
+		set {
+			setLineSpacing(lineSpacing: newValue, lineHeightMultiple: 0)
+		}
+		get {
+			return 0
+		}
 	}
 }
