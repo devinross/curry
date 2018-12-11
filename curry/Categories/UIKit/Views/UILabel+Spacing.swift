@@ -58,7 +58,7 @@ extension UILabel {
 		self.attributedText = attributedString
 	}
 	
-	@objc public func setLineSpacing(lineSpacing: CGFloat = 0.0){
+	@objc public func setLineSpacing(_ lineSpacing: CGFloat = 0.0){
 		setLineSpacing(lineSpacing: lineSpacing, lineHeightMultiple: 0)
 	}
 }
