@@ -39,4 +39,16 @@
 /** The path defining the shape of the view. */
 @property CGPathRef path;
 
+/** The CAShapeLayer object. */
+@property (nonatomic,readonly) CAShapeLayer *shapeLayer;
+
+/** The stroke color */
+@property (nonatomic,strong) UIColor *strokeColor;
+
+/** The stoke's line width. */
+@property (nonatomic,assign) CGFloat lineWidth;
+
+/** The fill color. */
+@property (nonatomic,strong) UIColor *fillColor;
+
 @end

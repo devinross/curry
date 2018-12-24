@@ -50,4 +50,30 @@
 	[self _shapeLayer].path = path;
 }
 
+- (CAShapeLayer*) shapeLayer{
+	return [self _shapeLayer];
+}
+
+- (void) setStrokeColor:(UIColor*)strokeColor{
+	self.shapeLayer.strokeColor = strokeColor.CGColor;
+}
+- (void) setFillColor:(UIColor*)fillColor{
+	self.shapeLayer.fillColor = fillColor.CGColor;
+}
+
+- (UIColor*) strokeColor{
+	return [UIColor colorWithCGColor:self.shapeLayer.strokeColor];
+}
+- (UIColor*) fillColor{
+	return [UIColor colorWithCGColor:self.shapeLayer.fillColor];
+}
+
+- (void) setLineWidth:(CGFloat)strokeWidth{
+	self.shapeLayer.lineWidth = strokeWidth;
+}
+- (CGFloat) lineWidth{
+	return self.shapeLayer.lineWidth;
+}
+
+
 @end
