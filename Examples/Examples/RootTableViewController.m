@@ -41,7 +41,7 @@
 
 - (void) viewDidLoad {
     [super viewDidLoad];
-    self.items = @[@"Card Modal",@"Custom Text Fields",@"Gestures Blocks",@"Action Sheet Blocks",@"Custom Keyboards",@"Video View Controller",@"Screen Brightness",@"PDF Generation",@"Colors",@"Progress Task",@"Text View",@"Velocity"];
+    self.items = @[@"Card Modal",@"Custom Text Fields",@"Gestures Blocks",@"Action Sheet Blocks",@"Custom Keyboards",@"Video View Controller",@"Screen Brightness",@"PDF Generation",@"Colors",@"Progress Task",@"Text View",@"Velocity",@"Web"];
     [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:IDENTIFIER];
     self.title = NSLocalizedString(@"Curry", @"");
 }
@@ -92,6 +92,8 @@
 		ctr = TextViewViewController.new;
 	else if(indexPath.row == 11){
 		ctr = VelocityViewController.new;
+	}else if(indexPath.row == 12){
+		ctr = [[TKWebViewController alloc] initWithURL:[NSURL URLWithString:@"https://apple.com"]];
 	}
 
     [self.navigationController pushViewController:ctr animated:YES];

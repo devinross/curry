@@ -31,10 +31,10 @@
 
 
 @import UIKit;
+@import WebKit;
 
-
-/** This class creates a `UIViewController` with a basic `UIWebView` as the focal point view. */
-@interface TKWebViewController : UIViewController <UIWebViewDelegate>
+/** This class creates a `UIViewController` with a basic `WKWebView` as the focal point view. */
+@interface TKWebViewController : UIViewController
 
 
 /** Initializes a web view controller that will load the given `NSURL` object.
@@ -59,7 +59,7 @@
 @property (nonatomic,strong) NSURLRequest *URLRequest;
 
 /** Returns the `UIWebView`	managed by the controller object. */
-@property (nonatomic,strong) UIWebView *webView;
+@property (nonatomic,strong) WKWebView *webView;
 
 /** Returns the `UIBarButtonItem` that shows the share sheet. */
 @property (nonatomic,strong) UIBarButtonItem *actionBarButtonItem;

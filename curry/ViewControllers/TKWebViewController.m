@@ -52,16 +52,16 @@
 }
 
 - (void) dealloc{
-	_webView.delegate = nil;
+	_webView.UIDelegate = nil;
+	_webView.navigationDelegate = nil;
 	[_webView stopLoading];
 }
 
 #pragma mark View Lifecycle
 - (void) loadView{
 	[super loadView];
-	self.webView = [[UIWebView alloc] initWithFrame:self.view.bounds];
-	self.webView.delegate = self;
-	self.webView.scalesPageToFit = YES;
+	self.webView = [[WKWebView alloc] initWithFrame:self.view.bounds];
+//	self.webView.scalesPageToFit = YES;
 	self.webView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
 	[self.view addSubview:self.webView];
 }
@@ -74,50 +74,50 @@
 }
 
 #pragma mark Button Actions
-- (void) showActionSheet:(UIBarButtonItem*)sender{
-	NSURL *currentURL = self.webView.request.URL;
-	UIActivityViewController *activityVC = [[UIActivityViewController alloc] initWithActivityItems:@[currentURL] applicationActivities:nil];
-	activityVC.excludedActivityTypes = @[UIActivityTypePostToWeibo, UIActivityTypeSaveToCameraRoll, UIActivityTypeAssignToContact];
-	
-	
-	if([UIDevice currentDevice].padIdiom){
-		
-		UIPopoverController *popup = [[UIPopoverController alloc] initWithContentViewController:activityVC];
-		[popup presentPopoverFromBarButtonItem:sender permittedArrowDirections:UIPopoverArrowDirectionAny animated:YES];
-		
-	}else{
-		
-		[self presentViewController:activityVC animated:YES completion:nil];
-
-	}
-	
-}
+//- (void) showActionSheet:(UIBarButtonItem*)sender{
+//	NSURL *currentURL = self.webView.request.URL;
+//	UIActivityViewController *activityVC = [[UIActivityViewController alloc] initWithActivityItems:@[currentURL] applicationActivities:nil];
+//	activityVC.excludedActivityTypes = @[UIActivityTypePostToWeibo, UIActivityTypeSaveToCameraRoll, UIActivityTypeAssignToContact];
+//	
+//	
+//	if([UIDevice currentDevice].padIdiom){
+//		
+//		UIPopoverController *popup = [[UIPopoverController alloc] initWithContentViewController:activityVC];
+//		[popup presentPopoverFromBarButtonItem:sender permittedArrowDirections:UIPopoverArrowDirectionAny animated:YES];
+//		
+//	}else{
+//		
+//		[self presentViewController:activityVC animated:YES completion:nil];
+//
+//	}
+//	
+//}
 
 #pragma mark UIWebviewDelegate
-- (void) webViewDidStartLoad:(UIWebView *)webView{
-	if(self.navigationItem.rightBarButtonItem == _actionBarButtonItem)
-		self.navigationItem.rightBarButtonItem = self.loadingActivityBarButtonItem;
-}
-- (void) webViewDidFinishLoad:(UIWebView *)webView {
-	if(self.navigationItem.rightBarButtonItem == _loadingActivityBarButtonItem)
-		self.navigationItem.rightBarButtonItem = self.actionBarButtonItem;
-	self.title = [self.webView stringByEvaluatingJavaScriptFromString:@"document.title"];
-}
-- (void) webView:(UIWebView *)webView didFailLoadWithError:(NSError *)error {
-	if(self.navigationItem.rightBarButtonItem == _loadingActivityBarButtonItem)
-		self.navigationItem.rightBarButtonItem = self.actionBarButtonItem;
-	self.title = [self.webView stringByEvaluatingJavaScriptFromString:@"document.title"];
-}
-- (BOOL) webView:(UIWebView *)webView shouldStartLoadWithRequest:(NSURLRequest *)request navigationType:(UIWebViewNavigationType)navigationType{
-	
-	if(self.navigationController && (navigationType == UIWebViewNavigationTypeFormSubmitted || navigationType == UIWebViewNavigationTypeLinkClicked)){
-		TKWebViewController *vc = [[[self class] alloc] initWithURLRequest:request];
-		[self.navigationController pushViewController:vc animated:YES];
-		return NO;
-	}
-	
-	return YES;
-}
+//- (void) webViewDidStartLoad:(UIWebView *)webView{
+//	if(self.navigationItem.rightBarButtonItem == _actionBarButtonItem)
+//		self.navigationItem.rightBarButtonItem = self.loadingActivityBarButtonItem;
+//}
+//- (void) webViewDidFinishLoad:(UIWebView *)webView {
+//	if(self.navigationItem.rightBarButtonItem == _loadingActivityBarButtonItem)
+//		self.navigationItem.rightBarButtonItem = self.actionBarButtonItem;
+//	self.title = [self.webView stringByEvaluatingJavaScriptFromString:@"document.title"];
+//}
+//- (void) webView:(UIWebView *)webView didFailLoadWithError:(NSError *)error {
+//	if(self.navigationItem.rightBarButtonItem == _loadingActivityBarButtonItem)
+//		self.navigationItem.rightBarButtonItem = self.actionBarButtonItem;
+//	self.title = [self.webView stringByEvaluatingJavaScriptFromString:@"document.title"];
+//}
+//- (BOOL) webView:(UIWebView *)webView shouldStartLoadWithRequest:(NSURLRequest *)request navigationType:(UIWebViewNavigationType)navigationType{
+//	
+//	if(self.navigationController && (navigationType == UIWebViewNavigationTypeFormSubmitted || navigationType == UIWebViewNavigationTypeLinkClicked)){
+//		TKWebViewController *vc = [[[self class] alloc] initWithURLRequest:request];
+//		[self.navigationController pushViewController:vc animated:YES];
+//		return NO;
+//	}
+//	
+//	return YES;
+//}
 
 
 - (void) dismiss:(id)sender{
