@@ -66,7 +66,9 @@
     if(dropoffAddress) [array addObject:PARAM(@"dropoff[nickname]",dropoffName.URLEncode)];
     
     NSString *url = [NSString stringWithFormat:@"uber://?%@",[array componentsJoinedByString:@"&"]];
-    [self openURL:[NSURL URLWithString:url]];
+	[self openURL:[NSURL URLWithString:url] options:@{} completionHandler:^(BOOL success) {
+	
+	}];
 
     
 
@@ -83,7 +85,9 @@
     
     NSString *url = [NSString stringWithFormat:endpoint,latlong,[query stringByAddingPercentEncodingWithAllowedCharacters:[NSCharacterSet URLQueryAllowedCharacterSet]]];
     
-    [self openURL:[NSURL URLWithString:url]];
+	[self openURL:[NSURL URLWithString:url] options:@{} completionHandler:^(BOOL success) {
+	
+	}];
 }
 
 - (void) openAppleMapURLWithCoordinate:(CLLocationCoordinate2D)coordinates query:(NSString*)query{
@@ -94,7 +98,9 @@
     
     NSString *url = [NSString stringWithFormat:endpoint,latlong,[query stringByAddingPercentEncodingWithAllowedCharacters:[NSCharacterSet URLQueryAllowedCharacterSet]]];
     
-    [self openURL:[NSURL URLWithString:url]];
+	[self openURL:[NSURL URLWithString:url] options:@{} completionHandler:^(BOOL success) {
+	
+	}];
     
 }
 

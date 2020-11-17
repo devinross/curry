@@ -48,7 +48,6 @@
 #import "NSURLSession+TKProgressDataTask.h"
 #import "NSURLRequest+TKCategory.h"
 #import "NSTimer+Blocks.h"
-#import "NSUserDefaults+iCloud.h"
 
 #if TARGET_OS_IOS || TARGET_OS_TV
 
@@ -58,6 +57,8 @@
 #import "NSAttributedString+TKCategory.h"
 #import "NSMutableAttributedString+TKCategory.h"
 #import "NSBundle+Receipts.h"
+#import "NSUserDefaults+iCloud.h"
+
 
 // Categories -> UIKit -> Base
 #import "UIApplication+TKCategory.h"

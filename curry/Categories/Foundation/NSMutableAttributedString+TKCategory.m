@@ -71,7 +71,7 @@
 	[self addLineHeight:lineHeight range:NSMakeRange(0, self.length)];
 }
 
-
+#if !TARGET_OS_WATCH
 - (void) appendImage:(UIImage*)image{
 	NSTextAttachment *attachment = [[NSTextAttachment alloc] init];
 	attachment.image = image;
@@ -83,6 +83,7 @@
 	attachment.image = image;
 	[self insertAttributedString:[NSAttributedString attributedStringWithAttachment:attachment] atIndex:index];
 }
+#endif
 
 
 @end

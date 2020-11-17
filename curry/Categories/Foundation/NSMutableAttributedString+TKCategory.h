@@ -31,6 +31,7 @@
 
 @import Foundation;
 @import UIKit;
+@import CoreText;
 
 /** Additional functionality for `NSMutableAttributedString`.  */
 @interface NSMutableAttributedString (TKCategory)
@@ -100,9 +101,10 @@
 
 
 
-
+#if !TARGET_OS_WATCH
 - (void) appendImage:(UIImage*)image;
 
 - (void) insertImage:(UIImage*)image atIndex:(NSUInteger)index;
+#endif
 
 @end
