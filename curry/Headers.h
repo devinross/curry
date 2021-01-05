@@ -36,7 +36,6 @@
 #import "TKFoundation.h"
 
 // Categories -> Foundation
-#import "NSObject+JSON.h"
 #import "NSObject+TKCategory.h"
 #import "NSString+TKCategory.h"
 #import "NSArray+TKCategory.h"
@@ -61,9 +60,7 @@
 
 
 // Categories -> UIKit -> Base
-#import "UIApplication+TKCategory.h"
-#import "UIScreen+TKCategory.h"
-#import "UITraitCollection+TKCategory.h"
+
 
 // Categories -> UIKit -> Views
 #import "UIView+Positioning.h"
