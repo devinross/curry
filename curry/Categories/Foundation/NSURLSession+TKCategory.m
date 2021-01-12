@@ -30,7 +30,7 @@
  */
 
 #import "NSURLSession+TKCategory.h"
-#import "NSObject+JSON.h"
+
 
 @implementation NSURLSession (TKCategory)
 
@@ -44,6 +44,7 @@
 		
 			return;
 		}
+		
 		
 		[self processJSON:data response:response error:error options:options withCompletion:^(id object, NSURLResponse *response, NSError *jsonError) {
 			if(!completion) return;

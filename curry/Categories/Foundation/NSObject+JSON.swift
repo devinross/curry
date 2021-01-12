@@ -51,7 +51,7 @@ extension NSObject {
 	///   - data: The JSON data.
 	///   - options: An json parsing options to be included will parsing the JSON data.
 	///   - block: The block that will be performed upon the parsing of the json data. The process data will be included as an object with the selector.
-    func processJSON(_ data: Data?, response: URLResponse?, error: Error?, options: JSONSerialization.ReadingOptions, withCompletion block: @escaping TKJSONNetworkCompletionBlock) {
+	@objc public func processJSON(_ data: Data?, response: URLResponse?, error: Error?, options: JSONSerialization.ReadingOptions, withCompletion block: @escaping TKJSONNetworkCompletionBlock) {
 
         if let error = error {
             DispatchQueue.main.sync(execute: {
