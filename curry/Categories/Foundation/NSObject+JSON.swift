@@ -42,7 +42,7 @@ extension NSObject {
 	/// - Parameters:
 	///   - data: The JSON data.
 	///   - block: The block that will be performed upon the parsing of the json data. The process data will be included as an object with the selector.
-    @objc public func processJSON(_ data: Data?, withCompletion block: TKJSONCompletionBlock) {
+	@objc public func processJSON(_ data: Data?, withCompletion block: @escaping TKJSONCompletionBlock) {
 		processJSON(data, options: .allowFragments, withCompletion: block)
     }
 
@@ -51,7 +51,7 @@ extension NSObject {
 	///   - data: The JSON data.
 	///   - options: An json parsing options to be included will parsing the JSON data.
 	///   - block: The block that will be performed upon the parsing of the json data. The process data will be included as an object with the selector.
-    func processJSON(_ data: Data?, response: URLResponse?, error: Error?, options: JSONSerialization.ReadingOptions, withCompletion block: TKJSONNetworkCompletionBlock) {
+    func processJSON(_ data: Data?, response: URLResponse?, error: Error?, options: JSONSerialization.ReadingOptions, withCompletion block: @escaping TKJSONNetworkCompletionBlock) {
 
         if let error = error {
             DispatchQueue.main.sync(execute: {
@@ -62,6 +62,7 @@ extension NSObject {
 
 
         let queue = DispatchQueue.global(qos: .default)
+		
         queue.async(execute: {
 
             var err: Error?
@@ -79,7 +80,7 @@ extension NSObject {
 
     }
 
-	@objc public func processJSON(_ data: Data?, options: JSONSerialization.ReadingOptions, withCompletion block: TKJSONCompletionBlock) {
+	@objc public func processJSON(_ data: Data?, options: JSONSerialization.ReadingOptions, withCompletion block: @escaping TKJSONCompletionBlock) {
 
         let queue = DispatchQueue.global(qos: .default)
 		queue.async {
