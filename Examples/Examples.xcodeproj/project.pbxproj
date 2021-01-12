@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		204579F125AE1C6B000EC415 /* CellsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 204579F025AE1C6B000EC415 /* CellsController.swift */; };
 		2068B5B21EB927E4007FB656 /* ProgressTaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2068B5B11EB927E4007FB656 /* ProgressTaskViewController.swift */; };
 		20785FC51AD83BBE000DC57F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20785FC41AD83BBE000DC57F /* AppDelegate.swift */; };
 		20785FCC1AD83BBE000DC57F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 20785FCB1AD83BBE000DC57F /* Images.xcassets */; };
@@ -111,6 +112,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		204579F025AE1C6B000EC415 /* CellsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellsController.swift; sourceTree = "<group>"; };
 		2068B5B11EB927E4007FB656 /* ProgressTaskViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProgressTaskViewController.swift; sourceTree = "<group>"; };
 		20785FBF1AD83BBE000DC57F /* Examples.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Examples.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		20785FC31AD83BBE000DC57F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -201,6 +203,7 @@
 				20D4C89A1BB52A0000C75EEC /* PDFGeneratorViewController.h */,
 				20D4C89B1BB52A0000C75EEC /* PDFGeneratorViewController.m */,
 				20EE3BF01EBCFE9B00732C78 /* TextViewViewController.swift */,
+				204579F025AE1C6B000EC415 /* CellsController.swift */,
 				207E91561D87A67000EECF1D /* VideoViewController.swift */,
 				207E91521D87A1C800EECF1D /* ColorsViewController.swift */,
 				2068B5B11EB927E4007FB656 /* ProgressTaskViewController.swift */,
@@ -431,6 +434,7 @@
 				207E91571D87A67000EECF1D /* VideoViewController.swift in Sources */,
 				207E91551D87A45600EECF1D /* CustomTextEntryViewController.swift in Sources */,
 				20D4C89C1BB52A0000C75EEC /* PDFGeneratorViewController.m in Sources */,
+				204579F125AE1C6B000EC415 /* CellsController.swift in Sources */,
 				20EE3BF11EBCFE9B00732C78 /* TextViewViewController.swift in Sources */,
 				207E914F1D879D6E00EECF1D /* GesturesViewController.swift in Sources */,
 			);
