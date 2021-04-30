@@ -42,4 +42,4 @@ FOUNDATION_EXPORT const unsigned char curryVersionString[];
 // In this header, you should import all the public headers of your framework using statements like #import <curry/PublicHeader.h>
 
 
-#import "Headers.h"
+#import <curry/Headers.h>

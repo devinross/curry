@@ -30,7 +30,7 @@
  */
 
 
-#import "TKNumberInputView.h"
+#import <curry/TKNumberInputView.h>
 
 /** `TKDecimalInputView` is subclass `TKNumberInputView` with a decimal key. */
 @interface TKDecimalInputView : TKNumberInputView

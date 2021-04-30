@@ -30,7 +30,7 @@
  */
 
 @import UIKit;
-#import "TKCustomPresentationViewController.h"
+#import <curry/TKCustomPresentationViewController.h>
 
 /** `TKCardModalViewController` is a custom presented `UIViewController`
  *  with a main white card view that drops in and can be easily dismissed
