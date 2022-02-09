@@ -33,9 +33,11 @@
 
 /** The planes that will receive the touch gestures. */
 typedef NS_ENUM(NSInteger, TKExtendedScrollViewExtensionPlane) {
-	TKExtendedScrollViewExtensionPlaneNone = 0,
-	TKExtendedScrollViewExtensionPlaneX = 1 << 0,
-	TKExtendedScrollViewExtensionPlaneY = 1 << 1
+	TKExtendedScrollViewExtensionPlaneNone,// = 0,
+	TKExtendedScrollViewExtensionPlaneX,// = 1 << 0,
+	TKExtendedScrollViewExtensionPlaneY,// = 1 << 1,
+	TKExtendedScrollViewExtensionPlaneXY// = 1 << 1
+
 };
 
 

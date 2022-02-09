@@ -45,6 +45,9 @@
 	UIView *view = [super hitTest:point withEvent:event];
 	if(view) return view;
 	
+	if(self.extensionPlane & TKExtendedScrollViewExtensionPlaneXY)
+		return self;
+	
 	if(self.extensionPlane & TKExtendedScrollViewExtensionPlaneX && self.extensionPlane & TKExtendedScrollViewExtensionPlaneY) return self;
 	
 	if(self.extensionPlane & TKExtendedScrollViewExtensionPlaneX && (point.y < 0 || point.y > self.frame.size.height)) return nil;
