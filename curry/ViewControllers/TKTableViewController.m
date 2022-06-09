@@ -58,7 +58,7 @@
 	return self;
 }
 - (instancetype) initWithStyle:(UITableViewStyle)style{
-	if(!(self = [super init])) return nil;
+	if(!(self = [super initWithNibName:nil bundle:nil])) return nil;
 	self.style = style;
 	_tableViewContentOffset = CGPointZero;
 	_clearsSelectionOnViewWillAppear = YES;
