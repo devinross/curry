@@ -38,7 +38,7 @@
 @implementation TKCustomPresentationViewController
 
 - (instancetype) init{
-    if(!(self=[super init])) return nil;
+    if(!(self=[super initWithNibName:nil bundle:nil])) return nil;
     self.modalPresentationStyle = UIModalPresentationCustom;
     self.transitioningDelegate = self;
     return self;
