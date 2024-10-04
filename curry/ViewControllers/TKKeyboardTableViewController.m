@@ -58,24 +58,31 @@
 - (void) dealloc{
 	self.tableView.delegate = nil;
 	self.tableView.dataSource = nil;
+#if !TARGET_OS_TV
 	[[NSNotificationCenter defaultCenter] removeObserver:self name:UIKeyboardWillShowNotification object:nil];
 	[[NSNotificationCenter defaultCenter] removeObserver:self name:UIKeyboardDidHideNotification object:nil];
 	[[NSNotificationCenter defaultCenter] removeObserver:self];
+#endif
 }
 
 #pragma mark View Lifecycle
 - (void) viewWillAppear:(BOOL)animated{
 	[super viewWillAppear:animated];
+#if !TARGET_OS_TV
 	[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(keyboardWillAppear:) name:UIKeyboardWillShowNotification object:nil];
 	[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(keyboardWillDisappear:) name:UIKeyboardWillHideNotification object:nil];
+#endif
 }
 - (void) viewDidDisappear:(BOOL)animated{
 	[super viewDidDisappear:animated];
+#if !TARGET_OS_TV
 	[[NSNotificationCenter defaultCenter] removeObserver:self name:UIKeyboardWillShowNotification object:nil];
 	[[NSNotificationCenter defaultCenter] removeObserver:self name:UIKeyboardDidHideNotification object:nil];
+#endif
 }
 
 #pragma mark Move ScrollView
+#if !TARGET_OS_TV
 - (void) keyboardWillAppear:(NSNotification*)sender{
 	if(!self.isViewLoaded || self.view.superview == nil) return;
 	
@@ -106,7 +113,10 @@
 	
 	self.tableView.scrollIndicatorInsets = self.prevScrollInset;
 	
+
 }
+#endif
+
 - (void) textViewDidBeginEditing:(UITextView *)textView{
 	if(!self.scrollToTextField || ![textView isDescendantOfView:self.tableView]) return;
 	self.scrollLock = YES;

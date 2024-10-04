@@ -29,6 +29,7 @@
  
  */
 
+#if __has_include(<WebKit/WebKit.h>)
 @import UIKit;
 
 @interface TKStepperCell : UITableViewCell
@@ -36,3 +37,4 @@
 @property (nonatomic,strong) UIStepper *stepper;
 
 @end
+#endif

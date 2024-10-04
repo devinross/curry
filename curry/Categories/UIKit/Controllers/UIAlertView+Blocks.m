@@ -29,6 +29,7 @@
  
  */
 
+#if __has_include(<WebKit/WebKit.h>)
 #import "UIAlertView+Blocks.h"
 
 static const void *UIAlertViewActionsKey = &UIAlertViewActionsKey;
@@ -93,3 +94,4 @@ typedef void (^UIAlertViewBlock)(UIAlertView *sender);
 
 
 @end
+#endif

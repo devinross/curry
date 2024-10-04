@@ -86,9 +86,10 @@
 	self.autoresizingMask = UIViewAutoresizingFlexibleHeight | UIViewAutoresizingFlexibleWidth;
 	self.backgroundColor = [UIColor colorWithHex:0xd7dadf];
 	self.clipsToBounds = YES;
+#if !TARGET_OS_TV
 	self.multipleTouchEnabled = NO;
 	self.exclusiveTouch = YES;
-	
+#endif
 	CGRect cntFrame = frame;
 	if([UIDevice currentDevice].padIdiom){
 		cntFrame.size.width = 544;
@@ -138,14 +139,17 @@
 		[self addSubview:dots];
 	}
 	
+#if !TARGET_OS_TV
 	[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(didHideNotification:) name:UIKeyboardDidHideNotification object:nil];
-	
+#endif
     return self;
 }
 
+#if !TARGET_OS_TV
 - (void) dealloc{
 	[[NSNotificationCenter defaultCenter] removeObserver:self name:UIKeyboardDidHideNotification object:nil];
 }
+#endif
 
 - (void) didHideNotification:(id)sender{
 

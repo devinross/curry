@@ -29,6 +29,7 @@
  
  */
 
+#if __has_include(<WebKit/WebKit.h>)
 #import "UIActionSheet+Blocks.h"
 #import <objc/runtime.h>
 
@@ -107,3 +108,4 @@ typedef void (^UIActionSheetBlock)(UIActionSheet *sender);
 
 
 @end
+#endif

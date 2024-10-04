@@ -29,6 +29,7 @@
  
  */
 
+#if __has_include(<WebKit/WebKit.h>)
 #import "TKSafariWebCredentials.h"
 @import Security;
 
@@ -115,3 +116,4 @@
 
 
 @end
+#endif

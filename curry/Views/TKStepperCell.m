@@ -29,6 +29,7 @@
  
  */
 
+#if __has_include(<WebKit/WebKit.h>)
 #import "TKStepperCell.h"
 
 @interface TKStepperCell ()
@@ -61,3 +62,4 @@
 }
 
 @end
+#endif

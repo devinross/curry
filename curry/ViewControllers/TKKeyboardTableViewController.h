@@ -61,7 +61,8 @@
 /** When subclassing, call resignFirstResponder on all your `UITextField` and `UITextView` objects */
 - (void) resignResponders;
 
-/** Will adjust table view scroll bounds when a keyboard is popped up. 
+#if !TARGET_OS_TV
+/** Will adjust table view scroll bounds when a keyboard is popped up.
   @param sender The notification that sent the event.
  */
 - (void) keyboardWillAppear:(NSNotification*)sender;
@@ -70,5 +71,6 @@
   @param sender The notification that sent the event.
  */
 - (void) keyboardWillDisappear:(NSNotification*)sender;
+#endif
 
 @end

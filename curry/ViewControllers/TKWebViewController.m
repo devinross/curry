@@ -29,7 +29,7 @@
  
  */
 
-
+#if __has_include(<WebKit/WebKit.h>)
 #import "TKWebViewController.h"
 #import "UIBarButtonItem+TKCategory.h"
 #import <curry/curry-Swift.h>
@@ -146,3 +146,5 @@
 }
 
 @end
+
+#endif
