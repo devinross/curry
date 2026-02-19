@@ -43,7 +43,7 @@
 @implementation TKKeyboardTableViewController
 
 - (instancetype) init{
-	if(!(self=[super init])) return nil;
+	if(!(self = [super initWithNibName:nil bundle:nil])) return nil;
 	self.scrollToTextField = YES;
 	
 	self.hideKeyboardOnScroll = [UIDevice currentDevice].phoneIdiom;

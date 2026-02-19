@@ -124,15 +124,14 @@
 #endif
 
 
-
 #if !TARGET_OS_TV
 // Views -> Keyboard
-#import <curry/TKInputView.h>
-#import <curry/TKInputKey.h>
-#import <curry/TKNumberInputView.h>
-#import <curry/TKDecimalInputView.h>
-#import <curry/TKNumberInputWithNextKeyView.h>
-#import <curry/TKDecimalInputWithNextKeyView.h>
+//#import <curry/TKInputView.h>
+//#import <curry/TKInputKey.h>
+//#import <curry/TKNumberInputView.h>
+//#import <curry/TKDecimalInputView.h>
+//#import <curry/TKNumberInputWithNextKeyView.h>
+//#import <curry/TKDecimalInputWithNextKeyView.h>
 #endif
 
 // Views
