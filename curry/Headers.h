@@ -55,40 +55,18 @@
 // Categories -> UIKit -> Base
 
 // Categories -> UIKit -> Views
-#import "UIView+Positioning.h"
-#import "UIScrollView+Positioning.h"
-#import "UIPanGestureRecognizer+VelocityDirection.h"
-#import "UIView+GestureRecognizerBlock.h"
-#import "UIScrollview+TKCategory.h"
-#import "UILabel+TKCategory.h"
-#import "UITextField+TKCategory.h"
-#import "UIImageView+TKCategory.h"
-#import "UIButton+TKCategory.h"
-#import "UINavigationBar+TKCategory.h"
-#import "UIBarButtonItem+TKCategory.h"
-#import "UIView+Initializers.h"
-#import "UILabel+Initializers.h"
 
 
 // Categories -> UIKit -> Elements
-#import "UIControl+Blocks.h"
 
 // Categories -> UIKit -> Controllers
-#import "UIViewController+TKCategory.h"
-#import "UIAlertController+TKCategory.h"
 #if !TARGET_OS_TV
-#import "UIImagePickerController+TKCategory.h"
-#import "UIActionSheet+TKCategory.h"
-#import "UIActionSheet+Blocks.h"
-#import "UIAlertView+TKCategory.h"
-#import "UIAlertView+Blocks.h"
 #endif
 
 
 
 
 // Categories -> UIKit -> Animations
-#import "UIView+TKAnimation.h"
 
 // ViewControllers
 #import "TKCustomPresentationViewController.h"

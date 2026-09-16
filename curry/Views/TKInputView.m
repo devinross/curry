@@ -33,7 +33,6 @@
 #import "TKInputView.h"
 @import CurrySwift;
 #import "TKInputKey.h"
-#import "UIImageView+TKCategory.h"
 #import "TKFoundation.h"
 #import "TKUIKit.h"
 
