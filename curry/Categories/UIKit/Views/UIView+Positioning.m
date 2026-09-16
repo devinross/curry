@@ -30,7 +30,7 @@
  */
 
 #import "UIView+Positioning.h"
-#import "UIView+TKCategory.h"
+@import CurrySwift;
 #import "TKFoundation.h"
 #import "TKUIKit.h"
 

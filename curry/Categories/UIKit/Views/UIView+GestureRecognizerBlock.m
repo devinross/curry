@@ -30,7 +30,7 @@
  */
 
 #import "UIView+GestureRecognizerBlock.h"
-#import "UIGestureRecognizer+Blocks.h"
+@import CurrySwift;
 
 @implementation UIView (GestureRecognizerBlock)
 

@@ -31,9 +31,9 @@
 
 
 #import "TKDecimalInputWithNextKeyView.h"
+@import CurrySwift;
 #import "TKFoundation.h"
 #import "TKInputKey.h"
-#import "UIImage+TKCategory.h"
 #import "TKUIKit.h"
 
 #ifdef SWIFTPM_MODULE_BUNDLE

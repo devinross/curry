@@ -1,1 +1,0 @@
-../Categories/UIKit/Base/UIDevice+TKCategory.h

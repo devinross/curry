@@ -30,7 +30,7 @@
  */
 
 #import "UIView+Initializers.h"
-#import "UIView+TKCategory.h"
+@import CurrySwift;
 
 @implementation UIView (Initializers)
 

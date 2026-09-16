@@ -30,9 +30,7 @@
  */
 
 #import "UIView+TKAnimation.h"
-#import "UIView+TKCategory.h"
-#import "CALayer+TKAnimation.h"
-#import "CAAnimation+TKAnimation.h"
+@import CurrySwift;
 
 NSString *TKViewAnimationKeyPathCenter = @"position";
 NSString *TKViewAnimationKeyPathCenterX = @"position.x";

@@ -30,10 +30,10 @@
  */
 
 @import Foundation;
+@import CurrySwift;
 @import UIKit;
 @import QuartzCore;
 @import XCTest;
-#import "UIView+TKCategory.h"
 
 @interface UIViewTests : XCTestCase
 

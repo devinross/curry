@@ -53,17 +53,12 @@
 
 
 // Categories -> UIKit -> Base
-#import "UIApplication+TKCategory.h"
-#import "UIDevice+TKCategory.h"
-#import "UIScreen+TKCategory.h"
-#import "UITraitCollection+TKCategory.h"
 
 // Categories -> UIKit -> Views
 #import "UIView+Positioning.h"
 #import "UIScrollView+Positioning.h"
 #import "UIPanGestureRecognizer+VelocityDirection.h"
 #import "UIView+GestureRecognizerBlock.h"
-#import "UIView+TKCategory.h"
 #import "UIScrollview+TKCategory.h"
 #import "UILabel+TKCategory.h"
 #import "UITextField+TKCategory.h"
@@ -76,13 +71,7 @@
 
 
 // Categories -> UIKit -> Elements
-#import "UIImage+TKCategory.h"
-#import "UIFont+TKCategory.h"
-#import "UIColor+TKCategory.h"
-#import "UIGestureRecognizer+TKCategory.h"
-#import "UIGestureRecognizer+Blocks.h"
 #import "UIControl+Blocks.h"
-#import "UIMotionEffectGroup+TKCategory.h"
 
 // Categories -> UIKit -> Controllers
 #import "UIViewController+TKCategory.h"
@@ -100,10 +89,6 @@
 
 // Categories -> UIKit -> Animations
 #import "UIView+TKAnimation.h"
-#import "CALayer+TKAnimation.h"
-#import "CAKeyframeAnimation+TKAnimation.h"
-#import "CAAnimation+TKAnimation.h"
-#import "UIGestureRecognizer+Blocks.h"
 
 // ViewControllers
 #import "TKCustomPresentationViewController.h"

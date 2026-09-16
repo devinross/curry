@@ -31,14 +31,11 @@
 
 
 #import "TKInputView.h"
-#import "UIColor+TKCategory.h"
+@import CurrySwift;
 #import "TKInputKey.h"
-#import "UIView+TKCategory.h"
 #import "UIImageView+TKCategory.h"
-#import "UIImage+TKCategory.h"
 #import "TKFoundation.h"
 #import "TKUIKit.h"
-#import "UIDevice+TKCategory.h"
 
 #ifdef SWIFTPM_MODULE_BUNDLE
 #define CURRY_RESOURCE_BUNDLE SWIFTPM_MODULE_BUNDLE

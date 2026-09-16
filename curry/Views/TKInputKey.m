@@ -31,12 +31,10 @@
 
 
 #import "TKInputKey.h"
-#import "UIColor+TKCategory.h"
-#import "UIFont+TKCategory.h"
+@import CurrySwift;
 #import "TKFoundation.h"
 #import "TKUIKit.h"
 
-#import "UIDevice+TKCategory.h"
 
 @implementation TKInputKey
 

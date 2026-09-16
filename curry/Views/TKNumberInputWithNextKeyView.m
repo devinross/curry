@@ -31,8 +31,8 @@
 
 
 #import "TKNumberInputWithNextKeyView.h"
+@import CurrySwift;
 #import "TKInputKey.h"
-#import "UIImage+TKCategory.h"
 #import "TKFoundation.h"
 #import "TKUIKit.h"
 

@@ -1,1 +1,0 @@
-../Categories/UIKit/Base/UIApplication+TKCategory.h
