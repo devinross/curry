@@ -36,7 +36,7 @@ import curry
 /// Exercises the `dataKeys` hook. It is declared on an NSObject extension in Swift,
 /// and this subclass overriding it is what proves the override still dispatches.
 @objc(SampleItem)
-final class SampleItem: NSObject {
+class SampleItem: NSObject {
 	
 	@objc var identifier: NSNumber?
 	@objc var name: String?
@@ -65,6 +65,27 @@ final class SampleItem: NSObject {
 			               "structure": NSStringFromClass(NSArray.self)],
 			"phone":      "phone",
 		]
+	}
+	
+}
+
+
+/// A subclass overriding the hooks, to prove they are still overridable from
+/// outside the module. Swift needs `open` for that; `public` is not enough, and
+/// the Objective-C original allowed it.
+@objc(DerivedItem)
+final class DerivedItem: SampleItem {
+	
+	@objc var nickname: String?
+	
+	override class var dataKeys: [String: Any] {
+		["identifier": "id", "nickname": "nick"]
+	}
+	
+	override class func createObject(_ dictionary: Any?) -> Any? {
+		let made = super.createObject(dictionary) as? DerivedItem
+		made?.name = "made by DerivedItem"
+		return made
 	}
 	
 }
@@ -142,6 +163,27 @@ final class DataTests: XCTestCase {
 		XCTAssertEqual(output["created_at"] as? String, sample["created_at"] as? String)
 		XCTAssertEqual(output["updated_at"] as? String, sample["updated_at"] as? String)
 		XCTAssertEqual(output["phone"] as? String, sample["phone"] as? String)
+	}
+	
+
+	// MARK: - Subclassing hooks
+	
+	func testSubclassCanOverrideDataKeys() {
+		let item = DerivedItem.createObject(["id": 1, "nick": "Bobby"]) as? DerivedItem
+		XCTAssertEqual(item?.nickname, "Bobby", "the subclass's dataKeys should be the ones used")
+		XCTAssertEqual(item?.identifier, NSNumber(value: 1))
+	}
+	
+	func testSubclassCanOverrideCreateObject() {
+		let item = DerivedItem.createObject(["id": 1]) as? DerivedItem
+		XCTAssertEqual(item?.name, "made by DerivedItem", "the subclass's createObject should run")
+	}
+	
+	func testArrayHelperDispatchesToTheSubclass() {
+		let items = DerivedItem.arrayOfObjects(withDataArray: [["id": 1], ["id": 2]]) as? [DerivedItem]
+		XCTAssertEqual(items?.count, 2)
+		XCTAssertEqual(items?.first?.name, "made by DerivedItem",
+		               "arrayOfObjectsWithDataArray: should route through the subclass's createObject")
 	}
 	
 }

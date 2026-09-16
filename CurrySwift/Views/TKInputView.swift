@@ -75,7 +75,7 @@ open class TKInputView: UIView, UIInputViewAudioFeedback {
 	private var holdCounter: Int = 0
 	private var originalFrame: CGRect = .zero
 	
-	@objc public static var sizeOfKeyboardForMainScreen: CGSize {
+	@objc open class var sizeOfKeyboardForMainScreen: CGSize {
 		var height: CGFloat = 352
 		if UIDevice.current.userInterfaceIdiom == .phone {
 			height = UIScreen.main.traitCollection.verticalSizeClass == .compact ? 162 : 216

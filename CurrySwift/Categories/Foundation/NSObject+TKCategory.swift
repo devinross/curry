@@ -64,7 +64,7 @@ extension NSObject {
 	@returns The newly allocated object.
 	*/
 	@objc(createObject:)
-	public static func createObject(_ dictionary: Any?) -> Any? {
+	open class func createObject(_ dictionary: Any?) -> Any? {
 		// `NSNull` stands for "there was no object here", so there is none to make.
 		if dictionary is NSNull { return nil }
 		let object = self.init()

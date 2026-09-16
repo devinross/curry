@@ -36,7 +36,7 @@ extension NSObject {
 	
 	/** Builds an array of objects from an array of data dictionaries. */
 	@objc(arrayOfObjectsWithDataArray:)
-	public static func arrayOfObjects(withDataArray array: [Any]) -> [Any] {
+	open class func arrayOfObjects(withDataArray array: [Any]) -> [Any] {
 		array.compactMap { element in
 			guard !(element is NSNull) else { return nil }
 			return createObject(element)
@@ -45,7 +45,7 @@ extension NSObject {
 	
 	/** Builds an array of data dictionaries from an array of objects. */
 	@objc(arrayOfDataObjectsWithObjectsArray:)
-	public static func arrayOfDataObjects(withObjectsArray array: [Any]) -> [Any] {
+	open class func arrayOfDataObjects(withObjectsArray array: [Any]) -> [Any] {
 		array.compactMap { ($0 as? NSObject)?.dataDictionary }
 	}
 	
