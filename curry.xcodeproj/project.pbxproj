@@ -23,7 +23,6 @@
 /* Begin PBXBuildFile section */
 		200B625B1AD7FB460049E35C /* curry.h in Headers */ = {isa = PBXBuildFile; fileRef = 200B625A1AD7FB460049E35C /* curry.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		200B62611AD7FB460049E35C /* curry.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 200B62551AD7FB460049E35C /* curry.framework */; };
-		200B62681AD7FB460049E35C /* curryTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 200B62671AD7FB460049E35C /* curryTests.m */; };
 		2010DCB31BB0E40E00810A98 /* curryWatch.h in Headers */ = {isa = PBXBuildFile; fileRef = 2010DCB21BB0E40E00810A98 /* curryWatch.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		201BED4621C0681600CC13BE /* CurrySwift/UILabel+Spacing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 201BED4521C0681600CC13BE /* UILabel+Spacing.swift */; };
 		201BED4721C0687600CC13BE /* CurrySwift/UILabel+Spacing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 201BED4521C0681600CC13BE /* UILabel+Spacing.swift */; };
@@ -32,10 +31,6 @@
 		2069C12D1D8AFEB9000BD656 /* CurrySwift/Bundle+TKCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2069C12B1D8AFEB9000BD656 /* Bundle+TKCategory.swift */; };
 		2069C12E1D8AFEB9000BD656 /* CurrySwift/Bundle+TKCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2069C12B1D8AFEB9000BD656 /* Bundle+TKCategory.swift */; };
 		2069C12F1D8AFEB9000BD656 /* CurrySwift/Bundle+TKCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2069C12B1D8AFEB9000BD656 /* Bundle+TKCategory.swift */; };
-		20785F771AD8388E000DC57F /* NSStringTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 20785F701AD8388E000DC57F /* NSStringTests.m */; };
-		20785F781AD8388E000DC57F /* UIViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 20785F721AD8388E000DC57F /* UIViewTests.m */; };
-		20785F791AD8388E000DC57F /* NSArrayTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 20785F741AD8388E000DC57F /* NSArrayTests.m */; };
-		20785F7A1AD8388E000DC57F /* DataTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 20785F761AD8388E000DC57F /* DataTests.m */; };
 		207C97B11BD7F1AC00342677 /* NSView+Positioning.h in Headers */ = {isa = PBXBuildFile; fileRef = 207C97AF1BD7F1AC00342677 /* NSView+Positioning.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		207C97B21BD7F1AC00342677 /* NSView+Positioning.m in Sources */ = {isa = PBXBuildFile; fileRef = 207C97B01BD7F1AC00342677 /* NSView+Positioning.m */; };
 		207C97B51BD7F3F200342677 /* NSView+TKCategory.h in Headers */ = {isa = PBXBuildFile; fileRef = 207C97B31BD7F3F200342677 /* NSView+TKCategory.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -214,6 +209,11 @@
 		04783F3118549EECE910DD0D /* CurrySwift/TKNumberInputWithNextKeyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C932696EDE792DA5B83DEF70 /* TKNumberInputWithNextKeyView.swift */; };
 		07CBA44C1B5146928CF0F62C /* CurrySwift/TKSectionedScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C88A70E7A6C0E1A7A2B91D41 /* TKSectionedScrollView.swift */; };
 		2FDE99D43D434FF76D9D7B63 /* CurrySwift/TKSectionedScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C88A70E7A6C0E1A7A2B91D41 /* TKSectionedScrollView.swift */; };
+		8B9CBD9286144609DBD19729 /* CurryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F734EAB88665A999D1BA10F /* CurryTests.swift */; };
+		21BFB171C446D477469560E8 /* DataTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A90CC805D06574F78C0DCB4 /* DataTests.swift */; };
+		6995B3493F3AAB1A00E16B50 /* NSArrayTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FB8A040101CD2702E232B71 /* NSArrayTests.swift */; };
+		C34F63272ECD99E10AA58891 /* NSStringTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5F119FEAFACDF677DF469DA /* NSStringTests.swift */; };
+		5D54F2C7571EA11DFF0645DA /* UIViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F2E42F0425E35ED714FE43C /* UIViewTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -232,21 +232,12 @@
 		200B625A1AD7FB460049E35C /* curry.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = curry.h; sourceTree = "<group>"; };
 		200B62601AD7FB460049E35C /* curryTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = curryTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		200B62661AD7FB460049E35C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		200B62671AD7FB460049E35C /* curryTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = curryTests.m; sourceTree = "<group>"; };
 		2010DCB01BB0E40E00810A98 /* curryWatch.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = curryWatch.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2010DCB21BB0E40E00810A98 /* curryWatch.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = curryWatch.h; sourceTree = "<group>"; };
 		2010DCB41BB0E40E00810A98 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		201BED4521C0681600CC13BE /* UILabel+Spacing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILabel+Spacing.swift"; sourceTree = "<group>"; };
 		202DBEEA1AF6717A00B0CE67 /* CurryImages.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = CurryImages.xcassets; sourceTree = "<group>"; };
 		2069C12B1D8AFEB9000BD656 /* Bundle+TKCategory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Bundle+TKCategory.swift"; sourceTree = "<group>"; };
-		20785F6F1AD8388E000DC57F /* NSStringTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSStringTests.h; sourceTree = "<group>"; };
-		20785F701AD8388E000DC57F /* NSStringTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSStringTests.m; sourceTree = "<group>"; };
-		20785F711AD8388E000DC57F /* UIViewTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIViewTests.h; sourceTree = "<group>"; };
-		20785F721AD8388E000DC57F /* UIViewTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIViewTests.m; sourceTree = "<group>"; };
-		20785F731AD8388E000DC57F /* NSArrayTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSArrayTests.h; sourceTree = "<group>"; };
-		20785F741AD8388E000DC57F /* NSArrayTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSArrayTests.m; sourceTree = "<group>"; };
-		20785F751AD8388E000DC57F /* DataTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataTests.h; sourceTree = "<group>"; };
-		20785F761AD8388E000DC57F /* DataTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataTests.m; sourceTree = "<group>"; };
 		207C97AF1BD7F1AC00342677 /* NSView+Positioning.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSView+Positioning.h"; sourceTree = "<group>"; };
 		207C97B01BD7F1AC00342677 /* NSView+Positioning.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSView+Positioning.m"; sourceTree = "<group>"; };
 		207C97B31BD7F3F200342677 /* NSView+TKCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSView+TKCategory.h"; sourceTree = "<group>"; };
@@ -342,6 +333,11 @@
 		C932696EDE792DA5B83DEF70 /* TKNumberInputWithNextKeyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TKNumberInputWithNextKeyView.swift"; sourceTree = "<group>"; };
 		C88A70E7A6C0E1A7A2B91D41 /* TKSectionedScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TKSectionedScrollView.swift"; sourceTree = "<group>"; };
 		D7FB0C78C6BB19151F77DF8D /* TKUIKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TKUIKit.swift"; sourceTree = "<group>"; };
+		2F734EAB88665A999D1BA10F /* CurryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurryTests.swift; sourceTree = "<group>"; };
+		6A90CC805D06574F78C0DCB4 /* DataTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataTests.swift; sourceTree = "<group>"; };
+		8FB8A040101CD2702E232B71 /* NSArrayTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSArrayTests.swift; sourceTree = "<group>"; };
+		F5F119FEAFACDF677DF469DA /* NSStringTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSStringTests.swift; sourceTree = "<group>"; };
+		6F2E42F0425E35ED714FE43C /* UIViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -430,15 +426,11 @@
 		200B62641AD7FB460049E35C /* curryTests */ = {
 			isa = PBXGroup;
 			children = (
-				200B62671AD7FB460049E35C /* curryTests.m */,
-				20785F6F1AD8388E000DC57F /* NSStringTests.h */,
-				20785F701AD8388E000DC57F /* NSStringTests.m */,
-				20785F711AD8388E000DC57F /* UIViewTests.h */,
-				20785F721AD8388E000DC57F /* UIViewTests.m */,
-				20785F731AD8388E000DC57F /* NSArrayTests.h */,
-				20785F741AD8388E000DC57F /* NSArrayTests.m */,
-				20785F751AD8388E000DC57F /* DataTests.h */,
-				20785F761AD8388E000DC57F /* DataTests.m */,
+				2F734EAB88665A999D1BA10F /* CurryTests.swift */,
+				6A90CC805D06574F78C0DCB4 /* DataTests.swift */,
+				8FB8A040101CD2702E232B71 /* NSArrayTests.swift */,
+				F5F119FEAFACDF677DF469DA /* NSStringTests.swift */,
+				6F2E42F0425E35ED714FE43C /* UIViewTests.swift */,
 				200B62651AD7FB460049E35C /* Supporting Files */,
 			);
 			path = curryTests;
@@ -1014,11 +1006,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				20785F7A1AD8388E000DC57F /* DataTests.m in Sources */,
-				20785F791AD8388E000DC57F /* NSArrayTests.m in Sources */,
-				200B62681AD7FB460049E35C /* curryTests.m in Sources */,
-				20785F771AD8388E000DC57F /* NSStringTests.m in Sources */,
-				20785F781AD8388E000DC57F /* UIViewTests.m in Sources */,
+				8B9CBD9286144609DBD19729 /* CurryTests.swift in Sources */,
+				21BFB171C446D477469560E8 /* DataTests.swift in Sources */,
+				6995B3493F3AAB1A00E16B50 /* NSArrayTests.swift in Sources */,
+				C34F63272ECD99E10AA58891 /* NSStringTests.swift in Sources */,
+				5D54F2C7571EA11DFF0645DA /* UIViewTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1152,6 +1144,7 @@
 		200B62691AD7FB460049E35C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				SWIFT_VERSION = 6.0;
 				SWIFT_OBJC_INTERFACE_HEADER_NAME = "curry-Swift.h";
 				CLANG_WARN_ATIMPORT_IN_FRAMEWORK_HEADER = NO;
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -1219,6 +1212,7 @@
 		200B626A1AD7FB460049E35C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				SWIFT_VERSION = 6.0;
 				SWIFT_OBJC_INTERFACE_HEADER_NAME = "curry-Swift.h";
 				CLANG_WARN_ATIMPORT_IN_FRAMEWORK_HEADER = NO;
 				ALWAYS_SEARCH_USER_PATHS = NO;

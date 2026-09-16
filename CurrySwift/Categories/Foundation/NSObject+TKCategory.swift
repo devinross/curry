@@ -57,7 +57,7 @@ extension NSObject {
 	
 	@returns The dictionary used to fill up data from the data dictionary.
 	*/
-	@objc public class var dataKeys: [String: Any] { [:] }
+	@objc open class var dataKeys: [String: Any] { [:] }
 	
 	/** Creates object and imports data from a dictionary using the map provided by the dataKeys dictionary.
 	@param dictionary The data that will be imported.
@@ -86,7 +86,7 @@ extension NSObject {
 	@param dictionary The data that will be imported.
 	*/
 	@objc(importDataWithDictionary:)
-	public func importData(with rawData: Any?) {
+	open func importData(with rawData: Any?) {
 		
 		guard let rawData = rawData as? [AnyHashable: Any] else { return }
 		
@@ -142,7 +142,7 @@ extension NSObject {
 	}
 	
 	/** The receiver's properties rendered back out through the dataKeys map. */
-	@objc public var dataDictionary: [AnyHashable: Any] {
+	@objc open var dataDictionary: [AnyHashable: Any] {
 		
 		var formatter: DateFormatter?
 		var result: [AnyHashable: Any] = [:]
