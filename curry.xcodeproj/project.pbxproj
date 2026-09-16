@@ -24,33 +24,14 @@
 		200B625B1AD7FB460049E35C /* curry.h in Headers */ = {isa = PBXBuildFile; fileRef = 200B625A1AD7FB460049E35C /* curry.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		200B62611AD7FB460049E35C /* curry.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 200B62551AD7FB460049E35C /* curry.framework */; };
 		200B62681AD7FB460049E35C /* curryTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 200B62671AD7FB460049E35C /* curryTests.m */; };
-		200B62741AD7FBDC0049E35C /* TKFoundation.h in Headers */ = {isa = PBXBuildFile; fileRef = 200B62721AD7FBDC0049E35C /* TKFoundation.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2010DCB31BB0E40E00810A98 /* curryWatch.h in Headers */ = {isa = PBXBuildFile; fileRef = 2010DCB21BB0E40E00810A98 /* curryWatch.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		2010DCC01BB0EA7800810A98 /* TKUIKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 2010DCBF1BB0EA0600810A98 /* TKUIKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		2010DCF01BB0F5F800810A98 /* TKUIKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 2010DCBF1BB0EA0600810A98 /* TKUIKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		2010DCF21BB0F88F00810A98 /* TKFoundation.h in Headers */ = {isa = PBXBuildFile; fileRef = 200B62721AD7FBDC0049E35C /* TKFoundation.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		201BED4621C0681600CC13BE /* CurrySwift/UILabel+Spacing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 201BED4521C0681600CC13BE /* CurrySwift/UILabel+Spacing.swift */; };
 		201BED4721C0687600CC13BE /* CurrySwift/UILabel+Spacing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 201BED4521C0681600CC13BE /* CurrySwift/UILabel+Spacing.swift */; };
-		202DBEB91AF4347A00B0CE67 /* TKInputView.h in Headers */ = {isa = PBXBuildFile; fileRef = 202DBEAD1AF4347A00B0CE67 /* TKInputView.h */; platformFilters = (ios, maccatalyst, xros, ); settings = {ATTRIBUTES = (Public, ); }; };
-		202DBEBA1AF4347A00B0CE67 /* TKInputView.m in Sources */ = {isa = PBXBuildFile; fileRef = 202DBEAE1AF4347A00B0CE67 /* TKInputView.m */; platformFilters = (ios, maccatalyst, xros, ); };
-		202DBEBB1AF4347A00B0CE67 /* TKInputKey.h in Headers */ = {isa = PBXBuildFile; fileRef = 202DBEAF1AF4347A00B0CE67 /* TKInputKey.h */; platformFilters = (ios, maccatalyst, xros, ); settings = {ATTRIBUTES = (Public, ); }; };
-		202DBEBC1AF4347A00B0CE67 /* TKInputKey.m in Sources */ = {isa = PBXBuildFile; fileRef = 202DBEB01AF4347A00B0CE67 /* TKInputKey.m */; platformFilters = (ios, maccatalyst, xros, ); };
-		202DBEBD1AF4347A00B0CE67 /* TKNumberInputView.h in Headers */ = {isa = PBXBuildFile; fileRef = 202DBEB11AF4347A00B0CE67 /* TKNumberInputView.h */; platformFilters = (ios, maccatalyst, xros, ); settings = {ATTRIBUTES = (Public, ); }; };
-		202DBEBE1AF4347A00B0CE67 /* TKNumberInputView.m in Sources */ = {isa = PBXBuildFile; fileRef = 202DBEB21AF4347A00B0CE67 /* TKNumberInputView.m */; platformFilters = (ios, maccatalyst, xros, ); };
-		202DBEBF1AF4347A00B0CE67 /* TKDecimalInputView.h in Headers */ = {isa = PBXBuildFile; fileRef = 202DBEB31AF4347A00B0CE67 /* TKDecimalInputView.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		202DBEC01AF4347A00B0CE67 /* TKDecimalInputView.m in Sources */ = {isa = PBXBuildFile; fileRef = 202DBEB41AF4347A00B0CE67 /* TKDecimalInputView.m */; };
-		202DBEC11AF4347A00B0CE67 /* TKNumberInputWithNextKeyView.h in Headers */ = {isa = PBXBuildFile; fileRef = 202DBEB51AF4347A00B0CE67 /* TKNumberInputWithNextKeyView.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		202DBEC21AF4347A00B0CE67 /* TKNumberInputWithNextKeyView.m in Sources */ = {isa = PBXBuildFile; fileRef = 202DBEB61AF4347A00B0CE67 /* TKNumberInputWithNextKeyView.m */; };
-		202DBEC31AF4347A00B0CE67 /* TKDecimalInputWithNextKeyView.h in Headers */ = {isa = PBXBuildFile; fileRef = 202DBEB71AF4347A00B0CE67 /* TKDecimalInputWithNextKeyView.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		202DBEC41AF4347A00B0CE67 /* TKDecimalInputWithNextKeyView.m in Sources */ = {isa = PBXBuildFile; fileRef = 202DBEB81AF4347A00B0CE67 /* TKDecimalInputWithNextKeyView.m */; };
 		202DBEEB1AF6717A00B0CE67 /* CurryImages.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 202DBEEA1AF6717A00B0CE67 /* CurryImages.xcassets */; };
 		2069C12C1D8AFEB9000BD656 /* CurrySwift/Bundle+TKCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2069C12B1D8AFEB9000BD656 /* CurrySwift/Bundle+TKCategory.swift */; };
 		2069C12D1D8AFEB9000BD656 /* CurrySwift/Bundle+TKCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2069C12B1D8AFEB9000BD656 /* CurrySwift/Bundle+TKCategory.swift */; };
 		2069C12E1D8AFEB9000BD656 /* CurrySwift/Bundle+TKCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2069C12B1D8AFEB9000BD656 /* CurrySwift/Bundle+TKCategory.swift */; };
 		2069C12F1D8AFEB9000BD656 /* CurrySwift/Bundle+TKCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2069C12B1D8AFEB9000BD656 /* CurrySwift/Bundle+TKCategory.swift */; };
-		2069E8171C78EEDB003035FF /* Headers.h in Headers */ = {isa = PBXBuildFile; fileRef = 20A75C5E1AD82C8500E2106A /* Headers.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		2069E8181C78EFCD003035FF /* Headers.h in Headers */ = {isa = PBXBuildFile; fileRef = 20A75C5E1AD82C8500E2106A /* Headers.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		2069E8191C78EFCD003035FF /* Headers.h in Headers */ = {isa = PBXBuildFile; fileRef = 20A75C5E1AD82C8500E2106A /* Headers.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		20785F771AD8388E000DC57F /* NSStringTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 20785F701AD8388E000DC57F /* NSStringTests.m */; };
 		20785F781AD8388E000DC57F /* UIViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 20785F721AD8388E000DC57F /* UIViewTests.m */; };
 		20785F791AD8388E000DC57F /* NSArrayTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 20785F741AD8388E000DC57F /* NSArrayTests.m */; };
@@ -62,17 +43,10 @@
 		209507352188EA7E00AD35F0 /* CurrySwift/URLRequest+TKCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 209507342188EA7E00AD35F0 /* CurrySwift/URLRequest+TKCategory.swift */; };
 		2095073C2188EE2200AD35F0 /* CurrySwift/URLRequest+TKCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 209507342188EA7E00AD35F0 /* CurrySwift/URLRequest+TKCategory.swift */; };
 		2095073D2188EE2300AD35F0 /* CurrySwift/URLRequest+TKCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 209507342188EA7E00AD35F0 /* CurrySwift/URLRequest+TKCategory.swift */; };
-		20A75C5F1AD82C8500E2106A /* Headers.h in Headers */ = {isa = PBXBuildFile; fileRef = 20A75C5E1AD82C8500E2106A /* Headers.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		20A75C681AD8332F00E2106A /* TKSectionedScrollView.h in Headers */ = {isa = PBXBuildFile; fileRef = 20A75C661AD8332F00E2106A /* TKSectionedScrollView.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		20A75C691AD8332F00E2106A /* TKSectionedScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 20A75C671AD8332F00E2106A /* TKSectionedScrollView.m */; };
 		20B5FE221BB3613F00C0F848 /* curryMac.h in Headers */ = {isa = PBXBuildFile; fileRef = 20B5FE211BB3613F00C0F848 /* curryMac.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		20B5FE361BB363A200C0F848 /* TKFoundation.h in Headers */ = {isa = PBXBuildFile; fileRef = 200B62721AD7FBDC0049E35C /* TKFoundation.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		20B986F12040A8AD00F7BF6A /* CurrySwift/UIView+Velocity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20C1E9A42040A75F0096C895 /* CurrySwift/UIView+Velocity.swift */; };
 		20C1E9A52040A75F0096C895 /* CurrySwift/UIView+Velocity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20C1E9A42040A75F0096C895 /* CurrySwift/UIView+Velocity.swift */; };
 		20CEA42E1BA1105D0009D60C /* curryTV.h in Headers */ = {isa = PBXBuildFile; fileRef = 20CEA42D1BA1105D0009D60C /* curryTV.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		20CEA4331BA110900009D60C /* TKFoundation.h in Headers */ = {isa = PBXBuildFile; fileRef = 200B62721AD7FBDC0049E35C /* TKFoundation.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		20CEA47C1BA112CB0009D60C /* TKSectionedScrollView.h in Headers */ = {isa = PBXBuildFile; fileRef = 20A75C661AD8332F00E2106A /* TKSectionedScrollView.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		20CEA47D1BA112D00009D60C /* TKSectionedScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 20A75C671AD8332F00E2106A /* TKSectionedScrollView.m */; };
 		C4F32E367BD0AECDAFFC695A /* CurrySwift/Bundle+Receipts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DCE542060D0500B386E3415 /* CurrySwift/Bundle+Receipts.swift */; };
 		643058F97CD5FE7E450AD1CE /* CurrySwift/CAAnimation+TKAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E1930CDA51DD156ABF336CB /* CurrySwift/CAAnimation+TKAnimation.swift */; };
 		2F757B0BC7102A9F7707FC16 /* CurrySwift/CAKeyframeAnimation+TKAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58BF917DB14BFA96D4A05139 /* CurrySwift/CAKeyframeAnimation+TKAnimation.swift */; };
@@ -232,6 +206,14 @@
 		0F64AFF66F1FE21C1CE38A82 /* CurrySwift/TKVideoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BA2D2EA6F40AA417273086F /* CurrySwift/TKVideoViewController.swift */; };
 		F518CBE4BF220180702C2663 /* CurrySwift/TKCardModalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91B376CF0966CA09F3219698 /* CurrySwift/TKCardModalViewController.swift */; };
 		043558B6C62AF9EC29EF58F8 /* CurrySwift/TKKeyboardTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C118F3512E4A4CFA6ACC53F /* CurrySwift/TKKeyboardTableViewController.swift */; };
+		DB26FC3D0E8A357C0624E9FC /* CurrySwift/TKDecimalInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 725CBE286D8E1781897885D0 /* CurrySwift/TKDecimalInputView.swift */; };
+		F2A675A5C50EB1D43A8224DE /* CurrySwift/TKDecimalInputWithNextKeyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFF84D0F6C28F747F9DB8D2E /* CurrySwift/TKDecimalInputWithNextKeyView.swift */; };
+		33F8F8D887B90C4A193F2E98 /* CurrySwift/TKInputKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC72E17F6A81E151E7D48D0E /* CurrySwift/TKInputKey.swift */; };
+		6D322AF10030C0DCE92BF44D /* CurrySwift/TKInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E997EAAE68027079012074F /* CurrySwift/TKInputView.swift */; };
+		2DDE3AE5C312B6B7B231AA49 /* CurrySwift/TKNumberInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD67C78A81938C4EA2CEB115 /* CurrySwift/TKNumberInputView.swift */; };
+		04783F3118549EECE910DD0D /* CurrySwift/TKNumberInputWithNextKeyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C932696EDE792DA5B83DEF70 /* CurrySwift/TKNumberInputWithNextKeyView.swift */; };
+		07CBA44C1B5146928CF0F62C /* CurrySwift/TKSectionedScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C88A70E7A6C0E1A7A2B91D41 /* CurrySwift/TKSectionedScrollView.swift */; };
+		2FDE99D43D434FF76D9D7B63 /* CurrySwift/TKSectionedScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C88A70E7A6C0E1A7A2B91D41 /* CurrySwift/TKSectionedScrollView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -251,24 +233,10 @@
 		200B62601AD7FB460049E35C /* curryTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = curryTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		200B62661AD7FB460049E35C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		200B62671AD7FB460049E35C /* curryTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = curryTests.m; sourceTree = "<group>"; };
-		200B62721AD7FBDC0049E35C /* TKFoundation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TKFoundation.h; sourceTree = "<group>"; };
 		2010DCB01BB0E40E00810A98 /* curryWatch.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = curryWatch.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2010DCB21BB0E40E00810A98 /* curryWatch.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = curryWatch.h; sourceTree = "<group>"; };
 		2010DCB41BB0E40E00810A98 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		2010DCBF1BB0EA0600810A98 /* TKUIKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TKUIKit.h; sourceTree = "<group>"; };
 		201BED4521C0681600CC13BE /* CurrySwift/UILabel+Spacing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CurrySwift/UILabel+Spacing.swift"; sourceTree = SOURCE_ROOT; };
-		202DBEAD1AF4347A00B0CE67 /* TKInputView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TKInputView.h; sourceTree = "<group>"; };
-		202DBEAE1AF4347A00B0CE67 /* TKInputView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TKInputView.m; sourceTree = "<group>"; };
-		202DBEAF1AF4347A00B0CE67 /* TKInputKey.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TKInputKey.h; sourceTree = "<group>"; };
-		202DBEB01AF4347A00B0CE67 /* TKInputKey.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TKInputKey.m; sourceTree = "<group>"; };
-		202DBEB11AF4347A00B0CE67 /* TKNumberInputView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TKNumberInputView.h; sourceTree = "<group>"; };
-		202DBEB21AF4347A00B0CE67 /* TKNumberInputView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TKNumberInputView.m; sourceTree = "<group>"; };
-		202DBEB31AF4347A00B0CE67 /* TKDecimalInputView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TKDecimalInputView.h; sourceTree = "<group>"; };
-		202DBEB41AF4347A00B0CE67 /* TKDecimalInputView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TKDecimalInputView.m; sourceTree = "<group>"; };
-		202DBEB51AF4347A00B0CE67 /* TKNumberInputWithNextKeyView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TKNumberInputWithNextKeyView.h; sourceTree = "<group>"; };
-		202DBEB61AF4347A00B0CE67 /* TKNumberInputWithNextKeyView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TKNumberInputWithNextKeyView.m; sourceTree = "<group>"; };
-		202DBEB71AF4347A00B0CE67 /* TKDecimalInputWithNextKeyView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TKDecimalInputWithNextKeyView.h; sourceTree = "<group>"; };
-		202DBEB81AF4347A00B0CE67 /* TKDecimalInputWithNextKeyView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TKDecimalInputWithNextKeyView.m; sourceTree = "<group>"; };
 		202DBEEA1AF6717A00B0CE67 /* CurryImages.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = CurryImages.xcassets; sourceTree = "<group>"; };
 		2069C12B1D8AFEB9000BD656 /* CurrySwift/Bundle+TKCategory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CurrySwift/Bundle+TKCategory.swift"; sourceTree = SOURCE_ROOT; };
 		20785F6F1AD8388E000DC57F /* NSStringTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSStringTests.h; sourceTree = "<group>"; };
@@ -284,9 +252,6 @@
 		207C97B31BD7F3F200342677 /* NSView+TKCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSView+TKCategory.h"; sourceTree = "<group>"; };
 		207C97B41BD7F3F200342677 /* NSView+TKCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSView+TKCategory.m"; sourceTree = "<group>"; };
 		209507342188EA7E00AD35F0 /* CurrySwift/URLRequest+TKCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CurrySwift/URLRequest+TKCategory.swift"; sourceTree = SOURCE_ROOT; };
-		20A75C5E1AD82C8500E2106A /* Headers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Headers.h; sourceTree = "<group>"; };
-		20A75C661AD8332F00E2106A /* TKSectionedScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TKSectionedScrollView.h; sourceTree = "<group>"; };
-		20A75C671AD8332F00E2106A /* TKSectionedScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TKSectionedScrollView.m; sourceTree = "<group>"; };
 		20B5FE1F1BB3613F00C0F848 /* curryMac.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = curryMac.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		20B5FE211BB3613F00C0F848 /* curryMac.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = curryMac.h; sourceTree = "<group>"; };
 		20B5FE231BB3613F00C0F848 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -344,7 +309,6 @@
 		46B145FA7D9F2FCE5A413862 /* CurrySwift/UIViewController+TKCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CurrySwift/UIViewController+TKCategory.swift"; sourceTree = SOURCE_ROOT; };
 		CBF7BC3165FDF1AD13617999 /* CurrySwift/URLSession+TKCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CurrySwift/URLSession+TKCategory.swift"; sourceTree = SOURCE_ROOT; };
 		09563363555B1B088C354081 /* CurrySwift/UserDefaults+iCloud.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CurrySwift/UserDefaults+iCloud.swift"; sourceTree = SOURCE_ROOT; };
-		5A1B9E3720734B08729A2300 /* CurrySwiftInterop.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CurrySwiftInterop.h; sourceTree = "<group>"; };
 		8B18BEC0DA14FAC441D1700A /* CurrySwift/TKCreditCardCVVTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CurrySwift/TKCreditCardCVVTextField.swift"; sourceTree = SOURCE_ROOT; };
 		7D50915DB23B939F9E13D686 /* CurrySwift/TKCreditCardExpirationTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CurrySwift/TKCreditCardExpirationTextField.swift"; sourceTree = SOURCE_ROOT; };
 		ECACD0C0A4D1CC9436938AB5 /* CurrySwift/TKCreditCardNumberTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CurrySwift/TKCreditCardNumberTextField.swift"; sourceTree = SOURCE_ROOT; };
@@ -369,6 +333,15 @@
 		FC82CB399E1D469176A8376D /* CurrySwift/TKWebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CurrySwift/TKWebViewController.swift"; sourceTree = SOURCE_ROOT; };
 		91B376CF0966CA09F3219698 /* CurrySwift/TKCardModalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CurrySwift/TKCardModalViewController.swift"; sourceTree = SOURCE_ROOT; };
 		6C118F3512E4A4CFA6ACC53F /* CurrySwift/TKKeyboardTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CurrySwift/TKKeyboardTableViewController.swift"; sourceTree = SOURCE_ROOT; };
+		725CBE286D8E1781897885D0 /* CurrySwift/TKDecimalInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CurrySwift/TKDecimalInputView.swift"; sourceTree = SOURCE_ROOT; };
+		FFF84D0F6C28F747F9DB8D2E /* CurrySwift/TKDecimalInputWithNextKeyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CurrySwift/TKDecimalInputWithNextKeyView.swift"; sourceTree = SOURCE_ROOT; };
+		0C7E21A61B31A0A991469E1B /* CurrySwift/TKFoundation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CurrySwift/TKFoundation.swift"; sourceTree = SOURCE_ROOT; };
+		BC72E17F6A81E151E7D48D0E /* CurrySwift/TKInputKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CurrySwift/TKInputKey.swift"; sourceTree = SOURCE_ROOT; };
+		6E997EAAE68027079012074F /* CurrySwift/TKInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CurrySwift/TKInputView.swift"; sourceTree = SOURCE_ROOT; };
+		DD67C78A81938C4EA2CEB115 /* CurrySwift/TKNumberInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CurrySwift/TKNumberInputView.swift"; sourceTree = SOURCE_ROOT; };
+		C932696EDE792DA5B83DEF70 /* CurrySwift/TKNumberInputWithNextKeyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CurrySwift/TKNumberInputWithNextKeyView.swift"; sourceTree = SOURCE_ROOT; };
+		C88A70E7A6C0E1A7A2B91D41 /* CurrySwift/TKSectionedScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CurrySwift/TKSectionedScrollView.swift"; sourceTree = SOURCE_ROOT; };
+		D7FB0C78C6BB19151F77DF8D /* CurrySwift/TKUIKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CurrySwift/TKUIKit.swift"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -439,13 +412,8 @@
 		200B62571AD7FB460049E35C /* curry */ = {
 			isa = PBXGroup;
 			children = (
-				5A1B9E3720734B08729A2300 /* CurrySwiftInterop.h */,
 				200B625A1AD7FB460049E35C /* curry.h */,
-				20A75C5E1AD82C8500E2106A /* Headers.h */,
-				200B62721AD7FBDC0049E35C /* TKFoundation.h */,
-				2010DCBF1BB0EA0600810A98 /* TKUIKit.h */,
 				200B629A1AD7FD4B0049E35C /* Categories */,
-				200B63221AD805320049E35C /* Views */,
 				200B62581AD7FB460049E35C /* Supporting Files */,
 			);
 			path = curry;
@@ -528,16 +496,6 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
-		200B63221AD805320049E35C /* Views */ = {
-			isa = PBXGroup;
-			children = (
-				202DBEC51AF4347F00B0CE67 /* Keyboard */,
-				20A75C661AD8332F00E2106A /* TKSectionedScrollView.h */,
-				20A75C671AD8332F00E2106A /* TKSectionedScrollView.m */,
-			);
-			path = Views;
-			sourceTree = "<group>";
-		};
 		2010DCB11BB0E40E00810A98 /* curryWatch */ = {
 			isa = PBXGroup;
 			children = (
@@ -545,25 +503,6 @@
 				2010DCB41BB0E40E00810A98 /* Info.plist */,
 			);
 			path = curryWatch;
-			sourceTree = "<group>";
-		};
-		202DBEC51AF4347F00B0CE67 /* Keyboard */ = {
-			isa = PBXGroup;
-			children = (
-				202DBEAD1AF4347A00B0CE67 /* TKInputView.h */,
-				202DBEAE1AF4347A00B0CE67 /* TKInputView.m */,
-				202DBEAF1AF4347A00B0CE67 /* TKInputKey.h */,
-				202DBEB01AF4347A00B0CE67 /* TKInputKey.m */,
-				202DBEB11AF4347A00B0CE67 /* TKNumberInputView.h */,
-				202DBEB21AF4347A00B0CE67 /* TKNumberInputView.m */,
-				202DBEB31AF4347A00B0CE67 /* TKDecimalInputView.h */,
-				202DBEB41AF4347A00B0CE67 /* TKDecimalInputView.m */,
-				202DBEB51AF4347A00B0CE67 /* TKNumberInputWithNextKeyView.h */,
-				202DBEB61AF4347A00B0CE67 /* TKNumberInputWithNextKeyView.m */,
-				202DBEB71AF4347A00B0CE67 /* TKDecimalInputWithNextKeyView.h */,
-				202DBEB81AF4347A00B0CE67 /* TKDecimalInputWithNextKeyView.m */,
-			);
-			name = Keyboard;
 			sourceTree = "<group>";
 		};
 		20B5FE201BB3613F00C0F848 /* curryMac */ = {
@@ -591,6 +530,15 @@
 		C783B9893527F4B1545E677C /* CurrySwift */ = {
 			isa = PBXGroup;
 			children = (
+				725CBE286D8E1781897885D0 /* CurrySwift/TKDecimalInputView.swift */,
+				FFF84D0F6C28F747F9DB8D2E /* CurrySwift/TKDecimalInputWithNextKeyView.swift */,
+				0C7E21A61B31A0A991469E1B /* CurrySwift/TKFoundation.swift */,
+				BC72E17F6A81E151E7D48D0E /* CurrySwift/TKInputKey.swift */,
+				6E997EAAE68027079012074F /* CurrySwift/TKInputView.swift */,
+				DD67C78A81938C4EA2CEB115 /* CurrySwift/TKNumberInputView.swift */,
+				C932696EDE792DA5B83DEF70 /* CurrySwift/TKNumberInputWithNextKeyView.swift */,
+				C88A70E7A6C0E1A7A2B91D41 /* CurrySwift/TKSectionedScrollView.swift */,
+				D7FB0C78C6BB19151F77DF8D /* CurrySwift/TKUIKit.swift */,
 				91B376CF0966CA09F3219698 /* CurrySwift/TKCardModalViewController.swift */,
 				6C118F3512E4A4CFA6ACC53F /* CurrySwift/TKKeyboardTableViewController.swift */,
 				A5D688B0325EAA5DEC71614F /* CurrySwift/TKCollectionViewController.swift */,
@@ -680,17 +628,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				200B62741AD7FBDC0049E35C /* TKFoundation.h in Headers */,
 				200B625B1AD7FB460049E35C /* curry.h in Headers */,
-				2010DCC01BB0EA7800810A98 /* TKUIKit.h in Headers */,
-				20A75C681AD8332F00E2106A /* TKSectionedScrollView.h in Headers */,
-				20A75C5F1AD82C8500E2106A /* Headers.h in Headers */,
-				202DBEBB1AF4347A00B0CE67 /* TKInputKey.h in Headers */,
-				202DBEC11AF4347A00B0CE67 /* TKNumberInputWithNextKeyView.h in Headers */,
-				202DBEBD1AF4347A00B0CE67 /* TKNumberInputView.h in Headers */,
-				202DBEB91AF4347A00B0CE67 /* TKInputView.h in Headers */,
-				202DBEC31AF4347A00B0CE67 /* TKDecimalInputWithNextKeyView.h in Headers */,
-				202DBEBF1AF4347A00B0CE67 /* TKDecimalInputView.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -698,9 +636,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2010DCF21BB0F88F00810A98 /* TKFoundation.h in Headers */,
 				2010DCB31BB0E40E00810A98 /* curryWatch.h in Headers */,
-				2069E8181C78EFCD003035FF /* Headers.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -708,9 +644,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				20B5FE361BB363A200C0F848 /* TKFoundation.h in Headers */,
 				207C97B11BD7F1AC00342677 /* NSView+Positioning.h in Headers */,
-				2069E8191C78EFCD003035FF /* Headers.h in Headers */,
 				207C97B51BD7F3F200342677 /* NSView+TKCategory.h in Headers */,
 				20B5FE221BB3613F00C0F848 /* curryMac.h in Headers */,
 			);
@@ -720,10 +654,6 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2069E8171C78EEDB003035FF /* Headers.h in Headers */,
-				2010DCF01BB0F5F800810A98 /* TKUIKit.h in Headers */,
-				20CEA4331BA110900009D60C /* TKFoundation.h in Headers */,
-				20CEA47C1BA112CB0009D60C /* TKSectionedScrollView.h in Headers */,
 				20CEA42E1BA1105D0009D60C /* curryTV.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -939,6 +869,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DB26FC3D0E8A357C0624E9FC /* CurrySwift/TKDecimalInputView.swift in Sources */,
+				F2A675A5C50EB1D43A8224DE /* CurrySwift/TKDecimalInputWithNextKeyView.swift in Sources */,
+				33F8F8D887B90C4A193F2E98 /* CurrySwift/TKInputKey.swift in Sources */,
+				6D322AF10030C0DCE92BF44D /* CurrySwift/TKInputView.swift in Sources */,
+				2DDE3AE5C312B6B7B231AA49 /* CurrySwift/TKNumberInputView.swift in Sources */,
+				04783F3118549EECE910DD0D /* CurrySwift/TKNumberInputWithNextKeyView.swift in Sources */,
+				07CBA44C1B5146928CF0F62C /* CurrySwift/TKSectionedScrollView.swift in Sources */,
 				F518CBE4BF220180702C2663 /* CurrySwift/TKCardModalViewController.swift in Sources */,
 				043558B6C62AF9EC29EF58F8 /* CurrySwift/TKKeyboardTableViewController.swift in Sources */,
 				D00BCFF18B5D34B1527DE9FC /* CurrySwift/TKCollectionViewController.swift in Sources */,
@@ -1014,16 +951,9 @@
 				1378A01B37C8AF8ED2741AD2 /* CurrySwift/URLSession+TKCategory.swift in Sources */,
 				48D41AC2B414A2E5A8F20736 /* CurrySwift/UserDefaults+iCloud.swift in Sources */,
 				209507352188EA7E00AD35F0 /* CurrySwift/URLRequest+TKCategory.swift in Sources */,
-				202DBEC21AF4347A00B0CE67 /* TKNumberInputWithNextKeyView.m in Sources */,
-				202DBEC01AF4347A00B0CE67 /* TKDecimalInputView.m in Sources */,
-				202DBEBA1AF4347A00B0CE67 /* TKInputView.m in Sources */,
 				20C1E9A52040A75F0096C895 /* CurrySwift/UIView+Velocity.swift in Sources */,
-				202DBEBE1AF4347A00B0CE67 /* TKNumberInputView.m in Sources */,
-				20A75C691AD8332F00E2106A /* TKSectionedScrollView.m in Sources */,
-				202DBEBC1AF4347A00B0CE67 /* TKInputKey.m in Sources */,
 				201BED4621C0681600CC13BE /* CurrySwift/UILabel+Spacing.swift in Sources */,
 				2069C12C1D8AFEB9000BD656 /* CurrySwift/Bundle+TKCategory.swift in Sources */,
-				202DBEC41AF4347A00B0CE67 /* TKDecimalInputWithNextKeyView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1086,6 +1016,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2FDE99D43D434FF76D9D7B63 /* CurrySwift/TKSectionedScrollView.swift in Sources */,
 				84F29F13298DC72EA9FFCA69 /* CurrySwift/TKCollectionViewController.swift in Sources */,
 				84169FED160CF54D1573700E /* CurrySwift/TKCustomPresentationViewController.swift in Sources */,
 				66615FD1D97B02C92297428C /* CurrySwift/TKSoundAlertController.swift in Sources */,
@@ -1148,7 +1079,6 @@
 				F1330F4549D0D0F88764303D /* CurrySwift/URLSession+TKCategory.swift in Sources */,
 				1DEA1118D283D3C0A9348622 /* CurrySwift/UserDefaults+iCloud.swift in Sources */,
 				201BED4721C0687600CC13BE /* CurrySwift/UILabel+Spacing.swift in Sources */,
-				20CEA47D1BA112D00009D60C /* TKSectionedScrollView.m in Sources */,
 				2095073C2188EE2200AD35F0 /* CurrySwift/URLRequest+TKCategory.swift in Sources */,
 				2069C12D1D8AFEB9000BD656 /* CurrySwift/Bundle+TKCategory.swift in Sources */,
 				20B986F12040A8AD00F7BF6A /* CurrySwift/UIView+Velocity.swift in Sources */,

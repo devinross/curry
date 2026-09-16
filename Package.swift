@@ -10,43 +10,25 @@ let package = Package(
     products: [
         .library(
             name: "curry",
-            targets: ["curry", "CurrySwift"]
+            targets: ["curry"]
         ),
     ],
     targets: [
-        // Objective-C sources. Public headers are exposed through the flat
-        // symlink directory `curry/include` so quoted imports resolve both
-        // here and in the legacy framework targets.
+        // curry is now entirely Swift. The sources still live in CurrySwift/,
+        // which is where they landed while the library was half Objective-C.
         .target(
             name: "curry",
-            // The Objective-C half consumes categories that have already moved
-            // to Swift, via `@import CurrySwift;` in its .m files.
-            dependencies: ["CurrySwift"],
-            path: "curry",
-            exclude: [
-                "Supporting Files/Info.plist",
-            ],
-            resources: [
-                .process("Supporting Files/CurryImages.xcassets")
-            ],
-            publicHeadersPath: "include",
-            // Lets the .m files reach CurrySwiftInterop.h, which is deliberately
-            // not a public header: it imports a Swift module, which Clang cannot
-            // resolve while building the public 'curry' module.
-            cSettings: [ .headerSearchPath(".") ]
-        ),
-        // Swift-only extensions. SwiftPM targets can't mix Swift and
-        // Objective-C, so these live in their own module.
-        .target(
-            name: "CurrySwift",
             path: "CurrySwift",
+            resources: [
+                .process("CurryImages.xcassets")
+            ],
             swiftSettings: [
                 .swiftLanguageMode(.v5)
             ]
         ),
         .testTarget(
             name: "curryTests",
-            dependencies: ["curry", "CurrySwift"],
+            dependencies: ["curry"],
             path: "curryTests",
             exclude: [
                 "Supporting Files"

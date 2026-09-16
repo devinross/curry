@@ -31,11 +31,7 @@
 
 
 #import "NSArrayTests.h"
-#if SWIFT_PACKAGE
-@import CurrySwift;
-#else
 @import curry;
-#endif
 
 @implementation NSArrayTests
 

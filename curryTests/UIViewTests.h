@@ -30,11 +30,7 @@
  */
 
 @import Foundation;
-#if SWIFT_PACKAGE
-@import CurrySwift;
-#else
 @import curry;
-#endif
 @import UIKit;
 @import QuartzCore;
 @import XCTest;

@@ -39,7 +39,5 @@ FOUNDATION_EXPORT double curryVersionNumber;
 //! Project version string for curry.
 FOUNDATION_EXPORT const unsigned char curryVersionString[];
 
-// In this header, you should import all the public headers of your framework using statements like #import "PublicHeader.h"
-
-
-#import <curry/Headers.h>
+// curry is now written in Swift. Its API reaches Objective-C through the
+// generated interface header rather than through public headers listed here.

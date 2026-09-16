@@ -30,11 +30,7 @@
  */
 
 #import "DataTests.h"
-#if SWIFT_PACKAGE
-@import CurrySwift;
-#else
 @import curry;
-#endif
 
 @interface SampleItem : NSObject
 
