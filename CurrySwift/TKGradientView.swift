@@ -1,0 +1,81 @@
+//
+//  TKGradientView.swift
+//  Created by Devin Ross on 9/21/11.
+//
+/*
+
+curry || https://github.com/devinross/curry
+
+Permission is hereby granted, free of charge, to any person
+obtaining a copy of this software and associated documentation
+files (the "Software"), to deal in the Software without
+restriction, including without limitation the rights to use,
+copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the
+Software is furnished to do so, subject to the following
+conditions:
+
+The above copyright notice and this permission notice shall be
+included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES
+OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT
+HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY,
+WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR
+OTHER DEALINGS IN THE SOFTWARE.
+
+*/
+
+import UIKit
+import QuartzCore
+
+
+/*! This class implements `UIView` backed by a `CAGradientLayer`. */
+@objc(TKGradientView)
+open class TKGradientView: UIView {
+	
+	open override class var layerClass: AnyClass { CAGradientLayer.self }
+	
+	private var gradientLayer: CAGradientLayer { layer as! CAGradientLayer }
+	
+	/*! An array of `UIColor` objects defining the color of each gradient stop. */
+	@objc open var colors: [UIColor]? {
+		get {
+			guard let cgColors = gradientLayer.colors else { return nil }
+			return cgColors.map { UIColor(cgColor: $0 as! CGColor) }
+		}
+		set { gradientLayer.colors = newValue?.map(\.cgColor) }
+	}
+	
+	/*! An optional array of NSNumber objects defining the location of each gradient stop. */
+	@objc open var locations: [NSNumber]? {
+		get { gradientLayer.locations }
+		set { gradientLayer.locations = newValue }
+	}
+	
+	/*!
+	The start point corresponds to the first stop of the gradient. The point is defined in the
+	unit coordinate space and is then mapped to the layer's bounds rectangle when drawn.
+	Default value is (0.5,0.0).
+	*/
+	@objc open var startPoint: CGPoint {
+		get { gradientLayer.startPoint }
+		set { gradientLayer.startPoint = newValue }
+	}
+	
+	/*! The end point of the gradient when drawn in the layer's coordinate space. */
+	@objc open var endPoint: CGPoint {
+		get { gradientLayer.endPoint }
+		set { gradientLayer.endPoint = newValue }
+	}
+	
+	/*! Style of gradient drawn by the layer. */
+	@objc open var type: String {
+		get { gradientLayer.type.rawValue }
+		set { gradientLayer.type = CAGradientLayerType(rawValue: newValue) }
+	}
+	
+}

@@ -31,12 +31,6 @@
 		200B630D1AD804350049E35C /* TKKeyboardTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 200B63011AD804340049E35C /* TKKeyboardTableViewController.m */; platformFilters = (ios, maccatalyst, xros, ); };
 		200B63101AD804350049E35C /* TKWebViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 200B63041AD804340049E35C /* TKWebViewController.h */; platformFilters = (ios, maccatalyst, xros, ); settings = {ATTRIBUTES = (Public, ); }; };
 		200B63111AD804350049E35C /* TKWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 200B63051AD804340049E35C /* TKWebViewController.m */; platformFilters = (ios, maccatalyst, xros, ); };
-		200B63121AD804350049E35C /* TKGradientView.h in Headers */ = {isa = PBXBuildFile; fileRef = 200B63061AD804340049E35C /* TKGradientView.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		200B63131AD804350049E35C /* TKGradientView.m in Sources */ = {isa = PBXBuildFile; fileRef = 200B63071AD804340049E35C /* TKGradientView.m */; };
-		200B63141AD804350049E35C /* TKShapeView.h in Headers */ = {isa = PBXBuildFile; fileRef = 200B63081AD804340049E35C /* TKShapeView.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		200B63151AD804350049E35C /* TKShapeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 200B63091AD804340049E35C /* TKShapeView.m */; };
-		200B631A1AD804400049E35C /* TKExtendedScrollView.h in Headers */ = {isa = PBXBuildFile; fileRef = 200B63161AD804400049E35C /* TKExtendedScrollView.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		200B631B1AD804400049E35C /* TKExtendedScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 200B63171AD804400049E35C /* TKExtendedScrollView.m */; };
 		200B631C1AD804400049E35C /* TKSoundAlertController.h in Headers */ = {isa = PBXBuildFile; fileRef = 200B63181AD804400049E35C /* TKSoundAlertController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		200B631D1AD804400049E35C /* TKSoundAlertController.m in Sources */ = {isa = PBXBuildFile; fileRef = 200B63191AD804400049E35C /* TKSoundAlertController.m */; };
 		200B63201AD804E30049E35C /* TKCardModalViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 200B631E1AD804E30049E35C /* TKCardModalViewController.h */; platformFilters = (ios, maccatalyst, xros, ); settings = {ATTRIBUTES = (Public, ); }; };
@@ -68,14 +62,8 @@
 		202DBEC31AF4347A00B0CE67 /* TKDecimalInputWithNextKeyView.h in Headers */ = {isa = PBXBuildFile; fileRef = 202DBEB71AF4347A00B0CE67 /* TKDecimalInputWithNextKeyView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		202DBEC41AF4347A00B0CE67 /* TKDecimalInputWithNextKeyView.m in Sources */ = {isa = PBXBuildFile; fileRef = 202DBEB81AF4347A00B0CE67 /* TKDecimalInputWithNextKeyView.m */; };
 		202DBEEB1AF6717A00B0CE67 /* CurryImages.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 202DBEEA1AF6717A00B0CE67 /* CurryImages.xcassets */; };
-		202DBEF41AF6727A00B0CE67 /* TKCurrentTimeLabel.h in Headers */ = {isa = PBXBuildFile; fileRef = 202DBEF21AF6727A00B0CE67 /* TKCurrentTimeLabel.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		202DBEF51AF6727A00B0CE67 /* TKCurrentTimeLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 202DBEF31AF6727A00B0CE67 /* TKCurrentTimeLabel.m */; };
 		203BDD3C1BE17CFC00572452 /* TKSoundAlertController.m in Sources */ = {isa = PBXBuildFile; fileRef = 200B63191AD804400049E35C /* TKSoundAlertController.m */; };
 		203BDD3D1BE17CFE00572452 /* TKSoundAlertController.h in Headers */ = {isa = PBXBuildFile; fileRef = 200B63181AD804400049E35C /* TKSoundAlertController.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		204922B41B45D8DB00C22245 /* TKTextFieldCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 204922B21B45D8DB00C22245 /* TKTextFieldCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		204922B51B45D8DB00C22245 /* TKTextFieldCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 204922B31B45D8DB00C22245 /* TKTextFieldCell.m */; };
-		204922B81B46EF9200C22245 /* TKTextView.h in Headers */ = {isa = PBXBuildFile; fileRef = 204922B61B46EF9200C22245 /* TKTextView.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		204922B91B46EF9200C22245 /* TKTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 204922B71B46EF9200C22245 /* TKTextView.m */; };
 		2069C12C1D8AFEB9000BD656 /* CurrySwift/Bundle+TKCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2069C12B1D8AFEB9000BD656 /* CurrySwift/Bundle+TKCategory.swift */; };
 		2069C12D1D8AFEB9000BD656 /* CurrySwift/Bundle+TKCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2069C12B1D8AFEB9000BD656 /* CurrySwift/Bundle+TKCategory.swift */; };
 		2069C12E1D8AFEB9000BD656 /* CurrySwift/Bundle+TKCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2069C12B1D8AFEB9000BD656 /* CurrySwift/Bundle+TKCategory.swift */; };
@@ -87,14 +75,6 @@
 		20785F781AD8388E000DC57F /* UIViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 20785F721AD8388E000DC57F /* UIViewTests.m */; };
 		20785F791AD8388E000DC57F /* NSArrayTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 20785F741AD8388E000DC57F /* NSArrayTests.m */; };
 		20785F7A1AD8388E000DC57F /* DataTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 20785F761AD8388E000DC57F /* DataTests.m */; };
-		207860161AD84A87000DC57F /* TKCreditCardCVVTextField.h in Headers */ = {isa = PBXBuildFile; fileRef = 2078600C1AD84A87000DC57F /* TKCreditCardCVVTextField.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		207860171AD84A87000DC57F /* TKCreditCardCVVTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 2078600D1AD84A87000DC57F /* TKCreditCardCVVTextField.m */; };
-		207860181AD84A87000DC57F /* TKCreditCardExpirationTextField.h in Headers */ = {isa = PBXBuildFile; fileRef = 2078600E1AD84A87000DC57F /* TKCreditCardExpirationTextField.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		207860191AD84A87000DC57F /* TKCreditCardExpirationTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 2078600F1AD84A87000DC57F /* TKCreditCardExpirationTextField.m */; };
-		2078601A1AD84A87000DC57F /* TKCreditCardNumberTextField.h in Headers */ = {isa = PBXBuildFile; fileRef = 207860101AD84A87000DC57F /* TKCreditCardNumberTextField.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		2078601B1AD84A87000DC57F /* TKCreditCardNumberTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 207860111AD84A87000DC57F /* TKCreditCardNumberTextField.m */; };
-		2078601C1AD84A87000DC57F /* TKCreditCardZipTextField.h in Headers */ = {isa = PBXBuildFile; fileRef = 207860121AD84A87000DC57F /* TKCreditCardZipTextField.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		2078601D1AD84A87000DC57F /* TKCreditCardZipTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 207860131AD84A87000DC57F /* TKCreditCardZipTextField.m */; };
 		207A76811EBE7EBE006BE019 /* TKSafariWebCredentials.h in Headers */ = {isa = PBXBuildFile; fileRef = 207A767F1EBE7EBE006BE019 /* TKSafariWebCredentials.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		207A76821EBE7EBE006BE019 /* TKSafariWebCredentials.m in Sources */ = {isa = PBXBuildFile; fileRef = 207A76801EBE7EBE006BE019 /* TKSafariWebCredentials.m */; };
 		207C97B11BD7F1AC00342677 /* NSView+Positioning.h in Headers */ = {isa = PBXBuildFile; fileRef = 207C97AF1BD7F1AC00342677 /* NSView+Positioning.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -106,48 +86,20 @@
 		2095073D2188EE2300AD35F0 /* CurrySwift/URLRequest+TKCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 209507342188EA7E00AD35F0 /* CurrySwift/URLRequest+TKCategory.swift */; };
 		209761EC1BD9EC2F00EE6F81 /* TKVideoViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 20E110721B3B2651006A2CD6 /* TKVideoViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		209761ED1BD9EC3200EE6F81 /* TKVideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 20E110731B3B2651006A2CD6 /* TKVideoViewController.m */; };
-		2097F33E1B3D94C300247736 /* TKWindow.h in Headers */ = {isa = PBXBuildFile; fileRef = 2097F33C1B3D94C300247736 /* TKWindow.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		2097F33F1B3D94C300247736 /* TKWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 2097F33D1B3D94C300247736 /* TKWindow.m */; };
-		20A46DDF1B61C097004A4153 /* TKPhoneNumberTextField.h in Headers */ = {isa = PBXBuildFile; fileRef = 20A46DDD1B61C097004A4153 /* TKPhoneNumberTextField.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		20A46DE01B61C097004A4153 /* TKPhoneNumberTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 20A46DDE1B61C097004A4153 /* TKPhoneNumberTextField.m */; };
 		20A75C5F1AD82C8500E2106A /* Headers.h in Headers */ = {isa = PBXBuildFile; fileRef = 20A75C5E1AD82C8500E2106A /* Headers.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		20A75C681AD8332F00E2106A /* TKSectionedScrollView.h in Headers */ = {isa = PBXBuildFile; fileRef = 20A75C661AD8332F00E2106A /* TKSectionedScrollView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		20A75C691AD8332F00E2106A /* TKSectionedScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 20A75C671AD8332F00E2106A /* TKSectionedScrollView.m */; };
-		20A85BEB1CA3543D00632668 /* TKWindow.h in Headers */ = {isa = PBXBuildFile; fileRef = 2097F33C1B3D94C300247736 /* TKWindow.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		20A85BEC1CA3544100632668 /* TKWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 2097F33D1B3D94C300247736 /* TKWindow.m */; };
 		20B5FE221BB3613F00C0F848 /* curryMac.h in Headers */ = {isa = PBXBuildFile; fileRef = 20B5FE211BB3613F00C0F848 /* curryMac.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		20B5FE361BB363A200C0F848 /* TKFoundation.h in Headers */ = {isa = PBXBuildFile; fileRef = 200B62721AD7FBDC0049E35C /* TKFoundation.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		20B986F12040A8AD00F7BF6A /* CurrySwift/UIView+Velocity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20C1E9A42040A75F0096C895 /* CurrySwift/UIView+Velocity.swift */; };
 		20C1E9A52040A75F0096C895 /* CurrySwift/UIView+Velocity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20C1E9A42040A75F0096C895 /* CurrySwift/UIView+Velocity.swift */; };
-		20CAE0D41B0953E40088740E /* TKSwitchCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 20CAE0D21B0953E40088740E /* TKSwitchCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		20CAE0D51B0953E40088740E /* TKSwitchCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 20CAE0D31B0953E40088740E /* TKSwitchCell.m */; };
 		20CEA42E1BA1105D0009D60C /* curryTV.h in Headers */ = {isa = PBXBuildFile; fileRef = 20CEA42D1BA1105D0009D60C /* curryTV.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		20CEA4331BA110900009D60C /* TKFoundation.h in Headers */ = {isa = PBXBuildFile; fileRef = 200B62721AD7FBDC0049E35C /* TKFoundation.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		20CEA4711BA1124F0009D60C /* TKCustomPresentationViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 202DBE6F1AF4121C00B0CE67 /* TKCustomPresentationViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		20CEA4721BA112530009D60C /* TKCustomPresentationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 202DBE701AF4121C00B0CE67 /* TKCustomPresentationViewController.m */; };
 		20CEA4731BA112550009D60C /* TKCardModalViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 200B631E1AD804E30049E35C /* TKCardModalViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		20CEA4781BA112B70009D60C /* TKShapeView.h in Headers */ = {isa = PBXBuildFile; fileRef = 200B63081AD804340049E35C /* TKShapeView.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		20CEA4791BA112BB0009D60C /* TKShapeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 200B63091AD804340049E35C /* TKShapeView.m */; };
-		20CEA47A1BA112C40009D60C /* TKCurrentTimeLabel.h in Headers */ = {isa = PBXBuildFile; fileRef = 202DBEF21AF6727A00B0CE67 /* TKCurrentTimeLabel.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		20CEA47B1BA112C70009D60C /* TKCurrentTimeLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 202DBEF31AF6727A00B0CE67 /* TKCurrentTimeLabel.m */; };
 		20CEA47C1BA112CB0009D60C /* TKSectionedScrollView.h in Headers */ = {isa = PBXBuildFile; fileRef = 20A75C661AD8332F00E2106A /* TKSectionedScrollView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		20CEA47D1BA112D00009D60C /* TKSectionedScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 20A75C671AD8332F00E2106A /* TKSectionedScrollView.m */; };
-		20CEA47E1BA112ED0009D60C /* TKGradientView.h in Headers */ = {isa = PBXBuildFile; fileRef = 200B63061AD804340049E35C /* TKGradientView.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		20CEA47F1BA112F30009D60C /* TKGradientView.m in Sources */ = {isa = PBXBuildFile; fileRef = 200B63071AD804340049E35C /* TKGradientView.m */; };
-		20CEA4801BA112FB0009D60C /* TKCreditCardNumberTextField.h in Headers */ = {isa = PBXBuildFile; fileRef = 207860101AD84A87000DC57F /* TKCreditCardNumberTextField.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		20CEA4811BA112FE0009D60C /* TKCreditCardNumberTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 207860111AD84A87000DC57F /* TKCreditCardNumberTextField.m */; };
-		20CEA4821BA113000009D60C /* TKCreditCardCVVTextField.h in Headers */ = {isa = PBXBuildFile; fileRef = 2078600C1AD84A87000DC57F /* TKCreditCardCVVTextField.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		20CEA4831BA113040009D60C /* TKCreditCardCVVTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 2078600D1AD84A87000DC57F /* TKCreditCardCVVTextField.m */; };
-		20CEA4841BA113070009D60C /* TKCreditCardExpirationTextField.h in Headers */ = {isa = PBXBuildFile; fileRef = 2078600E1AD84A87000DC57F /* TKCreditCardExpirationTextField.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		20CEA4851BA1130C0009D60C /* TKCreditCardExpirationTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 2078600F1AD84A87000DC57F /* TKCreditCardExpirationTextField.m */; };
-		20CEA4861BA1130E0009D60C /* TKCreditCardZipTextField.h in Headers */ = {isa = PBXBuildFile; fileRef = 207860121AD84A87000DC57F /* TKCreditCardZipTextField.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		20CEA4871BA113110009D60C /* TKCreditCardZipTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 207860131AD84A87000DC57F /* TKCreditCardZipTextField.m */; };
-		20CEA4881BA113140009D60C /* TKPhoneNumberTextField.h in Headers */ = {isa = PBXBuildFile; fileRef = 20A46DDD1B61C097004A4153 /* TKPhoneNumberTextField.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		20CEA4891BA113170009D60C /* TKPhoneNumberTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 20A46DDE1B61C097004A4153 /* TKPhoneNumberTextField.m */; };
-		20CEA4941BA113EE0009D60C /* TKTextFieldCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 204922B21B45D8DB00C22245 /* TKTextFieldCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		20CEA4951BA113F10009D60C /* TKTextFieldCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 204922B31B45D8DB00C22245 /* TKTextFieldCell.m */; };
-		20DDB58B1B45A97C001C7751 /* TKStepperCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 20DDB5891B45A97C001C7751 /* TKStepperCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		20DDB58C1B45A97C001C7751 /* TKStepperCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 20DDB58A1B45A97C001C7751 /* TKStepperCell.m */; };
 		20E110741B3B2651006A2CD6 /* TKVideoViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 20E110721B3B2651006A2CD6 /* TKVideoViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		20E110751B3B2651006A2CD6 /* TKVideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 20E110731B3B2651006A2CD6 /* TKVideoViewController.m */; };
 		C4F32E367BD0AECDAFFC695A /* CurrySwift/Bundle+Receipts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DCE542060D0500B386E3415 /* CurrySwift/Bundle+Receipts.swift */; };
@@ -267,6 +219,34 @@
 		A34A4A75229061C34D8DC631 /* CurrySwift/UIViewController+TKCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46B145FA7D9F2FCE5A413862 /* CurrySwift/UIViewController+TKCategory.swift */; };
 		F1330F4549D0D0F88764303D /* CurrySwift/URLSession+TKCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBF7BC3165FDF1AD13617999 /* CurrySwift/URLSession+TKCategory.swift */; };
 		1DEA1118D283D3C0A9348622 /* CurrySwift/UserDefaults+iCloud.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09563363555B1B088C354081 /* CurrySwift/UserDefaults+iCloud.swift */; };
+		1C484B50375368488AC59723 /* CurrySwift/TKCreditCardCVVTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B18BEC0DA14FAC441D1700A /* CurrySwift/TKCreditCardCVVTextField.swift */; };
+		19E76A38B50539EF0EA0EB15 /* CurrySwift/TKCreditCardExpirationTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D50915DB23B939F9E13D686 /* CurrySwift/TKCreditCardExpirationTextField.swift */; };
+		ADFD2DD94F79540B66EE04BE /* CurrySwift/TKCreditCardNumberTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECACD0C0A4D1CC9436938AB5 /* CurrySwift/TKCreditCardNumberTextField.swift */; };
+		310B879AD429A0FFD9F1F628 /* CurrySwift/TKCreditCardZipTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = F94D4407C6D89B37BCB8DA25 /* CurrySwift/TKCreditCardZipTextField.swift */; };
+		B85FB19571E5787C33CD8452 /* CurrySwift/TKDigits.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34F2326758CD95A7C0AC8177 /* CurrySwift/TKDigits.swift */; };
+		9D778CE07BB41C69BF0176C2 /* CurrySwift/TKPhoneNumberTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E247AE80893BA3C5AB007D1 /* CurrySwift/TKPhoneNumberTextField.swift */; };
+		5F9193C880663798E4719F34 /* CurrySwift/TKDigits.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34F2326758CD95A7C0AC8177 /* CurrySwift/TKDigits.swift */; };
+		58ED125F178D8A0D7DCF7F01 /* CurrySwift/TKDigits.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34F2326758CD95A7C0AC8177 /* CurrySwift/TKDigits.swift */; };
+		C773CDEE5F4318797855AE8A /* CurrySwift/TKCreditCardCVVTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B18BEC0DA14FAC441D1700A /* CurrySwift/TKCreditCardCVVTextField.swift */; };
+		21CA85B6D1A8A091BF3DB901 /* CurrySwift/TKCreditCardExpirationTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D50915DB23B939F9E13D686 /* CurrySwift/TKCreditCardExpirationTextField.swift */; };
+		6AED2961B25FB297EABAFD32 /* CurrySwift/TKCreditCardNumberTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECACD0C0A4D1CC9436938AB5 /* CurrySwift/TKCreditCardNumberTextField.swift */; };
+		236AC30E7B7861261E4665DC /* CurrySwift/TKCreditCardZipTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = F94D4407C6D89B37BCB8DA25 /* CurrySwift/TKCreditCardZipTextField.swift */; };
+		F757F73EFFA11F975864CE74 /* CurrySwift/TKDigits.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34F2326758CD95A7C0AC8177 /* CurrySwift/TKDigits.swift */; };
+		E94D496CF3BC6F6683B026B7 /* CurrySwift/TKPhoneNumberTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E247AE80893BA3C5AB007D1 /* CurrySwift/TKPhoneNumberTextField.swift */; };
+		1BF352531B2EF6819A00F633 /* CurrySwift/TKCurrentTimeLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D29274DAB8102E30BD345F8F /* CurrySwift/TKCurrentTimeLabel.swift */; };
+		989128EB11D2D79266A26B42 /* CurrySwift/TKExtendedScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDD10CD5F6ED1E4C4A956251 /* CurrySwift/TKExtendedScrollView.swift */; };
+		FF2E3B488BCA79CACFE874F9 /* CurrySwift/TKGradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E87982AF0516AB0A96C4959 /* CurrySwift/TKGradientView.swift */; };
+		DE7C1E6F4F6CCED97C8465AE /* CurrySwift/TKShapeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFEB1ECD6B3EFB44DD1568D5 /* CurrySwift/TKShapeView.swift */; };
+		3C73434538819CFEA52CFAD9 /* CurrySwift/TKStepperCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D2E9DD3CA2320EEB6647B38 /* CurrySwift/TKStepperCell.swift */; };
+		05F9BAAA404ABA91C7C39685 /* CurrySwift/TKSwitchCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 518FC7D4D9A15707A186D836 /* CurrySwift/TKSwitchCell.swift */; };
+		71BBA4D920A138352D2C0C3A /* CurrySwift/TKTextFieldCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A674447B0EF1C8F40A70EBE4 /* CurrySwift/TKTextFieldCell.swift */; };
+		31A11EEAD49FFBA8A70A97DD /* CurrySwift/TKTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4F8414A9A24CA403A730A50 /* CurrySwift/TKTextView.swift */; };
+		DDAF351132D7AD109DCF417D /* CurrySwift/TKWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = E122083DD4EC3A07B89A565C /* CurrySwift/TKWindow.swift */; };
+		90CDCA678E664C7FEA5C88E9 /* CurrySwift/TKCurrentTimeLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D29274DAB8102E30BD345F8F /* CurrySwift/TKCurrentTimeLabel.swift */; };
+		5E772E39C9FA88408F0337C2 /* CurrySwift/TKGradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E87982AF0516AB0A96C4959 /* CurrySwift/TKGradientView.swift */; };
+		C6F4AA36804A75BB5D9EB432 /* CurrySwift/TKShapeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFEB1ECD6B3EFB44DD1568D5 /* CurrySwift/TKShapeView.swift */; };
+		BCB16FB7187AC2FF4BAB89C9 /* CurrySwift/TKTextFieldCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A674447B0EF1C8F40A70EBE4 /* CurrySwift/TKTextFieldCell.swift */; };
+		BB21B885888B641824FCD3E5 /* CurrySwift/TKWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = E122083DD4EC3A07B89A565C /* CurrySwift/TKWindow.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -293,12 +273,6 @@
 		200B63011AD804340049E35C /* TKKeyboardTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TKKeyboardTableViewController.m; sourceTree = "<group>"; };
 		200B63041AD804340049E35C /* TKWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TKWebViewController.h; sourceTree = "<group>"; };
 		200B63051AD804340049E35C /* TKWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TKWebViewController.m; sourceTree = "<group>"; };
-		200B63061AD804340049E35C /* TKGradientView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TKGradientView.h; sourceTree = "<group>"; };
-		200B63071AD804340049E35C /* TKGradientView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TKGradientView.m; sourceTree = "<group>"; };
-		200B63081AD804340049E35C /* TKShapeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TKShapeView.h; sourceTree = "<group>"; };
-		200B63091AD804340049E35C /* TKShapeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TKShapeView.m; sourceTree = "<group>"; };
-		200B63161AD804400049E35C /* TKExtendedScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TKExtendedScrollView.h; sourceTree = "<group>"; };
-		200B63171AD804400049E35C /* TKExtendedScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TKExtendedScrollView.m; sourceTree = "<group>"; };
 		200B63181AD804400049E35C /* TKSoundAlertController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TKSoundAlertController.h; sourceTree = "<group>"; };
 		200B63191AD804400049E35C /* TKSoundAlertController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TKSoundAlertController.m; sourceTree = "<group>"; };
 		200B631E1AD804E30049E35C /* TKCardModalViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TKCardModalViewController.h; sourceTree = "<group>"; };
@@ -325,12 +299,6 @@
 		202DBEB71AF4347A00B0CE67 /* TKDecimalInputWithNextKeyView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TKDecimalInputWithNextKeyView.h; sourceTree = "<group>"; };
 		202DBEB81AF4347A00B0CE67 /* TKDecimalInputWithNextKeyView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TKDecimalInputWithNextKeyView.m; sourceTree = "<group>"; };
 		202DBEEA1AF6717A00B0CE67 /* CurryImages.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = CurryImages.xcassets; sourceTree = "<group>"; };
-		202DBEF21AF6727A00B0CE67 /* TKCurrentTimeLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TKCurrentTimeLabel.h; sourceTree = "<group>"; };
-		202DBEF31AF6727A00B0CE67 /* TKCurrentTimeLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TKCurrentTimeLabel.m; sourceTree = "<group>"; };
-		204922B21B45D8DB00C22245 /* TKTextFieldCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TKTextFieldCell.h; sourceTree = "<group>"; };
-		204922B31B45D8DB00C22245 /* TKTextFieldCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TKTextFieldCell.m; sourceTree = "<group>"; };
-		204922B61B46EF9200C22245 /* TKTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TKTextView.h; sourceTree = "<group>"; };
-		204922B71B46EF9200C22245 /* TKTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TKTextView.m; sourceTree = "<group>"; };
 		2069C12B1D8AFEB9000BD656 /* CurrySwift/Bundle+TKCategory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CurrySwift/Bundle+TKCategory.swift"; sourceTree = SOURCE_ROOT; };
 		20785F6F1AD8388E000DC57F /* NSStringTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSStringTests.h; sourceTree = "<group>"; };
 		20785F701AD8388E000DC57F /* NSStringTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSStringTests.m; sourceTree = "<group>"; };
@@ -340,14 +308,6 @@
 		20785F741AD8388E000DC57F /* NSArrayTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSArrayTests.m; sourceTree = "<group>"; };
 		20785F751AD8388E000DC57F /* DataTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataTests.h; sourceTree = "<group>"; };
 		20785F761AD8388E000DC57F /* DataTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataTests.m; sourceTree = "<group>"; };
-		2078600C1AD84A87000DC57F /* TKCreditCardCVVTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TKCreditCardCVVTextField.h; sourceTree = "<group>"; };
-		2078600D1AD84A87000DC57F /* TKCreditCardCVVTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TKCreditCardCVVTextField.m; sourceTree = "<group>"; };
-		2078600E1AD84A87000DC57F /* TKCreditCardExpirationTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TKCreditCardExpirationTextField.h; sourceTree = "<group>"; };
-		2078600F1AD84A87000DC57F /* TKCreditCardExpirationTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TKCreditCardExpirationTextField.m; sourceTree = "<group>"; };
-		207860101AD84A87000DC57F /* TKCreditCardNumberTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TKCreditCardNumberTextField.h; sourceTree = "<group>"; };
-		207860111AD84A87000DC57F /* TKCreditCardNumberTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TKCreditCardNumberTextField.m; sourceTree = "<group>"; };
-		207860121AD84A87000DC57F /* TKCreditCardZipTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TKCreditCardZipTextField.h; sourceTree = "<group>"; };
-		207860131AD84A87000DC57F /* TKCreditCardZipTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TKCreditCardZipTextField.m; sourceTree = "<group>"; };
 		207A767F1EBE7EBE006BE019 /* TKSafariWebCredentials.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TKSafariWebCredentials.h; sourceTree = "<group>"; };
 		207A76801EBE7EBE006BE019 /* TKSafariWebCredentials.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TKSafariWebCredentials.m; sourceTree = "<group>"; };
 		207C97AF1BD7F1AC00342677 /* NSView+Positioning.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSView+Positioning.h"; sourceTree = "<group>"; };
@@ -355,10 +315,6 @@
 		207C97B31BD7F3F200342677 /* NSView+TKCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSView+TKCategory.h"; sourceTree = "<group>"; };
 		207C97B41BD7F3F200342677 /* NSView+TKCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSView+TKCategory.m"; sourceTree = "<group>"; };
 		209507342188EA7E00AD35F0 /* CurrySwift/URLRequest+TKCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CurrySwift/URLRequest+TKCategory.swift"; sourceTree = SOURCE_ROOT; };
-		2097F33C1B3D94C300247736 /* TKWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TKWindow.h; sourceTree = "<group>"; };
-		2097F33D1B3D94C300247736 /* TKWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TKWindow.m; sourceTree = "<group>"; };
-		20A46DDD1B61C097004A4153 /* TKPhoneNumberTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TKPhoneNumberTextField.h; sourceTree = "<group>"; };
-		20A46DDE1B61C097004A4153 /* TKPhoneNumberTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TKPhoneNumberTextField.m; sourceTree = "<group>"; };
 		20A75C5E1AD82C8500E2106A /* Headers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Headers.h; sourceTree = "<group>"; };
 		20A75C661AD8332F00E2106A /* TKSectionedScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TKSectionedScrollView.h; sourceTree = "<group>"; };
 		20A75C671AD8332F00E2106A /* TKSectionedScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TKSectionedScrollView.m; sourceTree = "<group>"; };
@@ -366,13 +322,9 @@
 		20B5FE211BB3613F00C0F848 /* curryMac.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = curryMac.h; sourceTree = "<group>"; };
 		20B5FE231BB3613F00C0F848 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		20C1E9A42040A75F0096C895 /* CurrySwift/UIView+Velocity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CurrySwift/UIView+Velocity.swift"; sourceTree = SOURCE_ROOT; };
-		20CAE0D21B0953E40088740E /* TKSwitchCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TKSwitchCell.h; sourceTree = "<group>"; };
-		20CAE0D31B0953E40088740E /* TKSwitchCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TKSwitchCell.m; sourceTree = "<group>"; };
 		20CEA42B1BA1105D0009D60C /* curryTV.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = curryTV.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		20CEA42D1BA1105D0009D60C /* curryTV.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = curryTV.h; sourceTree = "<group>"; };
 		20CEA42F1BA1105D0009D60C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		20DDB5891B45A97C001C7751 /* TKStepperCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TKStepperCell.h; sourceTree = "<group>"; };
-		20DDB58A1B45A97C001C7751 /* TKStepperCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TKStepperCell.m; sourceTree = "<group>"; };
 		20E110721B3B2651006A2CD6 /* TKVideoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TKVideoViewController.h; sourceTree = "<group>"; };
 		20E110731B3B2651006A2CD6 /* TKVideoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TKVideoViewController.m; sourceTree = "<group>"; };
 		6DCE542060D0500B386E3415 /* CurrySwift/Bundle+Receipts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CurrySwift/Bundle+Receipts.swift"; sourceTree = SOURCE_ROOT; };
@@ -426,6 +378,21 @@
 		CBF7BC3165FDF1AD13617999 /* CurrySwift/URLSession+TKCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CurrySwift/URLSession+TKCategory.swift"; sourceTree = SOURCE_ROOT; };
 		09563363555B1B088C354081 /* CurrySwift/UserDefaults+iCloud.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CurrySwift/UserDefaults+iCloud.swift"; sourceTree = SOURCE_ROOT; };
 		5A1B9E3720734B08729A2300 /* CurrySwiftInterop.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CurrySwiftInterop.h; sourceTree = "<group>"; };
+		8B18BEC0DA14FAC441D1700A /* CurrySwift/TKCreditCardCVVTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CurrySwift/TKCreditCardCVVTextField.swift"; sourceTree = SOURCE_ROOT; };
+		7D50915DB23B939F9E13D686 /* CurrySwift/TKCreditCardExpirationTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CurrySwift/TKCreditCardExpirationTextField.swift"; sourceTree = SOURCE_ROOT; };
+		ECACD0C0A4D1CC9436938AB5 /* CurrySwift/TKCreditCardNumberTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CurrySwift/TKCreditCardNumberTextField.swift"; sourceTree = SOURCE_ROOT; };
+		F94D4407C6D89B37BCB8DA25 /* CurrySwift/TKCreditCardZipTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CurrySwift/TKCreditCardZipTextField.swift"; sourceTree = SOURCE_ROOT; };
+		34F2326758CD95A7C0AC8177 /* CurrySwift/TKDigits.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CurrySwift/TKDigits.swift"; sourceTree = SOURCE_ROOT; };
+		5E247AE80893BA3C5AB007D1 /* CurrySwift/TKPhoneNumberTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CurrySwift/TKPhoneNumberTextField.swift"; sourceTree = SOURCE_ROOT; };
+		D29274DAB8102E30BD345F8F /* CurrySwift/TKCurrentTimeLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CurrySwift/TKCurrentTimeLabel.swift"; sourceTree = SOURCE_ROOT; };
+		BDD10CD5F6ED1E4C4A956251 /* CurrySwift/TKExtendedScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CurrySwift/TKExtendedScrollView.swift"; sourceTree = SOURCE_ROOT; };
+		2E87982AF0516AB0A96C4959 /* CurrySwift/TKGradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CurrySwift/TKGradientView.swift"; sourceTree = SOURCE_ROOT; };
+		CFEB1ECD6B3EFB44DD1568D5 /* CurrySwift/TKShapeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CurrySwift/TKShapeView.swift"; sourceTree = SOURCE_ROOT; };
+		4D2E9DD3CA2320EEB6647B38 /* CurrySwift/TKStepperCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CurrySwift/TKStepperCell.swift"; sourceTree = SOURCE_ROOT; };
+		518FC7D4D9A15707A186D836 /* CurrySwift/TKSwitchCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CurrySwift/TKSwitchCell.swift"; sourceTree = SOURCE_ROOT; };
+		A674447B0EF1C8F40A70EBE4 /* CurrySwift/TKTextFieldCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CurrySwift/TKTextFieldCell.swift"; sourceTree = SOURCE_ROOT; };
+		D4F8414A9A24CA403A730A50 /* CurrySwift/TKTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CurrySwift/TKTextView.swift"; sourceTree = SOURCE_ROOT; };
+		E122083DD4EC3A07B89A565C /* CurrySwift/TKWindow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CurrySwift/TKWindow.swift"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -504,7 +471,6 @@
 				200B629A1AD7FD4B0049E35C /* Categories */,
 				200B63231AD805400049E35C /* ViewControllers */,
 				200B63221AD805320049E35C /* Views */,
-				2078601E1AD84AB2000DC57F /* CreditCard */,
 				200B635C1AD8140D0049E35C /* Extra */,
 				200B62581AD7FB460049E35C /* Supporting Files */,
 			);
@@ -592,26 +558,8 @@
 			isa = PBXGroup;
 			children = (
 				202DBEC51AF4347F00B0CE67 /* Keyboard */,
-				200B63061AD804340049E35C /* TKGradientView.h */,
-				200B63071AD804340049E35C /* TKGradientView.m */,
-				2097F33C1B3D94C300247736 /* TKWindow.h */,
-				2097F33D1B3D94C300247736 /* TKWindow.m */,
-				204922B61B46EF9200C22245 /* TKTextView.h */,
-				204922B71B46EF9200C22245 /* TKTextView.m */,
-				200B63081AD804340049E35C /* TKShapeView.h */,
-				200B63091AD804340049E35C /* TKShapeView.m */,
-				20CAE0D21B0953E40088740E /* TKSwitchCell.h */,
-				20CAE0D31B0953E40088740E /* TKSwitchCell.m */,
-				204922B21B45D8DB00C22245 /* TKTextFieldCell.h */,
-				204922B31B45D8DB00C22245 /* TKTextFieldCell.m */,
-				20DDB5891B45A97C001C7751 /* TKStepperCell.h */,
-				20DDB58A1B45A97C001C7751 /* TKStepperCell.m */,
-				200B63161AD804400049E35C /* TKExtendedScrollView.h */,
-				200B63171AD804400049E35C /* TKExtendedScrollView.m */,
 				20A75C661AD8332F00E2106A /* TKSectionedScrollView.h */,
 				20A75C671AD8332F00E2106A /* TKSectionedScrollView.m */,
-				202DBEF21AF6727A00B0CE67 /* TKCurrentTimeLabel.h */,
-				202DBEF31AF6727A00B0CE67 /* TKCurrentTimeLabel.m */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -676,23 +624,6 @@
 			name = Keyboard;
 			sourceTree = "<group>";
 		};
-		2078601E1AD84AB2000DC57F /* CreditCard */ = {
-			isa = PBXGroup;
-			children = (
-				207860101AD84A87000DC57F /* TKCreditCardNumberTextField.h */,
-				207860111AD84A87000DC57F /* TKCreditCardNumberTextField.m */,
-				2078600C1AD84A87000DC57F /* TKCreditCardCVVTextField.h */,
-				2078600D1AD84A87000DC57F /* TKCreditCardCVVTextField.m */,
-				2078600E1AD84A87000DC57F /* TKCreditCardExpirationTextField.h */,
-				2078600F1AD84A87000DC57F /* TKCreditCardExpirationTextField.m */,
-				207860121AD84A87000DC57F /* TKCreditCardZipTextField.h */,
-				207860131AD84A87000DC57F /* TKCreditCardZipTextField.m */,
-				20A46DDD1B61C097004A4153 /* TKPhoneNumberTextField.h */,
-				20A46DDE1B61C097004A4153 /* TKPhoneNumberTextField.m */,
-			);
-			path = CreditCard;
-			sourceTree = "<group>";
-		};
 		20B5FE201BB3613F00C0F848 /* curryMac */ = {
 			isa = PBXGroup;
 			children = (
@@ -718,6 +649,21 @@
 		C783B9893527F4B1545E677C /* CurrySwift */ = {
 			isa = PBXGroup;
 			children = (
+				D29274DAB8102E30BD345F8F /* CurrySwift/TKCurrentTimeLabel.swift */,
+				BDD10CD5F6ED1E4C4A956251 /* CurrySwift/TKExtendedScrollView.swift */,
+				2E87982AF0516AB0A96C4959 /* CurrySwift/TKGradientView.swift */,
+				CFEB1ECD6B3EFB44DD1568D5 /* CurrySwift/TKShapeView.swift */,
+				4D2E9DD3CA2320EEB6647B38 /* CurrySwift/TKStepperCell.swift */,
+				518FC7D4D9A15707A186D836 /* CurrySwift/TKSwitchCell.swift */,
+				A674447B0EF1C8F40A70EBE4 /* CurrySwift/TKTextFieldCell.swift */,
+				D4F8414A9A24CA403A730A50 /* CurrySwift/TKTextView.swift */,
+				E122083DD4EC3A07B89A565C /* CurrySwift/TKWindow.swift */,
+				8B18BEC0DA14FAC441D1700A /* CurrySwift/TKCreditCardCVVTextField.swift */,
+				7D50915DB23B939F9E13D686 /* CurrySwift/TKCreditCardExpirationTextField.swift */,
+				ECACD0C0A4D1CC9436938AB5 /* CurrySwift/TKCreditCardNumberTextField.swift */,
+				F94D4407C6D89B37BCB8DA25 /* CurrySwift/TKCreditCardZipTextField.swift */,
+				34F2326758CD95A7C0AC8177 /* CurrySwift/TKDigits.swift */,
+				5E247AE80893BA3C5AB007D1 /* CurrySwift/TKPhoneNumberTextField.swift */,
 				6DCE542060D0500B386E3415 /* CurrySwift/Bundle+Receipts.swift */,
 				2069C12B1D8AFEB9000BD656 /* CurrySwift/Bundle+TKCategory.swift */,
 				1E1930CDA51DD156ABF336CB /* CurrySwift/CAAnimation+TKAnimation.swift */,
@@ -785,7 +731,6 @@
 			files = (
 				200B630C1AD804350049E35C /* TKKeyboardTableViewController.h in Headers */,
 				200B62741AD7FBDC0049E35C /* TKFoundation.h in Headers */,
-				200B63141AD804350049E35C /* TKShapeView.h in Headers */,
 				200B630A1AD804350049E35C /* TKTableViewController.h in Headers */,
 				200B625B1AD7FB460049E35C /* curry.h in Headers */,
 				200B631C1AD804400049E35C /* TKSoundAlertController.h in Headers */,
@@ -793,14 +738,8 @@
 				2010DCC01BB0EA7800810A98 /* TKUIKit.h in Headers */,
 				200B63201AD804E30049E35C /* TKCardModalViewController.h in Headers */,
 				200B63101AD804350049E35C /* TKWebViewController.h in Headers */,
-				200B631A1AD804400049E35C /* TKExtendedScrollView.h in Headers */,
 				20A75C681AD8332F00E2106A /* TKSectionedScrollView.h in Headers */,
 				20A75C5F1AD82C8500E2106A /* Headers.h in Headers */,
-				200B63121AD804350049E35C /* TKGradientView.h in Headers */,
-				2078601A1AD84A87000DC57F /* TKCreditCardNumberTextField.h in Headers */,
-				207860161AD84A87000DC57F /* TKCreditCardCVVTextField.h in Headers */,
-				2078601C1AD84A87000DC57F /* TKCreditCardZipTextField.h in Headers */,
-				207860181AD84A87000DC57F /* TKCreditCardExpirationTextField.h in Headers */,
 				202DBEBB1AF4347A00B0CE67 /* TKInputKey.h in Headers */,
 				202DBEC11AF4347A00B0CE67 /* TKNumberInputWithNextKeyView.h in Headers */,
 				202DBEBD1AF4347A00B0CE67 /* TKNumberInputView.h in Headers */,
@@ -810,13 +749,6 @@
 				207A76811EBE7EBE006BE019 /* TKSafariWebCredentials.h in Headers */,
 				20E110741B3B2651006A2CD6 /* TKVideoViewController.h in Headers */,
 				202DBE711AF4121C00B0CE67 /* TKCustomPresentationViewController.h in Headers */,
-				20CAE0D41B0953E40088740E /* TKSwitchCell.h in Headers */,
-				2097F33E1B3D94C300247736 /* TKWindow.h in Headers */,
-				204922B41B45D8DB00C22245 /* TKTextFieldCell.h in Headers */,
-				20DDB58B1B45A97C001C7751 /* TKStepperCell.h in Headers */,
-				20A46DDF1B61C097004A4153 /* TKPhoneNumberTextField.h in Headers */,
-				204922B81B46EF9200C22245 /* TKTextView.h in Headers */,
-				202DBEF41AF6727A00B0CE67 /* TKCurrentTimeLabel.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -846,27 +778,17 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				20CEA4801BA112FB0009D60C /* TKCreditCardNumberTextField.h in Headers */,
 				20CEA4711BA1124F0009D60C /* TKCustomPresentationViewController.h in Headers */,
-				20CEA4941BA113EE0009D60C /* TKTextFieldCell.h in Headers */,
 				203BDD3D1BE17CFE00572452 /* TKSoundAlertController.h in Headers */,
 				2069E8171C78EEDB003035FF /* Headers.h in Headers */,
 				2010DCF01BB0F5F800810A98 /* TKUIKit.h in Headers */,
 				20CEA4331BA110900009D60C /* TKFoundation.h in Headers */,
-				20CEA47A1BA112C40009D60C /* TKCurrentTimeLabel.h in Headers */,
 				20CEA47C1BA112CB0009D60C /* TKSectionedScrollView.h in Headers */,
 				20CEA4731BA112550009D60C /* TKCardModalViewController.h in Headers */,
 				209761EC1BD9EC2F00EE6F81 /* TKVideoViewController.h in Headers */,
-				20CEA4781BA112B70009D60C /* TKShapeView.h in Headers */,
-				20CEA4881BA113140009D60C /* TKPhoneNumberTextField.h in Headers */,
-				20CEA4861BA1130E0009D60C /* TKCreditCardZipTextField.h in Headers */,
-				20A85BEB1CA3543D00632668 /* TKWindow.h in Headers */,
 				20CEA42E1BA1105D0009D60C /* curryTV.h in Headers */,
 				202D35D71BDB2CAB00886913 /* TKCollectionViewController.h in Headers */,
-				20CEA47E1BA112ED0009D60C /* TKGradientView.h in Headers */,
-				20CEA4821BA113000009D60C /* TKCreditCardCVVTextField.h in Headers */,
 				20173BD71BE62B8E00367A60 /* TKTableViewController.h in Headers */,
-				20CEA4841BA113070009D60C /* TKCreditCardExpirationTextField.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1081,6 +1003,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1BF352531B2EF6819A00F633 /* CurrySwift/TKCurrentTimeLabel.swift in Sources */,
+				989128EB11D2D79266A26B42 /* CurrySwift/TKExtendedScrollView.swift in Sources */,
+				FF2E3B488BCA79CACFE874F9 /* CurrySwift/TKGradientView.swift in Sources */,
+				DE7C1E6F4F6CCED97C8465AE /* CurrySwift/TKShapeView.swift in Sources */,
+				3C73434538819CFEA52CFAD9 /* CurrySwift/TKStepperCell.swift in Sources */,
+				05F9BAAA404ABA91C7C39685 /* CurrySwift/TKSwitchCell.swift in Sources */,
+				71BBA4D920A138352D2C0C3A /* CurrySwift/TKTextFieldCell.swift in Sources */,
+				31A11EEAD49FFBA8A70A97DD /* CurrySwift/TKTextView.swift in Sources */,
+				DDAF351132D7AD109DCF417D /* CurrySwift/TKWindow.swift in Sources */,
+				1C484B50375368488AC59723 /* CurrySwift/TKCreditCardCVVTextField.swift in Sources */,
+				19E76A38B50539EF0EA0EB15 /* CurrySwift/TKCreditCardExpirationTextField.swift in Sources */,
+				ADFD2DD94F79540B66EE04BE /* CurrySwift/TKCreditCardNumberTextField.swift in Sources */,
+				310B879AD429A0FFD9F1F628 /* CurrySwift/TKCreditCardZipTextField.swift in Sources */,
+				B85FB19571E5787C33CD8452 /* CurrySwift/TKDigits.swift in Sources */,
+				9D778CE07BB41C69BF0176C2 /* CurrySwift/TKPhoneNumberTextField.swift in Sources */,
 				C4F32E367BD0AECDAFFC695A /* CurrySwift/Bundle+Receipts.swift in Sources */,
 				643058F97CD5FE7E450AD1CE /* CurrySwift/CAAnimation+TKAnimation.swift in Sources */,
 				2F757B0BC7102A9F7707FC16 /* CurrySwift/CAKeyframeAnimation+TKAnimation.swift in Sources */,
@@ -1132,38 +1069,24 @@
 				1378A01B37C8AF8ED2741AD2 /* CurrySwift/URLSession+TKCategory.swift in Sources */,
 				48D41AC2B414A2E5A8F20736 /* CurrySwift/UserDefaults+iCloud.swift in Sources */,
 				209507352188EA7E00AD35F0 /* CurrySwift/URLRequest+TKCategory.swift in Sources */,
-				204922B51B45D8DB00C22245 /* TKTextFieldCell.m in Sources */,
 				20E110751B3B2651006A2CD6 /* TKVideoViewController.m in Sources */,
-				200B631B1AD804400049E35C /* TKExtendedScrollView.m in Sources */,
 				202DBEC21AF4347A00B0CE67 /* TKNumberInputWithNextKeyView.m in Sources */,
 				202DBEC01AF4347A00B0CE67 /* TKDecimalInputView.m in Sources */,
 				200B630B1AD804350049E35C /* TKTableViewController.m in Sources */,
 				200B631D1AD804400049E35C /* TKSoundAlertController.m in Sources */,
 				202DBEBA1AF4347A00B0CE67 /* TKInputView.m in Sources */,
 				200B630D1AD804350049E35C /* TKKeyboardTableViewController.m in Sources */,
-				202DBEF51AF6727A00B0CE67 /* TKCurrentTimeLabel.m in Sources */,
 				202DBE721AF4121C00B0CE67 /* TKCustomPresentationViewController.m in Sources */,
-				2078601D1AD84A87000DC57F /* TKCreditCardZipTextField.m in Sources */,
 				20C1E9A52040A75F0096C895 /* CurrySwift/UIView+Velocity.swift in Sources */,
-				200B63151AD804350049E35C /* TKShapeView.m in Sources */,
-				200B63131AD804350049E35C /* TKGradientView.m in Sources */,
 				202DBEBE1AF4347A00B0CE67 /* TKNumberInputView.m in Sources */,
 				20A75C691AD8332F00E2106A /* TKSectionedScrollView.m in Sources */,
-				20A46DE01B61C097004A4153 /* TKPhoneNumberTextField.m in Sources */,
 				202DBEBC1AF4347A00B0CE67 /* TKInputKey.m in Sources */,
 				201BED4621C0681600CC13BE /* CurrySwift/UILabel+Spacing.swift in Sources */,
-				2078601B1AD84A87000DC57F /* TKCreditCardNumberTextField.m in Sources */,
 				2069C12C1D8AFEB9000BD656 /* CurrySwift/Bundle+TKCategory.swift in Sources */,
-				207860191AD84A87000DC57F /* TKCreditCardExpirationTextField.m in Sources */,
 				200B63111AD804350049E35C /* TKWebViewController.m in Sources */,
-				20DDB58C1B45A97C001C7751 /* TKStepperCell.m in Sources */,
 				202D35D61BDB252600886913 /* TKCollectionViewController.m in Sources */,
 				200B63211AD804E30049E35C /* TKCardModalViewController.m in Sources */,
-				20CAE0D51B0953E40088740E /* TKSwitchCell.m in Sources */,
-				2097F33F1B3D94C300247736 /* TKWindow.m in Sources */,
 				202DBEC41AF4347A00B0CE67 /* TKDecimalInputWithNextKeyView.m in Sources */,
-				207860171AD84A87000DC57F /* TKCreditCardCVVTextField.m in Sources */,
-				204922B91B46EF9200C22245 /* TKTextView.m in Sources */,
 				207A76821EBE7EBE006BE019 /* TKSafariWebCredentials.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1184,6 +1107,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5F9193C880663798E4719F34 /* CurrySwift/TKDigits.swift in Sources */,
 				DF460B8FF01998540D43C032 /* CurrySwift/NSArray+TKCategory.swift in Sources */,
 				771FD8BEA973BA6AE20DDEC2 /* CurrySwift/NSAttributedString+TKCategory.swift in Sources */,
 				CF3CDCF0016CFCFED4192F00 /* CurrySwift/NSDate+TKCategory.swift in Sources */,
@@ -1204,6 +1128,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				58ED125F178D8A0D7DCF7F01 /* CurrySwift/TKDigits.swift in Sources */,
 				880869E897D72D588DDFB040 /* CurrySwift/NSArray+TKCategory.swift in Sources */,
 				56DD40F54CD2CCF0E28342DE /* CurrySwift/NSDate+TKCategory.swift in Sources */,
 				9698E1C95AD8B1298C067A7C /* CurrySwift/NSObject+DataHelper.swift in Sources */,
@@ -1225,6 +1150,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				90CDCA678E664C7FEA5C88E9 /* CurrySwift/TKCurrentTimeLabel.swift in Sources */,
+				5E772E39C9FA88408F0337C2 /* CurrySwift/TKGradientView.swift in Sources */,
+				C6F4AA36804A75BB5D9EB432 /* CurrySwift/TKShapeView.swift in Sources */,
+				BCB16FB7187AC2FF4BAB89C9 /* CurrySwift/TKTextFieldCell.swift in Sources */,
+				BB21B885888B641824FCD3E5 /* CurrySwift/TKWindow.swift in Sources */,
+				C773CDEE5F4318797855AE8A /* CurrySwift/TKCreditCardCVVTextField.swift in Sources */,
+				21CA85B6D1A8A091BF3DB901 /* CurrySwift/TKCreditCardExpirationTextField.swift in Sources */,
+				6AED2961B25FB297EABAFD32 /* CurrySwift/TKCreditCardNumberTextField.swift in Sources */,
+				236AC30E7B7861261E4665DC /* CurrySwift/TKCreditCardZipTextField.swift in Sources */,
+				F757F73EFFA11F975864CE74 /* CurrySwift/TKDigits.swift in Sources */,
+				E94D496CF3BC6F6683B026B7 /* CurrySwift/TKPhoneNumberTextField.swift in Sources */,
 				CB868F2E5EBEA6B0A670A2B5 /* CurrySwift/Bundle+Receipts.swift in Sources */,
 				1BFCCA1FBDD94F272B5D6C68 /* CurrySwift/CAAnimation+TKAnimation.swift in Sources */,
 				77F7AEF464CD520817DF8EF9 /* CurrySwift/CAKeyframeAnimation+TKAnimation.swift in Sources */,
@@ -1274,22 +1210,12 @@
 				20CEA4721BA112530009D60C /* TKCustomPresentationViewController.m in Sources */,
 				20CEA47D1BA112D00009D60C /* TKSectionedScrollView.m in Sources */,
 				202D35D81BDB2CB000886913 /* TKCollectionViewController.m in Sources */,
-				20CEA4891BA113170009D60C /* TKPhoneNumberTextField.m in Sources */,
 				20173BD81BE62B9200367A60 /* TKTableViewController.m in Sources */,
-				20CEA4951BA113F10009D60C /* TKTextFieldCell.m in Sources */,
-				20CEA4871BA113110009D60C /* TKCreditCardZipTextField.m in Sources */,
-				20CEA47B1BA112C70009D60C /* TKCurrentTimeLabel.m in Sources */,
 				2095073C2188EE2200AD35F0 /* CurrySwift/URLRequest+TKCategory.swift in Sources */,
 				209761ED1BD9EC3200EE6F81 /* TKVideoViewController.m in Sources */,
-				20CEA4851BA1130C0009D60C /* TKCreditCardExpirationTextField.m in Sources */,
 				203BDD3C1BE17CFC00572452 /* TKSoundAlertController.m in Sources */,
 				2069C12D1D8AFEB9000BD656 /* CurrySwift/Bundle+TKCategory.swift in Sources */,
 				20B986F12040A8AD00F7BF6A /* CurrySwift/UIView+Velocity.swift in Sources */,
-				20CEA4791BA112BB0009D60C /* TKShapeView.m in Sources */,
-				20CEA4831BA113040009D60C /* TKCreditCardCVVTextField.m in Sources */,
-				20A85BEC1CA3544100632668 /* TKWindow.m in Sources */,
-				20CEA4811BA112FE0009D60C /* TKCreditCardNumberTextField.m in Sources */,
-				20CEA47F1BA112F30009D60C /* TKGradientView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

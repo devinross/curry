@@ -91,25 +91,11 @@
 #endif
 
 // Views
-#import <curry/TKGradientView.h>
-#import <curry/TKShapeView.h>
 #import <curry/TKSectionedScrollView.h>
-#import <curry/TKCurrentTimeLabel.h>
-#import <curry/TKTextFieldCell.h>
-#import <curry/TKWindow.h>
 #if !TARGET_OS_TV
-#import <curry/TKExtendedScrollView.h>
-#import <curry/TKSwitchCell.h>
-#import <curry/TKStepperCell.h>
-#import <curry/TKTextView.h>
 #endif
 
 // Custom Text Field
-#import <curry/TKCreditCardNumberTextField.h>
-#import <curry/TKCreditCardExpirationTextField.h>
-#import <curry/TKCreditCardZipTextField.h>
-#import <curry/TKCreditCardCVVTextField.h>
-#import <curry/TKPhoneNumberTextField.h>
 
 // Extra
 #import <curry/TKSoundAlertController.h>
