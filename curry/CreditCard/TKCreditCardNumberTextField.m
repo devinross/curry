@@ -30,7 +30,7 @@
  */
 
 #import "TKCreditCardNumberTextField.h"
-#import "NSString+TKCategory.h"
+@import CurrySwift;
 
 @implementation TKCreditCardNumberTextField
 

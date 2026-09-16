@@ -31,7 +31,7 @@
 @import Foundation;
 @import XCTest;
 
-#import "NSString+TKCategory.h"
+@import CurrySwift;
 
 @interface NSStringTests : XCTestCase
 

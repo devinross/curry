@@ -30,7 +30,7 @@
  */
 
 #import "DataTests.h"
-#import "NSObject+TKCategory.h"
+@import CurrySwift;
 
 @interface SampleItem : NSObject
 

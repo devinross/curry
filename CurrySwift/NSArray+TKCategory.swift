@@ -1,6 +1,6 @@
 //
-//  URLRequest+TKCategory.swift
-//  Created by Devin Ross on 10/30/18.
+//  NSArray+TKCategory.swift
+//  Created by Devin Ross on 11/9/10.
 //
 /*
 
@@ -32,37 +32,40 @@ OTHER DEALINGS IN THE SOFTWARE.
 import Foundation
 
 
-extension URLRequest {
+/** Additional functionality for `NSArray`. */
+extension NSArray {
 	
-	/** Returns a cURL command representation of this URL request. */
-	public var curlString: String {
-		
-		var command = "curl -v -X \(httpMethod ?? "GET")"
-		
-		if let url {
-			command += " '\(url.absoluteString)'"
-		}
-		
-		for (key, value) in allHTTPHeaderFields ?? [:] {
-			command += " -H '\(key): \(value)'"
-		}
-		
-		if let method = httpMethod, ["POST", "PUT", "PATCH"].contains(method),
-		   let data = httpBody, let body = String(data: data, encoding: .utf8) {
-			command += " -d '\(body)'"
-		}
-		
-		return command
+	/** Returns a random object in the array.
+	@return A randomly chosen object, or nil if the array is empty.
+	*/
+	@objc public var randomObject: Any? {
+		guard count > 0 else { return nil }
+		return object(at: Int.random(in: 0 ..< count))
 	}
 	
 }
 
 
-extension NSURLRequest {
+/** Additional functionality for `NSMutableArray`. */
+extension NSMutableArray {
 	
-	/** Returns a cURL command representation of this URL request. */
-	@objc public var curlString: String {
-		(self as URLRequest).curlString
+	/** Shuffles the order of the objects. */
+	@objc public func shuffle() {
+		let total = count
+		guard total > 1 else { return }
+		for i in 0 ..< total {
+			let n = Int.random(in: i ..< total)
+			if i != n { exchangeObject(at: i, withObjectAt: n) }
+		}
+	}
+	
+	/** Remove first object.
+	
+	Raises an `NSRangeException` when the array is empty, matching
+	`removeObjectAtIndex:`.
+	*/
+	@objc public func removeFirstObject() {
+		removeObject(at: 0)
 	}
 	
 }

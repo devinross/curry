@@ -1,6 +1,6 @@
 //
-//  URLRequest+TKCategory.swift
-//  Created by Devin Ross on 10/30/18.
+//  NSString+TKUIKit.swift
+//  Created by Devin Ross on 10/13/16.
 //
 /*
 
@@ -30,39 +30,25 @@ OTHER DEALINGS IN THE SOFTWARE.
 */
 
 import Foundation
+import UIKit
 
 
-extension URLRequest {
+extension NSString {
 	
-	/** Returns a cURL command representation of this URL request. */
-	public var curlString: String {
-		
-		var command = "curl -v -X \(httpMethod ?? "GET")"
-		
-		if let url {
-			command += " '\(url.absoluteString)'"
-		}
-		
-		for (key, value) in allHTTPHeaderFields ?? [:] {
-			command += " -H '\(key): \(value)'"
-		}
-		
-		if let method = httpMethod, ["POST", "PUT", "PATCH"].contains(method),
-		   let data = httpBody, let body = String(data: data, encoding: .utf8) {
-			command += " -d '\(body)'"
-		}
-		
-		return command
-	}
-	
-}
-
-
-extension NSURLRequest {
-	
-	/** Returns a cURL command representation of this URL request. */
-	@objc public var curlString: String {
-		(self as URLRequest).curlString
+	/** The height needed to draw the string within a given width.
+	@param width The width the text is constrained to.
+	@param font The font the text is drawn with.
+	@return The needed height, always at least one row tall.
+	*/
+	@objc(heightForWidth:andFont:)
+	public func heightForWidth(_ width: CGFloat, andFont font: UIFont) -> CGFloat {
+		let minimum = font.pointSize + 4
+		let constraint = CGSize(width: width, height: .greatestFiniteMagnitude)
+		let frame = boundingRect(with: constraint,
+		                         options: .usesLineFragmentOrigin,
+		                         attributes: [.font: font],
+		                         context: nil)
+		return max(frame.size.height + 1, minimum) // At least one row
 	}
 	
 }

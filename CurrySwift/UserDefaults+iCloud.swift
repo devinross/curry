@@ -1,6 +1,6 @@
 //
-//  URLRequest+TKCategory.swift
-//  Created by Devin Ross on 10/30/18.
+//  UserDefaults+iCloud.swift
+//  Created by Devin Ross on 11/9/15.
 //
 /*
 
@@ -32,37 +32,11 @@ OTHER DEALINGS IN THE SOFTWARE.
 import Foundation
 
 
-extension URLRequest {
+extension UserDefaults {
 	
-	/** Returns a cURL command representation of this URL request. */
-	public var curlString: String {
-		
-		var command = "curl -v -X \(httpMethod ?? "GET")"
-		
-		if let url {
-			command += " '\(url.absoluteString)'"
-		}
-		
-		for (key, value) in allHTTPHeaderFields ?? [:] {
-			command += " -H '\(key): \(value)'"
-		}
-		
-		if let method = httpMethod, ["POST", "PUT", "PATCH"].contains(method),
-		   let data = httpBody, let body = String(data: data, encoding: .utf8) {
-			command += " -d '\(body)'"
-		}
-		
-		return command
-	}
-	
-}
-
-
-extension NSURLRequest {
-	
-	/** Returns a cURL command representation of this URL request. */
-	@objc public var curlString: String {
-		(self as URLRequest).curlString
+	/** The default ubiquitous key-value store used for iCloud backed storage. */
+	@objc public static var iCloudStoreStore: NSUbiquitousKeyValueStore {
+		NSUbiquitousKeyValueStore.default
 	}
 	
 }

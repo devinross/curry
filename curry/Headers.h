@@ -35,29 +35,21 @@
 
 #import "TKFoundation.h"
 
-// Categories -> Foundation
-#import "NSObject+JSON.h"
-#import "NSObject+TKCategory.h"
-#import "NSString+TKCategory.h"
-#import "NSArray+TKCategory.h"
-#import "NSDate+TKCategory.h"
-#import "NSObject+DataHelper.h"
-#import "NSMutableArray+TKCategory.h"
+// Some categories now live in the CurrySwift module, which ships alongside this
+// one in the `curry` package product. It cannot be re-exported from this
+// umbrella header (a Swift module is not resolvable while Clang builds the
+// `curry` module), so consumers import it directly:
+//
+//     @import CurrySwift;   // Objective-C
+//     import CurrySwift     // Swift
 
-#import "NSURLSession+TKCategory.h"
-#import "NSURLSession+TKProgressDataTask.h"
-#import "NSURLRequest+TKCategory.h"
-#import "NSTimer+Blocks.h"
+// Categories -> Foundation
+
 
 #if TARGET_OS_IOS || TARGET_OS_TV
 
 #import "TKUIKit.h"
 
-#import "NSString+TKUIKit.h"
-#import "NSAttributedString+TKCategory.h"
-#import "NSMutableAttributedString+TKCategory.h"
-#import "NSBundle+Receipts.h"
-#import "NSUserDefaults+iCloud.h"
 
 
 // Categories -> UIKit -> Base

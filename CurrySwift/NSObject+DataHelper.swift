@@ -1,6 +1,6 @@
 //
-//  URLRequest+TKCategory.swift
-//  Created by Devin Ross on 10/30/18.
+//  NSObject+DataHelper.swift
+//  Created by Devin Ross on 1/31/14.
 //
 /*
 
@@ -32,37 +32,39 @@ OTHER DEALINGS IN THE SOFTWARE.
 import Foundation
 
 
-extension URLRequest {
+extension NSObject {
 	
-	/** Returns a cURL command representation of this URL request. */
-	public var curlString: String {
-		
-		var command = "curl -v -X \(httpMethod ?? "GET")"
-		
-		if let url {
-			command += " '\(url.absoluteString)'"
+	/** Builds an array of objects from an array of data dictionaries. */
+	@objc(arrayOfObjectsWithDataArray:)
+	public static func arrayOfObjects(withDataArray array: [Any]) -> [Any] {
+		array.compactMap { element in
+			guard !(element is NSNull) else { return nil }
+			return createObject(element)
 		}
-		
-		for (key, value) in allHTTPHeaderFields ?? [:] {
-			command += " -H '\(key): \(value)'"
-		}
-		
-		if let method = httpMethod, ["POST", "PUT", "PATCH"].contains(method),
-		   let data = httpBody, let body = String(data: data, encoding: .utf8) {
-			command += " -d '\(body)'"
-		}
-		
-		return command
+	}
+	
+	/** Builds an array of data dictionaries from an array of objects. */
+	@objc(arrayOfDataObjectsWithObjectsArray:)
+	public static func arrayOfDataObjects(withObjectsArray array: [Any]) -> [Any] {
+		array.compactMap { ($0 as? NSObject)?.dataDictionary }
 	}
 	
 }
 
 
-extension NSURLRequest {
+extension NSArray {
 	
-	/** Returns a cURL command representation of this URL request. */
-	@objc public var curlString: String {
-		(self as URLRequest).curlString
+	/** Groups the array's objects into a dictionary keyed by the given property.
+	@param key The key path read from each object.
+	*/
+	@objc(groupByKey:)
+	public func groupBy(key: String) -> [AnyHashable: Any] {
+		var grouped: [AnyHashable: Any] = [:]
+		for object in self {
+			guard let keyValue = (object as AnyObject).value(forKey: key) as? AnyHashable else { continue }
+			grouped[keyValue] = object
+		}
+		return grouped
 	}
 	
 }

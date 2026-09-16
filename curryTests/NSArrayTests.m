@@ -31,7 +31,7 @@
 
 
 #import "NSArrayTests.h"
-#import "NSArray+TKCategory.h"
+@import CurrySwift;
 
 @implementation NSArrayTests
 

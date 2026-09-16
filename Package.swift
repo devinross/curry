@@ -19,6 +19,9 @@ let package = Package(
         // here and in the legacy framework targets.
         .target(
             name: "curry",
+            // The Objective-C half consumes categories that have already moved
+            // to Swift, via `@import CurrySwift;` in its .m files.
+            dependencies: ["CurrySwift"],
             path: "curry",
             exclude: [
                 "Supporting Files/Info.plist",
@@ -39,7 +42,7 @@ let package = Package(
         ),
         .testTarget(
             name: "curryTests",
-            dependencies: ["curry"],
+            dependencies: ["curry", "CurrySwift"],
             path: "curryTests",
             exclude: [
                 "Supporting Files"

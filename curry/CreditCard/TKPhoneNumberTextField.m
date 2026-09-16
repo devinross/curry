@@ -30,7 +30,7 @@
  */
 
 #import "TKPhoneNumberTextField.h"
-#import "NSString+TKCategory.h"
+@import CurrySwift;
 
 @implementation TKPhoneNumberTextField
 

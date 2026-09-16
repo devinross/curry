@@ -30,7 +30,7 @@
  */
 
 #import "UIScreen+TKCategory.h"
-#import "NSTimer+Blocks.h"
+@import CurrySwift;
 @implementation UIScreen (TKCategory)
 
 - (CGFloat) onePixelSize{

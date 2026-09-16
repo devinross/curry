@@ -30,7 +30,7 @@
  */
 
 #import "UIApplication+TKCategory.h"
-#import "NSString+TKCategory.h"
+@import CurrySwift;
 
 #define PARAM(_KEY,_VALUE) [NSString stringWithFormat:@"%@=%@",_KEY,_VALUE]
 
