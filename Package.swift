@@ -1,26 +1,49 @@
 // swift-tools-version: 6.2
-// The swift-tools-version declares the minimum version of Swift required to build this package.
 
 import PackageDescription
 
 let package = Package(
     name: "curry",
+    platforms: [
+        .iOS(.v15)
+    ],
     products: [
-        // Products define the executables and libraries a package produces, making them visible to other packages.
         .library(
             name: "curry",
-            targets: ["curry"]
+            targets: ["curry", "CurrySwift"]
         ),
     ],
     targets: [
-        // Targets are the basic building blocks of a package, defining a module or a test suite.
-        // Targets can depend on other targets in this package and products from dependencies.
+        // Objective-C sources. Public headers are exposed through the flat
+        // symlink directory `curry/include` so quoted imports resolve both
+        // here and in the legacy framework targets.
         .target(
-            name: "curry"
+            name: "curry",
+            path: "curry",
+            exclude: [
+                "Supporting Files/Info.plist",
+            ],
+            resources: [
+                .process("Supporting Files/CurryImages.xcassets")
+            ],
+            publicHeadersPath: "include"
+        ),
+        // Swift-only extensions. SwiftPM targets can't mix Swift and
+        // Objective-C, so these live in their own module.
+        .target(
+            name: "CurrySwift",
+            path: "CurrySwift",
+            swiftSettings: [
+                .swiftLanguageMode(.v5)
+            ]
         ),
         .testTarget(
             name: "curryTests",
-            dependencies: ["curry"]
+            dependencies: ["curry"],
+            path: "curryTests",
+            exclude: [
+                "Supporting Files"
+            ]
         ),
     ]
 )

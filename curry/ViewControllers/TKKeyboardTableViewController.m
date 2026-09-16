@@ -30,7 +30,7 @@
  */
 
 #import "TKKeyboardTableViewController.h"
-#import <curry/curry-Swift.h>
+#import "UIDevice+TKCategory.h"
 
 
 @interface TKKeyboardTableViewController ()

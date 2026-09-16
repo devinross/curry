@@ -34,7 +34,7 @@
 #import "TKFoundation.h"
 #import "UIGestureRecognizer+TKCategory.h"
 #import "TKUIKit.h"
-#import <curry/curry-Swift.h>
+#import "UIDevice+TKCategory.h"
 
 @interface TKCardModalViewController () <UIGestureRecognizerDelegate>
 

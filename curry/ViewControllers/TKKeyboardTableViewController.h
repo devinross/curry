@@ -29,7 +29,7 @@
  
  */
 
-#import <curry/TKTableViewController.h>
+#import "TKTableViewController.h"
 
 /**
  This class provides additional functionality to `TKTableViewController` text entry. 
