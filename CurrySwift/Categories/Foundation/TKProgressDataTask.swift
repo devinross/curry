@@ -301,21 +301,21 @@ public final class TKProgressDataTask: NSObject, URLSessionDataDelegate {
 extension URLSession {
 	
 	@objc(progressDataTaskWithURL:progressHandler:completionHandler:)
-	public static func progressDataTask(with url: URL,
+	open class func progressDataTask(with url: URL,
 	                                    progressHandler: TKProgressDataTask.ProgressHandler?,
 	                                    completionHandler: ((Data?, URLResponse?, Error?) -> Void)?) -> TKProgressDataTask {
 		TKProgressDataTask.progressDataTask(with: url, progressHandler: progressHandler, completionHandler: completionHandler)
 	}
 	
 	@objc(progressDataTaskWithURL:uploadProgressHandler:completionHandler:)
-	public static func progressDataTask(with url: URL,
+	open class func progressDataTask(with url: URL,
 	                                    uploadProgressHandler: TKProgressDataTask.ProgressHandler?,
 	                                    completionHandler: ((Data?, URLResponse?, Error?) -> Void)?) -> TKProgressDataTask {
 		TKProgressDataTask.progressDataTask(with: url, uploadProgressHandler: uploadProgressHandler, completionHandler: completionHandler)
 	}
 	
 	@objc(progressDataTaskWithURL:progressHandler:uploadProgressHandler:completionHandler:)
-	public static func progressDataTask(with url: URL,
+	open class func progressDataTask(with url: URL,
 	                                    progressHandler: TKProgressDataTask.ProgressHandler?,
 	                                    uploadProgressHandler: TKProgressDataTask.ProgressHandler?,
 	                                    completionHandler: ((Data?, URLResponse?, Error?) -> Void)?) -> TKProgressDataTask {
@@ -323,21 +323,21 @@ extension URLSession {
 	}
 	
 	@objc(progressDataTaskWithRequest:progressHandler:completionHandler:)
-	public static func progressDataTask(with request: URLRequest,
+	open class func progressDataTask(with request: URLRequest,
 	                                    progressHandler: TKProgressDataTask.ProgressHandler?,
 	                                    completionHandler: ((Data?, URLResponse?, Error?) -> Void)?) -> TKProgressDataTask {
 		TKProgressDataTask.progressDataTask(with: request, progressHandler: progressHandler, completionHandler: completionHandler)
 	}
 	
 	@objc(progressDataTaskWithRequest:uploadProgressHandler:completionHandler:)
-	public static func progressDataTask(with request: URLRequest,
+	open class func progressDataTask(with request: URLRequest,
 	                                    uploadProgressHandler: TKProgressDataTask.ProgressHandler?,
 	                                    completionHandler: ((Data?, URLResponse?, Error?) -> Void)?) -> TKProgressDataTask {
 		TKProgressDataTask.progressDataTask(with: request, uploadProgressHandler: uploadProgressHandler, completionHandler: completionHandler)
 	}
 	
 	@objc(progressDataTaskWithRequest:progressHandler:uploadProgressHandler:completionHandler:)
-	public static func progressDataTask(with request: URLRequest,
+	open class func progressDataTask(with request: URLRequest,
 	                                    progressHandler: TKProgressDataTask.ProgressHandler?,
 	                                    uploadProgressHandler: TKProgressDataTask.ProgressHandler?,
 	                                    completionHandler: ((Data?, URLResponse?, Error?) -> Void)?) -> TKProgressDataTask {
@@ -345,21 +345,21 @@ extension URLSession {
 	}
 	
 	@objc(progressJSONDataTaskWithURL:progressHandler:completionHandler:)
-	public static func progressJSONDataTask(with url: URL,
+	open class func progressJSONDataTask(with url: URL,
 	                                        progressHandler: TKProgressDataTask.ProgressHandler?,
 	                                        completionHandler: TKProgressDataTask.CompletionHandler?) -> TKProgressDataTask {
 		TKProgressDataTask.progressJSONDataTask(with: url, progressHandler: progressHandler, completionHandler: completionHandler)
 	}
 	
 	@objc(progressJSONDataTaskWithURL:uploadProgressHandler:completionHandler:)
-	public static func progressJSONDataTask(with url: URL,
+	open class func progressJSONDataTask(with url: URL,
 	                                        uploadProgressHandler: TKProgressDataTask.ProgressHandler?,
 	                                        completionHandler: TKProgressDataTask.CompletionHandler?) -> TKProgressDataTask {
 		TKProgressDataTask.progressJSONDataTask(with: url, uploadProgressHandler: uploadProgressHandler, completionHandler: completionHandler)
 	}
 	
 	@objc(progressJSONDataTaskWithURL:progressHandler:uploadProgressHandler:completionHandler:)
-	public static func progressJSONDataTask(with url: URL,
+	open class func progressJSONDataTask(with url: URL,
 	                                        progressHandler: TKProgressDataTask.ProgressHandler?,
 	                                        uploadProgressHandler: TKProgressDataTask.ProgressHandler?,
 	                                        completionHandler: TKProgressDataTask.CompletionHandler?) -> TKProgressDataTask {
@@ -367,21 +367,21 @@ extension URLSession {
 	}
 	
 	@objc(progressJSONDataTaskWithRequest:progressHandler:completionHandler:)
-	public static func progressJSONDataTask(with request: URLRequest,
+	open class func progressJSONDataTask(with request: URLRequest,
 	                                        progressHandler: TKProgressDataTask.ProgressHandler?,
 	                                        completionHandler: TKProgressDataTask.CompletionHandler?) -> TKProgressDataTask {
 		TKProgressDataTask.progressJSONDataTask(with: request, progressHandler: progressHandler, completionHandler: completionHandler)
 	}
 	
 	@objc(progressJSONDataTaskWithRequest:uploadProgressHandler:completionHandler:)
-	public static func progressJSONDataTask(with request: URLRequest,
+	open class func progressJSONDataTask(with request: URLRequest,
 	                                        uploadProgressHandler: TKProgressDataTask.ProgressHandler?,
 	                                        completionHandler: TKProgressDataTask.CompletionHandler?) -> TKProgressDataTask {
 		TKProgressDataTask.progressJSONDataTask(with: request, uploadProgressHandler: uploadProgressHandler, completionHandler: completionHandler)
 	}
 	
 	@objc(progressJSONDataTaskWithRequest:progressHandler:uploadProgressHandler:completionHandler:)
-	public static func progressJSONDataTask(with request: URLRequest,
+	open class func progressJSONDataTask(with request: URLRequest,
 	                                        progressHandler: TKProgressDataTask.ProgressHandler?,
 	                                        uploadProgressHandler: TKProgressDataTask.ProgressHandler?,
 	                                        completionHandler: TKProgressDataTask.CompletionHandler?) -> TKProgressDataTask {

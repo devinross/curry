@@ -50,7 +50,7 @@ extension Bundle {
 	@param completion Called with the decoded receipt, the response and any error.
 	*/
 	@objc(requestReceiptOnAppStore:)
-	public func requestReceiptOnAppStore(_ completion: @escaping @Sendable (Any?, URLResponse?, Error?) -> Void) {
+	open func requestReceiptOnAppStore(_ completion: @escaping @Sendable (Any?, URLResponse?, Error?) -> Void) {
 		
 		guard let receiptURL = Bundle.main.appStoreReceiptURL,
 		      let receiptData = try? Data(contentsOf: receiptURL) else {

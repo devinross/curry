@@ -44,7 +44,7 @@ extension UIActionSheet {
 	
 	/** An empty action sheet wired to the given delegate. */
 	@objc(sheetWithDelegate:)
-	public static func sheet(delegate: UIActionSheetDelegate?) -> UIActionSheet {
+	open class func sheet(delegate: UIActionSheetDelegate?) -> UIActionSheet {
 		UIActionSheet(title: nil, delegate: delegate, cancelButtonTitle: nil, destructiveButtonTitle: nil)
 	}
 	

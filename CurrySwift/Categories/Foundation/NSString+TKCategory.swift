@@ -40,7 +40,7 @@ extension NSString {
 	@return True if the string is formatted properly as an email address.
 	*/
 	@objc(isEmail)
-	public var isEmail: Bool {
+	open var isEmail: Bool {
 		
 		let badCharacters = CharacterSet(charactersIn: " !\\#$%(),:;<>[]/`|")
 		if rangeOfCharacter(from: badCharacters).location != NSNotFound {
@@ -61,24 +61,24 @@ extension NSString {
 	}
 	
 	/** Returns a `NSString` that removes blank space from the start and end of string. */
-	@objc public var stripWhitespace: String {
+	@objc open var stripWhitespace: String {
 		trimmingCharacters(in: .whitespaces)
 	}
 	
 	/** Returns a `NSString` that removes blank space and new lines from the start and end of string. */
-	@objc public var stripWhitepspaceAndNewlines: String {
+	@objc open var stripWhitepspaceAndNewlines: String {
 		trimmingCharacters(in: .whitespacesAndNewlines)
 	}
 	
 	/** Returns a `NSString` that is URL friendly. */
-	@objc public var URLEncode: String {
+	@objc open var URLEncode: String {
 		var allowed = CharacterSet.urlQueryAllowed
 		allowed.remove(charactersIn: ";?/:#& =+$,%<>~%")
 		return addingPercentEncoding(withAllowedCharacters: allowed) ?? ""
 	}
 	
 	/** Returns a `NSString` that properly replaces HTML specific character sequences. */
-	@objc public var escapeHTML: String {
+	@objc open var escapeHTML: String {
 		
 		let escaped = NSMutableString()
 		let specials = CharacterSet(charactersIn: "<>&\"")
@@ -114,7 +114,7 @@ extension NSString {
 	}
 	
 	/** Returns a `NSString` that properly formats text for HTML. */
-	@objc public var unescapeHTML: String {
+	@objc open var unescapeHTML: String {
 		
 		let unescaped = NSMutableString()
 		let target = NSMutableString(string: self as String)
@@ -156,7 +156,7 @@ extension NSString {
 	}
 	
 	/** Returns a `NSString` that removes HTML elements. */
-	@objc public var stringByRemovingHTML: String {
+	@objc open var stringByRemovingHTML: String {
 		
 		var html = self as String
 		let scanner = Scanner(string: html)
@@ -171,7 +171,7 @@ extension NSString {
 	}
 	
 	/** Returns an MD5 string of from the given `NSString`. */
-	@objc public var md5sum: String {
+	@objc open var md5sum: String {
 		Insecure.MD5
 			.hash(data: Data((self as String).utf8))
 			.map { String(format: "%02x", $0) }
@@ -183,22 +183,22 @@ extension NSString {
 	@return `YES` if the substring is contained in the string, otherwise `NO`.
 	*/
 	@objc(hasString:)
-	public func hasString(_ substring: String) -> Bool {
+	open func hasString(_ substring: String) -> Bool {
 		range(of: substring).location != NSNotFound
 	}
 	
 	/** Returns the length of the string minus the whitespace characters. */
-	@objc public var lengthWithoutWhitespace: Int {
+	@objc open var lengthWithoutWhitespace: Int {
 		(stringWithoutWhitespace as NSString).length
 	}
 	
 	/** Returns a string without the whitespace characters. */
-	@objc public var stringWithoutWhitespace: String {
+	@objc open var stringWithoutWhitespace: String {
 		components(separatedBy: .whitespacesAndNewlines).joined()
 	}
 	
 	/* Returns a string with the first word in each sentence as capitalized. */
-	@objc public var capitalizeSentence: String {
+	@objc open var capitalizeSentence: String {
 		guard length > 0 else { return self as String }
 		return replacingCharacters(in: NSRange(location: 0, length: 1),
 		                           with: substring(to: 1).capitalized)
@@ -207,7 +207,7 @@ extension NSString {
 	/** Returns the credit card type based on the first four digits of the card number.
 	@return A credit card company name if the number matches a company otherwise nil.
 	*/
-	@objc public var creditCardType: String? {
+	@objc open var creditCardType: String? {
 		
 		guard length >= 4 else { return nil }
 		
@@ -243,7 +243,7 @@ extension NSString {
 	@return Returns YES if the card is a valid credit card number, otherwise NO.
 	*/
 	@objc(isValidCreditCardNumber)
-	public var isValidCreditCardNumber: Bool {
+	open var isValidCreditCardNumber: Bool {
 		
 		guard rangeOfCharacter(from: CharacterSet.decimalDigits.inverted).location == NSNotFound else {
 			return false
@@ -267,7 +267,7 @@ extension NSString {
 	@return Returns an `NSString` that transform a string of numbers into a string human readable phone number.
 	*/
 	@objc(formattedPhoneNumberWithLastCharacterRemoved:)
-	public func formattedPhoneNumber(withLastCharacterRemoved deleteLastChar: Bool) -> String {
+	open func formattedPhoneNumber(withLastCharacterRemoved deleteLastChar: Bool) -> String {
 		formattedPhoneNumber(withLastCharacterRemoved: deleteLastChar, limit: 15)
 	}
 	
@@ -276,7 +276,7 @@ extension NSString {
 	@param limit The most characters returned when the number is too long to format.
 	*/
 	@objc(formattedPhoneNumberWithLastCharacterRemoved:limit:)
-	public func formattedPhoneNumber(withLastCharacterRemoved deleteLastChar: Bool, limit: Int) -> String {
+	open func formattedPhoneNumber(withLastCharacterRemoved deleteLastChar: Bool, limit: Int) -> String {
 		
 		guard length > 0 else { return "" }
 		

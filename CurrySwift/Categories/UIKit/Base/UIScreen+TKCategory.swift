@@ -36,7 +36,7 @@ import UIKit
 extension UIScreen {
 	
 	/** The point size of one pixel on screen. (ie. @1x => 1, @2x => 0.5) */
-	@objc public var onePixelSize: CGFloat { 1.0 / scale }
+	@objc open var onePixelSize: CGFloat { 1.0 / scale }
 	
 	#if !os(tvOS)
 	
@@ -45,7 +45,7 @@ extension UIScreen {
 	@param animated Animate the screen brightness change.
 	*/
 	@objc(setBrightness:animated:)
-	public func setBrightness(_ target: CGFloat, animated: Bool) {
+	open func setBrightness(_ target: CGFloat, animated: Bool) {
 		
 		if target == brightness { return }
 		

@@ -43,7 +43,7 @@ extension Timer {
 	*/
 	@objc(tk_scheduledTimerWithTimeInterval:repeats:block:)
 	@discardableResult
-	public static func tk_scheduledTimer(withTimeInterval seconds: TimeInterval, repeats: Bool, block: @escaping () -> Void) -> Timer {
+	open class func tk_scheduledTimer(withTimeInterval seconds: TimeInterval, repeats: Bool, block: @escaping () -> Void) -> Timer {
 		Timer.scheduledTimer(withTimeInterval: seconds, repeats: repeats) { _ in block() }
 	}
 	
@@ -54,7 +54,7 @@ extension Timer {
 	@return The `Timer` object.
 	*/
 	@objc(tk_timerWithTimeInterval:repeats:block:)
-	public static func tk_timer(withTimeInterval seconds: TimeInterval, repeats: Bool, block: @escaping () -> Void) -> Timer {
+	open class func tk_timer(withTimeInterval seconds: TimeInterval, repeats: Bool, block: @escaping () -> Void) -> Timer {
 		Timer(timeInterval: seconds, repeats: repeats) { _ in block() }
 	}
 	

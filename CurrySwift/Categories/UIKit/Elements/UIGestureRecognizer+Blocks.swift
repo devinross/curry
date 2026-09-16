@@ -41,7 +41,7 @@ private nonisolated(unsafe) var handlerKey: UInt8 = 0
 extension UIGestureRecognizer {
 	
 	/** Set the gesture recognizer callback handler. */
-	@objc public var handler: ((UIGestureRecognizer) -> Void)? {
+	@objc open var handler: ((UIGestureRecognizer) -> Void)? {
 		get { objc_getAssociatedObject(self, &handlerKey) as? (UIGestureRecognizer) -> Void }
 		set { objc_setAssociatedObject(self, &handlerKey, newValue, .OBJC_ASSOCIATION_COPY_NONATOMIC) }
 	}
@@ -51,7 +51,7 @@ extension UIGestureRecognizer {
 	@return A gesture recognizer.
 	*/
 	@objc(recognizerWithHandler:)
-	public static func recognizer(handler block: @escaping (UIGestureRecognizer) -> Void) -> Self {
+	open class func recognizer(handler block: @escaping (UIGestureRecognizer) -> Void) -> Self {
 		let recognizer = self.init()
 		recognizer.addTarget(recognizer, action: #selector(handleBlockAction(_:)))
 		recognizer.handler = block

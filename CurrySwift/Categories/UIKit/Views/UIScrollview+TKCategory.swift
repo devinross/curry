@@ -36,26 +36,26 @@ import UIKit
 extension UIScrollView {
 	
 	/** Scrolls back to the top of the content, respecting the content inset. */
-	@objc public func scrollToTop() {
+	@objc open func scrollToTop() {
 		contentOffset = CGPoint(x: -contentInset.left, y: -contentInset.top)
 	}
 	
 	/** The horizontal page currently shown, for a paging scroll view. */
-	@objc public var currentHorizontalPage: Int {
+	@objc open var currentHorizontalPage: Int {
 		let width = frame.width
 		guard width > 0 else { return 0 }
 		return Int((width / 2 + contentOffset.x) / width)
 	}
 	
 	/** The vertical page currently shown, for a paging scroll view. */
-	@objc public var currentVerticalPage: Int {
+	@objc open var currentVerticalPage: Int {
 		let height = frame.height
 		guard height > 0 else { return 0 }
 		return Int((height / 2 + contentOffset.y) / height)
 	}
 	
 	/** How far the content is scrolled from its end, rather than from its start. */
-	@objc public var contentOffsetFromEnd: CGPoint {
+	@objc open var contentOffsetFromEnd: CGPoint {
 		
 		let width = frame.width
 		let height = frame.height

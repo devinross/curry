@@ -54,13 +54,13 @@ private final class TKCAAnimationDelegate: NSObject, CAAnimationDelegate {
 extension CAAnimation {
 	
 	/** The callback block executed when the animation completes. */
-	@objc public var completion: ((Bool) -> Void)? {
+	@objc open var completion: ((Bool) -> Void)? {
 		get { (delegate as? TKCAAnimationDelegate)?.completion }
 		set { blockDelegate().completion = newValue }
 	}
 	
 	/** A callback block executed when the animation starts. */
-	@objc public var start: (() -> Void)? {
+	@objc open var start: (() -> Void)? {
 		get { (delegate as? TKCAAnimationDelegate)?.start }
 		set { blockDelegate().start = newValue }
 	}

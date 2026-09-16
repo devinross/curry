@@ -38,7 +38,7 @@ extension NSArray {
 	/** Returns a random object in the array.
 	@return A randomly chosen object, or nil if the array is empty.
 	*/
-	@objc public var randomObject: Any? {
+	@objc open var randomObject: Any? {
 		guard count > 0 else { return nil }
 		return object(at: Int.random(in: 0 ..< count))
 	}
@@ -50,7 +50,7 @@ extension NSArray {
 extension NSMutableArray {
 	
 	/** Shuffles the order of the objects. */
-	@objc public func shuffle() {
+	@objc open func shuffle() {
 		let total = count
 		guard total > 1 else { return }
 		for i in 0 ..< total {
@@ -64,7 +64,7 @@ extension NSMutableArray {
 	Raises an `NSRangeException` when the array is empty, matching
 	`removeObjectAtIndex:`.
 	*/
-	@objc public func removeFirstObject() {
+	@objc open func removeFirstObject() {
 		removeObject(at: 0)
 	}
 	

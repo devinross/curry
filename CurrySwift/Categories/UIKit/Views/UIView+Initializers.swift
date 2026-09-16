@@ -36,13 +36,13 @@ extension UIView {
 	
 	/** A view with the given frame. */
 	@objc(viewWithFrame:)
-	public static func view(frame: CGRect) -> Self {
+	open class func view(frame: CGRect) -> Self {
 		self.init(frame: frame)
 	}
 	
 	/** A view with the given frame and background color. */
 	@objc(viewWithFrame:backgroundColor:)
-	public static func view(frame: CGRect, backgroundColor: UIColor) -> Self {
+	open class func view(frame: CGRect, backgroundColor: UIColor) -> Self {
 		let view = self.init(frame: frame)
 		view.backgroundColor = backgroundColor
 		return view
@@ -50,7 +50,7 @@ extension UIView {
 	
 	/** A view with the given frame, background color and corner radius. */
 	@objc(viewWithFrame:backgroundColor:cornerRadius:)
-	public static func view(frame: CGRect, backgroundColor: UIColor, cornerRadius: CGFloat) -> Self {
+	open class func view(frame: CGRect, backgroundColor: UIColor, cornerRadius: CGFloat) -> Self {
 		let view = self.view(frame: frame, backgroundColor: backgroundColor)
 		view.cornerRadius = cornerRadius
 		return view
@@ -58,7 +58,7 @@ extension UIView {
 	
 	/** A view with the given frame, background color, corner radius and border. */
 	@objc(viewWithFrame:backgroundColor:cornerRadius:borderColor:borderWidth:)
-	public static func view(frame: CGRect, backgroundColor: UIColor, cornerRadius: CGFloat, borderColor: UIColor, borderWidth: CGFloat) -> Self {
+	open class func view(frame: CGRect, backgroundColor: UIColor, cornerRadius: CGFloat, borderColor: UIColor, borderWidth: CGFloat) -> Self {
 		let view = self.view(frame: frame, backgroundColor: backgroundColor, cornerRadius: cornerRadius)
 		view.setBorder(color: borderColor, width: borderWidth)
 		return view

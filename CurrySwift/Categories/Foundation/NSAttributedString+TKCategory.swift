@@ -42,7 +42,7 @@ extension NSAttributedString {
 	@return A `NSAttributedString` object, or nil when the text is empty.
 	*/
 	@objc(attributedStringWithText:lineHeight:)
-	public static func attributedString(text: String, lineHeight: CGFloat) -> NSAttributedString? {
+	open class func attributedString(text: String, lineHeight: CGFloat) -> NSAttributedString? {
 		makeAttributedString(text: text, lineHeight: lineHeight, kerning: nil)
 	}
 	
@@ -52,7 +52,7 @@ extension NSAttributedString {
 	@return A `NSAttributedString` object, or nil when the text is empty.
 	*/
 	@objc(attributedStringWithText:kerning:)
-	public static func attributedString(text: String, kerning: CGFloat) -> NSAttributedString? {
+	open class func attributedString(text: String, kerning: CGFloat) -> NSAttributedString? {
 		makeAttributedString(text: text, lineHeight: nil, kerning: kerning)
 	}
 	
@@ -63,7 +63,7 @@ extension NSAttributedString {
 	@return A `NSAttributedString` object, or nil when the text is empty.
 	*/
 	@objc(attributedStringWithText:lineHeight:kerning:)
-	public static func attributedString(text: String, lineHeight: CGFloat, kerning: CGFloat) -> NSAttributedString? {
+	open class func attributedString(text: String, lineHeight: CGFloat, kerning: CGFloat) -> NSAttributedString? {
 		makeAttributedString(text: text, lineHeight: lineHeight, kerning: kerning)
 	}
 	

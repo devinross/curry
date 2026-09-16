@@ -38,19 +38,19 @@ extension UIImage {
 	
 	/** Crops the image to the given rect, in pixels. */
 	@objc(imageCroppedToRect:)
-	public func imageCropped(to rect: CGRect) -> UIImage? {
+	open func imageCropped(to rect: CGRect) -> UIImage? {
 		guard let cropped = cgImage?.cropping(to: rect) else { return nil }
 		return UIImage(cgImage: cropped)
 	}
 	
 	/** The image cropped to a square anchored at its top left corner. */
-	@objc public var imageByApplyingSquareCrop: UIImage? {
+	@objc open var imageByApplyingSquareCrop: UIImage? {
 		let side = min(size.width, size.height)
 		return imageCropped(to: CGRect(x: 0, y: 0, width: side * scale, height: side * scale))
 	}
 	
 	/** The image cropped to a square at its center. */
-	@objc public var imageByApplyingCenteredSquareCrop: UIImage? {
+	@objc open var imageByApplyingCenteredSquareCrop: UIImage? {
 		let side = min(size.width, size.height)
 		let originX = ((size.width - side) / 2).rounded()
 		let originY = ((size.height - side) / 2).rounded()
@@ -58,7 +58,7 @@ extension UIImage {
 	}
 	
 	/** A light, translucent blur over the image. */
-	@objc public var imageByApplyingLightEffect: UIImage? {
+	@objc open var imageByApplyingLightEffect: UIImage? {
 		imageByApplyingBlur(radius: 30,
 		                    tintColor: UIColor(white: 1.0, alpha: 0.3),
 		                    saturationDeltaFactor: 1.8,
@@ -66,7 +66,7 @@ extension UIImage {
 	}
 	
 	/** An extra light, translucent blur over the image. */
-	@objc public var imageByApplyingExtraLightEffect: UIImage? {
+	@objc open var imageByApplyingExtraLightEffect: UIImage? {
 		imageByApplyingBlur(radius: 20,
 		                    tintColor: UIColor(white: 0.97, alpha: 0.82),
 		                    saturationDeltaFactor: 1.8,
@@ -78,7 +78,7 @@ extension UIImage {
 	@param saturation The saturation delta applied alongside the blur.
 	*/
 	@objc(imageByApplyingDarkEffectWithBlurRadius:saturationFactor:)
-	public func imageByApplyingDarkEffect(blurRadius: CGFloat, saturationFactor saturation: CGFloat) -> UIImage? {
+	open func imageByApplyingDarkEffect(blurRadius: CGFloat, saturationFactor saturation: CGFloat) -> UIImage? {
 		imageByApplyingBlur(radius: blurRadius,
 		                    tintColor: UIColor(white: 0.11, alpha: 0.63),
 		                    saturationDeltaFactor: saturation,
@@ -86,7 +86,7 @@ extension UIImage {
 	}
 	
 	/** A dark, translucent blur over the image. */
-	@objc public var imageByApplyingDarkEffect: UIImage? {
+	@objc open var imageByApplyingDarkEffect: UIImage? {
 		imageByApplyingBlur(radius: 20,
 		                    tintColor: UIColor(white: 0.11, alpha: 0.73),
 		                    saturationDeltaFactor: 1.8,
@@ -97,7 +97,7 @@ extension UIImage {
 	@param tintColor The color the blur is tinted with.
 	*/
 	@objc(imageByApplyingTintEffectWithColor:)
-	public func imageByApplyingTintEffect(color tintColor: UIColor) -> UIImage? {
+	open func imageByApplyingTintEffect(color tintColor: UIColor) -> UIImage? {
 		
 		let effectColorAlpha: CGFloat = 0.6
 		var effectColor = tintColor
@@ -124,7 +124,7 @@ extension UIImage {
 	@param maskImage Restricts where the blurred image is drawn.
 	*/
 	@objc(imageByApplyingBlurWithRadius:tintColor:saturationDeltaFactor:maskImage:)
-	public func imageByApplyingBlur(radius blurRadius: CGFloat,
+	open func imageByApplyingBlur(radius blurRadius: CGFloat,
 	                                tintColor: UIColor?,
 	                                saturationDeltaFactor: CGFloat,
 	                                maskImage: UIImage?) -> UIImage? {

@@ -36,7 +36,7 @@ extension UILabel {
 	
 	/** A label with attributed text, a font, a color and an alignment. */
 	@objc(labelWithFrame:attributedText:font:textColor:textAlignment:)
-	public static func label(frame: CGRect, attributedText: NSAttributedString?, font: UIFont, textColor: UIColor, textAlignment alignment: NSTextAlignment) -> Self {
+	open class func label(frame: CGRect, attributedText: NSAttributedString?, font: UIFont, textColor: UIColor, textAlignment alignment: NSTextAlignment) -> Self {
 		let label = self.init(frame: frame)
 		label.textColor = textColor
 		label.font = font
@@ -47,7 +47,7 @@ extension UILabel {
 	
 	/** A label with text, a font, a color and an alignment. */
 	@objc(labelWithFrame:text:font:textColor:textAlignment:)
-	public static func label(frame: CGRect, text: String?, font: UIFont, textColor: UIColor, textAlignment alignment: NSTextAlignment) -> Self {
+	open class func label(frame: CGRect, text: String?, font: UIFont, textColor: UIColor, textAlignment alignment: NSTextAlignment) -> Self {
 		let label = self.label(frame: frame, font: font, textColor: textColor, textAlignment: alignment)
 		label.text = text
 		return label
@@ -55,7 +55,7 @@ extension UILabel {
 	
 	/** A label with a font. */
 	@objc(labelWithFrame:font:)
-	public static func label(frame: CGRect, font: UIFont) -> Self {
+	open class func label(frame: CGRect, font: UIFont) -> Self {
 		let label = self.init(frame: frame)
 		label.font = font
 		return label
@@ -63,7 +63,7 @@ extension UILabel {
 	
 	/** A label with a font and a color. */
 	@objc(labelWithFrame:font:textColor:)
-	public static func label(frame: CGRect, font: UIFont, textColor: UIColor) -> Self {
+	open class func label(frame: CGRect, font: UIFont, textColor: UIColor) -> Self {
 		let label = self.label(frame: frame, font: font)
 		label.textColor = textColor
 		return label
@@ -71,7 +71,7 @@ extension UILabel {
 	
 	/** A label with a font, a color and an alignment. */
 	@objc(labelWithFrame:font:textColor:textAlignment:)
-	public static func label(frame: CGRect, font: UIFont, textColor: UIColor, textAlignment alignment: NSTextAlignment) -> Self {
+	open class func label(frame: CGRect, font: UIFont, textColor: UIColor, textAlignment alignment: NSTextAlignment) -> Self {
 		let label = self.label(frame: frame, font: font, textColor: textColor)
 		label.textAlignment = alignment
 		return label
@@ -79,7 +79,7 @@ extension UILabel {
 	
 	/** A label with attributed text and an alignment. */
 	@objc(labelWithFrame:attributedText:textAlignment:)
-	public static func label(frame: CGRect, attributedText: NSAttributedString?, textAlignment alignment: NSTextAlignment) -> Self {
+	open class func label(frame: CGRect, attributedText: NSAttributedString?, textAlignment alignment: NSTextAlignment) -> Self {
 		let label = self.init(frame: frame)
 		label.attributedText = attributedText
 		label.textAlignment = alignment

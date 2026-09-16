@@ -42,7 +42,7 @@ extension UIBarButtonItem {
 	@param selector The selector sent on tap.
 	*/
 	@objc(barButtonItemWithImage:highlightedImage:target:selector:)
-	public static func barButtonItem(image: UIImage, highlightedImage: UIImage, target: Any?, selector: Selector?) -> UIBarButtonItem {
+	open class func barButtonItem(image: UIImage, highlightedImage: UIImage, target: Any?, selector: Selector?) -> UIBarButtonItem {
 		
 		let button = UIButton.button(frame: CGRect(origin: .zero, size: image.size),
 		                             image: image,
@@ -59,32 +59,32 @@ extension UIBarButtonItem {
 	
 	/** A system action item. */
 	@objc(actionItemWithTarget:action:)
-	public static func actionItem(target: Any?, action: Selector?) -> UIBarButtonItem {
+	open class func actionItem(target: Any?, action: Selector?) -> UIBarButtonItem {
 		UIBarButtonItem(barButtonSystemItem: .action, target: target, action: action)
 	}
 	
 	/** A system done item. */
 	@objc(doneItemWithTarget:action:)
-	public static func doneItem(target: Any?, action: Selector?) -> UIBarButtonItem {
+	open class func doneItem(target: Any?, action: Selector?) -> UIBarButtonItem {
 		UIBarButtonItem(barButtonSystemItem: .done, target: target, action: action)
 	}
 	
 	/** A system cancel item. */
 	@objc(cancelItemWithTarget:action:)
-	public static func cancelItem(target: Any?, action: Selector?) -> UIBarButtonItem {
+	open class func cancelItem(target: Any?, action: Selector?) -> UIBarButtonItem {
 		UIBarButtonItem(barButtonSystemItem: .cancel, target: target, action: action)
 	}
 	
 	/** A system save item, styled as a done button. */
 	@objc(saveItemWithTarget:action:)
-	public static func saveItem(target: Any?, action: Selector?) -> UIBarButtonItem {
+	open class func saveItem(target: Any?, action: Selector?) -> UIBarButtonItem {
 		let item = UIBarButtonItem(barButtonSystemItem: .save, target: target, action: action)
 		item.style = .done
 		return item
 	}
 	
 	/** A bar item showing a spinning activity indicator. */
-	@objc public static var activityItem: UIBarButtonItem {
+	@objc open class var activityItem: UIBarButtonItem {
 		activityItem(indicatorStyle: .medium)
 	}
 	
@@ -92,7 +92,7 @@ extension UIBarButtonItem {
 	@param style The style of the indicator.
 	*/
 	@objc(activityItemWithIndicatorStyle:)
-	public static func activityItem(indicatorStyle style: UIActivityIndicatorView.Style) -> UIBarButtonItem {
+	open class func activityItem(indicatorStyle style: UIActivityIndicatorView.Style) -> UIBarButtonItem {
 		let indicator = UIActivityIndicatorView(style: style)
 		indicator.startAnimating()
 		return UIBarButtonItem(customView: indicator)
@@ -100,14 +100,14 @@ extension UIBarButtonItem {
 	
 	/** A fixed width spacer item. */
 	@objc(fixedSpaceItemWithWidth:)
-	public static func fixedSpaceItem(width: CGFloat) -> UIBarButtonItem {
+	open class func fixedSpaceItem(width: CGFloat) -> UIBarButtonItem {
 		let item = UIBarButtonItem(barButtonSystemItem: .fixedSpace, target: nil, action: nil)
 		item.width = width
 		return item
 	}
 	
 	/** A flexible width spacer item. */
-	@objc public static var flexibleSpaceItem: UIBarButtonItem {
+	@objc open class var flexibleSpaceItem: UIBarButtonItem {
 		UIBarButtonItem(barButtonSystemItem: .flexibleSpace, target: nil, action: nil)
 	}
 	

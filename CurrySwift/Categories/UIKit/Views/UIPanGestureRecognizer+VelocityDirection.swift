@@ -37,37 +37,37 @@ extension UIPanGestureRecognizer {
 	private var currentVelocity: CGPoint { velocity(in: view) }
 	
 	/** Whether the pan is moving mostly up. */
-	@objc public func velocityIsUp() -> Bool {
+	@objc open func velocityIsUp() -> Bool {
 		let v = currentVelocity
 		return abs(v.y) > abs(v.x) && v.y < 0
 	}
 	
 	/** Whether the pan is moving mostly down. */
-	@objc public func velocityIsDown() -> Bool {
+	@objc open func velocityIsDown() -> Bool {
 		let v = currentVelocity
 		return abs(v.y) > abs(v.x) && v.y > 0
 	}
 	
 	/** Whether the pan is moving mostly left. */
-	@objc public func velocityIsLeft() -> Bool {
+	@objc open func velocityIsLeft() -> Bool {
 		let v = currentVelocity
 		return abs(v.x) > abs(v.y) && v.x < 0
 	}
 	
 	/** Whether the pan is moving mostly right. */
-	@objc public func velocityIsRight() -> Bool {
+	@objc open func velocityIsRight() -> Bool {
 		let v = currentVelocity
 		return abs(v.x) > abs(v.y) && v.x > 0
 	}
 	
 	/** Whether the pan is moving more vertically than horizontally. */
-	@objc public func velocityIsVertical() -> Bool {
+	@objc open func velocityIsVertical() -> Bool {
 		let v = currentVelocity
 		return abs(v.y) > abs(v.x)
 	}
 	
 	/** Whether the pan is moving more horizontally than vertically. */
-	@objc public func velocityIsHorizontal() -> Bool {
+	@objc open func velocityIsHorizontal() -> Bool {
 		let v = currentVelocity
 		return abs(v.x) > abs(v.y)
 	}

@@ -61,7 +61,7 @@ extension URLRequest {
 extension NSURLRequest {
 	
 	/** Returns a cURL command representation of this URL request. */
-	@objc public var curlString: String {
+	@objc open var curlString: String {
 		(self as URLRequest).curlString
 	}
 	

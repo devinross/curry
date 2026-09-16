@@ -55,13 +55,13 @@ extension UIAlertView: @retroactive UIAlertViewDelegate {
 	
 	/** An alert with a title and message and no buttons yet. */
 	@objc(alertWithTitle:message:)
-	public static func alert(title: String?, message: String?) -> UIAlertView {
+	open class func alert(title: String?, message: String?) -> UIAlertView {
 		UIAlertView(title: title, message: message, delegate: nil, cancelButtonTitle: nil)
 	}
 	
 	/** Adds a button that runs the given block when tapped. */
 	@objc(addButtonWithTitle:handler:)
-	public func addButton(withTitle title: String, handler block: ((UIAlertView) -> Void)?) {
+	open func addButton(withTitle title: String, handler block: ((UIAlertView) -> Void)?) {
 		
 		if actions == nil {
 			let existing = NSMutableArray()
@@ -76,12 +76,12 @@ extension UIAlertView: @retroactive UIAlertViewDelegate {
 	
 	/** Adds a button that runs the given block and becomes the cancel button. */
 	@objc(addCancelButtonWithTitle:handler:)
-	public func addCancelButton(withTitle title: String, handler block: ((UIAlertView) -> Void)?) {
+	open func addCancelButton(withTitle title: String, handler block: ((UIAlertView) -> Void)?) {
 		addButton(withTitle: title, handler: block)
 		cancelButtonIndex = numberOfButtons - 1
 	}
 	
-	public func alertView(_ alertView: UIAlertView, clickedButtonAt buttonIndex: Int) {
+	open func alertView(_ alertView: UIAlertView, clickedButtonAt buttonIndex: Int) {
 		guard let actions, buttonIndex >= 0, buttonIndex < actions.count,
 		      let handler = actions[buttonIndex] as? (UIAlertView) -> Void else { return }
 		handler(self)

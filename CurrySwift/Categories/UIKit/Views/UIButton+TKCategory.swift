@@ -37,13 +37,13 @@ extension UIButton {
 	
 	/** A button with the given frame. */
 	@objc(buttonWithFrame:)
-	public static func button(frame: CGRect) -> Self {
+	open class func button(frame: CGRect) -> Self {
 		self.init(frame: frame)
 	}
 	
 	/** A custom button with the given frame and title. */
 	@objc(buttonWithFrame:title:)
-	public static func button(frame: CGRect, title: String) -> Self {
+	open class func button(frame: CGRect, title: String) -> Self {
 		let button = custom(frame: frame)
 		button.setTitle(title, for: .normal)
 		return button
@@ -51,7 +51,7 @@ extension UIButton {
 	
 	/** A custom button with the given frame, title and background image. */
 	@objc(buttonWithFrame:title:backgroundImage:)
-	public static func button(frame: CGRect, title: String, backgroundImage: UIImage) -> Self {
+	open class func button(frame: CGRect, title: String, backgroundImage: UIImage) -> Self {
 		let button = self.button(frame: frame, title: title)
 		button.setBackgroundImage(backgroundImage, for: .normal)
 		return button
@@ -59,7 +59,7 @@ extension UIButton {
 	
 	/** A custom button with the given frame, title and background images. */
 	@objc(buttonWithFrame:title:backgroundImage:highlightedBackgroundImage:)
-	public static func button(frame: CGRect, title: String, backgroundImage: UIImage, highlightedBackgroundImage: UIImage) -> Self {
+	open class func button(frame: CGRect, title: String, backgroundImage: UIImage, highlightedBackgroundImage: UIImage) -> Self {
 		let button = self.button(frame: frame, title: title, backgroundImage: backgroundImage)
 		button.setBackgroundImage(highlightedBackgroundImage, for: .highlighted)
 		return button
@@ -67,7 +67,7 @@ extension UIButton {
 	
 	/** A custom button with the given frame and image. */
 	@objc(buttonWithFrame:image:)
-	public static func button(frame: CGRect, image: UIImage) -> Self {
+	open class func button(frame: CGRect, image: UIImage) -> Self {
 		let button = custom(frame: frame)
 		button.setImage(image, for: .normal)
 		return button
@@ -75,7 +75,7 @@ extension UIButton {
 	
 	/** A custom button with the given frame and images. */
 	@objc(buttonWithFrame:image:highlightedImage:)
-	public static func button(frame: CGRect, image: UIImage, highlightedImage: UIImage) -> Self {
+	open class func button(frame: CGRect, image: UIImage, highlightedImage: UIImage) -> Self {
 		let button = self.button(frame: frame, image: image)
 		button.setImage(highlightedImage, for: .highlighted)
 		return button

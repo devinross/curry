@@ -34,12 +34,12 @@ import UIKit
 
 extension UITraitCollection {
 	
-	@objc public var phoneUserInterfaceIdiom: Bool { userInterfaceIdiom == .phone }
-	@objc public var padUserInterfaceIdiom: Bool { userInterfaceIdiom == .pad }
+	@objc open var phoneUserInterfaceIdiom: Bool { userInterfaceIdiom == .phone }
+	@objc open var padUserInterfaceIdiom: Bool { userInterfaceIdiom == .pad }
 	
-	@objc public var compactHorizontalSizeClass: Bool { horizontalSizeClass == .compact }
-	@objc public var compactVerticalSizeClass: Bool { verticalSizeClass == .compact }
-	@objc public var regularVerticalSizeClass: Bool { verticalSizeClass == .regular }
-	@objc public var regularHorizontalSizeClass: Bool { horizontalSizeClass == .regular }
+	@objc open var compactHorizontalSizeClass: Bool { horizontalSizeClass == .compact }
+	@objc open var compactVerticalSizeClass: Bool { verticalSizeClass == .compact }
+	@objc open var regularVerticalSizeClass: Bool { verticalSizeClass == .regular }
+	@objc open var regularHorizontalSizeClass: Bool { horizontalSizeClass == .regular }
 	
 }

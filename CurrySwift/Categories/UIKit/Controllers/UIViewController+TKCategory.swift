@@ -40,7 +40,7 @@ extension UIViewController {
 	@param completion Called once the presentation finishes.
 	*/
 	@objc(presentNavigationControllerWithRoot:animated:completion:)
-	public func presentNavigationController(root rootViewControllerToPresent: UIViewController,
+	open func presentNavigationController(root rootViewControllerToPresent: UIViewController,
 	                                        animated: Bool,
 	                                        completion: (() -> Void)?) {
 		let navigation = UINavigationController(rootViewController: rootViewControllerToPresent)
@@ -54,7 +54,7 @@ extension UIViewController {
 	@param dismiss The dismiss button's title, or nil for a localized default.
 	*/
 	@objc(presentAlertControllWithTitle:message:dismiss:)
-	public func presentAlertControll(title: String?, message: String?, dismiss: String?) {
+	open func presentAlertControll(title: String?, message: String?, dismiss: String?) {
 		present(UIAlertController.alertController(title: title, message: message, dismiss: dismiss), animated: true)
 	}
 	

@@ -41,7 +41,7 @@ extension UIMotionEffectGroup {
 	@param yMove Points of vertical movement.
 	*/
 	@objc(parallaxMotionEffectGroupWithXAngle:yAngle:xMove:yMove:)
-	public static func parallaxMotionEffectGroup(xAngle: CGFloat, yAngle: CGFloat, xMove: CGFloat, yMove: CGFloat) -> UIMotionEffectGroup {
+	open class func parallaxMotionEffectGroup(xAngle: CGFloat, yAngle: CGFloat, xMove: CGFloat, yMove: CGFloat) -> UIMotionEffectGroup {
 		
 		let xRot = UIInterpolatingMotionEffect(keyPath: "layer.transform", type: .tiltAlongHorizontalAxis)
 		let yRot = UIInterpolatingMotionEffect(keyPath: "layer.transform", type: .tiltAlongVerticalAxis)

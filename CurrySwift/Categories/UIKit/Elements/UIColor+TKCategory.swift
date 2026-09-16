@@ -40,7 +40,7 @@ extension UIColor {
 	@return The `UIColor` object.
 	*/
 	@objc(colorWithHex:)
-	public static func color(hex: UInt32) -> UIColor {
+	open class func color(hex: UInt32) -> UIColor {
 		color(hex: hex, alpha: 1)
 	}
 	
@@ -50,7 +50,7 @@ extension UIColor {
 	@return The `UIColor` object.
 	*/
 	@objc(colorWithHex:alpha:)
-	public static func color(hex: UInt32, alpha: CGFloat) -> UIColor {
+	open class func color(hex: UInt32, alpha: CGFloat) -> UIColor {
 		UIColor(red: CGFloat((hex & 0xFF0000) >> 16) / 255.0,
 		        green: CGFloat((hex & 0xFF00) >> 8) / 255.0,
 		        blue: CGFloat(hex & 0xFF) / 255.0,
@@ -62,7 +62,7 @@ extension UIColor {
 	@return The `UIColor` object.
 	*/
 	@objc(colorWithHexString:)
-	public static func color(hexString: String) -> UIColor {
+	open class func color(hexString: String) -> UIColor {
 		color(hexString: hexString, alpha: 1.0)
 	}
 	
@@ -72,7 +72,7 @@ extension UIColor {
 	@return The `UIColor` object.
 	*/
 	@objc(colorWithHexString:alpha:)
-	public static func color(hexString: String, alpha: CGFloat) -> UIColor {
+	open class func color(hexString: String, alpha: CGFloat) -> UIColor {
 		
 		var digits = hexString
 		if digits.hasPrefix("#") {
@@ -88,7 +88,7 @@ extension UIColor {
 	}
 	
 	/** Creates and returns a color object with a random color value. The alpha property is 1.0. */
-	@objc public static var randomColor: UIColor {
+	@objc open class var randomColor: UIColor {
 		randomColor(alpha: 1)
 	}
 	
@@ -96,7 +96,7 @@ extension UIColor {
 	@param alpha The alpha of the color.
 	*/
 	@objc(randomColorWithAlpha:)
-	public static func randomColor(alpha: CGFloat) -> UIColor {
+	open class func randomColor(alpha: CGFloat) -> UIColor {
 		UIColor(red: CGFloat.random(in: 0...1),
 		        green: CGFloat.random(in: 0...1),
 		        blue: CGFloat.random(in: 0...1),

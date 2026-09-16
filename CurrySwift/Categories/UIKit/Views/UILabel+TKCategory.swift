@@ -36,7 +36,7 @@ import UIKit
 extension UILabel {
 	
 	/** Sizes the label to fit its text, keeping the text where its alignment put it. */
-	@objc public func sizeToFitWithAlignment() {
+	@objc open func sizeToFitWithAlignment() {
 		
 		guard textAlignment == .center || textAlignment == .right else {
 			sizeToFit()
@@ -55,7 +55,7 @@ extension UILabel {
 	}
 	
 	/** Sizes the label to fit its text, keeping it aligned and vertically centered. */
-	@objc public func sizeToFitWithAlignmentAndVerticalCentering() {
+	@objc open func sizeToFitWithAlignmentAndVerticalCentering() {
 		
 		let original = frame
 		sizeToFitWithAlignment()
@@ -67,7 +67,7 @@ extension UILabel {
 	}
 	
 	/** Sizes the label's height to fit its text, leaving the width alone. */
-	@objc public func sizeToFitHeight() {
+	@objc open func sizeToFitHeight() {
 		let width = frame.width
 		sizeToFit()
 		frame.size.width = width

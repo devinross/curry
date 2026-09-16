@@ -58,7 +58,7 @@ extension NSObject {
 	@param block The block that will be performed upon the parsing of the json data.
 	*/
 	@objc(processJSON:withCompletion:)
-	public func processJSON(_ data: Data, withCompletion block: TKJSONCompletionBlock?) {
+	open func processJSON(_ data: Data, withCompletion block: TKJSONCompletionBlock?) {
 		processJSON(data, options: [], withCompletion: block)
 	}
 	
@@ -68,7 +68,7 @@ extension NSObject {
 	@param block The block that will be performed upon the parsing of the json data.
 	*/
 	@objc(processJSON:options:withCompletion:)
-	public func processJSON(_ data: Data, options: JSONSerialization.ReadingOptions, withCompletion block: TKJSONCompletionBlock?) {
+	open func processJSON(_ data: Data, options: JSONSerialization.ReadingOptions, withCompletion block: TKJSONCompletionBlock?) {
 		DispatchQueue.global(qos: .default).async {
 			var object: Any?
 			var parseError: Error?
@@ -89,7 +89,7 @@ extension NSObject {
 	@param block The block that will be performed upon the parsing of the json data.
 	*/
 	@objc(processJSON:response:error:options:withCompletion:)
-	public func processJSON(_ data: Data?, response: URLResponse?, error: Error?, options: JSONSerialization.ReadingOptions, withCompletion block: TKJSONNetworkCompletionBlock?) {
+	open func processJSON(_ data: Data?, response: URLResponse?, error: Error?, options: JSONSerialization.ReadingOptions, withCompletion block: TKJSONNetworkCompletionBlock?) {
 		
 		if let error {
 			onMain { block?(nil, response, error) }

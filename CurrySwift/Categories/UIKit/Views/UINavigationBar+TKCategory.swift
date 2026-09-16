@@ -36,7 +36,7 @@ import UIKit
 extension UINavigationBar {
 	
 	/** The hairline image view drawn under the bar, if the bar still has one. */
-	@objc public var hairlineDividerView: UIView? {
+	@objc open var hairlineDividerView: UIView? {
 		UINavigationBar.hairlineImageView(under: self)
 	}
 	

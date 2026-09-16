@@ -37,7 +37,7 @@ import QuartzCore
 extension UIView {
 	
 	/** The opposite of hidden. */
-	@objc public var visible: Bool {
+	@objc open var visible: Bool {
 		get { !isHidden }
 		set { isHidden = !newValue }
 	}
@@ -46,7 +46,7 @@ extension UIView {
 	@param view The view to be added. After being added, this view appears below any other subviews.
 	*/
 	@objc(addSubviewToBack:)
-	public func addSubviewToBack(_ view: UIView) {
+	open func addSubviewToBack(_ view: UIView) {
 		insertSubview(view, at: 0)
 	}
 	
@@ -55,7 +55,7 @@ extension UIView {
 	@return The snapshot image.
 	*/
 	@objc(snapshotImageAfterScreenUpdates:)
-	public func snapshotImage(afterScreenUpdates updates: Bool) -> UIImage? {
+	open func snapshotImage(afterScreenUpdates updates: Bool) -> UIImage? {
 		let format = UIGraphicsImageRendererFormat.default()
 		format.opaque = true
 		return UIGraphicsImageRenderer(bounds: bounds, format: format).image { _ in
@@ -69,7 +69,7 @@ extension UIView {
 	@param radius The radius of the shadow.
 	*/
 	@objc(setShadowWithOffset:opacity:radius:)
-	public func setShadow(offset: CGSize, opacity: CGFloat, radius: CGFloat) {
+	open func setShadow(offset: CGSize, opacity: CGFloat, radius: CGFloat) {
 		setShadow(offset: offset, opacity: opacity, color: .black, radius: radius)
 	}
 	
@@ -80,7 +80,7 @@ extension UIView {
 	@param radius The radius of the shadow.
 	*/
 	@objc(setShadowWithOffset:opacity:color:radius:)
-	public func setShadow(offset: CGSize, opacity: CGFloat, color: UIColor, radius: CGFloat) {
+	open func setShadow(offset: CGSize, opacity: CGFloat, color: UIColor, radius: CGFloat) {
 		setShadow(path: UIBezierPath(rect: bounds), offset: offset, opacity: opacity, color: color, radius: radius)
 	}
 	
@@ -92,7 +92,7 @@ extension UIView {
 	@param radius The radius of the shadow.
 	*/
 	@objc(setShadowWithPath:offset:opacity:color:radius:)
-	public func setShadow(path bezierPath: UIBezierPath, offset: CGSize, opacity: CGFloat, color: UIColor, radius: CGFloat) {
+	open func setShadow(path bezierPath: UIBezierPath, offset: CGSize, opacity: CGFloat, color: UIColor, radius: CGFloat) {
 		layer.shadowPath = bezierPath.cgPath
 		layer.shadowOpacity = Float(opacity)
 		layer.shadowOffset = offset
@@ -105,19 +105,19 @@ extension UIView {
 	@param width The width of the border.
 	*/
 	@objc(setBorderWithColor:width:)
-	public func setBorder(color: UIColor, width: CGFloat) {
+	open func setBorder(color: UIColor, width: CGFloat) {
 		layer.borderColor = color.cgColor
 		layer.borderWidth = width
 	}
 	
 	/** The corner radius of the view. */
-	@objc public var cornerRadius: CGFloat {
+	@objc open var cornerRadius: CGFloat {
 		get { layer.cornerRadius }
 		set { layer.cornerRadius = newValue }
 	}
 	
 	/** Removes every gesture recognizer attached to the view. */
-	@objc public func removeAllGestureRecognizers() {
+	@objc open func removeAllGestureRecognizers() {
 		for recognizer in gestureRecognizers ?? [] {
 			removeGestureRecognizer(recognizer)
 		}
@@ -125,7 +125,7 @@ extension UIView {
 	
 	/** Whether the given view appears anywhere above the receiver in the view hierarchy. */
 	@objc(hasSuperview:)
-	public func hasSuperview(_ parentView: UIView) -> Bool {
+	open func hasSuperview(_ parentView: UIView) -> Bool {
 		var ancestor = superview
 		while let current = ancestor {
 			if current === parentView { return true }
@@ -135,7 +135,7 @@ extension UIView {
 	}
 	
 	/** Removes every motion effect attached to the view. */
-	@objc public func removeAllMotionEffects() {
+	@objc open func removeAllMotionEffects() {
 		for effect in motionEffects {
 			removeMotionEffect(effect)
 		}

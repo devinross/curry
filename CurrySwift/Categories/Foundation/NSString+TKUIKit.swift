@@ -41,7 +41,7 @@ extension NSString {
 	@return The needed height, always at least one row tall.
 	*/
 	@objc(heightForWidth:andFont:)
-	public func heightForWidth(_ width: CGFloat, andFont font: UIFont) -> CGFloat {
+	open func heightForWidth(_ width: CGFloat, andFont font: UIFont) -> CGFloat {
 		let minimum = font.pointSize + 4
 		let constraint = CGSize(width: width, height: .greatestFiniteMagnitude)
 		let frame = boundingRect(with: constraint,

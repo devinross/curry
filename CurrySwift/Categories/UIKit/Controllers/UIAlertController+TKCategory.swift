@@ -40,7 +40,7 @@ extension UIAlertController {
 	@param dismiss The dismiss button's title, or nil for a localized default.
 	*/
 	@objc(alertControllerWithTitle:message:dismiss:)
-	public static func alertController(title: String?, message: String?, dismiss: String?) -> UIAlertController {
+	open class func alertController(title: String?, message: String?, dismiss: String?) -> UIAlertController {
 		let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
 		let dismissTitle = dismiss ?? NSLocalizedString("Dismiss", comment: "Dismiss Alert View")
 		alert.addAction(UIAlertAction(title: dismissTitle, style: .cancel, handler: nil))
@@ -49,7 +49,7 @@ extension UIAlertController {
 	
 	/** Adds an action built from a title, a style and a handler. */
 	@objc(addActionWithTitle:style:handler:)
-	public func addAction(title: String?, style: UIAlertAction.Style, handler: ((UIAlertAction) -> Void)?) {
+	open func addAction(title: String?, style: UIAlertAction.Style, handler: ((UIAlertAction) -> Void)?) {
 		addAction(UIAlertAction(title: title, style: style, handler: handler))
 	}
 	

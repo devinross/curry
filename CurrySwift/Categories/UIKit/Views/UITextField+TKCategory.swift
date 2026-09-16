@@ -39,7 +39,7 @@ extension UITextField {
 	@param range The range of characters to select.
 	*/
 	@objc(selectTextAtRange:)
-	public func selectText(at range: NSRange) {
+	open func selectText(at range: NSRange) {
 		guard let start = position(from: beginningOfDocument, offset: range.location),
 		      let end = position(from: start, offset: range.length) else { return }
 		selectedTextRange = textRange(from: start, to: end)

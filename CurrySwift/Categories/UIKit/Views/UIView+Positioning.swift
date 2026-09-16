@@ -36,19 +36,19 @@ extension UIView {
 	
 	/** The receiver's center expressed in another view's coordinate space. */
 	@objc(convertCenterToView:)
-	public func convertCenter(to view: UIView?) -> CGPoint {
+	open func convertCenter(to view: UIView?) -> CGPoint {
 		superview?.convert(center, to: view) ?? center
 	}
 	
 	/** The receiver's frame expressed in another view's coordinate space. */
 	@objc(convertFrameToView:)
-	public func convertFrame(to view: UIView?) -> CGRect {
+	open func convertFrame(to view: UIView?) -> CGRect {
 		superview?.convert(frame, to: view) ?? frame
 	}
 	
 	/** Moves the receiver into another view, keeping it where it appears on screen. */
 	@objc(moveToView:)
-	public func move(to view: UIView) {
+	open func move(to view: UIView) {
 		center = convertCenter(to: view)
 		removeFromSuperview()
 		view.addSubview(self)
@@ -56,103 +56,103 @@ extension UIView {
 	
 	/** Moves the receiver behind another view's subviews, keeping it where it appears on screen. */
 	@objc(moveToBackOfView:)
-	public func moveToBack(of view: UIView) {
+	open func moveToBack(of view: UIView) {
 		center = convertCenter(to: view)
 		removeFromSuperview()
 		view.addSubviewToBack(self)
 	}
 	
 	/** The midpoint of the receiver's own frame size. */
-	@objc public var middle: CGPoint {
+	@objc open var middle: CGPoint {
 		CGPoint(x: frame.width / 2, y: frame.height / 2)
 	}
 	
 	/** The width of the receiver's frame. */
-	@objc public var width: CGFloat {
+	@objc open var width: CGFloat {
 		get { frame.width }
 		set { frame.size.width = newValue }
 	}
 	
 	/** The height of the receiver's frame. */
-	@objc public var height: CGFloat {
+	@objc open var height: CGFloat {
 		get { frame.height }
 		set { frame.size.height = newValue }
 	}
 	
 	/** The width of the receiver's bounds. */
-	@objc public var boundsWidth: CGFloat { bounds.width }
+	@objc open var boundsWidth: CGFloat { bounds.width }
 	
 	/** The height of the receiver's bounds. */
-	@objc public var boundsHeight: CGFloat { bounds.height }
+	@objc open var boundsHeight: CGFloat { bounds.height }
 	
 	/** The size of the receiver's frame. */
-	@objc public var size: CGSize {
+	@objc open var size: CGSize {
 		get { frame.size }
 		set { frame.size = newValue }
 	}
 	
 	/** The origin of the receiver's frame. */
-	@objc public var origin: CGPoint {
+	@objc open var origin: CGPoint {
 		get { frame.origin }
 		set { frame.origin = newValue }
 	}
 	
 	/** The left edge of the frame. Setting it moves the view by its center. */
-	@objc public var minX: CGFloat {
+	@objc open var minX: CGFloat {
 		get { frame.minX }
 		set { center = CGPoint(x: newValue + frame.width / 2, y: center.y) }
 	}
 	
 	/** The top edge of the frame. Setting it moves the view by its center. */
-	@objc public var minY: CGFloat {
+	@objc open var minY: CGFloat {
 		get { frame.minY }
 		set { center = CGPoint(x: center.x, y: newValue + frame.height / 2) }
 	}
 	
 	/** The horizontal midpoint of the frame. */
-	@objc public var midX: CGFloat {
+	@objc open var midX: CGFloat {
 		get { frame.midX }
 		set { center = CGPoint(x: newValue, y: center.y) }
 	}
 	
 	/** The vertical midpoint of the frame. */
-	@objc public var midY: CGFloat {
+	@objc open var midY: CGFloat {
 		get { frame.midY }
 		set { center = CGPoint(x: center.x, y: newValue) }
 	}
 	
 	/** The right edge of the frame. Setting it moves the view by its center. */
-	@objc public var maxX: CGFloat {
+	@objc open var maxX: CGFloat {
 		get { frame.maxX }
 		set { center = CGPoint(x: newValue - frame.width / 2, y: center.y) }
 	}
 	
 	/** The bottom edge of the frame. Setting it moves the view by its center. */
-	@objc public var maxY: CGFloat {
+	@objc open var maxY: CGFloat {
 		get { frame.maxY }
 		set { center = CGPoint(x: center.x, y: newValue - frame.height / 2) }
 	}
 	
 	/** The left edge of the frame. Setting it moves the frame's origin. */
-	@objc public var originX: CGFloat {
+	@objc open var originX: CGFloat {
 		get { frame.minX }
 		set { frame.origin.x = newValue }
 	}
 	
 	/** The top edge of the frame. Setting it moves the frame's origin. */
-	@objc public var originY: CGFloat {
+	@objc open var originY: CGFloat {
 		get { frame.minY }
 		set { frame.origin.y = newValue }
 	}
 	
 	/** The horizontal center of the view. */
-	@objc public var centerX: CGFloat {
+	@objc open var centerX: CGFloat {
 		get { center.x }
 		set { center = CGPoint(x: newValue, y: center.y) }
 	}
 	
 	/** The vertical center of the view. */
-	@objc public var centerY: CGFloat {
+	@objc open var centerY: CGFloat {
 		get { center.y }
 		set { center = CGPoint(x: center.x, y: newValue) }
 	}

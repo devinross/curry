@@ -64,25 +64,25 @@ extension UIView {
 	
 	/** Add an animation to the view's layer. */
 	@objc(addAnimation:)
-	public func addAnimation(_ animation: CAAnimation) {
+	open func addAnimation(_ animation: CAAnimation) {
 		addAnimation(animation, forKey: nil)
 	}
 	
 	/** Add an animation to the view's layer with a completion block. */
 	@objc(addAnimation:completion:)
-	public func addAnimation(_ animation: CAAnimation, completion: ((Bool) -> Void)?) {
+	open func addAnimation(_ animation: CAAnimation, completion: ((Bool) -> Void)?) {
 		layer.addAnimation(animation, forKey: nil, completion: completion)
 	}
 	
 	/** Add an animation to the view's layer under the given key. */
 	@objc(addAnimation:forKey:)
-	public func addAnimation(_ animation: CAAnimation, forKey key: String?) {
+	open func addAnimation(_ animation: CAAnimation, forKey key: String?) {
 		addAnimation(animation, forKey: key, completion: nil)
 	}
 	
 	/** Add an animation to the view's layer under the given key, with a completion block. */
 	@objc(addAnimation:forKey:completion:)
-	public func addAnimation(_ animation: CAAnimation, forKey key: String?, completion: ((Bool) -> Void)?) {
+	open func addAnimation(_ animation: CAAnimation, forKey key: String?, completion: ((Bool) -> Void)?) {
 		layer.addAnimation(animation, forKey: key, completion: completion)
 	}
 	
@@ -90,37 +90,37 @@ extension UIView {
 	
 	/** Add a keyframe animation to the view's layer that follows a bezier path. */
 	@objc(addKeyframeAnimationWithKeyPath:duration:delay:bezierPath:options:)
-	public func addKeyframeAnimation(keyPath: String, duration: CFTimeInterval, delay: CFTimeInterval, bezierPath: UIBezierPath, options: UIView.AnimationOptions) {
+	open func addKeyframeAnimation(keyPath: String, duration: CFTimeInterval, delay: CFTimeInterval, bezierPath: UIBezierPath, options: UIView.AnimationOptions) {
 		addKeyframeAnimation(keyPath: keyPath, duration: duration, delay: delay, bezierPath: bezierPath, options: options, completion: nil)
 	}
 	
 	/** Add a keyframe animation to the view's layer that follows a bezier path. */
 	@objc(addKeyframeAnimationWithKeyPath:duration:delay:bezierPath:options:completion:)
-	public func addKeyframeAnimation(keyPath: String, duration: CFTimeInterval, delay: CFTimeInterval, bezierPath: UIBezierPath, options: UIView.AnimationOptions, completion: ((Bool) -> Void)?) {
+	open func addKeyframeAnimation(keyPath: String, duration: CFTimeInterval, delay: CFTimeInterval, bezierPath: UIBezierPath, options: UIView.AnimationOptions, completion: ((Bool) -> Void)?) {
 		layer.addKeyframeAnimation(keyPath: keyPath, duration: duration, delay: delay, bezierPath: bezierPath, options: options, completion: completion)
 	}
 	
 	/** Add a keyframe animation to the view's layer that follows a path. */
 	@objc(addKeyframeAnimationWithKeyPath:duration:delay:path:options:)
-	public func addKeyframeAnimation(keyPath: String, duration: CFTimeInterval, delay: CFTimeInterval, path: CGPath, options: UIView.AnimationOptions) {
+	open func addKeyframeAnimation(keyPath: String, duration: CFTimeInterval, delay: CFTimeInterval, path: CGPath, options: UIView.AnimationOptions) {
 		addKeyframeAnimation(keyPath: keyPath, duration: duration, delay: delay, path: path, options: options, completion: nil)
 	}
 	
 	/** Add a keyframe animation to the view's layer that follows a path. */
 	@objc(addKeyframeAnimationWithKeyPath:duration:delay:path:options:completion:)
-	public func addKeyframeAnimation(keyPath: String, duration: CFTimeInterval, delay: CFTimeInterval, path: CGPath, options: UIView.AnimationOptions, completion: ((Bool) -> Void)?) {
+	open func addKeyframeAnimation(keyPath: String, duration: CFTimeInterval, delay: CFTimeInterval, path: CGPath, options: UIView.AnimationOptions, completion: ((Bool) -> Void)?) {
 		layer.addKeyframeAnimation(keyPath: keyPath, duration: duration, delay: delay, path: path, options: options, completion: completion)
 	}
 	
 	/** Add a keyframe animation to the view's layer over a set of values. */
 	@objc(addKeyframeAnimationWithKeyPath:duration:delay:values:options:)
-	public func addKeyframeAnimation(keyPath: String, duration: CFTimeInterval, delay: CFTimeInterval, values: [Any], options: UIView.AnimationOptions) {
+	open func addKeyframeAnimation(keyPath: String, duration: CFTimeInterval, delay: CFTimeInterval, values: [Any], options: UIView.AnimationOptions) {
 		addKeyframeAnimation(keyPath: keyPath, duration: duration, delay: delay, values: values, options: options, completion: nil)
 	}
 	
 	/** Add a keyframe animation to the view's layer over a set of values. */
 	@objc(addKeyframeAnimationWithKeyPath:duration:delay:values:options:completion:)
-	public func addKeyframeAnimation(keyPath: String, duration: CFTimeInterval, delay: CFTimeInterval, values: [Any], options: UIView.AnimationOptions, completion: ((Bool) -> Void)?) {
+	open func addKeyframeAnimation(keyPath: String, duration: CFTimeInterval, delay: CFTimeInterval, values: [Any], options: UIView.AnimationOptions, completion: ((Bool) -> Void)?) {
 		layer.addKeyframeAnimation(keyPath: keyPath, duration: duration, delay: delay, values: values, options: options, completion: completion)
 	}
 	

@@ -35,7 +35,7 @@ import Foundation
 extension UserDefaults {
 	
 	/** The default ubiquitous key-value store used for iCloud backed storage. */
-	@objc public static var iCloudStoreStore: NSUbiquitousKeyValueStore {
+	@objc open class var iCloudStoreStore: NSUbiquitousKeyValueStore {
 		NSUbiquitousKeyValueStore.default
 	}
 	

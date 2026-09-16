@@ -40,7 +40,7 @@ extension UIView {
 	*/
 	@objc(addTapGestureWithHandler:)
 	@discardableResult
-	public func addTapGesture(handler block: @escaping (UIGestureRecognizer) -> Void) -> UITapGestureRecognizer {
+	open func addTapGesture(handler block: @escaping (UIGestureRecognizer) -> Void) -> UITapGestureRecognizer {
 		let tap = UITapGestureRecognizer.recognizer(handler: block)
 		addGestureRecognizer(tap)
 		return tap
@@ -53,7 +53,7 @@ extension UIView {
 	*/
 	@objc(addTapGestureWithTarget:action:)
 	@discardableResult
-	public func addTapGesture(target: Any?, action: Selector?) -> UITapGestureRecognizer {
+	open func addTapGesture(target: Any?, action: Selector?) -> UITapGestureRecognizer {
 		let tap = UITapGestureRecognizer(target: target, action: action)
 		addGestureRecognizer(tap)
 		return tap

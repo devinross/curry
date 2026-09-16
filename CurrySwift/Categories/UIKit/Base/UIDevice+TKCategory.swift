@@ -36,15 +36,15 @@ import UIKit
 extension UIDevice {
 	
 	/** Returns `YES` if the device is an iPad. */
-	@objc public var padIdiom: Bool { userInterfaceIdiom == .pad }
+	@objc open var padIdiom: Bool { userInterfaceIdiom == .pad }
 	
 	/** Returns `YES` if the device is an iPhone or iPod touch. */
-	@objc public var phoneIdiom: Bool { userInterfaceIdiom == .phone }
+	@objc open var phoneIdiom: Bool { userInterfaceIdiom == .phone }
 	
 	/** Returns `YES` if the device is a tvOS device. */
-	@objc public var tvIdiom: Bool { userInterfaceIdiom == .tv }
+	@objc open var tvIdiom: Bool { userInterfaceIdiom == .tv }
 	
 	/** Returns `YES` if the device is a CarPlay device. */
-	@objc public var carPlayIdiom: Bool { userInterfaceIdiom == .carPlay }
+	@objc open var carPlayIdiom: Bool { userInterfaceIdiom == .carPlay }
 	
 }

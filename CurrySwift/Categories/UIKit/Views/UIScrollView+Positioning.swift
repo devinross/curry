@@ -35,25 +35,25 @@ import UIKit
 extension UIScrollView {
 	
 	/** The width of the content size. */
-	@objc public var contentWidth: CGFloat {
+	@objc open var contentWidth: CGFloat {
 		get { contentSize.width }
 		set { contentSize = CGSize(width: newValue, height: contentSize.height) }
 	}
 	
 	/** The height of the content size. */
-	@objc public var contentHeight: CGFloat {
+	@objc open var contentHeight: CGFloat {
 		get { contentSize.height }
 		set { contentSize = CGSize(width: contentSize.width, height: newValue) }
 	}
 	
 	/** The horizontal content offset. */
-	@objc public var contentXOffset: CGFloat {
+	@objc open var contentXOffset: CGFloat {
 		get { contentOffset.x }
 		set { contentOffset = CGPoint(x: newValue, y: contentOffset.y) }
 	}
 	
 	/** The vertical content offset. */
-	@objc public var contentYOffset: CGFloat {
+	@objc open var contentYOffset: CGFloat {
 		get { contentOffset.y }
 		set { contentOffset = CGPoint(x: contentOffset.x, y: newValue) }
 	}

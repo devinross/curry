@@ -67,7 +67,7 @@ extension CAKeyframeAnimation {
 	@param options Set the animation curve of the animation.
 	*/
 	@objc(keyframeAnimationWithKeyPath:duration:delay:path:options:)
-	public static func keyframeAnimation(keyPath: String,
+	open class func keyframeAnimation(keyPath: String,
 	                                     duration: CFTimeInterval,
 	                                     delay: CFTimeInterval,
 	                                     path: CGPath,
@@ -79,7 +79,7 @@ extension CAKeyframeAnimation {
 	@param completion The completion block.
 	*/
 	@objc(keyframeAnimationWithKeyPath:duration:delay:path:options:completion:)
-	public static func keyframeAnimation(keyPath: String,
+	open class func keyframeAnimation(keyPath: String,
 	                                     duration: CFTimeInterval,
 	                                     delay: CFTimeInterval,
 	                                     path: CGPath,
@@ -92,7 +92,7 @@ extension CAKeyframeAnimation {
 	
 	/** Create a `CAKeyframeAnimation` animation with the given bezier path. */
 	@objc(keyframeAnimationWithKeyPath:duration:delay:bezierPath:options:)
-	public static func keyframeAnimation(keyPath: String,
+	open class func keyframeAnimation(keyPath: String,
 	                                     duration: CFTimeInterval,
 	                                     delay: CFTimeInterval,
 	                                     bezierPath: UIBezierPath,
@@ -104,7 +104,7 @@ extension CAKeyframeAnimation {
 	@param completion The completion block.
 	*/
 	@objc(keyframeAnimationWithKeyPath:duration:delay:bezierPath:options:completion:)
-	public static func keyframeAnimation(keyPath: String,
+	open class func keyframeAnimation(keyPath: String,
 	                                     duration: CFTimeInterval,
 	                                     delay: CFTimeInterval,
 	                                     bezierPath: UIBezierPath,
@@ -117,7 +117,7 @@ extension CAKeyframeAnimation {
 	@param values An array of objects that specify the keyframe values to use for the animation.
 	*/
 	@objc(keyframeAnimationWithKeyPath:duration:delay:values:options:)
-	public static func keyframeAnimation(keyPath: String,
+	open class func keyframeAnimation(keyPath: String,
 	                                     duration: CFTimeInterval,
 	                                     delay: CFTimeInterval,
 	                                     values: [Any],
@@ -129,7 +129,7 @@ extension CAKeyframeAnimation {
 	@param completion The completion block.
 	*/
 	@objc(keyframeAnimationWithKeyPath:duration:delay:values:options:completion:)
-	public static func keyframeAnimation(keyPath: String,
+	open class func keyframeAnimation(keyPath: String,
 	                                     duration: CFTimeInterval,
 	                                     delay: CFTimeInterval,
 	                                     values: [Any],
@@ -142,7 +142,7 @@ extension CAKeyframeAnimation {
 	
 	/** Create a `CAKeyframeAnimation` animation. */
 	@objc(keyframeAnimationWithKeyPath:duration:delay:options:)
-	public static func keyframeAnimation(keyPath: String,
+	open class func keyframeAnimation(keyPath: String,
 	                                     duration: CFTimeInterval,
 	                                     delay: CFTimeInterval,
 	                                     options: UIView.AnimationOptions) -> CAKeyframeAnimation {
@@ -153,7 +153,7 @@ extension CAKeyframeAnimation {
 	@param completion The completion block.
 	*/
 	@objc(keyframeAnimationWithKeyPath:duration:delay:options:completion:)
-	public static func keyframeAnimation(keyPath: String,
+	open class func keyframeAnimation(keyPath: String,
 	                                     duration: CFTimeInterval,
 	                                     delay: CFTimeInterval,
 	                                     options: UIView.AnimationOptions,

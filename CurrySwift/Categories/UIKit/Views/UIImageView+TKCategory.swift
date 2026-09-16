@@ -39,7 +39,7 @@ extension UIImageView {
 	@param imageName The name of the image in the asset catalog or bundle.
 	*/
 	@objc(imageViewWithImageNamed:)
-	public static func imageView(imageNamed imageName: String) -> Self {
+	open class func imageView(imageNamed imageName: String) -> Self {
 		self.init(image: UIImage(named: imageName))
 	}
 	
@@ -48,13 +48,13 @@ extension UIImageView {
 	@param mode The rendering mode applied to the image.
 	*/
 	@objc(imageViewWithImageNamed:renderMode:)
-	public static func imageView(imageNamed imageName: String, renderMode mode: UIImage.RenderingMode) -> Self {
+	open class func imageView(imageNamed imageName: String, renderMode mode: UIImage.RenderingMode) -> Self {
 		self.init(image: UIImage(named: imageName)?.withRenderingMode(mode))
 	}
 	
 	/** An image view with the given frame. */
 	@objc(imageViewWithFrame:)
-	public static func imageView(frame: CGRect) -> Self {
+	open class func imageView(frame: CGRect) -> Self {
 		self.init(frame: frame)
 	}
 	
@@ -62,7 +62,7 @@ extension UIImageView {
 	@param names The names of the images, in order.
 	*/
 	@objc(setAnimationImageNames:)
-	public func setAnimationImageNames(_ names: [String]) {
+	open func setAnimationImageNames(_ names: [String]) {
 		animationImages = names.compactMap { UIImage(named: $0) }
 	}
 	

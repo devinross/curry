@@ -55,13 +55,13 @@ extension UIActionSheet: @retroactive UIActionSheetDelegate {
 	
 	/** An action sheet with a title and no buttons yet. */
 	@objc(sheetWithTitle:)
-	public static func sheet(title: String?) -> UIActionSheet {
+	open class func sheet(title: String?) -> UIActionSheet {
 		UIActionSheet(title: title, delegate: nil, cancelButtonTitle: nil, destructiveButtonTitle: nil)
 	}
 	
 	/** Adds a button that runs the given block when tapped. */
 	@objc(addButtonWithTitle:handler:)
-	public func addButton(withTitle title: String, handler block: ((UIActionSheet) -> Void)?) {
+	open func addButton(withTitle title: String, handler block: ((UIActionSheet) -> Void)?) {
 		
 		if actions == nil {
 			let existing = NSMutableArray()
@@ -76,19 +76,19 @@ extension UIActionSheet: @retroactive UIActionSheetDelegate {
 	
 	/** Adds a button that runs the given block and becomes the cancel button. */
 	@objc(addCancelButtonWithTitle:handler:)
-	public func addCancelButton(withTitle title: String, handler block: ((UIActionSheet) -> Void)?) {
+	open func addCancelButton(withTitle title: String, handler block: ((UIActionSheet) -> Void)?) {
 		addButton(withTitle: title, handler: block)
 		cancelButtonIndex = numberOfButtons - 1
 	}
 	
 	/** Adds a button that runs the given block and becomes the destructive button. */
 	@objc(addDestructiveButtonWithTitle:handler:)
-	public func addDestructiveButton(withTitle title: String, handler block: ((UIActionSheet) -> Void)?) {
+	open func addDestructiveButton(withTitle title: String, handler block: ((UIActionSheet) -> Void)?) {
 		addButton(withTitle: title, handler: block)
 		destructiveButtonIndex = numberOfButtons - 1
 	}
 	
-	public func actionSheet(_ actionSheet: UIActionSheet, clickedButtonAt buttonIndex: Int) {
+	open func actionSheet(_ actionSheet: UIActionSheet, clickedButtonAt buttonIndex: Int) {
 		guard let actions, buttonIndex >= 0, buttonIndex < actions.count,
 		      let handler = actions[buttonIndex] as? (UIActionSheet) -> Void else { return }
 		handler(self)

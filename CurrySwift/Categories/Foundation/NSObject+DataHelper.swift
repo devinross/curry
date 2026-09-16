@@ -58,7 +58,7 @@ extension NSArray {
 	@param key The key path read from each object.
 	*/
 	@objc(groupByKey:)
-	public func groupBy(key: String) -> [AnyHashable: Any] {
+	open func groupBy(key: String) -> [AnyHashable: Any] {
 		var grouped: [AnyHashable: Any] = [:]
 		for object in self {
 			guard let keyValue = (object as AnyObject).value(forKey: key) as? AnyHashable else { continue }

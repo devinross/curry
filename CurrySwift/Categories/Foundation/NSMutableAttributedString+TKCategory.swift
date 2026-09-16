@@ -44,7 +44,7 @@ extension NSMutableAttributedString {
 	@param range The range of text that will be set as the color.
 	*/
 	@objc(addTextColor:range:)
-	public func addTextColor(_ color: UIColor, range: NSRange) {
+	open func addTextColor(_ color: UIColor, range: NSRange) {
 		addAttribute(.foregroundColor, value: color, range: range)
 	}
 	
@@ -52,7 +52,7 @@ extension NSMutableAttributedString {
 	@param color The color that will be set.
 	*/
 	@objc(addTextColor:)
-	public func addTextColor(_ color: UIColor) {
+	open func addTextColor(_ color: UIColor) {
 		addTextColor(color, range: fullRange)
 	}
 	
@@ -61,7 +61,7 @@ extension NSMutableAttributedString {
 	@param range The range of text that will be set as the color.
 	*/
 	@objc(addBackgroundColor:range:)
-	public func addBackgroundColor(_ color: UIColor, range: NSRange) {
+	open func addBackgroundColor(_ color: UIColor, range: NSRange) {
 		addAttribute(.backgroundColor, value: color, range: range)
 	}
 	
@@ -69,7 +69,7 @@ extension NSMutableAttributedString {
 	@param color The color that will be set.
 	*/
 	@objc(addBackgroundColor:)
-	public func addBackgroundColor(_ color: UIColor) {
+	open func addBackgroundColor(_ color: UIColor) {
 		addBackgroundColor(color, range: fullRange)
 	}
 	
@@ -78,7 +78,7 @@ extension NSMutableAttributedString {
 	@param range The range of text that will be set as the font.
 	*/
 	@objc(addFont:range:)
-	public func addFont(_ font: UIFont, range: NSRange) {
+	open func addFont(_ font: UIFont, range: NSRange) {
 		addAttribute(.font, value: font, range: range)
 	}
 	
@@ -86,7 +86,7 @@ extension NSMutableAttributedString {
 	@param font The font that will be set.
 	*/
 	@objc(addFont:)
-	public func addFont(_ font: UIFont) {
+	open func addFont(_ font: UIFont) {
 		addFont(font, range: fullRange)
 	}
 	
@@ -95,7 +95,7 @@ extension NSMutableAttributedString {
 	@param range The range of text that will be set as the kerning.
 	*/
 	@objc(addKerning:range:)
-	public func addKerning(_ kerning: CGFloat, range: NSRange) {
+	open func addKerning(_ kerning: CGFloat, range: NSRange) {
 		addAttribute(.kern, value: kerning, range: range)
 	}
 	
@@ -103,7 +103,7 @@ extension NSMutableAttributedString {
 	@param kerning The kerning that will be set.
 	*/
 	@objc(addKerning:)
-	public func addKerning(_ kerning: CGFloat) {
+	open func addKerning(_ kerning: CGFloat) {
 		addKerning(kerning, range: fullRange)
 	}
 	
@@ -112,7 +112,7 @@ extension NSMutableAttributedString {
 	@param range The range of text that will be set as the line height.
 	*/
 	@objc(addLineHeight:range:)
-	public func addLineHeight(_ lineHeight: CGFloat, range: NSRange) {
+	open func addLineHeight(_ lineHeight: CGFloat, range: NSRange) {
 		let paragraphStyle = NSMutableParagraphStyle()
 		paragraphStyle.lineSpacing = lineHeight
 		addAttribute(.paragraphStyle, value: paragraphStyle, range: range)
@@ -122,7 +122,7 @@ extension NSMutableAttributedString {
 	@param lineHeight The line height that will be set.
 	*/
 	@objc(addLineHeight:)
-	public func addLineHeight(_ lineHeight: CGFloat) {
+	open func addLineHeight(_ lineHeight: CGFloat) {
 		addLineHeight(lineHeight, range: fullRange)
 	}
 	
@@ -132,7 +132,7 @@ extension NSMutableAttributedString {
 	@param image The image that will be appended.
 	*/
 	@objc(appendImage:)
-	public func appendImage(_ image: UIImage) {
+	open func appendImage(_ image: UIImage) {
 		append(NSAttributedString(attachment: attachment(for: image)))
 	}
 	
@@ -141,7 +141,7 @@ extension NSMutableAttributedString {
 	@param index The index the image will be inserted at.
 	*/
 	@objc(insertImage:atIndex:)
-	public func insertImage(_ image: UIImage, at index: Int) {
+	open func insertImage(_ image: UIImage, at index: Int) {
 		insert(NSAttributedString(attachment: attachment(for: image)), at: index)
 	}
 	

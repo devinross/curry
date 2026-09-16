@@ -42,7 +42,7 @@ extension CALayer {
 	@param completion The block executed when the animation is complete.
 	*/
 	@objc(addAnimation:forKey:completion:)
-	public func addAnimation(_ animation: CAAnimation, forKey key: String?, completion: ((Bool) -> Void)?) {
+	open func addAnimation(_ animation: CAAnimation, forKey key: String?, completion: ((Bool) -> Void)?) {
 		if let completion {
 			animation.completion = completion
 		}
@@ -54,7 +54,7 @@ extension CALayer {
 	@param completion The block executed when the animation is complete.
 	*/
 	@objc(addAnimation:completion:)
-	public func addAnimation(_ animation: CAAnimation, completion: ((Bool) -> Void)?) {
+	open func addAnimation(_ animation: CAAnimation, completion: ((Bool) -> Void)?) {
 		addAnimation(animation, forKey: nil, completion: completion)
 	}
 	
@@ -62,7 +62,7 @@ extension CALayer {
 	
 	/** Add a keyframe animation that follows a path. */
 	@objc(addKeyframeAnimationWithKeyPath:duration:delay:path:options:)
-	public func addKeyframeAnimation(keyPath: String,
+	open func addKeyframeAnimation(keyPath: String,
 	                                 duration: CFTimeInterval,
 	                                 delay: CFTimeInterval,
 	                                 path: CGPath,
@@ -74,7 +74,7 @@ extension CALayer {
 	@param completion The completion block.
 	*/
 	@objc(addKeyframeAnimationWithKeyPath:duration:delay:path:options:completion:)
-	public func addKeyframeAnimation(keyPath: String,
+	open func addKeyframeAnimation(keyPath: String,
 	                                 duration: CFTimeInterval,
 	                                 delay: CFTimeInterval,
 	                                 path: CGPath,
@@ -88,7 +88,7 @@ extension CALayer {
 	
 	/** Add a keyframe animation that follows a bezier path. */
 	@objc(addKeyframeAnimationWithKeyPath:duration:delay:bezierPath:options:)
-	public func addKeyframeAnimation(keyPath: String,
+	open func addKeyframeAnimation(keyPath: String,
 	                                 duration: CFTimeInterval,
 	                                 delay: CFTimeInterval,
 	                                 bezierPath: UIBezierPath,
@@ -100,7 +100,7 @@ extension CALayer {
 	@param completion The completion block.
 	*/
 	@objc(addKeyframeAnimationWithKeyPath:duration:delay:bezierPath:options:completion:)
-	public func addKeyframeAnimation(keyPath: String,
+	open func addKeyframeAnimation(keyPath: String,
 	                                 duration: CFTimeInterval,
 	                                 delay: CFTimeInterval,
 	                                 bezierPath: UIBezierPath,
@@ -111,7 +111,7 @@ extension CALayer {
 	
 	/** Add a keyframe animation over a set of values. */
 	@objc(addKeyframeAnimationWithKeyPath:duration:delay:values:options:)
-	public func addKeyframeAnimation(keyPath: String,
+	open func addKeyframeAnimation(keyPath: String,
 	                                 duration: CFTimeInterval,
 	                                 delay: CFTimeInterval,
 	                                 values: [Any],
@@ -123,7 +123,7 @@ extension CALayer {
 	@param completion The completion block.
 	*/
 	@objc(addKeyframeAnimationWithKeyPath:duration:delay:values:options:completion:)
-	public func addKeyframeAnimation(keyPath: String,
+	open func addKeyframeAnimation(keyPath: String,
 	                                 duration: CFTimeInterval,
 	                                 delay: CFTimeInterval,
 	                                 values: [Any],

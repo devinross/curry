@@ -46,7 +46,7 @@ private func urlQueryEncoded(_ text: String) -> String {
 extension UIApplication {
 	
 	/** Returns `true` if the app can open Uber. */
-	@objc public var canOpenUberApp: Bool {
+	@objc open var canOpenUberApp: Bool {
 		guard let url = URL(string: "uber://") else { return false }
 		return canOpenURL(url)
 	}
@@ -62,7 +62,7 @@ extension UIApplication {
 	@param dropoffAddress The full address of the dropoff location.
 	*/
 	@objc(openUberAppWithClient:product:pickup:pickupName:pickupAddress:dropoff:dropoffName:dropoffAddress:)
-	public func openUberApp(client clientID: String?,
+	open func openUberApp(client clientID: String?,
 	                        product productID: String?,
 	                        pickup: CLLocationCoordinate2D,
 	                        pickupName: String?,
@@ -100,7 +100,7 @@ extension UIApplication {
 	@param query The search query.
 	*/
 	@objc(openGoogleMapURLWithCoordinate:query:)
-	public func openGoogleMapURL(coordinate coordinates: CLLocationCoordinate2D, query: String) {
+	open func openGoogleMapURL(coordinate coordinates: CLLocationCoordinate2D, query: String) {
 		
 		var host = "http://maps.google.com/maps?ll="
 		if let probe = URL(string: "comgooglemaps://?center="), canOpenURL(probe) {
@@ -115,7 +115,7 @@ extension UIApplication {
 	@param query The search query.
 	*/
 	@objc(openAppleMapURLWithCoordinate:query:)
-	public func openAppleMapURL(coordinate coordinates: CLLocationCoordinate2D, query: String) {
+	open func openAppleMapURL(coordinate coordinates: CLLocationCoordinate2D, query: String) {
 		open(urlString: "http://maps.apple.com/maps?ll=" + mapQuery(coordinates, query))
 	}
 	

@@ -46,7 +46,7 @@ extension URLSession {
 	@return The `URLSessionDataTask` object.
 	*/
 	@objc(jsonDataTaskWithRequest:options:completionHandler:)
-	public func jsonDataTask(with request: URLRequest,
+	open func jsonDataTask(with request: URLRequest,
 	                         options: JSONSerialization.ReadingOptions,
 	                         completionHandler completion: (@Sendable (Any?, URLResponse?, Error?) -> Void)?) -> URLSessionDataTask {
 		dataTask(with: request) { [weak self] data, response, error in
@@ -61,7 +61,7 @@ extension URLSession {
 	@return The `URLSessionDataTask` object.
 	*/
 	@objc(jsonDataTaskWithURL:options:completionHandler:)
-	public func jsonDataTask(with url: URL,
+	open func jsonDataTask(with url: URL,
 	                         options: JSONSerialization.ReadingOptions,
 	                         completionHandler completion: (@Sendable (Any?, URLResponse?, Error?) -> Void)?) -> URLSessionDataTask {
 		dataTask(with: url) { [weak self] data, response, error in

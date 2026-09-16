@@ -74,7 +74,7 @@ extension UIControl {
 	@param controlEvents The events the block responds to.
 	*/
 	@objc(addEventHandler:forControlEvents:)
-	public func addEventHandler(_ handler: @escaping (Any) -> Void, forControlEvents controlEvents: UIControl.Event) {
+	open func addEventHandler(_ handler: @escaping (Any) -> Void, forControlEvents controlEvents: UIControl.Event) {
 		
 		let key = NSNumber(value: controlEvents.rawValue)
 		let wrappers = eventHandlers[key] as? NSMutableSet ?? {
@@ -90,7 +90,7 @@ extension UIControl {
 	
 	/** Removes every block registered for the given events. */
 	@objc(removeEventHandlersForControlEvents:)
-	public func removeEventHandlers(forControlEvents controlEvents: UIControl.Event) {
+	open func removeEventHandlers(forControlEvents controlEvents: UIControl.Event) {
 		
 		let key = NSNumber(value: controlEvents.rawValue)
 		guard let wrappers = eventHandlers[key] as? NSMutableSet else { return }
@@ -103,7 +103,7 @@ extension UIControl {
 	
 	/** Whether any block is registered for the given events. */
 	@objc(hasEventHandlersForControlEvents:)
-	public func hasEventHandlers(forControlEvents controlEvents: UIControl.Event) -> Bool {
+	open func hasEventHandlers(forControlEvents controlEvents: UIControl.Event) -> Bool {
 		let key = NSNumber(value: controlEvents.rawValue)
 		guard let wrappers = eventHandlers[key] as? NSMutableSet else { return false }
 		return wrappers.count > 0

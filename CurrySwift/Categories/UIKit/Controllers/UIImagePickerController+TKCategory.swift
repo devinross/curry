@@ -35,17 +35,17 @@ import UIKit
 extension UIImagePickerController {
 	
 	/** Whether the device has a camera available. */
-	@objc public static var hasCamera: Bool {
+	@objc open class var hasCamera: Bool {
 		isSourceTypeAvailable(.camera)
 	}
 	
 	/** Whether the device has a front facing camera available. */
-	@objc public static var hasFrontCamera: Bool {
+	@objc open class var hasFrontCamera: Bool {
 		isCameraDeviceAvailable(.front)
 	}
 	
 	/** Whether the device has a rear facing camera available. */
-	@objc public static var hasRearCamera: Bool {
+	@objc open class var hasRearCamera: Bool {
 		isCameraDeviceAvailable(.rear)
 	}
 	

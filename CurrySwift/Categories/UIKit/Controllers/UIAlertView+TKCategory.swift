@@ -45,7 +45,7 @@ extension UIAlertView {
 	/** Creates and shows an alert with a single dismiss button. */
 	@objc(showAlertViewWithTitle:message:dismiss:)
 	@discardableResult
-	public static func showAlertView(title: String?, message: String?, dismiss: String?) -> UIAlertView {
+	open class func showAlertView(title: String?, message: String?, dismiss: String?) -> UIAlertView {
 		let alert = UIAlertView(title: title, message: message, delegate: nil, cancelButtonTitle: dismiss)
 		alert.show()
 		return alert

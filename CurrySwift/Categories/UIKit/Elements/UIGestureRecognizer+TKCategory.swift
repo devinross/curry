@@ -36,21 +36,21 @@ import UIKit
 extension UIGestureRecognizer {
 	
 	/** Returns YES if the gesture recognizer state is `began`, otherwise NO. */
-	@objc public var began: Bool { state == .began }
+	@objc open var began: Bool { state == .began }
 	
 	/** Returns YES if the gesture recognizer state is `changed`, otherwise NO. */
-	@objc public var changed: Bool { state == .changed }
+	@objc open var changed: Bool { state == .changed }
 	
 	/** Returns YES if the gesture recognizer state is `ended`, otherwise NO. */
-	@objc public var ended: Bool { state == .ended }
+	@objc open var ended: Bool { state == .ended }
 	
 	/** Returns YES if the gesture recognizer state is `cancelled`, otherwise NO. */
-	@objc public var cancelled: Bool { state == .cancelled }
+	@objc open var cancelled: Bool { state == .cancelled }
 	
 	/** Returns YES if the gesture recognizer state is `failed`, otherwise NO. */
-	@objc public var failed: Bool { state == .failed }
+	@objc open var failed: Bool { state == .failed }
 	
 	/** Returns YES if the gesture recognizer state is `possible`, otherwise NO. */
-	@objc public var possible: Bool { state == .possible }
+	@objc open var possible: Bool { state == .possible }
 	
 }
