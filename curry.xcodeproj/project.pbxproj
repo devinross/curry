@@ -25,13 +25,13 @@
 		200B62611AD7FB460049E35C /* curry.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 200B62551AD7FB460049E35C /* curry.framework */; };
 		200B62681AD7FB460049E35C /* curryTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 200B62671AD7FB460049E35C /* curryTests.m */; };
 		2010DCB31BB0E40E00810A98 /* curryWatch.h in Headers */ = {isa = PBXBuildFile; fileRef = 2010DCB21BB0E40E00810A98 /* curryWatch.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		201BED4621C0681600CC13BE /* CurrySwift/UILabel+Spacing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 201BED4521C0681600CC13BE /* CurrySwift/UILabel+Spacing.swift */; };
-		201BED4721C0687600CC13BE /* CurrySwift/UILabel+Spacing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 201BED4521C0681600CC13BE /* CurrySwift/UILabel+Spacing.swift */; };
+		201BED4621C0681600CC13BE /* CurrySwift/UILabel+Spacing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 201BED4521C0681600CC13BE /* UILabel+Spacing.swift */; };
+		201BED4721C0687600CC13BE /* CurrySwift/UILabel+Spacing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 201BED4521C0681600CC13BE /* UILabel+Spacing.swift */; };
 		202DBEEB1AF6717A00B0CE67 /* CurryImages.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 202DBEEA1AF6717A00B0CE67 /* CurryImages.xcassets */; };
-		2069C12C1D8AFEB9000BD656 /* CurrySwift/Bundle+TKCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2069C12B1D8AFEB9000BD656 /* CurrySwift/Bundle+TKCategory.swift */; };
-		2069C12D1D8AFEB9000BD656 /* CurrySwift/Bundle+TKCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2069C12B1D8AFEB9000BD656 /* CurrySwift/Bundle+TKCategory.swift */; };
-		2069C12E1D8AFEB9000BD656 /* CurrySwift/Bundle+TKCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2069C12B1D8AFEB9000BD656 /* CurrySwift/Bundle+TKCategory.swift */; };
-		2069C12F1D8AFEB9000BD656 /* CurrySwift/Bundle+TKCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2069C12B1D8AFEB9000BD656 /* CurrySwift/Bundle+TKCategory.swift */; };
+		2069C12C1D8AFEB9000BD656 /* CurrySwift/Bundle+TKCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2069C12B1D8AFEB9000BD656 /* Bundle+TKCategory.swift */; };
+		2069C12D1D8AFEB9000BD656 /* CurrySwift/Bundle+TKCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2069C12B1D8AFEB9000BD656 /* Bundle+TKCategory.swift */; };
+		2069C12E1D8AFEB9000BD656 /* CurrySwift/Bundle+TKCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2069C12B1D8AFEB9000BD656 /* Bundle+TKCategory.swift */; };
+		2069C12F1D8AFEB9000BD656 /* CurrySwift/Bundle+TKCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2069C12B1D8AFEB9000BD656 /* Bundle+TKCategory.swift */; };
 		20785F771AD8388E000DC57F /* NSStringTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 20785F701AD8388E000DC57F /* NSStringTests.m */; };
 		20785F781AD8388E000DC57F /* UIViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 20785F721AD8388E000DC57F /* UIViewTests.m */; };
 		20785F791AD8388E000DC57F /* NSArrayTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 20785F741AD8388E000DC57F /* NSArrayTests.m */; };
@@ -40,180 +40,180 @@
 		207C97B21BD7F1AC00342677 /* NSView+Positioning.m in Sources */ = {isa = PBXBuildFile; fileRef = 207C97B01BD7F1AC00342677 /* NSView+Positioning.m */; };
 		207C97B51BD7F3F200342677 /* NSView+TKCategory.h in Headers */ = {isa = PBXBuildFile; fileRef = 207C97B31BD7F3F200342677 /* NSView+TKCategory.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		207C97B61BD7F3F200342677 /* NSView+TKCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 207C97B41BD7F3F200342677 /* NSView+TKCategory.m */; };
-		209507352188EA7E00AD35F0 /* CurrySwift/URLRequest+TKCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 209507342188EA7E00AD35F0 /* CurrySwift/URLRequest+TKCategory.swift */; };
-		2095073C2188EE2200AD35F0 /* CurrySwift/URLRequest+TKCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 209507342188EA7E00AD35F0 /* CurrySwift/URLRequest+TKCategory.swift */; };
-		2095073D2188EE2300AD35F0 /* CurrySwift/URLRequest+TKCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 209507342188EA7E00AD35F0 /* CurrySwift/URLRequest+TKCategory.swift */; };
+		209507352188EA7E00AD35F0 /* CurrySwift/URLRequest+TKCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 209507342188EA7E00AD35F0 /* URLRequest+TKCategory.swift */; };
+		2095073C2188EE2200AD35F0 /* CurrySwift/URLRequest+TKCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 209507342188EA7E00AD35F0 /* URLRequest+TKCategory.swift */; };
+		2095073D2188EE2300AD35F0 /* CurrySwift/URLRequest+TKCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 209507342188EA7E00AD35F0 /* URLRequest+TKCategory.swift */; };
 		20B5FE221BB3613F00C0F848 /* curryMac.h in Headers */ = {isa = PBXBuildFile; fileRef = 20B5FE211BB3613F00C0F848 /* curryMac.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		20B986F12040A8AD00F7BF6A /* CurrySwift/UIView+Velocity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20C1E9A42040A75F0096C895 /* CurrySwift/UIView+Velocity.swift */; };
-		20C1E9A52040A75F0096C895 /* CurrySwift/UIView+Velocity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20C1E9A42040A75F0096C895 /* CurrySwift/UIView+Velocity.swift */; };
+		20B986F12040A8AD00F7BF6A /* CurrySwift/UIView+Velocity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20C1E9A42040A75F0096C895 /* UIView+Velocity.swift */; };
+		20C1E9A52040A75F0096C895 /* CurrySwift/UIView+Velocity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20C1E9A42040A75F0096C895 /* UIView+Velocity.swift */; };
 		20CEA42E1BA1105D0009D60C /* curryTV.h in Headers */ = {isa = PBXBuildFile; fileRef = 20CEA42D1BA1105D0009D60C /* curryTV.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C4F32E367BD0AECDAFFC695A /* CurrySwift/Bundle+Receipts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DCE542060D0500B386E3415 /* CurrySwift/Bundle+Receipts.swift */; };
-		643058F97CD5FE7E450AD1CE /* CurrySwift/CAAnimation+TKAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E1930CDA51DD156ABF336CB /* CurrySwift/CAAnimation+TKAnimation.swift */; };
-		2F757B0BC7102A9F7707FC16 /* CurrySwift/CAKeyframeAnimation+TKAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58BF917DB14BFA96D4A05139 /* CurrySwift/CAKeyframeAnimation+TKAnimation.swift */; };
-		AFE6FE665CB9F9FDCAB8C3C8 /* CurrySwift/CALayer+TKAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3452C2DE33A6F8DAAB17119 /* CurrySwift/CALayer+TKAnimation.swift */; };
-		B04AE5ED95619802AC29FE2F /* CurrySwift/NSArray+TKCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B180A78457A49EAFF3AD920 /* CurrySwift/NSArray+TKCategory.swift */; };
-		35ADD1CA6445DD88B1BE8B97 /* CurrySwift/NSAttributedString+TKCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 167A99DBA5CEEFF42F53DB61 /* CurrySwift/NSAttributedString+TKCategory.swift */; };
-		8B858C33783024A10FF82679 /* CurrySwift/NSDate+TKCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA1B42980D84953971918B00 /* CurrySwift/NSDate+TKCategory.swift */; };
-		5E7192E4FC5CE9C89084B81C /* CurrySwift/NSMutableAttributedString+TKCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39A0B9444ABB2668A49B2C02 /* CurrySwift/NSMutableAttributedString+TKCategory.swift */; };
-		C20146AD88CB66BF2829E81C /* CurrySwift/NSObject+DataHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 443CC8EAC6A267DCE864EDE7 /* CurrySwift/NSObject+DataHelper.swift */; };
-		720DD52BAEB78D536C0E264E /* CurrySwift/NSObject+JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53C53AD929E7D11529FFABB4 /* CurrySwift/NSObject+JSON.swift */; };
-		98244652D97448C2C05EACCB /* CurrySwift/NSObject+TKCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDCE5A98E73D623C2146ACC3 /* CurrySwift/NSObject+TKCategory.swift */; };
-		88597A152D9014D8D9DCECC7 /* CurrySwift/NSString+TKCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56448E3C6352493F4AEB097C /* CurrySwift/NSString+TKCategory.swift */; };
-		5FFFE953F56DCBF667B2775C /* CurrySwift/NSString+TKUIKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FA0500BC49ED625B17F8689 /* CurrySwift/NSString+TKUIKit.swift */; };
-		47631B8D204860EC3BE65FB8 /* CurrySwift/TKProgressDataTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3091944BC568B492C18CA3B /* CurrySwift/TKProgressDataTask.swift */; };
-		83058513B476346F52D39EA8 /* CurrySwift/Timer+Blocks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09B9E681923B6CC14588DFC6 /* CurrySwift/Timer+Blocks.swift */; };
-		C18C753D5BCFDE3C2F26C96B /* CurrySwift/UIActionSheet+Blocks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21F1E1EED1373F6B69CCE1A9 /* CurrySwift/UIActionSheet+Blocks.swift */; };
-		39BCEEC817652B4658827FAA /* CurrySwift/UIActionSheet+TKCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 906DF06677F800A3CFF35748 /* CurrySwift/UIActionSheet+TKCategory.swift */; };
-		9BEDE2386B828537BFB6E271 /* CurrySwift/UIAlertController+TKCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = F44AD7D1AA0046C8BA701302 /* CurrySwift/UIAlertController+TKCategory.swift */; };
-		CC16AD60670180E681E32802 /* CurrySwift/UIAlertView+Blocks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FED3256DF61CE3ED413862E /* CurrySwift/UIAlertView+Blocks.swift */; };
-		2B317FD2817F8A150589F282 /* CurrySwift/UIAlertView+TKCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D3B86BD2BF3BFD7F8BD737D /* CurrySwift/UIAlertView+TKCategory.swift */; };
-		673EDCE7168E85D01B68DFD1 /* CurrySwift/UIApplication+TKCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7347268D29A81D3FE660105B /* CurrySwift/UIApplication+TKCategory.swift */; };
-		A7E3F7401B9050B91150F26E /* CurrySwift/UIBarButtonItem+TKCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = B85076550EF62B262BD61C8B /* CurrySwift/UIBarButtonItem+TKCategory.swift */; };
-		2325983D81D3E56CF6839C42 /* CurrySwift/UIButton+TKCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19461E01AB5658A2F5AACA8F /* CurrySwift/UIButton+TKCategory.swift */; };
-		D97DFC6DE5CBB89A4D41EE20 /* CurrySwift/UIColor+TKCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBE8C15D2463F2298BA58FFD /* CurrySwift/UIColor+TKCategory.swift */; };
-		D86AB2E39E5B8413B2644D1F /* CurrySwift/UIControl+Blocks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93A18776CC1C2A31330DD42B /* CurrySwift/UIControl+Blocks.swift */; };
-		28046048F7A2F9D4AE0F30DF /* CurrySwift/UIDevice+TKCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCE3C5094E05DC00C2D78E99 /* CurrySwift/UIDevice+TKCategory.swift */; };
-		AD1EA3B63CA3F1C9C704C3E6 /* CurrySwift/UIFont+TKCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A714C846D3AD6025D08EB40 /* CurrySwift/UIFont+TKCategory.swift */; };
-		127458E79AAAF7EA56EAEA6C /* CurrySwift/UIGestureRecognizer+Blocks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 109397DA6F7297D1C614E8D2 /* CurrySwift/UIGestureRecognizer+Blocks.swift */; };
-		435B8F258C2F88A1EAA7CFD5 /* CurrySwift/UIGestureRecognizer+TKCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42E03D563A88F72B212BDC25 /* CurrySwift/UIGestureRecognizer+TKCategory.swift */; };
-		F4B0D1B9DA2063281576350A /* CurrySwift/UIImage+TKCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = F956576FE2E7C2C9724A90BF /* CurrySwift/UIImage+TKCategory.swift */; };
-		2379D4B419C2D18B11B3FEAB /* CurrySwift/UIImagePickerController+TKCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AEC4BBA78F7A2ADCF9C92E0 /* CurrySwift/UIImagePickerController+TKCategory.swift */; };
-		E151D9A03757F92344D8DA3E /* CurrySwift/UIImageView+TKCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1321D5656D42A9050E3D239 /* CurrySwift/UIImageView+TKCategory.swift */; };
-		44E64E8B43BB3CE4DB4B346F /* CurrySwift/UILabel+Initializers.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3C8D6C47F8269B4FBDDF754 /* CurrySwift/UILabel+Initializers.swift */; };
-		959CB992C16B95B74FEBA31C /* CurrySwift/UILabel+TKCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = A84D9EA4A90E2771FEC0B6AA /* CurrySwift/UILabel+TKCategory.swift */; };
-		701DFCC0090609A6126BBA5C /* CurrySwift/UIMotionEffectGroup+TKCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 269A7888631C49C78464BC09 /* CurrySwift/UIMotionEffectGroup+TKCategory.swift */; };
-		ED250178334185EAE97CAEE7 /* CurrySwift/UINavigationBar+TKCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = A55B298C26E4E15D8489E7F5 /* CurrySwift/UINavigationBar+TKCategory.swift */; };
-		36FAECEFA7FFAADDB69F6CC0 /* CurrySwift/UIPanGestureRecognizer+VelocityDirection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 450C11914EA3E171DE0D2C5B /* CurrySwift/UIPanGestureRecognizer+VelocityDirection.swift */; };
-		8D3F9023BD7A69519129D3C2 /* CurrySwift/UIScreen+TKCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD7CC0ADEB2A7B0B6B147711 /* CurrySwift/UIScreen+TKCategory.swift */; };
-		00BC3A933CDC67A6E57A76E0 /* CurrySwift/UIScrollView+Positioning.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB34ACF122A4DE6F6AA7316 /* CurrySwift/UIScrollView+Positioning.swift */; };
-		06E4210810E08A0B01635E45 /* CurrySwift/UIScrollview+TKCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C98F84FEBBA6452C3A0D518 /* CurrySwift/UIScrollview+TKCategory.swift */; };
-		87CEB421A14372CFB11C048D /* CurrySwift/UITextField+TKCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6FB7BE3A942AD6FC0FF7E5F /* CurrySwift/UITextField+TKCategory.swift */; };
-		CF10BE31E3CA24699D016B3E /* CurrySwift/UITraitCollection+TKCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C479B20BFB81D0B188FCB7A /* CurrySwift/UITraitCollection+TKCategory.swift */; };
-		81BFAB9D39A1559B7EA70000 /* CurrySwift/UIView+GestureRecognizerBlock.swift in Sources */ = {isa = PBXBuildFile; fileRef = A228DD3708DCF737A0B784E9 /* CurrySwift/UIView+GestureRecognizerBlock.swift */; };
-		28D3D1D79D597835DB824D0F /* CurrySwift/UIView+Initializers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6685506B4C02BEA8CCD730F2 /* CurrySwift/UIView+Initializers.swift */; };
-		618E194FA167C0B0544B895F /* CurrySwift/UIView+Positioning.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA0897CE1AEFA8542B2A7209 /* CurrySwift/UIView+Positioning.swift */; };
-		2D22259FF403DD9282AC6EFE /* CurrySwift/UIView+TKAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20D910B8DAD3F597038DD11F /* CurrySwift/UIView+TKAnimation.swift */; };
-		02487FD8F42E38211EF3B026 /* CurrySwift/UIView+TKCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 409961D11F30A741C5B57902 /* CurrySwift/UIView+TKCategory.swift */; };
-		0719C71E9F2B7641CAEFBE30 /* CurrySwift/UIViewController+TKCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46B145FA7D9F2FCE5A413862 /* CurrySwift/UIViewController+TKCategory.swift */; };
-		1378A01B37C8AF8ED2741AD2 /* CurrySwift/URLSession+TKCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBF7BC3165FDF1AD13617999 /* CurrySwift/URLSession+TKCategory.swift */; };
-		48D41AC2B414A2E5A8F20736 /* CurrySwift/UserDefaults+iCloud.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09563363555B1B088C354081 /* CurrySwift/UserDefaults+iCloud.swift */; };
-		DF460B8FF01998540D43C032 /* CurrySwift/NSArray+TKCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B180A78457A49EAFF3AD920 /* CurrySwift/NSArray+TKCategory.swift */; };
-		771FD8BEA973BA6AE20DDEC2 /* CurrySwift/NSAttributedString+TKCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 167A99DBA5CEEFF42F53DB61 /* CurrySwift/NSAttributedString+TKCategory.swift */; };
-		CF3CDCF0016CFCFED4192F00 /* CurrySwift/NSDate+TKCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA1B42980D84953971918B00 /* CurrySwift/NSDate+TKCategory.swift */; };
-		6C2C594621F32404DC676D48 /* CurrySwift/NSMutableAttributedString+TKCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39A0B9444ABB2668A49B2C02 /* CurrySwift/NSMutableAttributedString+TKCategory.swift */; };
-		0400DE7E6684DDAA4C20EB13 /* CurrySwift/NSObject+DataHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 443CC8EAC6A267DCE864EDE7 /* CurrySwift/NSObject+DataHelper.swift */; };
-		0B970A2F105927D5BB1156EA /* CurrySwift/NSObject+JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53C53AD929E7D11529FFABB4 /* CurrySwift/NSObject+JSON.swift */; };
-		086C5625B3843531AF6FE77A /* CurrySwift/NSObject+TKCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDCE5A98E73D623C2146ACC3 /* CurrySwift/NSObject+TKCategory.swift */; };
-		49FF29A2051460B3B09D83C1 /* CurrySwift/NSString+TKCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56448E3C6352493F4AEB097C /* CurrySwift/NSString+TKCategory.swift */; };
-		C5B1BA0026E2AF3039A4BDDA /* CurrySwift/TKProgressDataTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3091944BC568B492C18CA3B /* CurrySwift/TKProgressDataTask.swift */; };
-		D615739B7AE736406F0D0F01 /* CurrySwift/Timer+Blocks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09B9E681923B6CC14588DFC6 /* CurrySwift/Timer+Blocks.swift */; };
-		125FF873E4A78C0DF2AD99A5 /* CurrySwift/URLRequest+TKCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 209507342188EA7E00AD35F0 /* CurrySwift/URLRequest+TKCategory.swift */; };
-		C099969B4A81C627C5EDE53D /* CurrySwift/URLSession+TKCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBF7BC3165FDF1AD13617999 /* CurrySwift/URLSession+TKCategory.swift */; };
-		880869E897D72D588DDFB040 /* CurrySwift/NSArray+TKCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B180A78457A49EAFF3AD920 /* CurrySwift/NSArray+TKCategory.swift */; };
-		56DD40F54CD2CCF0E28342DE /* CurrySwift/NSDate+TKCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA1B42980D84953971918B00 /* CurrySwift/NSDate+TKCategory.swift */; };
-		9698E1C95AD8B1298C067A7C /* CurrySwift/NSObject+DataHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 443CC8EAC6A267DCE864EDE7 /* CurrySwift/NSObject+DataHelper.swift */; };
-		6065946818B3E82CDB37FDDE /* CurrySwift/NSObject+JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53C53AD929E7D11529FFABB4 /* CurrySwift/NSObject+JSON.swift */; };
-		1CD1C6DCA9B5D624EFFD0806 /* CurrySwift/NSObject+TKCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDCE5A98E73D623C2146ACC3 /* CurrySwift/NSObject+TKCategory.swift */; };
-		C3154782B6E4E927A35E2DF2 /* CurrySwift/NSString+TKCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56448E3C6352493F4AEB097C /* CurrySwift/NSString+TKCategory.swift */; };
-		2EFE6FB0B361DE95641F9A9B /* CurrySwift/TKProgressDataTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3091944BC568B492C18CA3B /* CurrySwift/TKProgressDataTask.swift */; };
-		159B4D3BBE09D616679D7BC4 /* CurrySwift/Timer+Blocks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09B9E681923B6CC14588DFC6 /* CurrySwift/Timer+Blocks.swift */; };
-		134B6A077DE017EE12F40C71 /* CurrySwift/URLSession+TKCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBF7BC3165FDF1AD13617999 /* CurrySwift/URLSession+TKCategory.swift */; };
-		4EDA917FC40D933B77DD9FD7 /* CurrySwift/UserDefaults+iCloud.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09563363555B1B088C354081 /* CurrySwift/UserDefaults+iCloud.swift */; };
-		CB868F2E5EBEA6B0A670A2B5 /* CurrySwift/Bundle+Receipts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DCE542060D0500B386E3415 /* CurrySwift/Bundle+Receipts.swift */; };
-		1BFCCA1FBDD94F272B5D6C68 /* CurrySwift/CAAnimation+TKAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E1930CDA51DD156ABF336CB /* CurrySwift/CAAnimation+TKAnimation.swift */; };
-		77F7AEF464CD520817DF8EF9 /* CurrySwift/CAKeyframeAnimation+TKAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58BF917DB14BFA96D4A05139 /* CurrySwift/CAKeyframeAnimation+TKAnimation.swift */; };
-		7F5159933E3301AEEC844A68 /* CurrySwift/CALayer+TKAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3452C2DE33A6F8DAAB17119 /* CurrySwift/CALayer+TKAnimation.swift */; };
-		B92F5695CF834AF7883E904F /* CurrySwift/NSArray+TKCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B180A78457A49EAFF3AD920 /* CurrySwift/NSArray+TKCategory.swift */; };
-		526A355259435F2E7398DF98 /* CurrySwift/NSAttributedString+TKCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 167A99DBA5CEEFF42F53DB61 /* CurrySwift/NSAttributedString+TKCategory.swift */; };
-		E326F182EA7D0B5F250919B7 /* CurrySwift/NSDate+TKCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA1B42980D84953971918B00 /* CurrySwift/NSDate+TKCategory.swift */; };
-		872D490B0703F30A68EB2CEA /* CurrySwift/NSMutableAttributedString+TKCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39A0B9444ABB2668A49B2C02 /* CurrySwift/NSMutableAttributedString+TKCategory.swift */; };
-		DB24951A30728C481941BCEB /* CurrySwift/NSObject+DataHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 443CC8EAC6A267DCE864EDE7 /* CurrySwift/NSObject+DataHelper.swift */; };
-		4378FA9A4FBA815FF103117B /* CurrySwift/NSObject+JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53C53AD929E7D11529FFABB4 /* CurrySwift/NSObject+JSON.swift */; };
-		5AB237E38AB6A262FE085CC3 /* CurrySwift/NSObject+TKCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDCE5A98E73D623C2146ACC3 /* CurrySwift/NSObject+TKCategory.swift */; };
-		E7530E07F2FA5638F749B806 /* CurrySwift/NSString+TKCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56448E3C6352493F4AEB097C /* CurrySwift/NSString+TKCategory.swift */; };
-		9E35C5FA31CF4355AC033D79 /* CurrySwift/NSString+TKUIKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FA0500BC49ED625B17F8689 /* CurrySwift/NSString+TKUIKit.swift */; };
-		A40DB383F360603AE21AB2A7 /* CurrySwift/TKProgressDataTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3091944BC568B492C18CA3B /* CurrySwift/TKProgressDataTask.swift */; };
-		D3C66ECA670314E67C70BB70 /* CurrySwift/Timer+Blocks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09B9E681923B6CC14588DFC6 /* CurrySwift/Timer+Blocks.swift */; };
-		95187BA1C29BC1046C5BACEE /* CurrySwift/UIAlertController+TKCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = F44AD7D1AA0046C8BA701302 /* CurrySwift/UIAlertController+TKCategory.swift */; };
-		A8D0AB175934730D4B7FB7E0 /* CurrySwift/UIApplication+TKCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7347268D29A81D3FE660105B /* CurrySwift/UIApplication+TKCategory.swift */; };
-		8224399B559CED4BDEFBB072 /* CurrySwift/UIBarButtonItem+TKCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = B85076550EF62B262BD61C8B /* CurrySwift/UIBarButtonItem+TKCategory.swift */; };
-		76F7B4A63A63F5964E9B05AF /* CurrySwift/UIButton+TKCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19461E01AB5658A2F5AACA8F /* CurrySwift/UIButton+TKCategory.swift */; };
-		25BB64DDA016650B91B17332 /* CurrySwift/UIColor+TKCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBE8C15D2463F2298BA58FFD /* CurrySwift/UIColor+TKCategory.swift */; };
-		DAFDC3E1A314152FB40FEC92 /* CurrySwift/UIControl+Blocks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93A18776CC1C2A31330DD42B /* CurrySwift/UIControl+Blocks.swift */; };
-		676922FF4906B8FBFF35F425 /* CurrySwift/UIDevice+TKCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCE3C5094E05DC00C2D78E99 /* CurrySwift/UIDevice+TKCategory.swift */; };
-		B5E8EADB53B9037F0FF74ADC /* CurrySwift/UIFont+TKCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A714C846D3AD6025D08EB40 /* CurrySwift/UIFont+TKCategory.swift */; };
-		AE6DAC05C0F4650B1CEE9682 /* CurrySwift/UIGestureRecognizer+Blocks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 109397DA6F7297D1C614E8D2 /* CurrySwift/UIGestureRecognizer+Blocks.swift */; };
-		ED16F0C4DA0B8370FC9B3C0A /* CurrySwift/UIGestureRecognizer+TKCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42E03D563A88F72B212BDC25 /* CurrySwift/UIGestureRecognizer+TKCategory.swift */; };
-		039A38BFD06C31099CFB1B87 /* CurrySwift/UIImage+TKCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = F956576FE2E7C2C9724A90BF /* CurrySwift/UIImage+TKCategory.swift */; };
-		98B2FA77F3817EF4ABC8B605 /* CurrySwift/UIImageView+TKCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1321D5656D42A9050E3D239 /* CurrySwift/UIImageView+TKCategory.swift */; };
-		F1B295845338F7D7242B1983 /* CurrySwift/UILabel+Initializers.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3C8D6C47F8269B4FBDDF754 /* CurrySwift/UILabel+Initializers.swift */; };
-		ABAA800CCD8A87FF59B05077 /* CurrySwift/UILabel+TKCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = A84D9EA4A90E2771FEC0B6AA /* CurrySwift/UILabel+TKCategory.swift */; };
-		D1F6008DDAECCFFC880449EF /* CurrySwift/UIMotionEffectGroup+TKCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 269A7888631C49C78464BC09 /* CurrySwift/UIMotionEffectGroup+TKCategory.swift */; };
-		F9C352F90F5C587858DCAB89 /* CurrySwift/UINavigationBar+TKCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = A55B298C26E4E15D8489E7F5 /* CurrySwift/UINavigationBar+TKCategory.swift */; };
-		FEBE549C881DDE995B11BE76 /* CurrySwift/UIPanGestureRecognizer+VelocityDirection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 450C11914EA3E171DE0D2C5B /* CurrySwift/UIPanGestureRecognizer+VelocityDirection.swift */; };
-		1075941F3D5974B1BD093510 /* CurrySwift/UIScreen+TKCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD7CC0ADEB2A7B0B6B147711 /* CurrySwift/UIScreen+TKCategory.swift */; };
-		A1E48897600C92B45211584D /* CurrySwift/UIScrollView+Positioning.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB34ACF122A4DE6F6AA7316 /* CurrySwift/UIScrollView+Positioning.swift */; };
-		59BBA9570A1CD983D84C46B9 /* CurrySwift/UIScrollview+TKCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C98F84FEBBA6452C3A0D518 /* CurrySwift/UIScrollview+TKCategory.swift */; };
-		7B67348988DE45E30B8DEB36 /* CurrySwift/UITextField+TKCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6FB7BE3A942AD6FC0FF7E5F /* CurrySwift/UITextField+TKCategory.swift */; };
-		DD193BB1C2443A33CE757D3A /* CurrySwift/UITraitCollection+TKCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C479B20BFB81D0B188FCB7A /* CurrySwift/UITraitCollection+TKCategory.swift */; };
-		F129AAF8DE2001FFB9829895 /* CurrySwift/UIView+GestureRecognizerBlock.swift in Sources */ = {isa = PBXBuildFile; fileRef = A228DD3708DCF737A0B784E9 /* CurrySwift/UIView+GestureRecognizerBlock.swift */; };
-		8567C43C16CBBFFFEC67759B /* CurrySwift/UIView+Initializers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6685506B4C02BEA8CCD730F2 /* CurrySwift/UIView+Initializers.swift */; };
-		1700505864A800CB6FC3E16C /* CurrySwift/UIView+Positioning.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA0897CE1AEFA8542B2A7209 /* CurrySwift/UIView+Positioning.swift */; };
-		250FA066EF0388DE38C86742 /* CurrySwift/UIView+TKAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20D910B8DAD3F597038DD11F /* CurrySwift/UIView+TKAnimation.swift */; };
-		2FF00CC444BEB31E6E8B8CD2 /* CurrySwift/UIView+TKCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 409961D11F30A741C5B57902 /* CurrySwift/UIView+TKCategory.swift */; };
-		A34A4A75229061C34D8DC631 /* CurrySwift/UIViewController+TKCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46B145FA7D9F2FCE5A413862 /* CurrySwift/UIViewController+TKCategory.swift */; };
-		F1330F4549D0D0F88764303D /* CurrySwift/URLSession+TKCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBF7BC3165FDF1AD13617999 /* CurrySwift/URLSession+TKCategory.swift */; };
-		1DEA1118D283D3C0A9348622 /* CurrySwift/UserDefaults+iCloud.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09563363555B1B088C354081 /* CurrySwift/UserDefaults+iCloud.swift */; };
-		1C484B50375368488AC59723 /* CurrySwift/TKCreditCardCVVTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B18BEC0DA14FAC441D1700A /* CurrySwift/TKCreditCardCVVTextField.swift */; };
-		19E76A38B50539EF0EA0EB15 /* CurrySwift/TKCreditCardExpirationTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D50915DB23B939F9E13D686 /* CurrySwift/TKCreditCardExpirationTextField.swift */; };
-		ADFD2DD94F79540B66EE04BE /* CurrySwift/TKCreditCardNumberTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECACD0C0A4D1CC9436938AB5 /* CurrySwift/TKCreditCardNumberTextField.swift */; };
-		310B879AD429A0FFD9F1F628 /* CurrySwift/TKCreditCardZipTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = F94D4407C6D89B37BCB8DA25 /* CurrySwift/TKCreditCardZipTextField.swift */; };
-		B85FB19571E5787C33CD8452 /* CurrySwift/TKDigits.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34F2326758CD95A7C0AC8177 /* CurrySwift/TKDigits.swift */; };
-		9D778CE07BB41C69BF0176C2 /* CurrySwift/TKPhoneNumberTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E247AE80893BA3C5AB007D1 /* CurrySwift/TKPhoneNumberTextField.swift */; };
-		5F9193C880663798E4719F34 /* CurrySwift/TKDigits.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34F2326758CD95A7C0AC8177 /* CurrySwift/TKDigits.swift */; };
-		58ED125F178D8A0D7DCF7F01 /* CurrySwift/TKDigits.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34F2326758CD95A7C0AC8177 /* CurrySwift/TKDigits.swift */; };
-		C773CDEE5F4318797855AE8A /* CurrySwift/TKCreditCardCVVTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B18BEC0DA14FAC441D1700A /* CurrySwift/TKCreditCardCVVTextField.swift */; };
-		21CA85B6D1A8A091BF3DB901 /* CurrySwift/TKCreditCardExpirationTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D50915DB23B939F9E13D686 /* CurrySwift/TKCreditCardExpirationTextField.swift */; };
-		6AED2961B25FB297EABAFD32 /* CurrySwift/TKCreditCardNumberTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECACD0C0A4D1CC9436938AB5 /* CurrySwift/TKCreditCardNumberTextField.swift */; };
-		236AC30E7B7861261E4665DC /* CurrySwift/TKCreditCardZipTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = F94D4407C6D89B37BCB8DA25 /* CurrySwift/TKCreditCardZipTextField.swift */; };
-		F757F73EFFA11F975864CE74 /* CurrySwift/TKDigits.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34F2326758CD95A7C0AC8177 /* CurrySwift/TKDigits.swift */; };
-		E94D496CF3BC6F6683B026B7 /* CurrySwift/TKPhoneNumberTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E247AE80893BA3C5AB007D1 /* CurrySwift/TKPhoneNumberTextField.swift */; };
-		1BF352531B2EF6819A00F633 /* CurrySwift/TKCurrentTimeLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D29274DAB8102E30BD345F8F /* CurrySwift/TKCurrentTimeLabel.swift */; };
-		989128EB11D2D79266A26B42 /* CurrySwift/TKExtendedScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDD10CD5F6ED1E4C4A956251 /* CurrySwift/TKExtendedScrollView.swift */; };
-		FF2E3B488BCA79CACFE874F9 /* CurrySwift/TKGradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E87982AF0516AB0A96C4959 /* CurrySwift/TKGradientView.swift */; };
-		DE7C1E6F4F6CCED97C8465AE /* CurrySwift/TKShapeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFEB1ECD6B3EFB44DD1568D5 /* CurrySwift/TKShapeView.swift */; };
-		3C73434538819CFEA52CFAD9 /* CurrySwift/TKStepperCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D2E9DD3CA2320EEB6647B38 /* CurrySwift/TKStepperCell.swift */; };
-		05F9BAAA404ABA91C7C39685 /* CurrySwift/TKSwitchCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 518FC7D4D9A15707A186D836 /* CurrySwift/TKSwitchCell.swift */; };
-		71BBA4D920A138352D2C0C3A /* CurrySwift/TKTextFieldCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A674447B0EF1C8F40A70EBE4 /* CurrySwift/TKTextFieldCell.swift */; };
-		31A11EEAD49FFBA8A70A97DD /* CurrySwift/TKTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4F8414A9A24CA403A730A50 /* CurrySwift/TKTextView.swift */; };
-		DDAF351132D7AD109DCF417D /* CurrySwift/TKWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = E122083DD4EC3A07B89A565C /* CurrySwift/TKWindow.swift */; };
-		90CDCA678E664C7FEA5C88E9 /* CurrySwift/TKCurrentTimeLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D29274DAB8102E30BD345F8F /* CurrySwift/TKCurrentTimeLabel.swift */; };
-		5E772E39C9FA88408F0337C2 /* CurrySwift/TKGradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E87982AF0516AB0A96C4959 /* CurrySwift/TKGradientView.swift */; };
-		C6F4AA36804A75BB5D9EB432 /* CurrySwift/TKShapeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFEB1ECD6B3EFB44DD1568D5 /* CurrySwift/TKShapeView.swift */; };
-		BCB16FB7187AC2FF4BAB89C9 /* CurrySwift/TKTextFieldCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A674447B0EF1C8F40A70EBE4 /* CurrySwift/TKTextFieldCell.swift */; };
-		BB21B885888B641824FCD3E5 /* CurrySwift/TKWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = E122083DD4EC3A07B89A565C /* CurrySwift/TKWindow.swift */; };
-		D00BCFF18B5D34B1527DE9FC /* CurrySwift/TKCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5D688B0325EAA5DEC71614F /* CurrySwift/TKCollectionViewController.swift */; };
-		4C83B44B598D6925B5397765 /* CurrySwift/TKCustomPresentationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 737649C5907A28FDB97BFBE6 /* CurrySwift/TKCustomPresentationViewController.swift */; };
-		D141EE82A2B7AB747A467795 /* CurrySwift/TKSafariWebCredentials.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BB7A7FDF5DC4D7C20CCC88C /* CurrySwift/TKSafariWebCredentials.swift */; };
-		239BEC2166D1D31961D2D399 /* CurrySwift/TKSoundAlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F234D25B4A203311D124497 /* CurrySwift/TKSoundAlertController.swift */; };
-		8246609DE0D78CFA761B4779 /* CurrySwift/TKTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4E8A0935FD895826C7207F1 /* CurrySwift/TKTableViewController.swift */; };
-		3D4EDDED03C40E11DD8935B8 /* CurrySwift/TKVideoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BA2D2EA6F40AA417273086F /* CurrySwift/TKVideoViewController.swift */; };
-		4D61AC96EF8068576878A7A6 /* CurrySwift/TKWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC82CB399E1D469176A8376D /* CurrySwift/TKWebViewController.swift */; };
-		84F29F13298DC72EA9FFCA69 /* CurrySwift/TKCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5D688B0325EAA5DEC71614F /* CurrySwift/TKCollectionViewController.swift */; };
-		84169FED160CF54D1573700E /* CurrySwift/TKCustomPresentationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 737649C5907A28FDB97BFBE6 /* CurrySwift/TKCustomPresentationViewController.swift */; };
-		66615FD1D97B02C92297428C /* CurrySwift/TKSoundAlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F234D25B4A203311D124497 /* CurrySwift/TKSoundAlertController.swift */; };
-		5A72EFBC15461842F53B55C8 /* CurrySwift/TKTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4E8A0935FD895826C7207F1 /* CurrySwift/TKTableViewController.swift */; };
-		0F64AFF66F1FE21C1CE38A82 /* CurrySwift/TKVideoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BA2D2EA6F40AA417273086F /* CurrySwift/TKVideoViewController.swift */; };
-		F518CBE4BF220180702C2663 /* CurrySwift/TKCardModalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91B376CF0966CA09F3219698 /* CurrySwift/TKCardModalViewController.swift */; };
-		043558B6C62AF9EC29EF58F8 /* CurrySwift/TKKeyboardTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C118F3512E4A4CFA6ACC53F /* CurrySwift/TKKeyboardTableViewController.swift */; };
-		DB26FC3D0E8A357C0624E9FC /* CurrySwift/TKDecimalInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 725CBE286D8E1781897885D0 /* CurrySwift/TKDecimalInputView.swift */; };
-		F2A675A5C50EB1D43A8224DE /* CurrySwift/TKDecimalInputWithNextKeyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFF84D0F6C28F747F9DB8D2E /* CurrySwift/TKDecimalInputWithNextKeyView.swift */; };
-		33F8F8D887B90C4A193F2E98 /* CurrySwift/TKInputKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC72E17F6A81E151E7D48D0E /* CurrySwift/TKInputKey.swift */; };
-		6D322AF10030C0DCE92BF44D /* CurrySwift/TKInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E997EAAE68027079012074F /* CurrySwift/TKInputView.swift */; };
-		2DDE3AE5C312B6B7B231AA49 /* CurrySwift/TKNumberInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD67C78A81938C4EA2CEB115 /* CurrySwift/TKNumberInputView.swift */; };
-		04783F3118549EECE910DD0D /* CurrySwift/TKNumberInputWithNextKeyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C932696EDE792DA5B83DEF70 /* CurrySwift/TKNumberInputWithNextKeyView.swift */; };
-		07CBA44C1B5146928CF0F62C /* CurrySwift/TKSectionedScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C88A70E7A6C0E1A7A2B91D41 /* CurrySwift/TKSectionedScrollView.swift */; };
-		2FDE99D43D434FF76D9D7B63 /* CurrySwift/TKSectionedScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C88A70E7A6C0E1A7A2B91D41 /* CurrySwift/TKSectionedScrollView.swift */; };
+		C4F32E367BD0AECDAFFC695A /* CurrySwift/Bundle+Receipts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DCE542060D0500B386E3415 /* Bundle+Receipts.swift */; };
+		643058F97CD5FE7E450AD1CE /* CurrySwift/CAAnimation+TKAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E1930CDA51DD156ABF336CB /* CAAnimation+TKAnimation.swift */; };
+		2F757B0BC7102A9F7707FC16 /* CurrySwift/CAKeyframeAnimation+TKAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58BF917DB14BFA96D4A05139 /* CAKeyframeAnimation+TKAnimation.swift */; };
+		AFE6FE665CB9F9FDCAB8C3C8 /* CurrySwift/CALayer+TKAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3452C2DE33A6F8DAAB17119 /* CALayer+TKAnimation.swift */; };
+		B04AE5ED95619802AC29FE2F /* CurrySwift/NSArray+TKCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B180A78457A49EAFF3AD920 /* NSArray+TKCategory.swift */; };
+		35ADD1CA6445DD88B1BE8B97 /* CurrySwift/NSAttributedString+TKCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 167A99DBA5CEEFF42F53DB61 /* NSAttributedString+TKCategory.swift */; };
+		8B858C33783024A10FF82679 /* CurrySwift/NSDate+TKCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA1B42980D84953971918B00 /* NSDate+TKCategory.swift */; };
+		5E7192E4FC5CE9C89084B81C /* CurrySwift/NSMutableAttributedString+TKCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39A0B9444ABB2668A49B2C02 /* NSMutableAttributedString+TKCategory.swift */; };
+		C20146AD88CB66BF2829E81C /* CurrySwift/NSObject+DataHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 443CC8EAC6A267DCE864EDE7 /* NSObject+DataHelper.swift */; };
+		720DD52BAEB78D536C0E264E /* CurrySwift/NSObject+JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53C53AD929E7D11529FFABB4 /* NSObject+JSON.swift */; };
+		98244652D97448C2C05EACCB /* CurrySwift/NSObject+TKCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDCE5A98E73D623C2146ACC3 /* NSObject+TKCategory.swift */; };
+		88597A152D9014D8D9DCECC7 /* CurrySwift/NSString+TKCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56448E3C6352493F4AEB097C /* NSString+TKCategory.swift */; };
+		5FFFE953F56DCBF667B2775C /* CurrySwift/NSString+TKUIKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FA0500BC49ED625B17F8689 /* NSString+TKUIKit.swift */; };
+		47631B8D204860EC3BE65FB8 /* CurrySwift/TKProgressDataTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3091944BC568B492C18CA3B /* TKProgressDataTask.swift */; };
+		83058513B476346F52D39EA8 /* CurrySwift/Timer+Blocks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09B9E681923B6CC14588DFC6 /* Timer+Blocks.swift */; };
+		C18C753D5BCFDE3C2F26C96B /* CurrySwift/UIActionSheet+Blocks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21F1E1EED1373F6B69CCE1A9 /* UIActionSheet+Blocks.swift */; };
+		39BCEEC817652B4658827FAA /* CurrySwift/UIActionSheet+TKCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 906DF06677F800A3CFF35748 /* UIActionSheet+TKCategory.swift */; };
+		9BEDE2386B828537BFB6E271 /* CurrySwift/UIAlertController+TKCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = F44AD7D1AA0046C8BA701302 /* UIAlertController+TKCategory.swift */; };
+		CC16AD60670180E681E32802 /* CurrySwift/UIAlertView+Blocks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FED3256DF61CE3ED413862E /* UIAlertView+Blocks.swift */; };
+		2B317FD2817F8A150589F282 /* CurrySwift/UIAlertView+TKCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D3B86BD2BF3BFD7F8BD737D /* UIAlertView+TKCategory.swift */; };
+		673EDCE7168E85D01B68DFD1 /* CurrySwift/UIApplication+TKCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7347268D29A81D3FE660105B /* UIApplication+TKCategory.swift */; };
+		A7E3F7401B9050B91150F26E /* CurrySwift/UIBarButtonItem+TKCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = B85076550EF62B262BD61C8B /* UIBarButtonItem+TKCategory.swift */; };
+		2325983D81D3E56CF6839C42 /* CurrySwift/UIButton+TKCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19461E01AB5658A2F5AACA8F /* UIButton+TKCategory.swift */; };
+		D97DFC6DE5CBB89A4D41EE20 /* CurrySwift/UIColor+TKCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBE8C15D2463F2298BA58FFD /* UIColor+TKCategory.swift */; };
+		D86AB2E39E5B8413B2644D1F /* CurrySwift/UIControl+Blocks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93A18776CC1C2A31330DD42B /* UIControl+Blocks.swift */; };
+		28046048F7A2F9D4AE0F30DF /* CurrySwift/UIDevice+TKCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCE3C5094E05DC00C2D78E99 /* UIDevice+TKCategory.swift */; };
+		AD1EA3B63CA3F1C9C704C3E6 /* CurrySwift/UIFont+TKCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A714C846D3AD6025D08EB40 /* UIFont+TKCategory.swift */; };
+		127458E79AAAF7EA56EAEA6C /* CurrySwift/UIGestureRecognizer+Blocks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 109397DA6F7297D1C614E8D2 /* UIGestureRecognizer+Blocks.swift */; };
+		435B8F258C2F88A1EAA7CFD5 /* CurrySwift/UIGestureRecognizer+TKCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42E03D563A88F72B212BDC25 /* UIGestureRecognizer+TKCategory.swift */; };
+		F4B0D1B9DA2063281576350A /* CurrySwift/UIImage+TKCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = F956576FE2E7C2C9724A90BF /* UIImage+TKCategory.swift */; };
+		2379D4B419C2D18B11B3FEAB /* CurrySwift/UIImagePickerController+TKCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AEC4BBA78F7A2ADCF9C92E0 /* UIImagePickerController+TKCategory.swift */; };
+		E151D9A03757F92344D8DA3E /* CurrySwift/UIImageView+TKCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1321D5656D42A9050E3D239 /* UIImageView+TKCategory.swift */; };
+		44E64E8B43BB3CE4DB4B346F /* CurrySwift/UILabel+Initializers.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3C8D6C47F8269B4FBDDF754 /* UILabel+Initializers.swift */; };
+		959CB992C16B95B74FEBA31C /* CurrySwift/UILabel+TKCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = A84D9EA4A90E2771FEC0B6AA /* UILabel+TKCategory.swift */; };
+		701DFCC0090609A6126BBA5C /* CurrySwift/UIMotionEffectGroup+TKCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 269A7888631C49C78464BC09 /* UIMotionEffectGroup+TKCategory.swift */; };
+		ED250178334185EAE97CAEE7 /* CurrySwift/UINavigationBar+TKCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = A55B298C26E4E15D8489E7F5 /* UINavigationBar+TKCategory.swift */; };
+		36FAECEFA7FFAADDB69F6CC0 /* CurrySwift/UIPanGestureRecognizer+VelocityDirection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 450C11914EA3E171DE0D2C5B /* UIPanGestureRecognizer+VelocityDirection.swift */; };
+		8D3F9023BD7A69519129D3C2 /* CurrySwift/UIScreen+TKCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD7CC0ADEB2A7B0B6B147711 /* UIScreen+TKCategory.swift */; };
+		00BC3A933CDC67A6E57A76E0 /* CurrySwift/UIScrollView+Positioning.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB34ACF122A4DE6F6AA7316 /* UIScrollView+Positioning.swift */; };
+		06E4210810E08A0B01635E45 /* CurrySwift/UIScrollview+TKCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C98F84FEBBA6452C3A0D518 /* UIScrollview+TKCategory.swift */; };
+		87CEB421A14372CFB11C048D /* CurrySwift/UITextField+TKCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6FB7BE3A942AD6FC0FF7E5F /* UITextField+TKCategory.swift */; };
+		CF10BE31E3CA24699D016B3E /* CurrySwift/UITraitCollection+TKCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C479B20BFB81D0B188FCB7A /* UITraitCollection+TKCategory.swift */; };
+		81BFAB9D39A1559B7EA70000 /* CurrySwift/UIView+GestureRecognizerBlock.swift in Sources */ = {isa = PBXBuildFile; fileRef = A228DD3708DCF737A0B784E9 /* UIView+GestureRecognizerBlock.swift */; };
+		28D3D1D79D597835DB824D0F /* CurrySwift/UIView+Initializers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6685506B4C02BEA8CCD730F2 /* UIView+Initializers.swift */; };
+		618E194FA167C0B0544B895F /* CurrySwift/UIView+Positioning.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA0897CE1AEFA8542B2A7209 /* UIView+Positioning.swift */; };
+		2D22259FF403DD9282AC6EFE /* CurrySwift/UIView+TKAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20D910B8DAD3F597038DD11F /* UIView+TKAnimation.swift */; };
+		02487FD8F42E38211EF3B026 /* CurrySwift/UIView+TKCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 409961D11F30A741C5B57902 /* UIView+TKCategory.swift */; };
+		0719C71E9F2B7641CAEFBE30 /* CurrySwift/UIViewController+TKCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46B145FA7D9F2FCE5A413862 /* UIViewController+TKCategory.swift */; };
+		1378A01B37C8AF8ED2741AD2 /* CurrySwift/URLSession+TKCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBF7BC3165FDF1AD13617999 /* URLSession+TKCategory.swift */; };
+		48D41AC2B414A2E5A8F20736 /* CurrySwift/UserDefaults+iCloud.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09563363555B1B088C354081 /* UserDefaults+iCloud.swift */; };
+		DF460B8FF01998540D43C032 /* CurrySwift/NSArray+TKCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B180A78457A49EAFF3AD920 /* NSArray+TKCategory.swift */; };
+		771FD8BEA973BA6AE20DDEC2 /* CurrySwift/NSAttributedString+TKCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 167A99DBA5CEEFF42F53DB61 /* NSAttributedString+TKCategory.swift */; };
+		CF3CDCF0016CFCFED4192F00 /* CurrySwift/NSDate+TKCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA1B42980D84953971918B00 /* NSDate+TKCategory.swift */; };
+		6C2C594621F32404DC676D48 /* CurrySwift/NSMutableAttributedString+TKCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39A0B9444ABB2668A49B2C02 /* NSMutableAttributedString+TKCategory.swift */; };
+		0400DE7E6684DDAA4C20EB13 /* CurrySwift/NSObject+DataHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 443CC8EAC6A267DCE864EDE7 /* NSObject+DataHelper.swift */; };
+		0B970A2F105927D5BB1156EA /* CurrySwift/NSObject+JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53C53AD929E7D11529FFABB4 /* NSObject+JSON.swift */; };
+		086C5625B3843531AF6FE77A /* CurrySwift/NSObject+TKCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDCE5A98E73D623C2146ACC3 /* NSObject+TKCategory.swift */; };
+		49FF29A2051460B3B09D83C1 /* CurrySwift/NSString+TKCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56448E3C6352493F4AEB097C /* NSString+TKCategory.swift */; };
+		C5B1BA0026E2AF3039A4BDDA /* CurrySwift/TKProgressDataTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3091944BC568B492C18CA3B /* TKProgressDataTask.swift */; };
+		D615739B7AE736406F0D0F01 /* CurrySwift/Timer+Blocks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09B9E681923B6CC14588DFC6 /* Timer+Blocks.swift */; };
+		125FF873E4A78C0DF2AD99A5 /* CurrySwift/URLRequest+TKCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 209507342188EA7E00AD35F0 /* URLRequest+TKCategory.swift */; };
+		C099969B4A81C627C5EDE53D /* CurrySwift/URLSession+TKCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBF7BC3165FDF1AD13617999 /* URLSession+TKCategory.swift */; };
+		880869E897D72D588DDFB040 /* CurrySwift/NSArray+TKCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B180A78457A49EAFF3AD920 /* NSArray+TKCategory.swift */; };
+		56DD40F54CD2CCF0E28342DE /* CurrySwift/NSDate+TKCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA1B42980D84953971918B00 /* NSDate+TKCategory.swift */; };
+		9698E1C95AD8B1298C067A7C /* CurrySwift/NSObject+DataHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 443CC8EAC6A267DCE864EDE7 /* NSObject+DataHelper.swift */; };
+		6065946818B3E82CDB37FDDE /* CurrySwift/NSObject+JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53C53AD929E7D11529FFABB4 /* NSObject+JSON.swift */; };
+		1CD1C6DCA9B5D624EFFD0806 /* CurrySwift/NSObject+TKCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDCE5A98E73D623C2146ACC3 /* NSObject+TKCategory.swift */; };
+		C3154782B6E4E927A35E2DF2 /* CurrySwift/NSString+TKCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56448E3C6352493F4AEB097C /* NSString+TKCategory.swift */; };
+		2EFE6FB0B361DE95641F9A9B /* CurrySwift/TKProgressDataTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3091944BC568B492C18CA3B /* TKProgressDataTask.swift */; };
+		159B4D3BBE09D616679D7BC4 /* CurrySwift/Timer+Blocks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09B9E681923B6CC14588DFC6 /* Timer+Blocks.swift */; };
+		134B6A077DE017EE12F40C71 /* CurrySwift/URLSession+TKCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBF7BC3165FDF1AD13617999 /* URLSession+TKCategory.swift */; };
+		4EDA917FC40D933B77DD9FD7 /* CurrySwift/UserDefaults+iCloud.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09563363555B1B088C354081 /* UserDefaults+iCloud.swift */; };
+		CB868F2E5EBEA6B0A670A2B5 /* CurrySwift/Bundle+Receipts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DCE542060D0500B386E3415 /* Bundle+Receipts.swift */; };
+		1BFCCA1FBDD94F272B5D6C68 /* CurrySwift/CAAnimation+TKAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E1930CDA51DD156ABF336CB /* CAAnimation+TKAnimation.swift */; };
+		77F7AEF464CD520817DF8EF9 /* CurrySwift/CAKeyframeAnimation+TKAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58BF917DB14BFA96D4A05139 /* CAKeyframeAnimation+TKAnimation.swift */; };
+		7F5159933E3301AEEC844A68 /* CurrySwift/CALayer+TKAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3452C2DE33A6F8DAAB17119 /* CALayer+TKAnimation.swift */; };
+		B92F5695CF834AF7883E904F /* CurrySwift/NSArray+TKCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B180A78457A49EAFF3AD920 /* NSArray+TKCategory.swift */; };
+		526A355259435F2E7398DF98 /* CurrySwift/NSAttributedString+TKCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 167A99DBA5CEEFF42F53DB61 /* NSAttributedString+TKCategory.swift */; };
+		E326F182EA7D0B5F250919B7 /* CurrySwift/NSDate+TKCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA1B42980D84953971918B00 /* NSDate+TKCategory.swift */; };
+		872D490B0703F30A68EB2CEA /* CurrySwift/NSMutableAttributedString+TKCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39A0B9444ABB2668A49B2C02 /* NSMutableAttributedString+TKCategory.swift */; };
+		DB24951A30728C481941BCEB /* CurrySwift/NSObject+DataHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 443CC8EAC6A267DCE864EDE7 /* NSObject+DataHelper.swift */; };
+		4378FA9A4FBA815FF103117B /* CurrySwift/NSObject+JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53C53AD929E7D11529FFABB4 /* NSObject+JSON.swift */; };
+		5AB237E38AB6A262FE085CC3 /* CurrySwift/NSObject+TKCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDCE5A98E73D623C2146ACC3 /* NSObject+TKCategory.swift */; };
+		E7530E07F2FA5638F749B806 /* CurrySwift/NSString+TKCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56448E3C6352493F4AEB097C /* NSString+TKCategory.swift */; };
+		9E35C5FA31CF4355AC033D79 /* CurrySwift/NSString+TKUIKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FA0500BC49ED625B17F8689 /* NSString+TKUIKit.swift */; };
+		A40DB383F360603AE21AB2A7 /* CurrySwift/TKProgressDataTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3091944BC568B492C18CA3B /* TKProgressDataTask.swift */; };
+		D3C66ECA670314E67C70BB70 /* CurrySwift/Timer+Blocks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09B9E681923B6CC14588DFC6 /* Timer+Blocks.swift */; };
+		95187BA1C29BC1046C5BACEE /* CurrySwift/UIAlertController+TKCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = F44AD7D1AA0046C8BA701302 /* UIAlertController+TKCategory.swift */; };
+		A8D0AB175934730D4B7FB7E0 /* CurrySwift/UIApplication+TKCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7347268D29A81D3FE660105B /* UIApplication+TKCategory.swift */; };
+		8224399B559CED4BDEFBB072 /* CurrySwift/UIBarButtonItem+TKCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = B85076550EF62B262BD61C8B /* UIBarButtonItem+TKCategory.swift */; };
+		76F7B4A63A63F5964E9B05AF /* CurrySwift/UIButton+TKCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19461E01AB5658A2F5AACA8F /* UIButton+TKCategory.swift */; };
+		25BB64DDA016650B91B17332 /* CurrySwift/UIColor+TKCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBE8C15D2463F2298BA58FFD /* UIColor+TKCategory.swift */; };
+		DAFDC3E1A314152FB40FEC92 /* CurrySwift/UIControl+Blocks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93A18776CC1C2A31330DD42B /* UIControl+Blocks.swift */; };
+		676922FF4906B8FBFF35F425 /* CurrySwift/UIDevice+TKCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCE3C5094E05DC00C2D78E99 /* UIDevice+TKCategory.swift */; };
+		B5E8EADB53B9037F0FF74ADC /* CurrySwift/UIFont+TKCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A714C846D3AD6025D08EB40 /* UIFont+TKCategory.swift */; };
+		AE6DAC05C0F4650B1CEE9682 /* CurrySwift/UIGestureRecognizer+Blocks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 109397DA6F7297D1C614E8D2 /* UIGestureRecognizer+Blocks.swift */; };
+		ED16F0C4DA0B8370FC9B3C0A /* CurrySwift/UIGestureRecognizer+TKCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42E03D563A88F72B212BDC25 /* UIGestureRecognizer+TKCategory.swift */; };
+		039A38BFD06C31099CFB1B87 /* CurrySwift/UIImage+TKCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = F956576FE2E7C2C9724A90BF /* UIImage+TKCategory.swift */; };
+		98B2FA77F3817EF4ABC8B605 /* CurrySwift/UIImageView+TKCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1321D5656D42A9050E3D239 /* UIImageView+TKCategory.swift */; };
+		F1B295845338F7D7242B1983 /* CurrySwift/UILabel+Initializers.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3C8D6C47F8269B4FBDDF754 /* UILabel+Initializers.swift */; };
+		ABAA800CCD8A87FF59B05077 /* CurrySwift/UILabel+TKCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = A84D9EA4A90E2771FEC0B6AA /* UILabel+TKCategory.swift */; };
+		D1F6008DDAECCFFC880449EF /* CurrySwift/UIMotionEffectGroup+TKCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 269A7888631C49C78464BC09 /* UIMotionEffectGroup+TKCategory.swift */; };
+		F9C352F90F5C587858DCAB89 /* CurrySwift/UINavigationBar+TKCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = A55B298C26E4E15D8489E7F5 /* UINavigationBar+TKCategory.swift */; };
+		FEBE549C881DDE995B11BE76 /* CurrySwift/UIPanGestureRecognizer+VelocityDirection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 450C11914EA3E171DE0D2C5B /* UIPanGestureRecognizer+VelocityDirection.swift */; };
+		1075941F3D5974B1BD093510 /* CurrySwift/UIScreen+TKCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD7CC0ADEB2A7B0B6B147711 /* UIScreen+TKCategory.swift */; };
+		A1E48897600C92B45211584D /* CurrySwift/UIScrollView+Positioning.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB34ACF122A4DE6F6AA7316 /* UIScrollView+Positioning.swift */; };
+		59BBA9570A1CD983D84C46B9 /* CurrySwift/UIScrollview+TKCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C98F84FEBBA6452C3A0D518 /* UIScrollview+TKCategory.swift */; };
+		7B67348988DE45E30B8DEB36 /* CurrySwift/UITextField+TKCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6FB7BE3A942AD6FC0FF7E5F /* UITextField+TKCategory.swift */; };
+		DD193BB1C2443A33CE757D3A /* CurrySwift/UITraitCollection+TKCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C479B20BFB81D0B188FCB7A /* UITraitCollection+TKCategory.swift */; };
+		F129AAF8DE2001FFB9829895 /* CurrySwift/UIView+GestureRecognizerBlock.swift in Sources */ = {isa = PBXBuildFile; fileRef = A228DD3708DCF737A0B784E9 /* UIView+GestureRecognizerBlock.swift */; };
+		8567C43C16CBBFFFEC67759B /* CurrySwift/UIView+Initializers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6685506B4C02BEA8CCD730F2 /* UIView+Initializers.swift */; };
+		1700505864A800CB6FC3E16C /* CurrySwift/UIView+Positioning.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA0897CE1AEFA8542B2A7209 /* UIView+Positioning.swift */; };
+		250FA066EF0388DE38C86742 /* CurrySwift/UIView+TKAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20D910B8DAD3F597038DD11F /* UIView+TKAnimation.swift */; };
+		2FF00CC444BEB31E6E8B8CD2 /* CurrySwift/UIView+TKCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 409961D11F30A741C5B57902 /* UIView+TKCategory.swift */; };
+		A34A4A75229061C34D8DC631 /* CurrySwift/UIViewController+TKCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46B145FA7D9F2FCE5A413862 /* UIViewController+TKCategory.swift */; };
+		F1330F4549D0D0F88764303D /* CurrySwift/URLSession+TKCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBF7BC3165FDF1AD13617999 /* URLSession+TKCategory.swift */; };
+		1DEA1118D283D3C0A9348622 /* CurrySwift/UserDefaults+iCloud.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09563363555B1B088C354081 /* UserDefaults+iCloud.swift */; };
+		1C484B50375368488AC59723 /* CurrySwift/TKCreditCardCVVTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B18BEC0DA14FAC441D1700A /* TKCreditCardCVVTextField.swift */; };
+		19E76A38B50539EF0EA0EB15 /* CurrySwift/TKCreditCardExpirationTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D50915DB23B939F9E13D686 /* TKCreditCardExpirationTextField.swift */; };
+		ADFD2DD94F79540B66EE04BE /* CurrySwift/TKCreditCardNumberTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECACD0C0A4D1CC9436938AB5 /* TKCreditCardNumberTextField.swift */; };
+		310B879AD429A0FFD9F1F628 /* CurrySwift/TKCreditCardZipTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = F94D4407C6D89B37BCB8DA25 /* TKCreditCardZipTextField.swift */; };
+		B85FB19571E5787C33CD8452 /* CurrySwift/TKDigits.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34F2326758CD95A7C0AC8177 /* TKDigits.swift */; };
+		9D778CE07BB41C69BF0176C2 /* CurrySwift/TKPhoneNumberTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E247AE80893BA3C5AB007D1 /* TKPhoneNumberTextField.swift */; };
+		5F9193C880663798E4719F34 /* CurrySwift/TKDigits.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34F2326758CD95A7C0AC8177 /* TKDigits.swift */; };
+		58ED125F178D8A0D7DCF7F01 /* CurrySwift/TKDigits.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34F2326758CD95A7C0AC8177 /* TKDigits.swift */; };
+		C773CDEE5F4318797855AE8A /* CurrySwift/TKCreditCardCVVTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B18BEC0DA14FAC441D1700A /* TKCreditCardCVVTextField.swift */; };
+		21CA85B6D1A8A091BF3DB901 /* CurrySwift/TKCreditCardExpirationTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D50915DB23B939F9E13D686 /* TKCreditCardExpirationTextField.swift */; };
+		6AED2961B25FB297EABAFD32 /* CurrySwift/TKCreditCardNumberTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECACD0C0A4D1CC9436938AB5 /* TKCreditCardNumberTextField.swift */; };
+		236AC30E7B7861261E4665DC /* CurrySwift/TKCreditCardZipTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = F94D4407C6D89B37BCB8DA25 /* TKCreditCardZipTextField.swift */; };
+		F757F73EFFA11F975864CE74 /* CurrySwift/TKDigits.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34F2326758CD95A7C0AC8177 /* TKDigits.swift */; };
+		E94D496CF3BC6F6683B026B7 /* CurrySwift/TKPhoneNumberTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E247AE80893BA3C5AB007D1 /* TKPhoneNumberTextField.swift */; };
+		1BF352531B2EF6819A00F633 /* CurrySwift/TKCurrentTimeLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D29274DAB8102E30BD345F8F /* TKCurrentTimeLabel.swift */; };
+		989128EB11D2D79266A26B42 /* CurrySwift/TKExtendedScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDD10CD5F6ED1E4C4A956251 /* TKExtendedScrollView.swift */; };
+		FF2E3B488BCA79CACFE874F9 /* CurrySwift/TKGradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E87982AF0516AB0A96C4959 /* TKGradientView.swift */; };
+		DE7C1E6F4F6CCED97C8465AE /* CurrySwift/TKShapeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFEB1ECD6B3EFB44DD1568D5 /* TKShapeView.swift */; };
+		3C73434538819CFEA52CFAD9 /* CurrySwift/TKStepperCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D2E9DD3CA2320EEB6647B38 /* TKStepperCell.swift */; };
+		05F9BAAA404ABA91C7C39685 /* CurrySwift/TKSwitchCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 518FC7D4D9A15707A186D836 /* TKSwitchCell.swift */; };
+		71BBA4D920A138352D2C0C3A /* CurrySwift/TKTextFieldCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A674447B0EF1C8F40A70EBE4 /* TKTextFieldCell.swift */; };
+		31A11EEAD49FFBA8A70A97DD /* CurrySwift/TKTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4F8414A9A24CA403A730A50 /* TKTextView.swift */; };
+		DDAF351132D7AD109DCF417D /* CurrySwift/TKWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = E122083DD4EC3A07B89A565C /* TKWindow.swift */; };
+		90CDCA678E664C7FEA5C88E9 /* CurrySwift/TKCurrentTimeLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D29274DAB8102E30BD345F8F /* TKCurrentTimeLabel.swift */; };
+		5E772E39C9FA88408F0337C2 /* CurrySwift/TKGradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E87982AF0516AB0A96C4959 /* TKGradientView.swift */; };
+		C6F4AA36804A75BB5D9EB432 /* CurrySwift/TKShapeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFEB1ECD6B3EFB44DD1568D5 /* TKShapeView.swift */; };
+		BCB16FB7187AC2FF4BAB89C9 /* CurrySwift/TKTextFieldCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A674447B0EF1C8F40A70EBE4 /* TKTextFieldCell.swift */; };
+		BB21B885888B641824FCD3E5 /* CurrySwift/TKWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = E122083DD4EC3A07B89A565C /* TKWindow.swift */; };
+		D00BCFF18B5D34B1527DE9FC /* CurrySwift/TKCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5D688B0325EAA5DEC71614F /* TKCollectionViewController.swift */; };
+		4C83B44B598D6925B5397765 /* CurrySwift/TKCustomPresentationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 737649C5907A28FDB97BFBE6 /* TKCustomPresentationViewController.swift */; };
+		D141EE82A2B7AB747A467795 /* CurrySwift/TKSafariWebCredentials.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BB7A7FDF5DC4D7C20CCC88C /* TKSafariWebCredentials.swift */; };
+		239BEC2166D1D31961D2D399 /* CurrySwift/TKSoundAlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F234D25B4A203311D124497 /* TKSoundAlertController.swift */; };
+		8246609DE0D78CFA761B4779 /* CurrySwift/TKTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4E8A0935FD895826C7207F1 /* TKTableViewController.swift */; };
+		3D4EDDED03C40E11DD8935B8 /* CurrySwift/TKVideoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BA2D2EA6F40AA417273086F /* TKVideoViewController.swift */; };
+		4D61AC96EF8068576878A7A6 /* CurrySwift/TKWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC82CB399E1D469176A8376D /* TKWebViewController.swift */; };
+		84F29F13298DC72EA9FFCA69 /* CurrySwift/TKCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5D688B0325EAA5DEC71614F /* TKCollectionViewController.swift */; };
+		84169FED160CF54D1573700E /* CurrySwift/TKCustomPresentationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 737649C5907A28FDB97BFBE6 /* TKCustomPresentationViewController.swift */; };
+		66615FD1D97B02C92297428C /* CurrySwift/TKSoundAlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F234D25B4A203311D124497 /* TKSoundAlertController.swift */; };
+		5A72EFBC15461842F53B55C8 /* CurrySwift/TKTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4E8A0935FD895826C7207F1 /* TKTableViewController.swift */; };
+		0F64AFF66F1FE21C1CE38A82 /* CurrySwift/TKVideoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BA2D2EA6F40AA417273086F /* TKVideoViewController.swift */; };
+		F518CBE4BF220180702C2663 /* CurrySwift/TKCardModalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91B376CF0966CA09F3219698 /* TKCardModalViewController.swift */; };
+		043558B6C62AF9EC29EF58F8 /* CurrySwift/TKKeyboardTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C118F3512E4A4CFA6ACC53F /* TKKeyboardTableViewController.swift */; };
+		DB26FC3D0E8A357C0624E9FC /* CurrySwift/TKDecimalInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 725CBE286D8E1781897885D0 /* TKDecimalInputView.swift */; };
+		F2A675A5C50EB1D43A8224DE /* CurrySwift/TKDecimalInputWithNextKeyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFF84D0F6C28F747F9DB8D2E /* TKDecimalInputWithNextKeyView.swift */; };
+		33F8F8D887B90C4A193F2E98 /* CurrySwift/TKInputKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC72E17F6A81E151E7D48D0E /* TKInputKey.swift */; };
+		6D322AF10030C0DCE92BF44D /* CurrySwift/TKInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E997EAAE68027079012074F /* TKInputView.swift */; };
+		2DDE3AE5C312B6B7B231AA49 /* CurrySwift/TKNumberInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD67C78A81938C4EA2CEB115 /* TKNumberInputView.swift */; };
+		04783F3118549EECE910DD0D /* CurrySwift/TKNumberInputWithNextKeyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C932696EDE792DA5B83DEF70 /* TKNumberInputWithNextKeyView.swift */; };
+		07CBA44C1B5146928CF0F62C /* CurrySwift/TKSectionedScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C88A70E7A6C0E1A7A2B91D41 /* TKSectionedScrollView.swift */; };
+		2FDE99D43D434FF76D9D7B63 /* CurrySwift/TKSectionedScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C88A70E7A6C0E1A7A2B91D41 /* TKSectionedScrollView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -236,9 +236,9 @@
 		2010DCB01BB0E40E00810A98 /* curryWatch.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = curryWatch.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2010DCB21BB0E40E00810A98 /* curryWatch.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = curryWatch.h; sourceTree = "<group>"; };
 		2010DCB41BB0E40E00810A98 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		201BED4521C0681600CC13BE /* CurrySwift/UILabel+Spacing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CurrySwift/UILabel+Spacing.swift"; sourceTree = SOURCE_ROOT; };
+		201BED4521C0681600CC13BE /* UILabel+Spacing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILabel+Spacing.swift"; sourceTree = "<group>"; };
 		202DBEEA1AF6717A00B0CE67 /* CurryImages.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = CurryImages.xcassets; sourceTree = "<group>"; };
-		2069C12B1D8AFEB9000BD656 /* CurrySwift/Bundle+TKCategory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CurrySwift/Bundle+TKCategory.swift"; sourceTree = SOURCE_ROOT; };
+		2069C12B1D8AFEB9000BD656 /* Bundle+TKCategory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Bundle+TKCategory.swift"; sourceTree = "<group>"; };
 		20785F6F1AD8388E000DC57F /* NSStringTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSStringTests.h; sourceTree = "<group>"; };
 		20785F701AD8388E000DC57F /* NSStringTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSStringTests.m; sourceTree = "<group>"; };
 		20785F711AD8388E000DC57F /* UIViewTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIViewTests.h; sourceTree = "<group>"; };
@@ -251,97 +251,97 @@
 		207C97B01BD7F1AC00342677 /* NSView+Positioning.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSView+Positioning.m"; sourceTree = "<group>"; };
 		207C97B31BD7F3F200342677 /* NSView+TKCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSView+TKCategory.h"; sourceTree = "<group>"; };
 		207C97B41BD7F3F200342677 /* NSView+TKCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSView+TKCategory.m"; sourceTree = "<group>"; };
-		209507342188EA7E00AD35F0 /* CurrySwift/URLRequest+TKCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CurrySwift/URLRequest+TKCategory.swift"; sourceTree = SOURCE_ROOT; };
+		209507342188EA7E00AD35F0 /* URLRequest+TKCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URLRequest+TKCategory.swift"; sourceTree = "<group>"; };
 		20B5FE1F1BB3613F00C0F848 /* curryMac.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = curryMac.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		20B5FE211BB3613F00C0F848 /* curryMac.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = curryMac.h; sourceTree = "<group>"; };
 		20B5FE231BB3613F00C0F848 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		20C1E9A42040A75F0096C895 /* CurrySwift/UIView+Velocity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CurrySwift/UIView+Velocity.swift"; sourceTree = SOURCE_ROOT; };
+		20C1E9A42040A75F0096C895 /* UIView+Velocity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Velocity.swift"; sourceTree = "<group>"; };
 		20CEA42B1BA1105D0009D60C /* curryTV.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = curryTV.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		20CEA42D1BA1105D0009D60C /* curryTV.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = curryTV.h; sourceTree = "<group>"; };
 		20CEA42F1BA1105D0009D60C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		6DCE542060D0500B386E3415 /* CurrySwift/Bundle+Receipts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CurrySwift/Bundle+Receipts.swift"; sourceTree = SOURCE_ROOT; };
-		1E1930CDA51DD156ABF336CB /* CurrySwift/CAAnimation+TKAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CurrySwift/CAAnimation+TKAnimation.swift"; sourceTree = SOURCE_ROOT; };
-		58BF917DB14BFA96D4A05139 /* CurrySwift/CAKeyframeAnimation+TKAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CurrySwift/CAKeyframeAnimation+TKAnimation.swift"; sourceTree = SOURCE_ROOT; };
-		B3452C2DE33A6F8DAAB17119 /* CurrySwift/CALayer+TKAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CurrySwift/CALayer+TKAnimation.swift"; sourceTree = SOURCE_ROOT; };
-		4B180A78457A49EAFF3AD920 /* CurrySwift/NSArray+TKCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CurrySwift/NSArray+TKCategory.swift"; sourceTree = SOURCE_ROOT; };
-		167A99DBA5CEEFF42F53DB61 /* CurrySwift/NSAttributedString+TKCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CurrySwift/NSAttributedString+TKCategory.swift"; sourceTree = SOURCE_ROOT; };
-		BA1B42980D84953971918B00 /* CurrySwift/NSDate+TKCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CurrySwift/NSDate+TKCategory.swift"; sourceTree = SOURCE_ROOT; };
-		39A0B9444ABB2668A49B2C02 /* CurrySwift/NSMutableAttributedString+TKCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CurrySwift/NSMutableAttributedString+TKCategory.swift"; sourceTree = SOURCE_ROOT; };
-		443CC8EAC6A267DCE864EDE7 /* CurrySwift/NSObject+DataHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CurrySwift/NSObject+DataHelper.swift"; sourceTree = SOURCE_ROOT; };
-		53C53AD929E7D11529FFABB4 /* CurrySwift/NSObject+JSON.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CurrySwift/NSObject+JSON.swift"; sourceTree = SOURCE_ROOT; };
-		DDCE5A98E73D623C2146ACC3 /* CurrySwift/NSObject+TKCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CurrySwift/NSObject+TKCategory.swift"; sourceTree = SOURCE_ROOT; };
-		56448E3C6352493F4AEB097C /* CurrySwift/NSString+TKCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CurrySwift/NSString+TKCategory.swift"; sourceTree = SOURCE_ROOT; };
-		8FA0500BC49ED625B17F8689 /* CurrySwift/NSString+TKUIKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CurrySwift/NSString+TKUIKit.swift"; sourceTree = SOURCE_ROOT; };
-		F3091944BC568B492C18CA3B /* CurrySwift/TKProgressDataTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CurrySwift/TKProgressDataTask.swift"; sourceTree = SOURCE_ROOT; };
-		09B9E681923B6CC14588DFC6 /* CurrySwift/Timer+Blocks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CurrySwift/Timer+Blocks.swift"; sourceTree = SOURCE_ROOT; };
-		21F1E1EED1373F6B69CCE1A9 /* CurrySwift/UIActionSheet+Blocks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CurrySwift/UIActionSheet+Blocks.swift"; sourceTree = SOURCE_ROOT; };
-		906DF06677F800A3CFF35748 /* CurrySwift/UIActionSheet+TKCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CurrySwift/UIActionSheet+TKCategory.swift"; sourceTree = SOURCE_ROOT; };
-		F44AD7D1AA0046C8BA701302 /* CurrySwift/UIAlertController+TKCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CurrySwift/UIAlertController+TKCategory.swift"; sourceTree = SOURCE_ROOT; };
-		9FED3256DF61CE3ED413862E /* CurrySwift/UIAlertView+Blocks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CurrySwift/UIAlertView+Blocks.swift"; sourceTree = SOURCE_ROOT; };
-		8D3B86BD2BF3BFD7F8BD737D /* CurrySwift/UIAlertView+TKCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CurrySwift/UIAlertView+TKCategory.swift"; sourceTree = SOURCE_ROOT; };
-		7347268D29A81D3FE660105B /* CurrySwift/UIApplication+TKCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CurrySwift/UIApplication+TKCategory.swift"; sourceTree = SOURCE_ROOT; };
-		B85076550EF62B262BD61C8B /* CurrySwift/UIBarButtonItem+TKCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CurrySwift/UIBarButtonItem+TKCategory.swift"; sourceTree = SOURCE_ROOT; };
-		19461E01AB5658A2F5AACA8F /* CurrySwift/UIButton+TKCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CurrySwift/UIButton+TKCategory.swift"; sourceTree = SOURCE_ROOT; };
-		EBE8C15D2463F2298BA58FFD /* CurrySwift/UIColor+TKCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CurrySwift/UIColor+TKCategory.swift"; sourceTree = SOURCE_ROOT; };
-		93A18776CC1C2A31330DD42B /* CurrySwift/UIControl+Blocks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CurrySwift/UIControl+Blocks.swift"; sourceTree = SOURCE_ROOT; };
-		BCE3C5094E05DC00C2D78E99 /* CurrySwift/UIDevice+TKCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CurrySwift/UIDevice+TKCategory.swift"; sourceTree = SOURCE_ROOT; };
-		3A714C846D3AD6025D08EB40 /* CurrySwift/UIFont+TKCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CurrySwift/UIFont+TKCategory.swift"; sourceTree = SOURCE_ROOT; };
-		109397DA6F7297D1C614E8D2 /* CurrySwift/UIGestureRecognizer+Blocks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CurrySwift/UIGestureRecognizer+Blocks.swift"; sourceTree = SOURCE_ROOT; };
-		42E03D563A88F72B212BDC25 /* CurrySwift/UIGestureRecognizer+TKCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CurrySwift/UIGestureRecognizer+TKCategory.swift"; sourceTree = SOURCE_ROOT; };
-		F956576FE2E7C2C9724A90BF /* CurrySwift/UIImage+TKCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CurrySwift/UIImage+TKCategory.swift"; sourceTree = SOURCE_ROOT; };
-		5AEC4BBA78F7A2ADCF9C92E0 /* CurrySwift/UIImagePickerController+TKCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CurrySwift/UIImagePickerController+TKCategory.swift"; sourceTree = SOURCE_ROOT; };
-		E1321D5656D42A9050E3D239 /* CurrySwift/UIImageView+TKCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CurrySwift/UIImageView+TKCategory.swift"; sourceTree = SOURCE_ROOT; };
-		F3C8D6C47F8269B4FBDDF754 /* CurrySwift/UILabel+Initializers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CurrySwift/UILabel+Initializers.swift"; sourceTree = SOURCE_ROOT; };
-		A84D9EA4A90E2771FEC0B6AA /* CurrySwift/UILabel+TKCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CurrySwift/UILabel+TKCategory.swift"; sourceTree = SOURCE_ROOT; };
-		269A7888631C49C78464BC09 /* CurrySwift/UIMotionEffectGroup+TKCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CurrySwift/UIMotionEffectGroup+TKCategory.swift"; sourceTree = SOURCE_ROOT; };
-		A55B298C26E4E15D8489E7F5 /* CurrySwift/UINavigationBar+TKCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CurrySwift/UINavigationBar+TKCategory.swift"; sourceTree = SOURCE_ROOT; };
-		450C11914EA3E171DE0D2C5B /* CurrySwift/UIPanGestureRecognizer+VelocityDirection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CurrySwift/UIPanGestureRecognizer+VelocityDirection.swift"; sourceTree = SOURCE_ROOT; };
-		AD7CC0ADEB2A7B0B6B147711 /* CurrySwift/UIScreen+TKCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CurrySwift/UIScreen+TKCategory.swift"; sourceTree = SOURCE_ROOT; };
-		DAB34ACF122A4DE6F6AA7316 /* CurrySwift/UIScrollView+Positioning.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CurrySwift/UIScrollView+Positioning.swift"; sourceTree = SOURCE_ROOT; };
-		6C98F84FEBBA6452C3A0D518 /* CurrySwift/UIScrollview+TKCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CurrySwift/UIScrollview+TKCategory.swift"; sourceTree = SOURCE_ROOT; };
-		B6FB7BE3A942AD6FC0FF7E5F /* CurrySwift/UITextField+TKCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CurrySwift/UITextField+TKCategory.swift"; sourceTree = SOURCE_ROOT; };
-		8C479B20BFB81D0B188FCB7A /* CurrySwift/UITraitCollection+TKCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CurrySwift/UITraitCollection+TKCategory.swift"; sourceTree = SOURCE_ROOT; };
-		A228DD3708DCF737A0B784E9 /* CurrySwift/UIView+GestureRecognizerBlock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CurrySwift/UIView+GestureRecognizerBlock.swift"; sourceTree = SOURCE_ROOT; };
-		6685506B4C02BEA8CCD730F2 /* CurrySwift/UIView+Initializers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CurrySwift/UIView+Initializers.swift"; sourceTree = SOURCE_ROOT; };
-		EA0897CE1AEFA8542B2A7209 /* CurrySwift/UIView+Positioning.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CurrySwift/UIView+Positioning.swift"; sourceTree = SOURCE_ROOT; };
-		20D910B8DAD3F597038DD11F /* CurrySwift/UIView+TKAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CurrySwift/UIView+TKAnimation.swift"; sourceTree = SOURCE_ROOT; };
-		409961D11F30A741C5B57902 /* CurrySwift/UIView+TKCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CurrySwift/UIView+TKCategory.swift"; sourceTree = SOURCE_ROOT; };
-		46B145FA7D9F2FCE5A413862 /* CurrySwift/UIViewController+TKCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CurrySwift/UIViewController+TKCategory.swift"; sourceTree = SOURCE_ROOT; };
-		CBF7BC3165FDF1AD13617999 /* CurrySwift/URLSession+TKCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CurrySwift/URLSession+TKCategory.swift"; sourceTree = SOURCE_ROOT; };
-		09563363555B1B088C354081 /* CurrySwift/UserDefaults+iCloud.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CurrySwift/UserDefaults+iCloud.swift"; sourceTree = SOURCE_ROOT; };
-		8B18BEC0DA14FAC441D1700A /* CurrySwift/TKCreditCardCVVTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CurrySwift/TKCreditCardCVVTextField.swift"; sourceTree = SOURCE_ROOT; };
-		7D50915DB23B939F9E13D686 /* CurrySwift/TKCreditCardExpirationTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CurrySwift/TKCreditCardExpirationTextField.swift"; sourceTree = SOURCE_ROOT; };
-		ECACD0C0A4D1CC9436938AB5 /* CurrySwift/TKCreditCardNumberTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CurrySwift/TKCreditCardNumberTextField.swift"; sourceTree = SOURCE_ROOT; };
-		F94D4407C6D89B37BCB8DA25 /* CurrySwift/TKCreditCardZipTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CurrySwift/TKCreditCardZipTextField.swift"; sourceTree = SOURCE_ROOT; };
-		34F2326758CD95A7C0AC8177 /* CurrySwift/TKDigits.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CurrySwift/TKDigits.swift"; sourceTree = SOURCE_ROOT; };
-		5E247AE80893BA3C5AB007D1 /* CurrySwift/TKPhoneNumberTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CurrySwift/TKPhoneNumberTextField.swift"; sourceTree = SOURCE_ROOT; };
-		D29274DAB8102E30BD345F8F /* CurrySwift/TKCurrentTimeLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CurrySwift/TKCurrentTimeLabel.swift"; sourceTree = SOURCE_ROOT; };
-		BDD10CD5F6ED1E4C4A956251 /* CurrySwift/TKExtendedScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CurrySwift/TKExtendedScrollView.swift"; sourceTree = SOURCE_ROOT; };
-		2E87982AF0516AB0A96C4959 /* CurrySwift/TKGradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CurrySwift/TKGradientView.swift"; sourceTree = SOURCE_ROOT; };
-		CFEB1ECD6B3EFB44DD1568D5 /* CurrySwift/TKShapeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CurrySwift/TKShapeView.swift"; sourceTree = SOURCE_ROOT; };
-		4D2E9DD3CA2320EEB6647B38 /* CurrySwift/TKStepperCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CurrySwift/TKStepperCell.swift"; sourceTree = SOURCE_ROOT; };
-		518FC7D4D9A15707A186D836 /* CurrySwift/TKSwitchCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CurrySwift/TKSwitchCell.swift"; sourceTree = SOURCE_ROOT; };
-		A674447B0EF1C8F40A70EBE4 /* CurrySwift/TKTextFieldCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CurrySwift/TKTextFieldCell.swift"; sourceTree = SOURCE_ROOT; };
-		D4F8414A9A24CA403A730A50 /* CurrySwift/TKTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CurrySwift/TKTextView.swift"; sourceTree = SOURCE_ROOT; };
-		E122083DD4EC3A07B89A565C /* CurrySwift/TKWindow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CurrySwift/TKWindow.swift"; sourceTree = SOURCE_ROOT; };
-		A5D688B0325EAA5DEC71614F /* CurrySwift/TKCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CurrySwift/TKCollectionViewController.swift"; sourceTree = SOURCE_ROOT; };
-		737649C5907A28FDB97BFBE6 /* CurrySwift/TKCustomPresentationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CurrySwift/TKCustomPresentationViewController.swift"; sourceTree = SOURCE_ROOT; };
-		2BB7A7FDF5DC4D7C20CCC88C /* CurrySwift/TKSafariWebCredentials.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CurrySwift/TKSafariWebCredentials.swift"; sourceTree = SOURCE_ROOT; };
-		0F234D25B4A203311D124497 /* CurrySwift/TKSoundAlertController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CurrySwift/TKSoundAlertController.swift"; sourceTree = SOURCE_ROOT; };
-		C4E8A0935FD895826C7207F1 /* CurrySwift/TKTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CurrySwift/TKTableViewController.swift"; sourceTree = SOURCE_ROOT; };
-		4BA2D2EA6F40AA417273086F /* CurrySwift/TKVideoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CurrySwift/TKVideoViewController.swift"; sourceTree = SOURCE_ROOT; };
-		FC82CB399E1D469176A8376D /* CurrySwift/TKWebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CurrySwift/TKWebViewController.swift"; sourceTree = SOURCE_ROOT; };
-		91B376CF0966CA09F3219698 /* CurrySwift/TKCardModalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CurrySwift/TKCardModalViewController.swift"; sourceTree = SOURCE_ROOT; };
-		6C118F3512E4A4CFA6ACC53F /* CurrySwift/TKKeyboardTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CurrySwift/TKKeyboardTableViewController.swift"; sourceTree = SOURCE_ROOT; };
-		725CBE286D8E1781897885D0 /* CurrySwift/TKDecimalInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CurrySwift/TKDecimalInputView.swift"; sourceTree = SOURCE_ROOT; };
-		FFF84D0F6C28F747F9DB8D2E /* CurrySwift/TKDecimalInputWithNextKeyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CurrySwift/TKDecimalInputWithNextKeyView.swift"; sourceTree = SOURCE_ROOT; };
-		0C7E21A61B31A0A991469E1B /* CurrySwift/TKFoundation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CurrySwift/TKFoundation.swift"; sourceTree = SOURCE_ROOT; };
-		BC72E17F6A81E151E7D48D0E /* CurrySwift/TKInputKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CurrySwift/TKInputKey.swift"; sourceTree = SOURCE_ROOT; };
-		6E997EAAE68027079012074F /* CurrySwift/TKInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CurrySwift/TKInputView.swift"; sourceTree = SOURCE_ROOT; };
-		DD67C78A81938C4EA2CEB115 /* CurrySwift/TKNumberInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CurrySwift/TKNumberInputView.swift"; sourceTree = SOURCE_ROOT; };
-		C932696EDE792DA5B83DEF70 /* CurrySwift/TKNumberInputWithNextKeyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CurrySwift/TKNumberInputWithNextKeyView.swift"; sourceTree = SOURCE_ROOT; };
-		C88A70E7A6C0E1A7A2B91D41 /* CurrySwift/TKSectionedScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CurrySwift/TKSectionedScrollView.swift"; sourceTree = SOURCE_ROOT; };
-		D7FB0C78C6BB19151F77DF8D /* CurrySwift/TKUIKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CurrySwift/TKUIKit.swift"; sourceTree = SOURCE_ROOT; };
+		6DCE542060D0500B386E3415 /* Bundle+Receipts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle+Receipts.swift"; sourceTree = "<group>"; };
+		1E1930CDA51DD156ABF336CB /* CAAnimation+TKAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CAAnimation+TKAnimation.swift"; sourceTree = "<group>"; };
+		58BF917DB14BFA96D4A05139 /* CAKeyframeAnimation+TKAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CAKeyframeAnimation+TKAnimation.swift"; sourceTree = "<group>"; };
+		B3452C2DE33A6F8DAAB17119 /* CALayer+TKAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CALayer+TKAnimation.swift"; sourceTree = "<group>"; };
+		4B180A78457A49EAFF3AD920 /* NSArray+TKCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSArray+TKCategory.swift"; sourceTree = "<group>"; };
+		167A99DBA5CEEFF42F53DB61 /* NSAttributedString+TKCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSAttributedString+TKCategory.swift"; sourceTree = "<group>"; };
+		BA1B42980D84953971918B00 /* NSDate+TKCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSDate+TKCategory.swift"; sourceTree = "<group>"; };
+		39A0B9444ABB2668A49B2C02 /* NSMutableAttributedString+TKCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSMutableAttributedString+TKCategory.swift"; sourceTree = "<group>"; };
+		443CC8EAC6A267DCE864EDE7 /* NSObject+DataHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSObject+DataHelper.swift"; sourceTree = "<group>"; };
+		53C53AD929E7D11529FFABB4 /* NSObject+JSON.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSObject+JSON.swift"; sourceTree = "<group>"; };
+		DDCE5A98E73D623C2146ACC3 /* NSObject+TKCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSObject+TKCategory.swift"; sourceTree = "<group>"; };
+		56448E3C6352493F4AEB097C /* NSString+TKCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSString+TKCategory.swift"; sourceTree = "<group>"; };
+		8FA0500BC49ED625B17F8689 /* NSString+TKUIKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSString+TKUIKit.swift"; sourceTree = "<group>"; };
+		F3091944BC568B492C18CA3B /* TKProgressDataTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TKProgressDataTask.swift"; sourceTree = "<group>"; };
+		09B9E681923B6CC14588DFC6 /* Timer+Blocks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Timer+Blocks.swift"; sourceTree = "<group>"; };
+		21F1E1EED1373F6B69CCE1A9 /* UIActionSheet+Blocks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIActionSheet+Blocks.swift"; sourceTree = "<group>"; };
+		906DF06677F800A3CFF35748 /* UIActionSheet+TKCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIActionSheet+TKCategory.swift"; sourceTree = "<group>"; };
+		F44AD7D1AA0046C8BA701302 /* UIAlertController+TKCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIAlertController+TKCategory.swift"; sourceTree = "<group>"; };
+		9FED3256DF61CE3ED413862E /* UIAlertView+Blocks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIAlertView+Blocks.swift"; sourceTree = "<group>"; };
+		8D3B86BD2BF3BFD7F8BD737D /* UIAlertView+TKCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIAlertView+TKCategory.swift"; sourceTree = "<group>"; };
+		7347268D29A81D3FE660105B /* UIApplication+TKCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIApplication+TKCategory.swift"; sourceTree = "<group>"; };
+		B85076550EF62B262BD61C8B /* UIBarButtonItem+TKCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIBarButtonItem+TKCategory.swift"; sourceTree = "<group>"; };
+		19461E01AB5658A2F5AACA8F /* UIButton+TKCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+TKCategory.swift"; sourceTree = "<group>"; };
+		EBE8C15D2463F2298BA58FFD /* UIColor+TKCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+TKCategory.swift"; sourceTree = "<group>"; };
+		93A18776CC1C2A31330DD42B /* UIControl+Blocks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIControl+Blocks.swift"; sourceTree = "<group>"; };
+		BCE3C5094E05DC00C2D78E99 /* UIDevice+TKCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIDevice+TKCategory.swift"; sourceTree = "<group>"; };
+		3A714C846D3AD6025D08EB40 /* UIFont+TKCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+TKCategory.swift"; sourceTree = "<group>"; };
+		109397DA6F7297D1C614E8D2 /* UIGestureRecognizer+Blocks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIGestureRecognizer+Blocks.swift"; sourceTree = "<group>"; };
+		42E03D563A88F72B212BDC25 /* UIGestureRecognizer+TKCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIGestureRecognizer+TKCategory.swift"; sourceTree = "<group>"; };
+		F956576FE2E7C2C9724A90BF /* UIImage+TKCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+TKCategory.swift"; sourceTree = "<group>"; };
+		5AEC4BBA78F7A2ADCF9C92E0 /* UIImagePickerController+TKCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImagePickerController+TKCategory.swift"; sourceTree = "<group>"; };
+		E1321D5656D42A9050E3D239 /* UIImageView+TKCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+TKCategory.swift"; sourceTree = "<group>"; };
+		F3C8D6C47F8269B4FBDDF754 /* UILabel+Initializers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILabel+Initializers.swift"; sourceTree = "<group>"; };
+		A84D9EA4A90E2771FEC0B6AA /* UILabel+TKCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILabel+TKCategory.swift"; sourceTree = "<group>"; };
+		269A7888631C49C78464BC09 /* UIMotionEffectGroup+TKCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIMotionEffectGroup+TKCategory.swift"; sourceTree = "<group>"; };
+		A55B298C26E4E15D8489E7F5 /* UINavigationBar+TKCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UINavigationBar+TKCategory.swift"; sourceTree = "<group>"; };
+		450C11914EA3E171DE0D2C5B /* UIPanGestureRecognizer+VelocityDirection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIPanGestureRecognizer+VelocityDirection.swift"; sourceTree = "<group>"; };
+		AD7CC0ADEB2A7B0B6B147711 /* UIScreen+TKCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIScreen+TKCategory.swift"; sourceTree = "<group>"; };
+		DAB34ACF122A4DE6F6AA7316 /* UIScrollView+Positioning.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIScrollView+Positioning.swift"; sourceTree = "<group>"; };
+		6C98F84FEBBA6452C3A0D518 /* UIScrollview+TKCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIScrollview+TKCategory.swift"; sourceTree = "<group>"; };
+		B6FB7BE3A942AD6FC0FF7E5F /* UITextField+TKCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+TKCategory.swift"; sourceTree = "<group>"; };
+		8C479B20BFB81D0B188FCB7A /* UITraitCollection+TKCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITraitCollection+TKCategory.swift"; sourceTree = "<group>"; };
+		A228DD3708DCF737A0B784E9 /* UIView+GestureRecognizerBlock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+GestureRecognizerBlock.swift"; sourceTree = "<group>"; };
+		6685506B4C02BEA8CCD730F2 /* UIView+Initializers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Initializers.swift"; sourceTree = "<group>"; };
+		EA0897CE1AEFA8542B2A7209 /* UIView+Positioning.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Positioning.swift"; sourceTree = "<group>"; };
+		20D910B8DAD3F597038DD11F /* UIView+TKAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+TKAnimation.swift"; sourceTree = "<group>"; };
+		409961D11F30A741C5B57902 /* UIView+TKCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+TKCategory.swift"; sourceTree = "<group>"; };
+		46B145FA7D9F2FCE5A413862 /* UIViewController+TKCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+TKCategory.swift"; sourceTree = "<group>"; };
+		CBF7BC3165FDF1AD13617999 /* URLSession+TKCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URLSession+TKCategory.swift"; sourceTree = "<group>"; };
+		09563363555B1B088C354081 /* UserDefaults+iCloud.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserDefaults+iCloud.swift"; sourceTree = "<group>"; };
+		8B18BEC0DA14FAC441D1700A /* TKCreditCardCVVTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TKCreditCardCVVTextField.swift"; sourceTree = "<group>"; };
+		7D50915DB23B939F9E13D686 /* TKCreditCardExpirationTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TKCreditCardExpirationTextField.swift"; sourceTree = "<group>"; };
+		ECACD0C0A4D1CC9436938AB5 /* TKCreditCardNumberTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TKCreditCardNumberTextField.swift"; sourceTree = "<group>"; };
+		F94D4407C6D89B37BCB8DA25 /* TKCreditCardZipTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TKCreditCardZipTextField.swift"; sourceTree = "<group>"; };
+		34F2326758CD95A7C0AC8177 /* TKDigits.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TKDigits.swift"; sourceTree = "<group>"; };
+		5E247AE80893BA3C5AB007D1 /* TKPhoneNumberTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TKPhoneNumberTextField.swift"; sourceTree = "<group>"; };
+		D29274DAB8102E30BD345F8F /* TKCurrentTimeLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TKCurrentTimeLabel.swift"; sourceTree = "<group>"; };
+		BDD10CD5F6ED1E4C4A956251 /* TKExtendedScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TKExtendedScrollView.swift"; sourceTree = "<group>"; };
+		2E87982AF0516AB0A96C4959 /* TKGradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TKGradientView.swift"; sourceTree = "<group>"; };
+		CFEB1ECD6B3EFB44DD1568D5 /* TKShapeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TKShapeView.swift"; sourceTree = "<group>"; };
+		4D2E9DD3CA2320EEB6647B38 /* TKStepperCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TKStepperCell.swift"; sourceTree = "<group>"; };
+		518FC7D4D9A15707A186D836 /* TKSwitchCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TKSwitchCell.swift"; sourceTree = "<group>"; };
+		A674447B0EF1C8F40A70EBE4 /* TKTextFieldCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TKTextFieldCell.swift"; sourceTree = "<group>"; };
+		D4F8414A9A24CA403A730A50 /* TKTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TKTextView.swift"; sourceTree = "<group>"; };
+		E122083DD4EC3A07B89A565C /* TKWindow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TKWindow.swift"; sourceTree = "<group>"; };
+		A5D688B0325EAA5DEC71614F /* TKCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TKCollectionViewController.swift"; sourceTree = "<group>"; };
+		737649C5907A28FDB97BFBE6 /* TKCustomPresentationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TKCustomPresentationViewController.swift"; sourceTree = "<group>"; };
+		2BB7A7FDF5DC4D7C20CCC88C /* TKSafariWebCredentials.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TKSafariWebCredentials.swift"; sourceTree = "<group>"; };
+		0F234D25B4A203311D124497 /* TKSoundAlertController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TKSoundAlertController.swift"; sourceTree = "<group>"; };
+		C4E8A0935FD895826C7207F1 /* TKTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TKTableViewController.swift"; sourceTree = "<group>"; };
+		4BA2D2EA6F40AA417273086F /* TKVideoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TKVideoViewController.swift"; sourceTree = "<group>"; };
+		FC82CB399E1D469176A8376D /* TKWebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TKWebViewController.swift"; sourceTree = "<group>"; };
+		91B376CF0966CA09F3219698 /* TKCardModalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TKCardModalViewController.swift"; sourceTree = "<group>"; };
+		6C118F3512E4A4CFA6ACC53F /* TKKeyboardTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TKKeyboardTableViewController.swift"; sourceTree = "<group>"; };
+		725CBE286D8E1781897885D0 /* TKDecimalInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TKDecimalInputView.swift"; sourceTree = "<group>"; };
+		FFF84D0F6C28F747F9DB8D2E /* TKDecimalInputWithNextKeyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TKDecimalInputWithNextKeyView.swift"; sourceTree = "<group>"; };
+		0C7E21A61B31A0A991469E1B /* TKFoundation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TKFoundation.swift"; sourceTree = "<group>"; };
+		BC72E17F6A81E151E7D48D0E /* TKInputKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TKInputKey.swift"; sourceTree = "<group>"; };
+		6E997EAAE68027079012074F /* TKInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TKInputView.swift"; sourceTree = "<group>"; };
+		DD67C78A81938C4EA2CEB115 /* TKNumberInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TKNumberInputView.swift"; sourceTree = "<group>"; };
+		C932696EDE792DA5B83DEF70 /* TKNumberInputWithNextKeyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TKNumberInputWithNextKeyView.swift"; sourceTree = "<group>"; };
+		C88A70E7A6C0E1A7A2B91D41 /* TKSectionedScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TKSectionedScrollView.swift"; sourceTree = "<group>"; };
+		D7FB0C78C6BB19151F77DF8D /* TKUIKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TKUIKit.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -388,6 +388,7 @@
 			isa = PBXGroup;
 			children = (
 				200B62571AD7FB460049E35C /* curry */,
+				77EB8480DACFF21B500535F4 /* CurrySwift */,
 				C783B9893527F4B1545E677C /* CurrySwift */,
 				200B62641AD7FB460049E35C /* curryTests */,
 				20CEA42C1BA1105D0009D60C /* curryTV */,
@@ -413,7 +414,6 @@
 			isa = PBXGroup;
 			children = (
 				200B625A1AD7FB460049E35C /* curry.h */,
-				200B629A1AD7FD4B0049E35C /* Categories */,
 				200B62581AD7FB460049E35C /* Supporting Files */,
 			);
 			path = curry;
@@ -453,49 +453,6 @@
 			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		200B629A1AD7FD4B0049E35C /* Categories */ = {
-			isa = PBXGroup;
-			children = (
-				200B62F81AD7FF6A0049E35C /* Foundation */,
-				200B62F91AD7FF9D0049E35C /* UIKit */,
-				200B62AF1AD7FE100049E35C /* Animations */,
-			);
-			path = Categories;
-			sourceTree = "<group>";
-		};
-		200B62AF1AD7FE100049E35C /* Animations */ = {
-			isa = PBXGroup;
-			children = (
-				20C1E9A42040A75F0096C895 /* CurrySwift/UIView+Velocity.swift */,
-			);
-			path = Animations;
-			sourceTree = "<group>";
-		};
-		200B62F81AD7FF6A0049E35C /* Foundation */ = {
-			isa = PBXGroup;
-			children = (
-				2069C12B1D8AFEB9000BD656 /* CurrySwift/Bundle+TKCategory.swift */,
-				209507342188EA7E00AD35F0 /* CurrySwift/URLRequest+TKCategory.swift */,
-			);
-			path = Foundation;
-			sourceTree = "<group>";
-		};
-		200B62F91AD7FF9D0049E35C /* UIKit */ = {
-			isa = PBXGroup;
-			children = (
-				200B62FD1AD800520049E35C /* Views */,
-			);
-			path = UIKit;
-			sourceTree = "<group>";
-		};
-		200B62FD1AD800520049E35C /* Views */ = {
-			isa = PBXGroup;
-			children = (
-				201BED4521C0681600CC13BE /* CurrySwift/UILabel+Spacing.swift */,
-			);
-			path = Views;
-			sourceTree = "<group>";
-		};
 		2010DCB11BB0E40E00810A98 /* curryWatch */ = {
 			isa = PBXGroup;
 			children = (
@@ -527,98 +484,194 @@
 			path = curryTV;
 			sourceTree = "<group>";
 		};
-		C783B9893527F4B1545E677C /* CurrySwift */ = {
+		DF06B2082AF29C7FBB815084 /* Animations */ = {
 			isa = PBXGroup;
 			children = (
-				725CBE286D8E1781897885D0 /* CurrySwift/TKDecimalInputView.swift */,
-				FFF84D0F6C28F747F9DB8D2E /* CurrySwift/TKDecimalInputWithNextKeyView.swift */,
-				0C7E21A61B31A0A991469E1B /* CurrySwift/TKFoundation.swift */,
-				BC72E17F6A81E151E7D48D0E /* CurrySwift/TKInputKey.swift */,
-				6E997EAAE68027079012074F /* CurrySwift/TKInputView.swift */,
-				DD67C78A81938C4EA2CEB115 /* CurrySwift/TKNumberInputView.swift */,
-				C932696EDE792DA5B83DEF70 /* CurrySwift/TKNumberInputWithNextKeyView.swift */,
-				C88A70E7A6C0E1A7A2B91D41 /* CurrySwift/TKSectionedScrollView.swift */,
-				D7FB0C78C6BB19151F77DF8D /* CurrySwift/TKUIKit.swift */,
-				91B376CF0966CA09F3219698 /* CurrySwift/TKCardModalViewController.swift */,
-				6C118F3512E4A4CFA6ACC53F /* CurrySwift/TKKeyboardTableViewController.swift */,
-				A5D688B0325EAA5DEC71614F /* CurrySwift/TKCollectionViewController.swift */,
-				737649C5907A28FDB97BFBE6 /* CurrySwift/TKCustomPresentationViewController.swift */,
-				2BB7A7FDF5DC4D7C20CCC88C /* CurrySwift/TKSafariWebCredentials.swift */,
-				0F234D25B4A203311D124497 /* CurrySwift/TKSoundAlertController.swift */,
-				C4E8A0935FD895826C7207F1 /* CurrySwift/TKTableViewController.swift */,
-				4BA2D2EA6F40AA417273086F /* CurrySwift/TKVideoViewController.swift */,
-				FC82CB399E1D469176A8376D /* CurrySwift/TKWebViewController.swift */,
-				D29274DAB8102E30BD345F8F /* CurrySwift/TKCurrentTimeLabel.swift */,
-				BDD10CD5F6ED1E4C4A956251 /* CurrySwift/TKExtendedScrollView.swift */,
-				2E87982AF0516AB0A96C4959 /* CurrySwift/TKGradientView.swift */,
-				CFEB1ECD6B3EFB44DD1568D5 /* CurrySwift/TKShapeView.swift */,
-				4D2E9DD3CA2320EEB6647B38 /* CurrySwift/TKStepperCell.swift */,
-				518FC7D4D9A15707A186D836 /* CurrySwift/TKSwitchCell.swift */,
-				A674447B0EF1C8F40A70EBE4 /* CurrySwift/TKTextFieldCell.swift */,
-				D4F8414A9A24CA403A730A50 /* CurrySwift/TKTextView.swift */,
-				E122083DD4EC3A07B89A565C /* CurrySwift/TKWindow.swift */,
-				8B18BEC0DA14FAC441D1700A /* CurrySwift/TKCreditCardCVVTextField.swift */,
-				7D50915DB23B939F9E13D686 /* CurrySwift/TKCreditCardExpirationTextField.swift */,
-				ECACD0C0A4D1CC9436938AB5 /* CurrySwift/TKCreditCardNumberTextField.swift */,
-				F94D4407C6D89B37BCB8DA25 /* CurrySwift/TKCreditCardZipTextField.swift */,
-				34F2326758CD95A7C0AC8177 /* CurrySwift/TKDigits.swift */,
-				5E247AE80893BA3C5AB007D1 /* CurrySwift/TKPhoneNumberTextField.swift */,
-				6DCE542060D0500B386E3415 /* CurrySwift/Bundle+Receipts.swift */,
-				2069C12B1D8AFEB9000BD656 /* CurrySwift/Bundle+TKCategory.swift */,
-				1E1930CDA51DD156ABF336CB /* CurrySwift/CAAnimation+TKAnimation.swift */,
-				58BF917DB14BFA96D4A05139 /* CurrySwift/CAKeyframeAnimation+TKAnimation.swift */,
-				B3452C2DE33A6F8DAAB17119 /* CurrySwift/CALayer+TKAnimation.swift */,
-				4B180A78457A49EAFF3AD920 /* CurrySwift/NSArray+TKCategory.swift */,
-				167A99DBA5CEEFF42F53DB61 /* CurrySwift/NSAttributedString+TKCategory.swift */,
-				BA1B42980D84953971918B00 /* CurrySwift/NSDate+TKCategory.swift */,
-				39A0B9444ABB2668A49B2C02 /* CurrySwift/NSMutableAttributedString+TKCategory.swift */,
-				443CC8EAC6A267DCE864EDE7 /* CurrySwift/NSObject+DataHelper.swift */,
-				53C53AD929E7D11529FFABB4 /* CurrySwift/NSObject+JSON.swift */,
-				DDCE5A98E73D623C2146ACC3 /* CurrySwift/NSObject+TKCategory.swift */,
-				56448E3C6352493F4AEB097C /* CurrySwift/NSString+TKCategory.swift */,
-				8FA0500BC49ED625B17F8689 /* CurrySwift/NSString+TKUIKit.swift */,
-				F3091944BC568B492C18CA3B /* CurrySwift/TKProgressDataTask.swift */,
-				09B9E681923B6CC14588DFC6 /* CurrySwift/Timer+Blocks.swift */,
-				21F1E1EED1373F6B69CCE1A9 /* CurrySwift/UIActionSheet+Blocks.swift */,
-				906DF06677F800A3CFF35748 /* CurrySwift/UIActionSheet+TKCategory.swift */,
-				F44AD7D1AA0046C8BA701302 /* CurrySwift/UIAlertController+TKCategory.swift */,
-				9FED3256DF61CE3ED413862E /* CurrySwift/UIAlertView+Blocks.swift */,
-				8D3B86BD2BF3BFD7F8BD737D /* CurrySwift/UIAlertView+TKCategory.swift */,
-				7347268D29A81D3FE660105B /* CurrySwift/UIApplication+TKCategory.swift */,
-				B85076550EF62B262BD61C8B /* CurrySwift/UIBarButtonItem+TKCategory.swift */,
-				19461E01AB5658A2F5AACA8F /* CurrySwift/UIButton+TKCategory.swift */,
-				EBE8C15D2463F2298BA58FFD /* CurrySwift/UIColor+TKCategory.swift */,
-				93A18776CC1C2A31330DD42B /* CurrySwift/UIControl+Blocks.swift */,
-				BCE3C5094E05DC00C2D78E99 /* CurrySwift/UIDevice+TKCategory.swift */,
-				3A714C846D3AD6025D08EB40 /* CurrySwift/UIFont+TKCategory.swift */,
-				109397DA6F7297D1C614E8D2 /* CurrySwift/UIGestureRecognizer+Blocks.swift */,
-				42E03D563A88F72B212BDC25 /* CurrySwift/UIGestureRecognizer+TKCategory.swift */,
-				F956576FE2E7C2C9724A90BF /* CurrySwift/UIImage+TKCategory.swift */,
-				5AEC4BBA78F7A2ADCF9C92E0 /* CurrySwift/UIImagePickerController+TKCategory.swift */,
-				E1321D5656D42A9050E3D239 /* CurrySwift/UIImageView+TKCategory.swift */,
-				F3C8D6C47F8269B4FBDDF754 /* CurrySwift/UILabel+Initializers.swift */,
-				201BED4521C0681600CC13BE /* CurrySwift/UILabel+Spacing.swift */,
-				A84D9EA4A90E2771FEC0B6AA /* CurrySwift/UILabel+TKCategory.swift */,
-				269A7888631C49C78464BC09 /* CurrySwift/UIMotionEffectGroup+TKCategory.swift */,
-				A55B298C26E4E15D8489E7F5 /* CurrySwift/UINavigationBar+TKCategory.swift */,
-				450C11914EA3E171DE0D2C5B /* CurrySwift/UIPanGestureRecognizer+VelocityDirection.swift */,
-				AD7CC0ADEB2A7B0B6B147711 /* CurrySwift/UIScreen+TKCategory.swift */,
-				DAB34ACF122A4DE6F6AA7316 /* CurrySwift/UIScrollView+Positioning.swift */,
-				6C98F84FEBBA6452C3A0D518 /* CurrySwift/UIScrollview+TKCategory.swift */,
-				B6FB7BE3A942AD6FC0FF7E5F /* CurrySwift/UITextField+TKCategory.swift */,
-				8C479B20BFB81D0B188FCB7A /* CurrySwift/UITraitCollection+TKCategory.swift */,
-				A228DD3708DCF737A0B784E9 /* CurrySwift/UIView+GestureRecognizerBlock.swift */,
-				6685506B4C02BEA8CCD730F2 /* CurrySwift/UIView+Initializers.swift */,
-				EA0897CE1AEFA8542B2A7209 /* CurrySwift/UIView+Positioning.swift */,
-				20D910B8DAD3F597038DD11F /* CurrySwift/UIView+TKAnimation.swift */,
-				409961D11F30A741C5B57902 /* CurrySwift/UIView+TKCategory.swift */,
-				20C1E9A42040A75F0096C895 /* CurrySwift/UIView+Velocity.swift */,
-				46B145FA7D9F2FCE5A413862 /* CurrySwift/UIViewController+TKCategory.swift */,
-				209507342188EA7E00AD35F0 /* CurrySwift/URLRequest+TKCategory.swift */,
-				CBF7BC3165FDF1AD13617999 /* CurrySwift/URLSession+TKCategory.swift */,
-				09563363555B1B088C354081 /* CurrySwift/UserDefaults+iCloud.swift */,
+				1E1930CDA51DD156ABF336CB /* CAAnimation+TKAnimation.swift */,
+				58BF917DB14BFA96D4A05139 /* CAKeyframeAnimation+TKAnimation.swift */,
+				B3452C2DE33A6F8DAAB17119 /* CALayer+TKAnimation.swift */,
+				20D910B8DAD3F597038DD11F /* UIView+TKAnimation.swift */,
+				20C1E9A42040A75F0096C895 /* UIView+Velocity.swift */,
 			);
-			name = CurrySwift;
+			path = Animations;
+			sourceTree = "<group>";
+		};
+		6CC32845AEE18EB0BCFE47C1 /* Foundation */ = {
+			isa = PBXGroup;
+			children = (
+				6DCE542060D0500B386E3415 /* Bundle+Receipts.swift */,
+				2069C12B1D8AFEB9000BD656 /* Bundle+TKCategory.swift */,
+				4B180A78457A49EAFF3AD920 /* NSArray+TKCategory.swift */,
+				167A99DBA5CEEFF42F53DB61 /* NSAttributedString+TKCategory.swift */,
+				BA1B42980D84953971918B00 /* NSDate+TKCategory.swift */,
+				39A0B9444ABB2668A49B2C02 /* NSMutableAttributedString+TKCategory.swift */,
+				443CC8EAC6A267DCE864EDE7 /* NSObject+DataHelper.swift */,
+				DDCE5A98E73D623C2146ACC3 /* NSObject+TKCategory.swift */,
+				56448E3C6352493F4AEB097C /* NSString+TKCategory.swift */,
+				8FA0500BC49ED625B17F8689 /* NSString+TKUIKit.swift */,
+				F3091944BC568B492C18CA3B /* TKProgressDataTask.swift */,
+				09B9E681923B6CC14588DFC6 /* Timer+Blocks.swift */,
+				209507342188EA7E00AD35F0 /* URLRequest+TKCategory.swift */,
+				CBF7BC3165FDF1AD13617999 /* URLSession+TKCategory.swift */,
+				09563363555B1B088C354081 /* UserDefaults+iCloud.swift */,
+			);
+			path = Foundation;
+			sourceTree = "<group>";
+		};
+		85B10197024E6ED9344CEFA6 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				7347268D29A81D3FE660105B /* UIApplication+TKCategory.swift */,
+				BCE3C5094E05DC00C2D78E99 /* UIDevice+TKCategory.swift */,
+				AD7CC0ADEB2A7B0B6B147711 /* UIScreen+TKCategory.swift */,
+				8C479B20BFB81D0B188FCB7A /* UITraitCollection+TKCategory.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		2D564B564864D2F0D2BBD97A /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				21F1E1EED1373F6B69CCE1A9 /* UIActionSheet+Blocks.swift */,
+				906DF06677F800A3CFF35748 /* UIActionSheet+TKCategory.swift */,
+				F44AD7D1AA0046C8BA701302 /* UIAlertController+TKCategory.swift */,
+				9FED3256DF61CE3ED413862E /* UIAlertView+Blocks.swift */,
+				8D3B86BD2BF3BFD7F8BD737D /* UIAlertView+TKCategory.swift */,
+				93A18776CC1C2A31330DD42B /* UIControl+Blocks.swift */,
+				5AEC4BBA78F7A2ADCF9C92E0 /* UIImagePickerController+TKCategory.swift */,
+				46B145FA7D9F2FCE5A413862 /* UIViewController+TKCategory.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		2C2CB0727C8397BFA0881192 /* Elements */ = {
+			isa = PBXGroup;
+			children = (
+				EBE8C15D2463F2298BA58FFD /* UIColor+TKCategory.swift */,
+				3A714C846D3AD6025D08EB40 /* UIFont+TKCategory.swift */,
+				109397DA6F7297D1C614E8D2 /* UIGestureRecognizer+Blocks.swift */,
+				42E03D563A88F72B212BDC25 /* UIGestureRecognizer+TKCategory.swift */,
+				F956576FE2E7C2C9724A90BF /* UIImage+TKCategory.swift */,
+				269A7888631C49C78464BC09 /* UIMotionEffectGroup+TKCategory.swift */,
+			);
+			path = Elements;
+			sourceTree = "<group>";
+		};
+		0D1332D1D0094A7C65440711 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B85076550EF62B262BD61C8B /* UIBarButtonItem+TKCategory.swift */,
+				19461E01AB5658A2F5AACA8F /* UIButton+TKCategory.swift */,
+				E1321D5656D42A9050E3D239 /* UIImageView+TKCategory.swift */,
+				F3C8D6C47F8269B4FBDDF754 /* UILabel+Initializers.swift */,
+				201BED4521C0681600CC13BE /* UILabel+Spacing.swift */,
+				A84D9EA4A90E2771FEC0B6AA /* UILabel+TKCategory.swift */,
+				A55B298C26E4E15D8489E7F5 /* UINavigationBar+TKCategory.swift */,
+				450C11914EA3E171DE0D2C5B /* UIPanGestureRecognizer+VelocityDirection.swift */,
+				DAB34ACF122A4DE6F6AA7316 /* UIScrollView+Positioning.swift */,
+				6C98F84FEBBA6452C3A0D518 /* UIScrollview+TKCategory.swift */,
+				B6FB7BE3A942AD6FC0FF7E5F /* UITextField+TKCategory.swift */,
+				A228DD3708DCF737A0B784E9 /* UIView+GestureRecognizerBlock.swift */,
+				6685506B4C02BEA8CCD730F2 /* UIView+Initializers.swift */,
+				EA0897CE1AEFA8542B2A7209 /* UIView+Positioning.swift */,
+				409961D11F30A741C5B57902 /* UIView+TKCategory.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		3A0CB16223E35A0F22690F2E /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				85B10197024E6ED9344CEFA6 /* Base */,
+				2D564B564864D2F0D2BBD97A /* Controllers */,
+				2C2CB0727C8397BFA0881192 /* Elements */,
+				0D1332D1D0094A7C65440711 /* Views */,
+			);
+			path = UIKit;
+			sourceTree = "<group>";
+		};
+		C50BDE7EEC12695627C4FCD3 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				DF06B2082AF29C7FBB815084 /* Animations */,
+				6CC32845AEE18EB0BCFE47C1 /* Foundation */,
+				3A0CB16223E35A0F22690F2E /* UIKit */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
+		2D8E9E22559AB6E553E6D09C /* CreditCard */ = {
+			isa = PBXGroup;
+			children = (
+				8B18BEC0DA14FAC441D1700A /* TKCreditCardCVVTextField.swift */,
+				7D50915DB23B939F9E13D686 /* TKCreditCardExpirationTextField.swift */,
+				ECACD0C0A4D1CC9436938AB5 /* TKCreditCardNumberTextField.swift */,
+				F94D4407C6D89B37BCB8DA25 /* TKCreditCardZipTextField.swift */,
+				34F2326758CD95A7C0AC8177 /* TKDigits.swift */,
+				5E247AE80893BA3C5AB007D1 /* TKPhoneNumberTextField.swift */,
+			);
+			path = CreditCard;
+			sourceTree = "<group>";
+		};
+		92BC54682D0E8BF7C7E88054 /* Extra */ = {
+			isa = PBXGroup;
+			children = (
+				2BB7A7FDF5DC4D7C20CCC88C /* TKSafariWebCredentials.swift */,
+				0F234D25B4A203311D124497 /* TKSoundAlertController.swift */,
+			);
+			path = Extra;
+			sourceTree = "<group>";
+		};
+		DC5CF11D52169E658ED58841 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				91B376CF0966CA09F3219698 /* TKCardModalViewController.swift */,
+				A5D688B0325EAA5DEC71614F /* TKCollectionViewController.swift */,
+				737649C5907A28FDB97BFBE6 /* TKCustomPresentationViewController.swift */,
+				6C118F3512E4A4CFA6ACC53F /* TKKeyboardTableViewController.swift */,
+				C4E8A0935FD895826C7207F1 /* TKTableViewController.swift */,
+				4BA2D2EA6F40AA417273086F /* TKVideoViewController.swift */,
+				FC82CB399E1D469176A8376D /* TKWebViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		2254F944077F40E02C4EDEFA /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				D29274DAB8102E30BD345F8F /* TKCurrentTimeLabel.swift */,
+				725CBE286D8E1781897885D0 /* TKDecimalInputView.swift */,
+				FFF84D0F6C28F747F9DB8D2E /* TKDecimalInputWithNextKeyView.swift */,
+				BDD10CD5F6ED1E4C4A956251 /* TKExtendedScrollView.swift */,
+				2E87982AF0516AB0A96C4959 /* TKGradientView.swift */,
+				BC72E17F6A81E151E7D48D0E /* TKInputKey.swift */,
+				6E997EAAE68027079012074F /* TKInputView.swift */,
+				DD67C78A81938C4EA2CEB115 /* TKNumberInputView.swift */,
+				C932696EDE792DA5B83DEF70 /* TKNumberInputWithNextKeyView.swift */,
+				C88A70E7A6C0E1A7A2B91D41 /* TKSectionedScrollView.swift */,
+				CFEB1ECD6B3EFB44DD1568D5 /* TKShapeView.swift */,
+				4D2E9DD3CA2320EEB6647B38 /* TKStepperCell.swift */,
+				518FC7D4D9A15707A186D836 /* TKSwitchCell.swift */,
+				A674447B0EF1C8F40A70EBE4 /* TKTextFieldCell.swift */,
+				D4F8414A9A24CA403A730A50 /* TKTextView.swift */,
+				E122083DD4EC3A07B89A565C /* TKWindow.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		77EB8480DACFF21B500535F4 /* CurrySwift */ = {
+			isa = PBXGroup;
+			children = (
+				C50BDE7EEC12695627C4FCD3 /* Categories */,
+				2D8E9E22559AB6E553E6D09C /* CreditCard */,
+				92BC54682D0E8BF7C7E88054 /* Extra */,
+				DC5CF11D52169E658ED58841 /* ViewControllers */,
+				2254F944077F40E02C4EDEFA /* Views */,
+				53C53AD929E7D11529FFABB4 /* NSObject+JSON.swift */,
+				0C7E21A61B31A0A991469E1B /* TKFoundation.swift */,
+				D7FB0C78C6BB19151F77DF8D /* TKUIKit.swift */,
+			);
+			path = CurrySwift;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
