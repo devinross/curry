@@ -69,14 +69,7 @@
 // Categories -> UIKit -> Animations
 
 // ViewControllers
-#import <curry/TKCustomPresentationViewController.h>
-#import <curry/TKCardModalViewController.h>
-#import <curry/TKTableViewController.h>
-#import <curry/TKVideoViewController.h>
-#import <curry/TKCollectionViewController.h>
 #if !TARGET_OS_TV
-#import <curry/TKKeyboardTableViewController.h>
-#import <curry/TKWebViewController.h>
 #endif
 
 
@@ -98,9 +91,7 @@
 // Custom Text Field
 
 // Extra
-#import <curry/TKSoundAlertController.h>
 #if !TARGET_OS_TV
-#import <curry/TKSafariWebCredentials.h>
 #endif
 
 
