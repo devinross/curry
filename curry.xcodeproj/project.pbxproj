@@ -423,7 +423,6 @@
 			isa = PBXGroup;
 			children = (
 				200B62591AD7FB460049E35C /* Info.plist */,
-				202DBEEA1AF6717A00B0CE67 /* CurryImages.xcassets */,
 			);
 			path = "Supporting Files";
 			sourceTree = "<group>";
@@ -662,6 +661,7 @@
 		77EB8480DACFF21B500535F4 /* CurrySwift */ = {
 			isa = PBXGroup;
 			children = (
+				202DBEEA1AF6717A00B0CE67 /* CurryImages.xcassets */,
 				C50BDE7EEC12695627C4FCD3 /* Categories */,
 				2D8E9E22559AB6E553E6D09C /* CreditCard */,
 				92BC54682D0E8BF7C7E88054 /* Extra */,
