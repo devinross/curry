@@ -31,7 +31,7 @@
 
 
 #if __has_include(<WebKit/WebKit.h>)
-@import UIKit;
+#import <UIKit/UIKit.h>
 
 /** A `UITableViewCell` with a `UISwitch` */
 @interface TKSwitchCell : UITableViewCell 

@@ -30,7 +30,7 @@
  */
 
 
-@import UIKit;
+#import <UIKit/UIKit.h>
 
 /** An input key display type. */
 typedef NS_ENUM(NSInteger, TKInputKeyType) {

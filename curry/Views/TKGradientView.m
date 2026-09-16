@@ -29,7 +29,7 @@
  
  */
 
-#import "TKGradientView.h"
+#import <curry/TKGradientView.h>
 
 
 @implementation TKGradientView

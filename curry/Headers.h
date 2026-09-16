@@ -33,7 +33,7 @@
 #ifndef curry_Header_h
 #define curry_Header_h
 
-#import "TKFoundation.h"
+#import <curry/TKFoundation.h>
 
 // Some categories now live in the CurrySwift module, which ships alongside this
 // one in the `curry` package product. It cannot be re-exported from this
@@ -48,7 +48,7 @@
 
 #if TARGET_OS_IOS || TARGET_OS_TV
 
-#import "TKUIKit.h"
+#import <curry/TKUIKit.h>
 
 
 
@@ -69,52 +69,52 @@
 // Categories -> UIKit -> Animations
 
 // ViewControllers
-#import "TKCustomPresentationViewController.h"
-#import "TKCardModalViewController.h"
-#import "TKTableViewController.h"
-#import "TKVideoViewController.h"
-#import "TKCollectionViewController.h"
+#import <curry/TKCustomPresentationViewController.h>
+#import <curry/TKCardModalViewController.h>
+#import <curry/TKTableViewController.h>
+#import <curry/TKVideoViewController.h>
+#import <curry/TKCollectionViewController.h>
 #if !TARGET_OS_TV
-#import "TKKeyboardTableViewController.h"
-#import "TKWebViewController.h"
+#import <curry/TKKeyboardTableViewController.h>
+#import <curry/TKWebViewController.h>
 #endif
 
 
 #if !TARGET_OS_TV
 // Views -> Keyboard
-#import "TKInputView.h"
-#import "TKInputKey.h"
-#import "TKNumberInputView.h"
-#import "TKDecimalInputView.h"
-#import "TKNumberInputWithNextKeyView.h"
-#import "TKDecimalInputWithNextKeyView.h"
+#import <curry/TKInputView.h>
+#import <curry/TKInputKey.h>
+#import <curry/TKNumberInputView.h>
+#import <curry/TKDecimalInputView.h>
+#import <curry/TKNumberInputWithNextKeyView.h>
+#import <curry/TKDecimalInputWithNextKeyView.h>
 #endif
 
 // Views
-#import "TKGradientView.h"
-#import "TKShapeView.h"
-#import "TKSectionedScrollView.h"
-#import "TKCurrentTimeLabel.h"
-#import "TKTextFieldCell.h"
-#import "TKWindow.h"
+#import <curry/TKGradientView.h>
+#import <curry/TKShapeView.h>
+#import <curry/TKSectionedScrollView.h>
+#import <curry/TKCurrentTimeLabel.h>
+#import <curry/TKTextFieldCell.h>
+#import <curry/TKWindow.h>
 #if !TARGET_OS_TV
-#import "TKExtendedScrollView.h"
-#import "TKSwitchCell.h"
-#import "TKStepperCell.h"
-#import "TKTextView.h"
+#import <curry/TKExtendedScrollView.h>
+#import <curry/TKSwitchCell.h>
+#import <curry/TKStepperCell.h>
+#import <curry/TKTextView.h>
 #endif
 
 // Custom Text Field
-#import "TKCreditCardNumberTextField.h"
-#import "TKCreditCardExpirationTextField.h"
-#import "TKCreditCardZipTextField.h"
-#import "TKCreditCardCVVTextField.h"
-#import "TKPhoneNumberTextField.h"
+#import <curry/TKCreditCardNumberTextField.h>
+#import <curry/TKCreditCardExpirationTextField.h>
+#import <curry/TKCreditCardZipTextField.h>
+#import <curry/TKCreditCardCVVTextField.h>
+#import <curry/TKPhoneNumberTextField.h>
 
 // Extra
-#import "TKSoundAlertController.h"
+#import <curry/TKSoundAlertController.h>
 #if !TARGET_OS_TV
-#import "TKSafariWebCredentials.h"
+#import <curry/TKSafariWebCredentials.h>
 #endif
 
 

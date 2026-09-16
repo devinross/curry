@@ -29,7 +29,7 @@
  
  */
 
-#import "TKCurrentTimeLabel.h"
+#import <curry/TKCurrentTimeLabel.h>
 
 @interface TKCurrentTimeLabel ()
 @property (nonatomic,strong) NSTimer *timer;

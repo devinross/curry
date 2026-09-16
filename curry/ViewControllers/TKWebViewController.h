@@ -32,8 +32,8 @@
 
 
 #if __has_include(<WebKit/WebKit.h>)
-@import UIKit;
-@import WebKit;
+#import <UIKit/UIKit.h>
+#import <WebKit/WebKit.h>
 
 /** This class creates a `UIViewController` with a basic `WKWebView` as the focal point view. */
 @interface TKWebViewController : UIViewController

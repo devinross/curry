@@ -29,7 +29,7 @@
  
  */
 
-#import "TKVideoViewController.h"
+#import <curry/TKVideoViewController.h>
 
 @interface TKPlayerView : UIView
 @property (nonatomic, retain) AVPlayer* player;

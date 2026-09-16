@@ -33,7 +33,8 @@ import UIKit
 import ObjectiveC
 
 
-private var handlersKey: UInt8 = 0
+/// Only ever used as a unique address for `objc_getAssociatedObject`.
+private nonisolated(unsafe) var handlersKey: UInt8 = 0
 
 
 /// Retains a block and exposes it as a target/action pair.

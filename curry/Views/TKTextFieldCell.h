@@ -29,7 +29,7 @@
  
  */
 
-@import UIKit;
+#import <UIKit/UIKit.h>
 
 /** A table view cell with a text field. */
 @interface TKTextFieldCell : UITableViewCell

@@ -30,7 +30,7 @@
  */
 
 #if __has_include(<WebKit/WebKit.h>)
-@import UIKit;
+#import <UIKit/UIKit.h>
 
 @interface TKStepperCell : UITableViewCell
 

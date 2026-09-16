@@ -29,8 +29,8 @@
  
  */
 
-#import "TKKeyboardTableViewController.h"
-@import CurrySwift;
+#import <curry/TKKeyboardTableViewController.h>
+#import "CurrySwiftInterop.h"
 
 
 @interface TKKeyboardTableViewController ()

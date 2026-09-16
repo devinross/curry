@@ -29,8 +29,8 @@
  
  */
 
-@import UIKit;
-@import AVFoundation;
+#import <UIKit/UIKit.h>
+#import <AVFoundation/AVFoundation.h>
 
 /** `TKVideoViewController` is view controller dedicating to playing a video file from disk. */
 @interface TKVideoViewController : UIViewController

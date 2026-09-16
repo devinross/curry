@@ -29,7 +29,7 @@
  
 */
 
-#import "TKShapeView.h"
+#import <curry/TKShapeView.h>
 
 @implementation TKShapeView
 

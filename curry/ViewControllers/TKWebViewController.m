@@ -30,8 +30,8 @@
  */
 
 #if __has_include(<WebKit/WebKit.h>)
-#import "TKWebViewController.h"
-@import CurrySwift;
+#import <curry/TKWebViewController.h>
+#import "CurrySwiftInterop.h"
 
 @interface TKWebViewController ()
 @property (nonatomic,strong) UIBarButtonItem *loadingActivityBarButtonItem;

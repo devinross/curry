@@ -30,7 +30,7 @@
  */
 
 
-@import UIKit;
+#import <UIKit/UIKit.h>
 
 /**
  This class provides basic `UITableViewController` functionality under the `TKViewController` class.

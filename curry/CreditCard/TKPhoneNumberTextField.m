@@ -29,8 +29,8 @@
  
  */
 
-#import "TKPhoneNumberTextField.h"
-@import CurrySwift;
+#import <curry/TKPhoneNumberTextField.h>
+#import "CurrySwiftInterop.h"
 
 @implementation TKPhoneNumberTextField
 

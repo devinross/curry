@@ -29,7 +29,7 @@
  
  */
 #if __has_include(<WebKit/WebKit.h>)
-#import "TKSwitchCell.h"
+#import <curry/TKSwitchCell.h>
 
 @implementation TKSwitchCell
 

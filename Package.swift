@@ -29,7 +29,11 @@ let package = Package(
             resources: [
                 .process("Supporting Files/CurryImages.xcassets")
             ],
-            publicHeadersPath: "include"
+            publicHeadersPath: "include",
+            // Lets the .m files reach CurrySwiftInterop.h, which is deliberately
+            // not a public header: it imports a Swift module, which Clang cannot
+            // resolve while building the public 'curry' module.
+            cSettings: [ .headerSearchPath(".") ]
         ),
         // Swift-only extensions. SwiftPM targets can't mix Swift and
         // Objective-C, so these live in their own module.

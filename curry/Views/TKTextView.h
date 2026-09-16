@@ -29,7 +29,7 @@
  
  */
 
-@import UIKit;
+#import <UIKit/UIKit.h>
 
 /** This class creates a `UITextView` with placeholder text. */
 @interface TKTextView : UITextView

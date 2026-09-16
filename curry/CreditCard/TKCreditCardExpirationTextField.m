@@ -29,7 +29,7 @@
  
  */
 
-#import "TKCreditCardExpirationTextField.h"
+#import <curry/TKCreditCardExpirationTextField.h>
 
 @implementation TKCreditCardExpirationTextField
 

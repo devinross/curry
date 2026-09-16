@@ -29,7 +29,7 @@
  
  */
 
-@import UIKit;
+#import <UIKit/UIKit.h>
 
 /** `TKCustomPresentationViewController` is view controller setup to make its own custom presentation and dismissal. */
 @interface TKCustomPresentationViewController : UIViewController <UIViewControllerAnimatedTransitioning>

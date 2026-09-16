@@ -29,7 +29,7 @@
  
  */
 #if __has_include(<WebKit/WebKit.h>)
-#import "TKExtendedScrollView.h"
+#import <curry/TKExtendedScrollView.h>
 
 @implementation TKExtendedScrollView
 

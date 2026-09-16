@@ -30,11 +30,11 @@
  */
 
 
-#import "TKNumberInputWithNextKeyView.h"
-@import CurrySwift;
-#import "TKInputKey.h"
-#import "TKFoundation.h"
-#import "TKUIKit.h"
+#import <curry/TKNumberInputWithNextKeyView.h>
+#import "CurrySwiftInterop.h"
+#import <curry/TKInputKey.h>
+#import <curry/TKFoundation.h>
+#import <curry/TKUIKit.h>
 
 #ifdef SWIFTPM_MODULE_BUNDLE
 #define CURRY_RESOURCE_BUNDLE SWIFTPM_MODULE_BUNDLE

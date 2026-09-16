@@ -29,7 +29,7 @@
  
  */
 
-#import "TKCreditCardCVVTextField.h"
+#import <curry/TKCreditCardCVVTextField.h>
 
 @implementation TKCreditCardCVVTextField
 

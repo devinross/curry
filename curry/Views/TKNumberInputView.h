@@ -30,7 +30,7 @@
  */
 
 
-#import "TKInputView.h"
+#import <curry/TKInputView.h>
 @class TKInputKey;
 
 /** `TKNumberInputView` is subclass `TKInputView` with a number pad. */

@@ -29,10 +29,10 @@
  
  */
 
-#import "TKSectionedScrollView.h"
-#import "TKFoundation.h"
-#import "TKUIKit.h"
-#import "TKUIKit.h"
+#import <curry/TKSectionedScrollView.h>
+#import <curry/TKFoundation.h>
+#import <curry/TKUIKit.h>
+#import <curry/TKUIKit.h>
 
 @interface TKSectionedScrollView ()
 

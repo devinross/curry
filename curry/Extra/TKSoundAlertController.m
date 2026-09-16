@@ -29,7 +29,7 @@
  
  */
 
-#import "TKSoundAlertController.h"
+#import <curry/TKSoundAlertController.h>
 
 @interface TKSoundAlertController ()
 

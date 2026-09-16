@@ -30,11 +30,11 @@
  */
 
 
-#import "TKNumberInputView.h"
-@import CurrySwift;
-#import "TKInputKey.h"
-#import "TKFoundation.h"
-#import "TKUIKit.h"
+#import <curry/TKNumberInputView.h>
+#import "CurrySwiftInterop.h"
+#import <curry/TKInputKey.h>
+#import <curry/TKFoundation.h>
+#import <curry/TKUIKit.h>
 
 
 @implementation TKNumberInputView

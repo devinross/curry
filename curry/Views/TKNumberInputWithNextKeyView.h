@@ -30,7 +30,7 @@
  */
 
 
-#import "TKNumberInputView.h"
+#import <curry/TKNumberInputView.h>
 
 /** `TKNumberInputWithNextKeyView` is subclass `TKNumberInputView` with a next key. */
 @interface TKNumberInputWithNextKeyView : TKNumberInputView

@@ -29,7 +29,7 @@
  
  */
 
-#import "TKCreditCardZipTextField.h"
+#import <curry/TKCreditCardZipTextField.h>
 
 @implementation TKCreditCardZipTextField
 

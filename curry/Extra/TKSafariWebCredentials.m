@@ -30,7 +30,7 @@
  */
 
 #if __has_include(<WebKit/WebKit.h>)
-#import "TKSafariWebCredentials.h"
+#import <curry/TKSafariWebCredentials.h>
 @import Security;
 
 @implementation TKSafariWebCredentials

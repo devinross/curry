@@ -29,7 +29,7 @@
  
  */
 
-#import "TKTextFieldCell.h"
+#import <curry/TKTextFieldCell.h>
 
 @implementation TKTextFieldCell
 

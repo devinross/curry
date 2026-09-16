@@ -48,7 +48,7 @@ extension URLSession {
 	@objc(jsonDataTaskWithRequest:options:completionHandler:)
 	public func jsonDataTask(with request: URLRequest,
 	                         options: JSONSerialization.ReadingOptions,
-	                         completionHandler completion: ((Any?, URLResponse?, Error?) -> Void)?) -> URLSessionDataTask {
+	                         completionHandler completion: (@Sendable (Any?, URLResponse?, Error?) -> Void)?) -> URLSessionDataTask {
 		dataTask(with: request) { [weak self] data, response, error in
 			self?.finishJSONTask(data: data, response: response, error: error, options: options, completion: completion)
 		}
@@ -63,7 +63,7 @@ extension URLSession {
 	@objc(jsonDataTaskWithURL:options:completionHandler:)
 	public func jsonDataTask(with url: URL,
 	                         options: JSONSerialization.ReadingOptions,
-	                         completionHandler completion: ((Any?, URLResponse?, Error?) -> Void)?) -> URLSessionDataTask {
+	                         completionHandler completion: (@Sendable (Any?, URLResponse?, Error?) -> Void)?) -> URLSessionDataTask {
 		dataTask(with: url) { [weak self] data, response, error in
 			self?.finishJSONTask(data: data, response: response, error: error, options: options, completion: completion)
 		}
@@ -73,7 +73,7 @@ extension URLSession {
 	                            response: URLResponse?,
 	                            error: Error?,
 	                            options: JSONSerialization.ReadingOptions,
-	                            completion: ((Any?, URLResponse?, Error?) -> Void)?) {
+	                            completion: (@Sendable (Any?, URLResponse?, Error?) -> Void)?) {
 		
 		guard let data, !data.isEmpty else {
 			DispatchQueue.main.async { completion?(nil, response, error) }

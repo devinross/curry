@@ -29,7 +29,7 @@
  
  */
 
-@import UIKit;
+#import <UIKit/UIKit.h>
 
 /** `TKCurrentTimeLabel` is a label that prints out the current time. */
 @interface TKCurrentTimeLabel : UILabel

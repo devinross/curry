@@ -30,10 +30,10 @@
  */
 
 
-#import "TKCardModalViewController.h"
-@import CurrySwift;
-#import "TKFoundation.h"
-#import "TKUIKit.h"
+#import <curry/TKCardModalViewController.h>
+#import "CurrySwiftInterop.h"
+#import <curry/TKFoundation.h>
+#import <curry/TKUIKit.h>
 
 @interface TKCardModalViewController () <UIGestureRecognizerDelegate>
 

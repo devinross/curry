@@ -29,9 +29,9 @@
  
  */
 
-@import Foundation;
-@import AVFoundation;
-@import AudioToolbox;
+#import <Foundation/Foundation.h>
+#import <AVFoundation/AVFoundation.h>
+#import <AudioToolbox/AudioToolbox.h>
 
 /** `TKSoundAlertController` plays simple user interface sounds. */
 @interface TKSoundAlertController : NSObject <AVAudioPlayerDelegate>

@@ -33,7 +33,8 @@ import UIKit
 import ObjectiveC
 
 
-private var handlerKey: UInt8 = 0
+/// Only ever used as a unique address for `objc_getAssociatedObject`.
+private nonisolated(unsafe) var handlerKey: UInt8 = 0
 
 
 /** Additional block functionality for `UIGestureRecognizer`. */

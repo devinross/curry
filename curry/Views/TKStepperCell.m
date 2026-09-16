@@ -30,7 +30,7 @@
  */
 
 #if __has_include(<WebKit/WebKit.h>)
-#import "TKStepperCell.h"
+#import <curry/TKStepperCell.h>
 
 @interface TKStepperCell ()
 @property (nonatomic,assign) UITableViewCellStyle theStyle;

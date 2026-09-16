@@ -29,8 +29,8 @@
  
  */
 
-#import "TKCreditCardNumberTextField.h"
-@import CurrySwift;
+#import <curry/TKCreditCardNumberTextField.h>
+#import "CurrySwiftInterop.h"
 
 @implementation TKCreditCardNumberTextField
 

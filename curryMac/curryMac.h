@@ -41,4 +41,4 @@ FOUNDATION_EXPORT const unsigned char curryMacVersionString[];
 // In this header, you should import all the public headers of your framework using statements like #import <curryMac/PublicHeader.h>
 
 
-#import "Headers.h"
+#import <curry/Headers.h>

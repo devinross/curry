@@ -29,7 +29,7 @@
  
  */
 
-#import "TKTextView.h"
+#import <curry/TKTextView.h>
 
 @implementation TKTextView
 

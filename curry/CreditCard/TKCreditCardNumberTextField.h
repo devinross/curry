@@ -29,8 +29,8 @@
  
  */
 
-@import Foundation;
-@import UIKit;
+#import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 
 /** This class is a subclass of `UITextField` for specifically entering credit card numbers. */
 @interface TKCreditCardNumberTextField : UITextField

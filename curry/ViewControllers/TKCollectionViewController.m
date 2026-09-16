@@ -29,7 +29,7 @@
  
  */
 
-#import "TKCollectionViewController.h"
+#import <curry/TKCollectionViewController.h>
 
 @implementation TKCollectionViewController
 

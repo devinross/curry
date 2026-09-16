@@ -29,7 +29,7 @@
  
  */
 
-#import "TKWindow.h"
+#import <curry/TKWindow.h>
 
 NSString *TKWindowShakeBegan = @"TKWindowShakeBegan";
 NSString *TKWindowShakeCancelled = @"TKWindowShakeCancelled";

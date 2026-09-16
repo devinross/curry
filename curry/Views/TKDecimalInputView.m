@@ -30,10 +30,10 @@
  */
 
 
-#import "TKDecimalInputView.h"
-#import "TKInputKey.h"
-#import "TKFoundation.h"
-#import "TKUIKit.h"
+#import <curry/TKDecimalInputView.h>
+#import <curry/TKInputKey.h>
+#import <curry/TKFoundation.h>
+#import <curry/TKUIKit.h>
 
 @implementation TKDecimalInputView
 

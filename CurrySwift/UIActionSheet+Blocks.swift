@@ -35,7 +35,8 @@ import ObjectiveC
 
 #if !os(tvOS)
 
-private var sheetActionsKey: UInt8 = 0
+/// Only ever used as a unique address for `objc_getAssociatedObject`.
+private nonisolated(unsafe) var sheetActionsKey: UInt8 = 0
 
 
 /** Additional block functionality for `UIActionSheet`.

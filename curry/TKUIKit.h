@@ -30,8 +30,8 @@
  */
 
 
-@import UIKit;
-@import QuartzCore;
+#import <UIKit/UIKit.h>
+#import <QuartzCore/QuartzCore.h>
 
 UIKIT_STATIC_INLINE CATransform3D CAScale(CGFloat x,CGFloat y,CGFloat z);
 UIKIT_STATIC_INLINE CATransform3D CAScale(CGFloat x,CGFloat y,CGFloat z){

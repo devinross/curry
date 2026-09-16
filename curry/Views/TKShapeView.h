@@ -30,8 +30,8 @@
  
 */
 
-@import UIKit;
-@import QuartzCore;
+#import <UIKit/UIKit.h>
+#import <QuartzCore/QuartzCore.h>
 
 /** This class implements `UIView` backed by a `CAShapeLayer`. */
 @interface TKShapeView : UIView

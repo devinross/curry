@@ -29,7 +29,7 @@
  
  */
 
-#import "TKTableViewController.h"
+#import <curry/TKTableViewController.h>
 
 #if TARGET_OS_IOS
 @interface TKTableViewController (Search) <UISearchResultsUpdating,UISearchControllerDelegate>

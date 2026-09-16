@@ -31,7 +31,11 @@
 @import Foundation;
 @import XCTest;
 
+#if SWIFT_PACKAGE
 @import CurrySwift;
+#else
+@import curry;
+#endif
 
 @interface NSStringTests : XCTestCase
 

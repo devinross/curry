@@ -29,7 +29,7 @@
  
  */
 
-@import UIKit;
+#import <UIKit/UIKit.h>
 
 @class TKSectionedScrollView;
 @protocol TKSectionedScrollViewDelegate <NSObject>

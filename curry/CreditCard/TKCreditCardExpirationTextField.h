@@ -29,7 +29,7 @@
  
  */
 
-@import UIKit;
+#import <UIKit/UIKit.h>
 
 /** This class is a subclass of `UITextField` for specifically entering expiration dates in the format MM / YY. */
 @interface TKCreditCardExpirationTextField : UITextField
