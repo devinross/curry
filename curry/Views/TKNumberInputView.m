@@ -35,7 +35,8 @@
 #import "UIImage+TKCategory.h"
 #import "TKFoundation.h"
 #import "TKUIKit.h"
-#import <curry/curry-Swift.h>
+#import "UIDevice+TKCategory.h"
+
 
 @implementation TKNumberInputView
 

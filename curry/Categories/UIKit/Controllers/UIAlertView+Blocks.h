@@ -29,6 +29,7 @@
  
  */
 
+#if __has_include(<WebKit/WebKit.h>)
 @import UIKit;
 
 /** Introduces block callbacks to `UIAlertView`. */
@@ -62,3 +63,4 @@
 - (void) addCancelButtonWithTitle:(NSString*)title handler:(void (^)(UIAlertView *sender))block;
 
 @end
+#endif

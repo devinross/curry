@@ -38,7 +38,14 @@
 #import "UIImage+TKCategory.h"
 #import "TKFoundation.h"
 #import "TKUIKit.h"
-#import <curry/curry-Swift.h>
+#import "UIDevice+TKCategory.h"
+
+#ifdef SWIFTPM_MODULE_BUNDLE
+#define CURRY_RESOURCE_BUNDLE SWIFTPM_MODULE_BUNDLE
+#else
+#define CURRY_RESOURCE_BUNDLE [NSBundle bundleForClass:[TKInputView class]]
+#endif
+
 
 
 @interface TKInputView ()
@@ -86,9 +93,10 @@
 	self.autoresizingMask = UIViewAutoresizingFlexibleHeight | UIViewAutoresizingFlexibleWidth;
 	self.backgroundColor = [UIColor colorWithHex:0xd7dadf];
 	self.clipsToBounds = YES;
+#if !TARGET_OS_TV
 	self.multipleTouchEnabled = NO;
 	self.exclusiveTouch = YES;
-	
+#endif
 	CGRect cntFrame = frame;
 	if([UIDevice currentDevice].padIdiom){
 		cntFrame.size.width = 544;
@@ -123,7 +131,7 @@
 	if([UIDevice currentDevice].padIdiom){
 		
         CGRect rect = CGRectMake(frame.size.width - 80 - 32, frame.size.height - 75 - 12, 80, 75);
-		UIImage *img = [UIImage imageNamed:@"keyboard-down-keyboard" inBundle:[NSBundle bundleForClass:[TKInputView class]] compatibleWithTraitCollection:[UITraitCollection traitCollectionWithDisplayScale:[UIScreen mainScreen].scale]];
+		UIImage *img = [UIImage imageNamed:@"keyboard-down-keyboard" inBundle:CURRY_RESOURCE_BUNDLE compatibleWithTraitCollection:[UITraitCollection traitCollectionWithDisplayScale:[UIScreen mainScreen].scale]];
 
 		self.hideKeyboardKey = [[TKInputKey alloc] initWithFrame:rect symbol:img normalType:TKInputKeyTypeDefault selectedType:TKInputKeyTypeHighlighted runner:NO];
 		self.hideKeyboardKey.autoresizingMask = UIViewAutoresizingFlexibleLeftMargin | UIViewAutoresizingFlexibleTopMargin;
@@ -131,21 +139,24 @@
 		[self.hideKeyboardKey setHighlighted:NO];
 		[self addSubview:self.hideKeyboardKey];
 		
-		UIImage *dotsImage = [UIImage imageNamed:@"keyboard-move-keyboard-dots" inBundle:[NSBundle bundleForClass:[TKInputView class]] compatibleWithTraitCollection:[UITraitCollection traitCollectionWithDisplayScale:[UIScreen mainScreen].scale]];
+		UIImage *dotsImage = [UIImage imageNamed:@"keyboard-move-keyboard-dots" inBundle:CURRY_RESOURCE_BUNDLE compatibleWithTraitCollection:[UITraitCollection traitCollectionWithDisplayScale:[UIScreen mainScreen].scale]];
 		UIImageView *dots = [UIImageView imageViewWithFrame:CGRectMakeWithSize(CGRectGetWidth(frame) - 18, CGRectGetHeight(frame) - 57, dotsImage.size)];
 		dots.image = dotsImage;
 		dots.autoresizingMask = UIViewAutoresizingFlexibleLeftMargin | UIViewAutoresizingFlexibleTopMargin;
 		[self addSubview:dots];
 	}
 	
+#if !TARGET_OS_TV
 	[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(didHideNotification:) name:UIKeyboardDidHideNotification object:nil];
-	
+#endif
     return self;
 }
 
+#if !TARGET_OS_TV
 - (void) dealloc{
 	[[NSNotificationCenter defaultCenter] removeObserver:self name:UIKeyboardDidHideNotification object:nil];
 }
+#endif
 
 - (void) didHideNotification:(id)sender{
 
@@ -307,7 +318,7 @@
 
 - (TKInputKey*) backspaceKey{
 	if(_backspaceKey) return _backspaceKey;
-	UIImage *back = [UIImage imageNamed:@"keyboard-backspace-key" inBundle:[NSBundle bundleForClass:[TKInputView class]] compatibleWithTraitCollection:[UITraitCollection traitCollectionWithDisplayScale:[UIScreen mainScreen].scale]];
+	UIImage *back = [UIImage imageNamed:@"keyboard-backspace-key" inBundle:CURRY_RESOURCE_BUNDLE compatibleWithTraitCollection:[UITraitCollection traitCollectionWithDisplayScale:[UIScreen mainScreen].scale]];
 	_backspaceKey = [[TKInputKey alloc] initWithFrame:CGRectMake(0, 0, self.frame.size.width * 0.25, self.frame.size.height) symbol:back normalType:TKInputKeyTypeDefault selectedType:TKInputKeyTypeDark runner:NO];
 	_backspaceKey.canTapAndHold = YES;
 	_backspaceKey.accessibilityLabel = NSLocalizedString(@"Delete", @"");

@@ -28,7 +28,7 @@
  OTHER DEALINGS IN THE SOFTWARE.
  
  */
-
+#if __has_include(<WebKit/WebKit.h>)
 #import "TKExtendedScrollView.h"
 
 @implementation TKExtendedScrollView
@@ -73,3 +73,4 @@
 
 
 @end
+#endif

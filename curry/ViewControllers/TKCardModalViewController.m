@@ -34,7 +34,7 @@
 #import "TKFoundation.h"
 #import "UIGestureRecognizer+TKCategory.h"
 #import "TKUIKit.h"
-#import <curry/curry-Swift.h>
+#import "UIDevice+TKCategory.h"
 
 @interface TKCardModalViewController () <UIGestureRecognizerDelegate>
 
@@ -117,8 +117,10 @@ static const CGFloat _minimumVelocityRequiredForPush = 50.0f;	// defines how muc
 }
 - (void) viewDidLoad{
 	[super viewDidLoad];
+#if !TARGET_OS_TV
 	[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(keyboardWillShow:) name:UIKeyboardWillShowNotification object:nil];
 	[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(keyboardWillHide:) name:UIKeyboardWillHideNotification object:nil];
+#endif
 }
 - (void) viewDidAppear:(BOOL)animated{
 	[super viewDidAppear:animated];
@@ -139,6 +141,7 @@ static const CGFloat _minimumVelocityRequiredForPush = 50.0f;	// defines how muc
 }
 
 #pragma makr Keyboard Notifications
+#if !TARGET_OS_TV
 - (void) keyboardWillShow:(NSNotification*)notification{
 	
 	NSValue *keyRectVal = notification.userInfo[UIKeyboardFrameEndUserInfoKey];
@@ -167,7 +170,7 @@ static const CGFloat _minimumVelocityRequiredForPush = 50.0f;	// defines how muc
 		self.contentView.frame = rr;
 	}completion:nil];
 }
-
+#endif
 
 #pragma mark Gestures Actions
 - (BOOL) gestureRecognizer:(UIGestureRecognizer *)gestureRecognizer shouldReceiveTouch:(UITouch *)touch{
@@ -352,8 +355,10 @@ static const CGFloat _minimumVelocityRequiredForPush = 50.0f;	// defines how muc
 	[[delegate window].rootViewController presentViewController:self animated:YES completion:nil];
 }
 - (void) hide{
+#if !TARGET_OS_TV
 	[[NSNotificationCenter defaultCenter] removeObserver:self name:UIKeyboardWillHideNotification object:nil];
 	[[NSNotificationCenter defaultCenter] removeObserver:self name:UIKeyboardWillShowNotification object:nil];
+#endif
 	[self dismissViewControllerAnimated:YES completion:nil];
 }
 

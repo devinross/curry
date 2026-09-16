@@ -29,6 +29,7 @@
  
  */
 
+#if __has_include(<WebKit/WebKit.h>)
 @import UIKit;
 
 /** Introduces block callbacks to `UIActionSheet`. */
@@ -66,3 +67,4 @@
 - (void) addDestructiveButtonWithTitle:(NSString*)title handler:(void (^)(UIActionSheet *sender))block;
 
 @end
+#endif

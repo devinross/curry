@@ -29,6 +29,8 @@
  
  */
 
+
+#if __has_include(<WebKit/WebKit.h>)
 @import UIKit;
 
 /** A `UITableViewCell` with a `UISwitch` */
@@ -38,3 +40,4 @@
 @property (nonatomic,strong) UISwitch *switcher;
 
 @end
+#endif

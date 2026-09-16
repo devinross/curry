@@ -30,6 +30,8 @@
  */
 
 
+
+#if __has_include(<WebKit/WebKit.h>)
 @import UIKit;
 @import WebKit;
 
@@ -77,3 +79,4 @@
 - (void) dismiss:(id)sender;
 
 @end
+#endif

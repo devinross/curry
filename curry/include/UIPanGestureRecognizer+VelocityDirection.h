@@ -1,0 +1,1 @@
+../Categories/UIKit/Views/UIPanGestureRecognizer+VelocityDirection.h

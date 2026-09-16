@@ -33,142 +33,142 @@
 #ifndef curry_Header_h
 #define curry_Header_h
 
-#import <curry/TKFoundation.h>
+#import "TKFoundation.h"
 
 // Categories -> Foundation
-#import <curry/NSObject+JSON.h>
-#import <curry/NSObject+TKCategory.h>
-#import <curry/NSString+TKCategory.h>
-#import <curry/NSArray+TKCategory.h>
-#import <curry/NSDate+TKCategory.h>
-#import <curry/NSObject+DataHelper.h>
-#import <curry/NSMutableArray+TKCategory.h>
+#import "NSObject+JSON.h"
+#import "NSObject+TKCategory.h"
+#import "NSString+TKCategory.h"
+#import "NSArray+TKCategory.h"
+#import "NSDate+TKCategory.h"
+#import "NSObject+DataHelper.h"
+#import "NSMutableArray+TKCategory.h"
 
-#import <curry/NSURLSession+TKCategory.h>
-#import <curry/NSURLSession+TKProgressDataTask.h>
-#import <curry/NSURLRequest+TKCategory.h>
-#import <curry/NSTimer+Blocks.h>
+#import "NSURLSession+TKCategory.h"
+#import "NSURLSession+TKProgressDataTask.h"
+#import "NSURLRequest+TKCategory.h"
+#import "NSTimer+Blocks.h"
 
 #if TARGET_OS_IOS || TARGET_OS_TV
 
-#import <curry/TKUIKit.h>
+#import "TKUIKit.h"
 
-#import <curry/NSString+TKUIKit.h>
-#import <curry/NSAttributedString+TKCategory.h>
-#import <curry/NSMutableAttributedString+TKCategory.h>
-#import <curry/NSBundle+Receipts.h>
-#import <curry/NSUserDefaults+iCloud.h>
+#import "NSString+TKUIKit.h"
+#import "NSAttributedString+TKCategory.h"
+#import "NSMutableAttributedString+TKCategory.h"
+#import "NSBundle+Receipts.h"
+#import "NSUserDefaults+iCloud.h"
 
 
 // Categories -> UIKit -> Base
-#import <curry/UIApplication+TKCategory.h>
-#import <curry/UIScreen+TKCategory.h>
-#import <curry/UITraitCollection+TKCategory.h>
+#import "UIApplication+TKCategory.h"
+#import "UIDevice+TKCategory.h"
+#import "UIScreen+TKCategory.h"
+#import "UITraitCollection+TKCategory.h"
 
 // Categories -> UIKit -> Views
-#import <curry/UIView+Positioning.h>
-#import <curry/UIScrollView+Positioning.h>
-#import <curry/UIPanGestureRecognizer+VelocityDirection.h>
-#import <curry/UIView+GestureRecognizerBlock.h>
-#import <curry/UIView+TKCategory.h>
-#import <curry/UIScrollview+TKCategory.h>
-#import <curry/UILabel+TKCategory.h>
-#import <curry/UITextField+TKCategory.h>
-#import <curry/UIImageView+TKCategory.h>
-#import <curry/UIButton+TKCategory.h>
-#import <curry/UINavigationBar+TKCategory.h>
-#import <curry/UIBarButtonItem+TKCategory.h>
-#import <curry/UIView+Initializers.h>
-#import <curry/UILabel+Initializers.h>
+#import "UIView+Positioning.h"
+#import "UIScrollView+Positioning.h"
+#import "UIPanGestureRecognizer+VelocityDirection.h"
+#import "UIView+GestureRecognizerBlock.h"
+#import "UIView+TKCategory.h"
+#import "UIScrollview+TKCategory.h"
+#import "UILabel+TKCategory.h"
+#import "UITextField+TKCategory.h"
+#import "UIImageView+TKCategory.h"
+#import "UIButton+TKCategory.h"
+#import "UINavigationBar+TKCategory.h"
+#import "UIBarButtonItem+TKCategory.h"
+#import "UIView+Initializers.h"
+#import "UILabel+Initializers.h"
 
 
 // Categories -> UIKit -> Elements
-#import <curry/UIImage+TKCategory.h>
-#import <curry/UIFont+TKCategory.h>
-#import <curry/UIColor+TKCategory.h>
-#import <curry/UIGestureRecognizer+TKCategory.h>
-#import <curry/UIGestureRecognizer+Blocks.h>
-#import <curry/UIControl+Blocks.h>
-#import <curry/UIMotionEffectGroup+TKCategory.h>
+#import "UIImage+TKCategory.h"
+#import "UIFont+TKCategory.h"
+#import "UIColor+TKCategory.h"
+#import "UIGestureRecognizer+TKCategory.h"
+#import "UIGestureRecognizer+Blocks.h"
+#import "UIControl+Blocks.h"
+#import "UIMotionEffectGroup+TKCategory.h"
 
 // Categories -> UIKit -> Controllers
-#import <curry/UIViewController+TKCategory.h>
-#import <curry/UIAlertController+TKCategory.h>
+#import "UIViewController+TKCategory.h"
+#import "UIAlertController+TKCategory.h"
 #if !TARGET_OS_TV
-#import <curry/UIImagePickerController+TKCategory.h>
-#import <curry/UIActionSheet+TKCategory.h>
-#import <curry/UIActionSheet+Blocks.h>
-#import <curry/UIAlertView+TKCategory.h>
-#import <curry/UIAlertView+Blocks.h>
+#import "UIImagePickerController+TKCategory.h"
+#import "UIActionSheet+TKCategory.h"
+#import "UIActionSheet+Blocks.h"
+#import "UIAlertView+TKCategory.h"
+#import "UIAlertView+Blocks.h"
 #endif
 
 
 
 
 // Categories -> UIKit -> Animations
-#import <curry/UIView+TKAnimation.h>
-#import <curry/CALayer+TKAnimation.h>
-#import <curry/CAKeyframeAnimation+TKAnimation.h>
-#import <curry/CAAnimation+TKAnimation.h>
-#import <curry/UIGestureRecognizer+Blocks.h>
+#import "UIView+TKAnimation.h"
+#import "CALayer+TKAnimation.h"
+#import "CAKeyframeAnimation+TKAnimation.h"
+#import "CAAnimation+TKAnimation.h"
+#import "UIGestureRecognizer+Blocks.h"
 
 // ViewControllers
-#import <curry/TKCustomPresentationViewController.h>
-#import <curry/TKCardModalViewController.h>
-#import <curry/TKTableViewController.h>
-#import <curry/TKVideoViewController.h>
-#import <curry/TKCollectionViewController.h>
+#import "TKCustomPresentationViewController.h"
+#import "TKCardModalViewController.h"
+#import "TKTableViewController.h"
+#import "TKVideoViewController.h"
+#import "TKCollectionViewController.h"
 #if !TARGET_OS_TV
-#import <curry/TKKeyboardTableViewController.h>
-#import <curry/TKWebViewController.h>
+#import "TKKeyboardTableViewController.h"
+#import "TKWebViewController.h"
 #endif
-
 
 
 #if !TARGET_OS_TV
 // Views -> Keyboard
-#import <curry/TKInputView.h>
-#import <curry/TKInputKey.h>
-#import <curry/TKNumberInputView.h>
-#import <curry/TKDecimalInputView.h>
-#import <curry/TKNumberInputWithNextKeyView.h>
-#import <curry/TKDecimalInputWithNextKeyView.h>
+#import "TKInputView.h"
+#import "TKInputKey.h"
+#import "TKNumberInputView.h"
+#import "TKDecimalInputView.h"
+#import "TKNumberInputWithNextKeyView.h"
+#import "TKDecimalInputWithNextKeyView.h"
 #endif
 
 // Views
-#import <curry/TKGradientView.h>
-#import <curry/TKShapeView.h>
-#import <curry/TKSectionedScrollView.h>
-#import <curry/TKCurrentTimeLabel.h>
-#import <curry/TKTextFieldCell.h>
-#import <curry/TKWindow.h>
+#import "TKGradientView.h"
+#import "TKShapeView.h"
+#import "TKSectionedScrollView.h"
+#import "TKCurrentTimeLabel.h"
+#import "TKTextFieldCell.h"
+#import "TKWindow.h"
 #if !TARGET_OS_TV
-#import <curry/TKExtendedScrollView.h>
-#import <curry/TKSwitchCell.h>
-#import <curry/TKStepperCell.h>
-#import <curry/TKTextView.h>
+#import "TKExtendedScrollView.h"
+#import "TKSwitchCell.h"
+#import "TKStepperCell.h"
+#import "TKTextView.h"
 #endif
 
 // Custom Text Field
-#import <curry/TKCreditCardNumberTextField.h>
-#import <curry/TKCreditCardExpirationTextField.h>
-#import <curry/TKCreditCardZipTextField.h>
-#import <curry/TKCreditCardCVVTextField.h>
-#import <curry/TKPhoneNumberTextField.h>
+#import "TKCreditCardNumberTextField.h"
+#import "TKCreditCardExpirationTextField.h"
+#import "TKCreditCardZipTextField.h"
+#import "TKCreditCardCVVTextField.h"
+#import "TKPhoneNumberTextField.h"
 
 // Extra
-#import <curry/TKSoundAlertController.h>
+#import "TKSoundAlertController.h"
 #if !TARGET_OS_TV
-#import <curry/TKSafariWebCredentials.h>
+#import "TKSafariWebCredentials.h"
 #endif
 
 
 #endif // END TARGET_OS_IOS || TARGET_OS_TV
 
 
-#if TARGET_OS_X
-#import <curry/NSView+Positioning.h>
-#import <curry/NSView+TKCategory.h>
+#if TARGET_OS_OSX
+#import "NSView+Positioning.h"
+#import "NSView+TKCategory.h"
 #endif
 
 #endif

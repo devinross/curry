@@ -28,6 +28,7 @@
  OTHER DEALINGS IN THE SOFTWARE.
  
  */
+#if __has_include(<WebKit/WebKit.h>)
 #import "TKSwitchCell.h"
 
 @implementation TKSwitchCell
@@ -49,3 +50,4 @@
 
 
 @end
+#endif

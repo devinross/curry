@@ -36,7 +36,7 @@
 #import "TKFoundation.h"
 #import "TKUIKit.h"
 
-#import <curry/curry-Swift.h>
+#import "UIDevice+TKCategory.h"
 
 @implementation TKInputKey
 
